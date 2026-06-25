@@ -1,31 +1,43 @@
 import asyncio
+from crawl4ai import AsyncWebCrawler
+from crawl4ai.async_configs import BrowserConfig, CrawlerRunConfig, CacheMode
 
-from crawlee.crawlers import BeautifulSoupCrawler, BeautifulSoupCrawlingContext
+async def main():
+    browser_config = BrowserConfig(verbose=True)
+    run_config = CrawlerRunConfig(
+        # Content filtering
+        word_count_threshold=10,
+        excluded_tags=['form', 'header'],
+        exclude_external_links=True,
 
+        # Content processing
+        process_iframes=True,
+        remove_overlay_elements=True,
 
-async def main() -> None:
-    # BeautifulSoupCrawler crawls the web using HTTP requests
-    # and parses HTML using the BeautifulSoup library.
-    crawler = BeautifulSoupCrawler(max_requests_per_crawl=10)
+        # Cache control
+        cache_mode=CacheMode.ENABLED  # Use cache if available
+    )
 
-    # Define a request handler to process each crawled page
-    # and attach it to the crawler using a decorator.
-    @crawler.router.default_handler
-    async def request_handler(context: BeautifulSoupCrawlingContext) -> None:
-        context.log.info(f'Processing {context.request.url} ...')
-        # Extract relevant data from the page context.
-        data = {
-            'url': context.request.url,
-            'title': context.soup.title.string if context.soup.title else None,
-        }
-        # Store the extracted data.
-        await context.push_data(data)
-        # Extract links from the current page and add them to the crawling queue.
-        await context.enqueue_links()
+    async with AsyncWebCrawler(config=browser_config) as crawler:
+        result = await crawler.arun(
+            url="https://example.com",
+            config=run_config
+        )
 
-    # Add first URL to the queue and start the crawl.
-    await crawler.run(['https://crawlee.dev'])
+        if result.success:
+            # Print clean content
+            print("Content:", result.markdown[:500])  # First 500 chars
 
+            # Process images
+            for image in result.media["images"]:
+                print(f"Found image: {image['src']}")
 
-if __name__ == '__main__':
+            # Process links
+            for link in result.links["internal"]:
+                print(f"Internal link: {link['href']}")
+
+        else:
+            print(f"Crawl failed: {result.error_message}")
+
+if __name__ == "__main__":
     asyncio.run(main())
