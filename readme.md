@@ -1,404 +1,272 @@
-# 🌐 Search Engine - Data Collection Pipeline
+# AI Search Engine / Domain Search Pipeline
 
-> A modular data collection pipeline for a search engine. This project focuses on crawling, extracting, cleaning, deduplicating, and preparing high-quality web data for future indexing and ranking.
+> Corrected architecture based on your notes and our discussions.
 
-![Python](https://img.shields.io/badge/Python-3.12+-blue)
-![Status](https://img.shields.io/badge/Status-In%20Development-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
-
----
-
-# 📖 Project Summary
-
-This repository contains the **Data Collection** module of my search engine.
-
-The primary objective is to collect **high-quality web pages**, remove unnecessary content, eliminate duplicate pages, detect language, extract metadata, and prepare a clean dataset for future indexing.
-
-> **Current Progress:** Approximately **50% of the Data Collection pipeline** has been completed.
-
-The project is inspired by the data pipelines used in modern search engines and large-scale datasets such as Google Search, Common Crawl, FineWeb, RefinedWeb, and Meta's Llama data pipeline.
-
----
-
-# 🎯 Current Scope
-
-The current focus is only on **Data Collection**.
-
-Implemented / Planned:
-
-- Seed URL Collection
-- URL Frontier
-- Web Crawling
-- HTML Collection
-- Content Extraction
-- Metadata Extraction
-- Language Detection
-- Duplicate Detection
-- Quality Filtering
-
-The following modules are **not part of this repository yet**:
-
-- Indexing
-- Ranking
-- Search API
-- Query Processing
-
----
-
-# 🏗 Pipeline Architecture
-
-```text
-                Seed Collection
-        (Wikipedia, GitHub, Official Sites)
-                         │
-                         ▼
-                  URL Frontier
-                  (Priority Queue)
-                         │
-                         ▼
-                 Robots.txt Checker
-                         │
-                         ▼
-             Downloader (Crawl4AI)
-                         │
-                         ▼
-                 Raw HTML Storage
-                         │
-                         ▼
-              Trafilatura Extraction
-                         │
-                         ▼
-                 Clean Main Content
-                         │
-                         ▼
-               Metadata Extraction
-                         │
-                         ▼
-          Language Detection (FastText)
-                         │
-                         ▼
-        Exact Duplicate Detection (SHA256)
-                         │
-                         ▼
-      Near Duplicate Detection (MinHash + LSH)
-                         │
-                         ▼
-     Quality Filtering (DistilRoBERTa)
-                         │
-                         ▼
-              Clean Dataset Storage
+``` text
+Seed Sources
+│
+├── Official Documentation
+├── Wikipedia
+├── GitHub
+├── Research Papers
+├── Blogs
+├── News
+└── Sitemaps / RSS
+        │
+        ▼
+URL Frontier (Priority Queue)
+        │
+        ▼
+Adaptive / BFS / Best-First Crawling (Crawl4AI)
+        │
+        ▼
+Fetch HTML
+        │
+        ▼
+Main Content Extraction
+    ├── Trafilatura
+    ├── jusText
+    └── BeautifulSoup (optional cleanup)
+        │
+        ▼
+Cleaning Pipeline
+    ├── Remove HTML boilerplate
+    ├── Remove header/footer/nav
+    ├── Remove ads/scripts/styles
+    ├── Unicode normalization
+    ├── Whitespace normalization
+    ├── Empty page removal
+    ├── Spam removal
+    ├── PII removal (spaCy / Presidio / regex)
+    ├── Language detection (fastText)
+    └── Metadata extraction
+        │
+        ▼
+Deduplication
+    ├── URL Canonicalization
+    ├── SHA256 (exact duplicates)
+    ├── MinHash
+    ├── SimHash
+    └── LSH (near duplicates)
+        │
+        ▼
+Quality Filtering
+    ├── DistilBERT Quality Classifier
+    ├── Readability
+    ├── Content length
+    ├── Spam classifier
+    └── Toxicity filter
+        │
+        ▼
+Chunking
+        │
+        ▼
+Storage
+    ├── JSONL / Parquet
+    ├── DuckDB
+    └── Metadata Database
+        │
+        ▼
+Indexing
+    ├── BM25
+    ├── Embeddings
+    └── Hybrid Index
+        │
+        ▼
+Search / RAG / Fine-tuning
 ```
 
----
-
-# 📂 Project Structure
-
-```text
-search-engine/
-
-│
-├── crawler/
-│   ├── downloader.py
-│   ├── frontier.py
-│   ├── scheduler.py
-│   └── robots.py
-│
-├── parser/
-│   ├── extractor.py
-│   ├── metadata.py
-│   └── links.py
-│
-├── deduplication/
-│   ├── sha256.py
-│   ├── minhash.py
-│   └── lsh.py
-│
-├── quality/
-│   ├── language.py
-│   ├── classifier.py
-│   └── filters.py
-│
-├── storage/
-│   ├── raw_html/
-│   ├── cleaned_text/
-│   └── metadata/
-│
-├── requirements.txt
-│
-├── .gitignore
-│
-├── LICENSE
-│
-└── README.md
-```
+# Corrections to your notes
 
----
+## 1. Seed Collection
 
-# 🔄 Data Collection Workflow
+Correct.
 
-### 1. Seed Collection
+Add: - Sitemap.xml - RSS Feeds - Previously discovered URLs - Common
+Crawl (optional)
 
-The crawler starts with trusted sources such as
+------------------------------------------------------------------------
 
-- Wikipedia
-- GitHub
-- Official Websites
-- Government Websites
-- Technical Blogs
+## 2. URL Frontier
 
----
+Should be a **priority queue**, not just a URL list.
 
-### 2. URL Frontier
+Priority can depend on: - Domain authority - Freshness - Topic
+relevance - Crawl depth
 
-Responsible for
+------------------------------------------------------------------------
 
-- URL Queue
-- URL Priority
-- Visited URLs
-- Crawl Scheduling
+## 3. Crawling
 
----
+Use Crawl4AI:
 
-### 3. Downloader
+-   BFSDeepCrawlStrategy
+-   BestFirstDeepCrawlStrategy
+-   AdaptiveCrawler
 
-Downloads HTML pages using
+Adaptive crawling is useful for domain-specific search because it spends
+more effort on high-quality sections.
 
-- Crawl4AI
-- Async Crawling
+------------------------------------------------------------------------
 
-Stores
+## 4. Content Extraction
 
-- HTML
-- Status Code
-- Response Headers
-- Crawl Time
+Primary choice: - Trafilatura
 
----
+Alternatives: - jusText - Readability
 
-### 4. Content Extraction
+BeautifulSoup is mainly for additional HTML processing.
 
-Uses **Trafilatura** to remove
+------------------------------------------------------------------------
 
-- Navigation
-- Footer
-- Sidebar
-- Advertisements
-- Scripts
+## 5. Cleaning
 
-Extracts
+Recommended order:
 
-- Main Content
-- Title
-- Author
-- Date
+1.  Extract article
+2.  Remove boilerplate
+3.  Remove scripts/styles
+4.  Unicode normalization
+5.  Remove duplicate lines
+6.  Normalize whitespace
+7.  PII removal
+8.  Language detection
+9.  Metadata extraction
 
----
+------------------------------------------------------------------------
 
-### 5. Metadata Extraction
+## 6. PII Removal
 
-Stores
+choices: - Microsoft Presidio - spaCy - Regex
 
-- URL
-- Canonical URL
-- Domain
-- Title
-- Language
-- Publish Date
-- Crawl Date
-- Word Count
+------------------------------------------------------------------------
 
----
+## 7. Language Detection
 
-### 6. Language Detection
+Use fastText.
 
-Uses **FastText** to identify document language.
+Store language in metadata.
 
----
+------------------------------------------------------------------------
 
-### 7. Duplicate Detection
+## 8. Metadata
 
-#### Exact Duplicate
+Store:
 
-- SHA256
+-   URL
+-   Canonical URL
+-   Domain
+-   Language
+-   Crawl Time
+-   Depth
+-   Title
+-   Hash
+-   Word Count
 
-#### Near Duplicate
+------------------------------------------------------------------------
 
-- MinHash
-- Locality Sensitive Hashing (LSH)
+## 9. Deduplication
 
----
+### Exact
 
-### 8. Quality Filtering
+SHA256
 
-Uses DistilRoBERTa to remove
+### Near
 
-- Spam
-- Empty Pages
-- Low-quality Content
-- Very Short Documents
+-   MinHash
+-   SimHash
+-   LSH
 
----
+------------------------------------------------------------------------
 
-# 🛠 Libraries Used
+## 10. Canonicalization
 
-| Category | Library |
-|----------|----------|
-| Crawling | Crawl4AI |
-| HTML Parsing | lxml |
-| Content Extraction | Trafilatura |
-| Language Detection | FastText |
-| NLP | spaCy |
-| Duplicate Detection | datasketch |
-| Hashing | hashlib |
-| Machine Learning | Transformers |
-| Quality Classification | DistilRoBERTa |
-| Async Programming | asyncio |
-| Storage | DuckDB / SQLite |
-| Logging | loguru |
+Normalize:
 
----
+-   http vs https
+-   trailing slash
+-   index.html
+-   URL parameters (where appropriate)
 
-# 📦 requirements.txt
+before duplicate checking.
 
-```text
-crawl4ai
-trafilatura
-lxml
-httpx
-playwright
-beautifulsoup4
+------------------------------------------------------------------------
 
-fasttext-wheel
-spacy
+## 11. Quality Classifier
 
-transformers
-torch
+DistilBERT is a good lightweight choice.
 
-datasketch
+Score pages based on:
 
-duckdb
-sqlite-utils
+-   Readability
+-   Grammar
+-   Information density
+-   Spam
+-   Topic relevance
 
-loguru
+Discard low-quality pages.
 
-tqdm
+------------------------------------------------------------------------
 
-pandas
-numpy
+## 12. Indexing
 
-aiofiles
-asyncio
+For search:
 
-python-dotenv
+-   BM25
+-   Dense embeddings
+-   Hybrid search
 
-orjson
-```
+------------------------------------------------------------------------
 
----
+## 13. Search Ranking
 
-# 🚀 Current Progress
+Combine:
 
-## Completed
+-   BM25
+-   Embedding similarity
+-   Freshness
+-   Authority
+-   LLM reranker
 
-- [x] Project Architecture
-- [x] Seed Collection Design
-- [x] URL Frontier Design
-- [x] Metadata Schema
-- [x] Duplicate Detection Planning
-- [x] Quality Filter Planning
+------------------------------------------------------------------------
 
----
+# Suggested Tech Stack
 
-## In Progress
+## Crawling
 
-- [ ] Downloader
-- [ ] Async Crawling
-- [ ] Trafilatura Integration
-- [ ] Metadata Extraction
-- [ ] Language Detection
-- [ ] Duplicate Detection
+-   Crawl4AI
+-   Playwright
 
----
+## Extraction
 
-## Overall Progress
+-   Trafilatura
+-   jusText
 
-```text
-██████████░░░░░░░░░░ 50%
-```
+## Cleaning
 
-The current repository focuses only on the **Data Collection** stage of the search engine.
+-   BeautifulSoup
+-   spaCy
+-   fastText
 
----
+## Deduplication
 
-# 🎯 Future Work
+-   SHA256
+-   datasketch (MinHash)
+-   LSH
 
-After completing the data collection module, the next stages will include:
+## Storage
 
-- Index Construction
-- Inverted Index
-- BM25 Ranking
-- Semantic Search
-- Query Processing
-- Search API
-- Web Interface
+-   DuckDB
+-   Parquet
+-   JSONL
 
----
+## Embeddings
 
-# 🤝 Contributing
+-   BGE
+-   Nomic
+-   E5
 
-Contributions are welcome.
+## Search
 
-## Getting Started
-
-1. Fork the repository
-
-```bash
-git clone https://github.com/yourusername/search-engine.git
-```
-
-2. Create a new branch
-
-```bash
-git checkout -b feature/new-feature
-```
-
-3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Commit your changes
-
-```bash
-git commit -m "Add new feature"
-```
-
-5. Push your branch
-
-```bash
-git push origin feature/new-feature
-```
-
-6. Open a Pull Request
-
----
-
-## Contribution Guidelines
-
-Please ensure that:
-
-- Code follows PEP 8.
-- Functions include type hints where appropriate.
-- New modules include comments or docstrings.
-- Pull requests are focused on a single feature or bug fix.
-
----
-
-# 📜 License
-
-This project is licensed under the MIT License.
-
----
-
-⭐ If you find this project useful, consider starring the repository.
+-   BM25
+-   FAISS / Qdrant / Milvus
