@@ -10,7 +10,7 @@ import os
 import json
 import hashlib
 import xml.etree.ElementTree as ET
-
+from transformers import pipeline
 
 
 SITEMAP_PATH = "sitemap.xml"
@@ -120,8 +120,8 @@ async def main():
         
     )
 
-    os.makedirs("markdown", exist_ok=True)
-    os.makedirs("json", exist_ok=True)
+    os.makedirs("data/raw/markdown", exist_ok=True)
+    os.makedirs("data/raw/json", exist_ok=True)
 
     async with AsyncWebCrawler(config=browser_config) as crawler:
         async for result in await crawler.arun_many(
@@ -157,13 +157,15 @@ async def main():
                 result.url.encode()
             ).hexdigest()
 
+            classifier = pipeline("text-classification", model="distilbert/distilroberta-base")
+
             
 
             # ---------------------------
             # Save Markdown
             # ---------------------------
             with open(
-                f"markdown/{filename}.md",
+                f"data/raw/markdown/{filename}.md",
                 "w",
                 encoding="utf-8",
             ) as f:
@@ -184,7 +186,7 @@ async def main():
             }
 
             with open(
-                f"json/{filename}.json",
+                f"data/raw/json/{filename}.json",
                 "w",
                 encoding="utf-8",
             ) as f:

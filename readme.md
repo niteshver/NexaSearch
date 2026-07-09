@@ -1,6 +1,4 @@
-# AI Search Engine / Domain Search Pipeline
-
-> Corrected architecture based on your notes and our discussions.
+# NexaSearch 
 
 ``` text
 Seed Sources
@@ -76,7 +74,13 @@ Indexing
 Search / RAG / Fine-tuning
 ```
 
-# Corrections to your notes
+# Project Workflow
+
+## 0. Domain
+- AI
+- Programming
+- Research Papers
+- Official Documentation
 
 ## 1. Seed Collection
 
@@ -262,7 +266,6 @@ Combine:
 
 ## Embeddings
 
--   BGE
 -   Nomic
 -   E5
 
@@ -270,3 +273,147 @@ Combine:
 
 -   BM25
 -   FAISS / Qdrant / Milvus
+
+## Final Architecture 
+
+``` bash
+                 Seed Collection
+                        │
+                        ▼
+                 URL Frontier
+                        │
+                        ▼
+          Crawl4AI (BFS / Adaptive)
+                        │
+                        ▼
+                  Raw HTML Storage
+                        │
+                        ▼
+          Trafilatura Content Extraction
+                        │
+                        ▼
+               Text Cleaning Pipeline
+                        │
+        ┌───────────────┼───────────────┐
+        ▼               ▼               ▼
+  PII Removal    Language Detection  Metadata
+        │               │               │
+        └───────────────┴───────────────┘
+                        ▼
+              URL Canonicalization
+                        ▼
+        Exact Duplicate (SHA256)
+                        ▼
+   Near Duplicate (MinHash + LSH)
+                        ▼
+         DistilBERT Quality Filter
+                        ▼
+          Topic Classification
+                        ▼
+                 Chunk Documents
+                        ▼
+        Store (Parquet / DuckDB)
+                        ▼
+          Embedding Generation
+                        ▼
+      BM25 + Vector + Metadata Index
+                        ▼
+              Hybrid Search Engine
+                        ▼
+             LLM Re-ranking
+                        ▼
+              Final AI Response
+
+```
+
+## 2nd architecture (Hybrid Architecture)
+
+``` bash
+
+                      Seed URLs
+                           │
+                           ▼
+                  URL Normalization
+                           │
+                           ▼
+                    URL Frontier
+                           │
+                           ▼
+                    robots.txt Check
+                           │
+                           ▼
+                 Adaptive Scheduler
+                           │
+                           ▼
+                 URL Hash / Visited DB
+                           │
+                           ▼
+                  Crawl4AI Workers
+                           │
+                           ▼
+                    Raw HTML Store
+                           │
+            ┌──────────────┴──────────────┐
+            ▼                             ▼
+     Link Extraction               Trafilatura
+            │                             │
+            ▼                             ▼
+      Link Graph                  Clean Markdown
+            │                             │
+            └──────────────┬──────────────┘
+                           ▼
+                 Metadata Extraction
+                           │
+                           ▼
+               FastText Language Detection
+                           │
+                           ▼
+                  PII Detection/Removal
+                           │
+                           ▼
+                  URL Canonicalization
+                           │
+                           ▼
+               SHA-256 Exact Deduplication
+                           │
+                           ▼
+                 MinHash + LSH Near Dedup
+                           │
+                           ▼
+              DistilBERT Quality Classifier
+                           │
+                           ▼
+             Document/Topic Classification
+                           │
+                           ▼
+                     Chunk Generation
+                           │
+                           ▼
+            Chunk Metadata + Document IDs
+                           │
+                           ▼
+                 DuckDB + Parquet Storage
+                           │
+                           ▼
+               Dense Embedding Generation
+                           │
+                  ┌────────┴────────┐
+                  ▼                 ▼
+             BM25 Index      Vector Index
+                  │                 │
+                  └────────┬────────┘
+                           ▼
+                  Hybrid Retrieval
+                           │
+                           ▼
+                  Cross-Encoder Reranker
+                           │
+                           ▼
+                     LLM Generation
+                           │
+                           ▼
+                    Citation Generator
+                           │
+                           ▼
+                    Final AI Response
+```
