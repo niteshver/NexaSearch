@@ -616,3 +616,88 @@ NexaSearch/
 │
 └── logs/
 ```
+
+## Duplicate selection pipeline
+
+``` bash
+                Crawl Page
+                     │
+                     ▼
+          Extract Main Content
+                     │
+         Normalize & Canonicalize
+                     │
+                     ▼
+               SHA-256 Check
+             (Exact Duplicate)
+                     │
+             Duplicate? Skip
+                     │
+                     ▼
+        Create Shingles (2/3/5-grams)
+                     │
+                     ▼
+             MinHash Signature
+                     │
+                     ▼
+             Split into Bands
+                     │
+                     ▼
+             LSH Bucketing
+                     │
+                     ▼
+          Candidate Documents
+                     │
+                     ▼
+      Exact Jaccard Similarity
+                     │
+        Near Duplicate?
+            │             │
+          Yes           No
+          Skip         Index
+```
+
+## Inverted Index (Two Parts)
+``` bash
+Dictionary
+
+python
+java
+awesome
+fast
+is
+      │
+      ▼
+-------------------------
+Posting Lists
+
+python  → [1,3]
+
+java    → [2]
+
+awesome → [1,2]
+
+fast    → [3]
+
+is      → [1,2,3]
+
+```
+### Complete Posting list 
+After Term Frequency, Document Frequency (NO. OF DOCUMENT CONTAIN A WORD )and Positional Index 
+
+#### POSTING index will be :-
+``` bash
+
+python
+
+↓
+
+Doc1
+
+TF = 5
+
+Positions = (3, 18, 27, 40, 52)
+
+Field = Title
+```
+

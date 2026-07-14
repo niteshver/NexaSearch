@@ -101,7 +101,7 @@ async def main():
 
 
     score = KeywordRelevanceScorer(
-        keywords = ["Agent", "agent", "system", "ai", "AI", "ml", "ML"],
+        keywords = ["Agent", "agent", "system", "ai", "AI", "ml", "ML"].lower,
         weight=0.6
     )
     # dispatcher = MemoryAdaptiveDispatcher(
