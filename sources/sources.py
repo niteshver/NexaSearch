@@ -1,6 +1,5 @@
-# List of sources where data can be crawled
-
 SOURCES = {
+
     "python": [
         "docs.python.org",
         "pypi.org",
@@ -19,4 +18,5 @@ SOURCES = {
         "openreview.net",
         "aclanthology.org",
     ],
+
 }
