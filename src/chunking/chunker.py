@@ -13,7 +13,7 @@ class DocumentChunker:
         """
         url = doc.get("url", "")
         title = doc.get("title", "") or "Untitled Page"
-        text = doc.get("markdown", "") or doc.get("text", "")
+        text = doc.get("text", "") or doc.get("markdown", "")
         doc_id = doc.get("id") or hashlib.md5(url.encode()).hexdigest()
         doc_metadata = doc.get("metadata", {})
 
