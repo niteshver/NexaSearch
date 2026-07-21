@@ -12,7 +12,7 @@ ROOT_DIR = Path(__file__).resolve().parents[2]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from src.crawler.sitemap import SOURCES
+from src.seeder.sources import SOURCES
 
 
 OUTPUT_XML = "data/raw/sitemap/master_seed.xml"
@@ -89,13 +89,9 @@ async def discover_urls():
 
     async with seeder:
 
-        for source_name, domains in SOURCES.items():
-
-            config = SeedingConfig(
-                source="sitemap",
-                pattern="*",
-                filter_nonsense_urls=True,
-            )
+        for source_name, source_info in SOURCES.items():
+            domains = source_info["domains"]
+            config = source_info["config"]
 
             for domain in domains:
 

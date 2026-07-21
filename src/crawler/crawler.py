@@ -1,291 +1,216 @@
-## Import Data
-from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
-from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator, ProxyConfig
 import asyncio
-from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
-from crawl4ai import AsyncWebCrawler, AdaptiveCrawler
-from crawl4ai.content_filter_strategy import PruningContentFilter
-from crawl4ai import CrawlerMonitor, DisplayMode
-from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
-from crawl4ai import SeedingConfig, async_url_seeder
-from sitemap import SOURCES
 import os
 import json
 import hashlib
+import sys
+from pathlib import Path
+from datetime import datetime
+from typing import List, Dict, Any, Optional
+
 import aiohttp
 import xml.etree.ElementTree as ET
-from pathlib import Path
-from transformers import pipeline
 
+from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
+from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator, ProxyConfig
+from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
+from crawl4ai import AsyncWebCrawler, CrawlerMonitor, DisplayMode
+from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
+from crawl4ai.content_filter_strategy import PruningContentFilter
 
+# Add root to path for local imports
+ROOT_DIR = Path(__file__).resolve().parents[2]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
-SITEMAP_PATH = Path(__file__).resolve().parents[2] / "data/raw/sitemap/master_seed.xml"
-# adpative = AdaptiveCrawler()
+from src.config.settings import settings
+from src.crawler.logger import logger
+from src.crawler.models import RawDocument
+from src.crawler.robots import RobotsParser
+from src.crawler.utils import canonicalize_url
 
+class CrawlerManager:
+    def __init__(self, keywords: List[str] = None, max_pages: int = None, max_depth: int = None):
+        self.keywords = keywords or settings.keywords_list
+        self.max_pages = max_pages or settings.CRAWL_MAX_PAGES
+        self.max_depth = max_depth or settings.CRAWL_MAX_DEPTH
+        self.robots_parser = RobotsParser()
 
-def select_markdown_text(result):
-    """Prefer filtered markdown, then cited markdown, then raw markdown."""
-    if not result.markdown:
+    def select_markdown_text(self, result) -> str:
+        """Prefer filtered markdown, then cited markdown, then raw markdown."""
+        if not result.markdown:
+            return ""
+
+        candidates = [
+            result.markdown.fit_markdown,
+            result.markdown.markdown_with_citations,
+            result.markdown.raw_markdown,
+        ]
+        for candidate in candidates:
+            if candidate and candidate.strip():
+                return candidate
         return ""
 
-    candidates = [
-        result.markdown.fit_markdown,
-        result.markdown.markdown_with_citations,
-        result.markdown.raw_markdown,
-    ]
-    for candidate in candidates:
-        if candidate and candidate.strip():
-            return candidate
-    return ""
+    def has_crawl_error(self, result, markdown_text: str) -> bool:
+        error_markers = [
+            result.error_message or "",
+            result.cleaned_html or "",
+            markdown_text or "",
+        ]
+        return any("Crawl4AI Error:" in marker for marker in error_markers)
 
+    async def crawl(self, urls: List[str]) -> List[Dict[str, Any]]:
+        """
+        Crawl a list of URLs concurrently using Crawl4AI.
+        """
+        # Ensure outputs directories exist
+        os.makedirs(settings.absolute_db_path.parent / "raw/markdown", exist_ok=True)
+        os.makedirs(settings.absolute_db_path.parent / "raw/json", exist_ok=True)
 
-def has_crawl_error(result, markdown_text):
-    error_markers = [
-        result.error_message or "",
-        result.cleaned_html or "",
-        markdown_text or "",
-    ]
-    return any("Crawl4AI Error:" in marker for marker in error_markers)
+        # 1. Filter URLs by robots.txt compliance
+        compliant_urls = []
+        for url in urls:
+            if await self.robots_parser.is_allowed(url):
+                compliant_urls.append(url)
+            else:
+                logger.warning(f"URL skipped due to robots.txt restrictions: {url}")
+        
+        if not compliant_urls:
+            logger.warning("No URLs remaining after robots.txt check.")
+            return []
 
+        logger.info(f"Crawling {len(compliant_urls)} URLs with Crawl4AI...")
 
-def load_urls_from_sitemap(sitemap_path):
-    """Load all <loc> URLs from a sitemap.xml file."""
+        browser_config = BrowserConfig(
+            headless=True,
+            verbose=False
+        )
+
+        markdown_generator = DefaultMarkdownGenerator(
+            content_filter=PruningContentFilter(
+                threshold=settings.PRUNING_THRESHOLD
+            ),
+            options={
+                "ignore_links": True
+            }
+        )
+
+        # Build keywords scorer (lower-case list)
+        lowercase_keywords = [k.lower() for k in self.keywords]
+        score = KeywordRelevanceScorer(
+            keywords=lowercase_keywords,
+            weight=0.6
+        )
+
+        strategy = BFSDeepCrawlStrategy(
+            max_depth=self.max_depth,
+            include_external=False,
+            url_scorer=score,
+            max_pages=self.max_pages
+        )
+
+        dispatcher = MemoryAdaptiveDispatcher(
+            memory_threshold_percent=90.0,
+            check_interval=1.0,
+            max_session_permit=settings.CRAWL_CONCURRENT,
+            rate_limiter=RateLimiter(
+                base_delay=(1.0, 2.0),
+                max_delay=30.0,
+                max_retries=settings.MAX_RETRIES
+            ),
+            monitor=CrawlerMonitor(
+                urls_total=len(compliant_urls),
+                refresh_rate=1.0,
+                enable_ui=False
+            )
+        )
+
+        config_run = CrawlerRunConfig(
+            wait_until=settings.WAIT_UNTIL,
+            max_retries=settings.MAX_RETRIES,
+            markdown_generator=markdown_generator,
+            deep_crawl_strategy=strategy,
+            stream=True,
+            word_count_threshold=settings.WORD_COUNT_THRESHOLD,
+            exclude_external_links=True,
+            exclude_social_media_links=True,
+            process_iframes=True,
+            remove_forms=True,
+            cache_mode=CacheMode.BYPASS,
+            magic=True
+        )
+
+        crawled_documents = []
+
+        async with AsyncWebCrawler(config=browser_config) as crawler:
+            async for result in await crawler.arun_many(
+                urls=compliant_urls,
+                config=config_run,
+                dispatcher=dispatcher,
+            ):
+                if not result.success:
+                    logger.error(f"Crawl failed for {result.url}: {result.error_message}")
+                    continue
+
+                markdown_text = self.select_markdown_text(result)
+
+                if self.has_crawl_error(result, markdown_text):
+                    logger.warning(f"Skipping page with crawl error: {result.url}")
+                    continue
+
+                metadata = result.metadata or {}
+                
+                # Canonicalize URL for naming and consistency
+                canonical_url = canonicalize_url(result.url)
+                filename = hashlib.md5(canonical_url.encode()).hexdigest()
+
+                # Save raw files to disk
+                markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                with open(markdown_path, "w", encoding="utf-8") as f:
+                    f.write(markdown_text)
+
+                doc_dict = {
+                    "id": filename,
+                    "url": result.url,
+                    "canonical_url": canonical_url,
+                    "title": metadata.get("title") or result.url,
+                    "status": result.status_code,
+                    "markdown": markdown_text,
+                    "internal_links": result.links.get("internal", []),
+                    "external_links": result.links.get("external", []),
+                    "images": result.media.get("images", []),
+                    "metadata": metadata,
+                    "crawled_at": datetime.now().isoformat()
+                }
+
+                json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                with open(json_path, "w", encoding="utf-8") as f:
+                    json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+
+                crawled_documents.append(doc_dict)
+                logger.info(f"Successfully crawled and saved raw data for: {result.url}")
+
+        return crawled_documents
+
+async def main():
+    sitemap_path = settings.BASE_DIR / "data/raw/sitemap/master_seed.xml"
+    if not sitemap_path.exists():
+        logger.error(f"Sitemap file not found: {sitemap_path}")
+        return
+
     tree = ET.parse(sitemap_path)
     root = tree.getroot()
     urls = []
-
     for loc in root.findall(".//{*}loc"):
         if loc.text and loc.text.strip():
             urls.append(loc.text.strip())
 
-    # Preserve order while removing duplicates.
-    return list(dict.fromkeys(urls))
+    if not urls:
+        logger.error(f"No URLs found in sitemap: {sitemap_path}")
+        return
 
-
-# For robot.txt
-async def external_api_fetch(urls : str) -> str:
-    """load from external links"""
-    async with aiohttp.Client_Session() as seission:
-        async with seission.post(
-            "https://api.my-service.com/scrape",
-            json={"url": urls, "render_js": True},
-            headers={"Authorization": "Bearer MY_TOKEN"},
-        ) as resp:
-            return await resp.text()
-            
-
-async def main():
-    browser_config = BrowserConfig(
-        headless=True,
-        verbose=True
-    )
-
-    markdown_generator = DefaultMarkdownGenerator(
-        content_filter=PruningContentFilter(
-            threshold=0.6
-        ),
-        options={
-            "ignore_links" : True
-        }
-    )
-
-    if not os.path.exists(SITEMAP_PATH):
-        raise FileNotFoundError(f"Could not find sitemap file: {SITEMAP_PATH}")
-
-    urls1 = load_urls_from_sitemap(SITEMAP_PATH) 
-    if not urls1:
-        raise ValueError(f"No URLs found in sitemap file: {SITEMAP_PATH}")
-
-    print(f"Loaded {len(urls1)} seed URLs from {SITEMAP_PATH}")
-
-
-
-    score = KeywordRelevanceScorer(
-        keywords = ["Agent", "agent", "system", "ai", "AI", "ml", "ML"].lower,
-        weight=0.6
-    )
-    # dispatcher = MemoryAdaptiveDispatcher(
-    #     memory_threshold_percent=95.0,
-    #     check_interval=1.0,
-    #     max_session_permit=10,
-    #     monitor=CrawlerMonitor(
-    #         max_visible_rows=15,
-    #         DisplayMode=DisplayMode.DETAILED
-
-    #     )
-    # )
-
-    
-
-    # adaptive_config = adaptive_config(
-    #     confidence_threshold = 0.8,
-    #     strategy = "embedding",
-    #     embedding_model = "ollama/nomic-embed-text:latest",
-        
-    
-        
-    # )
-
-
-    strategy = BFSDeepCrawlStrategy(
-        max_depth= 2,
-        include_external=False,
-        url_scorer=score,
-        max_pages=25
-
-    )
-    dispatcher = MemoryAdaptiveDispatcher(
-    memory_threshold_percent=90.0,  # Pause if memory exceeds this
-    check_interval=1.0,             # How often to check memory
-    max_session_permit=10,          # Maximum concurrent tasks
-    rate_limiter=RateLimiter(       # Optional rate limiting
-        base_delay=(1.0, 2.0),
-        max_delay=30.0,
-        max_retries=2
-    ),
-    # monitor=CrawlerMonitor(         # Optional monitoring
-    #     max_visible_rows=15,
-    #     display_mode=DisplayMode.DETAILED
-    # )
-    monitor=CrawlerMonitor(
-
-        urls_total=len(urls1),
-        refresh_rate=1.0,
-        enable_ui=True,
-        max_width=120,
-        )
-    )
-
-    config_run = CrawlerRunConfig(
-        # magic = True,
-        wait_until="load",
-        max_retries = 3,
-        proxy_config=[
-            ProxyConfig.DIRECT,
-            ProxyConfig(
-                server="http://datacenter-proxy.example.com:8080",
-                username="user",
-                password="pass",
-            ),
-            ProxyConfig(
-                server="http://residential-proxy.example.com:9090",
-                username="user",
-                password="pass"
-            ),
-        ],
-        markdown_generator=markdown_generator,
-        deep_crawl_strategy=strategy,
-        stream=True,
-        word_count_threshold=10,
-        exclude_external_links=True,
-        exclude_social_media_links=True,
-        process_iframes=True,
-        remove_forms=True,
-        cache_mode=CacheMode.BYPASS,
-        magic=True,
-        # config = SeedingConfig(
-        #     source="sitemap+cc",     # Search sitemap + Common Crawl
-        #     extract_head=False,
-        #     max_urls=-1,             # No limit
-        #     pattern="*",
-        #     concurrency=20,
-        # )
-    
-
-        
-    )
-
-
-    os.makedirs("data/raw/markdown", exist_ok=True)
-    os.makedirs("data/raw/json", exist_ok=True)
-
-    async with AsyncWebCrawler(config=browser_config) as crawler:
-        async for result in await crawler.arun_many(
-            urls=urls1,
-            # SOURCES=SOURCES,
-            config = config_run,
-            dispatcher=dispatcher,
-        ):
-            metadata = result.metadata or {}
-            markdown_text = select_markdown_text(result)
-
-            if not result.success:
-                print(f"result failed {result.url}")
-                print(result.error_message)
-                continue
-
-            if has_crawl_error(result, markdown_text):
-                print(f"Skipping unsupported page for {result.url}")
-                print(markdown_text[:300])
-                continue
-
-            print("*" * 80)
-            print(result.url)
-            print(result.status_code)
-            print("=" * 50)
-            print("HTML Length:", len(result.html))
-            print("Clean HTML Length:", len(result.cleaned_html or ""))
-            print("Markdown Length:", len(result.markdown.raw_markdown))
-            print("Fit Markdown Length:", len(result.markdown.fit_markdown))
-            print("Saved Markdown Length:", len(markdown_text))
-
-
-            filename = hashlib.md5(
-
-                result.url.encode()
-            ).hexdigest()
-
-            classifier = pipeline("text-classification", model="distilbert/distilroberta-base")
-
-            
-
-            # ---------------------------
-            # Save Markdown
-            # ---------------------------
-            with open(
-                f"data/raw/markdown/{filename}.md",
-                "w",
-                encoding="utf-8",
-            ) as f:
-                f.write(markdown_text)
-
-            # ---------------------------
-            # Save JSON
-            # ---------------------------
-            document = {
-                "url": result.url,
-                "title": metadata.get("title"),
-                "status": result.status_code,
-                "markdown": markdown_text,
-                "internal_links": result.links.get("internal", []),
-                "external_links": result.links.get("external", []),
-                "images": result.media.get("images", []),
-                "metadata": metadata,
-            }
-
-            with open(
-                f"data/raw/json/{filename}.json",
-                "w",
-                encoding="utf-8",
-            ) as f:
-                json.dump(
-                    document,
-                    f,
-                    indent=4,
-                    ensure_ascii=False,
-                )
-
-            print("Saved Markdown")
-            print("Saved JSON")
-            print(
-                "Content Preview:\n",
-                markdown_text[:300],
-            )
-
+    logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
+    manager = CrawlerManager()
+    await manager.crawl(urls[:10])  # Crawl first 10 for test run
 
 if __name__ == "__main__":
     asyncio.run(main())
-
-
-
-    

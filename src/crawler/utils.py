@@ -51,13 +51,18 @@ def canonicalize_url(url: str) -> str:
 
     return urlunsplit((scheme, netloc, path, query, ""))
 
-from crawler.config import settings
+from src.config.settings import settings
+
+# Create directory paths
+data_dir = settings.absolute_db_path.parent
+index_dir = settings.absolute_index_dir
 
 for directory in [
-    settings.DATA_DIR,
-    settings.RAW_HTML_DIR,
-    settings.MARKDOWN_DIR,
-    settings.JSON_DIR,
-    settings.LOG_DIR,
+    data_dir,
+    data_dir / "raw",
+    data_dir / "raw/markdown",
+    data_dir / "raw/json",
+    data_dir / "raw/sitemap",
+    index_dir,
 ]:
     directory.mkdir(parents=True, exist_ok=True)

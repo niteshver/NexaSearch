@@ -4,6 +4,8 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 
 from crawl4ai import AsyncUrlSeeder, SeedingConfig
+from sources.sources import SOURCES
+
 
 
 # -------------------------------------
