@@ -1,6 +1,6 @@
 import logging
 
-from crawler.config import settings
+from src.config.settings import settings
 
 
 logging.basicConfig(

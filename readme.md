@@ -1013,3 +1013,45 @@ LLM
           ▼
 Final Answer
 ```
+
+## Vertical search Enigne
+
+``` bash
+Raw HTML
+      │
+      ▼
+Encoding Detection
+      │
+      ▼
+Content Extraction
+      │
+      ▼
+HTML Cleaning
+      │
+      ▼
+Metadata Extraction
+      │
+      ▼
+Language Detection
+      │
+      ▼
+Canonicalization
+      │
+      ▼
+Duplicate Detection
+      │
+      ▼
+Quality Filtering
+      │
+      ▼
+Tokenization
+      │
+      ▼
+Normalization
+      │
+      ▼
+Chunking
+      │
+      ▼
+CleanDocument
+```
