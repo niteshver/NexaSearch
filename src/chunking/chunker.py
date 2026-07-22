@@ -1,11 +1,16 @@
 import hashlib
+import re
 from typing import List, Dict, Any
 from src.config.settings import settings
 
 class DocumentChunker:
     def __init__(self, chunk_size: int = None, chunk_overlap: int = None):
-        self.chunk_size = chunk_size or settings.CHUNK_SIZE
-        self.chunk_overlap = chunk_overlap or settings.CHUNK_OVERLAP
+        self.chunk_size = settings.CHUNK_SIZE if chunk_size is None else chunk_size
+        self.chunk_overlap = settings.CHUNK_OVERLAP if chunk_overlap is None else chunk_overlap
+        if self.chunk_size <= 0:
+            raise ValueError("chunk_size must be greater than zero")
+        if not 0 <= self.chunk_overlap < self.chunk_size:
+            raise ValueError("chunk_overlap must be between zero and chunk_size - 1")
 
     def chunk_document(self, doc: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
@@ -118,5 +123,3 @@ class DocumentChunker:
         for doc in documents:
             all_chunks.extend(self.chunk_document(doc))
         return all_chunks
-
-import re

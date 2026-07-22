@@ -5,9 +5,9 @@ from src.crawler.logger import logger
 
 class QualityFilter:
     def __init__(self, threshold: float = None, min_words: int = None, max_words: int = None):
-        self.threshold = threshold or settings.QUALITY_THRESHOLD
-        self.min_words = min_words or settings.MIN_WORD_COUNT
-        self.max_words = max_words or settings.MAX_WORD_COUNT
+        self.threshold = settings.QUALITY_THRESHOLD if threshold is None else threshold
+        self.min_words = settings.MIN_WORD_COUNT if min_words is None else min_words
+        self.max_words = settings.MAX_WORD_COUNT if max_words is None else max_words
         self.use_ml = settings.USE_DISTILBERT_CLASSIFIER
         self.classifier = None
 

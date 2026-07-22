@@ -2,29 +2,20 @@ import asyncio
 import os
 import json
 import hashlib
-import sys
-from pathlib import Path
 from datetime import datetime
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 
-import aiohttp
 import xml.etree.ElementTree as ET
 
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
-from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator, ProxyConfig
+from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator
 from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
-from crawl4ai import AsyncWebCrawler, CrawlerMonitor, DisplayMode
+from crawl4ai import AsyncWebCrawler, CrawlerMonitor
 from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
 
-# Add root to path for local imports
-ROOT_DIR = Path(__file__).resolve().parents[2]
-if str(ROOT_DIR) not in sys.path:
-    sys.path.insert(0, str(ROOT_DIR))
-
 from src.config.settings import settings
 from src.crawler.logger import logger
-from src.crawler.models import RawDocument
 from src.crawler.robots import RobotsParser
 from src.crawler.utils import canonicalize_url
 

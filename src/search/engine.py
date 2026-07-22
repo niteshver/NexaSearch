@@ -1,7 +1,7 @@
 import os
 import re
 import numpy as np
-from typing import List, Dict, Any, Tuple
+from typing import List, Dict, Any
 from src.config.settings import settings
 from src.crawler.logger import logger
 from src.search.bm25_index import BM25Index

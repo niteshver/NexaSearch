@@ -1,4 +1,3 @@
-import pytest
 from src.quality.quality_filter import QualityFilter
 
 def test_quality_filter_length():

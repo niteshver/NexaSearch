@@ -1,5 +1,5 @@
 import time
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 from src.config.settings import settings
 from src.crawler.logger import logger
 from src.crawler.crawler import CrawlerManager

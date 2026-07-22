@@ -1,7 +1,6 @@
 import json
 import os
-from pathlib import Path
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 import duckdb
 from src.config.settings import settings
 from src.crawler.logger import logger
@@ -166,6 +165,6 @@ class DuckDBStore:
         if self.conn:
             try:
                 self.conn.close()
-            except:
+            except Exception:
                 pass
             self.conn = None

@@ -1,4 +1,3 @@
-import pytest
 from src.processing.deduplication import DeduplicationPipeline
 
 def test_exact_deduplication():

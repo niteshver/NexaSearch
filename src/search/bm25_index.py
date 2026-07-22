@@ -80,6 +80,16 @@ class BM25Index:
             if score > 0.0:  # Only return matching documents
                 ranked_results.append((self.chunks[idx], float(score)))
 
+        # BM25Okapi assigns zero IDF in very small corpora. Preserve exact
+        # token matches so a one-document index remains searchable.
+        if not ranked_results:
+            query_tokens = set(tokenized_query)
+            ranked_results = [
+                (self.chunks[idx], float(score))
+                for idx, score in enumerate(scores)
+                if query_tokens.intersection(self.tokenized_corpus[idx])
+            ]
+
         # Sort by score descending
         ranked_results.sort(key=lambda x: x[1], reverse=True)
         return ranked_results[:top_k]

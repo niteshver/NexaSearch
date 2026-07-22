@@ -1,50 +1,28 @@
 import hashlib
-from hashlib import 
-import os
-def get_relevent(folder_path):
-    seen_hashes = {}
-    duplicate_remoal = 0
-    if not os.path.exists(folder_path):
-        raise ValueError("file koni")
-    
-    for file_name in os.listdir(folder_path):
-        full_path = os.path.join(folder_path, file_name)
-
-        if os.path.isfile(full_path):
-
-            sha_256 = hashlib.sha256()
-            
-
-            with open(full_path, "rb") as f:
-                while chr:= f.read(8169):
-                    sha_256.update(chr)
-
-                file_hash = sha_256.hexdigest()
-
-                if file_hash in seen_hashes:
-                    print(f" Duplicate found {file_name} is identical to {os.path.basename(seen_hashes[seen_hashes])}")
-
-                    os.remove(full_path)
-                    duplicate_remoal  += 1
-                    print(f"Total duplicate{duplicate_remoal}")
-
-                else:
-                    seen_hashes[file_name] = full_path
-                    print("Duplicate not found")
+from collections import defaultdict
+from pathlib import Path
+from typing import Dict, List
 
 
-            print(f" file name {file_name}")
-           
-target_folder = "/Users/niteshv1520/NexaSearch/data/raw/markdown"
-get_relevent(target_folder)
+def find_duplicate_files(folder_path: str | Path) -> Dict[str, List[Path]]:
+    """Return groups of duplicate files without modifying the filesystem."""
+    folder = Path(folder_path)
+    if not folder.is_dir():
+        raise ValueError(f"Directory does not exist: {folder}")
 
+    files_by_hash: Dict[str, List[Path]] = defaultdict(list)
+    for file_path in sorted(folder.iterdir()):
+        if not file_path.is_file():
+            continue
 
+        digest = hashlib.sha256()
+        with file_path.open("rb") as file_handle:
+            for block in iter(lambda: file_handle.read(8192), b""):
+                digest.update(block)
+        files_by_hash[digest.hexdigest()].append(file_path)
 
-        
-
-            
-
-        
-
-
-
+    return {
+        file_hash: paths
+        for file_hash, paths in files_by_hash.items()
+        if len(paths) > 1
+    }

@@ -2,14 +2,17 @@
 name = "Search-Engine"
 version = "0.1.0"
 description = "Search Engine for a specific domain (AI, Coding, Research Paper)"
-readme = "reame.md"
+readme = "readme.md"
 requires-python = ">=3.14"
 dependencies = [
     "crawl4ai>=0.9.1",
     "duckdb>=1.5.4",
     "matplotlib>=3.11.1",
+    "numpy>=2.4.0",
     "pandas>=3.0.3",
     "pydantic-settings>=2.14.2",
+    "rank-bm25>=0.2.2",
+    "requests>=2.32.0",
     "seaborn>=0.13.2",
     "sentence-transformers>=5.6.0",
     "streamlit>=1.59.2",
@@ -21,3 +24,7 @@ dependencies = [
 dev = [
     "pytest>=9.1.1",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

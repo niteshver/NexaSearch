@@ -1,7 +1,6 @@
 import re
 import unicodedata
 from urllib.parse import urlparse
-from src.config.settings import settings
 
 class TextCleaner:
     def __init__(self):

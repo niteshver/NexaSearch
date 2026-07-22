@@ -1,4 +1,3 @@
-import pytest
 from src.processing.cleaner import TextCleaner
 
 def test_cleaner_html_stripping():

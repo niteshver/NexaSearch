@@ -2,7 +2,6 @@ import pytest
 import os
 import shutil
 from src.search.bm25_index import BM25Index
-from src.search.engine import SearchEngine
 
 @pytest.fixture
 def temp_index_dir():
@@ -41,3 +40,20 @@ def test_bm25_indexing(temp_index_dir):
     
     res_load = new_index.search("programming language")
     assert res_load[0][0]["chunk_id"] == "c1"
+
+
+def test_bm25_searches_a_single_document_index():
+    index = BM25Index()
+    index.index_documents([
+        {
+            "chunk_id": "only",
+            "text": "Python programming language guide.",
+            "title": "Python page",
+            "url": "url1",
+            "heading": "Intro",
+        }
+    ])
+
+    results = index.search("python")
+
+    assert results[0][0]["chunk_id"] == "only"

@@ -1,7 +1,6 @@
 from pathlib import Path
 from typing import List
-from pydantic import Field
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings, DotEnvSettingsSource, SettingsConfigDict
 
 class Settings(BaseSettings):
     PROJECT_NAME: str = "NexaSearch"
@@ -54,10 +53,35 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: str = ""
 
     model_config = SettingsConfigDict(
+        env_prefix="NEXASEARCH_",
         env_file=".env",
         env_file_encoding="utf-8",
         extra="ignore"
     )
+
+    @classmethod
+    def settings_customise_sources(
+        cls,
+        settings_cls,
+        init_settings,
+        env_settings,
+        dotenv_settings,
+        file_secret_settings,
+    ):
+        # Keep the existing unprefixed .env file working while isolating
+        # runtime configuration from unrelated shell variables such as DEBUG.
+        legacy_dotenv_settings = DotEnvSettingsSource(
+            settings_cls,
+            env_file=".env",
+            env_file_encoding="utf-8",
+            env_prefix="",
+        )
+        return (
+            init_settings,
+            env_settings,
+            legacy_dotenv_settings,
+            file_secret_settings,
+        )
 
     @property
     def keywords_list(self) -> List[str]:

@@ -1,4 +1,7 @@
 import hashlib
+from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
+
+from src.config.settings import settings
 
 
 def sha256(text: str) -> str:
@@ -7,8 +10,6 @@ def sha256(text: str) -> str:
         text.encode("utf-8")
     ).hexdigest()
 
-
-from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
 TRACKING_PARAMS = {
     "utm_source",
@@ -50,8 +51,6 @@ def canonicalize_url(url: str) -> str:
     )
 
     return urlunsplit((scheme, netloc, path, query, ""))
-
-from src.config.settings import settings
 
 # Create directory paths
 data_dir = settings.absolute_db_path.parent

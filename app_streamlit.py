@@ -1,10 +1,8 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
 import time
-import os
 import sys
-import json
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 # Add root to sys.path
@@ -199,7 +197,6 @@ elif page == "🚀 Build Index":
                     resp = requests.get(sitemap_input, timeout=10)
                     root = ET.fromstring(resp.content)
                 else:
-                    import xml.etree.ElementTree as ET
                     tree = ET.parse(sitemap_input)
                     root = tree.getroot()
                 
