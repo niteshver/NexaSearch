@@ -4,7 +4,7 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 
 from crawl4ai import AsyncUrlSeeder, SeedingConfig
-from sources.sources import SOURCES
+from sources.sources import Sources
 
 
 
@@ -22,7 +22,7 @@ async def discover_urls():
         source="sitemap+cc",
         extract_head=False,
         filter_nonsense_urls=True,
-        max_urls=-1,
+        max_urls=10_000,
         concurrency=20,
     )
 
@@ -30,7 +30,7 @@ async def discover_urls():
 
     async with AsyncUrlSeeder() as seeder:
 
-        for category, domains in SOURCES.items():
+        for category, domains in Sources.items():
 
             print(f"\nDiscovering {category} websites...")
 

@@ -1,5 +1,7 @@
 {
+    "id": "b48f8bb27102e2674d2f21094b946794",
     "url": "https://aclanthology.org/",
+    "canonical_url": "https://aclanthology.org/",
     "title": "ACL Anthology",
     "status": 200,
     "markdown": "###### ACL Events  \n| Venue  | 2026 – 2020  | 2019 – 2010  | 2009 – 2000  | 1999 – 1990  | 1989 and older  |  \n| --- | --- | --- | --- | --- | --- |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n| SIGs  |  ANN | ARAB | BIOMED | DAT | DIAL | EDU | EL | FinTech | FSM | GEN | HAN | HUM | LEX | MEDIA | MOL | MORPHON | MT | NLL | PARSE | REP | SEA | SEC | SEM | SEMITIC | SLAV | SLPAT | SLT | SUMM | Turk | TYP | UL | UR | WAC | Writ  |  \n###### Non-ACL Events  \n| Venue  | 2026 – 2020  | 2019 – 2010  | 2009 – 2000  | 1999 – 1990  | 1989 and older  |  \n| --- | --- | --- | --- | --- | --- |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |  \n |\n",
@@ -18,7 +20,7 @@
         },
         {
             "href": "https://aclanthology.org/posts/",
-            "text": "News(current)",
+            "text": "Announcements",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -29,8 +31,8 @@
             "total_score": null
         },
         {
-            "href": "https://aclanthology.org/faq/",
-            "text": "FAQ(current)",
+            "href": "https://aclanthology.org/faq/news/",
+            "text": "Communication channels",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -41,8 +43,8 @@
             "total_score": null
         },
         {
-            "href": "https://aclanthology.org/info/corrections/",
-            "text": "Corrections(current)",
+            "href": "https://aclanthology.org/faq/related-work/",
+            "text": "Related work",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -53,8 +55,8 @@
             "total_score": null
         },
         {
-            "href": "https://aclanthology.org/info/contrib/",
-            "text": "Submissions(current)",
+            "href": "https://aclanthology.org/faq/copyright/",
+            "text": "Copyright",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -65,8 +67,8 @@
             "total_score": null
         },
         {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Info for authors",
+            "href": "https://aclanthology.org/info/credits/",
+            "text": "Credits",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -77,8 +79,20 @@
             "total_score": null
         },
         {
-            "href": "https://aclanthology.org/faq/api/",
-            "text": "Access data",
+            "href": "https://aclanthology.org/faq/volunteer/",
+            "text": "Volunteer",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/development/",
+            "text": "Development",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -90,7 +104,163 @@
         },
         {
             "href": "https://aclanthology.org/faq/feedback/",
-            "text": "Give feedback",
+            "text": "Feedback",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/faq/bib/",
+            "text": "Citing papers",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/faq/linking/",
+            "text": "Links in the Anthology",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/faq/api/",
+            "text": "Data access",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/faq/",
+            "text": "All FAQs",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/ids/",
+            "text": "Anthology identifiers",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/names/",
+            "text": "Names",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/orcid/",
+            "text": "ORCID iDs",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/faq/doi/",
+            "text": "DOIs",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/verification/",
+            "text": "Verified authors",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/contrib/",
+            "text": "Submissions",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/corrections/",
+            "text": "Corrections",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/info/author-pages/",
+            "text": "Author pages",
+            "title": "",
+            "base_domain": "aclanthology.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://aclanthology.org/faq/attachments/",
+            "text": "Attachments",
             "title": "",
             "base_domain": "aclanthology.org",
             "head_data": null,
@@ -9963,18 +10133,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/credits/",
-            "text": "ACL Anthology team",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -9986,5 +10144,6 @@
         "author": null,
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
-    }
+    },
+    "crawled_at": "2026-07-24T20:42:36.410874"
 }

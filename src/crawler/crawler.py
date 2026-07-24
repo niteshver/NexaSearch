@@ -13,6 +13,7 @@ from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
 from crawl4ai import AsyncWebCrawler, CrawlerMonitor
 from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
+from crawl4ai.processors.pdf import PDFCrawlerStrategy, PDFContentScrapingStrategy
 
 from src.config.settings import settings
 from src.crawler.logger import logger
@@ -49,6 +50,8 @@ class CrawlerManager:
         ]
         return any("Crawl4AI Error:" in marker for marker in error_markers)
 
+    
+
     async def crawl(self, urls: List[str]) -> List[Dict[str, Any]]:
         """
         Crawl a list of URLs concurrently using Crawl4AI.
@@ -56,6 +59,9 @@ class CrawlerManager:
         # Ensure outputs directories exist
         os.makedirs(settings.absolute_db_path.parent / "raw/markdown", exist_ok=True)
         os.makedirs(settings.absolute_db_path.parent / "raw/json", exist_ok=True)
+        os.makedirs(settings.absolute_db_path.parent / "raw/pdf", exist_ok=True)
+
+        crawled_documents = []
 
         # 1. Filter URLs by robots.txt compliance
         compliant_urls = []
@@ -111,10 +117,16 @@ class CrawlerManager:
             monitor=CrawlerMonitor(
                 urls_total=len(compliant_urls),
                 refresh_rate=1.0,
-                enable_ui=False
+                enable_ui=True                 # Allow Crawling to display
             )
         )
-
+        pdf_scraping_cfg = PDFContentScrapingStrategy(
+                extract_images=True,
+                save_images_locally=True,
+                #image_save_dir=image_output_dir,
+                batch_size=2
+                )
+    
         config_run = CrawlerRunConfig(
             wait_until=settings.WAIT_UNTIL,
             max_retries=settings.MAX_RETRIES,
@@ -127,13 +139,12 @@ class CrawlerManager:
             process_iframes=True,
             remove_forms=True,
             cache_mode=CacheMode.BYPASS,
-            magic=True
+            magic=True,
+            scraping_strategy=pdf_scraping_cfg,
         )
 
-        crawled_documents = []
-
         async with AsyncWebCrawler(config=browser_config) as crawler:
-            async for result in await crawler.arun_many(
+            async for result in crawler.arun_many(
                 urls=compliant_urls,
                 config=config_run,
                 dispatcher=dispatcher,
@@ -142,7 +153,7 @@ class CrawlerManager:
                     logger.error(f"Crawl failed for {result.url}: {result.error_message}")
                     continue
 
-                markdown_text = self.select_markdown_text(result)
+                markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
 
                 if self.has_crawl_error(result, markdown_text):
                     logger.warning(f"Skipping page with crawl error: {result.url}")
@@ -158,6 +169,11 @@ class CrawlerManager:
                 markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
                 with open(markdown_path, "w", encoding="utf-8") as f:
                     f.write(markdown_text)
+
+                if hasattr(result, 'pdf_content') and result.pdf_content:
+                    pdf_path = settings.absolute_db_path.parent / f"raw/pdf/{filename}.pdf"
+                    with open(pdf_path, "wb") as f:
+                        f.write(result.pdf_content)
 
                 doc_dict = {
                     "id": filename,

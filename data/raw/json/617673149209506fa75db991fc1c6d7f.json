@@ -1,0 +1,20 @@
+{
+    "id": "617673149209506fa75db991fc1c6d7f",
+    "url": "https://aclanthology.org/2020.coling-main.349.bib",
+    "canonical_url": "https://aclanthology.org/2020.coling-main.349.bib",
+    "title": "https://aclanthology.org/2020.coling-main.349.bib",
+    "status": 200,
+    "markdown": "\n```\n@inproceedings{sanchez-cartagena-etal-2020-understanding,\n    title = \"Understanding the effects of word-level linguistic annotations in under-resourced neural machine translation\",\n    author = \"S{\\'a}nchez-Cartagena, V{\\'i}ctor M.  and\n      P{\\'e}rez-Ortiz, Juan Antonio  and\n      S{\\'a}nchez-Mart{\\'i}nez, Felipe\",\n    editor = \"Scott, Donia  and\n      Bel, Nuria  and\n      Zong, Chengqing\",\n    booktitle = \"Proceedings of the 28th International Conference on Computational Linguistics\",\n    month = dec,\n    year = \"2020\",\n    address = \"Barcelona, Spain (Online)\",\n    publisher = \"International Committee on Computational Linguistics\",\n    url = \"https://aclanthology.org/2020.coling-main.349/\",\n    doi = \"10.18653/v1/2020.coling-main.349\",\n    pages = \"3938--3950\"\n}\n\n\n```\n\n",
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "https://aclanthology.org/people/felipe-sanchez-martinez/"
+    },
+    "crawled_at": "2026-07-24T20:42:54.651203"
+}

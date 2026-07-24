@@ -1,0 +1,20 @@
+{
+    "id": "586506659aa7d5f2017c40565a75524d",
+    "url": "https://aclanthology.org/2021.emnlp-main.669.bib",
+    "canonical_url": "https://aclanthology.org/2021.emnlp-main.669.bib",
+    "title": "https://aclanthology.org/2021.emnlp-main.669.bib",
+    "status": 200,
+    "markdown": "\n```\n@inproceedings{sanchez-cartagena-etal-2021-rethinking,\n    title = \"Rethinking Data Augmentation for Low-Resource Neural Machine Translation: A Multi-Task Learning Approach\",\n    author = \"S{\\'a}nchez-Cartagena, V{\\'i}ctor M.  and\n      Espl{\\`a}-Gomis, Miquel  and\n      P{\\'e}rez-Ortiz, Juan Antonio  and\n      S{\\'a}nchez-Mart{\\'i}nez, Felipe\",\n    editor = \"Moens, Marie-Francine  and\n      Huang, Xuanjing  and\n      Specia, Lucia  and\n      Yih, Scott Wen-tau\",\n    booktitle = \"Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing\",\n    month = nov,\n    year = \"2021\",\n    address = \"Online and Punta Cana, Dominican Republic\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2021.emnlp-main.669/\",\n    doi = \"10.18653/v1/2021.emnlp-main.669\",\n    pages = \"8502--8516\"\n}\n\n\n```\n\n",
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "https://aclanthology.org/people/felipe-sanchez-martinez/"
+    },
+    "crawled_at": "2026-07-23T22:36:07.345072"
+}
