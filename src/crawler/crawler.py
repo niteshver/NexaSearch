@@ -13,7 +13,8 @@ from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
 from crawl4ai import AsyncWebCrawler, CrawlerMonitor
 from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
-from crawl4ai.processors.pdf import PDFCrawlerStrategy, PDFContentScrapingStrategy
+from crawl4ai.processors.pdf import  PDFContentScrapingStrategy
+from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 
 from src.config.settings import settings
 from src.crawler.logger import logger
@@ -126,8 +127,9 @@ class CrawlerManager:
                 #image_save_dir=image_output_dir,
                 batch_size=2
                 )
-    
-        config_run = CrawlerRunConfig(
+        pdf_config = CrawlerRunConfig(
+            url_matcher=urls,  # ADD: URL matcher
+            scraping_strategy=pdf_scraping_cfg,  # ADD: PDF strategy
             wait_until=settings.WAIT_UNTIL,
             max_retries=settings.MAX_RETRIES,
             markdown_generator=markdown_generator,
@@ -140,13 +142,28 @@ class CrawlerManager:
             remove_forms=True,
             cache_mode=CacheMode.BYPASS,
             magic=True,
-            scraping_strategy=pdf_scraping_cfg,
+        )
+    
+        config_run = CrawlerRunConfig(
+            scraping_strategy=LXMLWebScrapingStrategy(),
+            wait_until=settings.WAIT_UNTIL,
+            max_retries=settings.MAX_RETRIES,
+            markdown_generator=markdown_generator,
+            deep_crawl_strategy=strategy,
+            stream=True,
+            word_count_threshold=settings.WORD_COUNT_THRESHOLD,
+            exclude_external_links=True,
+            exclude_social_media_links=True,
+            process_iframes=True,
+            remove_forms=True,
+            cache_mode=CacheMode.BYPASS,
+            magic=True,
         )
 
         async with AsyncWebCrawler(config=browser_config) as crawler:
-            async for result in crawler.arun_many(
+            async for result in await crawler.arun_many(
                 urls=compliant_urls,
-                config=config_run,
+                config=[pdf_config,config_run],
                 dispatcher=dispatcher,
             ):
                 if not result.success:
@@ -165,7 +182,7 @@ class CrawlerManager:
                 canonical_url = canonicalize_url(result.url)
                 filename = hashlib.md5(canonical_url.encode()).hexdigest()
 
-                # Save raw files to disk
+                # Save raw files 
                 markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
                 with open(markdown_path, "w", encoding="utf-8") as f:
                     f.write(markdown_text)

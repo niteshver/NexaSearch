@@ -1,10 +1,10 @@
-Sources = {
+SOURCES = {
 
     "python": [
         "docs.python.org",
         "pypi.org",
-        "python.org",
-        "crawl4ai.com",
+        "python.org"
+        "crawl4ai.com"
     ],
 
     "ai": [
