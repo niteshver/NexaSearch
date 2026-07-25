@@ -129,9 +129,10 @@ class CrawlerManager:
                 batch_size=2
                 )
         configs = [
-                CrawlerRunConfig(
-                url_matcher="*.pdf",  # ADD: URL matcher
-                scraping_strategy=pdf_scraping_cfg,  # ADD: PDF strategy
+            CrawlerRunConfig(
+
+                url_matcher="*.pdf",  
+                scraping_strategy=pdf_scraping_cfg,  
                 wait_until=settings.WAIT_UNTIL,
                 max_retries=settings.MAX_RETRIES,
                 markdown_generator=markdown_generator,
@@ -145,23 +146,25 @@ class CrawlerManager:
                 magic=True,
                 ),
 
-                CrawlerRunConfig(
-                    url_matcher = ["*/blog/*", "*/article/*"],
-                    scraping_strategy=LXMLWebScrapingStrategy(),
-                    wait_until=settings.WAIT_UNTIL,
-                    max_retries=settings.MAX_RETRIES,
-                    markdown_generator=markdown_generator,
-                    deep_crawl_strategy=strategy,
-                    stream=True,
-                    word_count_threshold=settings.WORD_COUNT_THRESHOLD,
-                    exclude_external_links=True,
-                    exclude_social_media_links=True,
-                    process_iframes=True,
-                    remove_forms=True,
-                    cache_mode=CacheMode.BYPASS,
-                    magic=True,
-                    ),
-                    CrawlerRunConfig() 
+            CrawlerRunConfig(
+                url_matcher = ["*/blog/*", "*/article/*"],
+                scraping_strategy=LXMLWebScrapingStrategy(),
+                wait_until=settings.WAIT_UNTIL,
+                max_retries=settings.MAX_RETRIES,
+                markdown_generator=markdown_generator,
+                deep_crawl_strategy=strategy,
+                stream=True,
+                word_count_threshold=settings.WORD_COUNT_THRESHOLD,
+                exclude_external_links=True,
+                exclude_social_media_links=True,
+                process_iframes=True,
+                remove_forms=True,
+                cache_mode=CacheMode.BYPASS,
+                magic=True,
+                ),
+
+            CrawlerRunConfig()
+                 
         ]
         
 
@@ -239,7 +242,7 @@ async def main():
 
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
     manager = CrawlerManager()
-    await manager.crawl(urls[:10000])  # Crawl first 10 for test run
+    await manager.crawl(urls[:100])  # Crawl first 500 for test run
 
 if __name__ == "__main__":
     asyncio.run(main())
