@@ -1,0 +1,18 @@
+{
+    "id": "0dcca1042f0d173ed7b21f6b4bc7e9ef",
+    "url": "https://aclanthology.org/attachments/2022.aacl-main.69.Dataset.txt",
+    "canonical_url": "https://aclanthology.org/attachments/2022.aacl-main.69.Dataset.txt",
+    "title": "https://aclanthology.org/attachments/2022.aacl-main.69.Dataset.txt",
+    "status": 200,
+    "markdown": "\n```\nThe datasets used in this work are available through our Github link provided in the paper.\n```\n\n",
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null
+    },
+    "crawled_at": "2026-07-25T18:04:40.446795"
+}

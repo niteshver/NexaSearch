@@ -128,7 +128,7 @@ class CrawlerManager:
                 batch_size=2
                 )
         pdf_config = CrawlerRunConfig(
-            url_matcher=urls,  # ADD: URL matcher
+            url_matcher="*.pdf",  # ADD: URL matcher
             scraping_strategy=pdf_scraping_cfg,  # ADD: PDF strategy
             wait_until=settings.WAIT_UNTIL,
             max_retries=settings.MAX_RETRIES,

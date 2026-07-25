@@ -1,0 +1,18 @@
+{
+    "id": "8511e527dc13612bf36457d53cd775c9",
+    "url": "https://aclanthology.org/attachments/2021.ltedi-1.3.Dataset.txt",
+    "canonical_url": "https://aclanthology.org/attachments/2021.ltedi-1.3.Dataset.txt",
+    "title": "https://aclanthology.org/attachments/2021.ltedi-1.3.Dataset.txt",
+    "status": 200,
+    "markdown": "\n```\nThe data for our DE-NEW dataset was taken from Stormfront, specifically from a German-language thread within the forum. Our Scrapy web crawler crawled posts with timestamps ranging from March 03, 2006 (the first post) to July 7th, 2020. This corresponds to the first 5,410 posts within the thread, located within the first 541 pages.\n\nEach post is identified by a unique, forum-wide number contained in the URL as well as by its chronological index within the thread. The last post contained in our dataset was Post #5410. For legal reasons, we do not make our dataset public. However if you wish to use DE-NEW in your experiments, feel free to contact us.\n\nMain forum webpage: https://www.stormfront.org/\nGerman thread: https://www.stormfront.org/forum/t275156/\n\nSample posts: \nhttps://www.stormfront.org/forum/t275156-541/ (Post #5410)\nhttps://www.stormfront.org/forum/t275156-373/  (Post #3727)\n\nOur DE-NEW dataset has 6,586 samples due to the crawler splitting long posts across paragraphs and treating each paragraph as a separate text. Additionally, not all of the original 5,410 posts of the German thread made it into our dataset, as some were not written in German, consisted solely of pictures or videos, or had other formatting issues that we described in our paper.\n\n```\n\n",
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null
+    },
+    "crawled_at": "2026-07-25T17:50:44.838781"
+}

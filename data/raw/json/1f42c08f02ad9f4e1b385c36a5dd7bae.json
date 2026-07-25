@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/api",
     "title": "How can I programmatically access the Anthology's data? - ACL Anthology",
     "status": 200,
-    "markdown": "## How can I programmatically access the Anthology's data?\nThe Anthology’s data is hosted in our Github repo, which contains all the metadata for all its papers (under /data/xml) and their authors (data/yaml/people.yaml), the volumes those papers are organized into, and the real-world events that presented those volumes. The PDFs are hosted on our servers.\nAll of this data is accessible via \n\n```\npip install acl-anthology\n\n```\n\nPlease see our repository documentation or the \nYou may also be interested in learning how easy it is to cite our papers in a variety of citation formats.\n",
+    "markdown": "![ACL Logo](https://aclanthology.org/images/acl-logo.svg) ACL Anthology ⟨1⟩\n  * About⟨2⟩\n    * Announcements⟨3⟩\n    * Communication channels⟨4⟩\n    * Related work⟨5⟩\n    * Copyright⟨6⟩\n    * * * *\n    * Credits⟨7⟩\n    * Volunteer⟨8⟩\n    * Development⟨9⟩\n    * Feedback⟨10⟩\n  * Using⟨2⟩\n    * Citing papers⟨11⟩\n    * Links in the Anthology⟨12⟩\n    * Data access⟨13⟩\n    * * * *\n    * All FAQs⟨14⟩\n    * * * *\n    * ###### Details\n    * Anthology identifiers⟨15⟩\n    * Names⟨16⟩\n    * ORCID iDs⟨17⟩\n    * DOIs⟨18⟩\n    * Verified authors⟨19⟩\n  * Contributions⟨2⟩\n    * Submissions⟨20⟩\n    * Corrections⟨21⟩\n    * Author pages⟨22⟩\n    * Attachments⟨23⟩\n  * GitHub⟨24⟩\n\n\n## How can I programmatically access the Anthology's data?\n* * *\nThe Anthology’s data is hosted in our Github repo, which contains all the metadata for all its papers (under /data/xml) and their authors (data/yaml/people.yaml), the volumes those papers are organized into, and the real-world events that presented those volumes. The PDFs are hosted on our servers.\nAll of this data is accessible via the ACL Anthology Python module on PyPI⟨25⟩, which you can install with pip:\n\n```\npip install acl-anthology\n\n```\n\nPlease see our repository documentation⟨9⟩ or the Python module documentation⟨26⟩ for more information.\nYou may also be interested in learning how easy it is to cite our papers⟨11⟩ in a variety of citation formats.\n![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)⟨27⟩ ACL materials are Copyright © 1963–2026 ACL; other materials are copyrighted by their respective copyright holders. Materials prior to 2016 here are licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License⟨28⟩. Permission is granted to make copies for the purposes of teaching and research. Materials published in or after 2016 are licensed on a Creative Commons Attribution 4.0 International License⟨29⟩.\nThe ACL Anthology is managed and built by the ACL Anthology team⟨7⟩ of volunteers.\n_Site last built on 22 July 2026 at 14:46 UTC withcommit 280e4ed⟨30⟩._\n",
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -271,15 +271,98 @@
             "total_score": null
         }
     ],
-    "external_links": [],
+    "external_links": [
+        {
+            "href": "https://github.com/acl-org/acl-anthology/",
+            "text": "GitHub",
+            "title": "",
+            "base_domain": "github.com",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://pypi.org/project/acl-anthology/",
+            "text": "the ACL Anthology Python module on PyPI",
+            "title": "",
+            "base_domain": "pypi.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://acl-anthology.readthedocs.io/",
+            "text": "Python module documentation",
+            "title": "",
+            "base_domain": "readthedocs.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://creativecommons.org/licenses/by/4.0/",
+            "text": "",
+            "title": "",
+            "base_domain": "creativecommons.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+            "text": "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 International License",
+            "title": "",
+            "base_domain": "creativecommons.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://creativecommons.org/licenses/by/4.0/",
+            "text": "Creative Commons Attribution 4.0 International License",
+            "title": "",
+            "base_domain": "creativecommons.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://github.com/acl-org/acl-anthology/tree/280e4ed8cdbe7f402442e3fca6e3eba5298fa03e",
+            "text": "commit 280e4ed",
+            "title": "",
+            "base_domain": "github.com",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
     "images": [],
     "metadata": {
         "title": "How can I programmatically access the Anthology's data? - ACL Anthology",
         "description": null,
         "keywords": null,
-        "author": null,
-        "depth": 1,
-        "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
+        "author": null
     },
-    "crawled_at": "2026-07-25T09:08:38.326516"
+    "crawled_at": "2026-07-25T18:22:14.069282"
 }

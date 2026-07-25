@@ -1,0 +1,18 @@
+{
+    "id": "94abec07911b303c9c7c63aedbc4fcb3",
+    "url": "https://aclanthology.org/attachments/P14-2131.Datasets.txt",
+    "canonical_url": "https://aclanthology.org/attachments/P14-2131.Datasets.txt",
+    "title": "https://aclanthology.org/attachments/P14-2131.Datasets.txt",
+    "status": 200,
+    "markdown": "\n```\nFor the paper titled \"Tailoring Continuous Word Representations for Dependency Parsing\", ACL 2014 (short), we have made our SKIP_DEP syntactic-context embeddings and bit-strings publicly available at ttic.edu/bansal/data/syntacticEmbeddings.zip\n\nThis information and link is also provided in the conclusion section of the paper.\n\nWe haven't uploaded it here (in the camera-ready submission system) because the zip file is ~100MB in size.\n\n```\n\n",
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null
+    },
+    "crawled_at": "2026-07-25T18:16:31.613226"
+}
