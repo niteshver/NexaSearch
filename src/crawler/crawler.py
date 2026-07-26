@@ -1,23 +1,28 @@
+import aiohttp
+import PyPDF2
+import io
 import asyncio
 import os
 import json
 import hashlib
 from datetime import datetime
 from typing import List, Dict, Any
-
 import xml.etree.ElementTree as ET
 
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator
 from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
-from crawl4ai import AsyncWebCrawler, CrawlerMonitor
+from crawl4ai import AsyncWebCrawler, CrawlerMonitor, DisplayMode
 from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
+from crawl4ai.processors.pdf import PDFContentScrapingStrategy
+from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 
 from src.config.settings import settings
 from src.crawler.logger import logger
 from src.crawler.robots import RobotsParser
 from src.crawler.utils import canonicalize_url
+
 
 class CrawlerManager:
     def __init__(self, keywords: List[str] = None, max_pages: int = None, max_depth: int = None):
@@ -30,15 +35,14 @@ class CrawlerManager:
         """Prefer filtered markdown, then cited markdown, then raw markdown."""
         if not result.markdown:
             return ""
-
         candidates = [
-            result.markdown.fit_markdown,
-            result.markdown.markdown_with_citations,
-            result.markdown.raw_markdown,
+            getattr(result.markdown, 'fit_markdown', None),
+            getattr(result.markdown, 'markdown_with_citations', None),
+            getattr(result.markdown, 'raw_markdown', None),
         ]
         for candidate in candidates:
-            if candidate and candidate.strip():
-                return candidate
+            if candidate and str(candidate).strip():
+                return str(candidate)
         return ""
 
     def has_crawl_error(self, result, markdown_text: str) -> bool:
@@ -50,12 +54,14 @@ class CrawlerManager:
         return any("Crawl4AI Error:" in marker for marker in error_markers)
 
     async def crawl(self, urls: List[str]) -> List[Dict[str, Any]]:
-        """
-        Crawl a list of URLs concurrently using Crawl4AI.
-        """
-        # Ensure outputs directories exist
+        """Crawl a list of URLs. Handles both web pages and PDFs."""
+
+        # Ensure output directories exist
         os.makedirs(settings.absolute_db_path.parent / "raw/markdown", exist_ok=True)
         os.makedirs(settings.absolute_db_path.parent / "raw/json", exist_ok=True)
+        os.makedirs(settings.absolute_db_path.parent / "raw/pdf", exist_ok=True)
+
+        crawled_documents = []
 
         # 1. Filter URLs by robots.txt compliance
         compliant_urls = []
@@ -64,123 +70,218 @@ class CrawlerManager:
                 compliant_urls.append(url)
             else:
                 logger.warning(f"URL skipped due to robots.txt restrictions: {url}")
-        
+
         if not compliant_urls:
             logger.warning("No URLs remaining after robots.txt check.")
             return []
 
-        logger.info(f"Crawling {len(compliant_urls)} URLs with Crawl4AI...")
+        # 2. Separate PDFs and web URLs
+        pdf_urls = [u for u in compliant_urls if u.lower().endswith('.pdf')]
+        web_urls = [u for u in compliant_urls if not u.lower().endswith('.pdf')]
 
-        browser_config = BrowserConfig(
-            headless=True,
-            verbose=False
-        )
+        logger.info(f"Crawling {len(compliant_urls)} URLs | Web: {len(web_urls)} | PDFs: {len(pdf_urls)}")
 
-        markdown_generator = DefaultMarkdownGenerator(
-            content_filter=PruningContentFilter(
-                threshold=settings.PRUNING_THRESHOLD
-            ),
-            options={
-                "ignore_links": True
-            }
-        )
+        # ===== PHASE 1: CRAWL WEB PAGES =====
+        if web_urls:
+            logger.info(f"\n[PHASE 1] Crawling {len(web_urls)} web pages...")
 
-        # Build keywords scorer (lower-case list)
-        lowercase_keywords = [k.lower() for k in self.keywords]
-        score = KeywordRelevanceScorer(
-            keywords=lowercase_keywords,
-            weight=0.6
-        )
-
-        strategy = BFSDeepCrawlStrategy(
-            max_depth=self.max_depth,
-            include_external=False,
-            url_scorer=score,
-            max_pages=self.max_pages
-        )
-
-        dispatcher = MemoryAdaptiveDispatcher(
-            memory_threshold_percent=90.0,
-            check_interval=1.0,
-            max_session_permit=settings.CRAWL_CONCURRENT,
-            rate_limiter=RateLimiter(
-                base_delay=(1.0, 2.0),
-                max_delay=30.0,
-                max_retries=settings.MAX_RETRIES
-            ),
-            monitor=CrawlerMonitor(
-                urls_total=len(compliant_urls),
-                refresh_rate=1.0,
-                enable_ui=False
+            browser_config = BrowserConfig(
+                headless=True,
+                verbose=False
             )
-        )
 
-        config_run = CrawlerRunConfig(
-            wait_until=settings.WAIT_UNTIL,
-            max_retries=settings.MAX_RETRIES,
-            markdown_generator=markdown_generator,
-            deep_crawl_strategy=strategy,
-            stream=True,
-            word_count_threshold=settings.WORD_COUNT_THRESHOLD,
-            exclude_external_links=True,
-            exclude_social_media_links=True,
-            process_iframes=True,
-            remove_forms=True,
-            cache_mode=CacheMode.BYPASS,
-            magic=True
-        )
+            markdown_generator = DefaultMarkdownGenerator(
+                content_filter=PruningContentFilter(
+                    threshold=settings.PRUNING_THRESHOLD
+                ),
+                options={"ignore_links": True}
+            )
 
-        crawled_documents = []
+            lowercase_keywords = [k.lower() for k in self.keywords]
+            score = KeywordRelevanceScorer(
+                keywords=lowercase_keywords,
+                weight=0.6
+            )
 
-        async with AsyncWebCrawler(config=browser_config) as crawler:
-            async for result in await crawler.arun_many(
-                urls=compliant_urls,
-                config=config_run,
-                dispatcher=dispatcher,
-            ):
-                if not result.success:
-                    logger.error(f"Crawl failed for {result.url}: {result.error_message}")
+            strategy = BFSDeepCrawlStrategy(
+                max_depth=self.max_depth,
+                include_external=False,
+                url_scorer=score,
+                max_pages=self.max_pages
+            )
+
+            dispatcher = MemoryAdaptiveDispatcher(
+                memory_threshold_percent=90.0,
+                check_interval=1.0,
+                max_session_permit=settings.CRAWL_CONCURRENT,
+                rate_limiter=RateLimiter(
+                    base_delay=(1.0, 2.0),
+                    max_delay=30.0,
+                    max_retries=settings.MAX_RETRIES
+                ),
+                monitor=CrawlerMonitor(
+                    urls_total=len(web_urls),
+                    refresh_rate=1.0,
+                    enable_ui=False,
+                )
+            )
+
+            # WEB CONFIG ONLY (no PDF)
+            config_run = CrawlerRunConfig(
+                scraping_strategy=LXMLWebScrapingStrategy(),
+                wait_until=settings.WAIT_UNTIL,
+                max_retries=settings.MAX_RETRIES,
+                markdown_generator=markdown_generator,
+                deep_crawl_strategy=strategy,
+                stream=True,
+                word_count_threshold=settings.WORD_COUNT_THRESHOLD,
+                exclude_external_links=True,
+                exclude_social_media_links=True,
+                process_iframes=True,
+                remove_forms=True,
+                cache_mode=CacheMode.BYPASS,
+                magic=True,
+            )
+
+            async with AsyncWebCrawler(config=browser_config) as crawler:
+                async for result in await crawler.arun_many(
+                    urls=web_urls,
+                    config=config_run,
+                    dispatcher=dispatcher,
+                ):
+                    if not result.success:
+                        logger.error(f"Crawl failed for {result.url}: {result.error_message}")
+                        continue
+
+                    markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
+
+                    if self.has_crawl_error(result, markdown_text):
+                        logger.warning(f"Skipping page with crawl error: {result.url}")
+                        continue
+
+                    metadata = result.metadata or {}
+                    canonical_url = canonicalize_url(result.url)
+                    filename = hashlib.md5(canonical_url.encode()).hexdigest()
+
+                    # Save markdown
+                    markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                    with open(markdown_path, "w", encoding="utf-8") as f:
+                        f.write(markdown_text)
+
+                    # Save JSON
+                    doc_dict = {
+                        "id": filename,
+                        "url": result.url,
+                        "canonical_url": canonical_url,
+                        "title": metadata.get("title") or result.url,
+                        "status": result.status_code,
+                        "markdown_length": len(markdown_text),
+                        "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
+                        "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
+                        "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
+                        "metadata": metadata,
+                        "crawled_at": datetime.now().isoformat(),
+                        "type": "webpage"
+                    }
+
+                    json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                    with open(json_path, "w", encoding="utf-8") as f:
+                        json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+
+                    crawled_documents.append(doc_dict)
+                    logger.info(f"✓ Crawled (webpage): {result.url}")
+
+        # ===== PHASE 2: CRAWL PDFs =====
+        if pdf_urls:
+            logger.info(f"\n[PHASE 2] Crawling {len(pdf_urls)} PDFs...")
+
+            for pdf_url in pdf_urls:
+                try:
+                    logger.info(f"Downloading PDF: {pdf_url}")
+
+                    # Direct download
+                    async with aiohttp.ClientSession() as session:
+                        async with session.get(pdf_url, timeout=30) as resp:
+                            if resp.status == 200:
+                                pdf_content = await resp.read()
+                                canonical_url = canonicalize_url(pdf_url)
+                                filename = hashlib.md5(canonical_url.encode()).hexdigest()
+
+                                # Save PDF binary
+                                pdf_path = settings.absolute_db_path.parent / f"raw/pdf/{filename}.pdf"
+                                with open(pdf_path, "wb") as f:
+                                    f.write(pdf_content)
+
+                                file_size = len(pdf_content) / 1024
+                                logger.info(f"  Saved PDF: {file_size:.1f}KB")
+
+                                # Extract text using PyPDF2
+                                try:
+                                    pdf_reader = PyPDF2.PdfReader(io.BytesIO(pdf_content))
+                                    markdown_text = ""
+                                    for page_num in range(len(pdf_reader.pages)):
+                                        markdown_text += pdf_reader.pages[page_num].extract_text()
+                                    logger.info(f"  Extracted: {len(markdown_text)} characters")
+                                except Exception as e:
+                                    logger.warning(f"  Text extraction failed: {e}")
+                                    markdown_text = ""
+
+                                # Save markdown
+                                markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                                with open(markdown_path, "w", encoding="utf-8") as f:
+                                    f.write(markdown_text)
+
+                                # Save JSON
+                                doc_dict = {
+                                    "id": filename,
+                                    "url": pdf_url,
+                                    "canonical_url": canonical_url,
+                                    "title": pdf_url.split('/')[-1],
+                                    "status": 200,
+                                    "pdf_size_kb": file_size,
+                                    "markdown_length": len(markdown_text),
+                                    "crawled_at": datetime.now().isoformat(),
+                                    "type": "pdf"
+                                }
+
+                                json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                                with open(json_path, "w", encoding="utf-8") as f:
+                                    json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+
+                                crawled_documents.append(doc_dict)
+                                logger.info(f"✓ Crawled (PDF): {pdf_url}")
+                            else:
+                                logger.error(f"PDF download failed: HTTP {resp.status}")
+
+                except Exception as e:
+                    logger.error(f"PDF crawl error for {pdf_url}: {e}")
                     continue
 
-                markdown_text = self.select_markdown_text(result)
 
-                if self.has_crawl_error(result, markdown_text):
-                    logger.warning(f"Skipping page with crawl error: {result.url}")
-                    continue
-
-                metadata = result.metadata or {}
-                
-                # Canonicalize URL for naming and consistency
-                canonical_url = canonicalize_url(result.url)
-                filename = hashlib.md5(canonical_url.encode()).hexdigest()
-
-                # Save raw files to disk
-                markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
-                with open(markdown_path, "w", encoding="utf-8") as f:
-                    f.write(markdown_text)
-
-                doc_dict = {
-                    "id": filename,
-                    "url": result.url,
-                    "canonical_url": canonical_url,
-                    "title": metadata.get("title") or result.url,
-                    "status": result.status_code,
-                    "markdown": markdown_text,
-                    "internal_links": result.links.get("internal", []),
-                    "external_links": result.links.get("external", []),
-                    "images": result.media.get("images", []),
-                    "metadata": metadata,
-                    "crawled_at": datetime.now().isoformat()
-                }
-
-                json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
-                with open(json_path, "w", encoding="utf-8") as f:
-                    json.dump(doc_dict, f, indent=4, ensure_ascii=False)
-
-                crawled_documents.append(doc_dict)
-                logger.info(f"Successfully crawled and saved raw data for: {result.url}")
-
+                        # ===== DETAILED SUMMARY STATISTICS =====
+        total_urls = len(compliant_urls)
+        successful_urls = len(crawled_documents)
+        failed_urls = total_urls - successful_urls
+        
+        webpages = sum(1 for r in crawled_documents if r.get('type') == 'webpage')
+        pdfs = sum(1 for r in crawled_documents if r.get('type') == 'pdf')
+        
+        logger.info(f"\n{'='*70}")
+        logger.info(f"CRAWLING SUMMARY")
+        logger.info(f"{'='*70}")
+        logger.info(f"Total URLs: {total_urls}")
+        logger.info(f"  Web URLs: {len(web_urls)}")
+        logger.info(f"  PDF URLs: {len(pdf_urls)}")
+        logger.info(f"{'='*70}")
+        logger.info(f"Successfully crawled: {successful_urls}")
+        logger.info(f"  ✓ Web pages: {webpages}")
+        logger.info(f"  ✓ PDFs: {pdfs}")
+        logger.info(f"Failed: {failed_urls}")
+        logger.info(f"Success rate: {(successful_urls/total_urls*100):.1f}%" if total_urls > 0 else "N/A")
+        logger.info(f"{'='*70}\n")
+        
         return crawled_documents
+
 
 async def main():
     sitemap_path = settings.BASE_DIR / "data/raw/sitemap/master_seed.xml"
@@ -200,8 +301,10 @@ async def main():
         return
 
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
+
     manager = CrawlerManager()
-    await manager.crawl(urls[:10])  # Crawl first 10 for test run
+    await manager.crawl(urls[:4000])
+
 
 if __name__ == "__main__":
     asyncio.run(main())

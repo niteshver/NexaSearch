@@ -12,8 +12,8 @@ class Settings(BaseSettings):
     INDEX_DIR: str = "data/index"
 
     # Crawling Settings
-    CRAWL_MAX_DEPTH: int = 2
-    CRAWL_MAX_PAGES: int = 50
+    CRAWL_MAX_DEPTH: int = 4
+    CRAWL_MAX_PAGES: int = 10000
     CRAWL_CONCURRENT: int = 5
     CRAWL_TIMEOUT: int = 30
     CRAWL_USER_AGENT: str = "NexaSearchCrawler/0.1.0"
