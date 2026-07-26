@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/bib",
     "title": "How do I cite papers in the ACL Anthology? - ACL Anthology",
     "status": 200,
-    "markdown": "## How do I cite papers in the ACL Anthology?\nCiting papers in the ACL Anthology is simple. We provide\n  * bulk bibliographic exports\n  * click-to-copy citation keys on each paper page\n  * per-paper citation downloads\n\n\nOur primary supported format is BibTeX. The simplest way to cite papers is download the bulk BibTeX exports, and then use the citation keys, which are often inferrable from the paper’s author list and title: `{authors}-{year}-{title-word}`, where\n  * `{authors}` is the last names of the first one or two authors, separated by hyphens; if more than two authors, `etal` is used for the second author\n  * `{year}` is the four-digit year of publication\n  * `{title-word}` is the first significant word of the paper’s title; additional words are added if needed to create a unique bibkey\n\n\nSome examples are galley-etal-2004-whats and huang-chiang-2005-better. For convenience, a button on each paper page provides click-to-copy access to the bibkey.\nBulk downloads for consolidated BibTeX files are available in the following variations.\n  * _Overleaf-friendly_ : anthology-1.bib, anthology-2.bib etc. are sharded variants that are under 50 MB each, suitable for direct import into Overleaf repositories.\n  * _Full, with abstracts_ : anthology+abstracts.bib.gz contains citations for all papers that exist in the Anthology, including abstracts.\n  * _No abstracts_ : anthology.bib.gz contains all citations but removes abstracts, to save on space.\n  * _No abstracts, uncompressed_ : anthology.bib is the same as the above, but provided uncompressed, for convenience.\n\n\nFor individual papers, buttons are provided to download citation data in a number of formats, including BibTeX, \nFinally, we also offer an XML paper feed, which is useful in tools like \n",
+    "markdown_length": 1771,
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -245,114 +245,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Author pages",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/faq/attachments/",
-            "text": "Attachments",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/N04-1035/",
-            "text": "galley-etal-2004-whats",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/W05-1506/",
-            "text": "huang-chiang-2005-better",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/anthology-1.bib",
-            "text": "anthology-1.bib",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/anthology-2.bib",
-            "text": "anthology-2.bib",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/anthology.bib",
-            "text": "anthology+abstracts.bib.gz",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/anthology.bib.gz",
-            "text": "anthology.bib.gz",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/papers/index.xml",
-            "text": "an XML paper feed",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -365,5 +257,6 @@
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
     },
-    "crawled_at": "2026-07-25T09:08:38.591011"
+    "crawled_at": "2026-07-26T15:44:56.489738",
+    "type": "webpage"
 }

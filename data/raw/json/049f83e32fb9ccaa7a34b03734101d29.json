@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/2016.amta-researchers.5.bib",
     "title": "https://aclanthology.org/2016.amta-researchers.5.bib",
     "status": 200,
-    "markdown": "\n```\n@inproceedings{park-etal-2016-effective,\n    title = \"An Effective Diverse Decoding Scheme for Robust Synonymous Sentence Translation\",\n    author = \"Park, Youngki  and\n      Na, Hwidong  and\n      Lee, Hodong  and\n      Lee, Jihyun  and\n      Song, Inchul\",\n    editor = \"Green, Spence  and\n      Schwartz, Lane\",\n    booktitle = \"Conferences of the Association for Machine Translation in the Americas: MT Researchers' Track\",\n    month = oct # \" 28 - \" # nov # \" 1\",\n    year = \"2016\",\n    address = \"Austin, TX, USA\",\n    publisher = \"The Association for Machine Translation in the Americas\",\n    url = \"https://aclanthology.org/2016.amta-researchers.5/\",\n    pages = \"53--64\"\n}\n\n\n```\n\n",
+    "markdown_length": 694,
     "internal_links": [],
     "external_links": [],
     "images": [],
@@ -16,5 +16,6 @@
         "depth": 2,
         "parent_url": "https://aclanthology.org/volumes/2016.amta-researchers/"
     },
-    "crawled_at": "2026-07-24T20:42:45.249865"
+    "crawled_at": "2026-07-26T15:45:05.460496",
+    "type": "webpage"
 }

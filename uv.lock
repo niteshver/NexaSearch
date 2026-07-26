@@ -1955,6 +1955,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pypdf2"
+version = "3.0.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/9f/bb/18dc3062d37db6c491392007dfd1a7f524bb95886eb956569ac38a23a784/PyPDF2-3.0.1.tar.gz", hash = "sha256:a74408f69ba6271f71b9352ef4ed03dc53a31aa404d29b5d31f53bfecfee1440", size = 227419, upload-time = "2022-12-31T10:36:13.13Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/8e/5e/c86a5643653825d3c913719e788e41386bee415c2b87b4f955432f2de6b2/pypdf2-3.0.1-py3-none-any.whl", hash = "sha256:d16e4205cfee272fbdc0568b68d82be796540b1537508cef59388f839c191928", size = 232572, upload-time = "2022-12-31T10:36:10.327Z" },
+]
+
+[[package]]
 name = "pytest"
 version = "9.1.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2315,6 +2324,7 @@ name = "search-engine"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "aiohttp" },
     { name = "crawl4ai" },
     { name = "docker" },
     { name = "duckdb" },
@@ -2323,6 +2333,7 @@ dependencies = [
     { name = "pandas" },
     { name = "pydantic-settings" },
     { name = "pypdf" },
+    { name = "pypdf2" },
     { name = "rank-bm25" },
     { name = "requests" },
     { name = "seaborn" },
@@ -2339,6 +2350,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "aiohttp", specifier = ">=3.14.1" },
     { name = "crawl4ai", specifier = ">=0.9.1" },
     { name = "docker", specifier = ">=7.2.0" },
     { name = "duckdb", specifier = ">=1.5.4" },
@@ -2347,6 +2359,7 @@ requires-dist = [
     { name = "pandas", specifier = ">=3.0.3" },
     { name = "pydantic-settings", specifier = ">=2.14.2" },
     { name = "pypdf", specifier = ">=5.0" },
+    { name = "pypdf2", specifier = ">=3.0.1" },
     { name = "rank-bm25", specifier = ">=0.2.2" },
     { name = "requests", specifier = ">=2.32.0" },
     { name = "seaborn", specifier = ">=0.13.2" },

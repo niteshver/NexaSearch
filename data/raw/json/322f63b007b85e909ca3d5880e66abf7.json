@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/copyright",
     "title": "What is the copyright for materials in the ACL Anthology? - ACL Anthology",
     "status": 200,
-    "markdown": "## What is the copyright for materials in the ACL Anthology?\nThe ACL materials that are hosted in the Anthology are licensed to the general public under a liberal usage policy that allows unlimited reproduction, distribution and hosting of materials on any other website or medium, for non-commercial purposes. Prior to 2016, all ACL materials are licensed using the \nNote that these policies only cover ACL materials. As with the DOIs, this policy does not cover third-party materials. For reproduction privileges for such materials, please approach the respective organizations.\n",
+    "markdown_length": 581,
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -245,30 +245,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Author pages",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/faq/attachments/",
-            "text": "Attachments",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -281,5 +257,6 @@
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
     },
-    "crawled_at": "2026-07-25T09:08:38.924305"
+    "crawled_at": "2026-07-26T15:44:55.417843",
+    "type": "webpage"
 }

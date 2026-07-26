@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/news",
     "title": "How can I stay up to date with the ACL Anthology? - ACL Anthology",
     "status": 200,
-    "markdown": "## How can I stay up to date with the ACL Anthology?\nYou may be interested in the following:\n  * Our limited social media presence on \n  * Our RSS news feed, containing all news posts published under our blog\n  * An RSS paper feed, containing the latest 1,000 papers added to the Anthology\n\n\n",
+    "markdown_length": 292,
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -245,54 +245,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Author pages",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/faq/attachments/",
-            "text": "Attachments",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/posts/index.xml",
-            "text": "RSS news feed",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/papers/index.xml",
-            "text": "An RSS paper feed",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -305,5 +257,6 @@
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
     },
-    "crawled_at": "2026-07-25T09:08:40.052523"
+    "crawled_at": "2026-07-26T15:44:57.187601",
+    "type": "webpage"
 }

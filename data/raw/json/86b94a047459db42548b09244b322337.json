@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/volunteer",
     "title": "How can I help improve the ACL Anthology? - ACL Anthology",
     "status": 200,
-    "markdown": "## How can I help improve the ACL Anthology?\nWe welcome your contributions! In fact, since the Anthology is run entirely on volunteer energy, we need them. The best way to contribute is to browse our developer documentation.\n",
+    "markdown_length": 225,
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -245,30 +245,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Author pages",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/faq/attachments/",
-            "text": "Attachments",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -281,5 +257,6 @@
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
     },
-    "crawled_at": "2026-07-25T09:08:40.635854"
+    "crawled_at": "2026-07-26T15:44:57.805420",
+    "type": "webpage"
 }

@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/related-work",
     "title": "What other resources are there based on the ACL Anthology? - ACL Anthology",
     "status": 200,
-    "markdown": "## What other resources are there based on the ACL Anthology?\nThe following papers provide overviews of the Anthology infrastructure at different points in time:\n  * Two Decades of the ACL Anthology: Development, Impact, and Open Challenges (Bollmann et al., NLPOSS-WS 2023).\n  * The ACL Anthology: Current State and Future Directions (Gildea et al., NLPOSS 2018). It is now out of date, but helped direct changes to the Anthology that occurred in 2019.\n\n\nThere are also many papers that make use of the Anthology’s data. Here we highlight a few:\n  * On Forgetting to Cite Older Papers: An Analysis of the ACL Anthology (Bollmann & Elliott, ACL 2020)\n  * NLP Scholar: An Interactive Visual Explorer for Natural Language Processing Literature (Mohammad, ACL 2020)\n  * Mining Scientific Terms and their Definitions: A Study of the ACL Anthology (Jin et al., EMNLP 2013)\n  * **plain text and other metadata** for a controlled subset of the ACL Anthology.\n\n\nMany other publications based on the ACL Anthology exist, which you \n",
+    "markdown_length": 1023,
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -245,90 +245,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Author pages",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/faq/attachments/",
-            "text": "Attachments",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/2023.nlposs-1.10",
-            "text": "Two Decades of the ACL Anthology: Development, Impact, and Open Challenges",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/W18-2504",
-            "text": "The ACL Anthology: Current State and Future Directions",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/2020.acl-main.699",
-            "text": "On Forgetting to Cite Older Papers: An Analysis of the ACL Anthology",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/2020.acl-demos.27",
-            "text": "NLP Scholar: An Interactive Visual Explorer for Natural Language Processing Literature",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/D13-1073",
-            "text": "Mining Scientific Terms and their Definitions: A Study of the ACL Anthology",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -341,5 +257,6 @@
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
     },
-    "crawled_at": "2026-07-25T09:08:40.363284"
+    "crawled_at": "2026-07-26T15:44:57.506535",
+    "type": "webpage"
 }

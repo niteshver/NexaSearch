@@ -15,6 +15,7 @@ from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
 from crawl4ai.processors.pdf import  PDFContentScrapingStrategy
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
+from crawl4ai.docker_client import Crawl4aiDockerClient
 
 from src.config.settings import settings
 from src.crawler.logger import logger
@@ -160,7 +161,7 @@ class CrawlerManager:
             magic=True,
         )
 
-        async with AsyncWebCrawler(config=browser_config) as crawler:
+        async with Crawl4aiDockerClient(base_url="http://localhost:11235") as crawler:
             async for result in await crawler.arun_many(
                 urls=compliant_urls,
                 config=[pdf_config,config_run],

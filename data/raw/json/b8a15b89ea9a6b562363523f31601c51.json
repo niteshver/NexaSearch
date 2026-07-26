@@ -4,7 +4,7 @@
     "canonical_url": "https://aclanthology.org/faq/attachments",
     "title": "How can I submit attachments to papers? - ACL Anthology",
     "status": 200,
-    "markdown": "## How can I submit attachments to papers?\nAnthology paper pages can include attachments submitted at the time of ingestion. This typically includes supplementary materials uploaded with the final (“camera-ready”) version of the paper, such as code or data tarballs or submission checklists.\nWe do not have a formal process for accepting attachments submitted after initial publication. If you have an important artifact that you would like to be archived with a paper (e.g., a unique poster or sought-after presentation), please \nAround 2020, we had a more formal process for accepting attachments to papers, but we retired this ability due to the cost in time to Anthology volunteers. We may restore this ability in the future.\n",
+    "markdown_length": 730,
     "internal_links": [
         {
             "href": "https://aclanthology.org/",
@@ -245,30 +245,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/corrections/",
-            "text": "Corrections",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://aclanthology.org/info/author-pages/",
-            "text": "Author pages",
-            "title": "",
-            "base_domain": "aclanthology.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -281,5 +257,6 @@
         "depth": 1,
         "parent_url": "https://aclanthology.org/2016.amta-researchers.3/"
     },
-    "crawled_at": "2026-07-25T09:08:38.167065"
+    "crawled_at": "2026-07-26T15:44:54.925137",
+    "type": "webpage"
 }
