@@ -122,7 +122,7 @@ class CrawlerManager:
                 monitor=CrawlerMonitor(
                     urls_total=len(web_urls),
                     refresh_rate=1.0,
-                    enable_ui=False,
+                    enable_ui = True,
                 )
             )
 
@@ -139,7 +139,7 @@ class CrawlerManager:
                 exclude_social_media_links=True,
                 process_iframes=True,
                 remove_forms=True,
-                cache_mode=CacheMode.BYPASS,
+                cache_mode=CacheMode.BYPASS,  
                 magic=True,
             )
 
@@ -303,7 +303,7 @@ async def main():
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
 
     manager = CrawlerManager()
-    await manager.crawl(urls[:4000])
+    await manager.crawl(urls[:12000])
 
 
 if __name__ == "__main__":
