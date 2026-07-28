@@ -303,7 +303,7 @@ async def main():
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
 
     manager = CrawlerManager()
-    await manager.crawl(urls[:12000])
+    await manager.crawl(urls[:1000])
 
 
 if __name__ == "__main__":

@@ -1,0 +1,46 @@
+{
+    "id": "a45bbdd57cba9acea60b4b28e724f842",
+    "url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "canonical_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0",
+    "title": "arXiv.org - Non-exclusive license to distribute",
+    "status": 302,
+    "markdown_length": 676,
+    "internal_links": [
+        {
+            "href": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+            "text": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/help/contact",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "arXiv.org - Non-exclusive license to distribute",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "https://info.arxiv.org/help/license/index.html"
+    },
+    "crawled_at": "2026-07-28T11:46:05.835699",
+    "type": "webpage"
+}

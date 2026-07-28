@@ -15,7 +15,7 @@ SOURCES = {
         'max_urls': 5000,
         'concurrency': 15,
         'hits_per_sec': 8,
-        'use_bm25': True,
+        'use_bm25': False,
         'query': 'python package library',
         'score_threshold': 0.4
     },
@@ -24,24 +24,117 @@ SOURCES = {
         'source': 'sitemap+cc',
         'pattern': '*/abs/*',  # Only arXiv abstracts
         'extract_head': True,
-        'max_urls': 1000,
+        'max_urls': 50000,
         'concurrency': 20,
         'hits_per_sec': 10,
-        'use_bm25': True,
+        'use_bm25': False,
         'query': 'machine learning AI research',
         'score_threshold': 0.5,
         'live_check': True
     },
     'github.com': {
         'source': 'cc',  # Common Crawl only (no sitemap)
-        'pattern': '*/blob/*',  # Only code files
+        'pattern': [],  # Only code files
         'extract_head': True,
         'max_urls': 2000,
         'concurrency': 25,
         'hits_per_sec': 15,
         'use_bm25': False,
         'filter_nonsense_urls': True
-    }
+    },
+    'pytorch.org':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 9000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+    'docs.python.org':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+    'numpy.org':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+
+    'pandas.org':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+
+    'docs.opencv.org':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+
+    'docker.com':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+    'kernel.org':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+    'fastapi.tiangolo.com':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
+    'python.langchain.com':{
+        'source': 'cc',  # Common Crawl only (no sitemap)
+        'pattern': '*/blob/*',  # Only code files
+        'extract_head': True,
+        'max_urls': 12000,
+        'concurrency': 25,
+        'hits_per_sec': 15,
+        'use_bm25': False,
+        'filter_nonsense_urls': True
+    },
 }
 
 def get_source_config(domain: str) -> dict:
@@ -59,7 +152,7 @@ def get_source_config(domain: str) -> dict:
         'source': 'sitemap+cc',
         'pattern': '*',
         'extract_head': True,
-        'max_urls': 10000,
+        'max_urls': 12000,
         'concurrency': 20,
         'hits_per_sec': 10,
         'live_check': False,
