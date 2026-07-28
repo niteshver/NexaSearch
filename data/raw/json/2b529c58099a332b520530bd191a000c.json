@@ -4,7 +4,7 @@
     "canonical_url": "https://info.arxiv.org/help/mathjax.html",
     "title": "What is MathJax? - arXiv info",
     "status": 200,
-    "markdown_length": 3472,
+    "markdown_length": 3406,
     "internal_links": [
         {
             "href": "https://info.arxiv.org/help/mathjax.html",
@@ -255,8 +255,8 @@
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "https://arxiv.org/abs/0704.0235"
+        "parent_url": "https://arxiv.org/abs/0712.3329"
     },
-    "crawled_at": "2026-07-28T11:45:22.306463",
+    "crawled_at": "2026-07-28T22:31:27.174885",
     "type": "webpage"
 }
