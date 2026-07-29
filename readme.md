@@ -1,5 +1,76 @@
 # NexaSearch 
 
+An open-source vertical search engine for developers, researchers, and AI practitioners.
+
+> We don't compete in data. We compete in depth.
+
+## Demo
+
+## Why Nexasearch?
+
+Google is excellent for general web search.
+
+But developers often need to search:
+
+• GitHub Issues
+• Pull Requests
+• Documentation
+• Research Papers
+• PDFs
+• API References
+
+NexaSearch brings these sources together into one search experience.
+
+## Features
+
+- Hybrid Search (BM25 + Vector)
+
+- Research Paper Search
+
+- GitHub Search
+
+- Documentation Search
+
+- PDF Search
+
+- Live Crawling
+
+- Semantic Retrieval
+
+- Cross Encoder Reranking
+
+- Open Source
+
+## Architecture
+````
+Seed Sources
+      │
+      ▼
+ Crawl Pipeline
+      │
+      ▼
+ Data Processing
+      │
+      ▼
+ Hybrid Index
+      │
+      ▼
+ Search
+      │
+      ▼
+   Top 50
+      |
+ AI Answer (Optional)
+
+```
+-> For the complete system design follow docs/architecture.md
+
+
+
+
+
+
+
 A open Source Verticel Search Engine
 ``` text
 Seed Sources
