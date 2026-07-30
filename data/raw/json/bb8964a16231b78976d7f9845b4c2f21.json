@@ -1,0 +1,58 @@
+{
+    "id": "bb8964a16231b78976d7f9845b4c2f21",
+    "url": "https://iarxiv.org/about",
+    "canonical_url": "https://iarxiv.org/about",
+    "title": "IArxiv",
+    "status": 200,
+    "markdown_length": 974,
+    "internal_links": [
+        {
+            "href": "https://iarxiv.org/",
+            "text": "IArxiv beta",
+            "title": "",
+            "base_domain": "iarxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://iarxiv.org/login",
+            "text": "Login",
+            "title": "",
+            "base_domain": "iarxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://iarxiv.org/register",
+            "text": "Register",
+            "title": "",
+            "base_domain": "iarxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "IArxiv",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 1,
+        "parent_url": "https://arxiv.org/abs/0704.0235"
+    },
+    "crawled_at": "2026-07-28T11:45:20.918849",
+    "type": "webpage"
+}
