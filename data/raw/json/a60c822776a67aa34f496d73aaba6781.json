@@ -4,7 +4,7 @@
     "canonical_url": "https://arxiv.org/list/astro-ph.CO/recent",
     "title": "Cosmology and Nongalactic Astrophysics",
     "status": 200,
-    "markdown_length": 15930,
+    "markdown_length": 17083,
     "internal_links": [
         {
             "href": "https://arxiv.org/list/astro-ph.CO/recent",
@@ -104,6 +104,18 @@
         },
         {
             "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=0",
+            "text": "Wed, 29 Jul 2026",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=26",
             "text": "Tue, 28 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -115,7 +127,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=34",
+            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=60",
             "text": "Mon, 27 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -127,7 +139,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=43",
+            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=69",
             "text": "Fri, 24 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -139,20 +151,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=66",
+            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=92",
             "text": "Thu, 23 Jul 2026",
-            "title": "",
-            "base_domain": "arxiv.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=89",
-            "text": "Wed, 22 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -188,7 +188,7 @@
         },
         {
             "href": "https://arxiv.org/list/astro-ph.CO/recent?show=50&skip=100",
-            "text": "101-106",
+            "text": "101-115",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -235,8 +235,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/abs/2607.24742",
-            "text": "arXiv:2607.24742",
+            "href": "https://arxiv.org/abs/2607.26050",
+            "text": "arXiv:2607.26050",
             "title": "Abstract",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -257,6 +257,6 @@
         "depth": 2,
         "parent_url": "https://arxiv.org/"
     },
-    "crawled_at": "2026-07-28T11:46:10.659214",
+    "crawled_at": "2026-07-29T14:10:46.362127",
     "type": "webpage"
 }

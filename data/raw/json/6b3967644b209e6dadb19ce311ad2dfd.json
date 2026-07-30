@@ -4,7 +4,7 @@
     "canonical_url": "https://arxiv.org/list/astro-ph.IM/recent",
     "title": "Instrumentation and Methods for Astrophysics",
     "status": 200,
-    "markdown_length": 26633,
+    "markdown_length": 28232,
     "internal_links": [
         {
             "href": "https://arxiv.org/list/astro-ph.IM/recent",
@@ -104,6 +104,18 @@
         },
         {
             "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=0",
+            "text": "Wed, 29 Jul 2026",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=19",
             "text": "Tue, 28 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -115,7 +127,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=24",
+            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=43",
             "text": "Mon, 27 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -127,7 +139,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=41",
+            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=60",
             "text": "Fri, 24 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -139,20 +151,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=60",
+            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=79",
             "text": "Thu, 23 Jul 2026",
-            "title": "",
-            "base_domain": "arxiv.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=85",
-            "text": "Wed, 22 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -176,7 +176,19 @@
         },
         {
             "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=50",
-            "text": "51-94",
+            "text": "51-100",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=50&skip=100",
+            "text": "101-104",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -199,6 +211,18 @@
             "total_score": null
         },
         {
+            "href": "https://arxiv.org/list/astro-ph.IM/recent?show=100&skip=0",
+            "text": "more",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
             "href": "https://arxiv.org/list/astro-ph.IM/recent?show=2000&skip=0",
             "text": "all",
             "title": "",
@@ -211,33 +235,9 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/abs/2607.24737",
-            "text": "arXiv:2607.24737",
+            "href": "https://arxiv.org/abs/2607.26007",
+            "text": "arXiv:2607.26007",
             "title": "Abstract",
-            "base_domain": "arxiv.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://arxiv.org/pdf/2607.24737",
-            "text": "pdf",
-            "title": "Download PDF",
-            "base_domain": "arxiv.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://arxiv.org/html/2607.24737v1",
-            "text": "html",
-            "title": "View HTML",
             "base_domain": "arxiv.org",
             "head_data": null,
             "head_extraction_status": null,
@@ -257,6 +257,6 @@
         "depth": 2,
         "parent_url": "https://arxiv.org/"
     },
-    "crawled_at": "2026-07-28T11:46:12.488740",
+    "crawled_at": "2026-07-29T14:58:10.805344",
     "type": "webpage"
 }

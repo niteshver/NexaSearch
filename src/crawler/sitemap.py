@@ -4,7 +4,7 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 
 from crawl4ai import AsyncUrlSeeder, SeedingConfig
-from sources.sources import Sources
+from sources.sources import SOURCES
 
 
 
@@ -30,7 +30,7 @@ async def discover_urls():
 
     async with AsyncUrlSeeder() as seeder:
 
-        for category, domains in Sources.items():
+        for category, domains in SOURCES.items():
 
             print(f"\nDiscovering {category} websites...")
 

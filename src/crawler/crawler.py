@@ -76,7 +76,7 @@ class CrawlerManager:
             return []
 
         # 2. Separate PDFs and web URLs
-        pdf_urls = [u for u in compliant_urls if u.lower().endswith('.pdf')]
+        pdf_urls = [u for u in compliant_urls if ".pdf" in u.lower()]
         web_urls = [u for u in compliant_urls if not u.lower().endswith('.pdf')]
 
         logger.info(f"Crawling {len(compliant_urls)} URLs | Web: {len(web_urls)} | PDFs: {len(pdf_urls)}")

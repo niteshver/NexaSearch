@@ -1,4 +1,3 @@
-from crawl4ai import SeedingConfig
 from typing import List, Dict, Any
 
 SOURCES = {
@@ -35,7 +34,7 @@ SOURCES = {
         'source': 'cc',  # Common Crawl (no official sitemap)
         'patterns': {
             'documentation': '*/docs/*',
-            'code': '*/blob/*/**.py',
+            'code': '*/blob/*/*.py',  # ✓ FIXED: was */blob/*/**.py
             'research': '*/research/*',
             'papers': '*/papers/*',
             'issues': '*/issues/*',
@@ -60,7 +59,7 @@ SOURCES = {
             'langchain-ai',
             'huggingface',
             'openai',
-            'anthropics',
+            'anthropic',  # ✓ FIXED: was 'anthropics'
             'deepmind',
             'facebook',
             'google-research',
@@ -95,7 +94,7 @@ SOURCES = {
         'max_urls': 5000,
         'concurrency': 15,
         'hits_per_sec': 10,
-        'use_bm25': False,
+        'use_bm25': False,  # ✓ No query needed
         'live_check': False,
         'description': 'Python Official Documentation'
     },
@@ -107,7 +106,7 @@ SOURCES = {
         'max_urls': 3000,
         'concurrency': 15,
         'hits_per_sec': 10,
-        'use_bm25': False,
+        'use_bm25': False,  # ✓ No query needed
         'description': 'NumPy - numerical computing library'
     },
 
@@ -131,7 +130,7 @@ SOURCES = {
         'max_urls': 4000,
         'concurrency': 15,
         'hits_per_sec': 10,
-        'use_bm25': False,
+        'use_bm25': False,  # ✓ No query needed
         'description': 'OpenCV - computer vision library'
     },
 
@@ -203,10 +202,10 @@ class GitHubSeeder:
             '*/wiki/*'
         ],
         'code': [
-            '*/blob/*/**.py',
-            '*/blob/*/**.js',
-            '*/blob/*/**.java',
-            '*/blob/*/**.go',
+            '*/blob/*/*.py',      # ✓ FIXED: was */blob/*/**.py
+            '*/blob/*/*.js',      # ✓ FIXED: was */blob/*/**.js
+            '*/blob/*/*.java',    # ✓ FIXED: was */blob/*/**.java
+            '*/blob/*/*.go',      # ✓ FIXED: was */blob/*/**.go
             '*/tree/main',
             '*/tree/master'
         ],
@@ -373,6 +372,8 @@ def get_github_config(
 def validate_source_config(config: Dict[str, Any], domain: str) -> bool:
     """
     Validate source configuration.
+    
+    ✓ IMPROVED: Added validation for hits_per_sec and score_threshold
 
     Args:
         config: Configuration dictionary
@@ -399,23 +400,41 @@ def validate_source_config(config: Dict[str, Any], domain: str) -> bool:
     if not (1 <= config['max_urls'] <= 100000):
         raise ValueError(f"max_urls must be 1-100000, got {config['max_urls']}")
 
+    # ✓ NEW: Validate hits_per_sec
+    if 'hits_per_sec' in config and not (1 <= config['hits_per_sec'] <= 100):
+        raise ValueError(f"hits_per_sec must be 1-100, got {config['hits_per_sec']}")
+
+    # ✓ NEW: Validate score_threshold
+    if 'score_threshold' in config and not (0.0 <= config['score_threshold'] <= 1.0):
+        raise ValueError(f"score_threshold must be 0.0-1.0, got {config['score_threshold']}")
+
+    # ✓ NEW: Validate BM25 + query consistency
+    if config.get('use_bm25', False) and not config.get('query'):
+        raise ValueError(f"BM25 enabled for {domain} but no query provided")
+
     return True
 
 
-# Example usage
+# ✓ IMPROVED: Example usage with error handling
 if __name__ == "__main__":
-    # Standard domain config
-    pypi_config = get_source_config('pypi.org')
-    print(f"PyPI Config: {pypi_config['pattern']}")
+    try:
+        # Standard domain config
+        pypi_config = get_source_config('pypi.org')
+        print(f"✓ PyPI Config: {pypi_config['pattern']}")
 
-    # GitHub-specific config
-    github_config = get_github_config(
-        content_types=['documentation', 'code', 'research'],
-        organizations=['pytorch', 'tensorflow', 'huggingface'],
-        max_urls=20000
-    )
-    print(f"GitHub Config: {github_config['description']}")
+        # GitHub-specific config
+        github_config = get_github_config(
+            content_types=['documentation', 'code', 'research'],
+            organizations=['pytorch', 'tensorflow', 'huggingface'],
+            max_urls=20000
+        )
+        print(f"✓ GitHub Config: {github_config['description']}")
 
-    # Validate
-    validate_source_config(github_config, 'github.com')
-    print("✓ Configuration valid")
+        # Validate
+        validate_source_config(github_config, 'github.com')
+        print("✓ Configuration valid")
+        
+    except ValueError as e:
+        print(f"✗ Configuration Error: {e}")
+    except Exception as e:
+        print(f"✗ Unexpected Error: {e}")
