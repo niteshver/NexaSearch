@@ -166,7 +166,7 @@ elif page == "🚀 Build Index":
     with tab1:
         manual_urls_input = st.text_area(
             "Enter URLs to Crawl (one per line):",
-            ""
+            
         )
     with tab2:
         sitemap_input = st.text_input(
