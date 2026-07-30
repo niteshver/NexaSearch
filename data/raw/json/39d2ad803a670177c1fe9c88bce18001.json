@@ -4,7 +4,7 @@
     "canonical_url": "https://arxiv.org/search/cs?query=Hutter%2C+M&searchtype=author",
     "title": "Search | arXiv e-print repository",
     "status": 200,
-    "markdown_length": 109069,
+    "markdown_length": 110170,
     "internal_links": [
         {
             "href": "https://arxiv.org/search/cs?query=Hutter%2C+M&searchtype=author",
@@ -163,8 +163,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/abs/2607.13939",
-            "text": "arXiv:2607.13939",
+            "href": "https://arxiv.org/abs/2607.25781",
+            "text": "arXiv:2607.25781",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -175,7 +175,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/pdf/2607.13939",
+            "href": "https://arxiv.org/pdf/2607.25781",
             "text": "pdf",
             "title": "",
             "base_domain": "arxiv.org",
@@ -187,7 +187,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/ps/2607.13939",
+            "href": "https://arxiv.org/ps/2607.25781",
             "text": "ps",
             "title": "",
             "base_domain": "arxiv.org",
@@ -199,7 +199,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/format/2607.13939",
+            "href": "https://arxiv.org/format/2607.25781",
             "text": "other",
             "title": "",
             "base_domain": "arxiv.org",
@@ -211,8 +211,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/search/cs?query=Dolmeta%2C+A&searchtype=author",
-            "text": "Alessandra Dolmeta",
+            "href": "https://arxiv.org/search/cs?query=Kindle%2C+J&searchtype=author",
+            "text": "Julien Kindle",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -223,8 +223,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/search/cs?query=Piscopo%2C+V&searchtype=author",
-            "text": "Valeria Piscopo",
+            "href": "https://arxiv.org/search/cs?query=Raczy%2C+J&searchtype=author",
+            "text": "Jakub Raczy",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -235,8 +235,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/search/cs?query=Martina%2C+M&searchtype=author",
-            "text": "Maurizio Martina",
+            "href": "https://arxiv.org/search/cs?query=Balbi%2C+R&searchtype=author",
+            "text": "Riccardo Balbi",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -257,6 +257,6 @@
         "depth": 1,
         "parent_url": "https://arxiv.org/abs/0712.3329"
     },
-    "crawled_at": "2026-07-28T22:31:49.190421",
+    "crawled_at": "2026-07-29T14:00:24.435809",
     "type": "webpage"
 }

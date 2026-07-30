@@ -4,7 +4,7 @@
     "canonical_url": "https://arxiv.org/list/astro-ph.EP/recent",
     "title": "Earth and Planetary Astrophysics",
     "status": 200,
-    "markdown_length": 22007,
+    "markdown_length": 22624,
     "internal_links": [
         {
             "href": "https://arxiv.org/list/astro-ph.EP/recent",
@@ -104,6 +104,18 @@
         },
         {
             "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=0",
+            "text": "Wed, 29 Jul 2026",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=14",
             "text": "Tue, 28 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -115,7 +127,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=15",
+            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=29",
             "text": "Mon, 27 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -127,7 +139,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=27",
+            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=41",
             "text": "Fri, 24 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
@@ -139,20 +151,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=33",
+            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=47",
             "text": "Thu, 23 Jul 2026",
-            "title": "",
-            "base_domain": "arxiv.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=45",
-            "text": "Wed, 22 Jul 2026",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -176,7 +176,7 @@
         },
         {
             "href": "https://arxiv.org/list/astro-ph.EP/recent?show=50&skip=50",
-            "text": "51-56",
+            "text": "51-59",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -211,8 +211,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/abs/2607.24733",
-            "text": "arXiv:2607.24733",
+            "href": "https://arxiv.org/abs/2607.25964",
+            "text": "arXiv:2607.25964",
             "title": "Abstract",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -223,7 +223,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/pdf/2607.24733",
+            "href": "https://arxiv.org/pdf/2607.25964",
             "text": "pdf",
             "title": "Download PDF",
             "base_domain": "arxiv.org",
@@ -235,7 +235,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/html/2607.24733v1",
+            "href": "https://arxiv.org/html/2607.25964v1",
             "text": "html",
             "title": "View HTML",
             "base_domain": "arxiv.org",
@@ -257,6 +257,6 @@
         "depth": 2,
         "parent_url": "https://arxiv.org/"
     },
-    "crawled_at": "2026-07-28T11:46:11.131659",
+    "crawled_at": "2026-07-29T14:27:26.311820",
     "type": "webpage"
 }
