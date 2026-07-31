@@ -194,4 +194,3 @@ OPENAI_API_KEY=your_api_key
 example
 ```
 
-> **Note:** The run command may change as the project evolves.

@@ -1,0 +1,70 @@
+{
+    "id": "ef03579f773f067a7848a73964224a70",
+    "url": "http://arxiv.org/licenses/assumed-1991-2003/",
+    "canonical_url": "http://arxiv.org/licenses/assumed-1991-2003",
+    "title": "arXiv.org - Assumed non-exclusive license to distribute",
+    "status": 302,
+    "markdown_length": 1092,
+    "internal_links": [
+        {
+            "href": "http://arxiv.org/licenses/assumed-1991-2003/",
+            "text": "http://arxiv.org/licenses/assumed-1991-2003/",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+            "text": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://arxiv.org/abs/hep-th/9108001",
+            "text": "hep-th/9108001",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/help/contact",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "arXiv.org - Assumed non-exclusive license to distribute",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 1,
+        "parent_url": "https://arxiv.org/abs/0712.3329"
+    },
+    "crawled_at": "2026-07-29T14:00:18.289711",
+    "type": "webpage"
+}
