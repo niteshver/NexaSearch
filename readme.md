@@ -112,7 +112,7 @@ NexaSearch/
 ```
 
 ## Workflow
-````
+``` text
 Seed Sources
       │
       ▼
