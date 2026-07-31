@@ -8,4 +8,9 @@
 ### 11/July/2026
 - cleaning readme
 - fix repo structure
-- 
+
+### 32/July/2026
+- Cleaning readme
+- update doc
+- Indexing Pipeline
+
