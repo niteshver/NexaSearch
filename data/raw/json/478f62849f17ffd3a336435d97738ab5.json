@@ -4,7 +4,8 @@
     "canonical_url": "https://arxiv.org/prevnext?context=cs.AI&function=next&id=0712.3329",
     "title": "https://arxiv.org/prevnext?context=cs.AI&function=next&id=0712.3329",
     "status": 426,
-    "markdown_length": 297,
+    "markdown": "arXiv has temporarily disabled the prev and next buttons because deficiencies in the implementation were degrading our services. We plan to upgrade/fix this soon.\nYou should use your browser back button to return to the abstract page you came from.\nWe apologize for the inconvenience.",
+    "markdown_length": 284,
     "internal_links": [],
     "external_links": [],
     "images": [],
@@ -16,6 +17,6 @@
         "depth": 1,
         "parent_url": "https://arxiv.org/abs/0712.3329"
     },
-    "crawled_at": "2026-07-29T14:00:21.533229",
+    "crawled_at": "2026-08-03T21:06:48.468368",
     "type": "webpage"
 }
