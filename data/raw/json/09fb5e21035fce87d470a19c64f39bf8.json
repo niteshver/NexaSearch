@@ -4,7 +4,8 @@
     "canonical_url": "https://arxiv.org/list/cs.AI/2007-12",
     "title": "Artificial Intelligence Dec 2007",
     "status": 200,
-    "markdown_length": 7325,
+    "markdown": "# Artificial Intelligence\n\n## Authors and titles for December 2007\n\nTotal of 22 entries \n    \n\n    \n    - [1] arXiv:0712.0451 [pdf, other]\n- [2] arXiv:0712.0836 [pdf, other]\n- [3] arXiv:0712.0948 [pdf, other]\n- [4] arXiv:0712.1097 [pdf, other]\n- [5] arXiv:0712.1182 [pdf, other]\n- [6] arXiv:0712.1529 [pdf, other]\n- [7] arXiv:0712.2141 [pdf, other]\n- [8] arXiv:0712.2389 [pdf, other]\n- [9] arXiv:0712.3147 [pdf, other]\n- [10] arXiv:0712.3329 [pdf, other]\n- [11] arXiv:0712.3825 [pdf, other]\n- [12] arXiv:0712.4126 [pdf, other]\n- [13] arXiv:0712.4318 [pdf, other]\n- [14] arXiv:0712.0171 (cross-list from cs.CC) [pdf, other]\n- [15] arXiv:0712.0744 (cross-list from cs.MA) [pdf, other]\n- [16] arXiv:0712.0932 (cross-list from cs.CV) [pdf, other]\n- [17] arXiv:0712.0938 (cross-list from cs.LG) [pdf, other]\n- [18] arXiv:0712.1310 (cross-list from cs.LO) [pdf, other]\n- [19] arXiv:0712.1345 (cross-list from cs.LO) [pdf, other]\n- [20] arXiv:0712.1365 (cross-list from q-bio.PE) [pdf, other]\n- [21] arXiv:0712.3654 (cross-list from cs.NE) [pdf, other]\n- [22] arXiv:0712.4402 (cross-list from math.PR) [pdf, other]\n\nTotal of 22 entries",
+    "markdown_length": 1128,
     "internal_links": [
         {
             "href": "https://arxiv.org/list/cs.AI/2007-12",
@@ -257,6 +258,6 @@
         "depth": 1,
         "parent_url": "https://arxiv.org/abs/0712.3329"
     },
-    "crawled_at": "2026-07-29T14:00:18.562747",
+    "crawled_at": "2026-08-03T21:06:47.995090",
     "type": "webpage"
 }

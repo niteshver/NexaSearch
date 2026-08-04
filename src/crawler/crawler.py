@@ -1,13 +1,18 @@
 import aiohttp
 import PyPDF2
+import argparse
 import io
 import asyncio
 import os
 import json
 import hashlib
 from datetime import datetime
+from pathlib import Path
 from typing import List, Dict, Any
+from urllib.parse import urlparse
 import xml.etree.ElementTree as ET
+
+import trafilatura
 
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator
@@ -76,8 +81,8 @@ class CrawlerManager:
             return []
 
         # 2. Separate PDFs and web URLs
-        pdf_urls = [u for u in compliant_urls if ".pdf" in u.lower()]
-        web_urls = [u for u in compliant_urls if not u.lower().endswith('.pdf')]
+        pdf_urls = [u for u in compliant_urls if urlparse(u).path.lower().endswith(".pdf")]
+        web_urls = [u for u in compliant_urls if not urlparse(u).path.lower().endswith(".pdf")]
 
         logger.info(f"Crawling {len(compliant_urls)} URLs | Web: {len(web_urls)} | PDFs: {len(pdf_urls)}")
 
@@ -133,7 +138,7 @@ class CrawlerManager:
                 max_retries=settings.MAX_RETRIES,
                 markdown_generator=markdown_generator,
                 deep_crawl_strategy=strategy,
-                stream=True,
+                stream=False,
                 word_count_threshold=settings.WORD_COUNT_THRESHOLD,
                 exclude_external_links=True,
                 exclude_social_media_links=True,
@@ -144,7 +149,7 @@ class CrawlerManager:
             )
 
             async with AsyncWebCrawler(config=browser_config) as crawler:
-                async for result in await crawler.arun_many(
+                for result in await crawler.arun_many(
                     urls=web_urls,
                     config=config_run,
                     dispatcher=dispatcher,
@@ -159,6 +164,20 @@ class CrawlerManager:
                         logger.warning(f"Skipping page with crawl error: {result.url}")
                         continue
 
+
+                    raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
+                    cleaned_content = trafilatura.extract(
+                        raw_html,
+                        output_format="markdown",
+                        include_comments=False,
+                        include_tables=True,
+                    ) if raw_html else None
+
+                    if not cleaned_content:
+                        logger.warning(f"Trafilatura extraction failed {result.url}")
+
+                        cleaned_content = markdown_text
+
                     metadata = result.metadata or {}
                     canonical_url = canonicalize_url(result.url)
                     filename = hashlib.md5(canonical_url.encode()).hexdigest()
@@ -166,7 +185,7 @@ class CrawlerManager:
                     # Save markdown
                     markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
                     with open(markdown_path, "w", encoding="utf-8") as f:
-                        f.write(markdown_text)
+                        f.write(cleaned_content)
 
                     # Save JSON
                     doc_dict = {
@@ -175,7 +194,8 @@ class CrawlerManager:
                         "canonical_url": canonical_url,
                         "title": metadata.get("title") or result.url,
                         "status": result.status_code,
-                        "markdown_length": len(markdown_text),
+                        "markdown": cleaned_content,
+                        "markdown_length": len(cleaned_content),
                         "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
                         "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
                         "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
@@ -201,7 +221,10 @@ class CrawlerManager:
 
                     # Direct download
                     async with aiohttp.ClientSession() as session:
-                        async with session.get(pdf_url, timeout=30) as resp:
+                        headers = {
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                        }
+                        async with session.get(pdf_url, timeout=30, headers=headers) as resp:
                             if resp.status == 200:
                                 pdf_content = await resp.read()
                                 canonical_url = canonicalize_url(pdf_url)
@@ -239,6 +262,7 @@ class CrawlerManager:
                                     "title": pdf_url.split('/')[-1],
                                     "status": 200,
                                     "pdf_size_kb": file_size,
+                                    "markdown": markdown_text,
                                     "markdown_length": len(markdown_text),
                                     "crawled_at": datetime.now().isoformat(),
                                     "type": "pdf"
@@ -283,8 +307,7 @@ class CrawlerManager:
         return crawled_documents
 
 
-async def main():
-    sitemap_path = settings.BASE_DIR / "data/raw/sitemap/master_seed.xml"
+async def main(sitemap_path: Path, limit: int, max_pages: int, max_depth: int):
     if not sitemap_path.exists():
         logger.error(f"Sitemap file not found: {sitemap_path}")
         return
@@ -302,9 +325,19 @@ async def main():
 
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
 
-    manager = CrawlerManager()
-    await manager.crawl(urls[:1000])
+    manager = CrawlerManager(max_pages=max_pages, max_depth=max_depth)
+    await manager.crawl(urls[:limit])
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    parser = argparse.ArgumentParser(description="Crawl URLs from a sitemap.")
+    parser.add_argument(
+        "--sitemap",
+        type=Path,
+        default=settings.BASE_DIR / "data/raw/sitemap/master_seed.xml",
+    )
+    parser.add_argument("--limit", type=int, default=10000, help="Seed URLs to crawl.")
+    parser.add_argument("--max-pages", type=int, default=10000, help="Pages per seed URL.")
+    parser.add_argument("--max-depth", type=int, default=3, help="Maximum crawl depth.")
+    args = parser.parse_args()
+    asyncio.run(main(args.sitemap, args.limit, args.max_pages, args.max_depth))

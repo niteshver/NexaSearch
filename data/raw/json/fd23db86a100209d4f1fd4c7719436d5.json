@@ -1,14 +1,14 @@
 {
-    "id": "195b647c46905632d976991ccc6691e3",
-    "url": "https://arxiv.org/abs/0712.3329",
-    "canonical_url": "https://arxiv.org/abs/0712.3329",
-    "title": "[0712.3329] Universal Intelligence: A Definition of Machine Intelligence",
+    "id": "fd23db86a100209d4f1fd4c7719436d5",
+    "url": "https://arxiv.org/abs/0804.3417",
+    "canonical_url": "https://arxiv.org/abs/0804.3417",
+    "title": "[0804.3417] Robust Machine Learning Applied to Terascale Astronomical Datasets",
     "status": 200,
-    "markdown": "# Computer Science > Artificial Intelligence\n\n  [Submitted on 20 Dec 2007]\n\n    # Title:Universal Intelligence: A Definition of Machine Intelligence\n\nView PDF\n            Abstract:  A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are significantly different to humans. In this paper we approach this problem in the following way: We take a number of well known informal definitions of human intelligence that have been given by experts, and extract their essential features. These are then mathematically formalised to produce a general measure of intelligence for arbitrary machines. We believe that this equation formally captures the concept of machine intelligence in the broadest reasonable sense. We then show how this formal definition is related to the theory of universal optimal learning agents. Finally, we survey the many other tests and definitions of intelligence that have been proposed for machines.\n    \n\n### References & Citations\n\n    \n    Loading...\n\n# Bibliographic and Citation Tools\n\n            Bibliographic Explorer \n\n        *(What is the Explorer?)*\n            Connected Papers \n\n        *(What is Connected Papers?)*\n            Litmaps \n\n        *(What is Litmaps?)*\n            scite Smart Citations \n\n        *(What are Smart Citations?)*\n# Code, Data and Media Associated with this Article\n\n            alphaXiv \n\n        *(What is alphaXiv?)*\n            CatalyzeX Code Finder for Papers \n\n        *(What is CatalyzeX?)*\n            DagsHub \n\n        *(What is DagsHub?)*\n            Gotit.pub \n\n        *(What is GotitPub?)*\n            Hugging Face \n\n        *(What is Huggingface?)*\n            ScienceCast \n\n        *(What is ScienceCast?)*\n# Demos\n\n# Recommenders and Search Tools\n\n              Influence Flower \n\n          *(What are Influence Flowers?)*\n              CORE Recommender \n\n          *(What is CORE?)*\n# arXivLabs: experimental projects with community collaborators\n\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? **Learn more about arXivLabs**.",
-    "markdown_length": 2517,
+    "markdown": "# Astrophysics\n\n  [Submitted on 21 Apr 2008]\n\n    # Title:Robust Machine Learning Applied to Terascale Astronomical Datasets\n\nView PDF\n            Abstract:  We present recent results from the LCDM (Laboratory for Cosmological Data Mining; this http URL) collaboration between UIUC Astronomy and NCSA to deploy supercomputing cluster resources and machine learning algorithms for the mining of terascale astronomical datasets. This is a novel application in the field of astronomy, because we are using such resources for data mining, and not just performing simulations. Via a modified implementation of the NCSA cyberenvironment Data-to-Knowledge, we are able to provide improved classifications for over 100 million stars and galaxies in the Sloan Digital Sky Survey, improved distance measures, and a full exploitation of the simple but powerful k-nearest neighbor algorithm. A driving principle of this work is that our methods should be extensible from current terascale datasets to upcoming petascale datasets and beyond. We discuss issues encountered to-date, and further issues for the transition to petascale. In particular, disk I/O will become a major limiting factor unless the necessary infrastructure is implemented.\n    \n\n### Current browse context:\n\nastro-ph\n\n  \n    ### References & Citations\n\n    \n    Loading...\n\n# Bibliographic and Citation Tools\n\n            Bibliographic Explorer \n\n        *(What is the Explorer?)*\n            Connected Papers \n\n        *(What is Connected Papers?)*\n            Litmaps \n\n        *(What is Litmaps?)*\n            scite Smart Citations \n\n        *(What are Smart Citations?)*\n# Code, Data and Media Associated with this Article\n\n            alphaXiv \n\n        *(What is alphaXiv?)*\n            CatalyzeX Code Finder for Papers \n\n        *(What is CatalyzeX?)*\n            DagsHub \n\n        *(What is DagsHub?)*\n            Gotit.pub \n\n        *(What is GotitPub?)*\n            Hugging Face \n\n        *(What is Huggingface?)*\n            ScienceCast \n\n        *(What is ScienceCast?)*\n# Demos\n\n# Recommenders and Search Tools\n\n              Influence Flower \n\n          *(What are Influence Flowers?)*\n              CORE Recommender \n\n          *(What is CORE?)*\n              IArxiv Recommender\n              \n\n          *(What is IArxiv?)*\n# arXivLabs: experimental projects with community collaborators\n\narXivLabs is a framework that allows collaborators to develop and share new arXiv features directly on our website.\n\nBoth individuals and organizations that work with arXivLabs have embraced and accepted our values of openness, community, excellence, and user data privacy. arXiv is committed to these values and only works with partners that adhere to them.\n\nHave an idea for a project that will add value for arXiv's community? **Learn more about arXivLabs**.",
+    "markdown_length": 2825,
     "internal_links": [
         {
-            "href": "https://arxiv.org/abs/0712.3329",
+            "href": "https://arxiv.org/abs/0804.3417",
             "text": "Skip to main content",
             "title": "",
             "base_domain": "arxiv.org",
@@ -104,8 +104,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/search/cs?query=Legg%2C+S&searchtype=author",
-            "text": "Shane Legg",
+            "href": "https://arxiv.org/search/astro-ph?query=Ball%2C+N+M&searchtype=author",
+            "text": "Nicholas M. Ball",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -116,8 +116,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/search/cs?query=Hutter%2C+M&searchtype=author",
-            "text": "Marcus Hutter",
+            "href": "https://arxiv.org/search/astro-ph?query=Brunner%2C+R+J&searchtype=author",
+            "text": "Robert J. Brunner",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -128,7 +128,19 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/pdf/0712.3329",
+            "href": "https://arxiv.org/search/astro-ph?query=Myers%2C+A+D&searchtype=author",
+            "text": "Adam D. Myers",
+            "title": "",
+            "base_domain": "arxiv.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://arxiv.org/pdf/0804.3417",
             "text": "View PDF",
             "title": "",
             "base_domain": "arxiv.org",
@@ -140,8 +152,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/abs/0712.3329v1",
-            "text": "arXiv:0712.3329v1",
+            "href": "https://arxiv.org/abs/0804.3417v1",
+            "text": "arXiv:0804.3417v1",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -152,7 +164,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/show-email/47dca2ae/0712.3329",
+            "href": "https://arxiv.org/show-email/e6a550e5/0804.3417",
             "text": "view email",
             "title": "",
             "base_domain": "arxiv.org",
@@ -164,7 +176,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/src/0712.3329",
+            "href": "https://arxiv.org/src/0804.3417",
             "text": "TeX Source",
             "title": "",
             "base_domain": "arxiv.org",
@@ -176,7 +188,7 @@
             "total_score": null
         },
         {
-            "href": "http://arxiv.org/licenses/assumed-1991-2003/",
+            "href": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
             "text": "view license",
             "title": "Rights to this article",
             "base_domain": "arxiv.org",
@@ -188,9 +200,9 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/prevnext?context=cs.AI&function=prev&id=0712.3329",
+            "href": "https://arxiv.org/prevnext?context=astro-ph&function=prev&id=0804.3417",
             "text": "< prev",
-            "title": "previous in cs.AI (accesskey p)",
+            "title": "previous in astro-ph (accesskey p)",
             "base_domain": "arxiv.org",
             "head_data": null,
             "head_extraction_status": null,
@@ -200,9 +212,9 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/prevnext?context=cs.AI&function=next&id=0712.3329",
+            "href": "https://arxiv.org/prevnext?context=astro-ph&function=next&id=0804.3417",
             "text": "next >",
-            "title": "next in cs.AI (accesskey n)",
+            "title": "next in astro-ph (accesskey n)",
             "base_domain": "arxiv.org",
             "head_data": null,
             "head_extraction_status": null,
@@ -212,7 +224,7 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/cs.AI/new",
+            "href": "https://arxiv.org/list/astro-ph/new",
             "text": "new",
             "title": "",
             "base_domain": "arxiv.org",
@@ -224,20 +236,8 @@
             "total_score": null
         },
         {
-            "href": "https://arxiv.org/list/cs.AI/recent",
+            "href": "https://arxiv.org/list/astro-ph/recent",
             "text": "recent",
-            "title": "",
-            "base_domain": "arxiv.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://arxiv.org/list/cs.AI/2007-12",
-            "text": "2007-12",
             "title": "",
             "base_domain": "arxiv.org",
             "head_data": null,
@@ -251,29 +251,29 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "[0712.3329] Universal Intelligence: A Definition of Machine Intelligence",
-        "description": "Abstract page for arXiv paper 0712.3329: Universal Intelligence: A Definition of Machine Intelligence",
+        "title": "[0804.3417] Robust Machine Learning Applied to Terascale Astronomical Datasets",
+        "description": "Abstract page for arXiv paper 0804.3417: Robust Machine Learning Applied to Terascale Astronomical Datasets",
         "keywords": null,
         "author": null,
         "og:type": "website",
         "og:site_name": "arXiv.org",
-        "og:title": "Universal Intelligence: A Definition of Machine Intelligence",
-        "og:url": "https://arxiv.org/abs/0712.3329v1",
+        "og:title": "Robust Machine Learning Applied to Terascale Astronomical Datasets",
+        "og:url": "https://arxiv.org/abs/0804.3417v1",
         "og:image": "/static/browse/0.3.4/images/arxiv-logo-fb.png",
         "og:image:secure_url": "/static/browse/0.3.4/images/arxiv-logo-fb.png",
         "og:image:width": "1200",
         "og:image:height": "700",
         "og:image:alt": "arXiv logo",
-        "og:description": "A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are significantly different to humans. In this paper we approach this problem in the following way: We take a number of well known informal definitions of human intelligence that have been given by experts, and extract their essential features. These are then mathematically formalised to produce a general measure of intelligence for arbitrary machines. We believe that this equation formally captures the concept of machine intelligence in the broadest reasonable sense. We then show how this formal definition is related to the theory of universal optimal learning agents. Finally, we survey the many other tests and definitions of intelligence that have been proposed for machines.",
+        "og:description": "We present recent results from the LCDM (Laboratory for Cosmological Data Mining; http://lcdm.astro.uiuc.edu) collaboration between UIUC Astronomy and NCSA to deploy supercomputing cluster resources and machine learning algorithms for the mining of terascale astronomical datasets. This is a novel application in the field of astronomy, because we are using such resources for data mining, and not just performing simulations. Via a modified implementation of the NCSA cyberenvironment Data-to-Knowledge, we are able to provide improved classifications for over 100 million stars and galaxies in the Sloan Digital Sky Survey, improved distance measures, and a full exploitation of the simple but powerful k-nearest neighbor algorithm. A driving principle of this work is that our methods should be extensible from current terascale datasets to upcoming petascale datasets and beyond. We discuss issues encountered to-date, and further issues for the transition to petascale. In particular, disk I/O will become a major limiting factor unless the necessary infrastructure is implemented.",
         "twitter:site": "@arxiv",
         "twitter:card": "summary",
-        "twitter:title": "Universal Intelligence: A Definition of Machine Intelligence",
-        "twitter:description": "A fundamental problem in artificial intelligence is that nobody really knows what intelligence is. The problem is especially acute when we need to consider artificial systems which are...",
+        "twitter:title": "Robust Machine Learning Applied to Terascale Astronomical Datasets",
+        "twitter:description": "We present recent results from the LCDM (Laboratory for Cosmological Data Mining; http://lcdm.astro.uiuc.edu) collaboration between UIUC Astronomy and NCSA to deploy supercomputing cluster...",
         "twitter:image": "https://static.arxiv.org/icons/twitter/arxiv-logo-twitter-square.png",
         "twitter:image:alt": "arXiv logo",
-        "depth": 1,
-        "parent_url": "https://arxiv.org/abs/0712.3329"
+        "depth": 0,
+        "parent_url": null
     },
-    "crawled_at": "2026-08-03T21:06:48.014639",
+    "crawled_at": "2026-08-03T21:06:48.508027",
     "type": "webpage"
 }

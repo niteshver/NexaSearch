@@ -1,15 +1,18 @@
 {
   "completed_domains": [
     "pypi.org",
-    "arxiv.org",
     "github.com",
     "pytorch.org",
     "docs.opencv.org",
-    "docs.docker.com",
+    "docs.python.org",
+    "pandas.pydata.org",
+    "numpy.org",
     "kernel.org",
     "fastapi.tiangolo.com",
-    "python.langchain.com"
+    "arxiv.org",
+    "python.langchain.com",
+    "docs.docker.com"
   ],
-  "timestamp": "2026-07-29T13:58:01.310048",
-  "total_urls": 129
+  "timestamp": "2026-08-03T21:46:11.324661",
+  "total_urls": 11
 }
