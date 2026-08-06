@@ -45,9 +45,13 @@ def main() -> None:
     )
     args = parser.parse_args()
     duplicates = find_duplicate_files(args.path, recursive=True)
+    duplicate_data = []
     print(f"Duplicate groups: {len(duplicates)}")
     for paths in duplicates.values():
         print("\n".join(str(path) for path in paths))
+        duplicate_data += duplicates
+        duplicate_data.remove()
+
 
 
 if __name__ == "__main__":
