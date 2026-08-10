@@ -1,0 +1,5 @@
+# pandas.Index.T#
+
+- 
+*property* Index.T[source]#
+- Return the transpose, which is by definition self. Examples For Series: >>> s = pd.Series(['Ant', 'Bear', 'Cow']) >>> s 0 Ant 1 Bear 2 Cow dtype: object >>> s.T 0 Ant 1 Bear 2 Cow dtype: object For Index: >>> idx = pd.Index([1, 2, 3]) >>> idx.T Index([1, 2, 3], dtype='int64')

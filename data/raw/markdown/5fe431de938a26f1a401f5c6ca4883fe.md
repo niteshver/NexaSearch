@@ -1,0 +1,29 @@
+# pandas.DataFrame.shift#
+
+- 
+DataFrame.shift(*periods=1* ,*freq=None* ,*axis=0* ,*fill_value=<no_default>* ,*suffix=None* )[source]#
+- Shift index by desired number of periods with an optional time freq. When freq is not passed, shift the index without realigning the data. If freq is passed (in this case, the index must be date or datetime, or it will raise a NotImplementedError), the index will be increased using the periods and the freq. freq can be inferred when specified as “infer” as long as either freq or inferred_freq attribute is set in the index. 
+  - Parameters:
+    - **periods** int or Sequence
+    - Number of periods to shift. Can be positive or negative. If an iterable of ints, the data will be shifted once by each int. This is equivalent to shifting by one value at a time and concatenating all resulting frames. The resulting columns will have the shift suffixed to their column names. For multiple periods, axis must not be 1.
+    - **freq** DateOffset, tseries.offsets, timedelta, or str, optional
+    - Offset to use from the tseries module or time rule (e.g. ‘EOM’). If freq is specified then the index values are shifted but the data is not realigned. That is, use freq if you would like to extend the index when shifting and preserve the original data. If freq is specified as “infer” then it will be inferred from the freq or inferred_freq attributes of the index. If neither of those attributes exist, a ValueError is thrown.
+    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default None
+    - Shift direction. For Series this parameter is unused and defaults to 0.
+    - **fill_value** object, optional
+    - The scalar value to use for newly introduced missing values. the default depends on the dtype of self. For Boolean and numeric NumPy data types, `np.nan` is used.
+For datetime, timedelta, or period data, etc.`NaT` is used.
+For extension dtypes,`self.dtype.na_value` is used.
+    - **suffix** str, optional
+    - If str and periods is an iterable, this is added after the column name and before the shift value for each shifted column name. For Series this parameter is unused and defaults to None.
+  - Returns:
+    - DataFrame
+    - Copy of input object, shifted.
+ See also 
+  - `Index.shift`
+  - Shift values of Index.
+  - `DatetimeIndex.shift`
+  - Shift values of DatetimeIndex.
+  - `PeriodIndex.shift`
+  - Shift values of PeriodIndex.
+ Examples >>> df = pd.DataFrame( ... [[10, 13, 17], [20, 23, 27], [15, 18, 22], [30, 33, 37], [45, 48, 52]], ... columns=["Col1", "Col2", "Col3"], ... index=pd.date_range("2020-01-01", "2020-01-05"), ... ) >>> df Col1 Col2 Col3 2020-01-01 10 13 17 2020-01-02 20 23 27 2020-01-03 15 18 22 2020-01-04 30 33 37 2020-01-05 45 48 52 >>> df.shift(periods=3) Col1 Col2 Col3 2020-01-01 NaN NaN NaN 2020-01-02 NaN NaN NaN 2020-01-03 NaN NaN NaN 2020-01-04 10.0 13.0 17.0 2020-01-05 20.0 23.0 27.0 >>> df.shift(periods=1, axis="columns") Col1 Col2 Col3 2020-01-01 NaN 10 13 2020-01-02 NaN 20 23 2020-01-03 NaN 15 18 2020-01-04 NaN 30 33 2020-01-05 NaN 45 48 >>> df.shift(periods=3, fill_value=0) Col1 Col2 Col3 2020-01-01 0 0 0 2020-01-02 0 0 0 2020-01-03 0 0 0 2020-01-04 10 13 17 2020-01-05 20 23 27 >>> df.shift(periods=3, freq="D") Col1 Col2 Col3 2020-01-04 10 13 17 2020-01-05 20 23 27 2020-01-06 15 18 22 2020-01-07 30 33 37 2020-01-08 45 48 52 >>> df.shift(periods=3, freq="infer") Col1 Col2 Col3 2020-01-04 10 13 17 2020-01-05 20 23 27 2020-01-06 15 18 22 2020-01-07 30 33 37 2020-01-08 45 48 52 >>> df["Col1"].shift(periods=[0, 1, 2]) Col1_0 Col1_1 Col1_2 2020-01-01 10 NaN NaN 2020-01-02 20 10.0 NaN 2020-01-03 15 20.0 10.0 2020-01-04 30 15.0 20.0 2020-01-05 45 30.0 15.0

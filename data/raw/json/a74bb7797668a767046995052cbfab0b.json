@@ -1,0 +1,35 @@
+{
+    "id": "a74bb7797668a767046995052cbfab0b",
+    "url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/NAR-ship/",
+    "canonical_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/NAR-ship",
+    "title": "Graph of Top Naruto Fanfiction",
+    "status": 200,
+    "markdown": "colah\nGraph of Top Naruto Fanfiction\nGraph of top Naruto Fanfiction, colored by ship.\nMore about this visualisation\nLegend:\nstory\nconnection\nship\nSearch:\nGroup Selector:\nSelect Group\nGroup 1 (486 members)\nGroup 2 (145 members)\nGroup 3 (114 members)\nGroup 4 (2 members)\nGroup 5 (37 members)\nGroup 6 (1 members)\nGroup 7 (23 members)\nGroup 8 (1 members)\nGroup 9 (22 members)\nGroup 10 (79 members)\nGroup 11 (1 members)\nGroup 12 (2 members)\nGroup 13 (9 members)\nGroup 14 (1 members)\nGroup 15 (27 members)\nGroup 16 (12 members)\nGroup 17 (1 members)\nGroup 18 (5 members)\nGroup 19 (2 members)\nGroup 20 (21 members)\nGroup 21 (10 members)\nGroup 22 (2 members)\nGroup 23 (8 members)\nGroup 24 (4 members)\nGroup 25 (1 members)\nGroup 26 (1 members)\nGroup 27 (3 members)\nGroup 28 (1 members)\nGroup 29 (2 members)\nGroup 30 (2 members)\nGroup 31 (1 members)\nGroup 32 (2 members)\nGroup 33 (6 members)\nGroup 34 (4 members)\nGroup 35 (6 members)\nGroup 36 (8 members)\nGroup 37 (1 members)\nGroup 38 (6 members)\nGroup 39 (2 members)\nGroup 40 (3 members)\nGroup 41 (5 members)\nGroup 42 (1 members)\nGroup 43 (1 members)\nGroup 44 (4 members)\nGroup 45 (2 members)\nGroup 46 (1 members)\nGroup 47 (1 members)\nGroup 48 (6 members)\nGroup 49 (2 members)\nGroup 50 (1 members)\nGroup 51 (1 members)\nGroup 52 (2 members)\nGroup 53 (1 members)\nGroup 54 (1 members)\nGroup 55 (1 members)\nGroup 56 (1 members)\nGroup 57 (1 members)\nGroup 58 (3 members)\nGroup 59 (1 members)\nGroup 60 (1 members)\nGroup 61 (1 members)\nGroup 62 (1 members)\nGroup 63 (2 members)\nGroup 64 (1 members)\nGroup 65 (1 members)\nGroup 66 (2 members)\nGroup 67 (1 members)\nGroup 68 (2 members)\nGroup 69 (1 members)\nGroup 70 (1 members)\nGroup 71 (1 members)\nGroup 72 (1 members)\nGroup 73 (1 members)\nGroup 74 (1 members)\nGroup 75 (1 members)\nGroup 76 (1 members)\nGroup 77 (1 members)\nGroup 78 (1 members)\nGroup 79 (1 members)\nThe romantic pairing of the story strongly effects which stories are linked together in Naruto fanficiton. Ships are inferred from tags story summaries and character/genre inference.\nReturn to the full network\nInformation Pane\nConnections:\nOII\nJISC",
+    "markdown_length": 2095,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/NAR-ship/",
+            "text": "More about this visualisation",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Graph of Top Naruto Fanfiction",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 1,
+        "parent_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/NAR-ship/"
+    },
+    "crawled_at": "2026-08-10T11:46:37.047279",
+    "type": "webpage"
+}

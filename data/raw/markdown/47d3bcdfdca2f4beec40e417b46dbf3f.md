@@ -1,0 +1,17 @@
+# pandas.Index.fillna#
+
+- 
+Index.fillna(*value* )[source]#
+- Fill NA/NaN values with the specified value. 
+  - Parameters:
+    - **value** scalar
+    - Scalar value to use to fill holes (e.g. 0). This value cannot be a list-likes.
+  - Returns:
+    - Index
+    - NA/NaN values replaced with value.
+ See also 
+  - `DataFrame.fillna`
+  - Fill NaN values of a DataFrame.
+  - `Series.fillna`
+  - Fill NaN Values of a Series.
+ Examples >>> idx = pd.Index([np.nan, np.nan, 3]) >>> idx.fillna(0) Index([0.0, 0.0, 3.0], dtype='float64')

@@ -1,0 +1,16 @@
+# pandas.Index.get_slice_bound#
+
+- 
+Index.get_slice_bound(*label* ,*side* )[source]#
+- Calculate slice bound that corresponds to given label. Returns leftmost (one-past-the-rightmost if `side=='right'` ) position
+of given label.
+  - Parameters:
+    - **label** object
+    - **side** {‘left’, ‘right’}
+  - Returns:
+    - int
+    - Index of label.
+ See also 
+  - `Index.get_loc`
+  - Get integer location, slice or boolean mask for requested label.
+ Examples >>> idx = pd.RangeIndex(5) >>> idx.get_slice_bound(3, 'left') 3 >>> idx.get_slice_bound(3, 'right') 4 If `label` is non-unique in the index, an error will be raised.>>> idx_duplicate = pd.Index(['a', 'b', 'a', 'c', 'd']) >>> idx_duplicate.get_slice_bound('a', 'left') Traceback (most recent call last): KeyError: Cannot get left slice bound for non-unique label: 'a'

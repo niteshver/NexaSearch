@@ -1,0 +1,1 @@
+pandas.Timestamp.dayofyear# Timestamp.dayofyear# Return day of the year. Deprecated since version 3.1.0: Use Timestamp.day_of_year instead.

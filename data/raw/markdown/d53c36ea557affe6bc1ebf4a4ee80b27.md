@@ -1,0 +1,22 @@
+# pandas.api.typing.SeriesGroupBy.cummin#
+
+- 
+SeriesGroupBy.cummin(*numeric_only=False* ,*skipna=True* ,***kwargs* )[source]#
+- Cumulative min for each group. Returns a same-sized object where each value is replaced by the minimum of all preceding values in its group. 
+  - Parameters:
+    - **numeric_only** bool, default False
+    - Include only float, int or boolean data.
+    - **skipna** bool, default True
+    - Exclude NA/null values. If an entire row/column is NA, the result will be NA.
+    - ****kwargs** dict, optional
+    - Additional keyword arguments to be passed to the function. Deprecated since version 3.1.0: Passing `**kwargs` to GroupBy.cummin is deprecated
+and will be removed in a future version of pandas.
+  - Returns:
+    - Series or DataFrame
+    - Cumulative min for each group. Same object type as the caller.
+ See also 
+  - `Series.cummin`
+  - Apply function cummin to a Series.
+  - `DataFrame.cummin`
+  - Apply function cummin to each row or column of a DataFrame.
+ Examples For SeriesGroupBy: >>> lst = ["a", "a", "a", "b", "b", "b"] >>> ser = pd.Series([1, 6, 2, 3, 0, 4], index=lst) >>> ser a 1 a 6 a 2 b 3 b 0 b 4 dtype: int64 >>> ser.groupby(level=0).cummin() a 1 a 1 a 1 b 3 b 0 b 0 dtype: int64 For DataFrameGroupBy: >>> data = [[1, 0, 2], [1, 1, 5], [6, 6, 9]] >>> df = pd.DataFrame( ... data, columns=["a", "b", "c"], index=["snake", "rabbit", "turtle"] ... ) >>> df a b c snake 1 0 2 rabbit 1 1 5 turtle 6 6 9 >>> df.groupby("a").groups {1: ['snake', 'rabbit'], 6: ['turtle']} >>> df.groupby("a").cummin() b c snake 0 2 rabbit 0 2 turtle 6 9

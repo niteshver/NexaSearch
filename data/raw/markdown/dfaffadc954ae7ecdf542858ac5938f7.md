@@ -1,0 +1,1 @@
+pandas.DatetimeIndex.freqstr# property DatetimeIndex.freqstr[source]# Return the frequency object as a string if its set, otherwise None.

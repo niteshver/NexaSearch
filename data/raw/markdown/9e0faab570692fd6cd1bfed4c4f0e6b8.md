@@ -1,0 +1,19 @@
+# pandas.PeriodIndex.day#
+
+- property PeriodIndex.day[source]#
+- The days of the period. Returns the day-of-month component for each period in the index. See also 
+  - `PeriodIndex.day_of_week`
+  - The day of the week with Monday=0, Sunday=6.
+  - `PeriodIndex.day_of_year`
+  - The ordinal day of the year.
+  - `PeriodIndex.dayofweek`
+  - The day of the week with Monday=0, Sunday=6.
+  - `PeriodIndex.dayofyear`
+  - The ordinal day of the year.
+  - `PeriodIndex.days_in_month`
+  - The number of days in the month.
+  - `PeriodIndex.daysinmonth`
+  - The number of days in the month.
+  - `PeriodIndex.weekday`
+  - The day of the week with Monday=0, Sunday=6.
+ Examples >>> idx = pd.PeriodIndex(['2020-01-31', '2020-02-28'], freq='D') >>> idx.day Index([31, 28], dtype='int64')

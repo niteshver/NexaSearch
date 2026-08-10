@@ -1,0 +1,22 @@
+{
+    "id": "6c9335125d2de04691c0d4cc1a2aac2c",
+    "url": "https://pandas.pydata.org/pandas-docs/version/2.0/_sources/reference/api/pandas.CategoricalIndex.as_ordered.rst.txt",
+    "canonical_url": "https://pandas.pydata.org/pandas-docs/version/2.0/_sources/reference/api/pandas.CategoricalIndex.as_ordered.rst.txt",
+    "title": "https://pandas.pydata.org/pandas-docs/version/2.0/_sources/reference/api/pandas.CategoricalIndex.as_ordered.rst.txt",
+    "status": 200,
+    "markdown": "pandas.CategoricalIndex.as\\_ordered =================================== .. currentmodule:: pandas .. automethod:: CategoricalIndex.as_ordered",
+    "markdown_length": 141,
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "https://pandas.pydata.org/pandas-docs/version/2.0/reference/api/pandas.CategoricalIndex.as_ordered.html"
+    },
+    "crawled_at": "2026-08-10T11:48:35.280890",
+    "type": "webpage"
+}

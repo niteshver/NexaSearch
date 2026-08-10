@@ -1,0 +1,29 @@
+# pandas.DataFrame.set_index#
+
+- 
+DataFrame.set_index(*keys* ,*** ,*drop=True* ,*append=False* ,*inplace=False* ,*verify_integrity=<no_default>* )[source]#
+- Set the DataFrame index using existing columns. Set the DataFrame index (row labels) using one or more existing columns or arrays (of the correct length). The index can replace the existing index or expand on it. 
+  - Parameters:
+    - **keys** label or array-like or list of labels/arrays
+    - This parameter can be either a single column key, a single array of the same length as the calling DataFrame, or a list containing an arbitrary combination of column keys and arrays. Here, “array” encompasses `Series` ,`Index` ,`np.ndarray` , and
+instances of`Iterator` .
+    - **drop** bool, default True
+    - Delete columns to be used as the new index.
+    - **append** bool, default False
+    - Whether to append columns to existing index. Setting to True will add the new columns to existing index. When set to False, the current index will be dropped from the DataFrame.
+    - **inplace** bool, default False
+    - Whether to modify the DataFrame rather than creating a new one.
+    - **verify_integrity** bool, default False
+    - Check the new index for duplicates. Otherwise defer the check until necessary. Setting to False will improve the performance of this method. Deprecated since version 3.0.0: The `verify_integrity` keyword is deprecated and will be
+removed in a future version. Check`result.index.is_unique` directly instead.
+  - Returns:
+    - DataFrame or None
+    - Changed row labels or None if `inplace=True` .
+ See also 
+  - `DataFrame.reset_index`
+  - Opposite of set_index.
+  - `DataFrame.reindex`
+  - Change to new indices or expand indices.
+  - `DataFrame.reindex_like`
+  - Change to same indices as other DataFrame.
+ Examples >>> df = pd.DataFrame( ... { ... "month": [1, 4, 7, 10], ... "year": [2012, 2014, 2013, 2014], ... "sale": [55, 40, 84, 31], ... } ... ) >>> df month year sale 0 1 2012 55 1 4 2014 40 2 7 2013 84 3 10 2014 31 Set the index to become the ‘month’ column: >>> df.set_index("month") year sale month 1 2012 55 4 2014 40 7 2013 84 10 2014 31 Create a MultiIndex using columns ‘year’ and ‘month’: >>> df.set_index(["year", "month"]) sale year month 2012 1 55 2014 4 40 2013 7 84 2014 10 31 Create a MultiIndex using an Index and a column: >>> df.set_index([pd.Index([1, 2, 3, 4]), "year"]) month sale year 1 2012 1 55 2 2014 4 40 3 2013 7 84 4 2014 10 31 Create a MultiIndex using two Series: >>> s = pd.Series([1, 2, 3, 4]) >>> df.set_index([s, s**2]) month year sale 1 1 1 2012 55 2 4 4 2014 40 3 9 7 2013 84 4 16 10 2014 31 Append a column to the existing index: >>> df = df.set_index("month") >>> df.set_index("year", append=True) sale month year 1 2012 55 4 2014 40 7 2013 84 10 2014 31 >>> df.set_index("year", append=False) sale year 2012 55 2014 40 2013 84 2014 31

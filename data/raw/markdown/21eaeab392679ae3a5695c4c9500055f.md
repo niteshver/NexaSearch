@@ -1,0 +1,1 @@
+pandas.Index.size# property Index.size[source]# Return the number of elements in the underlying data.

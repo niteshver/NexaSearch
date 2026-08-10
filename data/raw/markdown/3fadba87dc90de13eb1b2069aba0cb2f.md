@@ -1,0 +1,12 @@
+# pandas.tseries.offsets.BusinessMonthEnd.is_year_end#
+
+- 
+BusinessMonthEnd.is_year_end(*ts* )#
+- Return boolean whether a timestamp occurs on the year end. This method checks if the given timestamp falls on December 31st, which marks the end of a calendar year. 
+  - Parameters:
+    - **ts** Timestamp
+    - The timestamp to check.
+ See also 
+  - `is_year_start`
+  - Return boolean whether a timestamp occurs on the year start.
+ Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.Hour(5) >>> freq.is_year_end(ts) False

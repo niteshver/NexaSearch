@@ -1,0 +1,5 @@
+# pandas.DatetimeIndex.month#
+
+- 
+*property* DatetimeIndex.month[source]#
+- The month as January=1, December=12. Examples >>> datetime_series = pd.Series( ... pd.date_range("2000-01-01", periods=3, freq="ME") ... ) >>> datetime_series 0 2000-01-31 1 2000-02-29 2 2000-03-31 dtype: datetime64[ns] >>> datetime_series.dt.month 0 1 1 2 2 3 dtype: int32
