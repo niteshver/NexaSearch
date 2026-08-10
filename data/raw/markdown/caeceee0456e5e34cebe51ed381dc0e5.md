@@ -1,0 +1,21 @@
+# pandas.api.typing.DataFrameGroupBy.pct_change#
+
+- 
+DataFrameGroupBy.pct_change(*periods=1* ,*fill_method=None* ,*freq=None* )[source]#
+- Calculate pct_change of each value to previous entry in group. This method calculates the percentage change between the current and a prior element within each group, useful for computing growth rates. 
+  - Parameters:
+    - **periods** int, default 1
+    - Periods to shift for calculating percentage change. Comparing with a period of 1 means adjacent elements are compared, whereas a period of 2 compares every other element.
+    - **fill_method** None
+    - Must be None. This argument will be removed in a future version of pandas.
+    - **freq** str, pandas offset object, or None, default None
+    - The frequency increment for time series data (e.g., ‘M’ for month-end). If None, the frequency is inferred from the index. Relevant for time series data only.
+  - Returns:
+    - Series or DataFrame
+    - Percentage changes within each group.
+ See also 
+  - `Series.pct_change`
+  - Apply function pct_change to a Series.
+  - `DataFrame.pct_change`
+  - Apply function pct_change to each row or column of a DataFrame.
+ Examples For SeriesGroupBy: >>> lst = ["a", "a", "b", "b"] >>> ser = pd.Series([1, 2, 3, 4], index=lst) >>> ser a 1 a 2 b 3 b 4 dtype: int64 >>> ser.groupby(level=0).pct_change() a NaN a 1.000000 b NaN b 0.333333 dtype: float64 For DataFrameGroupBy: >>> data = [[1, 2, 3], [1, 5, 6], [2, 5, 8], [2, 6, 9]] >>> df = pd.DataFrame( ... data, ... columns=["a", "b", "c"], ... index=["tuna", "salmon", "catfish", "goldfish"], ... ) >>> df a b c tuna 1 2 3 salmon 1 5 6 catfish 2 5 8 goldfish 2 6 9 >>> df.groupby("a").pct_change() b c tuna NaN NaN salmon 1.5 1.000 catfish NaN NaN goldfish 0.2 0.125

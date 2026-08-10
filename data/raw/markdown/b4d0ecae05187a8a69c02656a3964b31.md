@@ -1,0 +1,1 @@
+pandas.PeriodIndex.dayofweek# property PeriodIndex.dayofweek[source]# The day of the week with Monday=0, Sunday=6. Examples >>> idx = pd.PeriodIndex(["2023-01-01", "2023-01-02", "2023-01-03"], freq="D") >>> idx.weekday Index([6, 0, 1], dtype='int64')

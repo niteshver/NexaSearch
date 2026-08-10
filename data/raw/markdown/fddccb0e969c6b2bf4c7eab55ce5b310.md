@@ -1,0 +1,13 @@
+# pandas.Categorical.codes#
+
+- property Categorical.codes[source]#
+- The category codes of this categorical index. Codes are an array of integers which are the positions of the actual values in the categories array. There is no setter, use the other categorical methods and the normal item setter to change values in the categorical. 
+  - Returns:
+    - ndarray[int]
+    - A non-writable view of the `codes` array.
+ See also 
+  - `Categorical.from_codes`
+  - Make a Categorical from codes.
+  - `CategoricalIndex`
+  - An Index with an underlying `Categorical` .
+ Examples For `pandas.Categorical` :>>> cat = pd.Categorical(["a", "b"], ordered=True) >>> cat.codes array([0, 1], dtype=int8) For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex(["a", "b", "c", "a", "b", "c"]) >>> ci.codes array([0, 1, 2, 0, 1, 2], dtype=int8) >>> ci = pd.CategoricalIndex(["a", "c"], categories=["c", "b", "a"]) >>> ci.codes array([2, 0], dtype=int8)

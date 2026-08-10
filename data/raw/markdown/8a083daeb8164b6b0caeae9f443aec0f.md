@@ -1,0 +1,1 @@
+pandas.PeriodIndex.from_fields# classmethod PeriodIndex.from_fields(*, year=None, quarter=None, month=None, day=None, hour=None, minute=None, second=None, freq=None)[source]#

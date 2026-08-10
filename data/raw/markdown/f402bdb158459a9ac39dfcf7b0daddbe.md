@@ -1,0 +1,1 @@
+pandas.PeriodIndex.from_ordinals# classmethod PeriodIndex.from_ordinals(ordinals, *, freq, name=None)[source]#

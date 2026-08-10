@@ -1,0 +1,1 @@
+pandas.Index.inferred_type# Index.inferred_type[source]# Return a string of the type inferred from the values.

@@ -1,0 +1,9 @@
+# pandas.tseries.offsets.FY5253.weekday#
+
+- FY5253.weekday#
+- Return the weekday used by the fiscal year. This is the day of the week on which the fiscal year ends. The value is an integer from 0 (Monday) to 6 (Sunday). See also 
+  - `FY5253.startingMonth`
+  - Return the starting month of the fiscal year.
+  - `FY5253.variation`
+  - Return the variation of the fiscal year.
+ Examples >>> offset = pd.offsets.FY5253(weekday=4, startingMonth=12, variation="nearest") >>> offset.weekday 4
