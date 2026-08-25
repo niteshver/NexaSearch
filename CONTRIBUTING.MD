@@ -23,13 +23,22 @@ If you discover a bug, have a feature request, or find incorrect behavior:
 
 Before implementing a major feature or architectural change, please open a discussion or issue first. This helps ensure the feature aligns with the project's roadmap and avoids duplicate work.
 
-### Pull Requests
+## Branches & PRs
+ 
+- `main` is protected. Nothing enters it without a reviewed PR (pull request). 
+- One branch per task, named after the Issue it solves: `feature/sql-validation`, `fix/upload-encoding`.
+- Pull `main` into your branch at the start of every session.
+- Keep PRs small — one Issue per PR, reviewable in ~10 minutes.
+- Every PR description says: what it does, how it was tested, `Closes #N`.
+- The **other** person reviews before merge. 
 
-Before submitting a Pull Request, please ensure that:
-
-- Your code follows the project's coding style.
-- The project builds and runs successfully.
-- New features are documented where appropriate.
-- Your Pull Request clearly describes the purpose of the changes.
-
-We appreciate every contribution that helps improve NexaSearch. Thank you for being part of the project! 🚀
+## Commits
+ 
+Commit after every meaningful step, never everything at once. Conventional commits:
+ 
+- `feat:` new functionality
+- `fix:` bug fix
+- `chore:` setup, config, dependencies, refactor
+- `docs:` README, contract, documentation
+- `test:` adding or fixing tests
+- `style:` formatting only
