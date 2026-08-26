@@ -2,7 +2,7 @@
     "id": "60bd9c9a141b03b64c5bb5252289ef58",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.sort_values.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.sort_values.html",
-    "title": "pandas.Index.sort_values — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.sort_values — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.sort_values#\n\n- \nIndex.sort_values(*** ,*return_indexer=False* ,*ascending=True* ,*na_position='last'* ,*key=None* )[source]#\n- Return a sorted copy of the index. Return a sorted copy of the index, and optionally return the indices that sorted the index itself. \n  - Parameters:\n    - **return_indexer** bool, default False\n    - Should the indices that would sort the index be returned.\n    - **ascending** bool, default True\n    - Should the index values be sorted in an ascending order.\n    - **na_position** {‘first’ or ‘last’}, default ‘last’\n    - Argument ‘first’ puts NaNs at the beginning, ‘last’ puts NaNs at the end.\n    - **key** callable, optional\n    - If not None, apply the key function to the index values before sorting. This is similar to the key argument in the builtin `sorted()` function, with the notable difference that\nthis key function should be*vectorized* . It should expect an`Index` and return an`Index` of the same shape.\n  - Returns:\n    - **sorted_index** pandas.Index\n    - Sorted copy of the index.\n    - **indexer** numpy.ndarray, optional\n    - The indices that the index itself was sorted by.\n See also \n  - `Series.sort_values`\n  - Sort values of a Series.\n  - `DataFrame.sort_values`\n  - Sort values in a DataFrame.\n Examples >>> idx = pd.Index([10, 100, 1, 1000]) >>> idx Index([10, 100, 1, 1000], dtype='int64') Sort values in ascending order (default behavior). >>> idx.sort_values() Index([1, 10, 100, 1000], dtype='int64') Sort values in descending order, and also get the indices idx was sorted by. >>> idx.sort_values(ascending=False, return_indexer=True) (Index([1000, 100, 10, 1], dtype='int64'), array([3, 1, 0, 2]))",
     "markdown_length": 1681,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.sort_values — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.sort_values — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.sort_values.html"
     },
-    "crawled_at": "2026-08-10T11:47:59.187165",
+    "crawled_at": "2026-08-26T06:49:45.753015",
     "type": "webpage"
 }

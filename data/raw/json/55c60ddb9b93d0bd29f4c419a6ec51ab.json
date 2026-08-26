@@ -2,10 +2,10 @@
     "id": "55c60ddb9b93d0bd29f4c419a6ec51ab",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.HalfYearEnd.startingMonth.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.HalfYearEnd.startingMonth.html",
-    "title": "pandas.tseries.offsets.HalfYearEnd.startingMonth — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.HalfYearEnd.startingMonth — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
-    "markdown": "# pandas.tseries.offsets.HalfYearEnd.startingMonth#\n\n- HalfYearEnd.startingMonth#\n- Return the month of the year from which half-years start. This value determines which month marks the beginning of a half-year period. For example, with startingMonth=1, half-years start in January and July. See also \n  - `HalfYearOffset.rule_code`\n  - Return the rule code for the half-year offset.\n  - `QuarterOffset.startingMonth`\n  - Similar property for quarter-based offsets.\n Examples >>> pd.offsets.BHalfYearBegin().startingMonth 1 >>> pd.offsets.BHalfYearEnd().startingMonth 6 >>> pd.offsets.HalfYearBegin(startingMonth=3).startingMonth 3",
-    "markdown_length": 631,
+    "markdown": "# pandas.tseries.offsets.HalfYearEnd.startingMonth#\n\n- HalfYearEnd.startingMonth#\n- Return the month of the year that anchors the half-years. For the `*Begin` offsets this is a month in which a half-year starts, so`startingMonth=1` anchors on January 1 and July 1. For the`*End` offsets it is a month in which a half-year*ends* , so`startingMonth=1` anchors on January 31 and July 31.See also \n  - `HalfYearOffset.rule_code`\n  - Return the rule code for the half-year offset.\n  - `QuarterOffset.startingMonth`\n  - Similar property for quarter-based offsets.\n Examples A `*Begin` offset starts its half-years in`startingMonth` :>>> pd.offsets.HalfYearBegin(startingMonth=2).startingMonth 2 >>> pd.Timestamp(\"2022-01-15\") + pd.offsets.HalfYearBegin(startingMonth=2) Timestamp('2022-02-01 00:00:00') An `*End` offset ends its half-years in`startingMonth` :>>> pd.offsets.HalfYearEnd(startingMonth=2).startingMonth 2 >>> pd.Timestamp(\"2022-01-15\") + pd.offsets.HalfYearEnd(startingMonth=2) Timestamp('2022-02-28 00:00:00')",
+    "markdown_length": 1018,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.HalfYearEnd.startingMonth.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.HalfYearEnd.startingMonth — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.HalfYearEnd.startingMonth — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:22.272807",
+    "crawled_at": "2026-08-26T06:51:42.747395",
     "type": "webpage"
 }

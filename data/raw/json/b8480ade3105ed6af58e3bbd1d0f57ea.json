@@ -2,7 +2,7 @@
     "id": "b8480ade3105ed6af58e3bbd1d0f57ea",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.size.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.size.html",
-    "title": "pandas.api.typing.Resampler.size — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Resampler.size — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.size#\n\n- final Resampler.size()[source]#\n- Compute group sizes. This method returns the number of rows in each resampled time period, including rows with missing values. \n  - Returns:\n    - Series\n    - Number of rows in each group.\n See also \n  - `Series.groupby`\n  - Apply a function groupby to a Series.\n  - `DataFrame.groupby`\n  - Apply a function groupby to each row or column of a DataFrame.\n Examples >>> ser = pd.Series( ... [1, 2, 3], ... index=pd.DatetimeIndex([\"2023-01-01\", \"2023-01-15\", \"2023-02-01\"]), ... ) >>> ser 2023-01-01 1 2023-01-15 2 2023-02-01 3 dtype: int64 >>> ser.resample(\"MS\").size() 2023-01-01 2 2023-02-01 1 Freq: MS, dtype: int64",
     "markdown_length": 690,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.size — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Resampler.size — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.607902",
+    "crawled_at": "2026-08-26T06:51:52.108250",
     "type": "webpage"
 }

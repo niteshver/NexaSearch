@@ -2,7 +2,7 @@
     "id": "5a2096cc216430c61ff0ec25163bff04",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.scatter_matrix.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.scatter_matrix.html",
-    "title": "pandas.plotting.scatter_matrix — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.plotting.scatter_matrix — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.scatter_matrix#\n\n- \npandas.plotting.scatter_matrix(*frame* ,*alpha=0.5* ,*figsize=None* ,*ax=None* ,*grid=False* ,*diagonal='hist'* ,*marker='.'* ,*density_kwds=None* ,*hist_kwds=None* ,*range_padding=0.05* ,***kwargs* )[source]#\n- Draw a matrix of scatter plots. Each pair of numeric columns in the DataFrame is plotted against each other, resulting in a matrix of scatter plots. The diagonal plots can display either histograms or Kernel Density Estimation (KDE) plots for each variable. \n  - Parameters:\n    - **frame** DataFrame\n    - The data to be plotted.\n    - **alpha** float, optional\n    - Amount of transparency applied.\n    - **figsize** (float,float), optional\n    - A tuple (width, height) in inches.\n    - **ax** Matplotlib axis object, optional\n    - An existing Matplotlib axis object for the plots. If None, a new axis is created.\n    - **grid** bool, optional\n    - Setting this to True will show the grid.\n    - **diagonal** {‘hist’, ‘kde’}\n    - Pick between ‘kde’ and ‘hist’ for either Kernel Density Estimation or Histogram plot in the diagonal.\n    - **marker** str, optional\n    - Matplotlib marker type, default ‘.’.\n    - **density_kwds** keywords\n    - Keyword arguments to be passed to kernel density estimate plot.\n    - **hist_kwds** keywords\n    - Keyword arguments to be passed to hist function.\n    - **range_padding** float, default 0.05\n    - Relative extension of axis range in x and y with respect to (x_max - x_min) or (y_max - y_min).\n    - ****kwargs**\n    - Keyword arguments to be passed to scatter function.\n  - Returns:\n    - numpy.ndarray\n    - A matrix of scatter plots.\n See also \n  - `plotting.parallel_coordinates`\n  - Plots parallel coordinates for multivariate data.\n  - `plotting.andrews_curves`\n  - Generates Andrews curves for visualizing clusters of multivariate data.\n  - `plotting.radviz`\n  - Creates a RadViz visualization.\n  - `plotting.bootstrap_plot`\n  - Visualizes uncertainty in data via bootstrap sampling.\n Examples >>> df = pd.DataFrame(np.random.randn(1000, 4), columns=[\"A\", \"B\", \"C\", \"D\"]) >>> pd.plotting.scatter_matrix(df, alpha=0.2) array([[<Axes: xlabel='A', ylabel='A'>, <Axes: xlabel='B', ylabel='A'>, <Axes: xlabel='C', ylabel='A'>, <Axes: xlabel='D', ylabel='A'>], [<Axes: xlabel='A', ylabel='B'>, <Axes: xlabel='B', ylabel='B'>, <Axes: xlabel='C', ylabel='B'>, <Axes: xlabel='D', ylabel='B'>], [<Axes: xlabel='A', ylabel='C'>, <Axes: xlabel='B', ylabel='C'>, <Axes: xlabel='C', ylabel='C'>, <Axes: xlabel='D', ylabel='C'>], [<Axes: xlabel='A', ylabel='D'>, <Axes: xlabel='B', ylabel='D'>, <Axes: xlabel='C', ylabel='D'>, <Axes: xlabel='D', ylabel='D'>]], dtype=object)",
     "markdown_length": 2666,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.scatter_matrix — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.plotting.scatter_matrix — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.876894",
+    "crawled_at": "2026-08-26T06:48:14.317424",
     "type": "webpage"
 }

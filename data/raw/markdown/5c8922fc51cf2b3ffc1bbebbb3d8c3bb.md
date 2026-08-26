@@ -142,13 +142,13 @@ ValueError                                Traceback (most recent call last)
 Cell In[11], line 1
 ----> 1 if pd.Series([False, True, False]):
       2     print("I was true")
-File ~/work/pandas/pandas/pandas/core/generic.py:1547, in NDFrame.__bool__(self)
-   1545     @final
-   1546     def __bool__(self) -> NoReturn:
--> 1547         raise ValueError(
-   1548             f"The truth value of a {type(self).__name__} is ambiguous. "
-   1549             "Use a.empty, a.item(), a.any() or a.all()."
-   1550         )
+File ~/work/pandas/pandas/pandas/core/generic.py:1561, in NDFrame.__bool__(self)
+   1559     @final
+   1560     def __bool__(self) -> NoReturn:
+-> 1561         raise ValueError(
+   1562             f"The truth value of a {type(self).__name__} is ambiguous. "
+   1563             "Use a.empty, a.item(), a.any() or a.all()."
+   1564         )
 ValueError: The truth value of a Series is ambiguous. Use a.empty, a.item(), a.any() or a.all().
 ```
 You need to explicitly choose what you want to do with the `DataFrame`, e.g.
@@ -257,32 +257,32 @@ In [26]: df = pd.DataFrame({"a": [1, 2, 3], "b": [4, 5, 6]})
 In [27]: df.apply(f, axis="columns")
 ---------------------------------------------------------------------------
 KeyError                                  Traceback (most recent call last)
-File ~/work/pandas/pandas/pandas/core/indexes/base.py:3788, in Index.get_loc(self, key)
-   3787 try:
--> 3788     return self._engine.get_loc(casted_key)
-   3789 except KeyError as err:
+File ~/work/pandas/pandas/pandas/core/indexes/base.py:3803, in Index.get_loc(self, key)
+   3802 try:
+-> 3803     return self._engine.get_loc(casted_key)
+   3804 except KeyError as err:
 File pandas/_libs/index.pyx:172, in pandas._libs.index.IndexEngine.get_loc()
 --> 172 'Could not get source, probably due dynamically evaluated source code.'
 File pandas/_libs/index.pyx:201, in pandas._libs.index.IndexEngine.get_loc()
 --> 201 'Could not get source, probably due dynamically evaluated source code.'
-File pandas/_libs/hashtable_class_helper.pxi:7707, in pandas._libs.hashtable.PyObjectHashTable.get_item()
--> 7707 'Could not get source, probably due dynamically evaluated source code.'
-File pandas/_libs/hashtable_class_helper.pxi:7715, in pandas._libs.hashtable.PyObjectHashTable.get_item()
--> 7715 'Could not get source, probably due dynamically evaluated source code.'
+File pandas/_libs/hashtable_class_helper.pxi:7726, in pandas._libs.hashtable.PyObjectHashTable.get_item()
+-> 7726 'Could not get source, probably due dynamically evaluated source code.'
+File pandas/_libs/hashtable_class_helper.pxi:7734, in pandas._libs.hashtable.PyObjectHashTable.get_item()
+-> 7734 'Could not get source, probably due dynamically evaluated source code.'
 KeyError: 'a'
 The above exception was the direct cause of the following exception:
 KeyError                                  Traceback (most recent call last)
 Cell In[27], line 1
 ----> 1 df.apply(f, axis="columns")
-File ~/work/pandas/pandas/pandas/core/frame.py:14780, in DataFrame.apply(self, func, axis, raw, result_type, args, by_row, engine, engine_kwargs, **kwargs)
-  14776                 engine_kwargs=engine_kwargs,
-  14777                 args=args,
-  14778                 kwargs=kwargs,
-  14779             )
-> 14780             return op.apply().__finalize__(self, method="apply")
-  14781         elif hasattr(engine, "__pandas_udf__"):
-  14782             if result_type is not None:
-  14783                 raise NotImplementedError(
+File ~/work/pandas/pandas/pandas/core/frame.py:14920, in DataFrame.apply(self, func, axis, raw, result_type, args, by_row, engine, engine_kwargs, **kwargs)
+  14916                 engine_kwargs=engine_kwargs,
+  14917                 args=args,
+  14918                 kwargs=kwargs,
+  14919             )
+> 14920             return op.apply().__finalize__(self, method="apply")
+  14921         elif hasattr(engine, "__pandas_udf__"):
+  14922             if result_type is not None:
+  14923                 raise NotImplementedError(
 File ~/work/pandas/pandas/pandas/core/apply.py:1061, in FrameApply.apply(self)
    1058 elif self.raw:
    1059     return self.apply_raw(engine=self.engine, engine_kwargs=self.engine_kwargs)
@@ -305,48 +305,48 @@ Cell In[25], line 2, in f(s)
       1 def f(s):
 ----> 2     s.pop("a")
       3     return s
-File ~/work/pandas/pandas/pandas/core/series.py:6183, in Series.pop(self, item)
-   6179         1    2
-   6180         2    3
-   6181         dtype: int64
-   6182         """
--> 6183         return maybe_unbox_numpy_scalar(super().pop(item=item), dtype=self.dtype)
-File ~/work/pandas/pandas/pandas/core/generic.py:825, in NDFrame.pop(self, item)
-    824     def pop(self, item: Hashable) -> Series | Any:
---> 825         result = self[item]
-    826         del self[item]
-    827 
-    828         return result
-File ~/work/pandas/pandas/pandas/core/series.py:1062, in Series.__getitem__(self, key)
-   1058 
-   1059         elif key_is_scalar:
-   1060             # Note: GH#50617 in 3.0 we changed int key to always be treated as
-   1061             #  a label, matching DataFrame behavior.
--> 1062             return self._get_value(key)
-   1063 
-   1064         # Convert generator to list before going through hashable part
-   1065         # (We will iterate through the generator there to check for slices)
-File ~/work/pandas/pandas/pandas/core/series.py:1149, in Series._get_value(self, label, takeable)
-   1145         if takeable:
-   1146             return self._values[label]
-   1147 
-   1148         # Similar to Index.get_value, but we do not fall back to positional
--> 1149         loc = self.index.get_loc(label)
-   1150 
-   1151         if is_integer(loc):
-   1152             return self._values[loc]
-File ~/work/pandas/pandas/pandas/core/indexes/base.py:3795, in Index.get_loc(self, key)
-   3790     if isinstance(casted_key, slice) or (
-   3791         isinstance(casted_key, abc.Iterable)
-   3792         and any(isinstance(x, slice) for x in casted_key)
-   3793     ):
-   3794         raise InvalidIndexError(key) from err
--> 3795     raise KeyError(key) from err
-   3796 except TypeError:
-   3797     # If we have a listlike key, _check_indexing_error will raise
-   3798     #  InvalidIndexError. Otherwise we fall through and re-raise
-   3799     #  the TypeError.
-   3800     self._check_indexing_error(key)
+File ~/work/pandas/pandas/pandas/core/series.py:6274, in Series.pop(self, item)
+   6270         1    2
+   6271         2    3
+   6272         dtype: int64
+   6273         """
+-> 6274         return maybe_unbox_numpy_scalar(super().pop(item=item), dtype=self.dtype)
+File ~/work/pandas/pandas/pandas/core/generic.py:839, in NDFrame.pop(self, item)
+    838     def pop(self, item: Hashable) -> Series | Any:
+--> 839         result = self[item]
+    840         del self[item]
+    841 
+    842         return result
+File ~/work/pandas/pandas/pandas/core/series.py:1064, in Series.__getitem__(self, key)
+   1060 
+   1061         elif key_is_scalar:
+   1062             # Note: GH#50617 in 3.0 we changed int key to always be treated as
+   1063             #  a label, matching DataFrame behavior.
+-> 1064             return self._get_value(key)
+   1065 
+   1066         # Convert generator to list before going through hashable part
+   1067         # (We will iterate through the generator there to check for slices)
+File ~/work/pandas/pandas/pandas/core/series.py:1151, in Series._get_value(self, label, takeable)
+   1147         if takeable:
+   1148             return self._values[label]
+   1149 
+   1150         # Similar to Index.get_value, but we do not fall back to positional
+-> 1151         loc = self.index.get_loc(label)
+   1152 
+   1153         if is_integer(loc):
+   1154             return self._values[loc]
+File ~/work/pandas/pandas/pandas/core/indexes/base.py:3810, in Index.get_loc(self, key)
+   3805     if isinstance(casted_key, slice) or (
+   3806         isinstance(casted_key, abc.Iterable)
+   3807         and any(isinstance(x, slice) for x in casted_key)
+   3808     ):
+   3809         raise InvalidIndexError(key) from err
+-> 3810     raise KeyError(key) from err
+   3811 except TypeError:
+   3812     # If we have a listlike key, _check_indexing_error will raise
+   3813     #  InvalidIndexError. Otherwise we fall through and re-raise
+   3814     #  the TypeError.
+   3815     self._check_indexing_error(key)
 KeyError: 'a'
 ```
 To resolve this issue, one can make a copy so that the mutation does not apply to the container being iterated over.
@@ -578,3 +578,94 @@ In [58]: newx = x.byteswap().view(x.dtype.newbyteorder())  # force native byteor
 In [59]: s = pd.Series(newx)
 ```
 See the NumPy documentation on byte order for more details.
+
+## Storing lists inside a `DataFrame` or `Series`#
+
+It is possible to store Python lists (or other collections) in the cells of
+a `DataFrame` or `Series`, but it is best avoided. A column containing
+lists has `object` dtype: each cell holds a reference to a separate Python
+object, so the column uses far more memory than a native-dtype column and no
+operation on it can use pandas’ vectorized code paths. Because lists are not
+hashable, such a column also cannot be used as a group or merge key, and
+methods that need to hash the values, like `drop_duplicates()`,
+raise a `TypeError`.
+
+```
+In [60]: df = pd.DataFrame(
+   ....:     {
+   ....:         "name": ["A.J. Price"] * 3,
+   ....:         "opponent": ["76ers", "blazers", "bobcats"],
+   ....:     }
+   ....: )
+   ....: 
+In [61]: df["nearest_neighbors"] = [["Zach LaVine", "Jeremy Lin", "Nate Robinson"]] * 3
+In [62]: df
+Out[62]: 
+         name opponent                         nearest_neighbors
+0  A.J. Price    76ers  [Zach LaVine, Jeremy Lin, Nate Robinson]
+1  A.J. Price  blazers  [Zach LaVine, Jeremy Lin, Nate Robinson]
+2  A.J. Price  bobcats  [Zach LaVine, Jeremy Lin, Nate Robinson]
+In [63]: df.dtypes
+Out[63]: 
+name                    str
+opponent                str
+nearest_neighbors    object
+dtype: object
+```
+Instead, prefer a “long” format, with one row per list element. Existing
+list-valued cells can be converted with `explode()`:
+
+```
+In [64]: exploded = df.explode("nearest_neighbors")
+In [65]: exploded
+Out[65]: 
+         name opponent nearest_neighbors
+0  A.J. Price    76ers       Zach LaVine
+0  A.J. Price    76ers        Jeremy Lin
+0  A.J. Price    76ers     Nate Robinson
+1  A.J. Price  blazers       Zach LaVine
+1  A.J. Price  blazers        Jeremy Lin
+1  A.J. Price  blazers     Nate Robinson
+2  A.J. Price  bobcats       Zach LaVine
+2  A.J. Price  bobcats        Jeremy Lin
+2  A.J. Price  bobcats     Nate Robinson
+In [66]: exploded.dtypes
+Out[66]: 
+name                 str
+opponent             str
+nearest_neighbors    str
+dtype: object
+```
+Each element now occupies its own row in a natively-typed column, and the
+usual vectorized operations, grouping, and joining all apply. If a nested
+presentation is needed at the end of a computation, the lists can be
+rebuilt with `agg(list)`:
+
+```
+In [67]: exploded.groupby(["name", "opponent"], sort=False)["nearest_neighbors"].agg(list)
+Out[67]: 
+name        opponent
+A.J. Price  76ers       [Zach LaVine, Jeremy Lin, Nate Robinson]
+            blazers     [Zach LaVine, Jeremy Lin, Nate Robinson]
+            bobcats     [Zach LaVine, Jeremy Lin, Nate Robinson]
+Name: nearest_neighbors, dtype: object
+```
+For columns of delimited strings, split directly into columns or indicator
+variables with `.str` methods rather than creating lists as an
+intermediate step:
+
+```
+In [68]: ser = pd.Series(["a|b", "b", "a|c"])
+In [69]: ser.str.split("|", expand=True)
+Out[69]: 
+   0    1
+0  a    b
+1  b  NaN
+2  a    c
+In [70]: ser.str.get_dummies(sep="|")
+Out[70]: 
+   a  b  c
+0  1  1  0
+1  0  1  0
+2  1  0  1
+```

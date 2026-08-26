@@ -2,7 +2,7 @@
     "id": "4357acf84c594e4c435afd4370b6b94f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dot.html",
-    "title": "pandas.Series.dot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dot — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dot#\n\n- \nSeries.dot(*other* )[source]#\n- Compute the dot product between the Series and the columns of other. This method computes the dot product between the Series and another one, or the Series and each columns of a DataFrame, or the Series and each columns of an array. It can also be called using self @ other. \n  - Parameters:\n    - **other** Series, DataFrame or array-like\n    - The other object to compute the dot product with its columns.\n  - Returns:\n    - scalar, Series or numpy.ndarray\n    - Return the dot product of the Series and other if other is a Series, the Series of the dot product of Series and each rows of other if other is a DataFrame or a numpy.ndarray between the Series and each columns of the numpy array.\n See also \n  - `DataFrame.dot`\n  - Compute the matrix product with the DataFrame.\n  - `Series.mul`\n  - Multiplication of series and other, element-wise.\n Notes The Series and other has to share the same index if other is a Series or a DataFrame. Examples >>> s = pd.Series([0, 1, 2, 3]) >>> other = pd.Series([-1, 2, -3, 4]) >>> s.dot(other) 8 >>> s @ other 8 >>> df = pd.DataFrame([[0, 1], [-2, 3], [4, -5], [6, 7]]) >>> s.dot(df) 0 24 1 14 dtype: int64 >>> arr = np.array([[0, 1], [-2, 3], [4, -5], [6, 7]]) >>> s.dot(arr) array([24, 14])",
     "markdown_length": 1293,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dot — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.531911",
+    "crawled_at": "2026-08-26T06:49:13.327758",
     "type": "webpage"
 }

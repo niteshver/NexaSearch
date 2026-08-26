@@ -2,7 +2,7 @@
     "id": "88046dc495b8f6b10dad803741dcd058",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.dayofweek.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.dayofweek.html",
-    "title": "pandas.Period.dayofweek — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.dayofweek — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "pandas.Period.dayofweek# Period.dayofweek# Return day of the week. Deprecated since version 3.1.0: Use Period.day_of_week instead.",
     "markdown_length": 130,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.dayofweek — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.dayofweek — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.end_time.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.289726",
+    "crawled_at": "2026-08-26T06:49:09.168221",
     "type": "webpage"
 }

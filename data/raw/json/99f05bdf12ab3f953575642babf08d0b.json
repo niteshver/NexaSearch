@@ -1,0 +1,83 @@
+{
+    "id": "99f05bdf12ab3f953575642babf08d0b",
+    "url": "http://colah.github.io/posts/tags/recursive_neural_networks.html",
+    "canonical_url": "http://colah.github.io/posts/tags/recursive_neural_networks.html",
+    "title": "Recursive Neural Networks Posts - colah's blog",
+    "status": 200,
+    "markdown": "Toggle navigation\ncolah's blog\nBlog\nAbout\nContact\nRecursive Neural Networks Posts\nDeep Learning, NLP, and Representations\n-\nJuly 7, 2014\nEnable JavaScript for footnotes, Disqus comments, and other cool stuff.",
+    "markdown_length": 208,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/",
+            "text": "Deep Learning, NLP, and Representations",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/rss.xml",
+            "text": "RSS feed",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Recursive Neural Networks Posts - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/"
+    },
+    "crawled_at": "2026-08-26T06:47:17.728959",
+    "type": "webpage"
+}

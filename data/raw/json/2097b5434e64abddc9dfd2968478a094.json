@@ -2,7 +2,7 @@
     "id": "2097b5434e64abddc9dfd2968478a094",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.truncate.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.truncate.html",
-    "title": "pandas.DataFrame.truncate — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.truncate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.truncate#\n\n- \nDataFrame.truncate(*before=None* ,*after=None* ,*axis=None* ,*copy=<no_default>* )[source]#\n- Truncate a Series or DataFrame before and after some index value. This is a useful shorthand for boolean indexing based on index values above or below certain thresholds. \n  - Parameters:\n    - **before** date, str, int\n    - Truncate all rows before this index value.\n    - **after** date, str, int\n    - Truncate all rows after this index value.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, optional\n    - Axis to truncate. Truncates the index (rows) by default. For Series this parameter is unused and defaults to 0.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - type of caller\n    - The truncated Series or DataFrame.\n See also \n  - `DataFrame.loc`\n  - Select a subset of a DataFrame by label.\n  - `DataFrame.iloc`\n  - Select a subset of a DataFrame by position.\n Notes If the index being truncated contains only datetime values, before and after may be specified as strings instead of Timestamps. Examples >>> df = pd.DataFrame( ... { ... \"A\": [\"a\", \"b\", \"c\", \"d\", \"e\"], ... \"B\": [\"f\", \"g\", \"h\", \"i\", \"j\"], ... \"C\": [\"k\", \"l\", \"m\", \"n\", \"o\"], ... }, ... index=[1, 2, 3, 4, 5], ... ) >>> df A B C 1 a f k 2 b g l 3 c h m 4 d i n 5 e j o >>> df.truncate(before=2, after=4) A B C 2 b g l 3 c h m 4 d i n The columns of a DataFrame can be truncated. >>> df.truncate(before=\"A\", after=\"B\", axis=\"columns\") A B 1 a f 2 b g 3 c h 4 d i 5 e j For Series, only rows can be truncated. >>> df[\"A\"].truncate(before=2, after=4) 2 b 3 c 4 d Name: A, dtype: str The index values in `truncate` can be datetimes or string\ndates.>>> dates = pd.date_range(\"2016-01-01\", \"2016-02-01\", freq=\"s\") >>> df = pd.DataFrame(index=dates, data={\"A\": 1}) >>> df.tail() A 2016-01-31 23:59:56 1 2016-01-31 23:59:57 1 2016-01-31 23:59:58 1 2016-01-31 23:59:59 1 2016-02-01 00:00:00 1 >>> df.truncate( ... before=pd.Timestamp(\"2016-01-05\"), after=pd.Timestamp(\"2016-01-10\") ... ).tail() A 2016-01-09 23:59:56 1 2016-01-09 23:59:57 1 2016-01-09 23:59:58 1 2016-01-09 23:59:59 1 2016-01-10 00:00:00 1 Because the index is a DatetimeIndex containing only dates, we can specify before and after as strings. They will be coerced to Timestamps before truncation. >>> df.truncate(\"2016-01-05\", \"2016-01-10\").tail() A 2016-01-09 23:59:56 1 2016-01-09 23:59:57 1 2016-01-09 23:59:58 1 2016-01-09 23:59:59 1 2016-01-10 00:00:00 1 Note that `truncate` assumes a 0 value for any unspecified time\ncomponent (midnight). This differs from partial string slicing, which\nreturns any partially matching dates.>>> df.loc[\"2016-01-05\":\"2016-01-10\", :].tail() A 2016-01-10 23:59:55 1 2016-01-10 23:59:56 1 2016-01-10 23:59:57 1 2016-01-10 23:59:58 1 2016-01-10 23:59:59 1",
     "markdown_length": 3130,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.truncate — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.truncate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.truncate.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.119523",
+    "crawled_at": "2026-08-26T06:49:07.013845",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "aaa0e93d02f0bfdedd78ee4fdc4d7d62",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.ndim.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.ndim.html",
-    "title": "pandas.DataFrame.ndim — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.ndim — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.ndim#\n\n- property DataFrame.ndim[source]#\n- Return an int representing the number of axes / array dimensions. Return 1 if Series. Otherwise return 2 if DataFrame. See also \n  - `numpy.ndarray.ndim`\n  - Number of array dimensions.\n Examples >>> s = pd.Series({\"a\": 1, \"b\": 2, \"c\": 3}) >>> s.ndim 1 >>> df = pd.DataFrame({\"col1\": [1, 2], \"col2\": [3, 4]}) >>> df.ndim 2",
     "markdown_length": 385,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.ndim — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.ndim — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:47.358700",
+    "crawled_at": "2026-08-26T06:49:03.801348",
     "type": "webpage"
 }

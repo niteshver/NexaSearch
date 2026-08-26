@@ -2,7 +2,7 @@
     "id": "3e1367f40807de27c0f87666f311927f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PossibleDataLossError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PossibleDataLossError.html",
-    "title": "pandas.errors.PossibleDataLossError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.PossibleDataLossError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.PossibleDataLossError#\n\n- exception pandas.errors.PossibleDataLossError[source]#\n- Exception raised when trying to open an HDFStore file when already opened. This error is triggered when there is a potential risk of data loss due to conflicting operations on an HDFStore file. It serves to prevent unintended overwrites or data corruption by enforcing exclusive access to the file. See also \n  - `HDFStore`\n  - Dict-like IO interface for storing pandas objects in PyTables.\n  - `HDFStore.open`\n  - Open an HDFStore file in the specified mode.\n Examples >>> store = pd.HDFStore(\"my-store\", \"a\") >>> store.open(\"w\")",
     "markdown_length": 629,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.PossibleDataLossError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.PossibleDataLossError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.770912",
+    "crawled_at": "2026-08-26T06:51:52.325050",
     "type": "webpage"
 }

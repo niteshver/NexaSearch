@@ -2,7 +2,7 @@
     "id": "691191b9d9c6aa03586936cd3e23497e",
     "url": "http://pandas.pydata.org/docs/dev/user_guide/boolean.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/user_guide/boolean.html",
-    "title": "Nullable Boolean data type — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Nullable Boolean data type — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# Nullable Boolean data type#\n\n## Indexing with NA values#\n\npandas allows indexing with `NA` values in a boolean array, which are treated as `False`.\n\n```\nIn [1]: s = pd.Series([1, 2, 3])\nIn [2]: mask = pd.array([True, False, pd.NA], dtype=\"boolean\")\nIn [3]: s[mask]\nOut[3]: \n0    1\ndtype: int64\n```\nIf you would prefer to keep the `NA` values you can manually fill them with `fillna(True)`.\n\n```\nIn [4]: s[mask.fillna(True)]\nOut[4]: \n0    1\n2    3\ndtype: int64\n```\nIf you create a column of `NA` values (for example to fill them later)\nwith `df['new_col'] = pd.NA`, the `dtype` would be set to `object` in the\nnew column. The performance on this column will be worse than with\nthe appropriate type. It’s better to use\n`df['new_col'] = pd.Series(pd.NA, dtype=\"boolean\")`\n(or another `dtype` that supports `NA`).\n\n```\nIn [5]: df = pd.DataFrame()\nIn [6]: df['objects'] = pd.NA\nIn [7]: df.dtypes\nOut[7]: \nobjects    object\ndtype: object\n```\n## Kleene logical operations#\n\n`arrays.BooleanArray` implements Kleene Logic (sometimes called three-value logic) for\nlogical operations like `&` (and), `|` (or) and `^` (exclusive-or).\n\nThis table demonstrates the results for every combination. These operations are symmetrical, so flipping the left- and right-hand side makes no difference in the result.\n\n| Expression | Result | \n|---|---|\n| `True & True` | `True` | \n| `True & False` | `False` | \n| `True & NA` | `NA` | \n| `False & False` | `False` | \n| `False & NA` | `False` | \n| `NA & NA` | `NA` | \n| `True \\| True` | `True` | \n| `True \\| False` | `True` | \n| `True \\| NA` | `True` | \n| `False \\| False` | `False` | \n| `False \\| NA` | `NA` | \n| `NA \\| NA` | `NA` | \n| `True ^ True` | `False` | \n| `True ^ False` | `True` | \n| `True ^ NA` | `NA` | \n| `False ^ False` | `False` | \n| `False ^ NA` | `NA` | \n| `NA ^ NA` | `NA` | \n\nWhen an `NA` is present in an operation, the output value is `NA` only if\nthe result cannot be determined solely based on the other input. For example,\n`True | NA` is `True`, because both `True | True` and `True | False`\nare `True`. In that case, we don’t actually need to consider the value\nof the `NA`.\n\nOn the other hand, `True & NA` is `NA`. The result depends on whether\nthe `NA` really is `True` or `False`, since `True & True` is `True`,\nbut `True & False` is `False`, so we can’t determine the output.\n\nThis differs from how `np.nan` behaves in logical operations. pandas treated\n`np.nan` is *always false in the output*.\n\nIn `or`\n\n```\nIn [8]: pd.Series([True, False, np.nan], dtype=\"object\") | True\nOut[8]: \n0     True\n1     True\n2    False\ndtype: bool\nIn [9]: pd.Series([True, False, np.nan], dtype=\"boolean\") | True\nOut[9]: \n0    True\n1    True\n2    True\ndtype: boolean\n```\nIn `and`\n\n```\nIn [10]: pd.Series([True, False, np.nan], dtype=\"object\") & True\nOut[10]: \n0     True\n1    False\n2    False\ndtype: bool\nIn [11]: pd.Series([True, False, np.nan], dtype=\"boolean\") & True\nOut[11]: \n0     True\n1    False\n2     <NA>\ndtype: boolean\n```",
     "markdown_length": 2968,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Nullable Boolean data type — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Nullable Boolean data type — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/user_guide/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:30.252535",
+    "crawled_at": "2026-08-26T06:51:44.415336",
     "type": "webpage"
 }

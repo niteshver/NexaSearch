@@ -2,7 +2,7 @@
     "id": "c54cf4343a63e6ba991df2a6185e9173",
     "url": "https://pandas.pydata.org/docs/dev/reference/plotting.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/plotting.html",
-    "title": "Plotting — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Plotting — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# Plotting#\n\nNote\n\nFor an overview, see Chart visualization.\n\nThe following functions are contained in the `pandas.plotting` module.\n\n| `andrews_curves` (frame, class_column[, ax, ...]) | Generate a matplotlib plot for visualizing clusters of multivariate data. | \n| `autocorrelation_plot` (series[, ax]) | Autocorrelation plot for time series. | \n| `bootstrap_plot` (series[, fig, size, samples]) | Bootstrap plot on mean, median and mid-range statistics. | \n| `boxplot` (data[, column, by, ax, fontsize, ...]) | Make a box plot from DataFrame columns. | \n| `deregister_matplotlib_converters` () | Remove pandas formatters and converters. | \n| `lag_plot` (series[, lag, ax]) | Lag plot for time series. | \n| `parallel_coordinates` (frame, class_column[, ...]) | Parallel coordinates plotting. | \n| `plot_params` | Stores pandas plotting options. | \n| `radviz` (frame, class_column[, ax, color, ...]) | Plot a multidimensional dataset in 2D. | \n| `register_matplotlib_converters` () | Register pandas formatters and converters with matplotlib. | \n| `scatter_matrix` (frame[, alpha, figsize, ax, ...]) | Draw a matrix of scatter plots. | \n| `table` (ax, data, **kwargs) | Helper function to convert DataFrame and Series to matplotlib.table. |",
     "markdown_length": 1241,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Plotting — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Plotting — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/plotting.html"
     },
-    "crawled_at": "2026-08-10T11:48:27.706557",
+    "crawled_at": "2026-08-26T06:50:47.871451",
     "type": "webpage"
 }

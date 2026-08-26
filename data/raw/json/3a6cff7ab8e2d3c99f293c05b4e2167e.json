@@ -2,7 +2,7 @@
     "id": "3a6cff7ab8e2d3c99f293c05b4e2167e",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.mean.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.mean.html",
-    "title": "pandas.DatetimeIndex.mean — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DatetimeIndex.mean — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.mean#\n\n- \nDatetimeIndex.mean(*** ,*skipna=True* ,*axis=0* )[source]#\n- Return the mean value of the Array. This method computes the arithmetic mean of the datetime or timedelta values in the index, optionally skipping NaT values. \n  - Parameters:\n    - **skipna** bool, default True\n    - Whether to ignore any NaT elements.\n    - **axis** int, optional, default 0\n    - Axis for the function to be applied on.\n  - Returns:\n    - scalar\n    - Timestamp or Timedelta.\n See also \n  - `numpy.ndarray.mean`\n  - Returns the average of array elements along a given axis.\n  - `Series.mean`\n  - Return the mean value in a Series.\n Notes mean is only defined for Datetime and Timedelta dtypes, not for Period. Examples For `pandas.DatetimeIndex` :>>> idx = pd.date_range(\"2001-01-01 00:00\", periods=3) >>> idx DatetimeIndex(['2001-01-01', '2001-01-02', '2001-01-03'], dtype='datetime64[us]', freq='D') >>> idx.mean() Timestamp('2001-01-02 00:00:00') For `pandas.TimedeltaIndex` :>>> tdelta_idx = pd.to_timedelta([1, 2, 3], unit=\"D\") >>> tdelta_idx TimedeltaIndex(['1 days', '2 days', '3 days'], dtype='timedelta64[s]', freq=None) >>> tdelta_idx.mean() Timedelta('2 days 00:00:00')",
     "markdown_length": 1194,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.mean — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DatetimeIndex.mean — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.mean.html"
     },
-    "crawled_at": "2026-08-10T11:47:44.310815",
+    "crawled_at": "2026-08-26T06:49:34.768838",
     "type": "webpage"
 }

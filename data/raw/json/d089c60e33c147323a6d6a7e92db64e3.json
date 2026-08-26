@@ -2,7 +2,7 @@
     "id": "d089c60e33c147323a6d6a7e92db64e3",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.join.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.join.html",
-    "title": "pandas.Index.join — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.join — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.join#\n\n- \nfinal Index.join(*other* ,*** ,*how='left'* ,*level=None* ,*return_indexers=False* ,*sort=False* )[source]#\n- Compute join_index and indexers to conform data structures to the new index. This method computes the result of a join between two Index objects using the specified join type, and optionally returns integer indexers that map each original index to the new joined index. \n  - Parameters:\n    - **other** Index\n    - The other index on which join is performed.\n    - **how** {‘left’, ‘right’, ‘inner’, ‘outer’}\n    - **level** int or level name, default None\n    - It is either the integer position or the name of the level.\n    - **return_indexers** bool, default False\n    - Whether to return the indexers or not for both the index objects.\n    - **sort** bool, default False\n    - Sort the join keys lexicographically in the result Index. If False, the order of the join keys depends on the join type (how keyword).\n  - Returns:\n    - join_index, (left_indexer, right_indexer)\n    - The new index.\n See also \n  - `DataFrame.join`\n  - Join columns with other DataFrame either on index or on a key.\n  - `DataFrame.merge`\n  - Merge DataFrame or named Series objects with a database-style join.\n Examples >>> idx1 = pd.Index([1, 2, 3]) >>> idx2 = pd.Index([4, 5, 6]) >>> idx1.join(idx2, how=\"outer\") Index([1, 2, 3, 4, 5, 6], dtype='int64') >>> idx1.join(other=idx2, how=\"outer\", return_indexers=True) (Index([1, 2, 3, 4, 5, 6], dtype='int64'), array([ 0, 1, 2, -1, -1, -1]), array([-1, -1, -1, 0, 1, 2]))",
     "markdown_length": 1537,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.join — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.join — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.join.html"
     },
-    "crawled_at": "2026-08-10T11:47:45.773714",
+    "crawled_at": "2026-08-26T06:49:35.054235",
     "type": "webpage"
 }

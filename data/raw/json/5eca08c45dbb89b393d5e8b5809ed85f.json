@@ -2,7 +2,7 @@
     "id": "5eca08c45dbb89b393d5e8b5809ed85f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.cov.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.cov.html",
-    "title": "pandas.api.typing.Expanding.cov — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Expanding.cov — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.cov#\n\n- \nExpanding.cov(*other=None* ,*pairwise=None* ,*ddof=1* ,*numeric_only=False* )[source]#\n- Calculate the expanding sample covariance. When `other` is provided, computes pairwise covariance between`self` and`other` ; otherwise computes all pairwise covariances\nof the columns.\n  - Parameters:\n    - **other** Series or DataFrame, optional\n    - If not supplied then will default to self and produce pairwise output.\n    - **pairwise** bool, default None\n    - If False then only matching columns between self and other will be used and the output will be a DataFrame. If True then all pairwise combinations will be calculated and the output will be a MultiIndexed DataFrame in the case of DataFrame inputs. In the case of missing elements, only complete pairwise observations will be used.\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is `N - ddof` , where`N` represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.cov`\n  - Aggregating cov for Series.\n  - `DataFrame.cov`\n  - Aggregating cov for DataFrame.\n Examples >>> ser1 = pd.Series([1, 2, 3, 4], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser2 = pd.Series([10, 11, 13, 16], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser1.expanding().cov(ser2) a NaN b 0.500000 c 1.500000 d 3.333333 dtype: float64",
     "markdown_length": 1656,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.cov — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Expanding.cov — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.146905",
+    "crawled_at": "2026-08-26T06:51:54.436795",
     "type": "webpage"
 }

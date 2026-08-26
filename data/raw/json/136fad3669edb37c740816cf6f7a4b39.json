@@ -2,7 +2,7 @@
     "id": "136fad3669edb37c740816cf6f7a4b39",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_arrays.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_arrays.html",
-    "title": "pandas.IntervalIndex.from_arrays — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IntervalIndex.from_arrays — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.from_arrays#\n\n- \nclassmethod IntervalIndex.from_arrays(*left* ,*right* ,*closed='right'* ,*name=None* ,*copy=False* ,*dtype=None* )[source]#\n- Construct from two arrays defining the left and right bounds. Each interval is formed by pairing the corresponding elements of *left* and*right* , producing an`IntervalIndex` of the same\nlength as the input arrays.\n  - Parameters:\n    - **left** array-like (1-dimensional)\n    - Left bounds for each interval.\n    - **right** array-like (1-dimensional)\n    - Right bounds for each interval.\n    - **closed** {‘left’, ‘right’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the intervals are closed on the left-side, right-side, both or neither.\n    - **name** str, optional\n    - Name of the resulting IntervalIndex.\n    - **copy** bool, default False\n    - Copy the data.\n    - **dtype** dtype, optional\n    - If None, dtype will be inferred.\n  - Returns:\n    - IntervalIndex\n  - Raises:\n    - ValueError\n    - When a value is missing in only one of left or right. When a value in left is greater than the corresponding value in right.\n See also \n  - `interval_range`\n  - Function to create a fixed frequency IntervalIndex.\n  - `IntervalIndex.from_breaks`\n  - Construct an IntervalIndex from an array of splits.\n  - `IntervalIndex.from_tuples`\n  - Construct an IntervalIndex from an array-like of tuples.\n Notes Each element of left must be less than or equal to the right element at the same position. If an element is missing, it must be missing in both left and right. A TypeError is raised when using an unsupported type for left or right. At the moment, ‘category’, ‘object’, and ‘string’ subtypes are not supported. Examples >>> pd.IntervalIndex.from_arrays([0, 1, 2], [1, 2, 3]) IntervalIndex([(0, 1], (1, 2], (2, 3]], dtype='interval[int64, right]')",
     "markdown_length": 1827,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.from_arrays — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IntervalIndex.from_arrays — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.622726",
+    "crawled_at": "2026-08-26T06:48:51.345905",
     "type": "webpage"
 }

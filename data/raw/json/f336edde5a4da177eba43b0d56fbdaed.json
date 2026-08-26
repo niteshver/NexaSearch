@@ -2,7 +2,7 @@
     "id": "f336edde5a4da177eba43b0d56fbdaed",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.repeat.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.repeat.html",
-    "title": "pandas.Series.str.repeat — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.repeat — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.repeat#\n\n- \nSeries.str.repeat(*repeats* )[source]#\n- Duplicate each string in the Series or Index. Duplicates each string in the Series or Index, either by applying the same repeat count to all elements or by using different repeat values for each element. \n  - Parameters:\n    - **repeats** int or sequence of int\n    - Same value for all (int) or different value per (sequence).\n  - Returns:\n    - Series or pandas.Index\n    - Series or Index of repeated string objects specified by input parameter repeats.\n See also \n  - `Series.str.lower`\n  - Convert all characters in each string to lowercase.\n  - `Series.str.upper`\n  - Convert all characters in each string to uppercase.\n  - `Series.str.title`\n  - Convert each string to title case (capitalizing the first letter of each word).\n  - `Series.str.strip`\n  - Remove leading and trailing whitespace from each string.\n  - `Series.str.replace`\n  - Replace occurrences of a substring with another substring in each string.\n  - `Series.str.ljust`\n  - Left-justify each string in the Series/Index by padding with a specified character.\n  - `Series.str.rjust`\n  - Right-justify each string in the Series/Index by padding with a specified character.\n Examples >>> s = pd.Series([\"a\", \"b\", \"c\"]) >>> s 0 a 1 b 2 c dtype: str Single int repeats string in Series >>> s.str.repeat(repeats=2) 0 aa 1 bb 2 cc dtype: str Sequence of int repeats corresponding string in Series >>> s.str.repeat(repeats=[1, 2, 3]) 0 a 1 bb 2 ccc dtype: str",
     "markdown_length": 1496,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.repeat — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.repeat — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.489462",
+    "crawled_at": "2026-08-26T06:50:46.416698",
     "type": "webpage"
 }

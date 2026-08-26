@@ -2,7 +2,7 @@
     "id": "7a62bf5e9ea223daabc3ae343838a07d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.istitle.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.istitle.html",
-    "title": "pandas.Series.str.istitle — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.istitle — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.istitle#\n\n- Series.str.istitle()[source]#\n- Check whether all characters in each string are titlecase. This is equivalent to running the Python string method `str.istitle()` for each element of the Series/Index. If a string\nhas zero characters,`False` is returned for that check.\n  - Returns:\n    - Series or Index of bool\n    - Series or Index of boolean values with the same length as the original Series/Index.\n See also \n  - `Series.str.isalpha`\n  - Check whether all characters are alphabetic.\n  - `Series.str.isnumeric`\n  - Check whether all characters are numeric.\n  - `Series.str.isalnum`\n  - Check whether all characters are alphanumeric.\n  - `Series.str.isdigit`\n  - Check whether all characters are digits.\n  - `Series.str.isdecimal`\n  - Check whether all characters are decimal.\n  - `Series.str.isspace`\n  - Check whether all characters are whitespace.\n  - `Series.str.islower`\n  - Check whether all characters are lowercase.\n  - `Series.str.isascii`\n  - Check whether all characters are ascii.\n  - `Series.str.isupper`\n  - Check whether all characters are uppercase.\n Examples The `s5.str.istitle` method checks for whether all words are in title\ncase (whether only the first letter of each word is capitalized). Words are\nassumed to be as any sequence of non-numeric characters separated by\nwhitespace characters.>>> s5 = pd.Series([\"leopard\", \"Golden Eagle\", \"SNAKE\", \"\"]) >>> s5.str.istitle() 0 False 1 True 2 False 3 False dtype: bool",
     "markdown_length": 1471,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.istitle — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.istitle — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.165120",
+    "crawled_at": "2026-08-26T06:51:04.346411",
     "type": "webpage"
 }

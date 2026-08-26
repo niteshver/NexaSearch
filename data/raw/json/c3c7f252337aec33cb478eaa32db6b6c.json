@@ -2,7 +2,7 @@
     "id": "c3c7f252337aec33cb478eaa32db6b6c",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.where.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.where.html",
-    "title": "pandas.Index.where — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.where — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.where#\n\n- \nfinal Index.where(*cond* ,*other=None* )[source]#\n- Replace values where the condition is False. The replacement is taken from other. \n  - Parameters:\n    - **cond** bool array-like with the same length as self\n    - Condition to select the values on.\n    - **other** scalar, or array-like, default None\n    - Replacement if the condition is False.\n  - Returns:\n    - pandas.Index\n    - A copy of self with values replaced from other where the condition is False.\n See also \n  - `Series.where`\n  - Same method for Series.\n  - `DataFrame.where`\n  - Same method for DataFrame.\n Examples >>> idx = pd.Index([\"car\", \"bike\", \"train\", \"tractor\"]) >>> idx Index(['car', 'bike', 'train', 'tractor'], dtype='str') >>> idx.where(idx.isin([\"car\", \"train\"]), \"other\") Index(['car', 'other', 'train', 'other'], dtype='str')",
     "markdown_length": 836,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.where — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.where — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.where.html"
     },
-    "crawled_at": "2026-08-10T11:47:52.652570",
+    "crawled_at": "2026-08-26T06:49:50.316966",
     "type": "webpage"
 }

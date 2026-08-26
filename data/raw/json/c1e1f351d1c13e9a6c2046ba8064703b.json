@@ -2,7 +2,7 @@
     "id": "c1e1f351d1c13e9a6c2046ba8064703b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.parsers.TextFileReader.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.parsers.TextFileReader.html",
-    "title": "pandas.io.parsers.TextFileReader — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.parsers.TextFileReader — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.io.parsers.TextFileReader#\n\n- \nclass pandas.io.parsers.TextFileReader(*f* ,*engine=None* ,***kwds* )[source]#\n- Iterator over chunks of a delimited text file. Returned by `read_csv()` ,`read_table()` , and`read_fwf()` when`iterator=True` or`chunksize` is given. Not intended to be\nconstructed directly by users.A `TextFileReader` can be iterated over to yield successive chunks as`DataFrame` objects, used as a context manager to ensure the\nunderlying file handle is closed, or queried explicitly via`read()` and`get_chunk()` .Passed `dialect` overrides any of the related parser options.\n  - Parameters:\n    - **f** str, path object, or file-like object\n    - Source to read from. Accepts the same inputs as `read_csv()` .\n    - **engine** {‘c’, ‘python’, ‘pyarrow’, ‘python-fwf’}, optional\n    - Parser engine to use. If not specified, defaults to `'python'` .\n    - ****kwds**\n    - Any keyword argument accepted by `read_csv()` ,`read_table()` ,\nor`read_fwf()` .\n See also \n  - `read_csv`\n  - Read a comma-separated values (csv) file into a DataFrame.\n  - `read_table`\n  - Read general delimited file into a DataFrame.\n  - `read_fwf`\n  - Read a table of fixed-width formatted lines into a DataFrame.\n Examples >>> with pd.read_csv(\"data.csv\", chunksize=1000) as reader: ... for chunk in reader: ... process(chunk) >>> with pd.read_csv(\"data.csv\", iterator=True) as reader: ... first = reader.get_chunk(5) Methods",
     "markdown_length": 1425,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.parsers.TextFileReader — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.parsers.TextFileReader — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.516649",
+    "crawled_at": "2026-08-26T06:50:37.698560",
     "type": "webpage"
 }

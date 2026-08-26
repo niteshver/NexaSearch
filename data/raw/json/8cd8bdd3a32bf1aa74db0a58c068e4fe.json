@@ -2,7 +2,7 @@
     "id": "8cd8bdd3a32bf1aa74db0a58c068e4fe",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CustomBusinessMonthEnd.calendar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CustomBusinessMonthEnd.calendar.html",
-    "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.calendar — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.calendar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.CustomBusinessMonthEnd.calendar#\n\n- CustomBusinessMonthEnd.calendar#\n- Return the calendar used for business day calculations. This property returns the numpy busdaycalendar object used for determining valid business days. For standard business day offsets (e.g., BusinessDay, BusinessHour), this returns None. For custom business day offsets, this returns the calendar that was either passed directly or constructed from weekmask and holidays. \n  - Returns:\n    - np.busdaycalendar or None\n    - The business day calendar used for calculations, or None if using default business day rules.\n See also \n  - `BusinessDay.holidays`\n  - Holidays for standard business day offset.\n  - `CustomBusinessDay.holidays`\n  - Holidays for custom business day offset.\n  - `CustomBusinessDay.weekmask`\n  - Weekmask for custom business day offset.\n Examples For standard business offsets, calendar is None: >>> bd = pd.offsets.BusinessDay() >>> bd.calendar is None True >>> bh = pd.offsets.BusinessHour() >>> bh.calendar is None True For custom business day with explicit holidays: >>> holidays = [pd.Timestamp(\"2023-12-25\"), pd.Timestamp(\"2024-01-01\")] >>> cbd = pd.offsets.CustomBusinessDay(holidays=holidays) >>> isinstance(cbd.calendar, np.busdaycalendar) True",
     "markdown_length": 1273,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.calendar — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.calendar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:18.081535",
+    "crawled_at": "2026-08-26T06:51:30.924772",
     "type": "webpage"
 }

@@ -1,0 +1,22 @@
+{
+    "id": "010cb86eb27468480239e890911b4f2c",
+    "url": "http://colah.github.io/posts/2015-01-Visualizing-Representations/big_vis/words.html",
+    "canonical_url": "http://colah.github.io/posts/2015-01-Visualizing-Representations/big_vis/words.html",
+    "title": "http://colah.github.io/posts/2015-01-Visualizing-Representations/big_vis/words.html",
+    "status": 200,
+    "markdown": "Word Embedding\nColor words by\nWordNet\nsynset (eg. *region.n.03*):\nWord Embedding Visualized with t-SNE\n(Hover over a point to see the word.)\nPostal",
+    "markdown_length": 147,
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2015-01-Visualizing-Representations/"
+    },
+    "crawled_at": "2026-08-26T06:47:15.456202",
+    "type": "webpage"
+}

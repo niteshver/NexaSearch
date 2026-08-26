@@ -2,7 +2,7 @@
     "id": "84f9cd41ab725eba4058ecefe09ca134",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.shape.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.shape.html",
-    "title": "pandas.Index.shape — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.shape — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.shape#\n\n- property Index.shape[source]#\n- Return a tuple of the shape of the underlying data. Since an Index is always one-dimensional, this returns a tuple with a single element equal to the number of elements in the Index. See also \n  - `Index.size`\n  - Return the number of elements in the underlying data.\n  - `Index.ndim`\n  - Number of dimensions of the underlying data, by definition 1.\n  - `Index.dtype`\n  - Return the dtype object of the underlying data.\n  - `Index.values`\n  - Return an array representing the data in the Index.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.shape (3,)",
     "markdown_length": 651,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.shape — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.shape — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.114238",
+    "crawled_at": "2026-08-26T06:48:50.357012",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "d89c96ad85a5f27371572db14cd42366",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.at.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.at.html",
-    "title": "pandas.DataFrame.at — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.at — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.at#\n\n- property DataFrame.at[source]#\n- Access a single value for a row/column label pair. Similar to `loc` , in that both provide label-based lookups. Use`at` if you only need to get or set a single value in a DataFrame\nor Series.\n  - Raises:\n    - KeyError\n    - If getting a value and ‘label’ does not exist in a DataFrame or Series.\n    - ValueError\n    - If row/column label pair is not a tuple or if any label from the pair is not a scalar for DataFrame. If label is list-like ( *excluding* NamedTuple) for Series.\n See also \n  - `DataFrame.at`\n  - Access a single value for a row/column pair by label.\n  - `DataFrame.iat`\n  - Access a single value for a row/column pair by integer position.\n  - `DataFrame.loc`\n  - Access a group of rows and columns by label(s).\n  - `DataFrame.iloc`\n  - Access a group of rows and columns by integer position(s).\n  - `Series.at`\n  - Access a single value by label.\n  - `Series.iat`\n  - Access a single value by integer position.\n  - `Series.loc`\n  - Access a group of rows by label(s).\n  - `Series.iloc`\n  - Access a group of rows by integer position(s).\n Notes See Fast scalar value getting and setting for more details. Examples >>> df = pd.DataFrame( ... [[0, 2, 3], [0, 4, 1], [10, 20, 30]], ... index=[4, 5, 6], ... columns=[\"A\", \"B\", \"C\"], ... ) >>> df A B C 4 0 2 3 5 0 4 1 6 10 20 30 Get value at specified row/column pair >>> df.at[4, \"B\"] np.int64(2) Set value at specified row/column pair >>> df.at[4, \"B\"] = 10 >>> df.at[4, \"B\"] np.int64(10) Get value within a Series >>> df.loc[5].at[\"B\"] np.int64(4)",
     "markdown_length": 1573,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.at — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.at — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.621851",
+    "crawled_at": "2026-08-26T06:49:00.509923",
     "type": "webpage"
 }

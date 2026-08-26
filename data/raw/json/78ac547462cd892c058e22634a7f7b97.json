@@ -2,7 +2,7 @@
     "id": "78ac547462cd892c058e22634a7f7b97",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.transform.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.transform.html",
-    "title": "pandas.api.typing.Resampler.transform — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Resampler.transform — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.transform#\n\n- \nfinal Resampler.transform(*arg* ,**args* ,***kwargs* )[source]#\n- Call function producing a like-indexed Series on each group. Return a Series with the transformed values. \n  - Parameters:\n    - **arg** function\n    - To apply to each group. Should return a Series with the same index.\n    - ***args, **kwargs**\n    - Additional arguments and keywords.\n  - Returns:\n    - Series\n    - A Series with the transformed values, maintaining the same index as the original object.\n See also \n  - `core.resample.Resampler.apply`\n  - Apply a function along each group.\n  - `core.resample.Resampler.aggregate`\n  - Aggregate using one or more operations over the specified axis.\n Examples >>> s = pd.Series([1, 2], index=pd.date_range(\"20180101\", periods=2, freq=\"1h\")) >>> s 2018-01-01 00:00:00 1 2018-01-01 01:00:00 2 Freq: h, dtype: int64 >>> resampled = s.resample(\"15min\") >>> resampled.transform(lambda x: (x - x.mean()) / x.std()) 2018-01-01 00:00:00 NaN 2018-01-01 01:00:00 NaN Freq: h, dtype: float64",
     "markdown_length": 1043,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.transform — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Resampler.transform — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.624660",
+    "crawled_at": "2026-08-26T06:51:51.594628",
     "type": "webpage"
 }

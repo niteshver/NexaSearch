@@ -2,7 +2,7 @@
     "id": "2a1b1f9f643ddcc706b8c7bcce03c9fb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.lag_plot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.lag_plot.html",
-    "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.lag_plot#\n\n- \npandas.plotting.lag_plot(*series* ,*lag=1* ,*ax=None* ,***kwds* )[source]#\n- Lag plot for time series. A lag plot is a scatter plot of a time series against a lag of itself. It helps in visualizing the temporal dependence between observations by plotting the values at time t on the x-axis and the values at time t + lag on the y-axis. \n  - Parameters:\n    - **series** Series\n    - The time series to visualize.\n    - **lag** int, default 1\n    - Lag length of the scatter plot.\n    - **ax** Matplotlib axis object, optional\n    - The matplotlib axis object to use.\n    - ****kwds**\n    - Matplotlib scatter method keyword arguments.\n  - Returns:\n    - matplotlib.axes.Axes\n    - The matplotlib Axes object containing the lag plot.\n See also \n  - `plotting.autocorrelation_plot`\n  - Autocorrelation plot for time series.\n  - `matplotlib.pyplot.scatter`\n  - A scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n Examples Lag plots are most commonly used to look for patterns in time series data. Given the following time series >>> np.random.seed(5) >>> x = np.cumsum(np.random.normal(loc=1, scale=5, size=50)) >>> s = pd.Series(x) >>> s.plot() A lag plot with `lag=1` returns>>> _ = pd.plotting.lag_plot(s, lag=1)",
     "markdown_length": 1272,
@@ -274,13 +274,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.818709",
+    "crawled_at": "2026-08-26T06:48:14.253397",
     "type": "webpage"
 }

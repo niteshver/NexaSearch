@@ -256,8 +256,8 @@
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_indexer.html"
+        "parent_url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:47:49.090806",
+    "crawled_at": "2026-08-26T06:52:11.394228",
     "type": "webpage"
 }

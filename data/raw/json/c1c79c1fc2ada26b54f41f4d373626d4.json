@@ -2,7 +2,7 @@
     "id": "c1c79c1fc2ada26b54f41f4d373626d4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.Holiday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.Holiday.html",
-    "title": "pandas.tseries.holiday.Holiday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.holiday.Holiday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.Holiday#\n\n- \nclass pandas.tseries.holiday.Holiday(*name* ,*year=None* ,*month=None* ,*day=None* ,*offset=None* ,*observance=None* ,*start_date=None* ,*end_date=None* ,*days_of_week=None* ,*exclude_dates=None* )[source]#\n- Class that defines a holiday with start/end dates and rules for observance. A `Holiday` can either be defined by a fixed`year` /`month` /`day` ,\nor, more commonly, by a recurring`month` /`day` combined with an`offset` or`observance` rule that adjusts the date in each year it\nis calculated for. Instances of`Holiday` are typically collected in\nthe`rules` of an`AbstractHolidayCalendar` .\n  - Parameters:\n    - **name** str\n    - Name of the holiday, defaults to class name.\n    - **year** int, default None\n    - Year of the holiday.\n    - **month** int, default None\n    - Month of the holiday.\n    - **day** int, default None\n    - Day of the holiday.\n    - **offset** DateOffset or list of DateOffset, default None\n    - Computes offset from date. See `pandas.tseries.offsets` for the\navailable offset classes.\n    - **observance** function, default None\n    - Computes when holiday is given a pandas Timestamp.\n    - **start_date** datetime-like, default None\n    - First date the holiday is observed.\n    - **end_date** datetime-like, default None\n    - Last date the holiday is observed.\n    - **days_of_week** tuple of int or dateutil.relativedelta weekday strs, default None\n    - Provide a tuple of days e.g (0,1,2,3,) for Monday through Thursday Monday=0,..,Sunday=6 Only instances of the holiday included in days_of_week will be computed.\n    - **exclude_dates** DatetimeIndex or default None\n    - Specific dates to exclude e.g. skipping a specific year’s holiday.\n See also \n  - `tseries.holiday.AbstractHolidayCalendar`\n  - Abstract interface to create holidays following certain rules.\n  - `tseries.holiday.Holiday.dates`\n  - Calculate holidays observed between start date and end date.\n Examples >>> from dateutil.relativedelta import MO >>> USMemorialDay = pd.tseries.holiday.Holiday( ... \"Memorial Day\", month=5, day=31, offset=pd.DateOffset(weekday=MO(-1)) ... ) >>> USMemorialDay Holiday: Memorial Day (month=5, day=31, offset=<DateOffset: weekday=MO(-1)>) >>> USLaborDay = pd.tseries.holiday.Holiday( ... \"Labor Day\", month=9, day=1, offset=pd.DateOffset(weekday=MO(1)) ... ) >>> USLaborDay Holiday: Labor Day (month=9, day=1, offset=<DateOffset: weekday=MO(+1)>) >>> July3rd = pd.tseries.holiday.Holiday(\"July 3rd\", month=7, day=3) >>> July3rd Holiday: July 3rd (month=7, day=3, ) >>> NewYears = pd.tseries.holiday.Holiday( ... \"New Years Day\", ... month=1, ... day=1, ... observance=pd.tseries.holiday.nearest_workday, ... ) >>> NewYears Holiday: New Years Day ( month=1, day=1, observance=<function nearest_workday at 0x66545e9bc440> ) >>> July3rd = pd.tseries.holiday.Holiday( ... \"July 3rd\", month=7, day=3, days_of_week=(0, 1, 2, 3) ... ) >>> July3rd Holiday: July 3rd (month=7, day=3, ) Attributes Methods `dates` (start_date, end_date[, return_name])Calculate holidays observed between start date and end date.",
     "markdown_length": 3086,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.Holiday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.holiday.Holiday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:08.387042",
+    "crawled_at": "2026-08-26T06:51:31.587494",
     "type": "webpage"
 }

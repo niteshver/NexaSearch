@@ -2,7 +2,7 @@
     "id": "c6f83860e9107263e6ded88ba7886666",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html",
-    "title": "pandas.Series.apply — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.apply — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.Series.apply#\n\n- \nSeries.apply(*func* ,*args=()* ,*** ,*by_row='compat'* ,***kwargs* )[source]#\n- Invoke function on values of Series. Can be ufunc (a NumPy function that applies to the entire Series) or a Python function that only works on single values. \n  - Parameters:\n    - **func** function\n    - Python function or NumPy ufunc to apply.\n    - **args** tuple\n    - Positional arguments passed to func after the series value.\n    - **by_row** False or “compat”, default “compat”\n    - If `\"compat\"` and func is a callable, func will be passed each element of\nthe Series, like`Series.map` . If func is a list or dict of\ncallables, will first try to translate each func into pandas methods. If\nthat doesn’t work, will try call to apply again with`by_row=\"compat\"` and if that fails, will call apply again with`by_row=False` (backward compatible).\nIf False, the func will be passed the whole Series at once.`by_row` has no effect when`func` is a string.Added in version 2.1.0.\n    - ****kwargs**\n    - Additional keyword arguments passed to func.\n  - Returns:\n    - Series or DataFrame\n    - If func returns a Series object the result will be a DataFrame.\n See also \n  - `Series.map`\n  - For element-wise operations.\n  - `Series.agg`\n  - Only perform aggregating type operations.\n  - `Series.transform`\n  - Only perform transforming type operations.\n Notes Functions that mutate the passed object can produce unexpected behavior or errors and are not supported. See Mutating with User Defined Function (UDF) methods for more details. Examples Create a series with typical summer temperatures for each city. >>> s = pd.Series([20, 21, 12], index=[\"London\", \"New York\", \"Helsinki\"]) >>> s London 20 New York 21 Helsinki 12 dtype: int64 Square the values by defining a function and passing it as an argument to `apply()` .>>> def square(x): ... return x**2 >>> s.apply(square) London 400 New York 441 Helsinki 144 dtype: int64 Square the values by passing an anonymous function as an argument to `apply()` .>>> s.apply(lambda x: x**2) London 400 New York 441 Helsinki 144 dtype: int64 Define a custom function that needs additional positional arguments and pass these additional arguments using the `args` keyword.>>> def subtract_custom_value(x, custom_value): ... return x - custom_value >>> s.apply(subtract_custom_value, args=(5,)) London 15 New York 16 Helsinki 7 dtype: int64 Define a custom function that takes keyword arguments and pass these arguments to `apply` .>>> def add_custom_values(x, **kwargs): ... for month in kwargs: ... x += kwargs[month] ... return x >>> s.apply(add_custom_values, june=30, july=20, august=25) London 95 New York 96 Helsinki 87 dtype: int64 Use a function from the Numpy library. >>> s.apply(np.log) London 2.995732 New York 3.044522 Helsinki 2.484907 dtype: float64",
     "markdown_length": 2814,
@@ -251,13 +251,14 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.apply — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.apply — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 1,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
+        "score": 0.05454545671289617
     },
-    "crawled_at": "2026-08-10T11:46:51.230770",
+    "crawled_at": "2026-08-26T06:48:54.969856",
     "type": "webpage"
 }

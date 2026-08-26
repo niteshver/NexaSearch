@@ -2,7 +2,7 @@
     "id": "df6b0ea46bb17eb73cc81f1f4fc94d0a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ClosedFileError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ClosedFileError.html",
-    "title": "pandas.errors.ClosedFileError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.ClosedFileError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.ClosedFileError#\n\n- exception pandas.errors.ClosedFileError[source]#\n- Exception is raised when trying to perform an operation on a closed HDFStore file. `ClosedFileError` is specific to operations on`HDFStore` objects. Once an\nHDFStore is closed, its resources are no longer available, and any further attempt\nto access data or perform file operations will raise this exception.See also \n  - `HDFStore.close`\n  - Closes the PyTables file handle.\n  - `HDFStore.open`\n  - Opens the file in the specified mode.\n  - `HDFStore.is_open`\n  - Returns a boolean indicating whether the file is open.\n Examples >>> store = pd.HDFStore(\"my-store\", \"a\") >>> store.close() >>> store.keys() ... # ClosedFileError: my-store file is not open!",
     "markdown_length": 742,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.ClosedFileError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.ClosedFileError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.384732",
+    "crawled_at": "2026-08-26T06:51:53.739519",
     "type": "webpage"
 }

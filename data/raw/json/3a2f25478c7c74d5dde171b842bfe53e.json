@@ -2,7 +2,7 @@
     "id": "3a2f25478c7c74d5dde171b842bfe53e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.to_flat_index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.to_flat_index.html",
-    "title": "pandas.MultiIndex.to_flat_index — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.to_flat_index — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.to_flat_index#\n\n- MultiIndex.to_flat_index()[source]#\n- Convert a MultiIndex to an Index of Tuples containing the level values. This is useful for compatibility with libraries or operations that expect a flat, single-level index rather than a hierarchical one. \n  - Returns:\n    - pd.Index\n    - Index with the MultiIndex data represented in Tuples.\n See also \n  - `MultiIndex.from_tuples`\n  - Convert flat index back to MultiIndex.\n Notes This method will simply return the caller if called by anything other than a MultiIndex. Examples >>> index = pd.MultiIndex.from_product( ... [[\"foo\", \"bar\"], [\"baz\", \"qux\"]], names=[\"a\", \"b\"] ... ) >>> index.to_flat_index() Index([('foo', 'baz'), ('foo', 'qux'), ('bar', 'baz'), ('bar', 'qux')], dtype='object')",
     "markdown_length": 772,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.to_flat_index — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.to_flat_index — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:41.652988",
+    "crawled_at": "2026-08-26T06:48:53.338196",
     "type": "webpage"
 }

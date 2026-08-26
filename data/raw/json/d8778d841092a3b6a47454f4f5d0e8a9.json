@@ -2,7 +2,7 @@
     "id": "d8778d841092a3b6a47454f4f5d0e8a9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.dayofyear.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.dayofyear.html",
-    "title": "pandas.Series.dt.dayofyear — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.dayofyear — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.dayofyear#\n\n- Series.dt.dayofyear[source]#\n- The ordinal day of the year. Deprecated since version 3.1.0: Use `DatetimeIndex.day_of_year` instead.\n\nThe ordinal day of the year.\n\nDeprecated since version 3.1.0: Use `DatetimeIndex.day_of_year` instead.",
     "markdown_length": 269,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.dayofyear — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.dayofyear — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.883357",
+    "crawled_at": "2026-08-26T06:49:14.063093",
     "type": "webpage"
 }

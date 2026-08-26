@@ -2,7 +2,7 @@
     "id": "8a41e96d732df71214882971d83b7939",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Hour.nanos.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Hour.nanos.html",
-    "title": "pandas.tseries.offsets.Hour.nanos — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.Hour.nanos — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.Hour.nanos#\n\n- Hour.nanos#\n- Returns an integer of the total number of nanoseconds. This property converts the offset duration to nanoseconds for precise time calculations. See also \n  - `tseries.offsets.Hour.nanos`\n  - Returns an integer of the total number of nanoseconds.\n  - `tseries.offsets.Day.nanos`\n  - Returns an integer of the total number of nanoseconds.\n Examples >>> pd.offsets.Hour(5).nanos 18000000000000",
     "markdown_length": 444,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.Hour.nanos — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.Hour.nanos — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:25.142389",
+    "crawled_at": "2026-08-26T06:51:47.139781",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "c7dc2e8e147108df3a4035575751fe34",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.__invert__.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.__invert__.html",
-    "title": "pandas.Series.__invert__ — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.__invert__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.__invert__#\n\n- Series.__invert__()[source]#\n- Return the bitwise inverse of the Series/DataFrame, element-wise. Equivalent to applying the `~` (tilde) operator element-wise. For\nboolean data this returns the logical NOT; for integer data it returns\nthe bitwise NOT (ones complement).\n  - Returns:\n    - Series or DataFrame\n    - A new object of the same type and shape with every element bitwise inverted.\n See also \n  - `numpy.invert`\n  - Compute bitwise inversion element-wise.\n Examples **Boolean Series:**>>> s = pd.Series([True, False, True]) >>> ~s 0 False 1 True 2 False dtype: bool **Integer Series:**>>> s = pd.Series([1, 0, 3], dtype=\"int8\") >>> ~s 0 -2 1 -1 2 -4 dtype: int8 **Boolean DataFrame:**>>> df = pd.DataFrame({\"a\": [True, False], \"b\": [False, True]}) >>> ~df a b 0 False True 1 True False",
     "markdown_length": 825,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.__invert__ — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.__invert__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.957881",
+    "crawled_at": "2026-08-26T06:49:10.316565",
     "type": "webpage"
 }

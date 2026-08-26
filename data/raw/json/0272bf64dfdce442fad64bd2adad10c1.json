@@ -2,7 +2,7 @@
     "id": "0272bf64dfdce442fad64bd2adad10c1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.components.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.components.html",
-    "title": "pandas.TimedeltaIndex.components — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.TimedeltaIndex.components — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.components#\n\n- property TimedeltaIndex.components[source]#\n- Return a DataFrame of the individual resolution components of the Timedeltas. The components (days, hours, minutes seconds, milliseconds, microseconds, nanoseconds) are returned as columns in a DataFrame. \n  - Returns:\n    - DataFrame\n See also \n  - `TimedeltaIndex.total_seconds`\n  - Return total duration expressed in seconds.\n  - `Timedelta.components`\n  - Return a components namedtuple-like of a single timedelta.\n Examples >>> tdelta_idx = pd.to_timedelta([\"1 day 3 min 2 us 42 ns\"]) >>> tdelta_idx TimedeltaIndex(['1 days 00:03:00.000002042'], dtype='timedelta64[ns]', freq=None) >>> tdelta_idx.components days hours minutes seconds milliseconds microseconds nanoseconds 0 1 0 3 0 0 2 42",
     "markdown_length": 779,
@@ -251,14 +251,14 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.components — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.TimedeltaIndex.components — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html",
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
         "score": 0.05454545671289617
     },
-    "crawled_at": "2026-08-10T11:46:42.721446",
+    "crawled_at": "2026-08-26T06:48:55.310481",
     "type": "webpage"
 }

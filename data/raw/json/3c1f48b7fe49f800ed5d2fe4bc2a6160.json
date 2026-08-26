@@ -2,7 +2,7 @@
     "id": "3c1f48b7fe49f800ed5d2fe4bc2a6160",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.utctimetuple.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.utctimetuple.html",
-    "title": "pandas.Timestamp.utctimetuple — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.utctimetuple — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.utctimetuple#\n\n- Timestamp.utctimetuple()#\n- Return UTC time tuple, compatible with time.localtime(). This method converts the Timestamp to UTC and returns a time tuple containing 9 components: year, month, day, hour, minute, second, weekday, day of year, and DST flag. This is particularly useful for converting a Timestamp to a format compatible with time module functions. \n  - Returns:\n    - time.struct_time\n    - A time.struct_time object representing the UTC time.\n See also \n  - `datetime.datetime.utctimetuple`\n  - Return UTC time tuple, compatible with time.localtime().\n  - `Timestamp.timetuple`\n  - Return time tuple of local time.\n  - `time.struct_time`\n  - Time tuple structure used by time functions.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00', tz='Europe/Brussels') >>> ts Timestamp('2023-01-01 10:00:00+0100', tz='Europe/Brussels') >>> ts.utctimetuple() time.struct_time(tm_year=2023, tm_mon=1, tm_mday=1, tm_hour=9, tm_min=0, tm_sec=0, tm_wday=6, tm_yday=1, tm_isdst=0)",
     "markdown_length": 1017,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.utctimetuple — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.utctimetuple — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.851000",
+    "crawled_at": "2026-08-26T06:51:04.031573",
     "type": "webpage"
 }

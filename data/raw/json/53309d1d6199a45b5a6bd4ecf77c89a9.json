@@ -2,7 +2,7 @@
     "id": "53309d1d6199a45b5a6bd4ecf77c89a9",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.inferred_type.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.inferred_type.html",
-    "title": "pandas.Index.inferred_type — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.inferred_type — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.inferred_type#\n\n- Index.inferred_type[source]#\n- Return a string of the type inferred from the values. This inspects the actual values in the Index to determine their type, which may differ from the stored `dtype` . For example,\nan object-dtype Index containing only integers returns`'integer'` .See also \n  - `Index.dtype`\n  - Return the dtype object of the underlying data.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.inferred_type 'integer'",
     "markdown_length": 502,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.inferred_type — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.inferred_type — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.inferred_type.html"
     },
-    "crawled_at": "2026-08-10T11:47:46.155259",
+    "crawled_at": "2026-08-26T06:49:33.054337",
     "type": "webpage"
 }

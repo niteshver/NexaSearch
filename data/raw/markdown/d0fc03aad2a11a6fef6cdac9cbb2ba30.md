@@ -61,7 +61,7 @@ dtype`int64` , while they were`int32` for`arrays.DatetimeArray` . They are now`i
 the same as they are on the`rows` /`cols` on a scipy sparse matrix. Previously they
 were of dtype`int64` .In [7]: from scipy import sparse In [8]: A = sparse.coo_matrix( ...: ([3.0, 1.0, 2.0], ([1, 0, 0], [0, 2, 3])), shape=(3, 4) ...: ) ...: In [9]: ser = pd.Series.sparse.from_coo(A) In [10]: ser.index.dtypes Out[10]: level_0 int32 level_1 int32 dtype: object
 4. `Index` cannot be instantiated using a float16 dtype. Previously instantiating
-an`Index` using dtype`float16` resulted in a`Float64Index` with a`float64` dtype. It now raises a`NotImplementedError` :In [11]: pd.Index([1, 2, 3], dtype=np.float16) --------------------------------------------------------------------------- NotImplementedError Traceback (most recent call last) Cell In[11], line 1 ----> 1 pd.Index([1, 2, 3], dtype=np.float16) File ~/work/pandas/pandas/pandas/core/indexes/base.py:586, in Index.__new__(cls, data, dtype, copy, name, tupleize_cols) 582 arr = ensure_wrapped_if_datetimelike(arr) # type: ignore[no-untyped-call] 584 klass = cls._dtype_to_subclass(arr.dtype) --> 586 arr = klass._ensure_array(arr, arr.dtype, copy=False) 587 out = klass._simple_new(arr, name, refs=refs) 588 # Preserve freq when wrapping a DatetimeIndex/TimedeltaIndex input, 589 # since _simple_new doesn't copy Index-level attributes like _freq. File ~/work/pandas/pandas/pandas/core/indexes/base.py:606, in Index._ensure_array(cls, data, dtype, copy) 603 raise ValueError("Index data must be 1-dimensional") 604 elif dtype == np.float16: 605 # float16 not supported (no indexing engine) --> 606 raise NotImplementedError("float16 indexes are not supported") 608 if copy: 609 # asarray_tuplesafe does not always copy underlying data, 610 # so need to make sure that this happens 611 data = data.copy() NotImplementedError: float16 indexes are not supported
+an`Index` using dtype`float16` resulted in a`Float64Index` with a`float64` dtype. It now raises a`NotImplementedError` :In [11]: pd.Index([1, 2, 3], dtype=np.float16) --------------------------------------------------------------------------- NotImplementedError Traceback (most recent call last) Cell In[11], line 1 ----> 1 pd.Index([1, 2, 3], dtype=np.float16) File ~/work/pandas/pandas/pandas/core/indexes/base.py:590, in Index.__new__(cls, data, dtype, copy, name, tupleize_cols) 586 arr = ensure_wrapped_if_datetimelike(arr) # type: ignore[no-untyped-call] 588 klass = cls._dtype_to_subclass(arr.dtype) --> 590 arr = klass._ensure_array(arr, arr.dtype, copy=False) 591 out = klass._simple_new(arr, name, refs=refs) 592 # Preserve freq when wrapping a DatetimeIndex/TimedeltaIndex input, 593 # since _simple_new doesn't copy Index-level attributes like _freq. File ~/work/pandas/pandas/pandas/core/indexes/base.py:610, in Index._ensure_array(cls, data, dtype, copy) 607 raise ValueError("Index data must be 1-dimensional") 608 elif dtype == np.float16: 609 # float16 not supported (no indexing engine) --> 610 raise NotImplementedError("float16 indexes are not supported") 612 if copy: 613 # asarray_tuplesafe does not always copy underlying data, 614 # so need to make sure that this happens 615 data = data.copy() NotImplementedError: float16 indexes are not supported
 
 ### Argument `dtype_backend`, to return pyarrow-backed or numpy-backed nullable dtypes#
 
@@ -338,15 +338,15 @@ In [26]: pd.Series(["2016-01-01"], dtype="datetime64[D]")
 TypeError                                 Traceback (most recent call last)
 Cell In[26], line 1
 ----> 1 pd.Series(["2016-01-01"], dtype="datetime64[D]")
-File ~/work/pandas/pandas/pandas/core/series.py:497, in Series.__init__(self, data, index, dtype, name, copy)
-    493                 data = data.astype(dtype=dtype)
-    494             if copy:
-    495                 data = data.copy(deep=True)
-    496         else:
---> 497             data = sanitize_array(data, index, dtype, copy)
-    498             data = SingleBlockManager.from_array(data, index, refs=refs)
-    499 
-    500         NDFrame.__init__(self, data)
+File ~/work/pandas/pandas/pandas/core/series.py:498, in Series.__init__(self, data, index, dtype, name, copy)
+    494                 data = data.astype(dtype=dtype)
+    495             if copy:
+    496                 data = data.copy(deep=True)
+    497         else:
+--> 498             data = sanitize_array(data, index, dtype, copy)
+    499             data = SingleBlockManager.from_array(data, index, refs=refs)
+    500 
+    501         NDFrame.__init__(self, data)
 File ~/work/pandas/pandas/pandas/core/construction.py:713, in sanitize_array(data, index, dtype, copy, allow_2d)
     710     subarr = np.array([], dtype=np.float64)
     712 elif dtype is not None:
@@ -363,21 +363,21 @@ File ~/work/pandas/pandas/pandas/core/construction.py:884, in _try_cast(arr, dty
     887 # that we can convert the data to the requested dtype.
     888 elif dtype.kind in "iu":
     889     # this will raise if we have e.g. floats
-File ~/work/pandas/pandas/pandas/core/dtypes/cast.py:1092, in maybe_cast_to_datetime(value, dtype)
-   1088     raise TypeError("value must be listlike")
-   1090 # TODO: _from_sequence would raise ValueError in cases where
-   1091 #  _ensure_nanosecond_dtype raises TypeError
--> 1092 _ensure_nanosecond_dtype(dtype)
-   1094 if lib.is_np_dtype(dtype, "m"):
-   1095     res = TimedeltaArray._from_sequence(value, dtype=dtype)
-File ~/work/pandas/pandas/pandas/core/dtypes/cast.py:1149, in _ensure_nanosecond_dtype(dtype)
-   1146     raise ValueError(msg)
-   1147 # TODO: ValueError or TypeError? existing test
-   1148 #  test_constructor_generic_timestamp_bad_frequency expects TypeError
--> 1149 raise TypeError(
-   1150     f"dtype={dtype} is not supported. Supported resolutions are 's', "
-   1151     "'ms', 'us', and 'ns'"
-   1152 )
+File ~/work/pandas/pandas/pandas/core/dtypes/cast.py:1100, in maybe_cast_to_datetime(value, dtype)
+   1096     raise TypeError("value must be listlike")
+   1098 # TODO: _from_sequence would raise ValueError in cases where
+   1099 #  _ensure_nanosecond_dtype raises TypeError
+-> 1100 _ensure_nanosecond_dtype(dtype)
+   1102 if lib.is_np_dtype(dtype, "m"):
+   1103     res = TimedeltaArray._from_sequence(value, dtype=dtype)
+File ~/work/pandas/pandas/pandas/core/dtypes/cast.py:1157, in _ensure_nanosecond_dtype(dtype)
+   1154     raise ValueError(msg)
+   1155 # TODO: ValueError or TypeError? existing test
+   1156 #  test_constructor_generic_timestamp_bad_frequency expects TypeError
+-> 1157 raise TypeError(
+   1158     f"dtype={dtype} is not supported. Supported resolutions are 's', "
+   1159     "'ms', 'us', and 'ns'"
+   1160 )
 TypeError: dtype=datetime64[D] is not supported. Supported resolutions are 's', 'ms', 'us', and 'ns'
 ```
 ### Value counts sets the resulting name to `count`#
@@ -456,15 +456,15 @@ In [31]: ser.astype("datetime64[D]")
 TypeError                                 Traceback (most recent call last)
 Cell In[31], line 1
 ----> 1 ser.astype("datetime64[D]")
-File ~/work/pandas/pandas/pandas/core/generic.py:6656, in NDFrame.astype(self, dtype, copy, errors)
-   6652             results = [ser.astype(dtype, errors=errors) for _, ser in self.items()]
-   6653 
-   6654         else:
-   6655             # else, only a single dtype is given
--> 6656             new_data = self._mgr.astype(dtype=dtype, errors=errors)
-   6657             res = self._constructor_from_mgr(new_data, axes=new_data.axes)
-   6658             return res.__finalize__(self, method="astype")
-   6659 
+File ~/work/pandas/pandas/pandas/core/generic.py:6700, in NDFrame.astype(self, dtype, copy, errors)
+   6696             results = [ser.astype(dtype, errors=errors) for _, ser in self.items()]
+   6697 
+   6698         else:
+   6699             # else, only a single dtype is given
+-> 6700             new_data = self._mgr.astype(dtype=dtype, errors=errors)
+   6701             res = self._constructor_from_mgr(new_data, axes=new_data.axes)
+   6702             return res.__finalize__(self, method="astype")
+   6703 
 File ~/work/pandas/pandas/pandas/core/internals/managers.py:632, in BaseBlockManager.astype(self, dtype, errors)
     631 def astype(self, dtype, errors: str = "raise") -> Self:
 --> 632     return self.apply("astype", dtype=dtype, errors=errors)
@@ -499,14 +499,14 @@ File ~/work/pandas/pandas/pandas/core/arrays/datetimes.py:750, in DatetimeArray.
     748 elif isinstance(dtype, PeriodDtype):
     749     return self.to_period(freq=dtype.freq)
 --> 750 return dtl.DatetimeLikeArrayMixin.astype(self, dtype, copy)
-File ~/work/pandas/pandas/pandas/core/arrays/datetimelike.py:466, in DatetimeLikeArrayMixin.astype(self, dtype, copy)
-    462 elif (dtype.kind in "mM" and self.dtype != dtype) or dtype.kind == "f":
-    463     # disallow conversion between datetime/timedelta,
-    464     # and conversions for any datetimelike to float
-    465     msg = f"Cannot cast {type(self).__name__} to dtype {dtype}"
---> 466     raise TypeError(msg)
-    467 else:
-    468     return np.asarray(self, dtype=dtype)
+File ~/work/pandas/pandas/pandas/core/arrays/datetimelike.py:461, in DatetimeLikeArrayMixin.astype(self, dtype, copy)
+    457 elif (dtype.kind in "mM" and self.dtype != dtype) or dtype.kind == "f":
+    458     # disallow conversion between datetime/timedelta,
+    459     # and conversions for any datetimelike to float
+    460     msg = f"Cannot cast {type(self).__name__} to dtype {dtype}"
+--> 461     raise TypeError(msg)
+    462 else:
+    463     return np.asarray(self, dtype=dtype)
 TypeError: Cannot cast DatetimeArray to dtype datetime64[D]
 ```
 For conversion from `timedelta64[ns]` dtypes, the old behavior converted
@@ -550,15 +550,15 @@ In [35]: ser.astype("timedelta64[D]")
 ValueError                                Traceback (most recent call last)
 Cell In[35], line 1
 ----> 1 ser.astype("timedelta64[D]")
-File ~/work/pandas/pandas/pandas/core/generic.py:6656, in NDFrame.astype(self, dtype, copy, errors)
-   6652             results = [ser.astype(dtype, errors=errors) for _, ser in self.items()]
-   6653 
-   6654         else:
-   6655             # else, only a single dtype is given
--> 6656             new_data = self._mgr.astype(dtype=dtype, errors=errors)
-   6657             res = self._constructor_from_mgr(new_data, axes=new_data.axes)
-   6658             return res.__finalize__(self, method="astype")
-   6659 
+File ~/work/pandas/pandas/pandas/core/generic.py:6700, in NDFrame.astype(self, dtype, copy, errors)
+   6696             results = [ser.astype(dtype, errors=errors) for _, ser in self.items()]
+   6697 
+   6698         else:
+   6699             # else, only a single dtype is given
+-> 6700             new_data = self._mgr.astype(dtype=dtype, errors=errors)
+   6701             res = self._constructor_from_mgr(new_data, axes=new_data.axes)
+   6702             return res.__finalize__(self, method="astype")
+   6703 
 File ~/work/pandas/pandas/pandas/core/internals/managers.py:632, in BaseBlockManager.astype(self, dtype, errors)
     631 def astype(self, dtype, errors: str = "raise") -> Self:
 --> 632     return self.apply("astype", dtype=dtype, errors=errors)
@@ -589,14 +589,14 @@ File ~/work/pandas/pandas/pandas/core/dtypes/astype.py:183, in astype_array(valu
 --> 183     values = values.astype(dtype, copy=copy)
     185 else:
     186     values = _astype_nansafe(values, dtype, copy=copy)
-File ~/work/pandas/pandas/pandas/core/arrays/timedeltas.py:365, in TimedeltaArray.astype(self, dtype, copy)
-    363         return type(self)._simple_new(res_values, dtype=res_values.dtype)
-    364     else:
---> 365         raise ValueError(
-    366             f"Cannot convert from {self.dtype} to {dtype}. "
-    367             "Supported resolutions are 's', 'ms', 'us', 'ns'"
-    368         )
-    370 return dtl.DatetimeLikeArrayMixin.astype(self, dtype, copy=copy)
+File ~/work/pandas/pandas/pandas/core/arrays/timedeltas.py:382, in TimedeltaArray.astype(self, dtype, copy)
+    380         return type(self)._simple_new(res_values, dtype=res_values.dtype)
+    381     else:
+--> 382         raise ValueError(
+    383             f"Cannot convert from {self.dtype} to {dtype}. "
+    384             "Supported resolutions are 's', 'ms', 'us', 'ns'"
+    385         )
+    387 return dtl.DatetimeLikeArrayMixin.astype(self, dtype, copy=copy)
 ValueError: Cannot convert from timedelta64[us] to timedelta64[D]. Supported resolutions are 's', 'ms', 'us', 'ns'
 ```
 ### UTC and fixed-offset timezones default to standard-library tzinfo objects#

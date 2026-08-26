@@ -2,7 +2,7 @@
     "id": "41419e84eb80bfda91c646498f1d6fcc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.step.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.step.html",
-    "title": "pandas.RangeIndex.step — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.RangeIndex.step — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.RangeIndex.step#\n\n- property RangeIndex.step[source]#\n- The value of the step parameter ( `1` if this was not supplied).The `step` parameter determines the increment (or decrement in the case\nof negative values) between consecutive elements in the`RangeIndex` .See also \n  - `RangeIndex`\n  - Immutable index implementing a range-based index.\n  - `RangeIndex.stop`\n  - Returns the stop value of the RangeIndex.\n  - `RangeIndex.start`\n  - Returns the start value of the RangeIndex.\n Examples >>> idx = pd.RangeIndex(5) >>> idx.step 1 >>> idx = pd.RangeIndex(2, -10, -3) >>> idx.step -3 Even if `pandas.RangeIndex` is empty,`step` is still`1` if\nnot supplied.>>> idx = pd.RangeIndex(1, 0) >>> idx.step 1",
     "markdown_length": 709,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.RangeIndex.step — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.RangeIndex.step — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:42.578708",
+    "crawled_at": "2026-08-26T06:48:54.933561",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "7371e721885773c11d414668c4e2f2a0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.tail.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.tail.html",
-    "title": "pandas.DataFrame.tail — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.tail — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.tail#\n\n- \nDataFrame.tail(*n=5* )[source]#\n- Return the last n rows. This function returns last n rows from the object based on position. It is useful for quickly verifying data, for example, after sorting or appending rows. For negative values of n, this function returns all rows except the first |n| rows, equivalent to `df[|n|:]` .If `n` is larger than the number of rows, this function returns all rows.\n  - Parameters:\n    - **n** int, default 5\n    - Number of rows to select.\n  - Returns:\n    - type of caller\n    - The last n rows of the caller object.\n See also \n  - `DataFrame.head`\n  - The first n rows of the caller object.\n Examples >>> df = pd.DataFrame( ... { ... \"animal\": [ ... \"alligator\", ... \"bee\", ... \"falcon\", ... \"lion\", ... \"monkey\", ... \"parrot\", ... \"shark\", ... \"whale\", ... \"zebra\", ... ] ... } ... ) >>> df animal 0 alligator 1 bee 2 falcon 3 lion 4 monkey 5 parrot 6 shark 7 whale 8 zebra Viewing the last 5 lines >>> df.tail() animal 4 monkey 5 parrot 6 shark 7 whale 8 zebra Viewing the last n lines (three in this case) >>> df.tail(3) animal 6 shark 7 whale 8 zebra For negative values of n >>> df.tail(-3) animal 3 lion 4 monkey 5 parrot 6 shark 7 whale 8 zebra",
     "markdown_length": 1215,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.tail — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.tail — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.700682",
+    "crawled_at": "2026-08-26T06:49:06.238515",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "81d1ddb9ae99f55605d651430d64b017",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.OptionError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.OptionError.html",
-    "title": "pandas.errors.OptionError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.OptionError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "pandas.errors.OptionError# exception pandas.errors.OptionError[source]# Exception raised for pandas.options. Backwards compatible with KeyError checks. See also optionsAccess and modify global pandas settings. Examples >>> pd.options.context Traceback (most recent call last): OptionError: No such option",
     "markdown_length": 304,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.OptionError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.OptionError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.628115",
+    "crawled_at": "2026-08-26T06:51:52.310151",
     "type": "webpage"
 }

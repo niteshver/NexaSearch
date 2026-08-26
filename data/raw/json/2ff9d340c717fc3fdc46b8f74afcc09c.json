@@ -2,7 +2,7 @@
     "id": "2ff9d340c717fc3fdc46b8f74afcc09c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_extension_array_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_extension_array_dtype.html",
-    "title": "pandas.api.types.is_extension_array_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_extension_array_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_extension_array_dtype#\n\n- \npandas.api.types.is_extension_array_dtype(*arr_or_dtype* )[source]#\n- Check if an object is a pandas extension array type. See the Use Guide for more. \n  - Parameters:\n    - **arr_or_dtype** object\n    - For array-like input, the `.dtype` attribute will\nbe extracted.\n  - Returns:\n    - bool\n    - Whether the arr_or_dtype is an extension array type.\n See also \n  - `api.extensions.ExtensionArray`\n  - Abstract base class for pandas extension arrays.\n Notes This checks whether an object implements the pandas extension array interface. In pandas, this includes: \n  - Categorical\n  - Sparse\n  - Interval\n  - Period\n  - DatetimeArray\n  - TimedeltaArray\n Third-party libraries may implement arrays or types satisfying this interface as well. Examples >>> from pandas.api.types import is_extension_array_dtype >>> arr = pd.Categorical([\"a\", \"b\"]) >>> is_extension_array_dtype(arr) True >>> is_extension_array_dtype(arr.dtype) True >>> arr = np.array([\"a\", \"b\"]) >>> is_extension_array_dtype(arr.dtype) False",
     "markdown_length": 1053,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_extension_array_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_extension_array_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.549249",
+    "crawled_at": "2026-08-26T06:51:20.178413",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "0fb7c765b84b44abe9abaaf60d1a85b1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.map.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.map.html",
-    "title": "pandas.Categorical.map — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Categorical.map — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Categorical.map#\n\n- \nCategorical.map(*mapper* ,*na_action=None* )[source]#\n- Map categories using an input mapping or function. Maps the categories to new categories. If the mapping correspondence is one-to-one the result is a `Categorical` which has the\nsame order property as the original, otherwise a`Index` is returned. NaN values are unaffected.If a dict or `Series` is used any unmapped category is\nmapped to NaN. Note that if this happens an`Index` will be returned.\n  - Parameters:\n    - **mapper** function, dict, or Series\n    - Mapping correspondence.\n    - **na_action** {None, ‘ignore’}, default None\n    - If ‘ignore’, propagate NaN values, without passing them to the mapping correspondence.\n  - Returns:\n    - pandas.Categorical or pandas.Index\n    - Mapped categorical.\n See also \n  - `CategoricalIndex.map`\n  - Apply a mapping correspondence on a `CategoricalIndex` .\n  - `Index.map`\n  - Apply a mapping correspondence on an `Index` .\n  - `Series.map`\n  - Apply a mapping correspondence on a `Series` .\n  - `Series.apply`\n  - Apply more complex functions on a `Series` .\n Examples >>> cat = pd.Categorical([\"a\", \"b\", \"c\"]) >>> cat ['a', 'b', 'c'] Categories (3, str): ['a', 'b', 'c'] >>> cat.map(lambda x: x.upper(), na_action=None) ['A', 'B', 'C'] Categories (3, str): ['A', 'B', 'C'] >>> cat.map({\"a\": \"first\", \"b\": \"second\", \"c\": \"third\"}, na_action=None) ['first', 'second', 'third'] Categories (3, str): ['first', 'second', 'third'] If the mapping is one-to-one the ordering of the categories is preserved: >>> cat = pd.Categorical([\"a\", \"b\", \"c\"], ordered=True) >>> cat ['a', 'b', 'c'] Categories (3, str): ['a' < 'b' < 'c'] >>> cat.map({\"a\": 3, \"b\": 2, \"c\": 1}, na_action=None) [3, 2, 1] Categories (3, int64): [3 < 2 < 1] If the mapping is not one-to-one an `Index` is returned:>>> cat.map({\"a\": \"first\", \"b\": \"second\", \"c\": \"first\"}, na_action=None) Index(['first', 'second', 'first'], dtype='str') If a dict is used, all unmapped categories are mapped to NaN and the result is an `Index` :>>> cat.map({\"a\": \"first\", \"b\": \"second\"}, na_action=None) Index(['first', 'second', nan], dtype='str') The mapping function is applied to categories, not to each value. It is therefore only called once per unique category, and the result reused for all occurrences: >>> cat = pd.Categorical([\"a\", \"a\", \"b\"]) >>> calls = [] >>> def f(x): ... calls.append(x) ... return x.upper() >>> result = cat.map(f) >>> result ['A', 'A', 'B'] Categories (2, str): ['A', 'B'] >>> calls ['a', 'b']",
     "markdown_length": 2508,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Categorical.map — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Categorical.map — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.014932",
+    "crawled_at": "2026-08-26T06:48:59.380305",
     "type": "webpage"
 }

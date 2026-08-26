@@ -2,10 +2,10 @@
     "id": "3441c521e2bf03944dce1608108de566",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_timedelta64_ns_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_timedelta64_ns_dtype.html",
-    "title": "pandas.api.types.is_timedelta64_ns_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_timedelta64_ns_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
-    "markdown": "# pandas.api.types.is_timedelta64_ns_dtype#\n\n- \npandas.api.types.is_timedelta64_ns_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of the timedelta64[ns] dtype. This is a very specific dtype, so generic ones like np.timedelta64 will return False if passed into this function. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of the timedelta64[ns] dtype.\n See also \n  - `api.types.is_timedelta64_dtype`\n  - Check whether an array-like or dtype is of the timedelta64 dtype.\n Examples >>> from pandas.api.types import is_timedelta64_ns_dtype >>> is_timedelta64_ns_dtype(np.dtype(\"m8[ns]\")) True >>> is_timedelta64_ns_dtype(np.dtype(\"m8[ps]\")) # Wrong frequency False >>> is_timedelta64_ns_dtype(np.array([1, 2], dtype=\"m8[ns]\")) True >>> is_timedelta64_ns_dtype(np.array([1, 2], dtype=\"m8\")) False",
-    "markdown_length": 942,
+    "markdown": "# pandas.api.types.is_timedelta64_ns_dtype#\n\n- \npandas.api.types.is_timedelta64_ns_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of the timedelta64[ns] dtype. This is a very specific dtype, so generic ones like np.timedelta64 will return False if passed into this function. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of the timedelta64[ns] dtype.\n See also \n  - `api.types.is_timedelta64_dtype`\n  - Check whether an array-like or dtype is of the timedelta64 dtype.\n Examples >>> from pandas.api.types import is_timedelta64_ns_dtype >>> is_timedelta64_ns_dtype(np.dtype(\"m8[ns]\")) True >>> is_timedelta64_ns_dtype(np.dtype(\"m8[ps]\")) # Wrong frequency False >>> is_timedelta64_ns_dtype(np.array([1, 2], dtype=\"m8[ns]\")) True >>> is_timedelta64_ns_dtype(np.array([1, 2], dtype=\"m8[ms]\")) False",
+    "markdown_length": 946,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_timedelta64_ns_dtype.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_timedelta64_ns_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_timedelta64_ns_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.024447",
+    "crawled_at": "2026-08-26T06:51:02.044952",
     "type": "webpage"
 }

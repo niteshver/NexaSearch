@@ -2,7 +2,7 @@
     "id": "5aed983c2f54e74692f6a912257f7ce4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_sparse.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_sparse.html",
-    "title": "pandas.api.types.is_sparse — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_sparse — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_sparse#\n\n- \npandas.api.types.is_sparse(*arr* )[source]#\n- Check whether an array-like is a 1-D pandas sparse array. Deprecated since version 2.1.0: Use isinstance(dtype, pd.SparseDtype) instead. Check that the one-dimensional array-like is a pandas sparse array. Returns True if it is a pandas sparse array, not another type of sparse array. \n  - Parameters:\n    - **arr** array-like\n    - Array-like to check.\n  - Returns:\n    - bool\n    - Whether or not the array-like is a pandas sparse array.\n See also \n  - `api.types.SparseDtype`\n  - The dtype object for pandas sparse arrays.\n Examples Returns True if the parameter is a 1-D pandas sparse array. >>> from pandas.api.types import is_sparse >>> is_sparse(pd.arrays.SparseArray([0, 0, 1, 0])) True >>> is_sparse(pd.Series(pd.arrays.SparseArray([0, 0, 1, 0]))) True Returns False if the parameter is not sparse. >>> is_sparse(np.array([0, 0, 1, 0])) False >>> is_sparse(pd.Series([0, 1, 0, 0])) False Returns False if the parameter is not a pandas sparse array. >>> from scipy.sparse import bsr_matrix >>> is_sparse(bsr_matrix([0, 1, 0, 0])) False Returns False if the parameter has more than one dimension.",
     "markdown_length": 1182,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_sparse — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_sparse — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.001638",
+    "crawled_at": "2026-08-26T06:51:31.515446",
     "type": "webpage"
 }

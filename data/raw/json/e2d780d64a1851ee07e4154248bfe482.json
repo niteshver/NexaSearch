@@ -2,7 +2,7 @@
     "id": "e2d780d64a1851ee07e4154248bfe482",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ExcelFile.book.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ExcelFile.book.html",
-    "title": "pandas.ExcelFile.book — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.ExcelFile.book — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.ExcelFile.book#\n\n- property ExcelFile.book[source]#\n- Gets the Excel workbook. Workbook is the top-level container for all document information. \n  - Returns:\n    - Excel Workbook\n    - The workbook object of the type defined by the engine being used.\n See also \n  - `read_excel`\n  - Read an Excel file into a pandas DataFrame.\n Examples >>> file = pd.ExcelFile(\"myfile.xlsx\") >>> file.book <openpyxl.workbook.workbook.Workbook object at 0x11eb5ad70> >>> file.book.path '/xl/workbook.xml' >>> file.book.active <openpyxl.worksheet._read_only.ReadOnlyWorksheet object at 0x11eb5b370> >>> file.book.sheetnames ['Sheet1', 'Sheet2']",
     "markdown_length": 636,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.ExcelFile.book — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.ExcelFile.book — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.284744",
+    "crawled_at": "2026-08-26T06:49:07.347119",
     "type": "webpage"
 }

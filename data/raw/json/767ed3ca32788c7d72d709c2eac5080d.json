@@ -2,7 +2,7 @@
     "id": "767ed3ca32788c7d72d709c2eac5080d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.export.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.export.html",
-    "title": "pandas.io.formats.style.Styler.export — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.export — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.export#\n\n- Styler.export()[source]#\n- Export the styles applied to the current Styler. Can be applied to a second Styler with `Styler.use` .\n  - Returns:\n    - dict\n    - Contains data-independent (exportable) styles applied to current Styler.\n See also \n  - `Styler.use`\n  - Set the styles on the current Styler.\n  - `Styler.copy`\n  - Create a copy of the current Styler.\n Notes This method is designed to copy non-data dependent attributes of one Styler to another. It differs from `Styler.copy` where data and\ndata dependent attributes are also copied.The following items are exported since they are not generally data dependent: \n  - Styling functions added by the `apply` and`map`\n  - Whether axes and names are hidden from the display, if unambiguous.\n  - Table attributes\n  - Table styles\n The following attributes are considered data dependent and therefore not exported: \n  - Caption\n  - UUID\n  - Tooltips\n  - Any hidden rows or columns identified by Index labels\n  - Any formatting applied using `Styler.format`\n  - Any CSS classes added using `Styler.set_td_classes`\n Examples >>> styler = pd.DataFrame([[1, 2], [3, 4]]).style >>> styler2 = pd.DataFrame([[9, 9, 9]]).style >>> styler.hide(axis=0).highlight_max(axis=1) >>> export = styler.export() >>> styler2.use(export)",
     "markdown_length": 1315,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.export — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.export — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.001856",
+    "crawled_at": "2026-08-26T06:51:53.423972",
     "type": "webpage"
 }

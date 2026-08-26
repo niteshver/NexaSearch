@@ -1,0 +1,35 @@
+{
+    "id": "dc439a561c1c780de0ba96cd95a2b0ce",
+    "url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/pagerank/hp.html",
+    "canonical_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/pagerank/hp.html",
+    "title": "Harry Potter Fanfics by PageRank",
+    "status": 200,
+    "markdown": "The following is a list of top fanfics by PageRank. A high number is good. For more information, see the main post.\n\n- Realizations (16.4446246629)\n- Harry Potter and the Nightmares of Futures Past (15.7110134023)\n- Make A Wish (14.0838498959)\n- Poison Pen (11.761694652)\n- To Shape and Change (11.5102522756)\n- Oh God Not Again! (10.5990695169)\n- His Own Man (9.50086989231)\n- A Black Comedy (9.4736496009)\n- Harry Potter And The Summer Of Change (8.83271027273)\n- The World Without Me (8.54865266224)\n- Lord of Caer Azkaban (8.34974157966)\n- The Lie I've Lived (8.29104885145)\n- An Aunt's Love (8.08879148153)\n- Harry's New Home (7.46220582823)\n- On the Way to Greatness (7.44958192264)\n- Resonance (7.31590084495)\n- Altered Destinies (7.09864753587)\n- Can't Have It Both Ways (6.77698015521)\n- Harry Potter and the Methods of Rationality (6.5139104593)\n- In this World and the Next (6.43598403198)\n- Harry Crow (6.39434622621)\n- Harry Potter and Future's Past (6.37123566436)\n- What is Right: Year One (6.34209753925)\n- A Champion's New Hope (6.30947849933)\n- Back Again, Harry? (6.16027479587)\n- Harry Potter and the Champion's Champion (6.10725171346)\n- Harry Potter and the Quantum Leap (5.99897123247)\n- The Marriage Stone (5.99127462602)\n- The Best Revenge (5.91107747592)\n- Partially Kissed Hero (5.90963045421)\n- A Marauder's Plan (5.85229219511)\n- Better Be Slytherin! (5.84383737283)\n- Harry Potter and the Manipulator of Destiny (5.80238744119)\n- Taking Control (5.75351624368)\n- Rocking the Boat (5.63229532026)\n- Redemption (5.35709296852)\n- A Different Halloween (5.28544146173)\n- Delenda Est (5.26131631962)\n- Trust Is A Relative Thing (5.23976878005)\n- Vox Corporis (5.23371528155)\n- Unsung Hero (5.17318443568)\n- No Thanks (5.14819291354)\n- No Hurry At All (5.1399823528)\n- Adrift in a World (5.00739905614)\n- Harry Potter and the Hero's Path (4.98741537351)\n- Knowledge is Power (4.93456548895)\n- Harry Potter and the Price of Being Noble (4.92810514704)\n- Harry Potter and the Boy Who Lived (4.8880588655)\n- The Well Groomed Mind (4.87929988201)\n- Betrayed (4.83794590091)\n- Stranger In a Too Familiar Land (4.78760716635)\n- An Inconvenient Truth (4.78229184878)\n- Champions (4.69313892742)\n- Harry Potter and the Power of Time (4.67455145149)\n- The Nietzsche Classes (4.60602710146)\n- Do Not Meddle In The Affairs Of Wizards (4.59530101642)\n- Timely Errors (4.54276306822)\n- RuneMaster (4.52542624332)\n- Brutal Harry (4.49649083405)\n- Harry Potter and the Cursed Summer (4.49269475169)\n- Harry Potter: My Life Is My Own (4.49067635852)\n- Thank You Ms Bones (4.44264928256)\n- Curse of Fate (4.42709711059)\n- Faith (4.41697087748)\n- Banking on Her (4.40634611205)\n- Prince of the Dark Kingdom (4.38646842853)\n- 30 Minutes That Changed Everything (4.3030772884)\n- We Learned the Sea (4.28299942543)\n- Forging the Sword (4.2762886129)\n- Never Alone, Never Again (4.23825222343)\n- Pet Project (4.21593272035)\n- Building Bridges (4.16131632476)\n- The Accidental Bond (4.09642209374)\n- Harry Potter and the Battle of Wills (4.09008902363)\n- Linked (4.05558587626)\n- A Second Chance at Life (4.02828630032)\n- In Care Of (4.00473475314)\n- The Thief of Hogwarts (3.99716615816)\n- The Grass Is Always Greener (3.93035775085)\n- Once Upon A Thyme (3.88654915335)\n- Harry Potter Mercenary (3.87209288773)\n- Ma Seconde Vie (3.86231582991)\n- Lily's Changes (3.82220955706)\n- Ascension Of The Scorpion Sorcerer (3.80257595578)\n- A Wonderful Caricature of Intimacy (3.7864301797)\n- Heart and Soul (3.75764943415)\n- Earl of the North (3.75430375274)\n- The Real Us (3.6996720653)\n- Death of Today (3.67841102881)\n- Harry McGonagall (3.67593750893)\n- Rise of the Wizards (3.65691491907)\n- Harry Potter and the Temporal Beacon (3.65301032875)\n- A World Apart (3.65002243146)\n- Dark Lord Rising (3.61994770348)\n- Quoth the Raven, Nevermore (3.59724990948)\n- Hermione Malfoy (3.57029719573)\n- The Darkness Within (3.54897895211)\n- Muggle Summer, Wizard's Fall (3.52118241053)\n- A Shadowed Soul (3.50376012293)\n- Grief, Deceptions, and Hope for Freedom (3.4912992823)",
+    "markdown_length": 4064,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/",
+            "text": "main post",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Harry Potter Fanfics by PageRank",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/"
+    },
+    "crawled_at": "2026-08-26T06:47:10.675584",
+    "type": "webpage"
+}

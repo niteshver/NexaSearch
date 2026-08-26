@@ -2,7 +2,7 @@
     "id": "440100dfaf864dbf57632928ecf9f0f2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.reindex.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.reindex.html",
-    "title": "pandas.Index.reindex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.reindex — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.reindex#\n\n- \nIndex.reindex(*target* ,*method=None* ,*level=None* ,*limit=None* ,*tolerance=None* )[source]#\n- Create index with target’s values. Optionally provides an indexer that maps the new labels back to the original positions, and supports filling methods for non-exact matches. \n  - Parameters:\n    - **target** an iterable\n    - An iterable containing the values to be used for creating the new index.\n    - **method** {None, ‘pad’/’ffill’, ‘backfill’/’bfill’, ‘nearest’}, optional\n      - default: exact matches only.\n      - pad / ffill: find the PREVIOUS index value if no exact match.\n      - backfill / bfill: use NEXT index value if no exact match\n      - nearest: use the NEAREST index value if no exact match. Tied distances are broken by preferring the larger index value.\n    - **level** int, optional\n    - Level of multiindex.\n    - **limit** int, optional\n    - Maximum number of consecutive labels in `target` to match for\ninexact matches.\n    - **tolerance** int, float, or list-like, optional\n    - Maximum distance between original and new labels for inexact matches. The values of the index at the matching locations must satisfy the equation `abs(index[indexer] - target) <= tolerance` .Tolerance may be a scalar value, which applies the same tolerance to all values, or list-like, which applies variable tolerance per element. List-like includes list, tuple, array, Series, and must be the same size as the index and its dtype must exactly match the index’s type.\n  - Returns:\n    - **new_index** pd.Index\n    - Resulting index.\n    - **indexer** np.ndarray[np.intp] or None\n    - Indices of output values in original index.\n  - Raises:\n    - TypeError\n    - If `method` passed along with`level` .\n    - ValueError\n    - If non-unique multi-index\n    - ValueError\n    - If non-unique index and `method` or`limit` passed.\n See also \n  - `Series.reindex`\n  - Conform Series to new index with optional filling logic.\n  - `DataFrame.reindex`\n  - Conform DataFrame to new index with optional filling logic.\n Examples >>> idx = pd.Index([\"car\", \"bike\", \"train\", \"tractor\"]) >>> idx Index(['car', 'bike', 'train', 'tractor'], dtype='str') >>> idx.reindex([\"car\", \"bike\"]) (Index(['car', 'bike'], dtype='str'), array([0, 1]))",
     "markdown_length": 2260,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.reindex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.reindex — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.993643",
+    "crawled_at": "2026-08-26T06:48:50.180366",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "5b5afaea9f2ea9a3d6e054895f88ffaa",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.LastWeekOfMonth.rule_code.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.LastWeekOfMonth.rule_code.html",
-    "title": "pandas.tseries.offsets.LastWeekOfMonth.rule_code — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.LastWeekOfMonth.rule_code — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.LastWeekOfMonth.rule_code#\n\n- LastWeekOfMonth.rule_code#\n- Return a string representing the base frequency. This code is used internally to identify the frequency type and includes the week number and weekday information. See also \n  - `tseries.offsets.Hour.rule_code`\n  - Returns a string representing the base frequency of ‘h’.\n  - `tseries.offsets.Day.rule_code`\n  - Returns a string representing the base frequency of ‘D’.\n Examples >>> pd.offsets.Week(5).rule_code 'W' >>> pd.offsets.WeekOfMonth(n=1, week=0, weekday=0).rule_code 'WOM-1MON'",
     "markdown_length": 570,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.LastWeekOfMonth.rule_code — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.LastWeekOfMonth.rule_code — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:16.366283",
+    "crawled_at": "2026-08-26T06:51:33.614343",
     "type": "webpage"
 }

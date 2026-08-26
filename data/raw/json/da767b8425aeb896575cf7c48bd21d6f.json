@@ -2,7 +2,7 @@
     "id": "da767b8425aeb896575cf7c48bd21d6f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
-    "title": "pandas.CategoricalIndex.map — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.CategoricalIndex.map — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.map#\n\n- \nCategoricalIndex.map(*mapper* ,*na_action=None* )[source]#\n- Map values using input an input mapping or function. Maps the values (their categories, not the codes) of the index to new categories. If the mapping correspondence is one-to-one the result is a `CategoricalIndex` which has the same order property as\nthe original, otherwise an`Index` is returned.If a dict or `Series` is used any unmapped category is\nmapped to NaN. Note that if this happens an`Index` will be returned.\n  - Parameters:\n    - **mapper** function, dict, or Series\n    - Mapping correspondence.\n    - **na_action** {None, ‘ignore’}, default ‘ignore’\n    - If ‘ignore’, propagate NaN values, without passing them to the mapping correspondence.\n  - Returns:\n    - pandas.CategoricalIndex or pandas.Index\n    - Mapped index.\n See also \n  - `Index.map`\n  - Apply a mapping correspondence on an `Index` .\n  - `Series.map`\n  - Apply a mapping correspondence on a `Series` .\n  - `Series.apply`\n  - Apply more complex functions on a `Series` .\n Examples >>> idx = pd.CategoricalIndex([\"a\", \"b\", \"c\"]) >>> idx CategoricalIndex(['a', 'b', 'c'], categories=['a', 'b', 'c'], ordered=False, dtype='category') >>> idx.map(lambda x: x.upper()) CategoricalIndex(['A', 'B', 'C'], categories=['A', 'B', 'C'], ordered=False, dtype='category') >>> idx.map({\"a\": \"first\", \"b\": \"second\", \"c\": \"third\"}) CategoricalIndex(['first', 'second', 'third'], categories=['first', 'second', 'third'], ordered=False, dtype='category') If the mapping is one-to-one the ordering of the categories is preserved: >>> idx = pd.CategoricalIndex([\"a\", \"b\", \"c\"], ordered=True) >>> idx CategoricalIndex(['a', 'b', 'c'], categories=['a', 'b', 'c'], ordered=True, dtype='category') >>> idx.map({\"a\": 3, \"b\": 2, \"c\": 1}) CategoricalIndex([3, 2, 1], categories=[3, 2, 1], ordered=True, dtype='category') If the mapping is not one-to-one an `Index` is returned:>>> idx.map({\"a\": \"first\", \"b\": \"second\", \"c\": \"first\"}) Index(['first', 'second', 'first'], dtype='str') If a dict is used, all unmapped categories are mapped to NaN and the result is an `Index` :>>> idx.map({\"a\": \"first\", \"b\": \"second\"}) Index(['first', 'second', nan], dtype='str')",
     "markdown_length": 2210,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.map — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.CategoricalIndex.map — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:37.378972",
+    "crawled_at": "2026-08-26T06:48:45.158230",
     "type": "webpage"
 }

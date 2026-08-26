@@ -2,7 +2,7 @@
     "id": "ab06cd66e1354131aea206dc6db9870b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.apply.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.apply.html",
-    "title": "pandas.api.typing.Rolling.apply — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Rolling.apply — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.apply#\n\n- \nRolling.apply(*func* ,*raw=False* ,*engine=None* ,*engine_kwargs=None* ,*args=None* ,*kwargs=None* )[source]#\n- Calculate the rolling custom aggregation function. Applies an arbitrary function to each rolling window. This is useful when the built-in rolling methods do not cover the desired computation. \n  - Parameters:\n    - **func** function\n    - Must produce a single value from an ndarray input if `raw=True` or a single value from a Series if`raw=False` . Can also accept a\nNumba JIT function with`engine='numba'` specified.\n    - **raw** bool, default False\n      - `False` : passes each row or column as a Series to the\nfunction.\n      - `True` : the passed function will receive ndarray\nobjects instead. Pandas-only attributes such as`.iloc` or`.index` are not available on ndarrays and will raise`AttributeError` if used inside`func` .\n If you are just applying a NumPy reduction function this will achieve much better performance.\n    - **engine** str, default None\n      - `'cython'` : Runs rolling apply through C-extensions from cython.\n      - `'numba'` : Runs rolling apply through JIT compiled code from numba.\nOnly available when`raw` is set to`True` .\n      - `None` : Defaults to`'cython'` or\nglobally setting`compute.use_numba` .\n    - **engine_kwargs** dict, default None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n      - For `'numba'` engine, the engine can accept`nogil` and`parallel` dictionary keys. The values must either be`True` or`False` .\n The default `engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}` and will be\napplied to both the`func` and the`apply` rolling aggregation.\n    - **args** tuple, default None\n    - Positional arguments to be passed into func.\n    - **kwargs** dict, default None\n    - Keyword arguments to be passed into func.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.apply`\n  - Aggregating apply for Series.\n  - `DataFrame.apply`\n  - Aggregating apply for DataFrame.\n Notes When `raw=False` , the`Series` passed to`func` is indexed by the\ncolumn or`Index` used to compute the rolling window. If`DataFrame.rolling()` was called with`on=col` , the index of the\npassed`Series` will be the values of`col` rather than the\noriginal`DataFrame` index. When`on` is not specified, the\nindex of the passed`Series` is the original index of the input.Examples >>> ser = pd.Series([1, 6, 5, 4]) >>> ser.rolling(2).apply(lambda s: s.sum() - s.min()) 0 NaN 1 6.0 2 6.0 3 5.0 dtype: float64 By default `func` is applied to each column independently. Use`method=\"table\"` (which requires`engine=\"numba\"` and`raw=True` ) to\ninstead pass the whole`DataFrame` window to`func` as a single 2D\nndarray, so the function can combine multiple columns. Here a rolling dot\nproduct of columns`A` and`B` is computed; the scalar result is\nbroadcast across the columns.>>> df = pd.DataFrame({\"A\": [1, 2, 3, 4, 5], \"B\": [5, 4, 3, 2, 1]}) >>> def dot(window): ... return (window[:, 0] * window[:, 1]).sum() >>> df.rolling(3, method=\"table\").apply( ... dot, engine=\"numba\", raw=True ... ) A B 0 NaN NaN 1 NaN NaN 2 22.0 22.0 3 25.0 25.0 4 22.0 22.0",
     "markdown_length": 3377,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.apply — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Rolling.apply — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.676835",
+    "crawled_at": "2026-08-26T06:51:45.725444",
     "type": "webpage"
 }

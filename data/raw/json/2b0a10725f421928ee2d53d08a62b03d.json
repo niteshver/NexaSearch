@@ -2,7 +2,7 @@
     "id": "2b0a10725f421928ee2d53d08a62b03d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.is_monotonic_increasing.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.is_monotonic_increasing.html",
-    "title": "pandas.Series.is_monotonic_increasing — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.is_monotonic_increasing — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.is_monotonic_increasing#\n\n- property Series.is_monotonic_increasing[source]#\n- Return True if values in the object are monotonically increasing. This property checks whether each element is greater than or equal to the previous element. Equal consecutive values are considered monotonically increasing. \n  - Returns:\n    - bool\n See also \n  - `Series.is_monotonic_decreasing`\n  - Return boolean if values in the object are monotonically decreasing.\n Examples >>> s = pd.Series([1, 2, 2]) >>> s.is_monotonic_increasing True >>> s = pd.Series([3, 2, 1]) >>> s.is_monotonic_increasing False",
     "markdown_length": 603,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.is_monotonic_increasing — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.is_monotonic_increasing — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:54.919949",
+    "crawled_at": "2026-08-26T06:49:18.078460",
     "type": "webpage"
 }

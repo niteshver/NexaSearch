@@ -2,7 +2,7 @@
     "id": "021a376e4d3cc0e4dde687e8659037cb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.nunique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.nunique.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.nunique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.nunique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.nunique#\n\n- \nDataFrameGroupBy.nunique(*dropna=True* )[source]#\n- Return DataFrame with counts of unique elements in each position. This method counts the number of distinct values for each column within each group, optionally excluding NaN values. \n  - Parameters:\n    - **dropna** bool, default True\n    - Don’t include NaN in the counts.\n  - Returns:\n    - nunique: DataFrame\n    - Counts of unique elements in each position.\n See also \n  - `DataFrame.nunique`\n  - Count number of distinct elements in specified axis.\n Examples >>> df = pd.DataFrame( ... { ... \"id\": [\"spam\", \"egg\", \"egg\", \"spam\", \"ham\", \"ham\"], ... \"value1\": [1, 5, 5, 2, 5, 5], ... \"value2\": list(\"abbaxy\"), ... } ... ) >>> df id value1 value2 0 spam 1 a 1 egg 5 b 2 egg 5 b 3 spam 2 a 4 ham 5 x 5 ham 5 y >>> df.groupby(\"id\").nunique() value1 value2 id egg 1 1 ham 1 2 spam 2 1 Check for rows with the same id but conflicting values: >>> df.groupby(\"id\").filter(lambda g: (g.nunique() > 1).any()) id value1 value2 0 spam 1 a 3 spam 2 a 4 ham 5 x 5 ham 5 y",
     "markdown_length": 1064,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.nunique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.nunique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.757384",
+    "crawled_at": "2026-08-26T06:51:14.742775",
     "type": "webpage"
 }

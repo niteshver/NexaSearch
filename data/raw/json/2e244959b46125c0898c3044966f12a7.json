@@ -2,7 +2,7 @@
     "id": "2e244959b46125c0898c3044966f12a7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.days_in_month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.days_in_month.html",
-    "title": "pandas.Series.dt.days_in_month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.days_in_month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.days_in_month#\n\n- Series.dt.days_in_month[source]#\n- The number of days in the month. This attribute returns the total number of days in the month for each datetime value in the Series/Index. The value depends on the month and whether the year is a leap year (e.g., February has 29 days in a leap year). See also \n  - `Series.dt.day`\n  - Return the day of the month.\n  - `Series.dt.is_month_end`\n  - Return a boolean indicating if the date is the last day of the month.\n  - `Series.dt.is_month_start`\n  - Return a boolean indicating if the date is the first day of the month.\n  - `Series.dt.month`\n  - Return the month as January=1 through December=12.\n Examples >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.days_in_month 0 31 1 29 dtype: int32",
     "markdown_length": 916,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.days_in_month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.days_in_month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.909869",
+    "crawled_at": "2026-08-26T06:49:14.167747",
     "type": "webpage"
 }

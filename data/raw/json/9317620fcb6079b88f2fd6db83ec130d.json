@@ -2,7 +2,7 @@
     "id": "9317620fcb6079b88f2fd6db83ec130d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_datetime64tz_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_datetime64tz_dtype.html",
-    "title": "pandas.api.types.is_datetime64tz_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_datetime64tz_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_datetime64tz_dtype#\n\n- \npandas.api.types.is_datetime64tz_dtype(*arr_or_dtype* )[source]#\n- Check whether an array-like or dtype is of a DatetimeTZDtype dtype. Deprecated since version 2.1.0: Use isinstance(dtype, pd.DatetimeTZDtype) instead. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array-like or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array-like or dtype is of a DatetimeTZDtype dtype.\n See also \n  - `api.types.is_datetime64_dtype`\n  - Check whether an array-like or dtype is of the datetime64 dtype.\n  - `api.types.is_datetime64_any_dtype`\n  - Check whether the provided array or dtype is of the datetime64 dtype.\n Examples >>> from pandas.api.types import is_datetime64tz_dtype >>> is_datetime64tz_dtype(object) False >>> is_datetime64tz_dtype([1, 2, 3]) False >>> is_datetime64tz_dtype(pd.DatetimeIndex([1, 2, 3])) # tz-naive False >>> is_datetime64tz_dtype(pd.DatetimeIndex([1, 2, 3], tz=\"US/Eastern\")) True >>> from pandas import DatetimeTZDtype >>> dtype = DatetimeTZDtype(\"ns\", tz=\"US/Eastern\") >>> s = pd.Series([], dtype=dtype) >>> is_datetime64tz_dtype(dtype) True >>> is_datetime64tz_dtype(s) True",
     "markdown_length": 1190,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_datetime64tz_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_datetime64tz_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.457674",
+    "crawled_at": "2026-08-26T06:50:45.506231",
     "type": "webpage"
 }

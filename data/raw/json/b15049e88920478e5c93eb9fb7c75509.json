@@ -2,7 +2,7 @@
     "id": "b15049e88920478e5c93eb9fb7c75509",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.combine.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.combine.html",
-    "title": "pandas.Series.combine — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.combine — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.combine#\n\n- \nSeries.combine(*other* ,*func* ,*fill_value=None* )[source]#\n- Combine the Series with a Series or scalar according to func. Combine the Series and other using func to perform elementwise selection for combined Series. fill_value is assumed when value is not present at some index from one of the two Series being combined. \n  - Parameters:\n    - **other** Series or scalar\n    - The value(s) to be combined with the Series.\n    - **func** function\n    - Function that takes two scalars as inputs and returns an element.\n    - **fill_value** scalar, optional\n    - The value to assume when an index is missing from one Series or the other. The default specifies to use the appropriate NaN value for the underlying dtype of the Series.\n  - Returns:\n    - Series\n    - The result of combining the Series with the other object.\n See also \n  - `Series.combine_first`\n  - Combine Series values, choosing the calling Series’ values first.\n Examples Consider 2 Datasets `s1` and`s2` containing\nhighest clocked speeds of different birds.>>> s1 = pd.Series({\"falcon\": 330.0, \"eagle\": 160.0}) >>> s1 falcon 330.0 eagle 160.0 dtype: float64 >>> s2 = pd.Series({\"falcon\": 345.0, \"eagle\": 200.0, \"duck\": 30.0}) >>> s2 falcon 345.0 eagle 200.0 duck 30.0 dtype: float64 Now, to combine the two datasets and view the highest speeds of the birds across the two datasets >>> s1.combine(s2, max) duck NaN eagle 200.0 falcon 345.0 dtype: float64 In the previous example, the resulting value for duck is missing, because the maximum of a NaN and a float is a NaN. So, in the example, we set `fill_value=0` ,\nso the maximum value returned will be the value from some dataset.>>> s1.combine(s2, max, fill_value=0) duck 30.0 eagle 200.0 falcon 345.0 dtype: float64",
     "markdown_length": 1769,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.combine — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.combine — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.085360",
+    "crawled_at": "2026-08-26T06:49:12.426818",
     "type": "webpage"
 }

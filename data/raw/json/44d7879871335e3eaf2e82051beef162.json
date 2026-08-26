@@ -2,7 +2,7 @@
     "id": "44d7879871335e3eaf2e82051beef162",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253Quarter.year_has_extra_week.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253Quarter.year_has_extra_week.html",
-    "title": "pandas.tseries.offsets.FY5253Quarter.year_has_extra_week — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.FY5253Quarter.year_has_extra_week — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.FY5253Quarter.year_has_extra_week#\n\n- \nFY5253Quarter.year_has_extra_week(*dt* )#\n- Return whether the fiscal year containing the given date has 53 weeks. In a 52-53 week fiscal year, most years have 52 weeks (4 quarters of 13 weeks each), but occasionally a year will have 53 weeks. When this occurs, one quarter will have 14 weeks instead of the standard 13 weeks. This method determines whether the fiscal year containing the given date is a 53-week year. \n  - Parameters:\n    - **dt** datetime\n    - The date to check, which falls within some fiscal year.\n  - Returns:\n    - bool\n    - True if the fiscal year containing dt has 53 weeks, False if it has 52 weeks.\n See also \n  - `FY5253Quarter.get_weeks`\n  - Get the number of weeks in each quarter.\n  - `FY5253Quarter.qtr_with_extra_week`\n  - Get the quarter number that receives the extra week in 53-week years.\n Examples >>> offset = pd.offsets.FY5253Quarter( ... weekday=5, startingMonth=12, qtr_with_extra_week=1 ... ) >>> offset.year_has_extra_week(pd.Timestamp(\"2014-04-02\")) True >>> offset.year_has_extra_week(pd.Timestamp(\"2010-04-02\")) False",
     "markdown_length": 1130,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.FY5253Quarter.year_has_extra_week — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.FY5253Quarter.year_has_extra_week — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:22.485237",
+    "crawled_at": "2026-08-26T06:51:47.603511",
     "type": "webpage"
 }

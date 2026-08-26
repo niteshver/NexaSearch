@@ -2,7 +2,7 @@
     "id": "4ab911cad460b6ed521df64977028eae",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html",
-    "title": "pandas.Index.intersection — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.intersection — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.intersection#\n\n- \nfinal Index.intersection(*other* ,*sort=False* )[source]#\n- Form the intersection of two Index objects. This returns a new Index with elements common to the index and other. \n  - Parameters:\n    - **other** Index or array-like\n    - An Index or an array-like object containing elements to form the intersection with the original Index.\n    - **sort** True, False or None, default False\n    - Whether to sort the resulting index. \n      - None : sort the result, except when self and other are equal or when the values cannot be compared.\n      - False : do not sort the result.\n      - True : Sort the result (which may raise TypeError).\n  - Returns:\n    - Index\n    - Returns a new Index object with elements common to both the original Index and the other Index.\n See also \n  - `Index.union`\n  - Form the union of two Index objects.\n  - `Index.difference`\n  - Return a new Index with elements of index not in other.\n  - `Index.isin`\n  - Return a boolean array where the index values are in values.\n Examples >>> idx1 = pd.Index([1, 2, 3, 4]) >>> idx2 = pd.Index([3, 4, 5, 6]) >>> idx1.intersection(idx2) Index([3, 4], dtype='int64')",
     "markdown_length": 1167,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.intersection — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.intersection — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.467886",
+    "crawled_at": "2026-08-26T06:48:49.156631",
     "type": "webpage"
 }

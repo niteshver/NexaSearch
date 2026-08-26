@@ -2,7 +2,7 @@
     "id": "203abfc2978ed3cb7b0aec634a845d05",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessHour.end.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessHour.end.html",
-    "title": "pandas.tseries.offsets.BusinessHour.end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BusinessHour.end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BusinessHour.end#\n\n- BusinessHour.end#\n- Return the end time(s) of the business hour. This property returns a tuple of datetime.time objects representing the end times of business hours. See also \n  - `BusinessHour.start`\n  - Return the start time(s) of the business hour.\n  - `CustomBusinessHour.start`\n  - Return the start time(s) of the custom business hour.\n Examples >>> pd.offsets.BusinessHour().end (datetime.time(17, 0),)",
     "markdown_length": 454,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BusinessHour.end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BusinessHour.end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:13.416889",
+    "crawled_at": "2026-08-26T06:51:10.678394",
     "type": "webpage"
 }

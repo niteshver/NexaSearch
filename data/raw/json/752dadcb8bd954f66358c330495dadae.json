@@ -2,7 +2,7 @@
     "id": "752dadcb8bd954f66358c330495dadae",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.sum.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.sum.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.sum — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.sum — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.sum#\n\n- \nDataFrameGroupBy.sum(*numeric_only=False* ,*min_count=0* ,*skipna=True* ,*engine=None* ,*engine_kwargs=None* )[source]#\n- Compute sum of group values. Computes the sum for each group. Null values are excluded by default unless `skipna` is set to`False` .\n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Changed in version 2.0.0: numeric_only no longer accepts `None` .\n    - **min_count** int, default 0\n    - The required number of valid values to perform the operation. If fewer than `min_count` non-NA values are present the result will be NA.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If the entire group is NA and `skipna` is`True` , the result will be NA.Changed in version 3.0.0.\n    - **engine** str, default None None\n      - `'cython'` : Runs rolling apply through C-extensions from cython.\n        - `'numba'` Runs rolling apply through JIT compiled code from numba.\n        - Only available when `raw` is set to`True` .\n        - `None` Defaults to`'cython'` or globally setting\n        - `compute.use_numba`\n    - **engine_kwargs** dict, default None None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n        - For `'numba'` engine, the engine can accept`nogil`\n        - and `parallel` dictionary keys. The values must either be`True` or`False` . The default`engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}` and will be\napplied to both the`func` and the`apply` groupby aggregation.\n      - For \n  - Returns:\n    - Series or DataFrame\n    - Computed sum of values within each group.\n See also \n  - `Series.sum`\n  - Return the sum of the values over the requested axis.\n  - `DataFrame.sum`\n  - Return the sum of the values over the requested axis.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\", \"b\"] >>> ser = pd.Series([1, 2, 3, 4], index=lst) >>> ser a 1 a 2 b 3 b 4 dtype: int64 >>> ser.groupby(level=0).sum() a 3 b 7 dtype: int64 For DataFrameGroupBy: >>> data = [[1, 8, 2], [1, 2, 5], [2, 5, 8], [2, 6, 9]] >>> df = pd.DataFrame( ... data, ... columns=[\"a\", \"b\", \"c\"], ... index=[\"tiger\", \"leopard\", \"cheetah\", \"lion\"], ... ) >>> df a b c tiger 1 8 2 leopard 1 2 5 cheetah 2 5 8 lion 2 6 9 >>> df.groupby(\"a\").sum() b c a 1 10 7 2 11 17",
     "markdown_length": 2343,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.sum — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.sum — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.020810",
+    "crawled_at": "2026-08-26T06:51:28.220151",
     "type": "webpage"
 }

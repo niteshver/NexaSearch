@@ -2,7 +2,7 @@
     "id": "d1378919a16751138fe784ae6a9d28be",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.boxplot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.boxplot.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.boxplot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.boxplot — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.boxplot#\n\n- \nDataFrameGroupBy.boxplot(*subplots=True* ,*column=None* ,*fontsize=None* ,*rot=0* ,*grid=True* ,*ax=None* ,*figsize=None* ,*layout=None* ,*sharex=False* ,*sharey=True* ,*backend=None* ,***kwargs* )[source]#\n- Make box plots from DataFrameGroupBy data. Creates one or more box-and-whisker plots based on data that has been grouped using `DataFrame.groupby()` . Each group can be rendered as\na separate subplot or combined into a single figure.\n  - Parameters:\n    - **grouped** DataFrameGroupBy\n    - The grouped DataFrame object over which to create the box plots.\n    - **subplots** bool\n      - `False` - no subplots will be used\n      - `True` - create a subplot for each group.\n    - **column** column name or list of names, or vector\n    - Can be any valid input to groupby.\n    - **fontsize** float or str\n    - Font size for the labels.\n    - **rot** float\n    - Rotation angle of labels (in degrees) on the x-axis.\n    - **grid** bool\n    - Whether to show grid lines on the plot.\n    - **ax** Matplotlib axis object, default None\n    - The axes on which to draw the plots. If None, uses the current axes.\n    - **figsize** tuple of (float, float)\n    - The figure size in inches (width, height).\n    - **layout** tuple (optional)\n    - The layout of the plot: (rows, columns).\n    - **sharex** bool, default False\n    - Whether x-axes will be shared among subplots.\n    - **sharey** bool, default True\n    - Whether y-axes will be shared among subplots.\n    - **backend** str, default None\n    - Backend to use instead of the backend specified in the option `plotting.backend` . For instance, ‘matplotlib’. Alternatively, to\nspecify the`plotting.backend` for the whole session, set`pd.options.plotting.backend` .\n    - ****kwargs**\n    - All other plotting keyword arguments to be passed to matplotlib’s boxplot function.\n  - Returns:\n    - dict or DataFrame.boxplot return value\n    - If `subplots=True` , returns a dictionary of group keys to the boxplot\nreturn values. If`subplots=False` , returns the boxplot return value\nof a single DataFrame.\n See also \n  - `DataFrame.boxplot`\n  - Create a box plot from a DataFrame.\n  - `Series.plot`\n  - Plot a Series.\n Examples You can create boxplots for grouped data and show them as separate subplots: >>> import itertools >>> tuples = [t for t in itertools.product(range(1000), range(4))] >>> index = pd.MultiIndex.from_tuples(tuples, names=[\"lvl0\", \"lvl1\"]) >>> data = np.random.randn(len(index), 4) >>> df = pd.DataFrame(data, columns=list(\"ABCD\"), index=index) >>> grouped = df.groupby(level=\"lvl1\") >>> grouped.boxplot(rot=45, fontsize=12, figsize=(8, 10)) The `subplots=False` option shows the boxplots in a single figure.>>> grouped.boxplot(subplots=False, rot=45, fontsize=12)",
     "markdown_length": 2789,
@@ -274,13 +274,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.boxplot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.boxplot — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.270398",
+    "crawled_at": "2026-08-26T06:51:07.366476",
     "type": "webpage"
 }

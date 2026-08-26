@@ -2,7 +2,7 @@
     "id": "d93ffad00f00daa5e9fb3a3538668daa",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.normalize.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.normalize.html",
-    "title": "pandas.tseries.offsets.BYearBegin.normalize — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BYearBegin.normalize — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BYearBegin.normalize#\n\n- BYearBegin.normalize#\n- Return boolean whether the frequency can align with midnight. This is True for offsets that round the result of a DateOffset addition down to the previous midnight. See also \n  - `tseries.offsets.DateOffset`\n  - The standard kind of date increment.\n Examples >>> pd.offsets.Hour(5).normalize False >>> pd.offsets.Day(5).normalize False",
     "markdown_length": 409,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BYearBegin.normalize — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BYearBegin.normalize — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:11.776252",
+    "crawled_at": "2026-08-26T06:51:42.187515",
     "type": "webpage"
 }

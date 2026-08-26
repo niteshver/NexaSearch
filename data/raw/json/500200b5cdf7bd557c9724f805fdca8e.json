@@ -2,7 +2,7 @@
     "id": "500200b5cdf7bd557c9724f805fdca8e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ExcelFile.sheet_names.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ExcelFile.sheet_names.html",
-    "title": "pandas.ExcelFile.sheet_names — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.ExcelFile.sheet_names — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.ExcelFile.sheet_names#\n\n- property ExcelFile.sheet_names[source]#\n- Names of the sheets in the document. This is particularly useful for loading a specific sheet into a DataFrame when you do not know the sheet names beforehand. \n  - Returns:\n    - list of str\n    - List of sheet names in the document.\n See also \n  - `ExcelFile.parse`\n  - Parse a sheet into a DataFrame.\n  - `read_excel`\n  - Read an Excel file into a pandas DataFrame. If you know the sheet names, it may be easier to specify them directly to read_excel.\n Examples >>> file = pd.ExcelFile(\"myfile.xlsx\") >>> file.sheet_names [\"Sheet1\", \"Sheet2\"]",
     "markdown_length": 622,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.ExcelFile.sheet_names — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.ExcelFile.sheet_names — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.339738",
+    "crawled_at": "2026-08-26T06:49:07.426787",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "4a21a8cae7702154ee2fa825ea4a0bca",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.asof.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.asof.html",
-    "title": "pandas.DataFrame.asof — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.asof — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.asof#\n\n- \nDataFrame.asof(*where* ,*subset=None* )[source]#\n- Return the last row(s) without any NaNs before where. The last row (for each element in where, if list) without any NaN is taken. In case of a `DataFrame` , the last row without NaN\nconsidering only the subset of columns (if not None)If there is no good value, NaN is returned for a Series or a Series of NaN values for a DataFrame \n  - Parameters:\n    - **where** date or array-like of dates\n    - Date(s) before which the last row(s) are returned.\n    - **subset** str or array-like of str, default None\n    - For DataFrame, if not None, only use these columns to check for NaNs.\n  - Returns:\n    - scalar, Series, or DataFrame\n    - The return can be: \n      - scalar : when self is a Series and where is a scalar\n      - Series: when self is a Series and where is an array-like, or when self is a DataFrame and where is a scalar\n      - DataFrame : when self is a DataFrame and where is an array-like\n See also \n  - `merge_asof`\n  - Perform an asof merge. Similar to left join.\n Notes Dates are assumed to be sorted. Raises if this is not the case. Examples A Series and a scalar where. >>> s = pd.Series([1, 2, np.nan, 4], index=[10, 20, 30, 40]) >>> s 10 1.0 20 2.0 30 NaN 40 4.0 dtype: float64 >>> s.asof(20) np.float64(2.0) For a sequence where, a Series is returned. The first value is NaN, because the first element of where is before the first index value. >>> s.asof([5, 20]) 5 NaN 20 2.0 dtype: float64 Missing values are not considered. The following is `2.0` , not\nNaN, even though NaN is at the index location for`30` .>>> s.asof(30) np.float64(2.0) Take all columns into consideration >>> df = pd.DataFrame( ... { ... \"a\": [10.0, 20.0, 30.0, 40.0, 50.0], ... \"b\": [None, None, None, None, 500], ... }, ... index=pd.DatetimeIndex( ... [ ... \"2018-02-27 09:01:00\", ... \"2018-02-27 09:02:00\", ... \"2018-02-27 09:03:00\", ... \"2018-02-27 09:04:00\", ... \"2018-02-27 09:05:00\", ... ] ... ), ... ) >>> df.asof(pd.DatetimeIndex([\"2018-02-27 09:03:30\", \"2018-02-27 09:04:30\"])) a b 2018-02-27 09:03:30 NaN NaN 2018-02-27 09:04:30 NaN NaN Take a single column into consideration >>> df.asof( ... pd.DatetimeIndex([\"2018-02-27 09:03:30\", \"2018-02-27 09:04:30\"]), ... subset=[\"a\"], ... ) a b 2018-02-27 09:03:30 30.0 NaN 2018-02-27 09:04:30 40.0 NaN",
     "markdown_length": 2333,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.asof — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.asof — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.546340",
+    "crawled_at": "2026-08-26T06:49:00.401818",
     "type": "webpage"
 }

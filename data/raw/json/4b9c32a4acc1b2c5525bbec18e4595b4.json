@@ -2,7 +2,7 @@
     "id": "4b9c32a4acc1b2c5525bbec18e4595b4",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.4.4.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.4.4.html",
-    "title": "What’s new in 1.4.4 (August 31, 2022) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "What’s new in 1.4.4 (August 31, 2022) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# What’s new in 1.4.4 (August 31, 2022)#\n\nThese are the changes in pandas 1.4.4. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Fixed regression in `DataFrame.fillna()` not working on a`DataFrame` with a`MultiIndex` (GH 47649)\n- Fixed regression in taking NULL `objects` from a`DataFrame` causing a segmentation violation. These NULL values are created by`numpy.empty_like()` (GH 46848)\n- Fixed regression in `concat()` materializing the`Index` during sorting even if the`Index` was already sorted (GH 47501)\n- Fixed regression in `concat()` or`merge()` handling of all-NaN ExtensionArrays with custom attributes (GH 47762)\n- Fixed regression in calling bitwise numpy ufuncs (for example, `np.bitwise_and` ) on Index objects (GH 46769)\n- Fixed regression in `cut()` when using a`datetime64` IntervalIndex as bins (GH 46218)\n- Fixed regression in `DataFrame.select_dtypes()` where`include=\"number\"` included`BooleanDtype` (GH 46870)\n- Fixed regression in `DataFrame.loc()` raising error when indexing with a`NamedTuple` (GH 48124)\n- Fixed regression in `DataFrame.loc()` not updating the cache correctly after values were set (GH 47867)\n- Fixed regression in `DataFrame.loc()` not aligning index in some cases when setting a`DataFrame` (GH 47578)\n- Fixed regression in `DataFrame.loc()` setting a length-1 array like value to a single value in the DataFrame (GH 46268)\n- Fixed regression when slicing with `DataFrame.loc()` with`DatetimeIndex` with a`DateOffset` object for its`freq` (GH 46671)\n- Fixed regression in setting `None` or non-string value into a`string` -dtype Series using a mask (GH 47628)\n- Fixed regression in updating a DataFrame column through Series `__setitem__` (using chained assignment) not updating column values inplace and using too much memory (GH 47172)\n- Fixed regression in `DataFrame.select_dtypes()` returning a view on the original DataFrame (GH 48090)\n- Fixed regression using custom Index subclasses (for example, used in xarray) with `reset_index()` or`Index.insert()` (GH 47071)\n- Fixed regression in `intersection()` when the`DatetimeIndex` has dates crossing daylight savings time (GH 46702)\n- Fixed regression in `merge()` throwing an error when passing a`Series` with a multi-level name (GH 47946)\n- Fixed regression in `DataFrame.eval()` creating a copy when updating inplace (GH 47449)\n- Fixed regression where getting a row using `DataFrame.iloc()` with`SparseDtype` would raise (GH 46406)\n\n## Bug fixes#\n\n- The `FutureWarning` raised when passing arguments (other than`filepath_or_buffer` ) as positional in`read_csv()` is now raised at the correct stacklevel (GH 47385)\n- Bug in `DataFrame.to_sql()` when`method` was a`callable` that did not return an`int` and would raise a`TypeError` (GH 46891)\n- Bug in `DataFrameGroupBy.value_counts()` where`subset` had no effect (GH 46383)\n- Bug when getting values with `DataFrame.loc()` with a list of keys causing an internal inconsistency that could lead to a disconnect between`frame.at[x, y]` vs`frame[y].loc[x]` (GH 22372)\n- Bug in the `Series.dt.strftime()` accessor return a float instead of object dtype Series for all-NaT input, which also causes a spurious deprecation warning (GH 45858)\n\n## Other#\n\n- The minimum version of Cython needed to compile pandas is now `0.29.32` (GH 47978)\n\n## Contributors#\n\nA total of 12 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Jeff Reback\n- Joris Van den Bossche\n- Marco Edward Gorelli\n- Matthew Roeschke\n- MeeseeksMachine\n- Nima Sarang +\n- Pandas Development Team\n- Patrick Hoefler\n- Simon Hawkins\n- Tobias Pitters\n- Xingrong Chen +\n- jbrockmendel",
     "markdown_length": 3710,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.4.4 (August 31, 2022) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "What’s new in 1.4.4 (August 31, 2022) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:29.046896",
+    "crawled_at": "2026-08-26T06:52:04.440803",
     "type": "webpage"
 }

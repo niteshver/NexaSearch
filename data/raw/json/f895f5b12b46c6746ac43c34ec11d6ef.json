@@ -2,7 +2,7 @@
     "id": "f895f5b12b46c6746ac43c34ec11d6ef",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.DataError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.DataError.html",
-    "title": "pandas.errors.DataError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.DataError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.DataError#\n\n- exception pandas.errors.DataError[source]#\n- Exception raised when performing an operation on non-numerical data. For example, calling `ohlc` on a non-numerical column or a function\non a rolling window.See also \n  - `Series.rolling`\n  - Provide rolling window calculations on Series object.\n  - `DataFrame.rolling`\n  - Provide rolling window calculations on DataFrame object.\n Examples >>> ser = pd.Series([\"a\", \"b\", \"c\"]) >>> ser.rolling(2).sum() Traceback (most recent call last): DataError: No numeric types to aggregate",
     "markdown_length": 553,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.DataError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.DataError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.406290",
+    "crawled_at": "2026-08-26T06:51:53.165904",
     "type": "webpage"
 }

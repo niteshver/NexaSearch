@@ -2,7 +2,7 @@
     "id": "ae1e9f7e53a8601a00f206aeb76647d7",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_slice_bound.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_slice_bound.html",
-    "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.get_slice_bound#\n\n- \nIndex.get_slice_bound(*label* ,*side* )[source]#\n- Calculate slice bound that corresponds to given label. Returns leftmost (one-past-the-rightmost if `side=='right'` ) position\nof given label.\n  - Parameters:\n    - **label** object\n    - The label for which to calculate the slice bound.\n    - **side** {‘left’, ‘right’}\n    - if ‘left’ return leftmost position of given label. if ‘right’ return one-past-the-rightmost position of given label.\n  - Returns:\n    - int\n    - Index of label.\n See also \n  - `Index.get_loc`\n  - Get integer location, slice or boolean mask for requested label.\n Examples >>> idx = pd.RangeIndex(5) >>> idx.get_slice_bound(3, \"left\") 3 >>> idx.get_slice_bound(3, \"right\") 4 If `label` is non-unique in the index, an error will be raised.>>> idx_duplicate = pd.Index([\"a\", \"b\", \"a\", \"c\", \"d\"]) >>> idx_duplicate.get_slice_bound(\"a\", \"left\") Traceback (most recent call last): KeyError: Cannot get left slice bound for non-unique label: 'a'",
     "markdown_length": 1001,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_slice_bound.html"
     },
-    "crawled_at": "2026-08-10T11:47:55.761927",
+    "crawled_at": "2026-08-26T06:49:46.261061",
     "type": "webpage"
 }

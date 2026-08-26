@@ -2,7 +2,7 @@
     "id": "76094e71fada89fbeac4949c0648411f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.from_range.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.from_range.html",
-    "title": "pandas.RangeIndex.from_range — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.RangeIndex.from_range — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.RangeIndex.from_range#\n\n- \nclassmethod RangeIndex.from_range(*data* ,*name=None* ,*dtype=None* )[source]#\n- Create `pandas.RangeIndex` from a`range` object.This method provides a way to create a `pandas.RangeIndex` directly\nfrom a Python`range` object. The resulting`RangeIndex` will have\nthe same start, stop, and step values as the input`range` object.\nIt is particularly useful for constructing indices in an efficient and\nmemory-friendly manner.\n  - Parameters:\n    - **data** range\n    - The range object to be converted into a RangeIndex.\n    - **name** str, default None\n    - Name to be stored in the index.\n    - **dtype** Dtype or None\n    - Data type for the RangeIndex. If None, the default integer type will be used.\n  - Returns:\n    - RangeIndex\n See also \n  - `RangeIndex`\n  - Immutable Index implementing a monotonic integer range.\n  - `Index`\n  - Immutable sequence used for indexing and alignment.\n Examples >>> pd.RangeIndex.from_range(range(5)) RangeIndex(start=0, stop=5, step=1) >>> pd.RangeIndex.from_range(range(2, -10, -3)) RangeIndex(start=2, stop=-10, step=-3)",
     "markdown_length": 1096,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.RangeIndex.from_range — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.RangeIndex.from_range — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:42.473464",
+    "crawled_at": "2026-08-26T06:48:54.777896",
     "type": "webpage"
 }

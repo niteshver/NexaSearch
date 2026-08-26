@@ -2,7 +2,7 @@
     "id": "cb0aba7de380bc39f3c8a8b67bc4ad81",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253.weekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253.weekday.html",
-    "title": "pandas.tseries.offsets.FY5253.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.FY5253.weekday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.FY5253.weekday#\n\n- FY5253.weekday#\n- Return the weekday used by the fiscal year. This is the day of the week on which the fiscal year ends. The value is an integer from 0 (Monday) to 6 (Sunday). See also \n  - `FY5253.startingMonth`\n  - Return the starting month of the fiscal year.\n  - `FY5253.variation`\n  - Return the variation of the fiscal year.\n Examples >>> offset = pd.offsets.FY5253(weekday=4, startingMonth=12, variation=\"nearest\") >>> offset.weekday 4",
     "markdown_length": 486,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.FY5253.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.FY5253.weekday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:21.568175",
+    "crawled_at": "2026-08-26T06:51:41.997792",
     "type": "webpage"
 }

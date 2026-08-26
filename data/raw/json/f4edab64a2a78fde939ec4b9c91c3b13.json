@@ -2,7 +2,7 @@
     "id": "f4edab64a2a78fde939ec4b9c91c3b13",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v3.0.2.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v3.0.2.html",
-    "title": "What’s new in 3.0.2 (March 30, 2026) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "What’s new in 3.0.2 (March 30, 2026) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# What’s new in 3.0.2 (March 30, 2026)#\n\nThese are the changes in pandas 3.0.2. See Release notes for a full changelog including other versions of pandas.\n\n## Enhancements#\n\n- Added support for `pd.col()` expressions in`Series.case_when()` (GH 64070).\n\n## Fixed regressions#\n\n- Fixed a regression in `json_normalize()` that caused top-level missing entries to raise a`TypeError` . Missing entries are once again interpreted as empty records (GH 64188)\n- Fixed a regression in `DataFrame.convert_dtypes()` resulting in corrupted result with sliced`DataFrame` with mixed dtypes as input (GH 64702)\n- Fixed a regression in `DataFrame.sort_index()` and`Series.sort_index()` raising`AssertionError` when called with`level=` on a`RangeIndex` (GH 64383)\n- Fixed a regression in `DataFrame.sum()` on empty DataFrames with a mix of numeric and string dtypes (GH 64657)\n- Fixed a regression in `HDFStore.select()` where the`where` clause on a datetime index silently returned empty results when the index had non-nanosecond resolution (GH 64310)\n- Fixed a regression in `Series.interpolate()` where`limit_direction=\"both\"` with`limit` greater than the Series length raised`ValueError` (GH 64322)\n- Fixed a regression in `Series.str.find()` returning byte offsets instead of character offsets for multi-byte UTF-8 characters (GH 64123)\n- Fixed performance regression in assigning into a string column with string data (GH 64530)\n\n## Bug fixes#\n\n- Fixed a bug in `to_datetime()` that could give an unnecessary`RuntimeWarning` when converting DataFrame containing missing values (GH 64141)\n- Fixed a bug in `Series.var()` computing the variance of complex numbers incorrectly (GH 62421)\n- Fixed a bug in `to_hdf()` with string columns raising an error when using compression (GH 64180)\n- Fixed a bug in the `sum()` method with python-backed string dtype returning incorrect value for an empty Series and ignoring the`min_count` argument (GH 64683)\n- Fixed a bug when using `col()` with Python functions`bool()` ,`iter()` ,`copy()` , and`deepcopy()` either failed or produced incorrect results; these now all raise a`TypeError` (GH 64267)\n- Fixed a bug where `col()` and expressions derived from it failed with power (`**` ) and matrix multiplication (`@` ) operators (GH 64267)\n- Fixed a bug where `DataFrame.div()` ignored the`axis` argument when used with`level` for MultiIndex columns (GH 64428)\n- Fixed a bug where assigning `NA` to a string column could trigger a PyArrow error and corrupt data (GH 64320)\n\n## Contributors#\n\nA total of 22 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Alex Lubbock\n- An1k4et +\n- Aniket Vijay Vishwakarma +\n- Dr Alex Mitre +\n- Eric Chen\n- Fadi Younes +\n- Harikrishna KP +\n- Jeongmin Gil\n- Joaquín Rivero +\n- Joris Van den Bossche\n- Lumberbot (aka Jack)\n- Matthew Roeschke\n- Richard Shadrach\n- Sanchit Rishi\n- Scott Shambaugh +\n- dependabot[bot]\n- jbrockmendel\n- moktamd +\n- pandas Development Team\n- pre-commit-ci[bot]\n- vme50 +\n- Álvaro Kothe",
     "markdown_length": 3041,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 3.0.2 (March 30, 2026) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "What’s new in 3.0.2 (March 30, 2026) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:30.686256",
+    "crawled_at": "2026-08-26T06:51:55.785028",
     "type": "webpage"
 }

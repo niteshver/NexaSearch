@@ -2,7 +2,7 @@
     "id": "90519b1693bfa1eff6f3361502afc91e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.argmax.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.argmax.html",
-    "title": "pandas.Series.argmax — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.argmax — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.argmax#\n\n- \nSeries.argmax(*axis=None* ,*skipna=True* ,**args* ,***kwargs* )[source]#\n- Return int position of the largest value in the Series. If the maximum is achieved in multiple locations, the first row position is returned. \n  - Parameters:\n    - **axis** None\n    - Unused. Parameter needed for compatibility with DataFrame.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If the entire Series is NA, or if `skipna=False` and there is an NA value, this method will raise a`ValueError` .\n    - ***args, **kwargs**\n    - Additional arguments and keywords for compatibility with NumPy.\n  - Returns:\n    - int\n    - Row position of the maximum value.\n See also \n  - `Series.argmax`\n  - Return position of the maximum value.\n  - `Series.argmin`\n  - Return position of the minimum value.\n  - `numpy.ndarray.argmax`\n  - Equivalent method for numpy arrays.\n  - `Series.idxmax`\n  - Return index label of the maximum values.\n  - `Series.idxmin`\n  - Return index label of the minimum values.\n Examples Consider dataset containing cereal calories >>> s = pd.Series( ... [100.0, 110.0, 120.0, 110.0], ... index=[ ... \"Corn Flakes\", ... \"Almond Delight\", ... \"Cinnamon Toast Crunch\", ... \"Cocoa Puff\", ... ], ... ) >>> s Corn Flakes 100.0 Almond Delight 110.0 Cinnamon Toast Crunch 120.0 Cocoa Puff 110.0 dtype: float64 >>> s.argmax() np.int64(2) >>> s.argmin() np.int64(0) The maximum cereal calories is the third element and the minimum cereal calories is the first element, since series is zero-indexed.",
     "markdown_length": 1532,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.argmax — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.argmax — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.argmax.html"
     },
-    "crawled_at": "2026-08-10T11:46:51.262024",
+    "crawled_at": "2026-08-26T06:49:10.975484",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "52ab2e60698299b42bc06574e469a3cd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_feather.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_feather.html",
-    "title": "pandas.DataFrame.to_feather — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.to_feather — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.to_feather#\n\n- \nDataFrame.to_feather(*path* ,***kwargs* )[source]#\n- Write a DataFrame to the binary Feather format. The Feather format is a lightweight, language-agnostic columnar file format based on Apache Arrow, designed for efficient read and write performance. This method requires the `pyarrow` library.\n  - Parameters:\n    - **path** str, path object, file-like object\n    - String, path object (implementing `os.PathLike[str]` ), or file-like\nobject implementing a binary`write()` function. If a string or a path,\nit will be used as Root Directory path when writing a partitioned dataset.\n    - ****kwargs**\n    - Additional keywords passed to `pyarrow.feather.write_feather()` .\nThis includes the compression, compression_level, chunksize\nand version keywords.\n See also \n  - `DataFrame.to_parquet`\n  - Write a DataFrame to the binary parquet format.\n  - `DataFrame.to_excel`\n  - Write object to an Excel sheet.\n  - `DataFrame.to_sql`\n  - Write to a sql table.\n  - `DataFrame.to_csv`\n  - Write a csv file.\n  - `DataFrame.to_json`\n  - Convert the object to a JSON string.\n  - `DataFrame.to_html`\n  - Render a DataFrame as an HTML table.\n  - `DataFrame.to_string`\n  - Convert DataFrame to a string.\n Notes This function writes the dataframe as a feather file. Requires a default index. For saving the DataFrame with your custom index use a method that supports custom indices e.g. to_parquet. Examples >>> df = pd.DataFrame([[1, 2, 3], [4, 5, 6]]) >>> df.to_feather(\"file.feather\")",
     "markdown_length": 1508,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.to_feather — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.to_feather — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.797825",
+    "crawled_at": "2026-08-26T06:49:06.381320",
     "type": "webpage"
 }

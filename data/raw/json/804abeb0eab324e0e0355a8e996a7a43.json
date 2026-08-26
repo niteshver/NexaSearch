@@ -2,7 +2,7 @@
     "id": "804abeb0eab324e0e0355a8e996a7a43",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.keys.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.keys.html",
-    "title": "pandas.DataFrame.keys — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.keys — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.keys#\n\n- DataFrame.keys()[source]#\n- Get the ‘info axis’ (see Indexing for more). This is index for Series, columns for DataFrame. \n  - Returns:\n    - Index\n    - Info axis.\n See also \n  - `DataFrame.index`\n  - The index (row labels) of the DataFrame.\n  - `DataFrame.columns`\n  - The column labels of the DataFrame.\n Examples >>> d = pd.DataFrame( ... data={\"A\": [1, 2, 3], \"B\": [0, 4, 8]}, index=[\"a\", \"b\", \"c\"] ... ) >>> d A B a 1 0 b 2 4 c 3 8 >>> d.keys() Index(['A', 'B'], dtype='str')",
     "markdown_length": 509,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.keys — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.keys — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:47.037967",
+    "crawled_at": "2026-08-26T06:49:03.207578",
     "type": "webpage"
 }

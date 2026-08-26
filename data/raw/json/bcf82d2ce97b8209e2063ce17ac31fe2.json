@@ -2,7 +2,7 @@
     "id": "bcf82d2ce97b8209e2063ce17ac31fe2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.LastWeekOfMonth.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.LastWeekOfMonth.html",
-    "title": "pandas.tseries.offsets.LastWeekOfMonth — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.LastWeekOfMonth — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.LastWeekOfMonth#\n\n- class pandas.tseries.offsets.LastWeekOfMonth#\n- Describes monthly dates in last week of month. For example “the last Tuesday of each month”. Attributes `n`Return the count of the number of periods. `normalize`Return boolean whether the frequency can align with midnight. `weekday`Return the day of the week on which this offset applies. See also \n  - `tseries.offsets.WeekOfMonth`\n  - Date offset for a specific weekday in a month.\n  - `tseries.offsets.MonthEnd`\n  - Date offset for the end of the month.\n  - `tseries.offsets.BMonthEnd`\n  - Date offset for the last business day of the month.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> ts + pd.offsets.LastWeekOfMonth() Timestamp('2022-01-31 00:00:00') Attributes `base`Returns a copy of the calling offset object with n=1 and all other attributes equal. `freqstr`Return a string representing the frequency. `kwds`Return a dict of extra parameters for the offset. `n`Return the count of the number of periods. `name`(DEPRECATED) Return a string representing the base frequency. `nanos`Return an integer of the total number of nanoseconds. `normalize`Return boolean whether the frequency can align with midnight. `rule_code`Return a string representing the base frequency. `week`Return the week of the month on which this offset applies. `weekday`Return the day of the week on which this offset applies. Methods `copy` ()Return a copy of the frequency. `is_month_end` (ts)Return boolean whether a timestamp occurs on the month end. `is_month_start` (ts)Return boolean whether a timestamp occurs on the month start. `is_on_offset` (dt)Return boolean whether a timestamp intersects with this frequency. `is_quarter_end` (ts)Return boolean whether a timestamp occurs on the quarter end. `is_quarter_start` (ts)Return boolean whether a timestamp occurs on the quarter start. `is_year_end` (ts)Return boolean whether a timestamp occurs on the year end. `is_year_start` (ts)Return boolean whether a timestamp occurs on the year start. `rollback` (dt)Roll provided date backward to next offset only if not on offset. `rollforward` (dt)Roll provided date forward to next offset only if not on offset.",
     "markdown_length": 2191,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.LastWeekOfMonth — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.LastWeekOfMonth — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:19.248404",
+    "crawled_at": "2026-08-26T06:51:19.621644",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "f3efa7f76bfe1ebd3b2a51c7a90b0ac0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.compare.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.compare.html",
-    "title": "pandas.Series.compare — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.compare — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.compare#\n\n- \nSeries.compare(*other* ,*align_axis=1* ,*keep_shape=False* ,*keep_equal=False* ,*result_names=('self', 'other')* )[source]#\n- Compare to another Series and show the differences. This method aligns two Series and highlights only the values that differ between them. Equal values are shown as NaN by default. \n  - Parameters:\n    - **other** Series\n    - Object to compare with.\n    - **align_axis** {0 or ‘index’, 1 or ‘columns’}, default 1\n    - Determine which axis to align the comparison on. \n      - 0, or ‘index’ : Resulting differences are stacked vertically with rows drawn alternately from self and other.\n      - 1, or ‘columns’ : Resulting differences are aligned horizontally with columns drawn alternately from self and other.\n    - **keep_shape** bool, default False\n    - If true, all rows and columns are kept. Otherwise, only the ones with different values are kept.\n    - **keep_equal** bool, default False\n    - If true, the result keeps values that are equal. Otherwise, equal values are shown as NaNs.\n    - **result_names** tuple, default (‘self’, ‘other’)\n    - Set the dataframes names in the comparison.\n  - Returns:\n    - Series or DataFrame\n    - If axis is 0 or ‘index’ the result will be a Series. The resulting index will be a MultiIndex with ‘self’ and ‘other’ stacked alternately at the inner level. If axis is 1 or ‘columns’ the result will be a DataFrame. It will have two columns namely ‘self’ and ‘other’.\n See also \n  - `DataFrame.compare`\n  - Compare with another DataFrame and show differences.\n Notes Matching NaNs will not appear as a difference. Examples >>> s1 = pd.Series([\"a\", \"b\", \"c\", \"d\", \"e\"]) >>> s2 = pd.Series([\"a\", \"a\", \"c\", \"b\", \"e\"]) Align the differences on columns >>> s1.compare(s2) self other 1 b a 3 d b Stack the differences on indices >>> s1.compare(s2, align_axis=0) 1 self b other a 3 self d other b dtype: str Keep all original rows >>> s1.compare(s2, keep_shape=True) self other 0 NaN NaN 1 b a 2 NaN NaN 3 d b 4 NaN NaN Keep all original rows and also all original values >>> s1.compare(s2, keep_shape=True, keep_equal=True) self other 0 a a 1 b a 2 c c 3 d b 4 e e",
     "markdown_length": 2160,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.compare — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.compare — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.133930",
+    "crawled_at": "2026-08-26T06:49:12.525495",
     "type": "webpage"
 }

@@ -1,7 +1,7 @@
 # pandas.concat#
 
 - 
-pandas.concat(*objs* ,*** ,*axis=0* ,*join='outer'* ,*ignore_index=False* ,*keys=None* ,*levels=None* ,*names=None* ,*verify_integrity=False* ,*sort=<no_default>* ,*copy=<no_default>* )[source]#
+pandas.concat(*objs* ,*** ,*axis=0* ,*join='outer'* ,*ignore_index=False* ,*keys=None* ,*levels=None* ,*names=None* ,*verify_integrity=False* ,*sort=<no_default>* ,*copy=<no_default>* ,*union_categories=False* )[source]#
 - Concatenate pandas objects along a particular axis. Allows optional set logic along the other axes. Can also add a layer of hierarchical indexing on the concatenation axis, which may be useful if the labels are the same (or overlapping) on the passed axis number. 
   - Parameters:
     - **objs** an iterable or mapping of Series or DataFrame objects
@@ -24,6 +24,8 @@ pandas.concat(*objs* ,*** ,*axis=0* ,*join='outer'* ,*ignore_index=False* ,*keys
     - Sort non-concatenation axis. One exception to this is when the non-concatenation axis is a DatetimeIndex and join=’outer’ and the axis is not already aligned. In that case, the non-concatenation axis is always sorted lexicographically.
     - **copy** bool, default False
     - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.
+    - **union_categories** bool, default False
+    - If True and all values for a given column have categorical dtype, the resulting column will preserve categorical dtype with the union of the categories, rather than casting to the underlying dtype. Categories whose dtypes differ are cast to a common dtype. The result is unordered unless every input is ordered with the same categories (after any casting to a common dtype) in the same order, in which case the result is ordered. Has no effect when concatenating mixed categorical and non-categorical data. Added in version 3.1.0.
   - Returns:
     - object, type of objs
     - When concatenating all `Series` along the index (axis=0), a`Series` is returned. When`objs` contains at least one`DataFrame` , a`DataFrame` is returned. When concatenating along

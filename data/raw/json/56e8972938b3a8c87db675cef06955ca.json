@@ -2,10 +2,10 @@
     "id": "56e8972938b3a8c87db675cef06955ca",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.lt.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.lt.html",
-    "title": "pandas.Series.lt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.lt — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
-    "markdown": "# pandas.Series.lt#\n\n- \nSeries.lt(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Less than of series and other, element-wise (binary operator lt). Equivalent to `series < other` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** object\n    - When a Series is provided, will align on indexes. For all other types, will behave the same as `<` but with possibly different results due\nto the other arguments.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** None or float value, default None (NaN)\n    - Fill existing missing (NaN) values, and any new element needed for successful Series alignment, with this value before computation. If data in both corresponding Series locations is missing the result of filling (at that location) will be missing.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.gt`\n  - Element-wise Greater than, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan, 1], index=[\"a\", \"b\", \"c\", \"d\", \"e\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN e 1.0 dtype: float64 >>> b = pd.Series([0, 1, 2, np.nan, 1], index=[\"a\", \"b\", \"c\", \"d\", \"f\"]) >>> b a 0.0 b 1.0 c 2.0 d NaN f 1.0 dtype: float64 >>> a.lt(b, fill_value=0) a False b False c True d False e False f True dtype: bool",
-    "markdown_length": 1529,
+    "markdown": "# pandas.Series.lt#\n\n- \nSeries.lt(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Less than of series and other, element-wise (binary operator lt). Equivalent to `series < other` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** object\n    - When a Series is provided, will align on indexes. For all other types, will behave the same as `<` but with possibly different results due\nto the other arguments.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** scalar or None, default None\n    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.gt`\n  - Element-wise Greater than, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan, 1], index=[\"a\", \"b\", \"c\", \"d\", \"e\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN e 1.0 dtype: float64 >>> b = pd.Series([0, 1, 2, np.nan, 1], index=[\"a\", \"b\", \"c\", \"d\", \"f\"]) >>> b a 0.0 b 1.0 c 2.0 d NaN f 1.0 dtype: float64 >>> a.lt(b, fill_value=0) a False b False c True d False e False f True dtype: bool",
+    "markdown_length": 1481,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.lt.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.lt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.lt — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:55.372170",
+    "crawled_at": "2026-08-26T06:49:19.039138",
     "type": "webpage"
 }

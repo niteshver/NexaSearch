@@ -2,7 +2,7 @@
     "id": "6d55a02940d4dbf78428b5277a5864f4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.resolution_string.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.resolution_string.html",
-    "title": "pandas.Timedelta.resolution_string — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timedelta.resolution_string — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.resolution_string#\n\n- Timedelta.resolution_string#\n- Return a string representing the lowest timedelta resolution. Each timedelta has a defined resolution that represents the lowest OR most granular level of precision. Each level of resolution is represented by a short string as defined below: Resolution: Return value \n  - Days: ‘D’\n  - Hours: ‘h’\n  - Minutes: ‘min’\n  - Seconds: ‘s’\n  - Milliseconds: ‘ms’\n  - Microseconds: ‘us’\n  - Nanoseconds: ‘ns’\n \n  - Returns:\n    - str\n    - Timedelta resolution.\n See also \n  - `Timedelta.components`\n  - Return all components of the Timedelta as a namedtuple-like.\n  - `Timedelta.resolution`\n  - Return the smallest possible difference between non-equal Timedelta objects.\n Examples >>> td = pd.Timedelta('1 days 2 min 3 us 42 ns') >>> td.resolution_string 'ns' >>> td = pd.Timedelta('1 days 2 min 3 us') >>> td.resolution_string 'us' >>> td = pd.Timedelta('2 min 3 s') >>> td.resolution_string 's' >>> td = pd.Timedelta(36, unit='us') >>> td.resolution_string 'us'",
     "markdown_length": 1029,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.resolution_string — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timedelta.resolution_string — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.219465",
+    "crawled_at": "2026-08-26T06:51:29.349836",
     "type": "webpage"
 }

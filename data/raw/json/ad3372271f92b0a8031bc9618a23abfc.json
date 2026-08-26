@@ -2,7 +2,7 @@
     "id": "ad3372271f92b0a8031bc9618a23abfc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.assign.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.assign.html",
-    "title": "pandas.DataFrame.assign — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.assign — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.assign#\n\n- \nDataFrame.assign(***kwargs* )[source]#\n- Assign new columns to a DataFrame. Returns a new object with all original columns in addition to new ones. Existing columns that are re-assigned will be overwritten. \n  - Parameters:\n    - ****kwargs** callable, Series, scalar, array-like, or dict\n    - The column names are keywords. If the values are callable, they are computed on the DataFrame and assigned to the new columns. The callable must not change input DataFrame (though pandas doesn’t check it). If the values are not callable (e.g. a Series, scalar, array, or dict), they are simply assigned. See the Notes section for details on alignment and broadcasting.\n  - Returns:\n    - DataFrame\n    - A new DataFrame with the new columns in addition to all the existing columns.\n See also \n  - `DataFrame.loc`\n  - Select a subset of a DataFrame by labels.\n  - `DataFrame.iloc`\n  - Select a subset of a DataFrame by positions.\n Notes Assigning multiple columns within the same `assign` is possible.\nLater items in ‘**kwargs’ may refer to newly created or modified\ncolumns in ‘df’; items are computed and assigned into ‘df’ in order.\nNon-callable values (Series, arrays, scalars) follow the same\nalignment and broadcasting rules as`DataFrame.__setitem__()` . See\nthat method’s documentation for details.Examples >>> df = pd.DataFrame({\"temp_c\": [17.0, 25.0]}, index=[\"Portland\", \"Berkeley\"]) >>> df temp_c Portland 17.0 Berkeley 25.0 Where the value is a callable, evaluated on df: >>> df.assign(temp_f=lambda x: x.temp_c * 9 / 5 + 32) temp_c temp_f Portland 17.0 62.6 Berkeley 25.0 77.0 Alternatively, the same behavior can be achieved by directly referencing an existing Series or sequence: >>> df.assign(temp_f=df[\"temp_c\"] * 9 / 5 + 32) temp_c temp_f Portland 17.0 62.6 Berkeley 25.0 77.0 or by using `pandas.col()` :>>> df.assign(temp_f=pd.col(\"temp_c\") * 9 / 5 + 32) temp_c temp_f Portland 17.0 62.6 Berkeley 25.0 77.0 You can create multiple columns within the same assign where one of the columns depends on another one defined within the same assign: >>> df.assign( ... temp_f=lambda x: x[\"temp_c\"] * 9 / 5 + 32, ... temp_k=lambda x: (x[\"temp_f\"] + 459.67) * 5 / 9, ... ) temp_c temp_f temp_k Portland 17.0 62.6 290.15 Berkeley 25.0 77.0 298.15 A dict value is aligned to the DataFrame’s index by its keys, and index labels not present in the dict are filled with NaN: >>> df.assign(temp_k={\"Portland\": 290.15, \"Berkeley\": 298.15, \"Seattle\": 285.0}) temp_c temp_k Portland 17.0 290.15 Berkeley 25.0 298.15",
     "markdown_length": 2541,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.assign — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.assign — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.593519",
+    "crawled_at": "2026-08-26T06:49:00.430088",
     "type": "webpage"
 }

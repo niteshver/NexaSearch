@@ -2,7 +2,7 @@
     "id": "6d1df5feaa246e90e759372162d3d3ff",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_period.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_period.html",
-    "title": "pandas.Series.to_period — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.to_period — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.to_period#\n\n- \nSeries.to_period(*freq=None* ,*copy=<no_default>* )[source]#\n- Convert Series from DatetimeIndex to PeriodIndex. This method converts the DatetimeIndex of the Series into a PeriodIndex with a specified frequency, which is useful when period-based indexing is preferred over exact timestamps. \n  - Parameters:\n    - **freq** str, default None\n    - Frequency associated with the PeriodIndex.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - Series\n    - Series with index converted to PeriodIndex.\n See also \n  - `DataFrame.to_period`\n  - Equivalent method for DataFrame.\n  - `Series.dt.to_period`\n  - Convert DateTime column values.\n Examples >>> idx = pd.DatetimeIndex([\"2023\", \"2024\", \"2025\"]) >>> s = pd.Series([1, 2, 3], index=idx) >>> s = s.to_period() >>> s 2023 1 2024 2 2025 3 Freq: Y-DEC, dtype: int64 Viewing the index >>> s.index PeriodIndex(['2023', '2024', '2025'], dtype='period[Y-DEC]')",
     "markdown_length": 1309,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.to_period — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.to_period — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.457725",
+    "crawled_at": "2026-08-26T06:49:42.604578",
     "type": "webpage"
 }

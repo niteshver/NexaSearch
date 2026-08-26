@@ -2,7 +2,7 @@
     "id": "9084b6ceaa7aa715f239a18d9cd9ec17",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.nanos.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.nanos.html",
-    "title": "pandas.tseries.offsets.BYearBegin.nanos — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BYearBegin.nanos — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BYearBegin.nanos#\n\n- BYearBegin.nanos#\n- Return an integer of the total number of nanoseconds. This property computes the offset duration in nanoseconds. For fixed frequency offsets (like Hour, Minute, Second), this returns the exact number of nanoseconds. For non-fixed frequencies that depend on calendar context (like Week without a specified weekday), this raises an error. \n  - Raises:\n    - ValueError\n    - If the frequency is non-fixed.\n See also \n  - `tseries.offsets.Hour.nanos`\n  - Returns an integer of the total number of nanoseconds.\n  - `tseries.offsets.Day.nanos`\n  - Returns an integer of the total number of nanoseconds.\n Examples >>> pd.offsets.Week(n=1).nanos ValueError: Week: weekday=None is a non-fixed frequency",
     "markdown_length": 760,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BYearBegin.nanos — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BYearBegin.nanos — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:11.738121",
+    "crawled_at": "2026-08-26T06:51:45.309601",
     "type": "webpage"
 }

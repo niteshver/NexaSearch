@@ -2,7 +2,7 @@
     "id": "5516dcf11324e812edd2123cfcc52696",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sem.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sem.html",
-    "title": "pandas.DataFrame.sem — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.sem — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.sem#\n\n- \nDataFrame.sem(*** ,*axis=0* ,*skipna=True* ,*ddof=1* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased standard error of the mean over requested axis. Normalized by N-1 by default. This can be changed using the ddof argument \n  - Parameters:\n    - **axis** {index (0), columns (1)}, default 0\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. Warning The behavior of DataFrame.sem with `axis=None` is deprecated,\nin a future version this will reduce over both axes and return a scalar\nTo retain the old behavior, pass axis=0 (or do not pass axis).\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire row/column is NA, the result will be NA.\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is N - ddof, where N represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Not implemented for Series.\n    - ****kwargs**\n    - Additional keywords passed.\n  - Returns:\n    - Series\n    - Unbiased standard error of the mean over requested axis.\n See also \n  - `DataFrame.var`\n  - Return unbiased variance over requested axis.\n  - `DataFrame.std`\n  - Returns sample standard deviation over requested axis.\n Examples >>> s = pd.Series([1, 2, 3]) >>> round(s.sem(), 6) 0.57735 With a DataFrame >>> df = pd.DataFrame({\"a\": [1, 2], \"b\": [2, 3]}, index=[\"tiger\", \"zebra\"]) >>> df a b tiger 1 2 zebra 2 3 >>> df.sem() a 0.5 b 0.5 dtype: float64 Using axis=1 >>> df.sem(axis=1) tiger 0.5 zebra 0.5 dtype: float64 In this case, numeric_only should be set to True to avoid getting an error. >>> df = pd.DataFrame({\"a\": [1, 2], \"b\": [\"T\", \"Z\"]}, index=[\"tiger\", \"zebra\"]) >>> df.sem(numeric_only=True) a 0.5 dtype: float64",
     "markdown_length": 1838,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.sem — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.sem — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.264359",
+    "crawled_at": "2026-08-26T06:49:05.391867",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "77acab919008355d051cf33134a02db1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.SemiMonthBegin.copy.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.SemiMonthBegin.copy.html",
-    "title": "pandas.tseries.offsets.SemiMonthBegin.copy — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.SemiMonthBegin.copy — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.SemiMonthBegin.copy#\n\n- SemiMonthBegin.copy()#\n- Return a copy of the frequency. This method creates a new instance of the same frequency offset with identical parameters. The returned copy is independent of the original, allowing modifications without affecting the source object. See also \n  - `tseries.offsets.Week.copy`\n  - Return a copy of Week offset.\n  - `tseries.offsets.DateOffset.copy`\n  - Return a copy of date offset.\n  - `tseries.offsets.MonthEnd.copy`\n  - Return a copy of MonthEnd offset.\n  - `tseries.offsets.YearBegin.copy`\n  - Return a copy of YearBegin offset.\n Examples >>> freq = pd.DateOffset(1) >>> freq_copy = freq.copy() >>> freq is freq_copy False",
     "markdown_length": 698,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.SemiMonthBegin.copy — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.SemiMonthBegin.copy — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:18.155119",
+    "crawled_at": "2026-08-26T06:51:05.079842",
     "type": "webpage"
 }

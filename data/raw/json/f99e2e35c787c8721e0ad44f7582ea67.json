@@ -2,7 +2,7 @@
     "id": "f99e2e35c787c8721e0ad44f7582ea67",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_hashable.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_hashable.html",
-    "title": "pandas.api.types.is_hashable — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_hashable — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_hashable#\n\n- \npandas.api.types.is_hashable(*obj* ,*allow_slice=True* )[source]#\n- Return True if hash(obj) will succeed, False otherwise. Some types will pass a test against collections.abc.Hashable but fail when they are actually hashed with hash(). Distinguish between these and other types by trying the call to hash() and seeing if they raise TypeError. \n  - Parameters:\n    - **obj** object\n    - The object to check for hashability. Any Python object can be passed here.\n    - **allow_slice** bool\n    - If True, return True if the object is hashable (including slices). If False, return True if the object is hashable and not a slice.\n  - Returns:\n    - bool\n    - True if object can be hashed (i.e., does not raise TypeError when passed to hash()) and passes the slice check according to ‘allow_slice’. False otherwise (e.g., if object is mutable like a list or dictionary or if allow_slice is False and object is a slice or contains a slice).\n See also \n  - `api.types.is_float`\n  - Return True if given object is float.\n  - `api.types.is_iterator`\n  - Check if the object is an iterator.\n  - `api.types.is_list_like`\n  - Check if the object is list-like.\n  - `api.types.is_dict_like`\n  - Check if the object is dict-like.\n Examples >>> import collections >>> from pandas.api.types import is_hashable >>> a = ([],) >>> isinstance(a, collections.abc.Hashable) True >>> is_hashable(a) False",
     "markdown_length": 1419,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_hashable — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_hashable — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.616344",
+    "crawled_at": "2026-08-26T06:51:20.260321",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "b6991dc8323bbd3f391e9e557a2ce3f1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.html",
-    "title": "pandas.Timedelta — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta#\n\n- \nclass pandas.Timedelta(*value=<object object>* ,*unit=None* ,***kwargs* )#\n- Represents a duration, the difference between two dates or times. Timedelta is the pandas equivalent of python’s `datetime.timedelta` and is interchangeable with it in most cases.\n  - Parameters:\n    - **value** Timedelta, timedelta, np.timedelta64, str, int or float\n    - Input value.\n    - **unit** str, default ‘ns’\n    - If input is an integer, denote the unit of the input. If input is a float, denote the unit of the integer parts. The decimal parts with resolution lower than 1 nanosecond are ignored. Possible values: \n      - ‘W’, or ‘D’\n      - ‘days’, or ‘day’\n      - ‘hours’, ‘hour’, ‘hr’, or ‘h’\n      - ‘minutes’, ‘minute’, ‘min’, or ‘m’\n      - ‘seconds’, ‘second’, ‘sec’, or ‘s’\n      - ‘milliseconds’, ‘millisecond’, ‘millis’, ‘milli’, or ‘ms’\n      - ‘microseconds’, ‘microsecond’, ‘micros’, ‘micro’, or ‘us’\n      - ‘nanoseconds’, ‘nanosecond’, ‘nanos’, ‘nano’, or ‘ns’.\n Deprecated since version 3.0.0: Allowing the values w, d, MIN, MS, US and NS to denote units are deprecated in favour of the values W, D, min, ms, us and ns.\n    - ****kwargs**\n    - Available kwargs: {days, seconds, microseconds, milliseconds, minutes, nanoseconds, hours, weeks}. Values for construction in compat with datetime.timedelta. Numpy ints and floats will be coerced to python ints and floats.\n See also \n  - `Timestamp`\n  - Represents a single timestamp in time.\n  - `TimedeltaIndex`\n  - Immutable Index of timedelta64 data.\n  - `DateOffset`\n  - Standard kind of date increment used for a date range.\n  - `to_timedelta`\n  - Convert argument to timedelta.\n  - `datetime.timedelta`\n  - Represents a duration in the datetime module.\n  - `numpy.timedelta64`\n  - Represents a duration compatible with NumPy.\n Notes The constructor may take in either both values of value and unit or kwargs as above. Either one of them must be used during initialization The `.value` attribute is always in ns.If the precision is higher than nanoseconds, the precision of the duration is truncated to nanoseconds. Examples Here we initialize Timedelta object with both value and unit >>> td = pd.Timedelta(1, \"D\") >>> td Timedelta('1 days 00:00:00') Here we initialize the Timedelta object with kwargs >>> td2 = pd.Timedelta(days=1) >>> td2 Timedelta('1 days 00:00:00') We see that either way we get the same result Attributes `asm8`Return a numpy timedelta64 array scalar view. `components`Return a components namedtuple-like. `days`Returns the days of the timedelta. `max``microseconds`Return the number of microseconds (n), where 0 <= n < 1 millisecond. `min``nanoseconds`Return the number of nanoseconds (n), where 0 <= n < 1 microsecond. `resolution``resolution_string`Return a string representing the lowest timedelta resolution. `seconds`Return the total hours, minutes, and seconds of the timedelta as seconds. `unit`Return the unit of Timedelta object. `value`Return the value of Timedelta object in nanoseconds. Methods `as_unit` (unit[, round_ok])Convert the underlying int64 representation to the given unit. `ceil` (freq)Return a new Timedelta ceiled to this resolution. `floor` (freq)Return a new Timedelta floored to this resolution. `isoformat` ()Format the Timedelta as ISO 8601 Duration. `round` (freq)Round the Timedelta to the specified resolution. `to_numpy` ([dtype, copy])Convert the Timedelta to a NumPy timedelta64. `to_pytimedelta` ()Convert a pandas Timedelta object into a python `datetime.timedelta` object.`to_timedelta64` ()Return a numpy.timedelta64 object with 'ns' precision. `total_seconds` ()Total seconds in the duration. `view` (dtype)Array view compatibility.",
     "markdown_length": 3683,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.074402",
+    "crawled_at": "2026-08-26T06:51:20.900425",
     "type": "webpage"
 }

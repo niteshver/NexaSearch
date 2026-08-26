@@ -2,7 +2,7 @@
     "id": "d3f6de1fbffba661caa43d1b9f2e540f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.YearBegin.is_year_end.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.YearBegin.is_year_end.html",
-    "title": "pandas.tseries.offsets.YearBegin.is_year_end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.YearBegin.is_year_end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.YearBegin.is_year_end#\n\n- \nYearBegin.is_year_end(*ts* )#\n- Return boolean whether a timestamp occurs on the year end. This method checks if the given timestamp falls on December 31st, which marks the end of a calendar year. \n  - Parameters:\n    - **ts** Timestamp\n    - The timestamp to check.\n See also \n  - `is_year_start`\n  - Return boolean whether a timestamp occurs on the year start.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.Hour(5) >>> freq.is_year_end(ts) False",
     "markdown_length": 519,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.YearBegin.is_year_end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.YearBegin.is_year_end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:23.871889",
+    "crawled_at": "2026-08-26T06:51:21.533913",
     "type": "webpage"
 }

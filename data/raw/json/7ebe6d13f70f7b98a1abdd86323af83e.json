@@ -2,7 +2,7 @@
     "id": "7ebe6d13f70f7b98a1abdd86323af83e",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.max.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.max.html",
-    "title": "pandas.Index.max — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.max — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.max#\n\n- \nIndex.max(*axis=None* ,*skipna=True* ,**args* ,***kwargs* )[source]#\n- Return the maximum value of the Index. The maximum is computed by comparing all values in the Index. NA/null values are excluded by default. \n  - Parameters:\n    - **axis** int, optional\n    - For compatibility with NumPy. Only 0 or None are allowed.\n    - **skipna** bool, default True\n    - Exclude NA/null values when showing the result.\n    - ***args, **kwargs**\n    - Additional arguments and keywords for compatibility with NumPy.\n  - Returns:\n    - scalar\n    - Maximum value.\n See also \n  - `Index.min`\n  - Return the minimum value in an Index.\n  - `Series.max`\n  - Return the maximum value in a Series.\n  - `DataFrame.max`\n  - Return the maximum values in a DataFrame.\n Examples >>> idx = pd.Index([3, 2, 1]) >>> idx.max() 3 >>> idx = pd.Index([\"c\", \"b\", \"a\"]) >>> idx.max() 'c' For a MultiIndex, the maximum is determined lexicographically. >>> idx = pd.MultiIndex.from_product([(\"a\", \"b\"), (2, 1)]) >>> idx.max() ('b', 2)",
     "markdown_length": 1027,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.max — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.max — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.max.html"
     },
-    "crawled_at": "2026-08-10T11:47:52.787741",
+    "crawled_at": "2026-08-26T06:49:43.178877",
     "type": "webpage"
 }

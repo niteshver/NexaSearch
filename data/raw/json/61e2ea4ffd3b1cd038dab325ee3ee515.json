@@ -2,7 +2,7 @@
     "id": "61e2ea4ffd3b1cd038dab325ee3ee515",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_dict.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_dict.html",
-    "title": "pandas.DataFrame.to_dict — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.to_dict — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.to_dict#\n\n- \nDataFrame.to_dict(*orient='dict'* ,*** ,*into=<class 'dict'>* ,*index=True* )[source]#\n- Convert the DataFrame to a dictionary. The type of the key-value pairs can be customized with the parameters (see below). \n  - Parameters:\n    - **orient** str {‘dict’, ‘list’, ‘series’, ‘split’, ‘tight’, ‘records’, ‘index’}\n    - Determines the type of the values of the dictionary. \n      - ‘dict’ (default) : dict like {column -> {index -> value}}\n      - ‘list’ : dict like {column -> [values]}\n      - ‘series’ : dict like {column -> Series(values)}\n      - ‘split’ : dict like {‘index’ -> [index], ‘columns’ -> [columns], ‘data’ -> [values]}\n      - ‘tight’ : dict like {‘index’ -> [index], ‘columns’ -> [columns], ‘data’ -> [values], ‘index_names’ -> [index.names], ‘column_names’ -> [column.names]}\n      - ‘records’ : list like [{column -> value}, … , {column -> value}]\n      - ‘index’ : dict like {index -> {column -> value}}\n    - **into** class, default dict\n    - The collections.abc.MutableMapping subclass used for all Mappings in the return value. Can be the actual class or an empty instance of the mapping type you want. If you want a collections.defaultdict, you must pass it initialized.\n    - **index** bool, default True\n    - Whether to include the index item (and index_names item if orient is ‘tight’) in the returned dictionary. Can only be `False` when orient is ‘split’ or ‘tight’. Note that when orient is\n‘records’, this parameter does not take effect (index item always\nnot included).Added in version 2.0.0.\n  - Returns:\n    - dict, list or collections.abc.MutableMapping\n    - Return a collections.abc.MutableMapping object representing the DataFrame. The resulting transformation depends on the orient parameter.\n See also \n  - `DataFrame.from_dict`\n  - Create a DataFrame from a dictionary.\n  - `DataFrame.to_json`\n  - Convert a DataFrame to JSON format.\n Examples >>> df = pd.DataFrame( ... {\"col1\": [1, 2], \"col2\": [0.5, 0.75]}, index=[\"row1\", \"row2\"] ... ) >>> df col1 col2 row1 1 0.50 row2 2 0.75 >>> df.to_dict() {'col1': {'row1': 1, 'row2': 2}, 'col2': {'row1': 0.5, 'row2': 0.75}} You can specify the return orientation. >>> df.to_dict(\"series\") {'col1': row1 1 row2 2 Name: col1, dtype: int64, 'col2': row1 0.50 row2 0.75 Name: col2, dtype: float64} >>> df.to_dict(\"split\") {'index': ['row1', 'row2'], 'columns': ['col1', 'col2'], 'data': [[1, 0.5], [2, 0.75]]} >>> df.to_dict(\"records\") [{'col1': 1, 'col2': 0.5}, {'col1': 2, 'col2': 0.75}] >>> df.to_dict(\"index\") {'row1': {'col1': 1, 'col2': 0.5}, 'row2': {'col1': 2, 'col2': 0.75}} >>> df.to_dict(\"tight\") {'index': ['row1', 'row2'], 'columns': ['col1', 'col2'], 'data': [[1, 0.5], [2, 0.75]], 'index_names': [None], 'column_names': [None]} You can also specify the mapping type. >>> from collections import OrderedDict, defaultdict >>> df.to_dict(into=OrderedDict) OrderedDict({'col1': OrderedDict({'row1': 1, 'row2': 2}), 'col2': OrderedDict({'row1': 0.5, 'row2': 0.75})}) If you want a defaultdict, you need to initialize it: >>> dd = defaultdict(list) >>> df.to_dict(\"records\", into=dd) [defaultdict(<class 'list'>, {'col1': 1, 'col2': 0.5}), defaultdict(<class 'list'>, {'col1': 2, 'col2': 0.75})]",
     "markdown_length": 3220,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.to_dict — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.to_dict — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.722738",
+    "crawled_at": "2026-08-26T06:49:06.338028",
     "type": "webpage"
 }

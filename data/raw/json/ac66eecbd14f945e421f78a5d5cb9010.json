@@ -2,7 +2,7 @@
     "id": "ac66eecbd14f945e421f78a5d5cb9010",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.pipe.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.pipe.html",
-    "title": "pandas.api.typing.SeriesGroupBy.pipe — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.pipe — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.pipe#\n\n- \nSeriesGroupBy.pipe(*func* ,**args* ,***kwargs* )[source]#\n- Apply a `func` with arguments to this GroupBy object and return its result.Use .pipe when you want to improve readability by chaining together functions that expect Series, DataFrames, GroupBy or Resampler objects. Instead of writing >>> h = lambda x, arg2, arg3: x + 1 - arg2 * arg3 >>> g = lambda x, arg1: x * 5 / arg1 >>> f = lambda x: x**4 >>> df = pd.DataFrame([[\"a\", 4], [\"b\", 5]], columns=[\"group\", \"value\"]) >>> h(g(f(df.groupby(\"group\")), arg1=1), arg2=2, arg3=3) You can write >>> ( ... df.groupby(\"group\").pipe(f).pipe(g, arg1=1).pipe(h, arg2=2, arg3=3) ... ) which is much more readable. \n  - Parameters:\n    - **func** callable or tuple of (callable, str)\n    - Function to apply to this GroupBy object or, alternatively, a (callable, data_keyword) tuple where data_keyword is a string indicating the keyword of callable that expects the GroupBy object.\n    - ***args** iterable, optional\n    - Positional arguments passed into func.\n    - ****kwargs** dict, optional\n    - A dictionary of keyword arguments passed into func.\n  - Returns:\n    - GroupBy\n    - The return type of func.\n See also \n  - `Series.pipe`\n  - Apply a function with arguments to a series.\n  - `DataFrame.pipe`\n  - Apply a function with arguments to a dataframe.\n  - `apply`\n  - Apply function to each group instead of to the full GroupBy object.\n Notes See more here Examples >>> df = pd.DataFrame({\"A\": \"a b a b\".split(), \"B\": [1, 2, 3, 4]}) >>> df A B 0 a 1 1 b 2 2 a 3 3 b 4 To get the difference between each groups maximum and minimum value in one pass, you can do >>> df.groupby(\"A\").pipe(lambda x: x.max() - x.min()) B A a 2 b 2",
     "markdown_length": 1725,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.pipe — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.pipe — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.609234",
+    "crawled_at": "2026-08-26T06:51:12.877634",
     "type": "webpage"
 }

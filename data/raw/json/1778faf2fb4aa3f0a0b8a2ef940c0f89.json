@@ -2,7 +2,7 @@
     "id": "1778faf2fb4aa3f0a0b8a2ef940c0f89",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.isna.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.isna.html",
-    "title": "pandas.Index.isna — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.isna — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.isna#\n\n- final Index.isna()[source]#\n- Detect missing values. Return a boolean same-sized object indicating if the values are NA. NA values, such as `None` ,`numpy.NaN` or`pd.NaT` , get\nmapped to`True` values.\nEverything else get mapped to`False` values. Characters such as\nempty strings ‘’ or`numpy.inf` are not considered NA values.\n  - Returns:\n    - numpy.ndarray[bool]\n    - A boolean array of whether my values are NA.\n See also \n  - `Index.notna`\n  - Boolean inverse of isna.\n  - `Index.dropna`\n  - Omit entries with missing values.\n  - `isna`\n  - Top-level isna.\n  - `Series.isna`\n  - Detect missing values in Series object.\n Examples Show which entries in a pandas.Index are NA. The result is an array. >>> idx = pd.Index([5.2, 6.0, np.nan]) >>> idx Index([5.2, 6.0, nan], dtype='float64') >>> idx.isna() array([False, False, True]) Empty strings are not considered NA values. None is considered an NA value. >>> idx = pd.Index([\"black\", \"\", \"red\", None]) >>> idx Index(['black', '', 'red', nan], dtype='str') >>> idx.isna() array([False, False, False, True]) For datetimes, NaT (Not a Time) is considered as an NA value. >>> idx = pd.DatetimeIndex( ... [pd.Timestamp(\"1940-04-25\"), pd.Timestamp(\"\"), None, pd.NaT] ... ) >>> idx DatetimeIndex(['1940-04-25', 'NaT', 'NaT', 'NaT'], dtype='datetime64[us]', freq=None) >>> idx.isna() array([False, True, True, True])",
     "markdown_length": 1386,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.isna — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.isna — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.650839",
+    "crawled_at": "2026-08-26T06:48:49.450562",
     "type": "webpage"
 }

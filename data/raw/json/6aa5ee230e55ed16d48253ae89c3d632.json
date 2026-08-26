@@ -2,7 +2,7 @@
     "id": "6aa5ee230e55ed16d48253ae89c3d632",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_non_overlapping_monotonic.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_non_overlapping_monotonic.html",
-    "title": "pandas.IntervalIndex.is_non_overlapping_monotonic — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IntervalIndex.is_non_overlapping_monotonic — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.is_non_overlapping_monotonic#\n\n- IntervalIndex.is_non_overlapping_monotonic[source]#\n- Return a boolean whether the IntervalArray/IntervalIndex is non-overlapping and monotonic. Non-overlapping means (no Intervals share points), and monotonic means either monotonic increasing or monotonic decreasing. See also \n  - `overlaps`\n  - Check if two IntervalIndex objects overlap.\n Examples For arrays: >>> interv_arr = pd.arrays.IntervalArray([pd.Interval(0, 1), pd.Interval(1, 5)]) >>> interv_arr <IntervalArray> [(0, 1], (1, 5]] Length: 2, dtype: interval[int64, right] >>> interv_arr.is_non_overlapping_monotonic True >>> interv_arr = pd.arrays.IntervalArray( ... [pd.Interval(0, 1), pd.Interval(-1, 0.1)] ... ) >>> interv_arr <IntervalArray> [(0.0, 1.0], (-1.0, 0.1]] Length: 2, dtype: interval[float64, right] >>> interv_arr.is_non_overlapping_monotonic False For Interval Index: >>> interv_idx = pd.interval_range(start=0, end=2) >>> interv_idx IntervalIndex([(0, 1], (1, 2]], dtype='interval[int64, right]') >>> interv_idx.is_non_overlapping_monotonic True >>> interv_idx = pd.interval_range(start=0, end=2, closed=\"both\") >>> interv_idx IntervalIndex([[0, 1], [1, 2]], dtype='interval[int64, both]') >>> interv_idx.is_non_overlapping_monotonic False",
     "markdown_length": 1275,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.is_non_overlapping_monotonic — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IntervalIndex.is_non_overlapping_monotonic — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.786667",
+    "crawled_at": "2026-08-26T06:48:51.658398",
     "type": "webpage"
 }

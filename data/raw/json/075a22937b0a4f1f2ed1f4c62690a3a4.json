@@ -2,7 +2,7 @@
     "id": "075a22937b0a4f1f2ed1f4c62690a3a4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.tail.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.tail.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.tail — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.tail — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.tail#\n\n- \nDataFrameGroupBy.tail(*n=5* )[source]#\n- Return last n rows of each group. Similar to `.apply(lambda x: x.tail(n))` , but it returns a subset of rows\nfrom the original DataFrame with original index and order preserved\n(`as_index` flag is ignored).\n  - Parameters:\n    - **n** int\n    - If positive: number of entries to include from end of each group. If negative: number of entries to exclude from start of each group.\n  - Returns:\n    - Series or DataFrame\n    - Subset of original Series or DataFrame as determined by n.\n See also \n  - `Series.tail`\n  - Apply function tail to a Series.\n  - `DataFrame.tail`\n  - Apply function tail to each row or column of a DataFrame.\n Examples >>> df = pd.DataFrame( ... [[\"a\", 1], [\"a\", 2], [\"b\", 1], [\"b\", 2]], columns=[\"A\", \"B\"] ... ) >>> df.groupby(\"A\").tail(1) A B 1 a 2 3 b 2 >>> df.groupby(\"A\").tail(-1) A B 1 a 2 3 b 2",
     "markdown_length": 912,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.tail — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.tail — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.040949",
+    "crawled_at": "2026-08-26T06:51:27.661878",
     "type": "webpage"
 }

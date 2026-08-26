@@ -2,7 +2,7 @@
     "id": "1d116e433e64a3aa40650b951e1220ce",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.nunique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.nunique.html",
-    "title": "pandas.api.typing.Expanding.nunique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Expanding.nunique — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.nunique#\n\n- \nExpanding.nunique(*numeric_only=False* )[source]#\n- Calculate the expanding nunique. Added in version 3.0.0. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.nunique`\n  - Aggregating nunique for Series.\n  - `DataFrame.nunique`\n  - Aggregating nunique for DataFrame.\n Examples >>> s = pd.Series([1, 4, 2, 3, 5, 3]) >>> s.expanding().nunique() 0 1.0 1 2.0 2 3.0 3 4.0 4 5.0 5 5.0 dtype: float64",
     "markdown_length": 762,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.nunique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Expanding.nunique — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.223217",
+    "crawled_at": "2026-08-26T06:51:52.765256",
     "type": "webpage"
 }

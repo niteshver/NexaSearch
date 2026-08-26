@@ -2,7 +2,7 @@
     "id": "46e20a695c68057efe72b86a435ca4c1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.center.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.center.html",
-    "title": "pandas.Series.str.center — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.center — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.center#\n\n- \nSeries.str.center(*width* ,*fillchar=' '* )[source]#\n- Pad left and right side of strings in the Series/Index. Equivalent to `str.center()` .\n  - Parameters:\n    - **width** int\n    - Minimum width of resulting string; additional characters will be filled with `fillchar` .\n    - **fillchar** str\n    - Additional character for filling, default is whitespace.\n  - Returns:\n    - Series/Index of objects.\n    - A Series or Index where the strings are modified by `str.center()` .\n See also \n  - `Series.str.rjust`\n  - Fills the left side of strings with an arbitrary character.\n  - `Series.str.ljust`\n  - Fills the right side of strings with an arbitrary character.\n  - `Series.str.center`\n  - Fills both sides of strings with an arbitrary character.\n  - `Series.str.zfill`\n  - Pad strings in the Series/Index by prepending ‘0’ character.\n Examples For Series.str.center: >>> ser = pd.Series([\"dog\", \"bird\", \"mouse\"]) >>> ser.str.center(8, fillchar=\".\") 0 ..dog... 1 ..bird.. 2 .mouse.. dtype: str For Series.str.ljust: >>> ser = pd.Series([\"dog\", \"bird\", \"mouse\"]) >>> ser.str.ljust(8, fillchar=\".\") 0 dog..... 1 bird.... 2 mouse... dtype: str For Series.str.rjust: >>> ser = pd.Series([\"dog\", \"bird\", \"mouse\"]) >>> ser.str.rjust(8, fillchar=\".\") 0 .....dog 1 ....bird 2 ...mouse dtype: str",
     "markdown_length": 1322,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.center — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.center — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.480486",
+    "crawled_at": "2026-08-26T06:47:58.904119",
     "type": "webpage"
 }

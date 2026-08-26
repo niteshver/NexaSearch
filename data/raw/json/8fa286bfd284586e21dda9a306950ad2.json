@@ -2,7 +2,7 @@
     "id": "8fa286bfd284586e21dda9a306950ad2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.freqstr.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.freqstr.html",
-    "title": "pandas.tseries.offsets.BYearBegin.freqstr — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BYearBegin.freqstr — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BYearBegin.freqstr#\n\n- BYearBegin.freqstr#\n- Return a string representing the frequency. The string representation typically consists of the offset multiplier and a frequency alias (e.g., `'D'` for daily,`'h'` for hourly).See also \n  - `tseries.offsets.BusinessDay.freqstr`\n  - Return a string representing an offset frequency in Business Days.\n  - `tseries.offsets.BusinessHour.freqstr`\n  - Return a string representing an offset frequency in Business Hours.\n  - `tseries.offsets.Week.freqstr`\n  - Return a string representing an offset frequency in Weeks.\n  - `tseries.offsets.Hour.freqstr`\n  - Return a string representing an offset frequency in Hours.\n Examples >>> pd.DateOffset(5).freqstr '<5 * DateOffsets>' >>> pd.offsets.BusinessHour(2).freqstr '2bh' >>> pd.offsets.Nano().freqstr 'ns' >>> pd.offsets.Nano(-3).freqstr '-3ns'",
     "markdown_length": 858,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BYearBegin.freqstr — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BYearBegin.freqstr — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:11.271552",
+    "crawled_at": "2026-08-26T06:51:42.269648",
     "type": "webpage"
 }

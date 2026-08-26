@@ -2,7 +2,7 @@
     "id": "d15ba6d3ef5cb8909126f93770208051",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_td_classes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_td_classes.html",
-    "title": "pandas.io.formats.style.Styler.set_td_classes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.set_td_classes — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.set_td_classes#\n\n- \nStyler.set_td_classes(*classes* )[source]#\n- Set the `class` attribute of`<td>` HTML elements.This method accepts a DataFrame of CSS class names and maps them to the corresponding `<td>` elements in the rendered HTML table using\nmatching index and column keys. It can be used in combination with`Styler.set_table_styles` to build a self-contained CSS styling\nsolution.\n  - Parameters:\n    - **classes** DataFrame\n    - DataFrame containing strings that will be translated to CSS classes, mapped by identical column and index key values that must exist on the underlying Styler data. None, NaN values, and empty strings will be ignored and not affect the rendered HTML.\n  - Returns:\n    - Styler\n      - Instance of class with `class` attribute set for`<td>`\n      - HTML elements.\n    - Instance of class with \n See also \n  - `Styler.set_table_styles`\n  - Set the table styles included within the `<style>` HTML element.\n  - `Styler.set_table_attributes`\n  - Set the table attributes added to the `<table>` HTML element.\n Notes Can be used in combination with `Styler.set_table_styles` to define an\ninternal CSS solution without reference to external CSS files.Examples >>> df = pd.DataFrame(data=[[1, 2, 3], [4, 5, 6]], columns=[\"A\", \"B\", \"C\"]) >>> classes = pd.DataFrame( ... [[\"min-val red\", \"\", \"blue\"], [\"red\", None, \"blue max-val\"]], ... index=df.index, ... columns=df.columns, ... ) >>> df.style.set_td_classes(classes) Using MultiIndex columns and a classes DataFrame as a subset of the underlying, >>> df = pd.DataFrame( ... [[1, 2], [3, 4]], ... index=[\"a\", \"b\"], ... columns=[[\"level0\", \"level0\"], [\"level1a\", \"level1b\"]], ... ) >>> classes = pd.DataFrame( ... [\"min-val\"], index=[\"a\"], columns=[[\"level0\"], [\"level1a\"]] ... ) >>> df.style.set_td_classes(classes) Form of the output with new additional css classes, >>> from pandas.io.formats.style import Styler >>> df = pd.DataFrame([[1]]) >>> css = pd.DataFrame([[\"other-class\"]]) >>> s = Styler(df, uuid=\"_\", cell_ids=False).set_td_classes(css) >>> s.hide(axis=0).to_html() '<style type=\"text/css\"></style>' '<table id=\"T__\">' ' <thead>' ' <tr><th class=\"col_heading level0 col0\" >0</th></tr>' ' </thead>' ' <tbody>' ' <tr><td class=\"data row0 col0 other-class\" >1</td></tr>' ' </tbody>' '</table>'",
     "markdown_length": 2316,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.set_td_classes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.set_td_classes — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.275040",
+    "crawled_at": "2026-08-26T06:51:40.972589",
     "type": "webpage"
 }

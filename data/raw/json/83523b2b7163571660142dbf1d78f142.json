@@ -2,7 +2,7 @@
     "id": "83523b2b7163571660142dbf1d78f142",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.weekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.weekday.html",
-    "title": "pandas.Period.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.weekday — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.weekday#\n\n- Period.weekday#\n- Day of the week the period lies in, with Monday=0 and Sunday=6. If the period frequency is lower than daily (e.g. hourly), and the period spans over multiple days, the day at the start of the period is used. If the frequency is higher than daily (e.g. monthly), the last day of the period is used. \n  - Returns:\n    - int\n    - Day of the week.\n See also \n  - `Period.dayofweek`\n  - Day of the week the period lies in.\n  - `Period.weekday`\n  - Alias of Period.day_of_week.\n  - `Period.day`\n  - Day of the month.\n  - `Period.day_of_year`\n  - Day of the year.\n Examples >>> per = pd.Period('2017-12-31 22:00', 'h') >>> per.day_of_week 6 For periods that span over multiple days, the day at the beginning of the period is returned. >>> per = pd.Period('2017-12-31 22:00', '4h') >>> per.day_of_week 6 >>> per.start_time.day_of_week 6 For periods with a frequency higher than days, the last day of the period is returned. >>> per = pd.Period('2018-01', 'M') >>> per.day_of_week 2 >>> per.end_time.day_of_week 2",
     "markdown_length": 1051,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.weekday — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.744845",
+    "crawled_at": "2026-08-26T06:49:10.063394",
     "type": "webpage"
 }

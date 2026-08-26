@@ -2,7 +2,7 @@
     "id": "2f885889d1eb79779240ef166b986f60",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.mean.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.mean.html",
-    "title": "pandas.api.typing.SeriesGroupBy.mean — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.mean — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.mean#\n\n- \nSeriesGroupBy.mean(*numeric_only=False* ,*skipna=True* ,*engine=None* ,*engine_kwargs=None* )[source]#\n- Compute mean of groups, excluding missing values. Returns the arithmetic mean for each group. Missing values are ignored unless the entire group is NA, in which case the result for that group is NA. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Changed in version 2.0.0: numeric_only no longer accepts `None` and defaults to`False` .\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire group is NA, the result will be NA.\n    - **engine** str, default None\n      - `'cython'` : Runs the operation through C-extensions from cython.\n      - `'numba'` : Runs the operation through JIT compiled code from numba.\n      - `None` : Defaults to`'cython'` or globally setting`compute.use_numba`\n    - **engine_kwargs** dict, default None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n      - For `'numba'` engine, the engine can accept`nogil` and`parallel` dictionary keys. The values must either be`True` or`False` . The default`engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}`\n  - Returns:\n    - pandas.Series or pandas.DataFrame\n    - Mean of values within each group. Same object type as the caller.\n See also \n  - `Series.mean`\n  - Apply function mean to a Series.\n  - `DataFrame.mean`\n  - Apply function mean to each row or column of a DataFrame.\n Examples >>> df = pd.DataFrame( ... {\"A\": [1, 1, 2, 1, 2], \"B\": [np.nan, 2, 3, 4, 5], \"C\": [1, 2, 1, 1, 2]}, ... columns=[\"A\", \"B\", \"C\"], ... ) Groupby one column and return the mean of the remaining columns in each group. >>> df.groupby(\"A\").mean() B C A 1 3.0 1.333333 2 4.0 1.500000 Groupby two columns and return the mean of the remaining column. >>> df.groupby([\"A\", \"B\"]).mean() C A B 1 2.0 2.0 4.0 1.0 2 3.0 1.0 5.0 2.0 Groupby one column and return the mean of only particular column in the group. >>> df.groupby(\"A\")[\"B\"].mean() A 1 3.0 2 4.0 Name: B, dtype: float64",
     "markdown_length": 2110,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.mean — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.mean — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.419567",
+    "crawled_at": "2026-08-26T06:50:49.787139",
     "type": "webpage"
 }

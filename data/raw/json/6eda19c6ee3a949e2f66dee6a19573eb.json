@@ -2,7 +2,7 @@
     "id": "6eda19c6ee3a949e2f66dee6a19573eb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PerformanceWarning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PerformanceWarning.html",
-    "title": "pandas.errors.PerformanceWarning — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.PerformanceWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.PerformanceWarning#\n\n- exception pandas.errors.PerformanceWarning[source]#\n- Warning raised when there is a possible performance impact. This warning is typically raised when an operation may be slower than expected due to the data structure or access pattern being used. See also \n  - `DataFrame.set_index`\n  - Set the DataFrame index using existing columns.\n  - `DataFrame.loc`\n  - Access a group of rows and columns by label(s) or a boolean array.\n Examples >>> df = pd.DataFrame( ... {\"jim\": [0, 0, 1, 1], \"joe\": [\"x\", \"x\", \"z\", \"y\"], \"jolie\": [1, 2, 3, 4]} ... ) >>> df = df.set_index([\"jim\", \"joe\"]) >>> df jolie jim joe 0 x 1 x 2 1 z 3 y 4 >>> df.loc[(1, \"z\")] # PerformanceWarning: indexing past lexsort depth may impact performance. df.loc[(1, 'z')] jolie jim joe 1 z 3",
     "markdown_length": 794,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.PerformanceWarning — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.PerformanceWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.730117",
+    "crawled_at": "2026-08-26T06:51:53.441915",
     "type": "webpage"
 }

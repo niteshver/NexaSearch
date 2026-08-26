@@ -2,7 +2,7 @@
     "id": "78956bdfe8c4225fcbab28e1bb1f89d9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.index.html",
-    "title": "pandas.Series.str.index — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.index — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.index#\n\n- \nSeries.str.index(*sub* ,*start=0* ,*end=None* )[source]#\n- Return lowest indexes in each string in Series/Index. Each of the returned indexes corresponds to the position where the substring is fully contained between [start:end]. This is the same as `str.find` except instead of returning -1, it raises a\nValueError when the substring is not found. Equivalent to standard`str.index` .\n  - Parameters:\n    - **sub** str\n    - Substring being searched.\n    - **start** int\n    - Left edge index.\n    - **end** int\n    - Right edge index.\n  - Returns:\n    - Series or Index of object\n    - Returns a Series or an Index of the lowest indexes in each string of the input.\n See also \n  - `rindex`\n  - Return highest indexes in each strings.\n Examples For Series.str.index: >>> ser = pd.Series([\"horse\", \"eagle\", \"donkey\"]) >>> ser.str.index(\"e\") 0 4 1 0 2 4 dtype: int64 For Series.str.rindex: >>> ser = pd.Series([\"Deer\", \"eagle\", \"Sheep\"]) >>> ser.str.rindex(\"e\") 0 2 1 4 2 3 dtype: int64",
     "markdown_length": 1015,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.index — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.index — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.883811",
+    "crawled_at": "2026-08-26T06:49:28.048622",
     "type": "webpage"
 }

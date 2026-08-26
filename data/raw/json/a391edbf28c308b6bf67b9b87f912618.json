@@ -2,7 +2,7 @@
     "id": "a391edbf28c308b6bf67b9b87f912618",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.5.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.5.html",
-    "title": "What’s new in 1.3.5 (December 12, 2021) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "What’s new in 1.3.5 (December 12, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# What’s new in 1.3.5 (December 12, 2021)#\n\nThese are the changes in pandas 1.3.5. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Fixed regression in `Series.equals()` when comparing floats with dtype object to None (GH 44190)\n- Fixed regression in `merge_asof()` raising error when array was supplied as join key (GH 42844)\n- Fixed regression when resampling `DataFrame` with`DateTimeIndex` with empty groups and`uint8` ,`uint16` or`uint32` columns incorrectly raising`RuntimeError` (GH 43329)\n- Fixed regression in creating a `DataFrame` from a timezone-aware`Timestamp` scalar near a Daylight Savings Time transition (GH 42505)\n- Fixed performance regression in `read_csv()` (GH 44106)\n- Fixed regression in `Series.duplicated()` and`Series.drop_duplicates()` when Series has`Categorical` dtype with boolean categories (GH 44351)\n- Fixed regression in `DataFrameGroupBy.sum()` and`SeriesGroupBy.sum()` with`timedelta64[ns]` dtype containing`NaT` failing to treat that value as NA (GH 42659)\n- Fixed regression in `RollingGroupby.cov()` and`RollingGroupby.corr()` when`other` had the same shape as each group would incorrectly return superfluous groups in the result (GH 42915)\n\n## Contributors#\n\nA total of 10 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Ali McMaster\n- Matthew Roeschke\n- Matthew Zeitlin\n- MeeseeksMachine\n- Pandas Development Team\n- Patrick Hoefler\n- Simon Hawkins\n- Thomas Li\n- Tobias Pitters\n- jbrockmendel",
     "markdown_length": 1558,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.3.5 (December 12, 2021) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "What’s new in 1.3.5 (December 12, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:31.089579",
+    "crawled_at": "2026-08-26T06:51:56.397447",
     "type": "webpage"
 }

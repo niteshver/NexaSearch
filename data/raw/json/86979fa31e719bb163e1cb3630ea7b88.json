@@ -2,7 +2,7 @@
     "id": "86979fa31e719bb163e1cb3630ea7b88",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fromisocalendar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fromisocalendar.html",
-    "title": "pandas.Timestamp.fromisocalendar — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.fromisocalendar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.fromisocalendar#\n\n- \nclassmethod Timestamp.fromisocalendar(*year* ,*week* ,*day* )#\n- Construct a Timestamp from an ISO year, week number, and weekday. This is the inverse of `Timestamp.isocalendar()` , constructing a\nTimestamp from the ISO 8601 year, week number, and weekday.\n  - Parameters:\n    - **year** int\n    - ISO year.\n    - **week** int\n    - ISO week number, ranging from 1 to 52 or 53.\n    - **day** int\n    - ISO weekday, where Monday is 1 and Sunday is 7.\n  - Returns:\n    - Timestamp\n    - A Timestamp object corresponding to the given ISO calendar date.\n See also \n  - `Timestamp.isocalendar`\n  - Return a named tuple with ISO year, week, and weekday.\n  - `Timestamp.fromordinal`\n  - Construct a Timestamp from a proleptic Gregorian ordinal.\n Examples >>> pd.Timestamp.fromisocalendar(2023, 1, 1) Timestamp('2023-01-02 00:00:00')",
     "markdown_length": 865,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.fromisocalendar — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.fromisocalendar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.814218",
+    "crawled_at": "2026-08-26T06:51:18.253179",
     "type": "webpage"
 }

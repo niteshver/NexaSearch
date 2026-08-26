@@ -2,7 +2,7 @@
     "id": "50f5fca11e3b64faa5be02874a02d5b7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.fill_value.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.fill_value.html",
-    "title": "pandas.Series.sparse.fill_value — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.sparse.fill_value — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.sparse.fill_value#\n\n- Series.sparse.fill_value[source]#\n- Elements in data that are fill_value are not stored. For memory savings, this should be the most common value in the array. See also \n  - `SparseDtype`\n  - Dtype for data stored in `SparseArray` .\n  - `Series.value_counts`\n  - Return a Series containing counts of unique values.\n  - `Series.fillna`\n  - Fill NA/NaN in a Series with a specified value.\n Examples >>> ser = pd.Series([0, 0, 2, 2, 2], dtype=\"Sparse[int]\") >>> ser.sparse.fill_value 0 >>> spa_dtype = pd.SparseDtype(dtype=np.int32, fill_value=2) >>> ser = pd.Series([0, 0, 2, 2, 2], dtype=spa_dtype) >>> ser.sparse.fill_value 2",
     "markdown_length": 663,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.sparse.fill_value — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.sparse.fill_value — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.164247",
+    "crawled_at": "2026-08-26T06:49:22.504836",
     "type": "webpage"
 }

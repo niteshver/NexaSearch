@@ -1,13 +1,13 @@
 # pandas.Series.dropna#
 
 - 
-Series.dropna(*** ,*axis=0* ,*inplace=False* ,*how=None* ,*ignore_index=False* )[source]#
+Series.dropna(*** ,*axis=0* ,*inplace=<no_default>* ,*how=None* ,*ignore_index=False* )[source]#
 - Return a new Series with missing values removed. See the User Guide for more on which values are considered missing, and how to work with missing data. 
   - Parameters:
     - **axis** {0 or ‘index’}
     - Unused. Parameter needed for compatibility with DataFrame.
     - **inplace** bool, default False
-    - If True, do operation inplace and return None.
+    - If True, do operation inplace and return None. Deprecated since version 3.1.0: This keyword is deprecated and will be removed in pandas 4.0. See PDEP-8 In-place methods in pandas for more details.
     - **how** str, optional
     - Not in use. Kept for compatibility.
     - **ignore_index** bool, default`False`

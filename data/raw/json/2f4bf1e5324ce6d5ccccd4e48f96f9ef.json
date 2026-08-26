@@ -2,7 +2,7 @@
     "id": "2f4bf1e5324ce6d5ccccd4e48f96f9ef",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.indexers.check_array_indexer.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.indexers.check_array_indexer.html",
-    "title": "pandas.api.indexers.check_array_indexer — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.indexers.check_array_indexer — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.indexers.check_array_indexer#\n\n- \npandas.api.indexers.check_array_indexer(*array* ,*indexer* )[source]#\n- Check if indexer is a valid array indexer for array. For a boolean mask, array and indexer are checked to have the same length. The dtype is validated, and if it is an integer or boolean ExtensionArray, it is checked if there are missing values present, and it is converted to the appropriate numpy array. Other dtypes will raise an error. Non-array indexers (integer, slice, Ellipsis, tuples, ..) are passed through as is. \n  - Parameters:\n    - **array** array-like\n    - The array that is being indexed (only used for the length).\n    - **indexer** array-like, list-like, int, slice, or other indexer\n    - The indexer used for indexing. Array-like and list-like inputs that are not yet a numpy array or an ExtensionArray are converted to one. Non-array indexers (int, slice, Ellipsis, tuples, etc.) are passed through as is.\n  - Returns:\n    - numpy.ndarray\n    - The validated indexer as a numpy array that can be used to index.\n  - Raises:\n    - IndexError\n    - When the lengths don’t match.\n    - ValueError\n    - When indexer cannot be converted to a numpy ndarray to index (e.g. presence of missing values).\n See also \n  - `api.types.is_bool_dtype`\n  - Check if key is of boolean dtype.\n Examples When checking a boolean mask, a boolean ndarray is returned when the arguments are all valid. >>> mask = pd.array([True, False]) >>> arr = pd.array([1, 2]) >>> pd.api.indexers.check_array_indexer(arr, mask) array([ True, False]) An IndexError is raised when the lengths don’t match. >>> mask = pd.array([True, False, True]) >>> pd.api.indexers.check_array_indexer(arr, mask) Traceback (most recent call last): ... IndexError: Boolean index has wrong length: 3 instead of 2. NA values in a boolean array are treated as False. >>> mask = pd.array([True, pd.NA]) >>> pd.api.indexers.check_array_indexer(arr, mask) array([ True, False]) A numpy boolean mask will get passed through (if the length is correct): >>> mask = np.array([True, False]) >>> pd.api.indexers.check_array_indexer(arr, mask) array([ True, False]) Integer and slice indexers are passed through as is: >>> pd.api.indexers.check_array_indexer(arr, 1) 1 >>> pd.api.indexers.check_array_indexer(arr, slice(0, 1, 1)) slice(0, 1, 1) Similarly for integer indexers, an integer ndarray is returned when it is a valid indexer, otherwise an error is (for integer indexers, a matching length is not required): >>> indexer = pd.array([0, 2], dtype=\"Int64\") >>> arr = pd.array([1, 2, 3]) >>> pd.api.indexers.check_array_indexer(arr, indexer) array([0, 2]) >>> indexer = pd.array([0, pd.NA], dtype=\"Int64\") >>> pd.api.indexers.check_array_indexer(arr, indexer) Traceback (most recent call last): ... ValueError: Cannot index with an integer indexer containing NA values For non-integer/boolean dtypes, an appropriate error is raised: >>> indexer = np.array([0.0, 2.0], dtype=\"float64\") >>> pd.api.indexers.check_array_indexer(arr, indexer) Traceback (most recent call last): ... IndexError: arrays used as indices must be of integer or boolean type",
     "markdown_length": 3126,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.indexers.check_array_indexer — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.indexers.check_array_indexer — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/extensions.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.185452",
+    "crawled_at": "2026-08-26T06:51:21.152363",
     "type": "webpage"
 }

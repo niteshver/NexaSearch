@@ -2,7 +2,7 @@
     "id": "262e37bfd3009f8d93d2909ead6718eb",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.start.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.start.html",
-    "title": "pandas.RangeIndex.start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.RangeIndex.start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.RangeIndex.start#\n\n- property RangeIndex.start[source]#\n- The value of the start parameter ( `0` if this was not supplied).This property returns the starting value of the RangeIndex. If the start value is not explicitly provided during the creation of the RangeIndex, it defaults to 0. See also \n  - `RangeIndex`\n  - Immutable index implementing a range-based index.\n  - `RangeIndex.stop`\n  - Returns the stop value of the RangeIndex.\n  - `RangeIndex.step`\n  - Returns the step value of the RangeIndex.\n Examples >>> idx = pd.RangeIndex(5) >>> idx.start 0 >>> idx = pd.RangeIndex(2, -10, -3) >>> idx.start 2",
     "markdown_length": 616,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.RangeIndex.start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.RangeIndex.start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.start.html"
     },
-    "crawled_at": "2026-08-10T11:48:07.590271",
+    "crawled_at": "2026-08-26T06:50:35.990060",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "61c8d1f99bd1b0616ce7638da83044bf",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.ewm.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.ewm.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.ewm — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.ewm — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.ewm#\n\n- \nDataFrameGroupBy.ewm(*com=None* ,*span=None* ,*halflife=None* ,*alpha=None* ,*min_periods=0* ,*adjust=True* ,*ignore_na=False* ,*times=None* ,*method='single'* )[source]#\n- Return an ewm grouper, providing ewm functionality per group. The decay can be specified in terms of center of mass, span, half-life, or smoothing factor alpha. \n  - Parameters:\n    - **com** float, optional\n    - Specify decay in terms of center of mass. Alternative to `span` ,`halflife` , and`alpha` .\n    - **span** float, optional\n    - Specify decay in terms of span.\n    - **halflife** float, str, or Timedelta, optional\n    - Specify decay in terms of half-life.\n    - **alpha** float, optional\n    - Specify smoothing factor directly.\n    - **min_periods** int, default 0\n    - Minimum number of observations in the window required to have a value; otherwise, result is `np.nan` .\n    - **adjust** bool, default True\n    - Divide by decaying adjustment factor to account for imbalance in relative weights.\n    - **ignore_na** bool, default False\n    - Ignore missing values when calculating weights.\n    - **times** str or array-like of datetime64, optional\n    - Times corresponding to the observations.\n    - **method** {‘single’, ‘table’}, default ‘single’\n    - Execute the operation per group independently ( `'single'` ) or over the\nentire object before regrouping (`'table'` ). Only applicable to`mean()` , and only when using`engine='numba'` .\n  - Returns:\n    - pandas.api.typing.ExponentialMovingWindowGroupby\n    - An object that supports exponentially weighted moving transformations over each group.\n See also \n  - `Series.ewm`\n  - EWM transformations for Series.\n  - `DataFrame.ewm`\n  - EWM transformations for DataFrames.\n  - `Series.groupby`\n  - Apply a function groupby to a Series.\n  - `DataFrame.groupby`\n  - Apply a function groupby.\n Examples >>> df = pd.DataFrame( ... { ... \"Class\": [\"A\", \"A\", \"A\", \"B\", \"B\", \"B\"], ... \"Value\": [10, 20, 30, 40, 50, 60], ... } ... ) >>> df Class Value 0 A 10 1 A 20 2 A 30 3 B 40 4 B 50 5 B 60 >>> df.groupby(\"Class\").ewm(com=0.5).mean() Value Class A 0 10.000000 1 17.500000 2 26.153846 B 3 40.000000 4 47.500000 5 56.153846",
     "markdown_length": 2209,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.ewm — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.ewm — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.446365",
+    "crawled_at": "2026-08-26T06:49:58.755753",
     "type": "webpage"
 }

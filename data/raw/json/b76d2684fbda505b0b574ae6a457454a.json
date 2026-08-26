@@ -2,7 +2,7 @@
     "id": "b76d2684fbda505b0b574ae6a457454a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.get_storer.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.get_storer.html",
-    "title": "pandas.HDFStore.get_storer — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.HDFStore.get_storer — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.get_storer#\n\n- \nHDFStore.get_storer(*key* )[source]#\n- Return the storer object for a key. The storer is the low-level wrapper around the stored pandas object. It exposes implementation details such as `nrows` (the row count\non disk) and`table` (the underlying PyTables`Table` ), which\ncan be useful for inspecting a store without loading its data.\n  - Parameters:\n    - **key** str\n    - Object stored in the file.\n  - Returns:\n    - GenericFixed or Table\n    - The storer wrapping the stored object. `Table` instances expose\nattributes such as`nrows` and`table` .\n  - Raises:\n    - KeyError\n    - If `key` is not in the file.\n See also \n  - `HDFStore.get`\n  - Read the stored object back into pandas.\n  - `HDFStore.info`\n  - Print a summary of the store’s contents.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.append(\"data\", df, format=\"table\") >>> store.get_storer(\"data\").nrows >>> store.close()",
     "markdown_length": 994,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.get_storer — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.HDFStore.get_storer — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.549920",
+    "crawled_at": "2026-08-26T06:49:07.788379",
     "type": "webpage"
 }

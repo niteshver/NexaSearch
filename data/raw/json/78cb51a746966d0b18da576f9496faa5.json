@@ -2,7 +2,7 @@
     "id": "78cb51a746966d0b18da576f9496faa5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.today.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.today.html",
-    "title": "pandas.Timestamp.today — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.today — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.today#\n\n- \nclassmethod Timestamp.today(*tz=None* )#\n- Return the current time in the local timezone. This differs from datetime.today() in that it can be localized to a passed timezone. \n  - Parameters:\n    - **tz** str or timezone object, default None\n    - Timezone to localize to.\n See also \n  - `datetime.datetime.today`\n  - Returns the current local date.\n  - `Timestamp.now`\n  - Returns current time with optional timezone.\n  - `Timestamp`\n  - A class representing a specific timestamp.\n Examples >>> pd.Timestamp.today() Timestamp('2020-11-16 22:37:39.969883') Analogous for `pd.NaT` :>>> pd.NaT.today() NaT",
     "markdown_length": 633,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.today — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.today — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.597896",
+    "crawled_at": "2026-08-26T06:51:10.403435",
     "type": "webpage"
 }

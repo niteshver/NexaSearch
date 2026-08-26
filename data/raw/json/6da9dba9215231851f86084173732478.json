@@ -2,7 +2,7 @@
     "id": "6da9dba9215231851f86084173732478",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.second.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.second.html",
-    "title": "pandas.Period.second — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.second — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.second#\n\n- Period.second#\n- Get the second component of the Period. For periods with a frequency shorter than a minute, this returns the second portion of the time. For longer frequencies, it returns 0. \n  - Returns:\n    - int\n    - The second of the Period (ranges from 0 to 59).\n See also \n  - `Period.hour`\n  - Get the hour component of the Period.\n  - `Period.minute`\n  - Get the minute component of the Period.\n Examples >>> p = pd.Period(\"2018-03-11 13:03:12.050000\") >>> p.second 12",
     "markdown_length": 505,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.second — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.second — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.633348",
+    "crawled_at": "2026-08-26T06:49:09.854503",
     "type": "webpage"
 }

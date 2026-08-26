@@ -2,7 +2,7 @@
     "id": "1cdc4b64df6e66063ef54010f5e34b6b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.as_ordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.as_ordered.html",
-    "title": "pandas.Categorical.as_ordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Categorical.as_ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Categorical.as_ordered#\n\n- Categorical.as_ordered()[source]#\n- Set the Categorical to be ordered. This method returns a new Categorical with the ordered attribute set to True, enabling comparison operations between categories. \n  - Returns:\n    - Categorical\n    - Ordered Categorical.\n See also \n  - `as_unordered`\n  - Set the Categorical to be unordered.\n Examples For `pandas.Series` :>>> ser = pd.Series([\"a\", \"b\", \"c\", \"a\"], dtype=\"category\") >>> ser.cat.ordered False >>> ser = ser.cat.as_ordered() >>> ser.cat.ordered True For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"b\", \"c\", \"a\"]) >>> ci.ordered False >>> ci = ci.as_ordered() >>> ci.ordered True",
     "markdown_length": 686,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Categorical.as_ordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Categorical.as_ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:44.864984",
+    "crawled_at": "2026-08-26T06:48:59.097166",
     "type": "webpage"
 }

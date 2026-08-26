@@ -1,0 +1,35 @@
+{
+    "id": "722cc709cbd7be9899bf24f129dd6c62",
+    "url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/HP-ship/",
+    "canonical_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/HP-ship",
+    "title": "Graph of Top Harry Potter Fanfiction",
+    "status": 200,
+    "markdown": "Return to the full network\n\n\tInformation Pane\n\n\t\n  Connections:\n\n    Graph of top Harry Potter Fanfiction, colored by ship.\n\n    \n- story\n- connection\n- ship\n\nThe romantic pairing of the story strongly effects which stories are linked together in Harry Potter fanficiton. Ships are inferred from tags story summaries.\n HP = Harry Potter, HG = Hermione Granger, GW = Ginny Weasley, DM = Draco Malfoy, SS = Severus Snape and LV = Lord Voldemort",
+    "markdown_length": 442,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/HP-ship/",
+            "text": "More about this visualisation",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Graph of Top Harry Potter Fanfiction",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/"
+    },
+    "crawled_at": "2026-08-26T06:47:10.709637",
+    "type": "webpage"
+}

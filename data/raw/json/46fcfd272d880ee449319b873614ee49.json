@@ -2,7 +2,7 @@
     "id": "46fcfd272d880ee449319b873614ee49",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_complex.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_complex.html",
-    "title": "pandas.api.types.is_complex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_complex — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_complex#\n\n- \npandas.api.types.is_complex(*obj* )#\n- Return True if given object is complex. This function checks whether `obj` is an instance of Python’s built-in`complex` type or numpy’s complex type (e.g.,`numpy.complex128` ).\n  - Parameters:\n    - **obj** object\n    - Object to check.\n  - Returns:\n    - bool\n See also \n  - `api.types.is_complex_dtype`\n  - Check whether the provided array or dtype is of a complex dtype.\n  - `api.types.is_number`\n  - Check if the object is a number.\n  - `api.types.is_integer`\n  - Return True if given object is integer.\n Examples >>> pd.api.types.is_complex(1 + 1j) True >>> pd.api.types.is_complex(1) False",
     "markdown_length": 669,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_complex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_complex — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.337078",
+    "crawled_at": "2026-08-26T06:50:37.468708",
     "type": "webpage"
 }

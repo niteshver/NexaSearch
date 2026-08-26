@@ -2,7 +2,7 @@
     "id": "7f8c89a368fc1808118624767c762c92",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.is_unique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.is_unique.html",
-    "title": "pandas.Series.is_unique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.is_unique — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.is_unique#\n\n- property Series.is_unique[source]#\n- Return True if values in the object are unique. This property checks whether all values in the Series or Index are distinct, including missing values. \n  - Returns:\n    - bool\n See also \n  - `Series.unique`\n  - Return unique values of Series object.\n  - `Series.drop_duplicates`\n  - Return Series with duplicate values removed.\n  - `Series.duplicated`\n  - Indicate duplicate Series values.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.is_unique True >>> s = pd.Series([1, 2, 3, 1]) >>> s.is_unique False",
     "markdown_length": 570,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.is_unique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.is_unique — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:54.947924",
+    "crawled_at": "2026-08-26T06:49:18.207591",
     "type": "webpage"
 }

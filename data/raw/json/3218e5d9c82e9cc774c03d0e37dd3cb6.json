@@ -2,7 +2,7 @@
     "id": "3218e5d9c82e9cc774c03d0e37dd3cb6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.rank.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.rank.html",
-    "title": "pandas.api.typing.Rolling.rank — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Rolling.rank — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.rank#\n\n- \nRolling.rank(*method='average'* ,*ascending=True* ,*pct=False* ,*numeric_only=False* )[source]#\n- Calculate the rolling rank. Compute the rank of each value within each rolling window. Ties are resolved using the `method` parameter.\n  - Parameters:\n    - **method** {‘average’, ‘min’, ‘max’}, default ‘average’\n    - How to rank the group of records that have the same value (i.e. ties): \n      - average: average rank of the group\n      - min: lowest rank in the group\n      - max: highest rank in the group\n    - **ascending** bool, default True\n    - Whether or not the elements should be ranked in ascending order.\n    - **pct** bool, default False\n    - Whether or not to display the returned rankings in percentile form.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.rank`\n  - Aggregating rank for Series.\n  - `DataFrame.rank`\n  - Aggregating rank for DataFrame.\n Examples >>> s = pd.Series([1, 4, 2, 3, 5, 3]) >>> s.rolling(3).rank() 0 NaN 1 NaN 2 2.0 3 2.0 4 3.0 5 1.5 dtype: float64 >>> s.rolling(3).rank(method=\"max\") 0 NaN 1 NaN 2 2.0 3 2.0 4 3.0 5 2.0 dtype: float64 >>> s.rolling(3).rank(method=\"min\") 0 NaN 1 NaN 2 2.0 3 2.0 4 3.0 5 1.0 dtype: float64",
     "markdown_length": 1508,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.rank — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Rolling.rank — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.792070",
+    "crawled_at": "2026-08-26T06:49:31.946779",
     "type": "webpage"
 }

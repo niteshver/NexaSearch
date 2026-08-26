@@ -2,7 +2,7 @@
     "id": "51ac3c5c0ae0d8021ca60354016719d4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.NumExprClobberingError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.NumExprClobberingError.html",
-    "title": "pandas.errors.NumExprClobberingError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.NumExprClobberingError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.NumExprClobberingError#\n\n- exception pandas.errors.NumExprClobberingError[source]#\n- Exception raised when trying to use a built-in numexpr name as a variable name. `eval` or`query` will throw the error if the engine is set\nto ‘numexpr’. ‘numexpr’ is the default engine value for these methods if the\nnumexpr package is installed.See also \n  - `eval`\n  - Evaluate a Python expression as a string using various backends.\n  - `DataFrame.query`\n  - Query the columns of a DataFrame with a boolean expression.\n Examples >>> df = pd.DataFrame({\"abs\": [1, 1, 1]}) >>> df.query(\"abs > 2\") ... # NumExprClobberingError: Variables in expression \"(abs) > (2)\" overlap... >>> sin, a = 1, 2 >>> pd.eval(\"sin + a\", engine=\"numexpr\") ... # NumExprClobberingError: Variables in expression \"(sin) + (a)\" overlap...",
     "markdown_length": 814,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.NumExprClobberingError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.NumExprClobberingError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.607673",
+    "crawled_at": "2026-08-26T06:51:53.377105",
     "type": "webpage"
 }

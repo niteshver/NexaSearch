@@ -2,7 +2,7 @@
     "id": "177295526487b8b4136124612dc0859b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.var.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.var.html",
-    "title": "pandas.Series.var — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.var — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.var#\n\n- \nSeries.var(*** ,*axis=None* ,*skipna=True* ,*ddof=1* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased variance over requested axis. Normalized by N-1 by default. This can be changed using the ddof argument. \n  - Parameters:\n    - **axis** {index (0)}\n    - For Series this parameter is unused and defaults to 0. Warning The behavior of DataFrame.var with `axis=None` is deprecated,\nin a future version this will reduce over both axes and return a scalar\nTo retain the old behavior, pass axis=0 (or do not pass axis).\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire row/column is NA, the result will be NA.\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is N - ddof, where N represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Not implemented for Series.\n    - ****kwargs**\n    - Additional keywords passed.\n  - Returns:\n    - scalar\n    - Unbiased variance over requested axis.\n See also \n  - `numpy.var`\n  - Equivalent function in NumPy.\n  - `Series.std`\n  - Returns the standard deviation of the Series.\n  - `DataFrame.var`\n  - Returns the variance of the DataFrame.\n  - `DataFrame.std`\n  - Return standard deviation of the values over the requested axis.\n Examples >>> df = pd.DataFrame( ... { ... \"person_id\": [0, 1, 2, 3], ... \"age\": [21, 25, 62, 43], ... \"height\": [1.61, 1.87, 1.49, 2.01], ... } ... ).set_index(\"person_id\") >>> df age height person_id 0 21 1.61 1 25 1.87 2 62 1.49 3 43 2.01 >>> df.var() age 352.916667 height 0.056367 dtype: float64 Alternatively, `ddof=0` can be set to normalize by N instead of N-1:>>> df.var(ddof=0) age 264.687500 height 0.042275 dtype: float64",
     "markdown_length": 1783,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.var — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.var — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.885110",
+    "crawled_at": "2026-08-26T06:50:58.729509",
     "type": "webpage"
 }

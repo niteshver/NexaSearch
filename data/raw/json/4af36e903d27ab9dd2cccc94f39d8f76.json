@@ -2,7 +2,7 @@
     "id": "4af36e903d27ab9dd2cccc94f39d8f76",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.plot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.plot.html",
-    "title": "pandas.api.typing.SeriesGroupBy.plot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.plot — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.plot#\n\n- property SeriesGroupBy.plot[source]#\n- Make plots of groups from a Series. Uses the backend specified by the option `plotting.backend` .\nBy default, matplotlib is used.\n  - Returns:\n    - GroupByPlot\n    - A plotting object that can be used to create plots for each group.\n See also \n  - `Series.plot`\n  - Make plots of Series.\n Examples >>> ser = pd.Series([1, 2, 3, 4, 5], index=[\"a\", \"a\", \"b\", \"b\", \"c\"]) >>> g = ser.groupby(level=0) >>> g.plot()",
     "markdown_length": 492,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.plot — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.plot — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.626877",
+    "crawled_at": "2026-08-26T06:51:37.479804",
     "type": "webpage"
 }

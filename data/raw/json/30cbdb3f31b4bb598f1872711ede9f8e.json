@@ -2,7 +2,7 @@
     "id": "30cbdb3f31b4bb598f1872711ede9f8e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.kurt.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.kurt.html",
-    "title": "pandas.api.typing.Expanding.kurt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Expanding.kurt — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.kurt#\n\n- \nExpanding.kurt(*numeric_only=False* )[source]#\n- Calculate the expanding Fisher’s definition of kurtosis without bias. Measures the tailedness of the distribution over all data points seen so far. A minimum of four periods is required. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `scipy.stats.kurtosis`\n  - Reference SciPy method.\n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.kurt`\n  - Aggregating kurt for Series.\n  - `DataFrame.kurt`\n  - Aggregating kurt for DataFrame.\n Notes A minimum of four periods is required for the calculation. Examples The example below will show a rolling calculation with a window size of four matching the equivalent function call using scipy.stats. >>> arr = [1, 2, 3, 4, 999] >>> import scipy.stats >>> print(f\"{scipy.stats.kurtosis(arr[:-1], bias=False):.6f}\") -1.200000 >>> print(f\"{scipy.stats.kurtosis(arr, bias=False):.6f}\") 4.999874 >>> s = pd.Series(arr) >>> s.expanding(4).kurt() 0 NaN 1 NaN 2 NaN 3 -1.200000 4 4.999874 dtype: float64",
     "markdown_length": 1307,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.kurt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Expanding.kurt — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.164627",
+    "crawled_at": "2026-08-26T06:51:52.463644",
     "type": "webpage"
 }

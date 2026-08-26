@@ -2,7 +2,7 @@
     "id": "d7d585862e23480f755c9351db0a3984",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.notnull.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.notnull.html",
-    "title": "pandas.notnull — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.notnull — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.notnull#\n\n- \npandas.notnull(*obj* )[source]#\n- Detect non-missing values for an array-like object. This function takes a scalar or array-like object and indicates whether values are valid (not missing, which is `NaN` in numeric\narrays,`None` or`NaN` in object arrays,`NaT` in datetimelike).\n  - Parameters:\n    - **obj** array-like or object value\n    - Object to check for *not* null or*non* -missing values.\n  - Returns:\n    - bool or array-like of bool\n    - For scalar input, returns a scalar boolean. For array input, returns an array of boolean indicating whether each corresponding element is valid.\n See also \n  - `isna`\n  - Boolean inverse of pandas.notna.\n  - `Series.notna`\n  - Detect valid values in a Series.\n  - `DataFrame.notna`\n  - Detect valid values in a DataFrame.\n  - `Index.notna`\n  - Detect valid values in an Index.\n Examples Scalar arguments (including strings) result in a scalar boolean. >>> pd.notna(\"dog\") True >>> pd.notna(pd.NA) False >>> pd.notna(np.nan) False ndarrays result in an ndarray of booleans. >>> array = np.array([[1, np.nan, 3], [4, 5, np.nan]]) >>> array array([[ 1., nan, 3.], [ 4., 5., nan]]) >>> pd.notna(array) array([[ True, False, True], [ True, True, False]]) For indexes, an ndarray of booleans is returned. >>> index = pd.DatetimeIndex([\"2017-07-05\", \"2017-07-06\", None, \"2017-07-08\"]) >>> index DatetimeIndex(['2017-07-05', '2017-07-06', 'NaT', '2017-07-08'], dtype='datetime64[us]', freq=None) >>> pd.notna(index) array([ True, True, False, True]) For Series and DataFrame, the same type is returned, containing booleans. >>> df = pd.DataFrame([[\"ant\", \"bee\", \"cat\"], [\"dog\", None, \"fly\"]]) >>> df 0 1 2 0 ant bee cat 1 dog NaN fly >>> pd.notna(df) 0 1 2 0 True True True 1 True False True >>> pd.notna(df[1]) 0 True 1 False Name: 1, dtype: bool",
     "markdown_length": 1810,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.notnull — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.notnull — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.686976",
+    "crawled_at": "2026-08-26T06:51:23.178600",
     "type": "webpage"
 }

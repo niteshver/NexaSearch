@@ -2,7 +2,7 @@
     "id": "15c08458d6d9835bee58e0c73615d53c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html",
-    "title": "pandas.api.extensions.ExtensionDtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.extensions.ExtensionDtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionDtype#\n\n- class pandas.api.extensions.ExtensionDtype[source]#\n- A custom data type, to be paired with an ExtensionArray. This enables support for third-party and custom dtypes within the pandas ecosystem. By implementing this interface and pairing it with a custom ExtensionArray, users can create rich data types that integrate cleanly with pandas operations, such as grouping, joining, or aggregation. Attributes `kind`A character code (one of 'biufcmMOSUV'), default 'O' `na_value`Default NA value to use for this type. `name`A string identifying the data type. `names`Ordered list of field names, or None if there are no fields. `type`The scalar type for the array, e.g. `int` .Methods `construct_array_type` ()Return the array type associated with this dtype. `construct_from_string` (string)Construct this type from a string. `is_dtype` (dtype)Check if we match 'dtype'. See also \n  - `extensions.register_extension_dtype`\n  - Register an ExtensionType with pandas as class decorator.\n  - `extensions.ExtensionArray`\n  - Abstract base class for custom 1-D array types.\n Notes The interface includes the following abstract methods that must be implemented by subclasses: \n  - type\n  - name\n  - construct_array_type\n The following attributes and methods influence the behavior of the dtype in pandas operations \n  - _is_numeric\n  - _is_boolean\n  - _get_common_dtype\n The na_value class attribute can be used to set the default NA value for this type. `numpy.nan` is used by default.ExtensionDtypes are required to be hashable. The base class provides a default implementation, which relies on the `_metadata` class\nattribute.`_metadata` should be a tuple containing the strings\nthat define your data type. For example, with`PeriodDtype` that’s\nthe`freq` attribute.**If you have a parametrized dtype you should set the ``_metadata``\nclass property** .Ideally, the attributes in `_metadata` will match the\nparameters to your`ExtensionDtype.__init__` (if any). If any of\nthe attributes in`_metadata` don’t implement the standard`__eq__` or`__hash__` , the default implementations here will not\nwork.Examples For interaction with Apache Arrow (pyarrow), a `__from_arrow__` method\ncan be implemented: this method receives a pyarrow Array or ChunkedArray\nas only argument and is expected to return the appropriate pandas\nExtensionArray for this dtype and the passed values:>>> import pyarrow >>> from pandas.api.extensions import ExtensionArray >>> class ExtensionDtype: ... def __from_arrow__( ... self, array: pyarrow.Array | pyarrow.ChunkedArray ... ) -> ExtensionArray: ... This class does not inherit from ‘abc.ABCMeta’ for performance reasons. Methods and properties required by the interface raise `pandas.errors.AbstractMethodError` and no`register` method is\nprovided for registering virtual subclasses.",
     "markdown_length": 2843,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionDtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.extensions.ExtensionDtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/extensions.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.119353",
+    "crawled_at": "2026-08-26T06:50:09.811020",
     "type": "webpage"
 }

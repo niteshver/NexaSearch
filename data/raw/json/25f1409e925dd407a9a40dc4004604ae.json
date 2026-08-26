@@ -2,7 +2,7 @@
     "id": "25f1409e925dd407a9a40dc4004604ae",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.tz.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.tz.html",
-    "title": "pandas.Series.dt.tz — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.tz — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.tz#\n\n- Series.dt.tz[source]#\n- Return the timezone. This property returns the timezone information associated with the datetime data. If the data is timezone-naive (i.e. has no timezone information), it returns None. \n  - Returns:\n    - zoneinfo.ZoneInfo, datetime.tzinfo, pytz.tzinfo.BaseTZInfo, dateutil.tz.tz.tzfile, or None\n    - Returns None when the array is tz-naive.\n See also \n  - `DatetimeIndex.tz_localize`\n  - Localize tz-naive DatetimeIndex to a given time zone, or remove timezone from a tz-aware DatetimeIndex.\n  - `DatetimeIndex.tz_convert`\n  - Convert tz-aware DatetimeIndex from one time zone to another.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.tz datetime.timezone.utc For DatetimeIndex: >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"] ... ) >>> idx.tz datetime.timezone.utc",
     "markdown_length": 1031,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.tz — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.tz — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.887695",
+    "crawled_at": "2026-08-26T06:49:16.108830",
     "type": "webpage"
 }

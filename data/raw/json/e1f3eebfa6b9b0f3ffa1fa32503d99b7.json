@@ -2,7 +2,7 @@
     "id": "e1f3eebfa6b9b0f3ffa1fa32503d99b7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.unique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.unique.html",
-    "title": "pandas.Series.unique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.unique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.unique#\n\n- Series.unique()[source]#\n- Return unique values of Series object. Uniques are returned in order of appearance. Hash table-based unique, therefore does NOT sort. \n  - Returns:\n    - ndarray or ExtensionArray\n    - The unique values returned as a NumPy array. See Notes.\n See also \n  - `Series.drop_duplicates`\n  - Return Series with duplicate values removed.\n  - `unique`\n  - Top-level unique method for any 1-d array-like object.\n  - `Index.unique`\n  - Return Index with unique values from an Index object.\n Notes Returns the unique values as a NumPy array. In case of an extension-array backed Series, a new `ExtensionArray` of that type with just\nthe unique values is returned. This includes\n  - Categorical\n  - Period\n  - Datetime with Timezone\n  - Datetime without Timezone\n  - Timedelta\n  - Interval\n  - Sparse\n  - IntegerNA\n  - String\n See Examples section. Examples >>> pd.Series([2, 1, 3, 3], name=\"A\").unique() array([2, 1, 3]) >>> pd.Series([pd.Timestamp(\"2016-01-01\") for _ in range(3)]).unique() <DatetimeArray> ['2016-01-01 00:00:00'] Length: 1, dtype: datetime64[us] >>> pd.Series( ... [pd.Timestamp(\"2016-01-01\", tz=\"US/Eastern\") for _ in range(3)] ... ).unique() <DatetimeArray> ['2016-01-01 00:00:00-05:00'] Length: 1, dtype: datetime64[us, US/Eastern] A Categorical will return categories in the order of appearance and with the same dtype. >>> pd.Series(pd.Categorical(list(\"baabc\"))).unique() ['b', 'a', 'c'] Categories (3, str): ['a', 'b', 'c'] >>> pd.Series( ... pd.Categorical(list(\"baabc\"), categories=list(\"abc\"), ordered=True) ... ).unique() ['b', 'a', 'c'] Categories (3, str): ['a' < 'b' < 'c']",
     "markdown_length": 1649,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.unique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.unique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.unique.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.741171",
+    "crawled_at": "2026-08-26T06:50:20.727639",
     "type": "webpage"
 }

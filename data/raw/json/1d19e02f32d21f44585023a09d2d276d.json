@@ -2,7 +2,7 @@
     "id": "1d19e02f32d21f44585023a09d2d276d",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.html",
-    "title": "pandas.PeriodIndex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.PeriodIndex — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex#\n\n- \nclass pandas.PeriodIndex(*data=None* ,*freq=None* ,*dtype=None* ,*copy=None* ,*name=None* )[source]#\n- Immutable ndarray holding ordinal values indicating regular periods in time. Index keys are boxed to Period objects which carries the metadata (eg, frequency information). \n  - Parameters:\n    - **data** array-like (1d int np.ndarray or PeriodArray), optional\n    - Optional period-like data to construct index with.\n    - **freq** str or period object, optional\n    - One of pandas period strings or corresponding objects.\n    - **dtype** str or PeriodDtype, default None\n    - A dtype from which to extract a freq.\n    - **copy** bool, default None\n    - Whether to copy input data, only relevant for array, Series, and Index inputs (for other input, e.g. a list, a new array is created anyway). Defaults to True for array input and False for Index/Series. Set to False to avoid copying array input at your own risk (if you know the input data won’t be modified elsewhere). Set to True to force copying Series/Index input up front.\n    - **name** str, default None\n    - Name of the resulting PeriodIndex.\n Attributes `day`The days of the period. `dayofweek`(DEPRECATED) The day of the week with Monday=0, Sunday=6. `day_of_week`The day of the week with Monday=0, Sunday=6. `dayofyear`(DEPRECATED) The ordinal day of the year. `day_of_year`The ordinal day of the year. `days_in_month`The number of days in the month. `daysinmonth`(DEPRECATED) The number of days in the month. `end_time`Get the Timestamp for the end of the period. `freq`Return the frequency object if it is set, otherwise None. `freqstr`Return the frequency object as a string if it's set, otherwise None. `hour`The hour of the period. `is_leap_year`Logical indicating if the date belongs to a leap year. `minute`The minute of the period. `month`The month as January=1, December=12. `quarter`The quarter of the date. `qyear`Fiscal year the Period lies in according to its starting-quarter. `second`The second of the period. `start_time`Get the Timestamp for the start of the period. `week`The week ordinal of the year. `weekday`(DEPRECATED) The day of the week with Monday=0, Sunday=6. `weekofyear`The week ordinal of the year. `year`The year of the period. Methods `asfreq` ([freq, how])Convert the PeriodIndex to the specified frequency freq. `strftime` (date_format)Convert to Index using specified date_format. `to_timestamp` ([freq, how])Cast to DatetimeIndex. `from_fields` (*[, year, quarter, month, day, ...])Construct a PeriodIndex from fields (year, month, day, etc.). `from_ordinals` (ordinals, *, freq[, name])Construct a PeriodIndex from ordinals. \n  - Raises:\n    - ValueError\n    - Passing the parameter data as a list without specifying either freq or dtype will raise a ValueError: “freq not specified and cannot be inferred”\n See also \n  - `Index`\n  - The base pandas Index type.\n  - `Period`\n  - Represents a period of time.\n  - `DatetimeIndex`\n  - Index with datetime64 data.\n  - `TimedeltaIndex`\n  - Index of timedelta64 data.\n  - `period_range`\n  - Create a fixed-frequency PeriodIndex.\n Examples >>> idx = pd.PeriodIndex(data=[\"2000Q1\", \"2002Q3\"], freq=\"Q\") >>> idx PeriodIndex(['2000Q1', '2002Q3'], dtype='period[Q-DEC]')",
     "markdown_length": 3243,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.PeriodIndex — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.html"
     },
-    "crawled_at": "2026-08-10T11:47:58.224642",
+    "crawled_at": "2026-08-26T06:49:54.303575",
     "type": "webpage"
 }

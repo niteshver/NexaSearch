@@ -2,7 +2,7 @@
     "id": "af047c8cc0bc3006e47759dd7581fa35",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.isetitem.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.isetitem.html",
-    "title": "pandas.DataFrame.isetitem — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.isetitem — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.isetitem#\n\n- \nDataFrame.isetitem(*loc* ,*value* )[source]#\n- Set the given value in the column with position loc. This is a positional analogue to `__setitem__` .\n  - Parameters:\n    - **loc** int or sequence of ints\n    - Index position for the column.\n    - **value** scalar or arraylike\n    - Value(s) for the column.\n See also \n  - `DataFrame.iloc`\n  - Purely integer-location based indexing for selection by position.\n Notes `frame.isetitem(loc, value)` is an in-place method as it will\nmodify the DataFrame in place (not returning a new object). In contrast to`frame.iloc[:, i] = value` which will try to update the existing values in\nplace,`frame.isetitem(loc, value)` will not update the values of the column\nitself in place, it will instead insert a new array.In cases where `frame.columns` is unique, this is equivalent to`frame[frame.columns[i]] = value` .Examples >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> df.isetitem(1, [5, 6]) >>> df A B 0 1 5 1 2 6",
     "markdown_length": 994,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.isetitem — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.isetitem — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:46.858638",
+    "crawled_at": "2026-08-26T06:49:02.871231",
     "type": "webpage"
 }

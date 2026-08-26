@@ -2,7 +2,7 @@
     "id": "77950d362cd006d8c1ce74ab2276272e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.DatabaseError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.DatabaseError.html",
-    "title": "pandas.errors.DatabaseError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.DatabaseError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.DatabaseError#\n\n- exception pandas.errors.DatabaseError[source]#\n- Error is raised when executing SQL with bad syntax or SQL that throws an error. Raised by `pandas.read_sql()` when a bad SQL statement is passed in.See also \n  - `read_sql`\n  - Read SQL query or database table into a DataFrame.\n Examples >>> from sqlite3 import connect >>> conn = connect(\":memory:\") >>> pd.read_sql(\"select * test\", conn)",
     "markdown_length": 422,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.DatabaseError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.DatabaseError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.420187",
+    "crawled_at": "2026-08-26T06:51:52.204539",
     "type": "webpage"
 }

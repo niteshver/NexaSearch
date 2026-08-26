@@ -2,7 +2,7 @@
     "id": "7f3f5cef51c599008924b0e42627853c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.remove_categories.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.remove_categories.html",
-    "title": "pandas.CategoricalIndex.remove_categories — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.CategoricalIndex.remove_categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.remove_categories#\n\n- \nCategoricalIndex.remove_categories(*removals* )[source]#\n- Remove the specified categories. The `removals` argument must be a subset of the current categories.\nAny values that were part of the removed categories will be set to NaN.\n  - Parameters:\n    - **removals** category or list of categories\n    - The categories which should be removed.\n  - Returns:\n    - Categorical\n    - Categorical with removed categories.\n  - Raises:\n    - ValueError\n    - If the removals are not contained in the categories\n See also \n  - `rename_categories`\n  - Rename categories.\n  - `reorder_categories`\n  - Reorder categories.\n  - `add_categories`\n  - Add new categories.\n  - `remove_unused_categories`\n  - Remove categories which are not used.\n  - `set_categories`\n  - Set the categories to the specified ones.\n Examples >>> c = pd.Categorical([\"a\", \"c\", \"b\", \"c\", \"d\"]) >>> c ['a', 'c', 'b', 'c', 'd'] Categories (4, str): ['a', 'b', 'c', 'd'] >>> c.remove_categories([\"d\", \"a\"]) [NaN, 'c', 'b', 'c', NaN] Categories (2, str): ['b', 'c']",
     "markdown_length": 1073,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.remove_categories — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.CategoricalIndex.remove_categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:37.405011",
+    "crawled_at": "2026-08-26T06:48:45.297874",
     "type": "webpage"
 }

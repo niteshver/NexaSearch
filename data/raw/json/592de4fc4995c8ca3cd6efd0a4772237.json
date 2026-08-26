@@ -2,7 +2,7 @@
     "id": "592de4fc4995c8ca3cd6efd0a4772237",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.weekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.weekday.html",
-    "title": "pandas.Timestamp.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.weekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.weekday#\n\n- Timestamp.weekday()#\n- Return the day of the week represented by the date. Monday == 0 … Sunday == 6. See also \n  - `Timestamp.dayofweek`\n  - Return the day of the week with Monday=0, Sunday=6.\n  - `Timestamp.isoweekday`\n  - Return the day of the week with Monday=1, Sunday=7.\n  - `datetime.date.weekday`\n  - Equivalent method in datetime module.\n Examples >>> ts = pd.Timestamp('2023-01-01') >>> ts Timestamp('2023-01-01 00:00:00') >>> ts.weekday() 6",
     "markdown_length": 482,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.weekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.952475",
+    "crawled_at": "2026-08-26T06:51:08.332857",
     "type": "webpage"
 }

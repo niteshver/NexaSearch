@@ -2,7 +2,7 @@
     "id": "bd854f7184c9add12ec4d328461a4cbd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.sem.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.sem.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.sem — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.sem — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.sem#\n\n- \nDataFrameGroupBy.sem(*ddof=1* ,*numeric_only=False* ,*skipna=True* )[source]#\n- Compute standard error of the mean of groups, excluding missing values. For multiple groupings, the result index will be a MultiIndex. \n  - Parameters:\n    - **ddof** int, default 1\n    - Degrees of freedom.\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data. Changed in version 2.0.0: numeric_only now defaults to `False` .\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire group is NA, the result will be NA. Added in version 3.0.0.\n  - Returns:\n    - Series or DataFrame\n    - Standard error of the mean of values within each group.\n See also \n  - `DataFrame.sem`\n  - Return unbiased standard error of the mean over requested axis.\n  - `Series.sem`\n  - Return unbiased standard error of the mean over requested axis.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\", \"b\"] >>> ser = pd.Series([5, 10, 8, 14], index=lst) >>> ser a 5 a 10 b 8 b 14 dtype: int64 >>> ser.groupby(level=0).sem() a 2.5 b 3.0 dtype: float64 For DataFrameGroupBy: >>> data = [[1, 12, 11], [1, 15, 2], [2, 5, 8], [2, 6, 12]] >>> df = pd.DataFrame( ... data, ... columns=[\"a\", \"b\", \"c\"], ... index=[\"tuna\", \"salmon\", \"catfish\", \"goldfish\"], ... ) >>> df a b c tuna 1 12 11 salmon 1 15 2 catfish 2 5 8 goldfish 2 6 12 >>> df.groupby(\"a\").sem() b c a 1 1.5 4.5 2 0.5 2.0 For Resampler: >>> ser = pd.Series( ... [1, 3, 2, 4, 3, 8], ... index=pd.DatetimeIndex( ... [ ... \"2023-01-01\", ... \"2023-01-10\", ... \"2023-01-15\", ... \"2023-02-01\", ... \"2023-02-10\", ... \"2023-02-15\", ... ] ... ), ... ) >>> ser.resample(\"MS\").sem() 2023-01-01 0.577350 2023-02-01 1.527525 Freq: MS, dtype: float64",
     "markdown_length": 1756,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.sem — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.sem — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.920817",
+    "crawled_at": "2026-08-26T06:51:07.499132",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "fb6408c291c57aa33510793d650944a2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Day.rule_code.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Day.rule_code.html",
-    "title": "pandas.tseries.offsets.Day.rule_code — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.Day.rule_code — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.Day.rule_code#\n\n- Day.rule_code#\n- Return a string representing the base frequency. This property provides a short string code that identifies the type of frequency offset, such as ‘h’ for hourly, ‘D’ for daily, or ‘W’ for weekly. This code is used internally for frequency string representations and parsing. See also \n  - `tseries.offsets.Hour.rule_code`\n  - Returns a string representing the base frequency of ‘h’.\n  - `tseries.offsets.Day.rule_code`\n  - Returns a string representing the base frequency of ‘D’.\n Examples >>> pd.offsets.Hour().rule_code 'h' >>> pd.offsets.Week(5).rule_code 'W'",
     "markdown_length": 622,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.Day.rule_code — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.Day.rule_code — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:20.134974",
+    "crawled_at": "2026-08-26T06:51:46.752599",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "9cfe1fa29c20c55e9e3b3966190c5155",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Week.weekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Week.weekday.html",
-    "title": "pandas.tseries.offsets.Week.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.Week.weekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.Week.weekday#\n\n- Week.weekday#\n- Return the day of the week on which the offset is applied. This is the weekday on which the weekly offset is anchored. The value is an integer representing the day of the week, where Monday is 0 and Sunday is 6, or None if no specific weekday is set. See also \n  - `Week`\n  - The weekly offset class.\n  - `tseries.offsets.WeekOfMonth`\n  - Describes monthly dates like the Tuesday of the 2nd week of each month.\n Examples >>> pd.offsets.Week(weekday=0).weekday 0 >>> pd.offsets.Week(weekday=6).weekday 6 >>> pd.offsets.Week().weekday is None True",
     "markdown_length": 603,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.Week.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.Week.weekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:19.942397",
+    "crawled_at": "2026-08-26T06:51:03.035321",
     "type": "webpage"
 }

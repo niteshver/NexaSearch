@@ -2,7 +2,7 @@
     "id": "f3fc6e192186e2142921b540021695cc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.drop_duplicates.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.drop_duplicates.html",
-    "title": "pandas.Index.drop_duplicates — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.drop_duplicates — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.drop_duplicates#\n\n- \nIndex.drop_duplicates(*** ,*keep='first'* )[source]#\n- Return Index with duplicate values removed. The `keep` parameter controls which duplicate values are removed.\nThe original Index is not modified.\n  - Parameters:\n    - **keep** {‘first’, ‘last’,`False` }, default ‘first’\n      - ‘first’ : Drop duplicates except for the first occurrence.\n      - ‘last’ : Drop duplicates except for the last occurrence.\n      - `False` : Drop all duplicates.\n  - Returns:\n    - Index\n    - A new Index object with the duplicate values removed.\n See also \n  - `Series.drop_duplicates`\n  - Equivalent method on Series.\n  - `DataFrame.drop_duplicates`\n  - Equivalent method on DataFrame.\n  - `Index.duplicated`\n  - Related method on Index, indicating duplicate Index values.\n Examples Generate a pandas.Index with duplicate values. >>> idx = pd.Index([\"llama\", \"cow\", \"llama\", \"beetle\", \"llama\", \"hippo\"]) The keep parameter controls which duplicate values are removed. The value ‘first’ keeps the first occurrence for each set of duplicated entries. The default value of keep is ‘first’. >>> idx.drop_duplicates(keep=\"first\") Index(['llama', 'cow', 'beetle', 'hippo'], dtype='str') The value ‘last’ keeps the last occurrence for each set of duplicated entries. >>> idx.drop_duplicates(keep=\"last\") Index(['cow', 'beetle', 'llama', 'hippo'], dtype='str') The value `False` discards all sets of duplicated entries.>>> idx.drop_duplicates(keep=False) Index(['cow', 'beetle', 'hippo'], dtype='str')",
     "markdown_length": 1516,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.drop_duplicates — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.drop_duplicates — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:38.924913",
+    "crawled_at": "2026-08-26T06:48:48.196319",
     "type": "webpage"
 }

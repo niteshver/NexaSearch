@@ -2,7 +2,7 @@
     "id": "be6480255193a027716b7ec9e80b8041",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_integer_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_integer_dtype.html",
-    "title": "pandas.api.types.is_integer_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_integer_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_integer_dtype#\n\n- \npandas.api.types.is_integer_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of an integer dtype. Unlike in is_any_int_dtype, timedelta64 instances will return False. The nullable Integer dtypes (e.g. pandas.Int64Dtype) are also considered as integer by this function. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of an integer dtype and not an instance of timedelta64.\n See also \n  - `api.types.is_integer`\n  - Return True if given object is integer.\n  - `api.types.is_numeric_dtype`\n  - Check whether the provided array or dtype is of a numeric dtype.\n  - `api.types.is_float_dtype`\n  - Check whether the provided array or dtype is of a float dtype.\n  - `Int64Dtype`\n  - An ExtensionDtype for Int64Dtype integer data.\n Examples >>> from pandas.api.types import is_integer_dtype >>> is_integer_dtype(str) False >>> is_integer_dtype(int) True >>> is_integer_dtype(float) False >>> is_integer_dtype(np.uint64) True >>> is_integer_dtype(\"int8\") True >>> is_integer_dtype(\"Int8\") True >>> is_integer_dtype(pd.Int8Dtype) True >>> is_integer_dtype(np.datetime64) False >>> is_integer_dtype(np.timedelta64) False >>> is_integer_dtype(np.array([\"a\", \"b\"])) False >>> is_integer_dtype(pd.Series([1, 2])) True >>> is_integer_dtype(np.array([], dtype=\"m8[ns]\")) False >>> is_integer_dtype(pd.Index([1, 2.0])) # float False",
     "markdown_length": 1503,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_integer_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_integer_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.714362",
+    "crawled_at": "2026-08-26T06:50:45.628658",
     "type": "webpage"
 }

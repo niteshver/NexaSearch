@@ -2,7 +2,7 @@
     "id": "43727c1cd52c4c39dcdd4df3d64f8e28",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fromtimestamp.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fromtimestamp.html",
-    "title": "pandas.Timestamp.fromtimestamp — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.fromtimestamp — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.fromtimestamp#\n\n- \nclassmethod Timestamp.fromtimestamp(*ts* ,*tz=None* )#\n- Create a Timestamp object from a POSIX timestamp. This method converts a POSIX timestamp (the number of seconds since January 1, 1970, 00:00:00 UTC) into a Timestamp object. The resulting Timestamp can be localized to a specific time zone if provided. \n  - Parameters:\n    - **ts** float\n    - The POSIX timestamp to convert, representing seconds since the epoch (1970-01-01 00:00:00 UTC).\n    - **tz** str, zoneinfo.ZoneInfo, pytz.timezone, dateutil.tz.tzfile, optional\n    - Time zone for the Timestamp. If not provided, the Timestamp will be timezone-naive (i.e., without time zone information).\n  - Returns:\n    - Timestamp\n    - A Timestamp object representing the given POSIX timestamp.\n See also \n  - `Timestamp`\n  - Represents a single timestamp, similar to datetime.\n  - `to_datetime`\n  - Converts various types of data to datetime.\n  - `datetime.datetime.fromtimestamp`\n  - Returns a datetime from a POSIX timestamp.\n Examples Convert a POSIX timestamp to a Timestamp: >>> pd.Timestamp.fromtimestamp(1584199972) Timestamp('2020-03-14 15:32:52') Note that the output may change depending on your local time and time zone: >>> pd.Timestamp.fromtimestamp(1584199972, tz='UTC') Timestamp('2020-03-14 15:32:52+0000', tz='UTC')",
     "markdown_length": 1326,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.fromtimestamp — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.fromtimestamp — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.883350",
+    "crawled_at": "2026-08-26T06:51:25.561330",
     "type": "webpage"
 }

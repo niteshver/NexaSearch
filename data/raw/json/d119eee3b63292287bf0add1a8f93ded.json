@@ -2,7 +2,7 @@
     "id": "d119eee3b63292287bf0add1a8f93ded",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
-    "title": "pandas.io.formats.style.Styler.set_table_attributes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.set_table_attributes — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.set_table_attributes#\n\n- \nStyler.set_table_attributes(*attributes* )[source]#\n- Set the table attributes added to the `<table>` HTML element.These are items in addition to automatic (by default) `id` attribute.\n  - Parameters:\n    - **attributes** str\n    - Table attributes to be added to the `<table>` HTML element.\n  - Returns:\n    - Styler\n    - Instance of class with specified table attributes set.\n See also \n  - `Styler.set_table_styles`\n  - Set the table styles included within the `<style>` HTML element.\n  - `Styler.set_td_classes`\n  - Set the DataFrame of strings added to the `class` attribute of`<td>` HTML elements.\n Examples >>> df = pd.DataFrame(np.random.randn(10, 4)) >>> df.style.set_table_attributes('class=\"pure-table\"') # ... <table class=\"pure-table\"> ...",
     "markdown_length": 812,
@@ -104,8 +104,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/io.html",
-            "text": "Input/output",
+            "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "dev",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -116,8 +116,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/general_functions.html",
-            "text": "General functions",
+            "href": "https://pandas.pydata.org/docs/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "3.0 (stable)",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -128,8 +128,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/series.html",
-            "text": "Series",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.3/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "2.3",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -140,8 +140,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/frame.html",
-            "text": "DataFrame",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "2.2",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -152,8 +152,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/arrays.html",
-            "text": "pandas arrays, scalars, and data types",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.1/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "2.1",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -164,8 +164,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/indexing.html",
-            "text": "Index objects",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.0/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "2.0",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -176,8 +176,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html",
-            "text": "Date offsets",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "1.5",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -188,8 +188,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/window.html",
-            "text": "Window",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.4/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "1.4",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -200,8 +200,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/groupby.html",
-            "text": "GroupBy",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.3/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "1.3",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -212,8 +212,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/resampling.html",
-            "text": "Resampling",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.2/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "1.2",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -224,8 +224,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/style.html",
-            "text": "Style",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.1/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "1.1",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -236,8 +236,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.html",
-            "text": "pandas.io.formats.style.Styler",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.0/reference/api/pandas.io.formats.style.Styler.set_table_attributes.html",
+            "text": "1.0",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.set_table_attributes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.set_table_attributes — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.249464",
+    "crawled_at": "2026-08-26T06:51:44.290990",
     "type": "webpage"
 }

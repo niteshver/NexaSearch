@@ -2,7 +2,7 @@
     "id": "9c29f6d2e6b47004c4d23ac8364adc72",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessMonthBegin.is_month_start.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessMonthBegin.is_month_start.html",
-    "title": "pandas.tseries.offsets.BusinessMonthBegin.is_month_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BusinessMonthBegin.is_month_start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BusinessMonthBegin.is_month_start#\n\n- \nBusinessMonthBegin.is_month_start(*ts* )#\n- Return boolean whether a timestamp occurs on the month start. This method determines if a given timestamp falls on the first day of a month, considering the frequency of the offset. \n  - Parameters:\n    - **ts** Timestamp\n    - The timestamp to check.\n See also \n  - `is_month_end`\n  - Return boolean whether a timestamp occurs on the month end.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.Hour(5) >>> freq.is_month_start(ts) True",
     "markdown_length": 560,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BusinessMonthBegin.is_month_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BusinessMonthBegin.is_month_start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:14.401509",
+    "crawled_at": "2026-08-26T06:50:50.975938",
     "type": "webpage"
 }

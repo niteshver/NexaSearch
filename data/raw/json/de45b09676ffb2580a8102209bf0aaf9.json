@@ -2,7 +2,7 @@
     "id": "de45b09676ffb2580a8102209bf0aaf9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.keys.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.keys.html",
-    "title": "pandas.HDFStore.keys — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.HDFStore.keys — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.keys#\n\n- \nHDFStore.keys(*include='pandas'* )[source]#\n- Return a list of keys corresponding to objects stored in HDFStore. The keys are absolute path-names within the HDF5 file hierarchy. By default only pandas objects are returned, but native HDF5 table objects can be included as well. \n  - Parameters:\n    - **include** str, default ‘pandas’\n    - When kind equals ‘pandas’ return pandas objects. When kind equals ‘native’ return native HDF5 Table objects.\n  - Returns:\n    - list\n    - List of ABSOLUTE path-names (e.g. have the leading ‘/’).\n  - Raises:\n    - raises ValueError if kind has an illegal value\n See also \n  - `HDFStore.info`\n  - Prints detailed information on the store.\n  - `HDFStore.get_node`\n  - Returns the node with the key.\n  - `HDFStore.get_storer`\n  - Returns the storer object for a key.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> store.get(\"data\") >>> print(store.keys()) ['/data1', '/data2'] >>> store.close()",
     "markdown_length": 1054,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.keys — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.HDFStore.keys — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.602102",
+    "crawled_at": "2026-08-26T06:49:07.855947",
     "type": "webpage"
 }

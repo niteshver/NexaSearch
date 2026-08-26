@@ -2,7 +2,7 @@
     "id": "22f629190b7354d3d7551639d668043d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.idxmax.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.idxmax.html",
-    "title": "pandas.api.typing.SeriesGroupBy.idxmax — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.idxmax — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.idxmax#\n\n- \nSeriesGroupBy.idxmax(*skipna=True* )[source]#\n- Return the row label of the maximum value. If multiple values equal the maximum, the first row label with that value is returned. \n  - Parameters:\n    - **skipna** bool, default True\n    - Exclude NA values.\n  - Returns:\n    - Series\n    - Indexes of maxima in each group.\n  - Raises:\n    - ValueError\n    - When there are no valid values for a group. Then can happen if: \n      - There is an unobserved group and `observed=False` .\n      - All values for a group are NA.\n      - Some values for a group are NA and `skipna=False` .\n Changed in version 3.0.0: Previously if all values for a group are NA or some values for a group are NA and `skipna=False` , this method would return NA. Now it raises instead.\n See also \n  - `numpy.argmax`\n  - Return indices of the maximum values along the given axis.\n  - `DataFrame.idxmax`\n  - Return index of first occurrence of maximum over requested axis.\n  - `Series.idxmin`\n  - Return index *label* of the first occurrence of minimum of values.\n Examples >>> ser = pd.Series( ... [1, 2, 3, 4], ... index=pd.DatetimeIndex( ... [\"2023-01-01\", \"2023-01-15\", \"2023-02-01\", \"2023-02-15\"] ... ), ... ) >>> ser 2023-01-01 1 2023-01-15 2 2023-02-01 3 2023-02-15 4 dtype: int64 >>> ser.groupby([\"a\", \"a\", \"b\", \"b\"]).idxmax() a 2023-01-15 b 2023-02-15 dtype: datetime64[us]",
     "markdown_length": 1398,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.idxmax — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.idxmax — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.294219",
+    "crawled_at": "2026-08-26T06:51:33.861702",
     "type": "webpage"
 }

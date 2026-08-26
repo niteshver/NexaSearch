@@ -2,7 +2,7 @@
     "id": "360a262e70a93c6dc7c88203f418d6e0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.skew.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.skew.html",
-    "title": "pandas.Series.skew — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.skew — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.skew#\n\n- \nSeries.skew(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased skew over requested axis. Normalized by N-1. \n  - Parameters:\n    - **axis** {index (0)}\n    - This parameter is unused and defaults to 0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Unused.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - scalar\n    - Unbiased skew of the Series.\n See also \n  - `Series.var`\n  - Return unbiased variance over requested axis.\n  - `Series.std`\n  - Return unbiased standard deviation over requested axis.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.skew() 0.0",
     "markdown_length": 851,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.skew — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.skew — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.076961",
+    "crawled_at": "2026-08-26T06:49:22.392006",
     "type": "webpage"
 }

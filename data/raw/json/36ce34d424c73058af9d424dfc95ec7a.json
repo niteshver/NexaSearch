@@ -2,7 +2,7 @@
     "id": "36ce34d424c73058af9d424dfc95ec7a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_level_values.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_level_values.html",
-    "title": "pandas.Index.get_level_values — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.get_level_values — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.get_level_values#\n\n- \nIndex.get_level_values(*level* )[source]#\n- Return an Index of values for requested level. This is primarily useful to get an individual level of values from a MultiIndex, but is provided on Index as well for compatibility. \n  - Parameters:\n    - **level** int or str\n    - It is either the integer position or the name of the level.\n  - Returns:\n    - Index\n    - Calling object, as there is only one level in the Index.\n See also \n  - `MultiIndex.get_level_values`\n  - Get values for a level of a MultiIndex.\n Notes For Index, level should be 0, since there are no multiple levels. Examples >>> idx = pd.Index(list(\"abc\")) >>> idx Index(['a', 'b', 'c'], dtype='str') Get level values by supplying level as integer: >>> idx.get_level_values(0) Index(['a', 'b', 'c'], dtype='str')",
     "markdown_length": 817,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.get_level_values — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.get_level_values — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.184459",
+    "crawled_at": "2026-08-26T06:48:48.677848",
     "type": "webpage"
 }

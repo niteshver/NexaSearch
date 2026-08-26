@@ -2,7 +2,7 @@
     "id": "08317a6168781372d8294ba01ec8981f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.timetz.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.timetz.html",
-    "title": "pandas.Timestamp.timetz — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.timetz — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.timetz#\n\n- Timestamp.timetz()#\n- Return time object with same time and tzinfo. This method returns a datetime.time object with the time and tzinfo corresponding to the pd.Timestamp object, ignoring any information about the day/date. See also \n  - `datetime.datetime.timetz`\n  - Return datetime.time object with the same time attributes as the datetime object.\n  - `datetime.time`\n  - Class to represent the time of day, independent of any particular day.\n  - `datetime.datetime.tzinfo`\n  - Attribute of datetime.datetime objects representing the timezone of the datetime object.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00', tz='Europe/Brussels') >>> ts Timestamp('2023-01-01 10:00:00+0100', tz='Europe/Brussels') >>> ts.timetz() datetime.time(10, 0, tzinfo=zoneinfo.ZoneInfo(key='Europe/Brussels'))",
     "markdown_length": 828,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.timetz — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.timetz — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.512333",
+    "crawled_at": "2026-08-26T06:50:54.522083",
     "type": "webpage"
 }

@@ -1,0 +1,35 @@
+{
+    "id": "95c81030f1ff93c14fcb7f5cc5f76438",
+    "url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/pagerank/naruto.html",
+    "canonical_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/pagerank/naruto.html",
+    "title": "Naruto Fanfics by PageRank",
+    "status": 200,
+    "markdown": "The following is a list of top fanfics by PageRank. A high number is good. For more information, see the main post.\n\n- Team 8 (11.1638219556)\n- Naruto: Myoushuu no Fuuin (6.42967321043)\n- It's For a Good Cause, I Swear! (5.57768838353)\n- The Sealed Kunai (5.24903743168)\n- Chunin Exam Day (5.14212258792)\n- Better Left Unsaid (4.24301874048)\n- The Dichotomy of Namikaze Naruto (4.06902329344)\n- Ripples (3.98406655602)\n- Neo Yondaime Hokage (3.96637117774)\n- Naruto: Game of the Year Edition (3.92832766505)\n- The Night The House of Cards Was Built (3.77961606663)\n- Time Braid (3.77871157387)\n- That Look (3.67403885774)\n- Naruto: Potential Realised (3.65300485585)\n- A Drop of Poison (3.62101922025)\n- The Demilitarized Zone (3.59186718245)\n- Genius of Konoha (3.574235488)\n- For the Love of my Friends (3.53140554099)\n- Scorpion's Disciple (3.50870257999)\n- Naruto Genkyouien (3.47463870546)\n- Indomitable (3.41460776435)\n- Never Cut Twice (3.39819212809)\n- Naruto One Man Team (3.38009967654)\n- Naruto: Altered History (3.3507390983)\n- Escape from the Hokage's Hat (3.31249430473)\n- Color Theory (3.28006024459)\n- An Uzumaki Amongst the Dunes (3.27303679975)\n- The Tragedy of Repetition (3.24178300819)\n- The Melody of the Fox (3.24171951141)\n- Tempered in Water (3.20715386053)\n- Laying Claim (3.19914748026)\n- The Lives Worth Saving (3.13379500105)\n- Naruto: Shinobi Institute of Performance Analysis (3.10756713185)\n- A Mother's Love (3.08966179796)\n- ANBU BRAT (3.031043482)\n- Nothing but Trouble (3.02031025237)\n- The Art of the Deal (2.94490482826)\n- Lost soul (2.93350438819)\n- Patriot's Dawn (2.86937544874)\n- Reload (2.8445209524)\n- Therapy (2.83782410305)\n- Naruto: Shifts In Life (2.82651170164)\n- The Melt (2.81859893812)\n- Konoha's Mistake (2.80464497892)\n- This Time Around (2.79751601501)\n- People Lie (2.79587924209)\n- Political Alliances (2.75537719701)\n- Legacy of the Rasengan I: Naruto (2.72342322155)\n- The Mouse of Konoha (2.71624983039)\n- Naruto: Ramen Days (2.7057187649)\n- Little Piece of Heaven (2.6572486143)\n- Masters of Genjutsu (2.6543972345)\n- Hakumei (2.64276368541)\n- Tsunade's Heir (2.63656449563)\n- Blind (2.62807082874)\n- Naruto: Master of the art of puppets (2.62728555388)\n- Nin Tech (2.62726598729)\n- Fuinjutsu (2.62539692434)\n- Time and Again (2.61520982943)\n- A Few Angry Words (2.6114345477)\n- Naruto: Captured (2.583639639)\n- Black Flames Dance In The Wind: Rise of Naruto (2.55187461369)\n- The Missing Hokage (2.54722388971)\n- Senju Naruto (2.54001027999)\n- The Great Romantic (2.52283533182)\n- Foxhound (2.48274263319)\n- Medicinal Lullaby (2.47756628055)\n- An Alternative Path (2.45236583563)\n- Spying no Jutsu (2.45084057788)\n- Wind Lord (2.42132002683)\n- Rewritten (2.41861370339)\n- Uprooted (2.41820542726)\n- The Golden Fox (2.38026190971)\n- How to Win Friends, Influence People (2.37893860782)\n- Fuzzy Logic (2.37601838687)\n- Naruto Arashiodori (2.36393495815)\n- Legacy of Uzushiogakure (2.33479134242)\n- All Is Relative Except the Stubbornness of a Demon (2.32360896236)\n- Guardian of Fire (2.31683632222)\n- Life of Uzumaki Naruto (2.31040718684)\n- Roku Naruto (2.29084199327)\n- Time MixUp (2.289043487)\n- Naruto's Compensation (2.28753688216)\n- All for One (2.28593782251)\n- Failing Twilight (2.27741435482)\n- Nine Tailed Serpent (2.24806003658)\n- New Life, Second Chances (2.22218188618)\n- Sit Upon the Frozen Heavens (2.2128608421)\n- The Hokage's Will (2.21258021217)\n- Dear Foolish Little Brother (2.19599197144)\n- Cutting Loose (2.18458642514)\n- A Freak, A Creep & A Psychopath (2.17523136926)\n- Bondage Style! (2.16851905666)\n- The Leaf's Naruto (2.14904064743)\n- The Hope of the Senju Clan (2.12507331229)\n- Duty Before Honor (2.10903199421)\n- Lessons of Experience (2.10461785634)\n- Konoha: Naruto's Playground (2.1026196399)\n- The Girl From Whirlpool (2.09977826237)\n- Here and Now (2.09901626277)",
+    "markdown_length": 3860,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/",
+            "text": "main post",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Naruto Fanfics by PageRank",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/"
+    },
+    "crawled_at": "2026-08-26T06:47:10.732104",
+    "type": "webpage"
+}

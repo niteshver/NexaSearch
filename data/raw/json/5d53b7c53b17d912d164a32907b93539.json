@@ -2,7 +2,7 @@
     "id": "5d53b7c53b17d912d164a32907b93539",
     "url": "http://pandas.pydata.org/docs/dev/getting_started/tutorials.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/getting_started/tutorials.html",
-    "title": "Tutorials and Books — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Tutorials and Books — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# Tutorials and Books#\n\nThis is a guide to many pandas tutorials and books by the community, geared mainly for new users.\n\n## Pandas Workout by Reuven Lerner#\n\nhttps://www.manning.com/books/pandas-workout\n\nThis book provides 200 exercises with pandas. From the description:\n\nPandas Workout hones your pandas skills to a professional-level through two hundred exercises, each designed to strengthen your pandas skills. You’ll test your abilities against common pandas challenges such as importing and exporting, data cleaning, visualization, and performance optimization. Each exercise utilizes a real-world scenario based on real-world data, from tracking the parking tickets in New York City, to working out which country makes the best wines. You’ll soon find your pandas skills becoming second nature—no more trips to StackOverflow for what is now a natural part of your skillset.\n\n\n## Bamboo Weekly by Reuven Lerner#\n\nBamboo Weekly is a mailing list that provides weekly, hands on data analysis exercises to practice using pandas.\n\n## pandas cookbook by Julia Evans#\n\nThe goal of this 2015 cookbook (by Julia Evans) is to give you some concrete examples for getting started with pandas. These are examples with real-world data, and all the bugs and weirdness that entails. For the table of contents, see the pandas-cookbook GitHub repository.\n\n## Learn pandas by Hernan Rojas#\n\nA set of lesson for new pandas users: https://bitbucket.org/hrojas/learn-pandas\n\n## Practical data analysis with Python#\n\nThis guide is an introduction to the data analysis process using the Python data ecosystem and an interesting open dataset. There are four sections covering selected topics as munging data, aggregating data, visualizing data and time series.\n\n## Exercises for new users#\n\nPractice your skills with real data sets and exercises. For more resources, please visit the main repository.\n\n## Modern pandas#\n\nTutorial series written in 2016 by Tom Augspurger. The source may be found in the GitHub repository TomAugspurger/effective-pandas.\n\n## Joyful pandas#\n\nA tutorial written in Chinese by Yuanhao Geng. It covers the basic operations for NumPy and pandas, 4 main data manipulation methods (including indexing, groupby, reshaping and concatenation) and 4 main data types (including missing data, string data, categorical data and time series data). At the end of each chapter, corresponding exercises are posted. All the datasets and related materials can be found in the GitHub repository datawhalechina/joyful-pandas.\n\n## Video tutorials#\n\n- Pandas: .head() to .tail() (2016) (1:26) GitHub repo\n- Data analysis in Python with pandas (2016-2018) GitHub repo and Jupyter Notebook\n- Best practices with pandas (2018) GitHub repo and Jupyter Notebook",
     "markdown_length": 2749,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Tutorials and Books — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Tutorials and Books — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/getting_started/index.html"
     },
-    "crawled_at": "2026-08-10T11:46:44.716851",
+    "crawled_at": "2026-08-26T06:48:58.858019",
     "type": "webpage"
 }

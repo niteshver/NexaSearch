@@ -2,7 +2,7 @@
     "id": "9eed5d2d1ae887c173993bd331c3314d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_named_tuple.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_named_tuple.html",
-    "title": "pandas.api.types.is_named_tuple — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_named_tuple — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_named_tuple#\n\n- \npandas.api.types.is_named_tuple(*obj* )[source]#\n- Check if the object is a named tuple. A named tuple is a subclass of `tuple` that has named fields,\nas created by`collections.namedtuple()` .\n  - Parameters:\n    - **obj** object\n    - The object that will be checked to determine whether it is a named tuple.\n  - Returns:\n    - bool\n    - Whether obj is a named tuple.\n See also \n  - `api.types.is_dict_like`\n  - Check if the object is dict-like.\n  - `api.types.is_hashable`\n  - Return True if hash(obj) will succeed, False otherwise.\n  - `api.types.is_categorical_dtype`\n  - Check if the dtype is categorical.\n Examples >>> from collections import namedtuple >>> from pandas.api.types import is_named_tuple >>> Point = namedtuple(\"Point\", [\"x\", \"y\"]) >>> p = Point(1, 2) >>> >>> is_named_tuple(p) True >>> is_named_tuple((1, 2)) False",
     "markdown_length": 875,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_named_tuple — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_named_tuple — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.784052",
+    "crawled_at": "2026-08-26T06:51:13.673227",
     "type": "webpage"
 }

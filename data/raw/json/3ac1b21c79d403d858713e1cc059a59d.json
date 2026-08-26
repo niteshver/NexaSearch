@@ -2,7 +2,7 @@
     "id": "3ac1b21c79d403d858713e1cc059a59d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_month_start.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_month_start.html",
-    "title": "pandas.Timestamp.is_month_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.is_month_start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.is_month_start#\n\n- Timestamp.is_month_start#\n- Check if the date is the first day of the month. This is determined by checking whether the `day` component of the\nTimestamp is equal to 1.\n  - Returns:\n    - bool\n    - True if the date is the first day of the month.\n See also \n  - `Timestamp.is_month_end`\n  - Similar property indicating the last day of the month.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.is_month_start False >>> ts = pd.Timestamp(2020, 1, 1) >>> ts.is_month_start True",
     "markdown_length": 516,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.is_month_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.is_month_start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.990468",
+    "crawled_at": "2026-08-26T06:51:18.529544",
     "type": "webpage"
 }

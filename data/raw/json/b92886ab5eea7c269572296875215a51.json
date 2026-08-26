@@ -2,7 +2,7 @@
     "id": "b92886ab5eea7c269572296875215a51",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.hasnans.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.hasnans.html",
-    "title": "pandas.Index.hasnans — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.hasnans — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.hasnans#\n\n- Index.hasnans[source]#\n- Return True if there are any NaNs. Enables various performance speedups. \n  - Returns:\n    - bool\n See also \n  - `Index.isna`\n  - Detect missing values.\n  - `Index.dropna`\n  - Return Index without NA/NaN values.\n  - `Index.fillna`\n  - Fill NA/NaN values with the specified value.\n Examples >>> s = pd.Series([1, 2, 3], index=[\"a\", \"b\", None]) >>> s a 1 b 2 None 3 dtype: int64 >>> s.index.hasnans True",
     "markdown_length": 453,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.hasnans — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.hasnans — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.hasnans.html"
     },
-    "crawled_at": "2026-08-10T11:47:55.939995",
+    "crawled_at": "2026-08-26T06:49:46.310211",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "472295c4ca29780786d9d5b9ba33c811",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_table_styles.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_table_styles.html",
-    "title": "pandas.io.formats.style.Styler.set_table_styles — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.set_table_styles — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.set_table_styles#\n\n- \nStyler.set_table_styles(*table_styles=None* ,*axis=0* ,*overwrite=True* ,*css_class_names=None* )[source]#\n- Set the table styles included within the `<style>` HTML element.This function can be used to style the entire table, columns, rows or specific HTML selectors. \n  - Parameters:\n    - **table_styles** list or dict\n    - If supplying a list, each individual table_style should be a dictionary with `selector` and`props` keys.`selector` should be a CSS selector that the style will be applied to\n(automatically prefixed by the table’s UUID) and`props` should be a list of tuples with`(attribute, value)` .\nIf supplying a dict, the dict keys should correspond to\ncolumn names or index values, depending upon the specified\naxis argument. These will be mapped to row or col CSS\nselectors. MultiIndex values as dict keys should be\nin their respective tuple form. The dict values should be\na list as specified in the form with CSS selectors and\nprops that will be applied to the specified row or column.\n    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default 0\n    - Apply to each column ( `axis=0` or`'index'` ), to each row\n(`axis=1` or`'columns'` ). Only used if table_styles is\ndict.\n    - **overwrite** bool, default True\n    - Styles are replaced if True, or extended if False. CSS rules are preserved so most recent styles set will dominate if selectors intersect.\n    - **css_class_names** dict, optional\n    - A dict of strings used to replace the default CSS classes described below.\n  - Returns:\n    - Styler\n    - Instance of class with specified table styles set.\n See also \n  - `Styler.set_td_classes`\n  - Set the DataFrame of strings added to the `class` attribute of`<td>` HTML elements.\n  - `Styler.set_table_attributes`\n  - Set the table attributes added to the `<table>` HTML element.\n Notes The default CSS classes dict, whose values can be replaced is as follows: css_class_names = { \"row_heading\": \"row_heading\", \"col_heading\": \"col_heading\", \"index_name\": \"index_name\", \"col\": \"col\", \"row\": \"row\", \"col_trim\": \"col_trim\", \"row_trim\": \"row_trim\", \"level\": \"level\", \"data\": \"data\", \"blank\": \"blank\", \"foot\": \"foot\", } Examples >>> df = pd.DataFrame(np.random.randn(10, 4), columns=[\"A\", \"B\", \"C\", \"D\"]) >>> df.style.set_table_styles( ... [{\"selector\": \"tr:hover\", \"props\": [(\"background-color\", \"yellow\")]}] ... ) Or with CSS strings >>> df.style.set_table_styles( ... [ ... { ... \"selector\": \"tr:hover\", ... \"props\": \"background-color: yellow; font-size: 1em;\", ... } ... ] ... ) Adding column styling by name >>> df.style.set_table_styles( ... { ... \"A\": [{\"selector\": \"\", \"props\": [(\"color\", \"red\")]}], ... \"B\": [{\"selector\": \"td\", \"props\": \"color: blue;\"}], ... }, ... overwrite=False, ... ) Adding row styling >>> df.style.set_table_styles( ... {0: [{\"selector\": \"td:hover\", \"props\": [(\"font-size\", \"25px\")]}]}, ... axis=1, ... overwrite=False, ... ) See Table Visualization user guide for more details.",
     "markdown_length": 2990,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.set_table_styles — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.set_table_styles — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.262850",
+    "crawled_at": "2026-08-26T06:51:48.200049",
     "type": "webpage"
 }

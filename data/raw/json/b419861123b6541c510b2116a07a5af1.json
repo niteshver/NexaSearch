@@ -2,7 +2,7 @@
     "id": "b419861123b6541c510b2116a07a5af1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PandasPendingDeprecationWarning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PandasPendingDeprecationWarning.html",
-    "title": "pandas.errors.PandasPendingDeprecationWarning — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.PandasPendingDeprecationWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.PandasPendingDeprecationWarning#\n\n- exception pandas.errors.PandasPendingDeprecationWarning[source]#\n- Warning raised for an upcoming change that is a PendingDeprecationWarning. This warning indicates a feature that will be deprecated in a future version of pandas, but is not yet officially deprecated. See also \n  - `errors.PandasChangeWarning`\n  - Class for deprecations that will raise any warning.\n  - `errors.PandasDeprecationWarning`\n  - Class for deprecations that will raise a DeprecationWarning.\n  - `errors.PandasFutureWarning`\n  - Class for deprecations that will raise a FutureWarning.\n Examples >>> pd.errors.PandasPendingDeprecationWarning <class 'pandas.errors.PandasPendingDeprecationWarning'>",
     "markdown_length": 726,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.PandasPendingDeprecationWarning — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.PandasPendingDeprecationWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.697442",
+    "crawled_at": "2026-08-26T06:51:53.288521",
     "type": "webpage"
 }

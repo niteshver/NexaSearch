@@ -2,7 +2,7 @@
     "id": "ed8cad5d945f8cd03e24658fad529d4f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.asfreq.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.asfreq.html",
-    "title": "pandas.Period.asfreq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.asfreq — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.asfreq#\n\n- \nPeriod.asfreq(*freq* ,*how='E'* )#\n- Convert Period to desired frequency, at the start or end of the interval. This method converts the Period to a different frequency, aligning the result to either the start or end of the original interval. \n  - Parameters:\n    - **freq** str, DateOffset\n    - The target frequency to convert the Period object to. If a string is provided, it must be a valid period alias.\n    - **how** {‘E’, ‘S’, ‘end’, ‘start’}, default ‘end’\n    - Specifies whether to align the period to the start or end of the interval: - ‘E’ or ‘end’: Align to the end of the interval. - ‘S’ or ‘start’: Align to the start of the interval.\n  - Returns:\n    - **Period** Period object with the specified frequency, aligned to the parameter.\n See also \n  - `Period.end_time`\n  - Return the end Timestamp.\n  - `Period.start_time`\n  - Return the start Timestamp.\n  - `Period.dayofyear`\n  - Return the day of the year.\n  - `Period.dayofweek`\n  - Return the day of the week.\n Examples Convert a daily period to an hourly period, aligning to the end of the day: >>> period = pd.Period('2023-01-01', freq='D') >>> period.asfreq('h') Period('2023-01-01 23:00', 'h') Convert a monthly period to a daily period, aligning to the start of the month: >>> period = pd.Period('2023-01', freq='M') >>> period.asfreq('D', how='start') Period('2023-01-01', 'D') Convert a yearly period to a monthly period, aligning to the last month: >>> period = pd.Period('2023', freq='Y') >>> period.asfreq('M', how='end') Period('2023-12', 'M') Convert a monthly period to an hourly period, aligning to the first day of the month: >>> period = pd.Period('2023-01', freq='M') >>> period.asfreq('h', how='start') Period('2023-01-01 00:00', 'h') Convert a weekly period to a daily period, aligning to the last day of the week: >>> period = pd.Period('2023-08-01', freq='W') >>> period.asfreq('D', how='end') Period('2023-08-06', 'D')",
     "markdown_length": 1936,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.asfreq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.asfreq — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.asfreq.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.177756",
+    "crawled_at": "2026-08-26T06:49:08.989690",
     "type": "webpage"
 }

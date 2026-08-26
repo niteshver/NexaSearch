@@ -2,7 +2,7 @@
     "id": "d19b9323b7d7a8a5b33fa7b6756ca468",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BQuarterEnd.is_on_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BQuarterEnd.is_on_offset.html",
-    "title": "pandas.tseries.offsets.BQuarterEnd.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BQuarterEnd.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BQuarterEnd.is_on_offset#\n\n- \nBQuarterEnd.is_on_offset(*dt* )#\n- Return boolean whether a timestamp intersects with this frequency. This method checks if the given datetime falls on a quarter boundary as defined by the offset’s `startingMonth` and day option.\n  - Parameters:\n    - **dt** datetime\n    - Timestamp to check intersections with frequency.\n  - Returns:\n    - bool\n    - True if the timestamp is on the offset, False otherwise.\n See also \n  - `QuarterOffset`\n  - Parent class with quarterly offset logic.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.BQuarterBegin() >>> freq.is_on_offset(ts) False >>> ts = pd.Timestamp(2022, 3, 1) >>> freq.is_on_offset(ts) True",
     "markdown_length": 720,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BQuarterEnd.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BQuarterEnd.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:10.708208",
+    "crawled_at": "2026-08-26T06:51:40.203165",
     "type": "webpage"
 }

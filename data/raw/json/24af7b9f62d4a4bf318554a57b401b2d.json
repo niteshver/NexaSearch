@@ -2,7 +2,7 @@
     "id": "24af7b9f62d4a4bf318554a57b401b2d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.nanoseconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.nanoseconds.html",
-    "title": "pandas.TimedeltaIndex.nanoseconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.TimedeltaIndex.nanoseconds — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.nanoseconds#\n\n- property TimedeltaIndex.nanoseconds[source]#\n- Number of nanoseconds (>= 0 and less than 1 microsecond) for each element. This attribute returns the nanoseconds component of each timedelta value, which is the number of nanoseconds remaining after subtracting whole microseconds. Values range from 0 to 999. See also \n  - `Series.dt.seconds`\n  - Return number of seconds for each element.\n  - `Series.dt.microseconds`\n  - Return number of microseconds for each element.\n Examples For Series: >>> ser = pd.Series(pd.to_timedelta([1, 2, 3], unit='ns')) >>> ser 0 0 days 00:00:00.000000001 1 0 days 00:00:00.000000002 2 0 days 00:00:00.000000003 dtype: timedelta64[ns] >>> ser.dt.nanoseconds 0 1 1 2 2 3 dtype: int32 For TimedeltaIndex: >>> tdelta_idx = pd.to_timedelta([1, 2, 3], unit='ns') >>> tdelta_idx TimedeltaIndex(['0 days 00:00:00.000000001', '0 days 00:00:00.000000002', '0 days 00:00:00.000000003'], dtype='timedelta64[ns]', freq=None) >>> tdelta_idx.nanoseconds Index([1, 2, 3], dtype='int32')",
     "markdown_length": 1041,
@@ -251,14 +251,14 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.nanoseconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.TimedeltaIndex.nanoseconds — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html",
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
         "score": 0.05454545671289617
     },
-    "crawled_at": "2026-08-10T11:46:42.880210",
+    "crawled_at": "2026-08-26T06:48:55.607032",
     "type": "webpage"
 }

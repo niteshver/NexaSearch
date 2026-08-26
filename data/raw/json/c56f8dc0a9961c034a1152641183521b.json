@@ -2,7 +2,7 @@
     "id": "c56f8dc0a9961c034a1152641183521b",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.7.1.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.7.1.html",
-    "title": "Version 0.7.1 (February 29, 2012) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Version 0.7.1 (February 29, 2012) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# Version 0.7.1 (February 29, 2012)#\n\nThis release includes a few new features and addresses over a dozen bugs in 0.7.0.\n\n## New features#\n\n\nAdd `to_clipboard` function to pandas namespace for writing objects to\nthe system clipboard (GH 774)\n\nAdd `itertuples` method to DataFrame for iterating through the rows of a\ndataframe as tuples (GH 818)\n\nAdd ability to pass fill_value and method to DataFrame and Series align method (GH 806, GH 807)\n\nAdd fill_value option to reindex, align methods (GH 784)\n\nEnable concat to produce DataFrame from Series (GH 787)\n\nAdd `between` method to Series (GH 802)\n\nAdd HTML representation hook to DataFrame for the IPython HTML notebook (GH 773)\n\nSupport for reading Excel 2007 XML documents using openpyxl\n\n\n## Performance improvements#\n\n\nImprove performance and memory usage of fillna on DataFrame\n\nCan concatenate a list of Series along axis=1 to obtain a DataFrame (GH 787)\n\n\n## Contributors#\n\nA total of 9 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Adam Klein\n- Brian Granger +\n- Chang She\n- Dieter Vandenbussche\n- Josh Klein\n- Steve +\n- Wes McKinney\n- Wouter Overmeire\n- Yaroslav Halchenko",
     "markdown_length": 1206,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Version 0.7.1 (February 29, 2012) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Version 0.7.1 (February 29, 2012) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:28.233709",
+    "crawled_at": "2026-08-26T06:52:08.604049",
     "type": "webpage"
 }

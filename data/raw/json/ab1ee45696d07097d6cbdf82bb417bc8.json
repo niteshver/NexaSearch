@@ -2,7 +2,7 @@
     "id": "ab1ee45696d07097d6cbdf82bb417bc8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_empty.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_empty.html",
-    "title": "pandas.IntervalIndex.is_empty — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IntervalIndex.is_empty — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.is_empty#\n\n- property IntervalIndex.is_empty[source]#\n- Indicates if an interval is empty, meaning it contains no points. An interval is considered empty if its left and right endpoints are equal, and it is not closed on both sides. This means that the interval does not include any real points. In the case of an `pandas.arrays.IntervalArray` or`IntervalIndex` , the\nproperty returns a boolean array indicating the emptiness of each interval.\n  - Returns:\n    - bool or ndarray\n    - A boolean indicating if a scalar `Interval` is empty, or a\nboolean`ndarray` positionally indicating if an`Interval` in\nan`IntervalArray` or`IntervalIndex` is\nempty.\n See also \n  - `Interval.length`\n  - Return the length of the Interval.\n Examples An `Interval` that contains points is not empty:>>> pd.Interval(0, 1, closed='right').is_empty False An `Interval` that does not contain any points is empty:>>> pd.Interval(0, 0, closed='right').is_empty True >>> pd.Interval(0, 0, closed='left').is_empty True >>> pd.Interval(0, 0, closed='neither').is_empty True An `Interval` that contains a single point is not empty:>>> pd.Interval(0, 0, closed='both').is_empty False An `IntervalArray` or`IntervalIndex` returns a\nboolean`ndarray` positionally indicating if an`Interval` is\nempty:>>> ivs = [pd.Interval(0, 0, closed='neither'), ... pd.Interval(1, 2, closed='neither')] >>> pd.arrays.IntervalArray(ivs).is_empty array([ True, False]) Missing values are not considered empty: >>> ivs = [pd.Interval(0, 0, closed='neither'), np.nan] >>> pd.IntervalIndex(ivs).is_empty array([ True, False])",
     "markdown_length": 1596,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.is_empty — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IntervalIndex.is_empty — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.819538",
+    "crawled_at": "2026-08-26T06:48:51.606235",
     "type": "webpage"
 }

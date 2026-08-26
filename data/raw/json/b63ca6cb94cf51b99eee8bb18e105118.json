@@ -2,7 +2,7 @@
     "id": "b63ca6cb94cf51b99eee8bb18e105118",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.seconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.seconds.html",
-    "title": "pandas.Timedelta.seconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timedelta.seconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.seconds#\n\n- Timedelta.seconds#\n- Return the total hours, minutes, and seconds of the timedelta as seconds. Timedelta.seconds = hours * 3600 + minutes * 60 + seconds. \n  - Returns:\n    - int\n    - Number of seconds.\n See also \n  - `Timedelta.components`\n  - Return all attributes with assigned values (i.e. days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds).\n  - `Timedelta.total_seconds`\n  - Express the Timedelta as total number of seconds.\n Examples **Using string input**>>> td = pd.Timedelta('1 days 2 min 3 us 42 ns') >>> td.seconds 120 **Using integer input**>>> td = pd.Timedelta(42, unit='s') >>> td.seconds 42",
     "markdown_length": 658,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.seconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timedelta.seconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.284815",
+    "crawled_at": "2026-08-26T06:51:04.131605",
     "type": "webpage"
 }

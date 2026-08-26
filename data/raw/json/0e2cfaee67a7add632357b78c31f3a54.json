@@ -2,7 +2,7 @@
     "id": "0e2cfaee67a7add632357b78c31f3a54",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.union.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.union.html",
-    "title": "pandas.Index.union — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.union — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.union#\n\n- \nfinal Index.union(*other* ,*sort=None* )[source]#\n- Form the union of two Index objects. If the Index objects are incompatible, both Index objects will be cast to dtype(‘object’) first. \n  - Parameters:\n    - **other** Index or array-like\n    - Index or an array-like object containing elements to form the union with the original Index.\n    - **sort** bool or None, default None\n    - Whether to sort the resulting Index. \n      - None : Sort the result, except when \n        1. self and other are equal.\n        2. self or other has length 0.\n        3. Some values in self or other cannot be compared. A RuntimeWarning is issued in this case.\n      - False : do not sort the result.\n      - True : Sort the result (which may raise TypeError).\n  - Returns:\n    - Index\n    - Returns a new Index object with elements from both the original Index and the `other` Index.If either index contains duplicate entries, the result preserves duplicates up to the maximum number of occurrences in either index.\n See also \n  - `Index.unique`\n  - Return unique values in the index.\n  - `Index.intersection`\n  - Form the intersection of two Index objects.\n  - `Index.difference`\n  - Return a new Index with elements of index not in other.\n Examples Union matching dtypes >>> idx1 = pd.Index([1, 2, 3, 4]) >>> idx2 = pd.Index([3, 4, 5, 6]) >>> idx1.union(idx2) Index([1, 2, 3, 4, 5, 6], dtype='int64') Union mismatched dtypes >>> idx1 = pd.Index([\"a\", \"b\", \"c\", \"d\"]) >>> idx2 = pd.Index([1, 2, 3, 4]) >>> idx1.union(idx2) Index(['a', 'b', 'c', 'd', 1, 2, 3, 4], dtype='object') Union with duplicate values >>> idx1 = pd.Index([1, 2, 2, 3]) >>> idx2 = pd.Index([3, 3, 4]) >>> idx1.union(idx2) Index([1, 2, 2, 3, 3, 4], dtype='int64') MultiIndex case >>> idx1 = pd.MultiIndex.from_arrays( ... [[1, 1, 2, 2], [\"Red\", \"Blue\", \"Red\", \"Blue\"]] ... ) >>> idx1 MultiIndex([(1, 'Red'), (1, 'Blue'), (2, 'Red'), (2, 'Blue')], ) >>> idx2 = pd.MultiIndex.from_arrays( ... [[3, 3, 2, 2], [\"Red\", \"Green\", \"Red\", \"Green\"]] ... ) >>> idx2 MultiIndex([(3, 'Red'), (3, 'Green'), (2, 'Red'), (2, 'Green')], ) >>> idx1.union(idx2) MultiIndex([(1, 'Blue'), (1, 'Red'), (2, 'Blue'), (2, 'Green'), (2, 'Red'), (3, 'Green'), (3, 'Red')], ) >>> idx1.union(idx2, sort=False) MultiIndex([(1, 'Red'), (1, 'Blue'), (2, 'Red'), (2, 'Blue'), (3, 'Red'), (3, 'Green'), (2, 'Green')], )",
     "markdown_length": 2368,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.union — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.union — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.union.html"
     },
-    "crawled_at": "2026-08-10T11:47:53.528450",
+    "crawled_at": "2026-08-26T06:49:58.534786",
     "type": "webpage"
 }

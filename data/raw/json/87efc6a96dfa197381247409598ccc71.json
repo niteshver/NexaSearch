@@ -2,7 +2,7 @@
     "id": "87efc6a96dfa197381247409598ccc71",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253.get_year_end.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253.get_year_end.html",
-    "title": "pandas.tseries.offsets.FY5253.get_year_end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.FY5253.get_year_end — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.FY5253.get_year_end#\n\n- \nFY5253.get_year_end(*dt* )#\n- Get the fiscal year end date for the given datetime. This method calculates the fiscal year end date based on the offset’s weekday, starting month, and variation parameters. The fiscal year end is determined as either the last occurrence of the specified weekday in the starting month, or the occurrence of the specified weekday nearest to the last day of the starting month. \n  - Parameters:\n    - **dt** datetime\n    - A timezone-naive datetime for which to determine the fiscal year end. The year component of this datetime is used to determine which fiscal year end to calculate.\n  - Returns:\n    - datetime\n    - The fiscal year end datetime for the year specified in the input.\n See also \n  - `FY5253`\n  - Describes 52-53 week fiscal year.\n  - `FY5253.is_on_offset`\n  - Check if a date is on the offset.\n Examples >>> from datetime import datetime >>> offset = pd.offsets.FY5253(weekday=4, startingMonth=12, variation=\"last\") >>> offset.get_year_end(datetime(2022, 6, 15)) datetime.datetime(2022, 12, 30, 0, 0) >>> offset = pd.offsets.FY5253(weekday=0, startingMonth=1, variation=\"nearest\") >>> offset.get_year_end(datetime(2022, 6, 15)) datetime.datetime(2022, 1, 31, 0, 0)",
     "markdown_length": 1260,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.FY5253.get_year_end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.FY5253.get_year_end — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:20.927284",
+    "crawled_at": "2026-08-26T06:51:43.867989",
     "type": "webpage"
 }

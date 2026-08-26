@@ -2,7 +2,7 @@
     "id": "cd83d2efa7b36473551b81e49cc1db68",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.equals.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.equals.html",
-    "title": "pandas.Index.equals — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.equals — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.equals#\n\n- \nIndex.equals(*other* )[source]#\n- Determine if two Index object are equal. The things that are being compared are: \n  - The elements inside the Index object.\n  - The order of the elements inside the Index object.\n \n  - Parameters:\n    - **other** Any\n    - The other object to compare against.\n  - Returns:\n    - bool\n    - True if “other” is an Index and it has the same elements and order as the calling index; False otherwise.\n See also \n  - `Index.identical`\n  - Checks that object attributes and types are also equal.\n  - `Index.has_duplicates`\n  - Check if the Index has duplicate values.\n  - `Index.is_unique`\n  - Return if the index has unique values.\n Examples >>> idx1 = pd.Index([1, 2, 3]) >>> idx1 Index([1, 2, 3], dtype='int64') >>> idx1.equals(pd.Index([1, 2, 3])) True The elements inside are compared >>> idx2 = pd.Index([\"1\", \"2\", \"3\"]) >>> idx2 Index(['1', '2', '3'], dtype='str') >>> idx1.equals(idx2) False The order is compared >>> ascending_idx = pd.Index([1, 2, 3]) >>> ascending_idx Index([1, 2, 3], dtype='int64') >>> descending_idx = pd.Index([3, 2, 1]) >>> descending_idx Index([3, 2, 1], dtype='int64') >>> ascending_idx.equals(descending_idx) False The dtype is *not* compared>>> int64_idx = pd.Index([1, 2, 3], dtype=\"int64\") >>> int64_idx Index([1, 2, 3], dtype='int64') >>> uint64_idx = pd.Index([1, 2, 3], dtype=\"uint64\") >>> uint64_idx Index([1, 2, 3], dtype='uint64') >>> int64_idx.equals(uint64_idx) True",
     "markdown_length": 1467,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.equals — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.equals — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.equals.html"
     },
-    "crawled_at": "2026-08-10T11:47:55.535643",
+    "crawled_at": "2026-08-26T06:49:59.915274",
     "type": "webpage"
 }

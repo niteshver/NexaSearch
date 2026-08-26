@@ -2,7 +2,7 @@
     "id": "65de45dea16d608cb49f02b4d92fc5a9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.nunique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.nunique.html",
-    "title": "pandas.api.typing.Rolling.nunique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Rolling.nunique — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.nunique#\n\n- \nRolling.nunique(*numeric_only=False* )[source]#\n- Calculate the rolling nunique. Added in version 3.0.0. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.nunique`\n  - Aggregating nunique for Series.\n  - `DataFrame.nunique`\n  - Aggregating nunique for DataFrame.\n Examples >>> s = pd.Series([1, 4, 2, np.nan, 3, 3, 4, 5]) >>> s.rolling(3).nunique() 0 NaN 1 NaN 2 3.0 3 NaN 4 NaN 5 NaN 6 2.0 7 3.0 dtype: float64",
     "markdown_length": 770,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.nunique — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Rolling.nunique — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.750079",
+    "crawled_at": "2026-08-26T06:51:52.426923",
     "type": "webpage"
 }

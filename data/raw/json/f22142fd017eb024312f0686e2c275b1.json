@@ -2,7 +2,7 @@
     "id": "f22142fd017eb024312f0686e2c275b1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html",
-    "title": "pandas.DataFrame.to_clipboard — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.to_clipboard — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.to_clipboard#\n\n- \nDataFrame.to_clipboard(*** ,*excel=True* ,*sep=None* ,***kwargs* )[source]#\n- Copy object to the system clipboard. Write a text representation of object to the system clipboard. This can be pasted into Excel, for example. \n  - Parameters:\n    - **excel** bool, default True\n    - Produce output in a csv format for easy pasting into excel. \n      - True, use the provided separator for csv pasting.\n      - False, write a string representation of the object to the clipboard.\n    - **sep** str, default`'\\t'`\n    - Field delimiter.\n    - ****kwargs**\n    - These parameters will be passed to DataFrame.to_csv.\n See also \n  - `DataFrame.to_csv`\n  - Write a DataFrame to a comma-separated values (csv) file.\n  - `read_clipboard`\n  - Read text from clipboard and pass to read_csv.\n Notes Requirements for your platform. \n  - Linux : xclip, or xsel (with PyQt4 modules)\n  - Windows : none\n  - macOS : none\n This method uses the processes developed for the package pyperclip. A solution to render any output string format is given in the examples. Examples Copy the contents of a DataFrame to the clipboard. >>> df = pd.DataFrame([[1, 2, 3], [4, 5, 6]], columns=[\"A\", \"B\", \"C\"]) >>> df.to_clipboard(sep=\",\") ... # Wrote the following to the system clipboard: ... # ,A,B,C ... # 0,1,2,3 ... # 1,4,5,6 We can omit the index by passing the keyword index and setting it to false. >>> df.to_clipboard(sep=\",\", index=False) ... # Wrote the following to the system clipboard: ... # A,B,C ... # 1,2,3 ... # 4,5,6 Using the original pyperclip package for any string output format. import pyperclip html = df.style.to_html() pyperclip.copy(html)",
     "markdown_length": 1667,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.to_clipboard — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.to_clipboard — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.711099",
+    "crawled_at": "2026-08-26T06:49:06.285682",
     "type": "webpage"
 }

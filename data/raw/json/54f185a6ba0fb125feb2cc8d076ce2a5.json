@@ -2,7 +2,7 @@
     "id": "54f185a6ba0fb125feb2cc8d076ce2a5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.floor.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.floor.html",
-    "title": "pandas.Timestamp.floor — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.floor — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.floor#\n\n- \nTimestamp.floor(*freq* ,*ambiguous='raise'* ,*nonexistent='raise'* )#\n- Return a new Timestamp floored to this resolution. This method rounds the Timestamp down to the nearest boundary of the given frequency. The result will never be later than the original Timestamp. \n  - Parameters:\n    - **freq** str or timedelta\n    - Frequency string or timedelta value indicating the flooring resolution.\n    - **ambiguous** bool or {‘raise’, ‘NaT’}, default ‘raise’\n    - The behavior is as follows: \n      - bool contains flags to determine if time is dst or not (note that this flag is only applicable for ambiguous fall dst dates).\n      - ‘NaT’ will return NaT for an ambiguous time.\n      - ‘raise’ will raise a ValueError for an ambiguous time.\n    - **nonexistent** {‘raise’, ‘shift_forward’, ‘shift_backward’, ‘NaT’, timedelta}, default ‘raise’\n    - A nonexistent time does not exist in a particular timezone where clocks moved forward due to DST. \n      - ‘shift_forward’ will shift the nonexistent time forward to the closest existing time.\n      - ‘shift_backward’ will shift the nonexistent time backward to the closest existing time.\n      - ‘NaT’ will return NaT where there are nonexistent times.\n      - timedelta objects will shift nonexistent times by the timedelta.\n      - ‘raise’ will raise a ValueError if there are nonexistent times.\n  - Raises:\n    - ValueError if the freq cannot be converted.\n See also \n  - `Timestamp.ceil`\n  - Round up a Timestamp to the specified resolution.\n  - `Timestamp.round`\n  - Round a Timestamp to the specified resolution.\n  - `Series.dt.floor`\n  - Round down the datetime values in a Series.\n Notes If the Timestamp has a timezone, flooring will take place relative to the local (“wall”) time and re-localized to the same timezone. When flooring near daylight savings time, use `nonexistent` and`ambiguous` to\ncontrol the re-localization behavior.Examples Create a timestamp object: >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651') A timestamp can be floored using multiple frequency units: >>> ts.floor(freq='h') # hour Timestamp('2020-03-14 15:00:00') >>> ts.floor(freq='min') # minute Timestamp('2020-03-14 15:32:00') >>> ts.floor(freq='s') # seconds Timestamp('2020-03-14 15:32:52') >>> ts.floor(freq='ns') # nanoseconds Timestamp('2020-03-14 15:32:52.192548651') `freq` can also be a multiple of a single unit, like ‘5min’ (i.e.  5 minutes):>>> ts.floor(freq='5min') Timestamp('2020-03-14 15:30:00') or a combination of multiple units, like ‘1h30min’ (i.e. 1 hour and 30 minutes): >>> ts.floor(freq='1h30min') Timestamp('2020-03-14 15:00:00') `freq` can also be a timedelta value:>>> ts.floor(freq=pd.Timedelta('1h30min')) Timestamp('2020-03-14 15:00:00') Analogous for `pd.NaT` :>>> pd.NaT.floor() NaT When rounding near a daylight savings time transition, use `ambiguous` or`nonexistent` to control how the timestamp should be re-localized.>>> ts_tz = pd.Timestamp(\"2021-10-31 03:30:00\").tz_localize(\"Europe/Amsterdam\") >>> ts_tz.floor(\"2h\", ambiguous=False) Timestamp('2021-10-31 02:00:00+0100', tz='Europe/Amsterdam') >>> ts_tz.floor(\"2h\", ambiguous=True) Timestamp('2021-10-31 02:00:00+0200', tz='Europe/Amsterdam')",
     "markdown_length": 3210,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.floor — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.floor — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.771812",
+    "crawled_at": "2026-08-26T06:50:50.897511",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "a0701c92c7de0ec38f8367db9d1decdc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.read_clipboard.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.read_clipboard.html",
-    "title": "pandas.read_clipboard — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.read_clipboard — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.read_clipboard#\n\n- \npandas.read_clipboard(*sep='\\\\s+'* ,*dtype_backend=<no_default>* ,***kwargs* )[source]#\n- Read text from clipboard and pass to `read_csv()` .Parses clipboard contents similar to how CSV files are parsed using `read_csv()` .\n  - Parameters:\n    - **sep** str, default ‘\\s+’\n    - A string or regex delimiter. The default of `'\\\\s+'` denotes\none or more whitespace characters.\n    - **dtype_backend** {‘numpy_nullable’, ‘pyarrow’}\n    - Back-end data type applied to the resultant `DataFrame` (still experimental). If not specified, the default behavior\nis to not use nullable data types. If specified, the behavior\nis as follows:\n      - `\"numpy_nullable\"` : returns nullable-dtype-backed`DataFrame`\n      - `\"pyarrow\"` : returns pyarrow-backed nullable`ArrowDtype``DataFrame`\n Added in version 2.0.\n    - ****kwargs**\n    - See `read_csv()` for the full argument list.\n  - Returns:\n    - DataFrame\n    - A parsed `DataFrame` object.\n See also \n  - `DataFrame.to_clipboard`\n  - Copy object to the system clipboard.\n  - `read_csv`\n  - Read a comma-separated values (csv) file into DataFrame.\n  - `read_fwf`\n  - Read a table of fixed-width formatted lines into DataFrame.\n Examples >>> df = pd.DataFrame([[1, 2, 3], [4, 5, 6]], columns=[\"A\", \"B\", \"C\"]) >>> df.to_clipboard() >>> pd.read_clipboard() A B C 0 1 2 3 1 4 5 6",
     "markdown_length": 1346,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.read_clipboard — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.read_clipboard — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.886654",
+    "crawled_at": "2026-08-26T06:50:11.804158",
     "type": "webpage"
 }

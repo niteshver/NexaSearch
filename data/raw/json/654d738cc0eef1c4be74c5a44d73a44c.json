@@ -2,7 +2,7 @@
     "id": "654d738cc0eef1c4be74c5a44d73a44c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.from_arrow.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.from_arrow.html",
-    "title": "pandas.DataFrame.from_arrow — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.from_arrow — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.from_arrow#\n\n- \nclassmethod DataFrame.from_arrow(*data* )[source]#\n- Construct a DataFrame from a tabular Arrow object. This function accepts any Arrow-compatible tabular object implementing the Arrow PyCapsule Protocol (i.e. having an `__arrow_c_array__` or`__arrow_c_stream__` method).This function currently relies on `pyarrow` to convert the tabular\nobject in Arrow format to pandas.Added in version 3.0. \n  - Parameters:\n    - **data** pyarrow.Table or Arrow-compatible table\n    - Any tabular object implementing the Arrow PyCapsule Protocol (i.e. has an `__arrow_c_array__` or`__arrow_c_stream__` method).\n  - Returns:\n    - DataFrame\n See also \n  - `Series.from_arrow`\n  - Construct a Series from an Arrow object.\n Examples >>> import pyarrow as pa >>> table = pa.table({\"a\": [1, 2, 3], \"b\": [\"x\", \"y\", \"z\"]}) >>> pd.DataFrame.from_arrow(table) a b 0 1 x 1 2 y 2 3 z",
     "markdown_length": 893,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.from_arrow — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.from_arrow — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:46.424846",
+    "crawled_at": "2026-08-26T06:49:02.023239",
     "type": "webpage"
 }

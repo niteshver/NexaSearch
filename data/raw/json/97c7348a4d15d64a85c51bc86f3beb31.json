@@ -2,7 +2,7 @@
     "id": "97c7348a4d15d64a85c51bc86f3beb31",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.as_unit.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.as_unit.html",
-    "title": "pandas.DatetimeIndex.as_unit — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DatetimeIndex.as_unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.as_unit#\n\n- \nDatetimeIndex.as_unit(*unit* )[source]#\n- Convert to a dtype with the given unit resolution. This method is for converting the dtype of a `DatetimeIndex` or`TimedeltaIndex` to a new dtype with the given unit\nresolution/precision.\n  - Parameters:\n    - **unit** {‘s’, ‘ms’, ‘us’, ‘ns’}\n  - Returns:\n    - same type as self\n    - Converted to the specified unit.\n See also \n  - `Timestamp.as_unit`\n  - Convert to the given unit.\n  - `Timedelta.as_unit`\n  - Convert to the given unit.\n  - `DatetimeIndex.as_unit`\n  - Convert to the given unit.\n  - `TimedeltaIndex.as_unit`\n  - Convert to the given unit.\n Examples For `pandas.DatetimeIndex` :>>> idx = pd.DatetimeIndex([\"2020-01-02 01:02:03.004005006\"]) >>> idx DatetimeIndex(['2020-01-02 01:02:03.004005006'], dtype='datetime64[ns]', freq=None) >>> idx.as_unit(\"s\") DatetimeIndex(['2020-01-02 01:02:03'], dtype='datetime64[s]', freq=None) For `pandas.TimedeltaIndex` :>>> tdelta_idx = pd.to_timedelta([\"1 day 3 min 2 us 42 ns\"]) >>> tdelta_idx TimedeltaIndex(['1 days 00:03:00.000002042'], dtype='timedelta64[ns]', freq=None) >>> tdelta_idx.as_unit(\"s\") TimedeltaIndex(['1 days 00:03:00'], dtype='timedelta64[s]', freq=None)",
     "markdown_length": 1208,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.as_unit — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DatetimeIndex.as_unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.as_unit.html"
     },
-    "crawled_at": "2026-08-10T11:47:45.681591",
+    "crawled_at": "2026-08-26T06:49:47.213899",
     "type": "webpage"
 }

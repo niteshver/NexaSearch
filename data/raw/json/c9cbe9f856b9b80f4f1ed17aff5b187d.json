@@ -2,7 +2,7 @@
     "id": "c9cbe9f856b9b80f4f1ed17aff5b187d",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.stop.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.stop.html",
-    "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.RangeIndex.stop#\n\n- property RangeIndex.stop[source]#\n- The value of the stop parameter. This property returns the stop value of the RangeIndex, which defines the upper (or lower, in case of negative steps) bound of the index range. The stop value is exclusive, meaning the RangeIndex includes values up to but not including this value. See also \n  - `RangeIndex`\n  - Immutable index representing a range of integers.\n  - `RangeIndex.start`\n  - The start value of the RangeIndex.\n  - `RangeIndex.step`\n  - The step size between elements in the RangeIndex.\n Examples >>> idx = pd.RangeIndex(5) >>> idx.stop 5 >>> idx = pd.RangeIndex(2, -10, -3) >>> idx.stop -10",
     "markdown_length": 669,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.stop.html"
     },
-    "crawled_at": "2026-08-10T11:48:07.868667",
+    "crawled_at": "2026-08-26T06:50:32.067891",
     "type": "webpage"
 }

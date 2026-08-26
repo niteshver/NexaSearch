@@ -2,7 +2,7 @@
     "id": "94258db173feb31a9c6c6976376d0d18",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.SemiMonthBegin.is_on_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.SemiMonthBegin.is_on_offset.html",
-    "title": "pandas.tseries.offsets.SemiMonthBegin.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.SemiMonthBegin.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.SemiMonthBegin.is_on_offset#\n\n- \nSemiMonthBegin.is_on_offset(*dt* )#\n- Return boolean whether a timestamp intersects with this frequency. This method checks if the given timestamp falls on the first day of the month or on the specified `day_of_month` . It is used to determine\nif a date aligns with the semi-monthly frequency starting at the\nbeginning of the month.\n  - Parameters:\n    - **dt** datetime\n    - Timestamp to check intersections with frequency.\n  - Returns:\n    - bool\n    - True if the date is on the first day of the month or the `day_of_month` , False otherwise.\n See also \n  - `SemiMonthEnd.is_on_offset`\n  - Check if a date falls on a SemiMonthEnd offset.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.SemiMonthBegin() >>> freq.is_on_offset(ts) True >>> ts = pd.Timestamp(2022, 1, 15) >>> freq.is_on_offset(ts) True >>> ts = pd.Timestamp(2022, 1, 16) >>> freq.is_on_offset(ts) False",
     "markdown_length": 946,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.SemiMonthBegin.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.SemiMonthBegin.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:19.862106",
+    "crawled_at": "2026-08-26T06:51:38.962392",
     "type": "webpage"
 }

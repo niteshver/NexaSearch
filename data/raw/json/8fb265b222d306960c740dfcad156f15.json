@@ -2,7 +2,7 @@
     "id": "8fb265b222d306960c740dfcad156f15",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.nanosecond.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.nanosecond.html",
-    "title": "pandas.Series.dt.nanosecond — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.nanosecond — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.nanosecond#\n\n- Series.dt.nanosecond[source]#\n- The nanoseconds of the datetime. This attribute returns the nanosecond component of each datetime value in the Series/Index. Values range from 0 to 999 (one nanosecond is one billionth of a second). See also \n  - `DatetimeIndex.second`\n  - The seconds of the datetime.\n  - `DatetimeIndex.microsecond`\n  - The microseconds of the datetime.\n Examples >>> datetime_series = pd.Series( ... pd.date_range(\"2000-01-01\", periods=3, freq=\"ns\") ... ) >>> datetime_series 0 2000-01-01 00:00:00.000000000 1 2000-01-01 00:00:00.000000001 2 2000-01-01 00:00:00.000000002 dtype: datetime64[ns] >>> datetime_series.dt.nanosecond 0 0 1 1 2 2 dtype: int32",
     "markdown_length": 704,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.nanosecond — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.nanosecond — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.498060",
+    "crawled_at": "2026-08-26T06:49:15.260276",
     "type": "webpage"
 }

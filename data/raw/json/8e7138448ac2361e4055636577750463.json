@@ -2,7 +2,7 @@
     "id": "8e7138448ac2361e4055636577750463",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.freq.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.freq.html",
-    "title": "pandas.Period.freq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.freq — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.freq#\n\n- Period.freq#\n- Return the frequency object for this Period. The frequency object represents the span of time that this Period covers. It is a DateOffset that defines the interval type (e.g., daily, monthly). See also \n  - `Period.freqstr`\n  - Return a string representation of the frequency.\n  - `Period.asfreq`\n  - Convert Period to desired frequency.\n Examples >>> period = pd.Period('2020-01', freq='M') >>> period.freq <MonthEnd>",
     "markdown_length": 458,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.freq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.freq — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.432444",
+    "crawled_at": "2026-08-26T06:49:09.402289",
     "type": "webpage"
 }

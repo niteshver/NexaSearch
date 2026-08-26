@@ -2,7 +2,7 @@
     "id": "c4b3c204a056992e513dc897648f615a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cummin.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cummin.html",
-    "title": "pandas.Series.cummin — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.cummin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.cummin#\n\n- \nSeries.cummin(*axis=0* ,*skipna=True* ,**args* ,***kwargs* )[source]#\n- Return cumulative minimum over a Series. Returns a Series of the same size containing the cumulative minimum. \n  - Parameters:\n    - **axis** {0 or ‘index’}, default 0\n    - This parameter is unused and defaults to 0.\n    - **skipna** bool, default True\n    - If the entire series is NA, the result will be NA.\n    - ***args, **kwargs**\n    - Additional keywords have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Series\n    - Return cumulative minimum of the Series.\n See also \n  - `core.window.expanding.Expanding.min`\n  - Similar functionality but ignores `NaN` values.\n  - `Series.min`\n  - Return the minimum value of the Series.\n  - `Series.cummax`\n  - Return cumulative maximum.\n  - `Series.cumsum`\n  - Return cumulative sum.\n  - `Series.cumprod`\n  - Return cumulative product.\n Examples >>> s = pd.Series([2, np.nan, 5, -1, 0]) >>> s 0 2.0 1 NaN 2 5.0 3 -1.0 4 0.0 dtype: float64 By default, NA values are ignored. >>> s.cummin() 0 2.0 1 NaN 2 2.0 3 -1.0 4 -1.0 dtype: float64 To include NA values in the operation, use `skipna=False`>>> s.cummin(skipna=False) 0 2.0 1 NaN 2 NaN 3 NaN 4 NaN dtype: float64",
     "markdown_length": 1288,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cummin — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.cummin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.294149",
+    "crawled_at": "2026-08-26T06:49:12.930970",
     "type": "webpage"
 }

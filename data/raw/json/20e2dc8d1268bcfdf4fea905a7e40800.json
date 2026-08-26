@@ -2,7 +2,7 @@
     "id": "20e2dc8d1268bcfdf4fea905a7e40800",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.is_monotonic_decreasing.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.is_monotonic_decreasing.html",
-    "title": "pandas.Index.is_monotonic_decreasing — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.is_monotonic_decreasing — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.is_monotonic_decreasing#\n\n- property Index.is_monotonic_decreasing[source]#\n- Return a boolean if the values are equal or decreasing. A monotonically decreasing index has values that are equal to or less than the preceding value. This is useful for checking if an index is sorted in non-increasing order. \n  - Returns:\n    - bool\n See also \n  - `Index.is_monotonic_increasing`\n  - Check if the values are equal or increasing.\n Examples >>> pd.Index([3, 2, 1]).is_monotonic_decreasing True >>> pd.Index([3, 2, 2]).is_monotonic_decreasing True >>> pd.Index([3, 1, 2]).is_monotonic_decreasing False",
     "markdown_length": 610,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.is_monotonic_decreasing — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.is_monotonic_decreasing — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.492455",
+    "crawled_at": "2026-08-26T06:48:49.201650",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "beaacbb340096333f0d669c612ff5040",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.24.1.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.24.1.html",
-    "title": "What’s new in 0.24.1 (February 3, 2019) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "What’s new in 0.24.1 (February 3, 2019) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# What’s new in 0.24.1 (February 3, 2019)#\n\nWarning\n\nThe 0.24.x series of releases will be the last to support Python 2. Future feature releases will support Python 3 only. See Dropping Python 2.7 for more.\n\nThese are the changes in pandas 0.24.1. See Release notes for a full changelog including other versions of pandas. See What’s new in 0.24.0 (January 25, 2019) for the 0.24.0 changelog.\n\n## API changes#\n\n### Changing the `sort` parameter for `Index` set operations#\n\nThe default `sort` value for `Index.union()` has changed from `True` to `None` (GH 24959).\nThe default *behavior*, however, remains the same: the result is sorted, unless\n\n1. `self` and`other` are identical\n2. `self` or`other` is empty\n3. `self` or`other` contain values that can not be compared (a`RuntimeWarning` is raised).\n\nThis change will allow `sort=True` to mean “always sort” in a future release.\n\nThe same change applies to `Index.difference()` and `Index.symmetric_difference()`, which\nwould not sort the result when the values could not be compared.\n\nThe `sort` option for `Index.intersection()` has changed in three ways.\n\n1. The default has changed from `True` to`False` , to restore the\npandas 0.23.4 and earlier behavior of not sorting by default.\n2. The behavior of `sort=True` can now be obtained with`sort=None` .\nThis will sort the result only if the values in`self` and`other` are not identical.\n3. The value `sort=True` is no longer allowed. A future version of pandas\nwill properly support`sort=True` meaning “always sort”.\n\n## Fixed regressions#\n\n- Fixed regression in `DataFrame.to_dict()` with`records` orient raising an`AttributeError` when the`DataFrame` contained more than 255 columns, or\nwrongly converting column names that were not valid python identifiers (GH 24939, GH 24940).\n- Fixed regression in `read_sql()` when passing certain queries with MySQL/pymysql (GH 24988).\n- Fixed regression in `Index.intersection` incorrectly sorting the values by default (GH 24959).\n- Fixed regression in `merge()` when merging an empty`DataFrame` with multiple timezone-aware columns on one of the timezone-aware columns (GH 25014).\n- Fixed regression in `Series.rename_axis()` and`DataFrame.rename_axis()` where passing`None` failed to remove the axis name (GH 25034)\n- Fixed regression in `to_timedelta()` with`box=False` incorrectly returning a`datetime64` object instead of a`timedelta64` object (GH 24961)\n- Fixed regression where custom hashable types could not be used as column keys in `DataFrame.set_index()` (GH 24969)\n\n## Bug fixes#\n\n**Reshaping**\n\n- Bug in `DataFrame.groupby()` with`Grouper` when there is a time change (DST) and grouping frequency is`'1d'` (GH 24972)\n\n**Visualization**\n\n- Fixed the warning for implicitly registered matplotlib converters not showing. See Restore Matplotlib datetime converter registration for more (GH 24963).\n\n**Other**\n\n- Fixed AttributeError when printing a DataFrame’s HTML repr after accessing the IPython config object (GH 25036)\n\n## Contributors#\n\nA total of 7 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Alex Buchkovsky\n- Roman Yurchak\n- h-vetinari\n- jbrockmendel\n- Jeremy Schendel\n- Joris Van den Bossche\n- Tom Augspurger",
     "markdown_length": 3251,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 0.24.1 (February 3, 2019) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "What’s new in 0.24.1 (February 3, 2019) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:33.089220",
+    "crawled_at": "2026-08-26T06:52:06.479656",
     "type": "webpage"
 }

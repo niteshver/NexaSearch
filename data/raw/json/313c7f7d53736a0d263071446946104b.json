@@ -2,7 +2,7 @@
     "id": "313c7f7d53736a0d263071446946104b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.isnull.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.isnull.html",
-    "title": "pandas.Series.isnull — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.isnull — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.isnull#\n\n- Series.isnull()[source]#\n- Series.isnull is an alias for Series.isna. Detect missing values. Return a boolean same-sized object indicating if the values are NA. NA values, such as None or `numpy.NaN` , gets mapped to True\nvalues.\nEverything else gets mapped to False values. Characters such as empty\nstrings`''` or`numpy.inf` are not considered NA values.\n  - Returns:\n    - Series\n    - Mask of bool values for each element in Series that indicates whether an element is an NA value.\n See also \n  - `Series.isnull`\n  - Alias of isna.\n  - `DataFrame.isnull`\n  - Alias of isna.\n  - `Series.notna`\n  - Boolean inverse of isna.\n  - `DataFrame.notna`\n  - Boolean inverse of isna.\n  - `Series.dropna`\n  - Omit axes labels with missing values.\n  - `DataFrame.dropna`\n  - Omit axes labels with missing values.\n  - `isna`\n  - Top-level isna.\n Examples >>> ser = pd.Series([5, 6, np.nan]) >>> ser 0 5.0 1 6.0 2 NaN dtype: float64 >>> ser.isnull() 0 False 1 False 2 True dtype: bool",
     "markdown_length": 999,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.isnull — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.isnull — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:55.034461",
+    "crawled_at": "2026-08-26T06:49:18.322224",
     "type": "webpage"
 }

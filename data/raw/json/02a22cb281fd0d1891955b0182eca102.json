@@ -2,7 +2,7 @@
     "id": "02a22cb281fd0d1891955b0182eca102",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.values.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.values.html",
-    "title": "pandas.Index.values — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.values — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.values#\n\n- property Index.values[source]#\n- Return an array representing the data in the Index. Warning We recommend using `Index.array` or`Index.to_numpy()` , depending on whether you need\na reference to the underlying data or a NumPy array.\nThe return type of`.values` depends on the dtype: it is a`numpy.ndarray` for some dtypes (for example`int64` or`float64` ) and an`ExtensionArray` for others (for\nexample`interval` ,`category` , or nullable`Int64` ),\nwhich makes it harder to write code that works across dtypes.`Index.array` always returns the underlying array as an`ExtensionArray` , and`Index.to_numpy()` always returns a`numpy.ndarray` and accepts`dtype` ,`copy` , and`na_value` arguments to\ncontrol the conversion.Changed in version 3.0.0: The returned array is read-only. \n  - Returns:\n    - array: numpy.ndarray or ExtensionArray\n See also \n  - `Index.array`\n  - Reference to the underlying data.\n  - `Index.to_numpy`\n  - A NumPy array representing the underlying data.\n Examples For an `Index` backed by a NumPy dtype such as`int64` ,`.values` returns a`numpy.ndarray` :>>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.values array([1, 2, 3]) For an `Index` backed by an extension dtype such as`interval` ,`.values` returns an`ExtensionArray` instead, while`Index.to_numpy()` always returns a`numpy.ndarray` :>>> idx = pd.interval_range(start=0, end=5) >>> idx.values <IntervalArray> [(0, 1], (1, 2], (2, 3], (3, 4], (4, 5]] Length: 5, dtype: interval[int64, right] >>> idx.to_numpy() array([Interval(0, 1, closed='right'), Interval(1, 2, closed='right'), Interval(2, 3, closed='right'), Interval(3, 4, closed='right'), Interval(4, 5, closed='right')], dtype=object)",
     "markdown_length": 1726,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.values — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.values — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.values.html"
     },
-    "crawled_at": "2026-08-10T11:47:57.764846",
+    "crawled_at": "2026-08-26T06:50:04.383450",
     "type": "webpage"
 }

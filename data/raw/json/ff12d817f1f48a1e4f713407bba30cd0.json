@@ -2,7 +2,7 @@
     "id": "ff12d817f1f48a1e4f713407bba30cd0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.year.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.year.html",
-    "title": "pandas.Period.year — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.year — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.year#\n\n- Period.year#\n- Return the year this Period falls on. The year is derived from the internal representation of the Period based on its ordinal value and frequency. \n  - Returns:\n    - int\n See also \n  - `period.month`\n  - Get the month of the year for the given Period.\n  - `period.day`\n  - Return the day of the month the Period falls on.\n Notes The year is based on the ordinal and base attributes of the Period. Examples Create a Period object for January 2023 and get the year: >>> period = pd.Period('2023-01', 'M') >>> period.year 2023 Create a Period object for 01 January 2023 and get the year: >>> period = pd.Period('2023', 'D') >>> period.year 2023 Get the year for a period representing a quarter: >>> period = pd.Period('2023Q2', 'Q') >>> period.year 2023 Handle a case where the Period object is empty, which results in NaN: >>> period = pd.Period('nan', 'M') >>> period.year nan",
     "markdown_length": 916,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.year — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.year — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.818711",
+    "crawled_at": "2026-08-26T06:49:10.154320",
     "type": "webpage"
 }

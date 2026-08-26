@@ -2,7 +2,7 @@
     "id": "6be27a915459d55894e5964baf38a20e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.toordinal.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.toordinal.html",
-    "title": "pandas.Timestamp.toordinal — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.toordinal — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.toordinal#\n\n- Timestamp.toordinal()#\n- Return proleptic Gregorian ordinal. January 1 of year 1 is day 1. The proleptic Gregorian ordinal is a continuous count of days since January 1 of year 1, which is considered day 1. This method converts the Timestamp to its equivalent ordinal number, useful for date arithmetic and comparison operations. See also \n  - `datetime.datetime.toordinal`\n  - Equivalent method in the datetime module.\n  - `Timestamp`\n  - The Timestamp that represents a specific point in time.\n  - `Timestamp.fromordinal`\n  - Create a Timestamp from an ordinal.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:50') >>> ts Timestamp('2023-01-01 10:00:50') >>> ts.toordinal() 738521",
     "markdown_length": 717,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.toordinal — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.toordinal — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.666494",
+    "crawled_at": "2026-08-26T06:51:24.616999",
     "type": "webpage"
 }

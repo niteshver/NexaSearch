@@ -2,7 +2,7 @@
     "id": "e7aaf6bf91f10aa4c7234b4ad384839d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.html",
-    "title": "pandas.RangeIndex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.RangeIndex — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.RangeIndex#\n\n- \nclass pandas.RangeIndex(*start=None* ,*stop=None* ,*step=None* ,*dtype=None* ,*copy=False* ,*name=None* )[source]#\n- Immutable Index implementing a monotonic integer range. RangeIndex is a memory-saving special case of an Index limited to representing monotonic ranges with a 64-bit dtype. Using RangeIndex may in some instances improve computing speed. This is the default index type used by DataFrame and Series when no explicit index is provided by the user. \n  - Parameters:\n    - **start** int, range, or other RangeIndex instance, default None\n    - If int and “stop” is not given, interpreted as “stop” instead.\n    - **stop** int, default None\n    - The end value of the range (exclusive).\n    - **step** int, default None\n    - The step size of the range.\n    - **dtype** np.int64, default None\n    - Unused, accepted for homogeneity with other index types.\n    - **copy** bool, default False\n    - Unused, accepted for homogeneity with other index types.\n    - **name** object, optional\n    - Name to be stored in the index.\n Attributes `start`The value of the start parameter ( `0` if this was not supplied).`stop`The value of the stop parameter. `step`The value of the step parameter ( `1` if this was not supplied).Methods `from_range` (data[, name, dtype])Create `pandas.RangeIndex` from a`range` object.See also \n  - `Index`\n  - The base pandas Index type.\n Examples >>> list(pd.RangeIndex(5)) [0, 1, 2, 3, 4] >>> list(pd.RangeIndex(-2, 4)) [-2, -1, 0, 1, 2, 3] >>> list(pd.RangeIndex(0, 10, 2)) [0, 2, 4, 6, 8] >>> list(pd.RangeIndex(2, -10, -3)) [2, -1, -4, -7] >>> list(pd.RangeIndex(0)) [] >>> list(pd.RangeIndex(1, 0)) []",
     "markdown_length": 1666,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.RangeIndex — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.RangeIndex — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:42.530544",
+    "crawled_at": "2026-08-26T06:48:54.839809",
     "type": "webpage"
 }

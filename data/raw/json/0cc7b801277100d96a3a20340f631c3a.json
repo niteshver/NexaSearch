@@ -2,7 +2,7 @@
     "id": "0cc7b801277100d96a3a20340f631c3a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.get_option.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.get_option.html",
-    "title": "pandas.get_option — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.get_option — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.get_option#\n\n- \npandas.get_option(*pat* )[source]#\n- Retrieve the value of the specified option. This method allows users to query the current value of a given option in the pandas configuration system. Options control various display, performance, and behavior-related settings within pandas. \n  - Parameters:\n    - **pat** str\n    - Regexp which should match a single option. Warning Partial matches are supported for convenience, but unless you use the full option name (e.g. x.y.z.option_name), your code may break in future versions if new options with similar names are introduced.\n  - Returns:\n    - Any\n    - The value of the option.\n  - Raises:\n    - **OptionError** if no such option exists\n See also \n  - `set_option`\n  - Set the value of the specified option or options.\n  - `reset_option`\n  - Reset one or more options to their default value.\n  - `describe_option`\n  - Print the description for one or more registered options.\n Notes For all available options, please view the User Guide or use `pandas.describe_option()` .Examples >>> pd.get_option(\"display.max_columns\") 4",
     "markdown_length": 1096,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.get_option — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.get_option — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/options.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.876626",
+    "crawled_at": "2026-08-26T06:51:21.846402",
     "type": "webpage"
 }

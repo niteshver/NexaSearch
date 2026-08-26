@@ -2,10 +2,10 @@
     "id": "eeb9c1e0ac1727c651246e5088ad8c9a",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_period.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_period.html",
-    "title": "pandas.DatetimeIndex.to_period — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DatetimeIndex.to_period — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
-    "markdown": "# pandas.DatetimeIndex.to_period#\n\n- \nDatetimeIndex.to_period(*freq=None* )[source]#\n- Cast to PeriodArray/PeriodIndex at a particular frequency. Converts DatetimeArray/Index to PeriodArray/PeriodIndex. \n  - Parameters:\n    - **freq** str or Period, optional\n    - One of pandas’ period aliases or a Period object. Will be inferred by default.\n  - Returns:\n    - PeriodArray/PeriodIndex\n    - Immutable ndarray holding ordinal values at a particular frequency.\n  - Raises:\n    - ValueError\n    - When converting a DatetimeArray/Index with non-regular values, so that a frequency cannot be inferred.\n See also \n  - `PeriodIndex`\n  - Immutable ndarray holding ordinal values.\n  - `DatetimeIndex.to_pydatetime`\n  - Return DatetimeIndex as object.\n Examples >>> df = pd.DataFrame( ... {\"y\": [1, 2, 3]}, ... index=pd.to_datetime( ... [ ... \"2000-03-31 00:00:00\", ... \"2000-05-31 00:00:00\", ... \"2000-08-31 00:00:00\", ... ] ... ), ... ) >>> df.index.to_period(\"M\") PeriodIndex(['2000-03', '2000-05', '2000-08'], dtype='period[M]') Infer the daily frequency >>> idx = pd.date_range(\"2017-01-01\", periods=2) >>> idx.to_period() PeriodIndex(['2017-01-01', '2017-01-02'], dtype='period[D]')",
-    "markdown_length": 1180,
+    "markdown": "# pandas.DatetimeIndex.to_period#\n\n- \nDatetimeIndex.to_period(*freq=None* )[source]#\n- Cast to PeriodArray/PeriodIndex at a particular frequency. Converts DatetimeArray/Index to PeriodArray/PeriodIndex. \n  - Parameters:\n    - **freq** str, optional\n    - One of pandas’ period aliases. Will be inferred by default.\n  - Returns:\n    - PeriodArray/PeriodIndex\n    - Immutable ndarray holding ordinal values at a particular frequency.\n  - Raises:\n    - ValueError\n    - When converting a DatetimeArray/Index with non-regular values, so that a frequency cannot be inferred.\n See also \n  - `PeriodIndex`\n  - Immutable ndarray holding ordinal values.\n  - `DatetimeIndex.to_pydatetime`\n  - Return DatetimeIndex as object.\n Examples >>> df = pd.DataFrame( ... {\"y\": [1, 2, 3]}, ... index=pd.to_datetime( ... [ ... \"2000-03-31 00:00:00\", ... \"2000-05-31 00:00:00\", ... \"2000-08-31 00:00:00\", ... ] ... ), ... ) >>> df.index.to_period(\"M\") PeriodIndex(['2000-03', '2000-05', '2000-08'], dtype='period[M]') Infer the daily frequency >>> idx = pd.date_range(\"2017-01-01\", periods=2) >>> idx.to_period() PeriodIndex(['2017-01-01', '2017-01-02'], dtype='period[D]')",
+    "markdown_length": 1151,
     "internal_links": [
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_period.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.to_period — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DatetimeIndex.to_period — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_period.html"
     },
-    "crawled_at": "2026-08-10T11:47:49.262663",
+    "crawled_at": "2026-08-26T06:49:41.715440",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "f6d65c2961d082d8e25898d5f9c0f895",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_interval_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_interval_dtype.html",
-    "title": "pandas.api.types.is_interval_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_interval_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_interval_dtype#\n\n- \npandas.api.types.is_interval_dtype(*arr_or_dtype* )[source]#\n- Check whether an array-like or dtype is of the Interval dtype. Deprecated since version 2.2.0: Use isinstance(dtype, pd.IntervalDtype) instead. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array-like or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array-like or dtype is of the Interval dtype.\n See also \n  - `api.types.is_object_dtype`\n  - Check whether an array-like or dtype is of the object dtype.\n  - `api.types.is_numeric_dtype`\n  - Check whether the provided array or dtype is of a numeric dtype.\n  - `api.types.is_categorical_dtype`\n  - Check whether an array-like or dtype is of the Categorical dtype.\n Examples >>> from pandas.api.types import is_interval_dtype >>> is_interval_dtype(object) False >>> is_interval_dtype(pd.IntervalDtype()) True >>> is_interval_dtype([1, 2, 3]) False >>> >>> interval = pd.Interval(1, 2, closed=\"right\") >>> is_interval_dtype(interval) False >>> is_interval_dtype(pd.IntervalIndex([interval])) True",
     "markdown_length": 1094,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_interval_dtype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_interval_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.687897",
+    "crawled_at": "2026-08-26T06:51:01.408718",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "5fb6fb1fd48c4896078b3da6ca954ca9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Tick.is_on_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.Tick.is_on_offset.html",
-    "title": "pandas.tseries.offsets.Tick.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.Tick.is_on_offset — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.Tick.is_on_offset#\n\n- \nTick.is_on_offset(*dt* )#\n- Return boolean whether a timestamp intersects with this frequency. For fixed-frequency Tick offsets (Hour, Minute, Second, Milli, Micro, Nano), this method always returns True because any timestamp can be represented at these granular time resolutions. \n  - Parameters:\n    - **dt** datetime.datetime\n    - Timestamp to check intersections with frequency.\n  - Returns:\n    - bool\n    - Always True for Tick offsets.\n See also \n  - `DateOffset.is_on_offset`\n  - General offset frequency checking.\n Examples >>> from pandas.tseries.offsets import Milli >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = Milli() >>> freq.is_on_offset(ts) True >>> ts = pd.Timestamp(2022, 8, 6, 12, 30, 45, 123456) >>> freq.is_on_offset(ts) True",
     "markdown_length": 795,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.Tick.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.Tick.is_on_offset — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:23.523502",
+    "crawled_at": "2026-08-26T06:51:44.737767",
     "type": "webpage"
 }

@@ -2,10 +2,10 @@
     "id": "1e30e762a378052386fd38cea9dae2bf",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.radd.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.radd.html",
-    "title": "pandas.Series.radd — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.radd — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
-    "markdown": "# pandas.Series.radd#\n\n- \nSeries.radd(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Addition of series and other, element-wise (binary operator radd). Equivalent to `other + series` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** object\n    - When a Series is provided, will align on indexes. For all other types, will behave the same as `+` but with possibly different results due\nto the other arguments.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** None or float value, default None (NaN)\n    - Fill existing missing (NaN) values, and any new element needed for successful Series alignment, with this value before computation. If data in both corresponding Series locations is missing the result of filling (at that location) will be missing.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.add`\n  - Element-wise Addition, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan], index=[\"a\", \"b\", \"c\", \"d\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=[\"a\", \"b\", \"d\", \"e\"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.radd(b, fill_value=1.0) a 2.0 b 2.0 c 2.0 d 2.0 e NaN dtype: float64",
-    "markdown_length": 1499,
+    "markdown": "# pandas.Series.radd#\n\n- \nSeries.radd(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Addition of series and other, element-wise (binary operator radd). Equivalent to `other + series` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** object\n    - When a Series is provided, will align on indexes. For all other types, will behave the same as `+` but with possibly different results due\nto the other arguments.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** scalar or None, default None\n    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.add`\n  - Element-wise Addition, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan], index=[\"a\", \"b\", \"c\", \"d\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=[\"a\", \"b\", \"d\", \"e\"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.radd(b, fill_value=1.0) a 2.0 b 2.0 c 2.0 d 2.0 e NaN dtype: float64",
+    "markdown_length": 1451,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.radd.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.radd — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.radd — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:56.323485",
+    "crawled_at": "2026-08-26T06:49:20.930298",
     "type": "webpage"
 }

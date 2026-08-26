@@ -2,7 +2,7 @@
     "id": "ac21aeb6b0187131f79e2c49e5e21de2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.autocorr.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.autocorr.html",
-    "title": "pandas.Series.autocorr — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.autocorr — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.autocorr#\n\n- \nSeries.autocorr(*lag=1* )[source]#\n- Compute the lag-N autocorrelation. This method computes the Pearson correlation between the Series and its shifted self. \n  - Parameters:\n    - **lag** int, default 1\n    - Number of lags to apply before performing autocorrelation.\n  - Returns:\n    - float\n    - The Pearson correlation between self and self.shift(lag).\n See also \n  - `Series.corr`\n  - Compute the correlation between two Series.\n  - `Series.shift`\n  - Shift index by desired number of periods.\n  - `DataFrame.corr`\n  - Compute pairwise correlation of columns.\n  - `DataFrame.corrwith`\n  - Compute pairwise correlation between rows or columns of two DataFrame objects.\n Notes If the Pearson correlation is not well defined return ‘NaN’. Examples >>> s = pd.Series([0.25, 0.5, 0.2, -0.05]) >>> s.autocorr() 0.10355... >>> s.autocorr(lag=2) -0.99999... If the Pearson correlation is not well defined, then ‘NaN’ is returned. >>> s = pd.Series([1, 0, 0, 0]) >>> s.autocorr() nan",
     "markdown_length": 1010,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.autocorr — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.autocorr — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:51.528183",
+    "crawled_at": "2026-08-26T06:49:11.455218",
     "type": "webpage"
 }

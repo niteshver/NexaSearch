@@ -2,7 +2,7 @@
     "id": "3a31e7725a43328470aa2608fe176349",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.astype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.astype.html",
-    "title": "pandas.DataFrame.astype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.astype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.astype#\n\n- \nDataFrame.astype(*dtype* ,*copy=<no_default>* ,*errors='raise'* )[source]#\n- Cast a pandas object to a specified dtype `dtype` .This method allows the conversion of the data types of pandas objects, including DataFrames and Series, to the specified dtype. It supports casting entire objects to a single data type or applying different data types to individual columns using a mapping. \n  - Parameters:\n    - **dtype** str, data type, Series or Mapping of column name -> data type\n    - Use a str, numpy.dtype, pandas.ExtensionDtype or Python type to cast entire pandas object to the same type. Alternatively, use a mapping, e.g. {col: dtype, …}, where col is a column label and dtype is a numpy.dtype or Python type to cast one or more of the DataFrame’s columns to column-specific types. The mapping may be a `dict` or a`Series` indexed by column label; columns whose labels are\nabsent from the mapping are left unchanged. A Python type (e.g.`int` ,`float` ,`str` ,`bool` ) is mapped to the corresponding\ndtype; a type with no such mapping, such as`datetime.datetime` ,\nraises`TypeError` .\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n    - **errors** {‘raise’, ‘ignore’}, default ‘raise’\n    - Control raising of exceptions on invalid data for provided dtype. \n      - `raise` : allow exceptions to be raised\n      - `ignore` : suppress exceptions. On error return original object.\n  - Returns:\n    - same type as caller\n    - The pandas object casted to the specified `dtype` .\n See also \n  - `to_datetime`\n  - Convert argument to datetime.\n  - `to_timedelta`\n  - Convert argument to timedelta.\n  - `to_numeric`\n  - Convert argument to a numeric type.\n  - `numpy.ndarray.astype`\n  - Cast a numpy array to a specified type.\n Notes Changed in version 2.0.0: Using `astype` to convert from timezone-naive dtype to\ntimezone-aware dtype will raise an exception.\nUse`Series.dt.tz_localize()` instead.Examples Create a DataFrame: >>> d = {\"col1\": [1, 2], \"col2\": [3, 4]} >>> df = pd.DataFrame(data=d) >>> df.dtypes col1 int64 col2 int64 dtype: object Cast all columns to int32: >>> df.astype(\"int32\").dtypes col1 int32 col2 int32 dtype: object Cast col1 to int32 using a dictionary: >>> df.astype({\"col1\": \"int32\"}).dtypes col1 int32 col2 int64 dtype: object Create a series: >>> ser = pd.Series([1, 2], dtype=\"int32\") >>> ser 0 1 1 2 dtype: int32 >>> ser.astype(\"int64\") 0 1 1 2 dtype: int64 Convert to categorical type: >>> ser.astype(\"category\") 0 1 1 2 dtype: category Categories (2, int32): [1, 2] Convert to ordered categorical type with custom ordering: >>> from pandas.api.types import CategoricalDtype >>> cat_dtype = CategoricalDtype(categories=[2, 1], ordered=True) >>> ser.astype(cat_dtype) 0 1 1 2 dtype: category Categories (2, int64): [2 < 1] Create a series of dates: >>> ser_date = pd.Series(pd.date_range(\"20200101\", periods=3)) >>> ser_date 0 2020-01-01 1 2020-01-02 2 2020-01-03 dtype: datetime64[us]",
     "markdown_length": 3309,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.astype — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.astype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.576417",
+    "crawled_at": "2026-08-26T06:49:00.455448",
     "type": "webpage"
 }

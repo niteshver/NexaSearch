@@ -2,7 +2,7 @@
     "id": "abb74b828782c7775b48152ee67a1fdf",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.levshape.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.levshape.html",
-    "title": "pandas.MultiIndex.levshape — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.levshape — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.levshape#\n\n- property MultiIndex.levshape[source]#\n- A tuple representing the length of each level in the MultiIndex. In a MultiIndex, each level can contain multiple unique values. The levshape property provides a quick way to assess the size of each level by returning a tuple where each entry represents the number of unique values in that specific level. This is particularly useful in scenarios where you need to understand the structure and distribution of your index levels, such as when working with multidimensional data. See also \n  - `MultiIndex.shape`\n  - Return a tuple of the shape of the MultiIndex.\n  - `MultiIndex.levels`\n  - Returns the levels of the MultiIndex.\n Examples >>> mi = pd.MultiIndex.from_arrays([[\"a\"], [\"b\"], [\"c\"]]) >>> mi MultiIndex([('a', 'b', 'c')], ) >>> mi.levshape (1, 1, 1)",
     "markdown_length": 833,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.levshape — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.levshape — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.levshape.html"
     },
-    "crawled_at": "2026-08-10T11:47:44.418466",
+    "crawled_at": "2026-08-26T06:50:48.397084",
     "type": "webpage"
 }

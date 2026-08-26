@@ -2,7 +2,7 @@
     "id": "bc0ff1e55dbc26e0e5dbc74ae8b420eb",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.23.4.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.23.4.html",
-    "title": "What’s new in 0.23.4 (August 3, 2018) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "What’s new in 0.23.4 (August 3, 2018) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# What’s new in 0.23.4 (August 3, 2018)#\n\nThis is a minor bug-fix release in the 0.23.x series and includes some small regression fixes and bug fixes. We recommend that all users upgrade to this version.\n\nWarning\n\nStarting January 1, 2019, pandas feature releases will support Python 3 only. See Dropping Python 2.7 for more.\n\n## Fixed regressions#\n\n- Python 3.7 with Windows gave all missing values for rolling variance calculations (GH 21813)\n\n## Bug fixes#\n\n**Groupby/resample/rolling**\n\n- Bug where calling `DataFrameGroupBy.agg()` with a list of functions including`ohlc` as the non-initial element would raise a`ValueError` (GH 21716)\n- Bug in `roll_quantile` caused a memory leak when calling`.rolling(...).quantile(q)` with`q` in (0,1) (GH 21965)\n\n**Missing**\n\n- Bug in `Series.clip()` and`DataFrame.clip()` cannot accept list-like threshold containing`NaN` (GH 19992)\n\n## Contributors#\n\nA total of 6 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Jeff Reback\n- MeeseeksMachine +\n- Tom Augspurger\n- chris-b1\n- h-vetinari\n- meeseeksdev[bot]",
     "markdown_length": 1120,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 0.23.4 (August 3, 2018) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "What’s new in 0.23.4 (August 3, 2018) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:31.973205",
+    "crawled_at": "2026-08-26T06:52:04.323336",
     "type": "webpage"
 }

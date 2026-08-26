@@ -2,7 +2,7 @@
     "id": "3c538a60596086f767db2cc779c26238",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.remove.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.remove.html",
-    "title": "pandas.HDFStore.remove — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.HDFStore.remove — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.remove#\n\n- \nHDFStore.remove(*key* ,*where=None* ,*start=None* ,*stop=None* )[source]#\n- Remove pandas object partially by specifying the where condition. If `where` is not provided, the entire object stored at`key` (and any of its child nodes) is removed. When`where` is given,\nonly matching rows are deleted, which requires the object to be in`table` format.\n  - Parameters:\n    - **key** str\n    - Node to remove or delete rows from.\n    - **where** list of Term (or convertible) objects, optional\n    - Conditions selecting which rows to remove.\n    - **start** int, optional\n    - Row number to start selection.\n    - **stop** int, optional\n    - Row number to stop selection.\n  - Returns:\n    - int or None\n    - Number of rows removed (or `None` if the object is not a Table).\n  - Raises:\n    - KeyError\n    - If `key` is not a valid store.\n See also \n  - `HDFStore.append`\n  - Append data to an existing table.\n  - `HDFStore.put`\n  - Store an object in the file.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> store.remove(\"data\") >>> store.close()",
     "markdown_length": 1167,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.remove — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.HDFStore.remove — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.612347",
+    "crawled_at": "2026-08-26T06:49:07.930229",
     "type": "webpage"
 }

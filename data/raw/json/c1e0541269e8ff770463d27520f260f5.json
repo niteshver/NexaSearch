@@ -2,7 +2,7 @@
     "id": "c1e0541269e8ff770463d27520f260f5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.__iter__.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.__iter__.html",
-    "title": "pandas.DataFrame.__iter__ — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.__iter__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.__iter__#\n\n- DataFrame.__iter__()[source]#\n- Iterate over info axis. For a DataFrame this yields column names (labels); for a Series it yields the single name. Enables iteration over the object with `for col in df` .\n  - Returns:\n    - iterator\n    - Info axis as iterator.\n See also \n  - `DataFrame.items`\n  - Iterate over (column name, Series) pairs.\n  - `DataFrame.itertuples`\n  - Iterate over DataFrame rows as namedtuples.\n Examples >>> df = pd.DataFrame({\"A\": [1, 2, 3], \"B\": [4, 5, 6]}) >>> for x in df: ... print(x) A B",
     "markdown_length": 546,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.__iter__ — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.__iter__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.301425",
+    "crawled_at": "2026-08-26T06:48:59.981295",
     "type": "webpage"
 }

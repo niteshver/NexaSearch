@@ -2,7 +2,7 @@
     "id": "fe771fd351be31aa9b2c53d53208ec6e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.from_codes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.from_codes.html",
-    "title": "pandas.Categorical.from_codes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Categorical.from_codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Categorical.from_codes#\n\n- \nclassmethod Categorical.from_codes(*codes* ,*categories=None* ,*ordered=None* ,*dtype=None* ,*validate=True* )[source]#\n- Make a Categorical type from codes and categories or dtype. This constructor is useful if you already have codes and categories/dtype and so do not need the (computation intensive) factorization step, which is usually done on the constructor. If your data does not follow this convention, please use the normal constructor. \n  - Parameters:\n    - **codes** array-like of int\n    - An integer array, where each integer points to a category in categories or dtype.categories, or else is -1 for NaN.\n    - **categories** index-like, optional\n    - The categories for the categorical. Items need to be unique. If the categories are not given here, then they must be provided in dtype.\n    - **ordered** bool, optional\n    - Whether or not this categorical is treated as an ordered categorical. If not given here or in dtype, the resulting categorical will be unordered.\n    - **dtype** CategoricalDtype or “category”, optional\n    - If `CategoricalDtype` , cannot be used together with\ncategories or ordered.\n    - **validate** bool, default True\n    - If True, validate that the codes are valid for the dtype. If False, don’t validate that the codes are valid. Be careful about skipping validation, as invalid codes can lead to severe problems, such as segfaults. Added in version 2.1.0.\n  - Returns:\n    - Categorical\n See also \n  - `codes`\n  - The category codes of the categorical.\n  - `CategoricalIndex`\n  - An Index with an underlying `Categorical` .\n Examples >>> dtype = pd.CategoricalDtype([\"a\", \"b\"], ordered=True) >>> pd.Categorical.from_codes(codes=[0, 1, 0, 1], dtype=dtype) ['a', 'b', 'a', 'b'] Categories (2, str): ['a' < 'b']",
     "markdown_length": 1796,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Categorical.from_codes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Categorical.from_codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.codes.html"
     },
-    "crawled_at": "2026-08-10T11:46:44.982600",
+    "crawled_at": "2026-08-26T06:48:59.345654",
     "type": "webpage"
 }

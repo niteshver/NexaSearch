@@ -2,7 +2,7 @@
     "id": "ff5b995fe3fe61570a22d117db48cb02",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.xs.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.xs.html",
-    "title": "pandas.Series.xs — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.xs — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.xs#\n\n- \nSeries.xs(*key* ,*axis=0* ,*level=None* ,*drop_level=True* )[source]#\n- Return cross-section from the Series/DataFrame. This method takes a key argument to select data at a particular level of a MultiIndex. \n  - Parameters:\n    - **key** label or tuple of label\n    - Label contained in the index, or partially in a MultiIndex.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - Axis to retrieve cross-section on.\n    - **level** object, defaults to first n levels (n=1 or len(key))\n    - In case of a key partially contained in a MultiIndex, indicate which levels are used. Levels can be referred by label or position.\n    - **drop_level** bool, default True\n    - If False, returns object with same levels as self.\n  - Returns:\n    - Series or DataFrame\n    - Cross-section from the original Series or DataFrame corresponding to the selected index levels.\n See also \n  - `DataFrame.loc`\n  - Access a group of rows and columns by label(s) or a boolean array.\n  - `DataFrame.iloc`\n  - Purely integer-location based indexing for selection by position.\n Notes xs can not be used to set values. MultiIndex Slicers is a generic way to get/set values on any level or levels. It is a superset of xs functionality, see MultiIndex Slicers. Examples >>> d = { ... \"num_legs\": [4, 4, 2, 2], ... \"num_wings\": [0, 0, 2, 2], ... \"class\": [\"mammal\", \"mammal\", \"mammal\", \"bird\"], ... \"animal\": [\"cat\", \"dog\", \"bat\", \"penguin\"], ... \"locomotion\": [\"walks\", \"walks\", \"flies\", \"walks\"], ... } >>> df = pd.DataFrame(data=d) >>> df = df.set_index([\"class\", \"animal\", \"locomotion\"]) >>> df num_legs num_wings class animal locomotion mammal cat walks 4 0 dog walks 4 0 bat flies 2 2 bird penguin walks 2 2 Get values at specified index >>> df.xs(\"mammal\") num_legs num_wings animal locomotion cat walks 4 0 dog walks 4 0 bat flies 2 2 Get values at several indexes >>> df.xs((\"mammal\", \"dog\", \"walks\")) num_legs 4 num_wings 0 Name: (mammal, dog, walks), dtype: int64 Get values at specified index and level >>> df.xs(\"cat\", level=1) num_legs num_wings class locomotion mammal walks 4 0 Get values at several indexes and levels >>> df.xs((\"bird\", \"walks\"), level=[0, \"locomotion\"]) num_legs num_wings animal penguin 2 2 Get values at specified column and axis >>> df.xs(\"num_wings\", axis=1) class animal locomotion mammal cat walks 0 dog walks 0 bat flies 2 bird penguin walks 2 Name: num_wings, dtype: int64",
     "markdown_length": 2421,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.xs — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.xs — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.901552",
+    "crawled_at": "2026-08-26T06:50:34.065841",
     "type": "webpage"
 }

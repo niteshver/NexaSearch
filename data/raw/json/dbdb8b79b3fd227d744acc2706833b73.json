@@ -2,7 +2,7 @@
     "id": "dbdb8b79b3fd227d744acc2706833b73",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.diff.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.diff.html",
-    "title": "pandas.Series.diff — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.diff — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.diff#\n\n- \nSeries.diff(*periods=1* )[source]#\n- First discrete difference of Series elements. Calculates the difference of a Series element compared with another element in the Series (default is element in previous row). \n  - Parameters:\n    - **periods** int, default 1\n    - Periods to shift for calculating difference, accepts negative values.\n  - Returns:\n    - Series\n    - First differences of the Series.\n See also \n  - `Series.pct_change`\n  - Percent change over given number of periods.\n  - `Series.shift`\n  - Shift index by desired number of periods with an optional time freq.\n  - `DataFrame.diff`\n  - First discrete difference of object.\n Notes Equivalent to `self - self.shift(periods)` , except that boolean\ndtypes use`operator.xor()` rather than`operator.sub()` ; the\nresult dtype follows from that operation.In particular, because the leading `periods` positions are filled\nwith a missing value, NumPy integer dtypes are cast to floating and\nNumPy`bool` to`object` .Examples Difference with previous row >>> s = pd.Series([1, 1, 2, 3, 5, 8]) >>> s.diff() 0 NaN 1 0.0 2 1.0 3 1.0 4 2.0 5 3.0 dtype: float64 Difference with 3rd previous row >>> s.diff(periods=3) 0 NaN 1 NaN 2 NaN 3 2.0 4 4.0 5 6.0 dtype: float64 Difference with following row >>> s.diff(periods=-1) 0 0.0 1 -1.0 2 -1.0 3 -2.0 4 -3.0 5 NaN dtype: float64 Overflow in input dtype >>> s = pd.Series([1, 0], dtype=np.uint8) >>> s.diff() 0 NaN 1 255.0 dtype: float64",
     "markdown_length": 1459,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.diff — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.diff — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.403903",
+    "crawled_at": "2026-08-26T06:49:13.109781",
     "type": "webpage"
 }

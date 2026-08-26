@@ -2,7 +2,7 @@
     "id": "9d4648ab1917db5aedeff8bdf0033353",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.tz_convert.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.tz_convert.html",
-    "title": "pandas.Series.tz_convert — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.tz_convert — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.tz_convert#\n\n- \nSeries.tz_convert(*tz* ,*axis=0* ,*level=None* ,*copy=<no_default>* )[source]#\n- Convert tz-aware axis to target time zone. This method converts the timezone of a datetime-based index from one timezone to another. \n  - Parameters:\n    - **tz** str or tzinfo object or None\n    - Target time zone. Passing `None` will convert to\nUTC and remove the timezone information.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to convert\n    - **level** int, str, default None\n    - If axis is a MultiIndex, convert a specific level. Otherwise must be None.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - Series/DataFrame\n    - Object with time zone converted axis.\n  - Raises:\n    - TypeError\n    - If the axis is tz-naive.\n See also \n  - `DataFrame.tz_localize`\n  - Localize tz-naive index of DataFrame to target time zone.\n  - `Series.tz_localize`\n  - Localize tz-naive index of Series to target time zone.\n Examples Change to another time zone: >>> s = pd.Series( ... [1], ... index=pd.DatetimeIndex([\"2018-09-15 01:30:00+02:00\"]), ... ) >>> s.tz_convert(\"Asia/Shanghai\") 2018-09-15 07:30:00+08:00 1 dtype: int64 Pass None to convert to UTC and get a tz-naive index: >>> s = pd.Series([1], index=pd.DatetimeIndex([\"2018-09-15 01:30:00+02:00\"])) >>> s.tz_convert(None) 2018-09-14 23:30:00 1 dtype: int64",
     "markdown_length": 1731,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.tz_convert — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.tz_convert — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.709289",
+    "crawled_at": "2026-08-26T06:51:02.693161",
     "type": "webpage"
 }

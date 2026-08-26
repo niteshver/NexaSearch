@@ -2,7 +2,7 @@
     "id": "8a7324ab5ae94a69dbf4aef0859916cf",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset.html",
-    "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset#\n\n- \nCustomBusinessMonthEnd.is_on_offset(*dt* )#\n- Return boolean whether a timestamp intersects with this frequency. This method determines if a given timestamp aligns with the start of a custom business month, as defined by this offset. It accounts for custom rules, such as skipping weekends or other non-business days, and checks whether the provided datetime falls on a valid business day that marks the beginning of the custom business month. \n  - Parameters:\n    - **dt** datetime.datetime\n    - Timestamp to check intersections with frequency.\n See also \n  - `tseries.offsets.CustomBusinessMonthBegin`\n  - Represents the start of a custom business month.\n  - `tseries.offsets.CustomBusinessMonthEnd`\n  - Represents the end of a custom business month.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.Day(1) >>> freq.is_on_offset(ts) True >>> ts = pd.Timestamp(2022, 8, 6) >>> ts.day_name() 'Saturday' >>> freq = pd.offsets.BusinessDay(1) >>> freq.is_on_offset(ts) False",
     "markdown_length": 1055,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:18.307395",
+    "crawled_at": "2026-08-26T06:51:06.392930",
     "type": "webpage"
 }

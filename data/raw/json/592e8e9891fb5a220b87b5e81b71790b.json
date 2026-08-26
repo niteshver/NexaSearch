@@ -2,7 +2,7 @@
     "id": "592e8e9891fb5a220b87b5e81b71790b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.pad.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.pad.html",
-    "title": "pandas.Series.str.pad — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.pad — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.pad#\n\n- \nSeries.str.pad(*width* ,*side='left'* ,*fillchar=' '* )[source]#\n- Pad strings in the Series/Index up to width. This function pads strings in a Series or Index to a specified width, filling the extra space with a character of your choice. It provides flexibility in positioning the padding, allowing it to be added to the left, right, or both sides. This is useful for formatting strings to align text or ensure consistent string lengths in data processing. \n  - Parameters:\n    - **width** int\n    - Minimum width of resulting string; additional characters will be filled with character defined in fillchar.\n    - **side** {‘left’, ‘right’, ‘both’}, default ‘left’\n    - Side from which to fill resulting string.\n    - **fillchar** str, default ‘ ‘\n    - Additional character for filling, default is whitespace.\n  - Returns:\n    - Series or Index of object\n    - Returns Series or Index with minimum number of char in object.\n See also \n  - `Series.str.rjust`\n  - Fills the left side of strings with an arbitrary character. Equivalent to `Series.str.pad(side='left')` .\n  - `Series.str.ljust`\n  - Fills the right side of strings with an arbitrary character. Equivalent to `Series.str.pad(side='right')` .\n  - `Series.str.center`\n  - Fills both sides of strings with an arbitrary character. Equivalent to `Series.str.pad(side='both')` .\n  - `Series.str.zfill`\n  - Pad strings in the Series/Index by prepending ‘0’ character. Equivalent to `Series.str.pad(side='left', fillchar='0')` .\n Examples >>> s = pd.Series([\"caribou\", \"tiger\"]) >>> s 0 caribou 1 tiger dtype: str >>> s.str.pad(width=10) 0 caribou 1 tiger dtype: str >>> s.str.pad(width=10, side=\"right\", fillchar=\"-\") 0 caribou--- 1 tiger----- dtype: str >>> s.str.pad(width=10, side=\"both\", fillchar=\"-\") 0 -caribou-- 1 --tiger--- dtype: str",
     "markdown_length": 1828,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.pad — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.pad — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.400739",
+    "crawled_at": "2026-08-26T06:50:45.901701",
     "type": "webpage"
 }

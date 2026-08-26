@@ -2,7 +2,7 @@
     "id": "9fae64ecb9d0fa658cefbd22049415a3",
     "url": "http://pandas.pydata.org/docs/dev/development/copy_on_write.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/development/copy_on_write.html",
-    "title": "Copy on write — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Copy on write — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# Copy on write#\n\nCopy on Write is a mechanism to simplify the indexing API and improve performance through avoiding copies if possible. CoW means that any DataFrame or Series derived from another in any way always behaves as a copy. An explanation on how to use Copy on Write efficiently can be found here.\n\n## Reference tracking#\n\nTo be able to determine if we have to make a copy when writing into a DataFrame,\nwe have to be aware if the values are shared with another DataFrame. pandas\nkeeps track of all `Blocks` that share values with another block internally to\nbe able to tell when a copy needs to be triggered. The reference tracking\nmechanism is implemented on the Block level.\n\nWe use a custom reference tracker object, `BlockValuesRefs`, that keeps\ntrack of every block, whose values share memory with each other. The reference\nis held through a weak-reference. Every pair of blocks that share some memory should\npoint to the same `BlockValuesRefs` object. If one block goes out of\nscope, the reference to this block dies. As a consequence, the reference tracker\nobject always knows how many blocks are alive and share memory.\n\nWhenever a `DataFrame` or `Series` object is sharing data with another\nobject, it is required that each of those objects have its own BlockManager and Block\nobjects. Thus, in other words, one Block instance (that is held by a DataFrame, not\nnecessarily for intermediate objects) should always be uniquely used for only\na single DataFrame/Series object. For example, when you want to use the same\nBlock for another object, you can create a shallow copy of the Block instance\nwith `block.copy(deep=False)` (which will create a new Block instance with\nthe same underlying values and which will correctly set up the references).\n\nWe can ask the reference tracking object if there is another block alive that shares data with us before writing into the values. We can trigger a copy before writing if there is in fact another block alive.",
     "markdown_length": 1973,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Copy on write — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Copy on write — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/development/index.html"
     },
-    "crawled_at": "2026-08-10T11:46:44.068230",
+    "crawled_at": "2026-08-26T06:48:57.655176",
     "type": "webpage"
 }

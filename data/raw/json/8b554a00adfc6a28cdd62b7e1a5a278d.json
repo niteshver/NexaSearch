@@ -2,7 +2,7 @@
     "id": "8b554a00adfc6a28cdd62b7e1a5a278d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.count.html",
-    "title": "pandas.Series.count — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.count — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.count#\n\n- Series.count()[source]#\n- Return number of non-NA/null observations in the Series. This method counts the number of elements that are not missing (i.e., not NaN or None) in the Series. \n  - Returns:\n    - int\n    - Number of non-null values in the Series.\n See also \n  - `DataFrame.count`\n  - Count non-NA cells for each column or row.\n Examples >>> s = pd.Series([0.0, 1.0, np.nan]) >>> s.count() 2",
     "markdown_length": 425,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.count — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.count — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.nunique.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.234647",
+    "crawled_at": "2026-08-26T06:49:12.760507",
     "type": "webpage"
 }

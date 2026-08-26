@@ -2,7 +2,7 @@
     "id": "939ec6e845b6f56d36a48716e880c149",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.skew.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.skew.html",
-    "title": "pandas.DataFrame.skew — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.skew — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.skew#\n\n- \nDataFrame.skew(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased skew over requested axis. Normalized by N-1. \n  - Parameters:\n    - **axis** {index (0), columns (1)}, default 0\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation\nacross both axes.Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Series or scalar\n    - Unbiased skew over requested axis.\n See also \n  - `DataFrame.kurt`\n  - Returns unbiased kurtosis over requested axis.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.skew() 0.0 With a DataFrame >>> df = pd.DataFrame( ... {\"a\": [1, 2, 3], \"b\": [2, 3, 4], \"c\": [1, 3, 5]}, ... index=[\"tiger\", \"zebra\", \"cow\"], ... ) >>> df a b c tiger 1 2 1 zebra 2 3 3 cow 3 4 5 >>> df.skew() a 0.0 b 0.0 c 0.0 dtype: float64 Using axis=1 >>> df.skew(axis=1) tiger 1.732051 zebra -1.732051 cow 0.000000 dtype: float64 In this case, numeric_only should be set to True to avoid getting an error. >>> df = pd.DataFrame( ... {\"a\": [1, 2, 3], \"b\": [\"T\", \"Z\", \"X\"]}, index=[\"tiger\", \"zebra\", \"cow\"] ... ) >>> df.skew(numeric_only=True) a 0.0 dtype: float64",
     "markdown_length": 1573,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.skew — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.skew — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.388062",
+    "crawled_at": "2026-08-26T06:49:05.657334",
     "type": "webpage"
 }

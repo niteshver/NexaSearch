@@ -2,7 +2,7 @@
     "id": "3a32736a0a7e7a3622086eab64499482",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.quarter.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.quarter.html",
-    "title": "pandas.Period.quarter — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.quarter — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.quarter#\n\n- Period.quarter#\n- Return the quarter this Period falls on. Quarter 1 includes January through March, quarter 2 includes April through June, quarter 3 includes July through September, and quarter 4 includes October through December. See also \n  - `Timestamp.quarter`\n  - Return the quarter of the Timestamp.\n  - `Period.year`\n  - Return the year of the period.\n  - `Period.month`\n  - Return the month of the period.\n Examples >>> period = pd.Period('2022-04', 'M') >>> period.quarter 2",
     "markdown_length": 512,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.quarter — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.quarter — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.611875",
+    "crawled_at": "2026-08-26T06:49:09.767250",
     "type": "webpage"
 }

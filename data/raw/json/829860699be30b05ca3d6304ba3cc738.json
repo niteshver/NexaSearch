@@ -2,7 +2,7 @@
     "id": "829860699be30b05ca3d6304ba3cc738",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.set_names.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.set_names.html",
-    "title": "pandas.Index.set_names — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.set_names — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.set_names#\n\n- \nIndex.set_names(*names* ,*** ,*level=None* ,*inplace=False* )[source]#\n- Set Index or MultiIndex name. Able to set new names partially and by level. \n  - Parameters:\n    - **names** Hashable or a sequence of the previous or dict-like for MultiIndex\n    - Name(s) to set.\n    - **level** int, Hashable or a sequence of the previous, optional\n    - If the index is a MultiIndex and names is not dict-like, level(s) to set (None for all levels). Otherwise level must be None.\n    - **inplace** bool, default False\n    - Modifies the object directly, instead of creating a new Index or MultiIndex.\n  - Returns:\n    - Index or None\n    - The same type as the caller or None if `inplace=True` .\n See also \n  - `Index.rename`\n  - Able to set new names without level.\n Examples >>> idx = pd.Index([1, 2, 3, 4]) >>> idx Index([1, 2, 3, 4], dtype='int64') >>> idx.set_names(\"quarter\") Index([1, 2, 3, 4], dtype='int64', name='quarter') >>> idx = pd.MultiIndex.from_product([[\"python\", \"cobra\"], [2018, 2019]]) >>> idx MultiIndex([('python', 2018), ('python', 2019), ( 'cobra', 2018), ( 'cobra', 2019)], ) >>> idx = idx.set_names([\"kind\", \"year\"]) >>> idx.set_names(\"species\", level=0) MultiIndex([('python', 2018), ('python', 2019), ( 'cobra', 2018), ( 'cobra', 2019)], names=['species', 'year']) When renaming levels with a dict, levels can not be passed. >>> idx.set_names({\"kind\": \"snake\"}) MultiIndex([('python', 2018), ('python', 2019), ( 'cobra', 2018), ( 'cobra', 2019)], names=['snake', 'year'])",
     "markdown_length": 1523,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.set_names — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.set_names — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.048455",
+    "crawled_at": "2026-08-26T06:48:50.313868",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "7825d4681dfd3519244b40e1350baa0b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.slice.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.slice.html",
-    "title": "pandas.Series.str.slice — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.slice — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.slice#\n\n- \nSeries.str.slice(*start=None* ,*stop=None* ,*step=None* )[source]#\n- Slice substrings from each element in the Series or Index. Slicing substrings from strings in a Series or Index helps extract specific portions of data, making it easier to analyze or manipulate text. This is useful for tasks like parsing structured text fields or isolating parts of strings with a consistent format. \n  - Parameters:\n    - **start** int, optional\n    - Start position for slice operation.\n    - **stop** int, optional\n    - Stop position for slice operation.\n    - **step** int, optional\n    - Step size for slice operation.\n  - Returns:\n    - Series or Index of object\n    - Series or Index from sliced substring from original string object.\n See also \n  - `Series.str.slice_replace`\n  - Replace a slice with a string.\n  - `Series.str.get`\n  - Return element at position. Equivalent to Series.str.slice(start=i, stop=i+1) with i being the position.\n Examples >>> s = pd.Series([\"koala\", \"dog\", \"chameleon\"]) >>> s 0 koala 1 dog 2 chameleon dtype: str >>> s.str.slice(start=1) 0 oala 1 og 2 hameleon dtype: str >>> s.str.slice(start=-1) 0 a 1 g 2 n dtype: str >>> s.str.slice(stop=2) 0 ko 1 do 2 ch dtype: str >>> s.str.slice(step=2) 0 kaa 1 dg 2 caeen dtype: str >>> s.str.slice(start=0, stop=5, step=3) 0 kl 1 d 2 cm dtype: str Equivalent behaviour to: >>> s.str[0:5:3] 0 kl 1 d 2 cm dtype: str",
     "markdown_length": 1414,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.slice — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.slice — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.729679",
+    "crawled_at": "2026-08-26T06:51:07.067094",
     "type": "webpage"
 }

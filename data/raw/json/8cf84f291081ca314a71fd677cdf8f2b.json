@@ -2,7 +2,7 @@
     "id": "8cf84f291081ca314a71fd677cdf8f2b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.ordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.ordered.html",
-    "title": "pandas.Series.cat.ordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.cat.ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.cat.ordered#\n\n- Series.cat.ordered[source]#\n- Whether the categories have an ordered relationship. This property returns True if the categories are ordered, meaning they have a meaningful order that allows comparison operations. See also \n  - `set_ordered`\n  - Set the ordered attribute.\n  - `as_ordered`\n  - Set the Categorical to be ordered.\n  - `as_unordered`\n  - Set the Categorical to be unordered.\n Examples For `pandas.Series` :>>> ser = pd.Series([\"a\", \"b\", \"c\", \"a\"], dtype=\"category\") >>> ser.cat.ordered False >>> raw_cat = pd.Categorical([\"a\", \"b\", \"c\", \"a\"], ordered=True) >>> ser = pd.Series(raw_cat) >>> ser.cat.ordered True For `pandas.Categorical` :>>> cat = pd.Categorical([\"a\", \"b\"], ordered=True) >>> cat.ordered True >>> cat = pd.Categorical([\"a\", \"b\"], ordered=False) >>> cat.ordered False For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"b\"], ordered=True) >>> ci.ordered True >>> ci = pd.CategoricalIndex([\"a\", \"b\"], ordered=False) >>> ci.ordered False",
     "markdown_length": 1010,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cat.ordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.cat.ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:51.877312",
+    "crawled_at": "2026-08-26T06:49:12.109193",
     "type": "webpage"
 }

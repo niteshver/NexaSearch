@@ -2,7 +2,7 @@
     "id": "3078bfe4d890ec4e280e25adb516b047",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.html",
-    "title": "pandas.Series.dt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt#\n\n- Series.dt()[source]#\n- Accessor object for Series values’ datetime-like, timedelta and period properties. This accessor provides access to properties and methods for datetime-like, timedelta, and period data types. It can be used with Series containing datetime64, timedelta64, or period data. \n  - Parameters:\n    - **data** Series\n    - Series with datetime-like, timedelta, or period dtype.\n See also \n  - `DatetimeIndex`\n  - Index of datetime64 data.\n Examples >>> dates = pd.Series( ... [\"2024-01-01\", \"2024-01-15\", \"2024-02-5\"], dtype=\"datetime64[ns]\" ... ) >>> dates.dt.day 0 1 1 15 2 5 dtype: int32 >>> dates.dt.month 0 1 1 1 2 2 dtype: int32 >>> dates = pd.Series( ... [\"2024-01-01\", \"2024-01-15\", \"2024-02-5\"], dtype=\"datetime64[ns, UTC]\" ... ) >>> dates.dt.day 0 1 1 15 2 5 dtype: int32 >>> dates.dt.month 0 1 1 1 2 2 dtype: int32",
     "markdown_length": 864,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.114675",
+    "crawled_at": "2026-08-26T06:49:14.466651",
     "type": "webpage"
 }

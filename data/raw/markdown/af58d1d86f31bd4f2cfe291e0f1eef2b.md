@@ -1,7 +1,7 @@
 # pandas.DataFrame.sort_index#
 
 - 
-DataFrame.sort_index(*** ,*axis=0* ,*level=None* ,*ascending=True* ,*inplace=False* ,*kind='quicksort'* ,*na_position='last'* ,*sort_remaining=True* ,*ignore_index=False* ,*key=None* )[source]#
+DataFrame.sort_index(*** ,*axis=0* ,*level=None* ,*ascending=True* ,*inplace=<no_default>* ,*kind='quicksort'* ,*na_position='last'* ,*sort_remaining=True* ,*ignore_index=False* ,*key=None* )[source]#
 - Sort object by labels (along an axis). Returns a new DataFrame sorted by label if inplace argument is `False` , otherwise updates the original DataFrame and returns None.
   - Parameters:
     - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0
@@ -11,12 +11,13 @@ DataFrame.sort_index(*** ,*axis=0* ,*level=None* ,*ascending=True* ,*inplace=Fal
     - **ascending** bool or list-like of bools, default True
     - Sort ascending vs. descending. When the index is a MultiIndex the sort direction can be controlled for each level individually.
     - **inplace** bool, default False
-    - Whether to modify the DataFrame rather than creating a new one.
+    - Whether to modify the DataFrame rather than creating a new one. Deprecated since version 3.1.0: This keyword is deprecated and will be removed in pandas 4.0. See PDEP-8 In-place methods in pandas for more details.
     - **kind** {‘quicksort’, ‘mergesort’, ‘heapsort’, ‘stable’}, default ‘quicksort’
     - Choice of sorting algorithm. See also `numpy.sort()` for more
-information. mergesort and stable are the only stable algorithms. For
-DataFrames, this option is only applied when sorting on a single
-column or label.
+information. The sort order is deterministic for a given input.
+‘mergesort’ and ‘stable’ are the only stable algorithms, which preserve
+the relative order of equal keys. This option is ignored when sorting on a
+MultiIndex or when a level is specified.
     - **na_position** {‘first’, ‘last’}, default ‘last’
     - Puts NaNs at the beginning if first; last puts NaNs at the end. Not implemented for MultiIndex.
     - **sort_remaining** bool, default True

@@ -2,7 +2,7 @@
     "id": "229c20ce8f58eea593ae9a5d46db4bc0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.to_list.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.to_list.html",
-    "title": "pandas.Index.to_list — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.to_list — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.to_list#\n\n- Index.to_list()[source]#\n- Return a list of the values. These are each a scalar type, which is a Python scalar (for str, int, float) or a pandas scalar (for Timestamp/Timedelta/Interval/Period) \n  - Returns:\n    - list\n    - List containing the values as Python or pandas scalers.\n See also \n  - `numpy.ndarray.tolist`\n  - Return the array as an a.ndim-levels deep nested list of Python scalars.\n Examples For Series >>> s = pd.Series([1, 2, 3]) >>> s.to_list() [1, 2, 3] For Index: >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.to_list() [1, 2, 3]",
     "markdown_length": 607,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.to_list — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.to_list — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.357030",
+    "crawled_at": "2026-08-26T06:48:50.807182",
     "type": "webpage"
 }

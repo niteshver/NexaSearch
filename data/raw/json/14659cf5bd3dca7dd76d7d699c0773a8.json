@@ -2,7 +2,7 @@
     "id": "14659cf5bd3dca7dd76d7d699c0773a8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.freq.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.freq.html",
-    "title": "pandas.DatetimeIndex.freq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DatetimeIndex.freq — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.freq#\n\n- property DatetimeIndex.freq[source]#\n- Return the frequency object if it is set, otherwise None. To learn more about the frequency strings, please see this link. See also \n  - `DatetimeIndex.freq`\n  - Return the frequency object if it is set, otherwise None.\n  - `PeriodIndex.freq`\n  - Return the frequency object if it is set, otherwise None.\n Examples >>> datetimeindex = pd.date_range( ... \"2022-02-22 02:22:22\", periods=10, tz=\"America/Chicago\", freq=\"h\" ... ) >>> datetimeindex DatetimeIndex(['2022-02-22 02:22:22-06:00', '2022-02-22 03:22:22-06:00', '2022-02-22 04:22:22-06:00', '2022-02-22 05:22:22-06:00', '2022-02-22 06:22:22-06:00', '2022-02-22 07:22:22-06:00', '2022-02-22 08:22:22-06:00', '2022-02-22 09:22:22-06:00', '2022-02-22 10:22:22-06:00', '2022-02-22 11:22:22-06:00'], dtype='datetime64[us, America/Chicago]', freq='h') >>> datetimeindex.freq <Hour>",
     "markdown_length": 901,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.freq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DatetimeIndex.freq — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:37.769860",
+    "crawled_at": "2026-08-26T06:48:45.972328",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "25115fe463bd600867bfa5feb4e701ca",
     "url": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
-    "title": "General functions — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "General functions — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# General functions#\n\nNote\n\nFor an overview, see Reshaping and pivot tables.\n\n## Data manipulations#\n\n| `melt` (frame[, id_vars, value_vars, var_name, ...]) | Unpivot a DataFrame from wide to long format, optionally leaving identifiers set. | \n| `pivot` (data, *, columns[, index, values]) | Return reshaped DataFrame organized by given index / column values. | \n| `pivot_table` (data[, values, index, columns, ...]) | Create a spreadsheet-style pivot table as a DataFrame. | \n| `crosstab` (index, columns[, values, rownames, ...]) | Compute a simple cross tabulation of two (or more) factors. | \n| `cut` (x, bins[, right, labels, retbins, ...]) | Bin values into discrete intervals. | \n| `qcut` (x, q[, labels, retbins, precision, ...]) | Quantile-based discretization function. | \n| `merge` (left, right[, how, on, left_on, ...]) | Merge DataFrame or named Series objects with a database-style join. | \n| `merge_ordered` (left, right[, on, left_on, ...]) | Perform a merge for ordered data with optional filling/interpolation. | \n| `merge_asof` (left, right[, on, left_on, ...]) | Perform a merge by key distance. | \n| `concat` (objs, *[, axis, join, ignore_index, ...]) | Concatenate pandas objects along a particular axis. | \n| `get_dummies` (data[, prefix, prefix_sep, ...]) | Convert categorical variable into dummy/indicator variables. | \n| `from_dummies` (data[, sep, default_category]) | Create a categorical `DataFrame` from a`DataFrame` of dummy variables. | \n| `factorize` (values[, sort, use_na_sentinel, ...]) | Encode the object as an enumerated type or categorical variable. | \n| `unique` (values) | Return unique values based on a hash table. | \n| `lreshape` (data, groups[, dropna]) | Reshape wide-format data to long. | \n| `wide_to_long` (df, stubnames, i, j[, sep, suffix]) | Unpivot a DataFrame from wide to long format. | \n\n## Top-level missing data#\n\n## Top-level dealing with numeric data#\n\n| `to_numeric` (arg[, errors, downcast, ...]) | Convert argument to a numeric type. | \n\n## Top-level dealing with datetimelike data#\n\n| `to_datetime` (arg[, errors, dayfirst, ...]) | Convert argument to datetime. | \n| `to_timedelta` (arg[, unit, errors]) | Convert argument to timedelta. | \n| `date_range` ([start, end, periods, freq, tz, ...]) | Return a fixed frequency DatetimeIndex. | \n| `bdate_range` ([start, end, periods, freq, tz, ...]) | Return a fixed frequency DatetimeIndex with business day as the default. | \n| `period_range` ([start, end, periods, freq, name]) | Return a fixed frequency PeriodIndex. | \n| `timedelta_range` ([start, end, periods, freq, ...]) | Return a fixed frequency TimedeltaIndex with day as the default. | \n| `infer_freq` (index) | (DEPRECATED) Infer the most likely frequency given the input index. | \n\n## Top-level dealing with Interval data#\n\n| `interval_range` ([start, end, periods, freq, ...]) | Return a fixed frequency IntervalIndex. | \n\n## Top-level evaluation#\n\n## Datetime formats#\n\n| `tseries.api.guess_datetime_format` (dt_str[, ...]) | Guess the datetime format of a given datetime string. | \n\n## Hashing#\n\n| `util.hash_array` (vals[, encoding, hash_key, ...]) | Given a 1d array, return an array of deterministic integers. | \n| `util.hash_pandas_object` (obj[, index, ...]) | Return a data hash of the Index/Series/DataFrame. | \n\n## Importing from other DataFrame libraries#\n\n| `api.interchange.from_dataframe` (df[, allow_copy]) | Build a `pd.DataFrame` from any DataFrame supporting the interchange protocol. |",
     "markdown_length": 3479,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "General functions — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "General functions — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
     },
-    "crawled_at": "2026-08-10T11:48:11.870291",
+    "crawled_at": "2026-08-26T06:51:30.052312",
     "type": "webpage"
 }

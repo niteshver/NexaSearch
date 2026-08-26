@@ -2,7 +2,7 @@
     "id": "88b0111c0b9169ac4ae198c5dcef2c7b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.LastWeekOfMonth.weekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.LastWeekOfMonth.weekday.html",
-    "title": "pandas.tseries.offsets.LastWeekOfMonth.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.LastWeekOfMonth.weekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.LastWeekOfMonth.weekday#\n\n- LastWeekOfMonth.weekday#\n- Return the day of the week on which this offset applies. The weekday is represented as an integer where 0 is Monday and 6 is Sunday. This is the specific day of the week targeted within the specified week of the month. \n  - Returns:\n    - int\n    - An integer from 0 (Monday) to 6 (Sunday) representing the day of the week.\n See also \n  - `tseries.offsets.WeekOfMonth`\n  - Describes monthly dates in a specific week.\n  - `tseries.offsets.LastWeekOfMonth`\n  - Describes monthly dates in last week.\n  - `tseries.offsets.Week.weekday`\n  - Return the day of the week for Week offset.\n Examples >>> pd.offsets.WeekOfMonth(week=0, weekday=0).weekday 0 >>> pd.offsets.WeekOfMonth(week=2, weekday=3).weekday 3 >>> pd.offsets.LastWeekOfMonth(weekday=5).weekday 5",
     "markdown_length": 833,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.LastWeekOfMonth.weekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.LastWeekOfMonth.weekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:20.410664",
+    "crawled_at": "2026-08-26T06:51:37.559379",
     "type": "webpage"
 }

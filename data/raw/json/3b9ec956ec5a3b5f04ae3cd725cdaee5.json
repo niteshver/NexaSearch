@@ -256,8 +256,8 @@
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:48:34.447996",
+    "crawled_at": "2026-08-26T06:52:09.061407",
     "type": "webpage"
 }

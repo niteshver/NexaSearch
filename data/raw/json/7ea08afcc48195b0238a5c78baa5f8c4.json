@@ -2,7 +2,7 @@
     "id": "7ea08afcc48195b0238a5c78baa5f8c4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.ravel.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.ravel.html",
-    "title": "pandas.Index.ravel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.ravel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.ravel#\n\n- \nfinal Index.ravel(*order='C'* )[source]#\n- Return a view on self. Since Index objects are one-dimensional, this simply returns a view of the original Index unchanged. \n  - Parameters:\n    - **order** {‘K’, ‘A’, ‘C’, ‘F’}, default ‘C’\n    - Specify the memory layout of the view. This parameter is not implemented currently.\n  - Returns:\n    - Index\n    - A view on self.\n See also \n  - `numpy.ndarray.ravel`\n  - Return a flattened array.\n Examples >>> s = pd.Series([1, 2, 3], index=[\"a\", \"b\", \"c\"]) >>> s.index.ravel() Index(['a', 'b', 'c'], dtype='str')",
     "markdown_length": 581,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.ravel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.ravel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.980050",
+    "crawled_at": "2026-08-26T06:48:50.105388",
     "type": "webpage"
 }

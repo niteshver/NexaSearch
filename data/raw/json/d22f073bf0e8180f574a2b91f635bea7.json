@@ -2,7 +2,7 @@
     "id": "d22f073bf0e8180f574a2b91f635bea7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas5Warning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas5Warning.html",
-    "title": "pandas.errors.Pandas5Warning — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.Pandas5Warning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.Pandas5Warning#\n\n- exception pandas.errors.Pandas5Warning[source]#\n- Warning raised for an upcoming change that will be enforced in pandas 5.0. This warning indicates a pending deprecation that will be enforced when pandas version 5.0 is released. Users should plan to update their code. See also \n  - `errors.PandasChangeWarning`\n  - Class for deprecations that will raise any warning.\n  - `errors.PandasPendingDeprecationWarning`\n  - Class for deprecations that will raise a PendingDeprecationWarning.\n  - `errors.PandasDeprecationWarning`\n  - Class for deprecations that will raise a DeprecationWarning.\n  - `errors.PandasFutureWarning`\n  - Class for deprecations that will raise a FutureWarning.\n Examples >>> pd.errors.Pandas5Warning <class 'pandas.errors.Pandas5Warning'>",
     "markdown_length": 793,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.Pandas5Warning — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.Pandas5Warning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.676890",
+    "crawled_at": "2026-08-26T06:51:54.103555",
     "type": "webpage"
 }

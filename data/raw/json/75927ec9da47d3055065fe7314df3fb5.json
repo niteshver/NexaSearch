@@ -2,7 +2,7 @@
     "id": "75927ec9da47d3055065fe7314df3fb5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_file_like.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_file_like.html",
-    "title": "pandas.api.types.is_file_like — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_file_like — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_file_like#\n\n- \npandas.api.types.is_file_like(*obj* )[source]#\n- Check if the object is a file-like object. For objects to be considered file-like, they must have a read and/or write method as an attribute. \n  - Parameters:\n    - **obj** object\n    - The object to check for file-like properties. This can be any Python object, and the function will check if it has attributes typically associated with file-like objects (e.g., read, write).\n  - Returns:\n    - bool\n    - Whether obj has file-like properties.\n See also \n  - `api.types.is_dict_like`\n  - Check if the object is dict-like.\n  - `api.types.is_hashable`\n  - Return True if hash(obj) will succeed, False otherwise.\n  - `api.types.is_named_tuple`\n  - Check if the object is a named tuple.\n  - `api.types.is_iterator`\n  - Check if the object is an iterator.\n Examples >>> import io >>> from pandas.api.types import is_file_like >>> buffer = io.StringIO(\"data\") >>> is_file_like(buffer) True >>> is_file_like([1, 2, 3]) False",
     "markdown_length": 1004,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_file_like — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_file_like — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.502182",
+    "crawled_at": "2026-08-26T06:51:22.488389",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "f8150661aff79da6550dc97f17fea53c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.items.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.items.html",
-    "title": "pandas.DataFrame.items — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.items — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.items#\n\n- DataFrame.items()[source]#\n- Iterate over (column name, Series) pairs. Iterates over the DataFrame columns, returning a tuple with the column name and the content as a Series. \n  - Yields:\n    - **label** object\n    - The column names for the DataFrame being iterated over.\n    - **content** Series\n    - The column entries belonging to each label, as a Series.\n See also \n  - `DataFrame.iterrows`\n  - Iterate over DataFrame rows as (index, Series) pairs.\n  - `DataFrame.itertuples`\n  - Iterate over DataFrame rows as namedtuples of the values.\n Examples >>> df = pd.DataFrame( ... { ... \"species\": [\"bear\", \"bear\", \"marsupial\"], ... \"population\": [1864, 22000, 80000], ... }, ... index=[\"panda\", \"polar\", \"koala\"], ... ) >>> df species population panda bear 1864 polar bear 22000 koala marsupial 80000 >>> for label, content in df.items(): ... print(f\"label: {label}\") ... print(f\"content: {content}\", sep=\"\\n\") label: species content: panda bear polar bear koala marsupial Name: species, dtype: str label: population content: panda 1864 polar 22000 koala 80000 Name: population, dtype: int64",
     "markdown_length": 1122,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.items — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.items — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:46.926019",
+    "crawled_at": "2026-08-26T06:49:03.059533",
     "type": "webpage"
 }

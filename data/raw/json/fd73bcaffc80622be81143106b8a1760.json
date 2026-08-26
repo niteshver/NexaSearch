@@ -2,7 +2,7 @@
     "id": "fd73bcaffc80622be81143106b8a1760",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.tzinfo.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.tzinfo.html",
-    "title": "pandas.Timestamp.tzinfo — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.tzinfo — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.tzinfo#\n\n- property Timestamp.tzinfo#\n- Returns the timezone info of the Timestamp. This property returns a datetime.tzinfo object if the Timestamp is timezone-aware. If the Timestamp has no timezone, it returns None. If the Timestamp is in UTC or a fixed-offset timezone, it returns datetime.timezone. If the Timestamp uses an IANA timezone (e.g., “America/New_York”), it returns zoneinfo.ZoneInfo. See also \n  - `Timestamp.tz`\n  - Alias for tzinfo, may return a zoneinfo.ZoneInfo object.\n  - `Timestamp.tz_convert`\n  - Convert timezone-aware Timestamp to another time zone.\n  - `Timestamp.tz_localize`\n  - Localize the Timestamp to a specific timezone.\n Examples >>> ts = pd.Timestamp(\"2023-01-01 12:00:00\", tz=\"UTC\") >>> ts.tzinfo datetime.timezone.utc >>> ts_naive = pd.Timestamp(\"2023-01-01 12:00:00\") >>> ts_naive.tzinfo",
     "markdown_length": 845,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.tzinfo — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.tzinfo — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.753572",
+    "crawled_at": "2026-08-26T06:51:29.710922",
     "type": "webpage"
 }

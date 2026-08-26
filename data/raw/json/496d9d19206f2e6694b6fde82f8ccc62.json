@@ -2,7 +2,7 @@
     "id": "496d9d19206f2e6694b6fde82f8ccc62",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.indexers.VariableOffsetWindowIndexer.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.indexers.VariableOffsetWindowIndexer.html",
-    "title": "pandas.api.indexers.VariableOffsetWindowIndexer — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.indexers.VariableOffsetWindowIndexer — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.indexers.VariableOffsetWindowIndexer#\n\n- \nclass pandas.api.indexers.VariableOffsetWindowIndexer(*index_array=None* ,*window_size=0* ,*index=None* ,*offset=None* ,***kwargs* )[source]#\n- Calculate window boundaries based on a non-fixed offset such as a BusinessDay. Unlike the default fixed-size window, this indexer uses a `DateOffset` to determine variable-width window boundaries\nbased on the datetime index of the data.\n  - Parameters:\n    - **index_array** np.ndarray, default 0\n    - Array-like structure specifying the indices for data points. This parameter is currently not used.\n    - **window_size** int, optional, default 0\n    - Specifies the number of data points in each window. This parameter is currently not used.\n    - **index** DatetimeIndex, optional\n    - `DatetimeIndex` of the labels of each observation.\n    - **offset** BaseOffset, optional\n    - `DateOffset` representing the size of the window.\n    - ****kwargs**\n    - Additional keyword arguments passed to the parent class `BaseIndexer` .\n See also \n  - `api.indexers.BaseIndexer`\n  - Base class for all indexers.\n  - `DataFrame.rolling`\n  - Rolling window calculations on DataFrames.\n  - `offsets`\n  - Module providing various time offset classes.\n Examples >>> from pandas.api.indexers import VariableOffsetWindowIndexer >>> df = pd.DataFrame(range(10), index=pd.date_range(\"2020\", periods=10)) >>> offset = pd.offsets.BDay(1) >>> indexer = VariableOffsetWindowIndexer(index=df.index, offset=offset) >>> df 0 2020-01-01 0 2020-01-02 1 2020-01-03 2 2020-01-04 3 2020-01-05 4 2020-01-06 5 2020-01-07 6 2020-01-08 7 2020-01-09 8 2020-01-10 9 >>> df.rolling(indexer).sum() 0 2020-01-01 0.0 2020-01-02 1.0 2020-01-03 2.0 2020-01-04 3.0 2020-01-05 7.0 2020-01-06 12.0 2020-01-07 6.0 2020-01-08 7.0 2020-01-09 8.0 2020-01-10 9.0 Methods `get_window_bounds` ([num_values, min_periods, ...])Computes the bounds of a window.",
     "markdown_length": 1909,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.indexers.VariableOffsetWindowIndexer — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.indexers.VariableOffsetWindowIndexer — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.195475",
+    "crawled_at": "2026-08-26T06:51:22.723463",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "11db544afbcc256c825139f2b83fdc0e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.isdigit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.isdigit.html",
-    "title": "pandas.Series.str.isdigit — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.isdigit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.isdigit#\n\n- Series.str.isdigit()[source]#\n- Check whether all characters in each string are digits. This is equivalent to running the Python string method `str.isdigit()` for each element of the Series/Index. If a string\nhas zero characters,`False` is returned for that check.\n  - Returns:\n    - Series or Index of bool\n    - Series or Index of boolean values with the same length as the original Series/Index.\n See also \n  - `Series.str.isalpha`\n  - Check whether all characters are alphabetic.\n  - `Series.str.isnumeric`\n  - Check whether all characters are numeric.\n  - `Series.str.isalnum`\n  - Check whether all characters are alphanumeric.\n  - `Series.str.isdecimal`\n  - Check whether all characters are decimal.\n  - `Series.str.isspace`\n  - Check whether all characters are whitespace.\n  - `Series.str.islower`\n  - Check whether all characters are lowercase.\n  - `Series.str.isascii`\n  - Check whether all characters are ascii.\n  - `Series.str.isupper`\n  - Check whether all characters are uppercase.\n  - `Series.str.istitle`\n  - Check whether all characters are titlecase.\n Notes Similar to `str.isdecimal` but also includes special digits, like\nsuperscripted and subscripted digits in unicode.The exact behavior of this method, i.e. which unicode characters are considered as digits, depends on the backend used for string operations, and there can be small differences. For example, Python considers the ³ superscript character as a digit, but not the ⅕ fraction character, while PyArrow considers both as digits. For simple (ascii) decimal numbers, the behaviour is consistent. Examples >>> s3 = pd.Series([\"23\", \"³\", \"⅕\", \"\"]) >>> s3.str.isdigit() 0 True 1 True 2 True 3 False dtype: bool",
     "markdown_length": 1719,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.isdigit — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.isdigit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.023134",
+    "crawled_at": "2026-08-26T06:51:02.887063",
     "type": "webpage"
 }

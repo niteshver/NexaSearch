@@ -2,7 +2,7 @@
     "id": "686dc155b864f3565f8fa97984645f48",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.NamedAgg.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.NamedAgg.html",
-    "title": "pandas.NamedAgg — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.NamedAgg — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.NamedAgg#\n\n- \nclass pandas.NamedAgg(*column* ,*aggfunc* ,**args* ,***kwargs* )[source]#\n- Helper for column specific aggregation with control over output column names. A dataclass used with `DataFrame.groupby().agg()` to specify an\naggregation on a particular column and assign a custom name to the\nresulting column. Additional positional and keyword arguments can be\nforwarded to the aggregation function.\n  - Parameters:\n    - **column** Hashable\n    - Column label in the DataFrame to apply aggfunc.\n    - **aggfunc** function or str\n    - Function to apply to the provided column. If string, the name of a built-in pandas function.\n    - ***args, **kwargs** Any\n    - Optional positional and keyword arguments passed to `aggfunc` .\n See also \n  - `DataFrame.groupby`\n  - Group DataFrame using a mapper or by a Series of columns.\n Examples >>> df = pd.DataFrame({\"key\": [1, 1, 2], \"a\": [-1, 0, 1], 1: [10, 11, 12]}) >>> agg_a = pd.NamedAgg(column=\"a\", aggfunc=\"min\") >>> agg_1 = pd.NamedAgg(column=1, aggfunc=lambda x: np.mean(x)) >>> df.groupby(\"key\").agg(result_a=agg_a, result_1=agg_1) result_a result_1 key 1 -1 10.5 2 1 12.0 >>> def n_between(ser, low, high, **kwargs): ... return ser.between(low, high, **kwargs).sum() >>> agg_between = pd.NamedAgg(\"a\", n_between, 0, 1) >>> df.groupby(\"key\").agg(count_between=agg_between) count_between key 1 1 2 1 >>> agg_between_kw = pd.NamedAgg(\"a\", n_between, 0, 1, inclusive=\"both\") >>> df.groupby(\"key\").agg(count_between_kw=agg_between_kw) count_between_kw key 1 1 2 1 Attributes `args`Methods",
     "markdown_length": 1553,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.NamedAgg — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.NamedAgg — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.192588",
+    "crawled_at": "2026-08-26T06:49:08.963344",
     "type": "webpage"
 }

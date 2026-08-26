@@ -2,7 +2,7 @@
     "id": "6f1a687099ac1a0a64e0818dc2b4dca6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.isocalendar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.isocalendar.html",
-    "title": "pandas.Series.dt.isocalendar — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.isocalendar — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.isocalendar#\n\n- Series.dt.isocalendar()[source]#\n- Calculate year, week, and day according to the ISO 8601 standard. The ISO 8601 standard defines the first week of the year as the week containing the first Thursday. This method returns a DataFrame with columns for the ISO year, ISO week number, and ISO day of week. \n  - Returns:\n    - DataFrame\n    - With columns year, week and day.\n See also \n  - `Timestamp.isocalendar`\n  - Function return a 3-tuple containing ISO year, week number, and weekday for the given Timestamp object.\n  - `datetime.date.isocalendar`\n  - Return a named tuple object with three components: year, week and weekday.\n Examples >>> ser = pd.to_datetime(pd.Series([\"2010-01-01\", pd.NaT])) >>> ser.dt.isocalendar() year week day 0 2009 53 5 1 <NA> <NA> <NA> >>> ser.dt.isocalendar().week 0 53 1 <NA> Name: week, dtype: UInt32",
     "markdown_length": 869,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.isocalendar — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.isocalendar — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.310295",
+    "crawled_at": "2026-08-26T06:49:14.917354",
     "type": "webpage"
 }

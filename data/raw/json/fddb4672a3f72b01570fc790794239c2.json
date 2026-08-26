@@ -2,7 +2,7 @@
     "id": "fddb4672a3f72b01570fc790794239c2",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_locs.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_locs.html",
-    "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.get_locs#\n\n- \nMultiIndex.get_locs(*seq* )[source]#\n- Get location for a sequence of labels. This method returns the integer positions in the index that match the given sequence of per-level keys, slices, or boolean masks. \n  - Parameters:\n    - **seq** label, slice, list, mask or a sequence of such\n    - You should use one of the above for each level. If a level should not be used, set it to `slice(None)` .\n  - Returns:\n    - numpy.ndarray\n    - NumPy array of integers suitable for passing to iloc.\n See also \n  - `MultiIndex.get_loc`\n  - Get location for a label or a tuple of labels.\n  - `MultiIndex.slice_locs`\n  - Get slice location given start label(s) and end label(s).\n Examples >>> mi = pd.MultiIndex.from_arrays([list(\"abb\"), list(\"def\")]) >>> mi.get_locs(\"b\") array([1, 2], dtype=int64) >>> mi.get_locs([slice(None), [\"e\", \"f\"]]) array([1, 2], dtype=int64) >>> mi.get_locs([[True, False, True], slice(\"e\", \"f\")]) array([2], dtype=int64)",
     "markdown_length": 971,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_locs.html"
     },
-    "crawled_at": "2026-08-10T11:47:48.209128",
+    "crawled_at": "2026-08-26T06:49:52.037251",
     "type": "webpage"
 }

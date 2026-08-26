@@ -2,7 +2,7 @@
     "id": "4aaac944355d96f0c6b8475d191950bf",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.day_name.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.day_name.html",
-    "title": "pandas.Timestamp.day_name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.day_name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.day_name#\n\n- \nTimestamp.day_name(*locale=None* )#\n- Return the day name of the Timestamp with specified locale. This method returns the full name of the day of the week (e.g., ‘Monday’, ‘Tuesday’) for the given Timestamp. The locale can be specified to return the name in a particular language. \n  - Parameters:\n    - **locale** str, default None (English locale)\n    - Locale determining the language in which to return the day name.\n  - Returns:\n    - str\n See also \n  - `Timestamp.day_of_week`\n  - Return day of the week.\n  - `Timestamp.day_of_year`\n  - Return day of the year.\n Examples >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651') >>> ts.day_name() 'Saturday' Analogous for `pd.NaT` :>>> pd.NaT.day_name() nan",
     "markdown_length": 743,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.day_name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.day_name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.595963",
+    "crawled_at": "2026-08-26T06:50:36.945053",
     "type": "webpage"
 }

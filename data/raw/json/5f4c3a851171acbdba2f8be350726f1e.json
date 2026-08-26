@@ -2,7 +2,7 @@
     "id": "5f4c3a851171acbdba2f8be350726f1e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.microsecond.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.microsecond.html",
-    "title": "pandas.Series.dt.microsecond — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.microsecond — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.microsecond#\n\n- Series.dt.microsecond[source]#\n- The microseconds of the datetime. This attribute returns the microsecond component of each datetime value in the Series/Index. Values range from 0 to 999999 (one microsecond is one millionth of a second). See also \n  - `DatetimeIndex.second`\n  - The seconds of the datetime.\n  - `DatetimeIndex.nanosecond`\n  - The nanoseconds of the datetime.\n Examples >>> datetime_series = pd.Series( ... pd.date_range(\"2000-01-01\", periods=3, freq=\"us\") ... ) >>> datetime_series 0 2000-01-01 00:00:00.000000 1 2000-01-01 00:00:00.000001 2 2000-01-01 00:00:00.000002 dtype: datetime64[us] >>> datetime_series.dt.microsecond 0 0 1 1 2 2 dtype: int32",
     "markdown_length": 702,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.microsecond — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.microsecond — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.335819",
+    "crawled_at": "2026-08-26T06:49:14.976611",
     "type": "webpage"
 }

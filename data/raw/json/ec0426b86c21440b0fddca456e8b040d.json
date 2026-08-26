@@ -2,7 +2,7 @@
     "id": "ec0426b86c21440b0fddca456e8b040d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.ordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.ordered.html",
-    "title": "pandas.CategoricalDtype.ordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.CategoricalDtype.ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalDtype.ordered#\n\n- property CategoricalDtype.ordered[source]#\n- Whether the categories have an ordered relationship. When `True` , comparison operations on the resulting Categorical\nare valid and sort in the order of the categories.See also \n  - `categories`\n  - An Index containing the unique categories allowed.\n Examples >>> cat_type = pd.CategoricalDtype(categories=[\"a\", \"b\"], ordered=True) >>> cat_type.ordered True >>> cat_type = pd.CategoricalDtype(categories=[\"a\", \"b\"], ordered=False) >>> cat_type.ordered False",
     "markdown_length": 540,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalDtype.ordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.CategoricalDtype.ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.227872",
+    "crawled_at": "2026-08-26T06:48:59.799299",
     "type": "webpage"
 }

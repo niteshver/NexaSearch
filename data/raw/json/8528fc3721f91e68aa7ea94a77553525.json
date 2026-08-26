@@ -2,7 +2,7 @@
     "id": "8528fc3721f91e68aa7ea94a77553525",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.infer_objects.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.infer_objects.html",
-    "title": "pandas.Series.infer_objects — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.infer_objects — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.infer_objects#\n\n- \nSeries.infer_objects(*copy=<no_default>* )[source]#\n- Attempt to infer better dtypes for object columns. Attempts soft conversion of object-dtyped columns, leaving non-object and unconvertible columns unchanged. The inference rules are the same as during normal Series/DataFrame construction. \n  - Parameters:\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - same type as input object\n    - Returns an object of the same type as the input object.\n See also \n  - `to_datetime`\n  - Convert argument to datetime.\n  - `to_timedelta`\n  - Convert argument to timedelta.\n  - `to_numeric`\n  - Convert argument to numeric type.\n  - `convert_dtypes`\n  - Convert argument to best possible dtype.\n Examples >>> df = pd.DataFrame({\"A\": [\"a\", 1, 2, 3]}) >>> df = df.iloc[1:] >>> df A 1 1 2 2 3 3 >>> df.dtypes A object dtype: object >>> df.infer_objects().dtypes A int64 dtype: object",
     "markdown_length": 1282,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.infer_objects — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.infer_objects — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:54.813152",
+    "crawled_at": "2026-08-26T06:49:18.002765",
     "type": "webpage"
 }

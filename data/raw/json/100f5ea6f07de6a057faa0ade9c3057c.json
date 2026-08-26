@@ -2,7 +2,7 @@
     "id": "100f5ea6f07de6a057faa0ade9c3057c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.flush.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.flush.html",
-    "title": "pandas.HDFStore.flush — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.HDFStore.flush — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.flush#\n\n- \nHDFStore.flush(*fsync=False* )[source]#\n- Force all buffered modifications to be written to disk. Useful when sharing access between processes – call `flush` (with`fsync=True` if needed) before releasing a write lock so that\nreaders see the latest data.\n  - Parameters:\n    - **fsync** bool, default False\n    - Call `os.fsync()` on the file handle to force writing to disk.\n See also \n  - `HDFStore.close`\n  - Close the underlying PyTables file handle.\n Notes Without `fsync=True` , flushing may not guarantee that the OS writes\nto disk. With fsync, the operation will block until the OS claims the\nfile has been written; however, other caching layers may still\ninterfere.Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> store.flush(fsync=True) >>> store.close()",
     "markdown_length": 883,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.flush — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.HDFStore.flush — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.519026",
+    "crawled_at": "2026-08-26T06:49:07.753448",
     "type": "webpage"
 }

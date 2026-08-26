@@ -2,7 +2,7 @@
     "id": "47bd40952778f43ec2387f071ace688d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.is_year_start.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.is_year_start.html",
-    "title": "pandas.Series.dt.is_year_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.is_year_start — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.is_year_start#\n\n- Series.dt.is_year_start[source]#\n- Indicate whether the date is the first day of a year. This boolean attribute evaluates to True if the date is January 1st, and False otherwise. \n  - Returns:\n    - Series or DatetimeIndex\n    - The same type as the original data with boolean values. Series will have the same name and index. DatetimeIndex will have the same name.\n See also \n  - `is_year_end`\n  - Similar property indicating the last day of the year.\n Examples This method is available on Series with datetime values under the `.dt` accessor, and directly on DatetimeIndex.>>> dates = pd.Series(pd.date_range(\"2017-12-30\", periods=3)) >>> dates 0 2017-12-30 1 2017-12-31 2 2018-01-01 dtype: datetime64[us] >>> dates.dt.is_year_start 0 False 1 False 2 True dtype: bool >>> idx = pd.date_range(\"2017-12-30\", periods=3) >>> idx DatetimeIndex(['2017-12-30', '2017-12-31', '2018-01-01'], dtype='datetime64[us]', freq='D') >>> idx.is_year_start array([False, False, True]) This method, when applied to Series with datetime values under the `.dt` accessor, will lose information about Business offsets.>>> dates = pd.Series(pd.date_range(\"2020-10-30\", periods=4, freq=\"BYS\")) >>> dates 0 2021-01-01 1 2022-01-03 2 2023-01-02 3 2024-01-01 dtype: datetime64[us] >>> dates.dt.is_year_start 0 True 1 False 2 False 3 True dtype: bool >>> idx = pd.date_range(\"2020-10-30\", periods=4, freq=\"BYS\") >>> idx DatetimeIndex(['2021-01-01', '2022-01-03', '2023-01-02', '2024-01-01'], dtype='datetime64[us]', freq='BYS-JAN') >>> idx.is_year_start array([ True, True, True, True])",
     "markdown_length": 1596,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.is_year_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.is_year_start — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.284104",
+    "crawled_at": "2026-08-26T06:49:14.859462",
     "type": "webpage"
 }

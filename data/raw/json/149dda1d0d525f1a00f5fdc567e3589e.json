@@ -2,7 +2,7 @@
     "id": "149dda1d0d525f1a00f5fdc567e3589e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_re.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_re.html",
-    "title": "pandas.api.types.is_re — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.types.is_re — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_re#\n\n- \npandas.api.types.is_re(*obj* )[source]#\n- Check if the object is a regex pattern instance. This function tests whether `obj` is an instance of a compiled\nregular expression pattern, as created by`re.compile()` .\n  - Parameters:\n    - **obj** object\n    - The object to check for being a regex pattern. Typically, this would be an object that you expect to be a compiled pattern from the re module.\n  - Returns:\n    - bool\n    - Whether obj is a regex pattern.\n See also \n  - `api.types.is_float`\n  - Return True if given object is float.\n  - `api.types.is_iterator`\n  - Check if the object is an iterator.\n  - `api.types.is_integer`\n  - Return True if given object is integer.\n  - `api.types.is_re_compilable`\n  - Check if the object can be compiled into a regex pattern instance.\n Examples >>> from pandas.api.types import is_re >>> import re >>> is_re(re.compile(\".*\")) True >>> is_re(\"foo\") False",
     "markdown_length": 929,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_re — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.types.is_re — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:02.949800",
+    "crawled_at": "2026-08-26T06:51:33.797648",
     "type": "webpage"
 }

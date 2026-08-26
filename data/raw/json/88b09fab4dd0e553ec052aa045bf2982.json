@@ -2,7 +2,7 @@
     "id": "88b09fab4dd0e553ec052aa045bf2982",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.to_frame.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.to_frame.html",
-    "title": "pandas.MultiIndex.to_frame — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.to_frame — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.to_frame#\n\n- \nMultiIndex.to_frame(*index=True* ,*name=<no_default>* ,*allow_duplicates=False* )[source]#\n- Create a DataFrame with the levels of the MultiIndex as columns. Column ordering is determined by the DataFrame constructor with data as a dict. \n  - Parameters:\n    - **index** bool, default True\n    - Set the index of the returned DataFrame as the original MultiIndex.\n    - **name** list / sequence of str, optional\n    - The passed names should substitute index level names.\n    - **allow_duplicates** bool, optional default False\n    - Allow duplicate column labels to be created.\n  - Returns:\n    - DataFrame\n    - DataFrame representation of the MultiIndex, with levels as columns.\n See also \n  - `DataFrame`\n  - Two-dimensional, size-mutable, potentially heterogeneous tabular data.\n Examples >>> mi = pd.MultiIndex.from_arrays([[\"a\", \"b\"], [\"c\", \"d\"]]) >>> mi MultiIndex([('a', 'c'), ('b', 'd')], ) >>> df = mi.to_frame() >>> df 0 1 a c a c b d b d >>> df = mi.to_frame(index=False) >>> df 0 1 0 a c 1 b d >>> df = mi.to_frame(name=[\"x\", \"y\"]) >>> df x y a c a c b d b d",
     "markdown_length": 1106,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.to_frame — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.to_frame — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:41.707498",
+    "crawled_at": "2026-08-26T06:48:53.292597",
     "type": "webpage"
 }

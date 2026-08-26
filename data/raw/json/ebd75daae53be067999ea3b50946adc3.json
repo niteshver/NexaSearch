@@ -2,7 +2,7 @@
     "id": "ebd75daae53be067999ea3b50946adc3",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.8.1.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.8.1.html",
-    "title": "Version 0.8.1 (July 22, 2012) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Version 0.8.1 (July 22, 2012) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# Version 0.8.1 (July 22, 2012)#\n\nThis release includes a few new features, performance enhancements, and over 30 bug fixes from 0.8.0. New features include notably NA friendly string processing functionality and a series of new plot types and options.\n\n## New features#\n\n\nAdd vectorized string processing methods accessible via Series.str (GH 620)\n\nAdd option to disable adjustment in EWMA (GH 1584)\n\nRadviz plot (GH 1566)\n\nParallel coordinates plot\n\nBootstrap plot\n\nPer column styles and secondary y-axis plotting (GH 1559)\n\nNew datetime converters millisecond plotting (GH 1599)\n\nAdd option to disable “sparse” display of hierarchical indexes (GH 1538)\n\nSeries/DataFrame’s `set_index` method can append levels to an existing Index/MultiIndex (GH 1569, GH 1577)\n\n\n## Performance improvements#\n\n\nImproved implementation of rolling min and max (thanks to Bottleneck !)\n\nAdd accelerated `'median'` GroupBy option (GH 1358)\n\nSignificantly improve the performance of parsing ISO8601-format date\nstrings with `DatetimeIndex` or `to_datetime` (GH 1571)\n\nImprove the performance of GroupBy on single-key aggregations and use with Categorical types\n\nSignificant datetime parsing performance improvements\n\n\n## Contributors#\n\nA total of 5 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Chang She\n- Skipper Seabold\n- Todd DeLuca +\n- Vytautas Jancauskas\n- Wes McKinney",
     "markdown_length": 1430,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Version 0.8.1 (July 22, 2012) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Version 0.8.1 (July 22, 2012) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:34.165863",
+    "crawled_at": "2026-08-26T06:52:05.312431",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "1d35e5a2ff6868151dbec817053adb80",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.day_name.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.day_name.html",
-    "title": "pandas.DatetimeIndex.day_name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DatetimeIndex.day_name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.day_name#\n\n- \nDatetimeIndex.day_name(*locale=None* )[source]#\n- Return the day names with specified locale. This method returns the full name of the day of the week (e.g., “Monday”, “Tuesday”) for each datetime value in the Series/Index. The names can be localized to different languages using the locale parameter. \n  - Parameters:\n    - **locale** str, optional\n    - Locale determining the language in which to return the day name. Default is English locale ( `'en_US.utf8'` ). Use the command`locale -a` on your terminal on Unix systems to find your locale\nlanguage code.\n  - Returns:\n    - Series or Index\n    - Series or Index of day names.\n See also \n  - `DatetimeIndex.month_name`\n  - Return the month names with specified locale.\n Examples >>> s = pd.Series(pd.date_range(start=\"2018-01-01\", freq=\"D\", periods=3)) >>> s 0 2018-01-01 1 2018-01-02 2 2018-01-03 dtype: datetime64[us] >>> s.dt.day_name() 0 Monday 1 Tuesday 2 Wednesday dtype: str >>> idx = pd.date_range(start=\"2018-01-01\", freq=\"D\", periods=3) >>> idx DatetimeIndex(['2018-01-01', '2018-01-02', '2018-01-03'], dtype='datetime64[us]', freq='D') >>> idx.day_name() Index(['Monday', 'Tuesday', 'Wednesday'], dtype='str') Using the `locale` parameter you can set a different locale language,\nfor example:`idx.day_name(locale='pt_BR.utf8')` will return day\nnames in Brazilian Portuguese language.>>> idx = pd.date_range(start=\"2018-01-01\", freq=\"D\", periods=3) >>> idx DatetimeIndex(['2018-01-01', '2018-01-02', '2018-01-03'], dtype='datetime64[us]', freq='D') >>> idx.day_name(locale=\"pt_BR.utf8\") Index(['Segunda', 'Terça', 'Quarta'], dtype='str')",
     "markdown_length": 1640,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.day_name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DatetimeIndex.day_name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.day_name.html"
     },
-    "crawled_at": "2026-08-10T11:47:39.167232",
+    "crawled_at": "2026-08-26T06:49:23.056088",
     "type": "webpage"
 }

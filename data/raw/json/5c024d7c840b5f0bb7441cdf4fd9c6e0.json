@@ -2,7 +2,7 @@
     "id": "5c024d7c840b5f0bb7441cdf4fd9c6e0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.total_seconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.total_seconds.html",
-    "title": "pandas.Series.dt.total_seconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.total_seconds — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.total_seconds#\n\n- Series.dt.total_seconds()[source]#\n- Return total duration of each element expressed in seconds. This method is available directly on TimedeltaArray, TimedeltaIndex and on Series containing timedelta values under the `.dt` namespace.\n  - Returns:\n    - ndarray, Index or Series\n    - When the calling object is a TimedeltaArray, the return type is ndarray. When the calling object is a TimedeltaIndex, the return type is an Index with a float64 dtype. When the calling object is a Series, the return type is Series of type float64 whose index is the same as the original.\n See also \n  - `datetime.timedelta.total_seconds`\n  - Standard library version of this method.\n  - `TimedeltaIndex.components`\n  - Return a DataFrame with components of each Timedelta.\n Examples **Series**>>> s = pd.Series(pd.to_timedelta(np.arange(5), unit=\"D\")) >>> s 0 0 days 1 1 days 2 2 days 3 3 days 4 4 days dtype: timedelta64[s] >>> s.dt.total_seconds() 0 0.0 1 86400.0 2 172800.0 3 259200.0 4 345600.0 dtype: float64 **TimedeltaIndex**>>> idx = pd.to_timedelta(np.arange(5), unit=\"D\") >>> idx TimedeltaIndex(['0 days', '1 days', '2 days', '3 days', '4 days'], dtype='timedelta64[s]', freq=None) >>> idx.total_seconds() Index([0.0, 86400.0, 172800.0, 259200.0, 345600.0], dtype='float64')",
     "markdown_length": 1305,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.total_seconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.total_seconds — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.832762",
+    "crawled_at": "2026-08-26T06:49:16.000646",
     "type": "webpage"
 }

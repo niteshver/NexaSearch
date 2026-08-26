@@ -2,7 +2,7 @@
     "id": "30f10b0f3c5f251cf191b1b232e49f9b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.template_html.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.template_html.html",
-    "title": "pandas.io.formats.style.Styler.template_html — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.template_html — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "Skip to main content\nBack to top\n⌘\n+\nK\nGetting started\nUser Guide\nAPI reference\nDevelopment\nRelease notes\nSearch\n⌘\n+\nK\ndev\ndev\n3.0 (stable)\n2.3\n2.2\n2.1\n2.0\n1.5\n1.4\n1.3\n1.2\n1.1\n1.0\nGitHub\nX\nMastodon\nSearch\n⌘\n+\nK\nGetting started\nUser Guide\nAPI reference\nDevelopment\nRelease notes\ndev\ndev\n3.0 (stable)\n2.3\n2.2\n2.1\n2.0\n1.5\n1.4\n1.3\n1.2\n1.1\n1.0\nGitHub\nX\nMastodon\nInput/output\nGeneral functions\nSeries\nDataFrame\npandas arrays, scalars, and data types\nIndex objects\nDate offsets\nWindow\nGroupBy\nResampling\nStyle\npandas.io.formats.style.Styler\npandas.io.formats.style.Styler.from_custom_template\npandas.io.formats.style.Styler.env\npandas.io.formats.style.Styler.template_html\npandas.io.formats.style.Styler.template_html_style\npandas.io.formats.style.Styler.template_html_table\npandas.io.formats.style.Styler.template_latex\npandas.io.formats.style.Styler.template_typst\npandas.io.formats.style.Styler.template_string\npandas.io.formats.style.Styler.loader\npandas.io.formats.style.Styler.apply\npandas.io.formats.style.Styler.map\npandas.io.formats.style.Styler.apply_index\npandas.io.formats.style.Styler.map_index\npandas.io.formats.style.Styler.format\npandas.io.formats.style.Styler.format_index\npandas.io.formats.style.Styler.format_index_names\npandas.io.formats.style.Styler.relabel_index\npandas.io.formats.style.Styler.hide\npandas.io.formats.style.Styler.concat\npandas.io.formats.style.Styler.set_td_classes\npandas.io.formats.style.Styler.set_table_styles\npandas.io.formats.style.Styler.set_table_attributes\npandas.io.formats.style.Styler.set_tooltips\npandas.io.formats.style.Styler.set_caption\npandas.io.formats.style.Styler.set_sticky\npandas.io.formats.style.Styler.set_properties\npandas.io.formats.style.Styler.set_uuid\npandas.io.formats.style.Styler.clear\npandas.io.formats.style.Styler.pipe\npandas.io.formats.style.Styler.highlight_null\npandas.io.formats.style.Styler.highlight_max\npandas.io.formats.style.Styler.highlight_min\npandas.io.formats.style.Styler.highlight_between\npandas.io.formats.style.Styler.highlight_quantile\npandas.io.formats.style.Styler.background_gradient\npandas.io.formats.style.Styler.text_gradient\npandas.io.formats.style.Styler.bar\npandas.io.formats.style.Styler.to_html\npandas.io.formats.style.Styler.to_latex\npandas.io.formats.style.Styler.to_typst\npandas.io.formats.style.Styler.to_excel\npandas.io.formats.style.Styler.to_string\npandas.io.formats.style.Styler.export\npandas.io.formats.style.Styler.use\nPlotting\nOptions and settings\nExtensions\nTesting\nMissing values\npandas typing aliases\nAPI reference\nStyle\npandas.io.formats.style.Styler.template_html\npandas.io.formats.style.Styler.template_html\n#\nStyler.\ntemplate_html\n=\n<Template\n'html.tpl'>\n#\nOn this page\nStyler.template_html",
     "markdown_length": 2704,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.template_html — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.template_html — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.303812",
+    "crawled_at": "2026-08-26T06:51:46.928869",
     "type": "webpage"
 }

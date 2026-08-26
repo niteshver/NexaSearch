@@ -2,7 +2,7 @@
     "id": "6d59b2c84568a3a6545ac433e9fdc9a5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.rank.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.rank.html",
-    "title": "pandas.api.typing.SeriesGroupBy.rank — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.rank — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.rank#\n\n- \nSeriesGroupBy.rank(*method='average'* ,*ascending=True* ,*na_option='keep'* ,*pct=False* )[source]#\n- Provide the rank of values within each group. This method assigns ranks to values within each group, with options for handling duplicate values, NaN values, and computing percentage ranks. \n  - Parameters:\n    - **method** {‘average’, ‘min’, ‘max’, ‘first’, ‘dense’}, default ‘average’\n      - average: average rank of group.\n      - min: lowest rank in group.\n      - max: highest rank in group.\n      - first: ranks assigned in order they appear in the array.\n      - dense: like ‘min’, but rank always increases by 1 between groups.\n    - **ascending** bool, default True\n    - False for ranks by high (1) to low (N).\n    - **na_option** {‘keep’, ‘top’, ‘bottom’}, default ‘keep’\n      - keep: leave NA values where they are.\n      - top: smallest rank if ascending.\n      - bottom: smallest rank if descending.\n    - **pct** bool, default False\n    - Compute percentage rank of data within each group.\n  - Returns:\n    - DataFrame\n    - The ranking of values within each group.\n See also \n  - `Series.rank`\n  - Apply function rank to a Series.\n  - `DataFrame.rank`\n  - Apply function rank to each row or column of a DataFrame.\n Examples >>> df = pd.DataFrame( ... { ... \"group\": [\"a\", \"a\", \"a\", \"a\", \"a\", \"b\", \"b\", \"b\", \"b\", \"b\"], ... \"value\": [2, 4, 2, 3, 5, 1, 2, 4, 1, 5], ... } ... ) >>> df group value 0 a 2 1 a 4 2 a 2 3 a 3 4 a 5 5 b 1 6 b 2 7 b 4 8 b 1 9 b 5 >>> for method in [\"average\", \"min\", \"max\", \"dense\", \"first\"]: ... df[f\"{method}_rank\"] = df.groupby(\"group\")[\"value\"].rank(method) >>> df group value average_rank min_rank max_rank dense_rank first_rank 0 a 2 1.5 1.0 2.0 1.0 1.0 1 a 4 4.0 4.0 4.0 3.0 4.0 2 a 2 1.5 1.0 2.0 1.0 2.0 3 a 3 3.0 3.0 3.0 2.0 3.0 4 a 5 5.0 5.0 5.0 4.0 5.0 5 b 1 1.5 1.0 2.0 1.0 1.0 6 b 2 3.0 3.0 3.0 2.0 3.0 7 b 4 4.0 4.0 4.0 3.0 4.0 8 b 1 1.5 1.0 2.0 1.0 2.0 9 b 5 5.0 5.0 5.0 4.0 5.0",
     "markdown_length": 1980,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.rank — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.rank — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.638387",
+    "crawled_at": "2026-08-26T06:51:38.009564",
     "type": "webpage"
 }

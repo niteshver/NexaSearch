@@ -318,33 +318,33 @@ In [26]: pd.read_csv(StringIO(data), names=names)
 ValueError                                Traceback (most recent call last)
 Cell In[26], line 1
 ----> 1 pd.read_csv(StringIO(data), names=names)
-File ~/work/pandas/pandas/pandas/io/parsers/readers.py:1615, in read_csv(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, skip_blank_lines, parse_dates, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, low_memory, memory_map, float_precision, storage_options, dtype_backend)
-   1603 kwds_defaults = _refine_defaults_read(
-   1604     dialect,
-   1605     delimiter,
-   (...)   1611     dtype_backend=dtype_backend,
-   1612 )
-   1613 kwds.update(kwds_defaults)
--> 1615 return _read(filepath_or_buffer, kwds)
-File ~/work/pandas/pandas/pandas/io/parsers/readers.py:329, in _read(filepath_or_buffer, kwds)
-    326 nrows = kwds.get("nrows", None)
-    328 # Check for duplicates in names.
---> 329 _validate_names(kwds.get("names", None))
-    331 if kwds.get("float_precision") is not None:
-    332     warnings.warn(
-    333         "The 'float_precision' argument is deprecated. "
-    334         "Use the default float precision instead.",
-    335         Pandas4Warning,
-    336         stacklevel=find_stack_level(),
-    337     )
-File ~/work/pandas/pandas/pandas/io/parsers/readers.py:283, in _validate_names(names)
-    281 if names is not None:
-    282     if len(names) != len(set(names)):
---> 283         raise ValueError("Duplicate names are not allowed.")
-    284     if not (
-    285         is_list_like(names, allow_sets=False) or isinstance(names, abc.KeysView)
-    286     ):
-    287         raise ValueError("Names should be an ordered collection.")
+File ~/work/pandas/pandas/pandas/io/parsers/readers.py:1739, in read_csv(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, skip_blank_lines, parse_dates, date_format, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, on_bad_lines, low_memory, memory_map, float_precision, storage_options, dtype_backend)
+   1727 kwds_defaults = _refine_defaults_read(
+   1728     dialect,
+   1729     delimiter,
+   (...)   1735     dtype_backend=dtype_backend,
+   1736 )
+   1737 kwds.update(kwds_defaults)
+-> 1739 return _read(filepath_or_buffer, kwds)
+File ~/work/pandas/pandas/pandas/io/parsers/readers.py:338, in _read(filepath_or_buffer, kwds)
+    335 nrows = kwds.get("nrows", None)
+    337 # Check for duplicates in names.
+--> 338 _validate_names(kwds.get("names", None))
+    340 if kwds.get("float_precision") is not None:
+    341     warnings.warn(
+    342         "The 'float_precision' argument is deprecated. "
+    343         "Use the default float precision instead.",
+    344         Pandas4Warning,
+    345         stacklevel=find_stack_level(),
+    346     )
+File ~/work/pandas/pandas/pandas/io/parsers/readers.py:292, in _validate_names(names)
+    290 if names is not None:
+    291     if len(names) != len(set(names)):
+--> 292         raise ValueError("Duplicate names are not allowed.")
+    293     if not (
+    294         is_list_like(names, allow_sets=False) or isinstance(names, abc.KeysView)
+    295     ):
+    296         raise ValueError("Names should be an ordered collection.")
 ValueError: Duplicate names are not allowed.
 ```
 ### Method `read_csv` supports parsing `Categorical` directly#

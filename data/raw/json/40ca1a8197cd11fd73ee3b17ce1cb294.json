@@ -2,7 +2,7 @@
     "id": "40ca1a8197cd11fd73ee3b17ce1cb294",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.bdate_range.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.bdate_range.html",
-    "title": "pandas.bdate_range — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.bdate_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.bdate_range#\n\n- \npandas.bdate_range(*start=None* ,*end=None* ,*periods=None* ,*freq='B'* ,*tz=None* ,*normalize=True* ,*name=None* ,*weekmask=None* ,*holidays=None* ,*inclusive='both'* ,***kwargs* )[source]#\n- Return a fixed frequency DatetimeIndex with business day as the default. This function generates a DatetimeIndex using business day frequency by default, skipping weekends. Custom business day calendars can be specified via `weekmask` and`holidays` .\n  - Parameters:\n    - **start** str or datetime-like, default None\n    - Left bound for generating dates.\n    - **end** str or datetime-like, default None\n    - Right bound for generating dates.\n    - **periods** int, default None\n    - Number of periods to generate.\n    - **freq** str, Timedelta, datetime.timedelta, or DateOffset, default ‘B’\n    - Frequency strings can have multiples, e.g. ‘5h’. The default is business daily (‘B’).\n    - **tz** str or None\n    - Time zone name for returning localized DatetimeIndex, for example Asia/Beijing.\n    - **normalize** bool, default False\n    - Normalize start/end dates to midnight before generating date range.\n    - **name** Hashable, default None\n    - Name of the resulting DatetimeIndex.\n    - **weekmask** str or None, default None\n    - Weekmask of valid business days, passed to `numpy.busdaycalendar` ,\nonly used when custom frequency strings are passed.  The default\nvalue None is equivalent to ‘Mon Tue Wed Thu Fri’.\n    - **holidays** list-like or None, default None\n    - Dates to exclude from the set of valid business days, passed to `numpy.busdaycalendar` , only used when custom frequency strings\nare passed.\n    - **inclusive** {“both”, “neither”, “left”, “right”}, default “both”\n    - Include boundaries; Whether to set each bound as closed or open.\n    - ****kwargs**\n    - For compatibility. Has no effect on the result.\n  - Returns:\n    - DatetimeIndex\n    - Fixed frequency DatetimeIndex.\n See also \n  - `date_range`\n  - Return a fixed frequency DatetimeIndex.\n  - `period_range`\n  - Return a fixed frequency PeriodIndex.\n  - `timedelta_range`\n  - Return a fixed frequency TimedeltaIndex.\n Notes Of the four parameters: `start` ,`end` ,`periods` , and`freq` ,\nexactly three must be specified.  Specifying`freq` is a requirement\nfor`bdate_range` .  Use`date_range` if specifying`freq` is not\ndesired.To learn more about the frequency strings, please see this link. Examples Note how the two weekend days are skipped in the result. >>> pd.bdate_range(start=\"1/1/2018\", end=\"1/08/2018\") DatetimeIndex(['2018-01-01', '2018-01-02', '2018-01-03', '2018-01-04', '2018-01-05', '2018-01-08'], dtype='datetime64[us]', freq='B')",
     "markdown_length": 2662,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.bdate_range — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.bdate_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.271976",
+    "crawled_at": "2026-08-26T06:51:33.818916",
     "type": "webpage"
 }

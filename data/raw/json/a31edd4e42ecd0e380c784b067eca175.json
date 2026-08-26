@@ -2,7 +2,7 @@
     "id": "a31edd4e42ecd0e380c784b067eca175",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.set_flags.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.set_flags.html",
-    "title": "pandas.DataFrame.set_flags — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.set_flags — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.set_flags#\n\n- \nDataFrame.set_flags(*** ,*copy=<no_default>* ,*allows_duplicate_labels=None* )[source]#\n- Return a new object with updated flags. This method creates a shallow copy of the original object, preserving its underlying data while modifying its global flags. In particular, it allows you to update properties such as whether duplicate labels are permitted. This behavior is especially useful in method chains, where one wishes to adjust DataFrame or Series characteristics without altering the original object. \n  - Parameters:\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n    - **allows_duplicate_labels** bool, optional\n    - Whether the returned object allows duplicate labels.\n  - Returns:\n    - Series or DataFrame\n    - The same type as the caller.\n See also \n  - `DataFrame.attrs`\n  - Global metadata applying to this dataset.\n  - `DataFrame.flags`\n  - Global flags applying to this object.\n Notes This method returns a new object that’s a view on the same data as the input. Mutating the input or the output values will be reflected in the other. This method is intended to be used in method chains. “Flags” differ from “metadata”. Flags reflect properties of the pandas object (the Series or DataFrame). Metadata refer to properties of the dataset, and should be stored in `DataFrame.attrs` .Examples >>> df = pd.DataFrame({\"A\": [1, 2]}) >>> df.flags.allows_duplicate_labels True >>> df2 = df.set_flags(allows_duplicate_labels=False) >>> df2.flags.allows_duplicate_labels False",
     "markdown_length": 1877,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.set_flags — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.set_flags — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.302323",
+    "crawled_at": "2026-08-26T06:49:05.462863",
     "type": "webpage"
 }

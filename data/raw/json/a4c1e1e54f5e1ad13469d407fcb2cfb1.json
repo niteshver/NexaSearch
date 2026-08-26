@@ -2,7 +2,7 @@
     "id": "a4c1e1e54f5e1ad13469d407fcb2cfb1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.parsers.TextFileReader.read.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.parsers.TextFileReader.read.html",
-    "title": "pandas.io.parsers.TextFileReader.read — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.parsers.TextFileReader.read — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.io.parsers.TextFileReader.read#\n\n- \nTextFileReader.read(*nrows=None* )[source]#\n- Read rows from the file into a `DataFrame` .Advances the internal cursor by the number of rows returned, so successive calls yield later rows of the file. Used with readers created via `read_csv()` or`read_table()` with`iterator=True` or`chunksize` set.\n  - Parameters:\n    - **nrows** int, optional\n    - Number of rows to read. If `None` , read until end of file.\nIgnored when the underlying engine is`\"pyarrow\"` , which always\nreads the full file.\n  - Returns:\n    - DataFrame\n    - The parsed rows.\n See also \n  - `TextFileReader.get_chunk`\n  - Read the next chunk of rows.\n  - `read_csv`\n  - Read a comma-separated values (csv) file into a DataFrame.\n Examples >>> with pd.read_csv(\"data.csv\", iterator=True) as reader: ... df = reader.read()",
     "markdown_length": 838,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.parsers.TextFileReader.read — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.parsers.TextFileReader.read — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.524627",
+    "crawled_at": "2026-08-26T06:50:56.822677",
     "type": "webpage"
 }

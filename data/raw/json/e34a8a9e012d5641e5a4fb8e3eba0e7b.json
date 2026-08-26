@@ -2,7 +2,7 @@
     "id": "e34a8a9e012d5641e5a4fb8e3eba0e7b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.count.html",
-    "title": "pandas.api.typing.Expanding.count — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Expanding.count — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.count#\n\n- \nExpanding.count(*numeric_only=False* )[source]#\n- Calculate the expanding count of non NaN observations. At each point in time, returns the number of non-NaN values seen so far. This is useful for tracking data availability across an expanding window. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.count`\n  - Aggregating count for Series.\n  - `DataFrame.count`\n  - Aggregating count for DataFrame.\n Examples >>> ser = pd.Series([1, 2, 3, 4], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser.expanding().count() a 1.0 b 2.0 c 3.0 d 4.0 dtype: float64",
     "markdown_length": 907,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.count — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Expanding.count — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.137199",
+    "crawled_at": "2026-08-26T06:51:45.741837",
     "type": "webpage"
 }

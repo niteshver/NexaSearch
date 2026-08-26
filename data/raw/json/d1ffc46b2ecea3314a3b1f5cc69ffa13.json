@@ -2,7 +2,7 @@
     "id": "d1ffc46b2ecea3314a3b1f5cc69ffa13",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.map.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.map.html",
-    "title": "pandas.Index.map — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.map — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.map#\n\n- \nIndex.map(*mapper* ,*na_action=None* )[source]#\n- Map values using an input mapping or function. Applies a function, dict, or Series to each element of the Index, returning a new Index (or MultiIndex if tuples are returned). \n  - Parameters:\n    - **mapper** function, dict, or Series\n    - Mapping correspondence.\n    - **na_action** {None, ‘ignore’}\n    - If ‘ignore’, propagate NA values, without passing them to the mapping correspondence.\n  - Returns:\n    - Union[Index, MultiIndex]\n    - The output of the mapping function applied to the index. If the function returns a tuple with more than one element a MultiIndex will be returned.\n See also \n  - `Index.where`\n  - Replace values where the condition is False.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx.map({1: \"a\", 2: \"b\", 3: \"c\"}) Index(['a', 'b', 'c'], dtype='str') Using map with a function: >>> idx = pd.Index([1, 2, 3]) >>> idx.map(\"I am a {}\".format) Index(['I am a 1', 'I am a 2', 'I am a 3'], dtype='str') >>> idx = pd.Index([\"a\", \"b\", \"c\"]) >>> idx.map(lambda x: x.upper()) Index(['A', 'B', 'C'], dtype='str')",
     "markdown_length": 1107,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.map — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.map — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.map.html"
     },
-    "crawled_at": "2026-08-10T11:47:54.110622",
+    "crawled_at": "2026-08-26T06:49:31.998536",
     "type": "webpage"
 }

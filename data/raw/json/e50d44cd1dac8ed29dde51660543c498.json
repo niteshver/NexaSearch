@@ -2,7 +2,7 @@
     "id": "e50d44cd1dac8ed29dde51660543c498",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.min.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.min.html",
-    "title": "pandas.api.typing.Expanding.min — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Expanding.min — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.min#\n\n- \nExpanding.min(*numeric_only=False* ,*engine=None* ,*engine_kwargs=None* )[source]#\n- Calculate the expanding minimum. At each point in time, returns the minimum value observed up to that point, respecting the `min_periods` threshold.\n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - **engine** str, default None\n      - `'cython'` : Runs the operation through C-extensions from cython.\n      - `'numba'` : Runs the operation through JIT compiled code from numba.\n      - `None` : Defaults to`'cython'` or globally setting`compute.use_numba`\n    - **engine_kwargs** dict, default None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n      - For `'numba'` engine, the engine can accept`nogil` and`parallel` dictionary keys. The values must either be`True` or`False` . The default`engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}`\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.min`\n  - Aggregating min for Series.\n  - `DataFrame.min`\n  - Aggregating min for DataFrame.\n Notes See Numba engine and Numba (JIT compilation) for extended documentation and performance considerations for the Numba engine. Examples >>> ser = pd.Series([2, 3, 4, 1], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser.expanding().min() a 2.0 b 2.0 c 2.0 d 1.0 dtype: float64",
     "markdown_length": 1607,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.min — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Expanding.min — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.215278",
+    "crawled_at": "2026-08-26T06:51:51.218874",
     "type": "webpage"
 }

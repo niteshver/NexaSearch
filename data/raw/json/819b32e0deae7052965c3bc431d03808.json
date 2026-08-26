@@ -2,7 +2,7 @@
     "id": "819b32e0deae7052965c3bc431d03808",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.name.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearBegin.name.html",
-    "title": "pandas.tseries.offsets.BYearBegin.name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BYearBegin.name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BYearBegin.name#\n\n- BYearBegin.name#\n- Return a string representing the base frequency. Deprecated since version 3.1.0: The `.name` property is deprecated. Use`.rule_code` instead.This is typically a short string alias (e.g., ‘h’ for hourly, ‘D’ for daily) used to identify the offset type, regardless of the n multiplier. See also \n  - `tseries.offsets.Week`\n  - Represents a weekly offset.\n  - `DateOffset`\n  - Base class for all other offset classes.\n  - `tseries.offsets.Day`\n  - Represents a single day offset.\n  - `tseries.offsets.MonthEnd`\n  - Represents a monthly offset that snaps to the end of the month.\n Examples >>> pd.offsets.Hour().name 'h' >>> pd.offsets.Hour(5).name 'h'",
     "markdown_length": 712,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BYearBegin.name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BYearBegin.name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:11.700271",
+    "crawled_at": "2026-08-26T06:50:58.934279",
     "type": "webpage"
 }

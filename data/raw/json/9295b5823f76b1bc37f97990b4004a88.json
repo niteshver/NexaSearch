@@ -2,7 +2,7 @@
     "id": "9295b5823f76b1bc37f97990b4004a88",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.corr.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.corr.html",
-    "title": "pandas.Series.corr — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.corr — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.corr#\n\n- \nSeries.corr(*other* ,*method='pearson'* ,*min_periods=None* )[source]#\n- Compute correlation with other Series, excluding missing values. The two Series objects are not required to be the same length and will be aligned internally before the correlation function is applied. \n  - Parameters:\n    - **other** Series\n    - Series with which to compute the correlation.\n    - **method** {‘pearson’, ‘kendall’, ‘spearman’} or callable\n    - Method used to compute correlation: \n      - pearson : Standard correlation coefficient\n      - kendall : Kendall Tau correlation coefficient\n      - spearman : Spearman rank correlation\n      - callable: Callable with input two 1d ndarrays and returning a float.\n Warning Note that the returned matrix from corr will have 1 along the diagonals and will be symmetric regardless of the callable’s behavior.\n    - **min_periods** int, optional\n    - Minimum number of observations needed to have a valid result.\n  - Returns:\n    - float\n    - Correlation with other.\n See also \n  - `DataFrame.corr`\n  - Compute pairwise correlation between columns.\n  - `DataFrame.corrwith`\n  - Compute pairwise correlation with another DataFrame or Series.\n Notes Pearson, Kendall and Spearman correlation are currently computed using pairwise complete observations. \n  - Pearson correlation coefficient\n  - Kendall rank correlation coefficient\n  - Spearman’s rank correlation coefficient\n Automatic data alignment: as with all pandas operations, automatic data alignment is performed for this method. `corr()` automatically considers values with matching indices.Examples >>> def histogram_intersection(a, b): ... v = np.minimum(a, b).sum().round(decimals=1) ... return v >>> s1 = pd.Series([0.2, 0.0, 0.6, 0.2]) >>> s2 = pd.Series([0.3, 0.6, 0.0, 0.1]) >>> s1.corr(s2, method=histogram_intersection) 0.3 Pandas auto-aligns the values with matching indices >>> s1 = pd.Series([1, 2, 3], index=[0, 1, 2]) >>> s2 = pd.Series([1, 2, 3], index=[2, 1, 0]) >>> s1.corr(s2) -1.0 If the input is a constant array, the correlation is not defined in this case, and `np.nan` is returned.>>> s1 = pd.Series([0.45, 0.45]) >>> s1.corr(s1) nan",
     "markdown_length": 2174,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.corr — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.corr — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-10T11:46:52.210620",
+    "crawled_at": "2026-08-26T06:49:12.711470",
     "type": "webpage"
 }

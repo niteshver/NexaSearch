@@ -2,7 +2,7 @@
     "id": "8d08dc05433831f54a45994818bff264",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.highlight_quantile.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.highlight_quantile.html",
-    "title": "pandas.io.formats.style.Styler.highlight_quantile — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.highlight_quantile — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.highlight_quantile#\n\n- \nStyler.highlight_quantile(*subset=None* ,*color='yellow'* ,*axis=0* ,*q_left=0.0* ,*q_right=1.0* ,*interpolation='linear'* ,*inclusive='both'* ,*props=None* )[source]#\n- Highlight values defined by a quantile with a style. Applies a background color or custom CSS properties to cells whose values fall within the quantile range specified by `q_left` and`q_right` .\n  - Parameters:\n    - **subset** label, array-like, IndexSlice, optional\n    - A valid 2d input to DataFrame.loc[<subset>], or, in the case of a 1d input or single key, to DataFrame.loc[:, <subset>] where the columns are prioritised, to limit `data` to*before* applying the function.\n    - **color** str, default ‘yellow’\n    - Background color to use for highlighting.\n    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default 0\n    - Axis along which to determine and highlight quantiles. If `None` quantiles\nare measured over the entire DataFrame. See examples.\n    - **q_left** float, default 0\n    - Left bound, in [0, q_right), for the target quantile range.\n    - **q_right** float, default 1\n    - Right bound, in (q_left, 1], for the target quantile range.\n    - **interpolation** {‘linear’, ‘lower’, ‘higher’, ‘midpoint’, ‘nearest’}\n    - Argument passed to `Series.quantile` or`DataFrame.quantile` for\nquantile estimation.\n    - **inclusive** {‘both’, ‘neither’, ‘left’, ‘right’}\n    - Identify whether quantile bounds are closed or open.\n    - **props** str, default None\n    - CSS properties to use for highlighting. If `props` is given,`color` is not used.\n  - Returns:\n    - Styler\n    - Instance of class where values in quantile highlighted with given style.\n See also \n  - `Styler.highlight_null`\n  - Highlight missing values with a style.\n  - `Styler.highlight_max`\n  - Highlight the maximum with a style.\n  - `Styler.highlight_min`\n  - Highlight the minimum with a style.\n  - `Styler.highlight_between`\n  - Highlight a defined range with a style.\n Notes This function does not work with `str` dtypes.Examples Using `axis=None` and apply a quantile to all collective data>>> df = pd.DataFrame(np.arange(10).reshape(2, 5) + 1) >>> df.style.highlight_quantile(axis=None, q_left=0.8, color=\"#fffd75\") ... Or highlight quantiles row-wise or column-wise, in this case by row-wise >>> df.style.highlight_quantile(axis=1, q_left=0.8, color=\"#fffd75\") ... Use `props` instead of default background coloring>>> df.style.highlight_quantile( ... axis=None, ... q_left=0.2, ... q_right=0.8, ... props=\"font-weight:bold;color:#e83e8c\", ... )",
     "markdown_length": 2572,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.highlight_quantile — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.highlight_quantile — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.121594",
+    "crawled_at": "2026-08-26T06:51:53.515407",
     "type": "webpage"
 }

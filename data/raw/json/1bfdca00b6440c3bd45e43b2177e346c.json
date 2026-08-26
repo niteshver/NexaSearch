@@ -2,7 +2,7 @@
     "id": "1bfdca00b6440c3bd45e43b2177e346c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.to_pytimedelta.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.to_pytimedelta.html",
-    "title": "pandas.Series.dt.to_pytimedelta — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.to_pytimedelta — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.to_pytimedelta#\n\n- Series.dt.to_pytimedelta()[source]#\n- Return an array of native `datetime.timedelta` objects.Python’s standard datetime library uses a different representation timedelta’s. This method converts a Series of pandas Timedeltas to datetime.timedelta format with the same length as the original Series. \n  - Returns:\n    - numpy.ndarray\n    - Array of 1D containing data with datetime.timedelta type.\n See also \n  - `datetime.timedelta`\n  - A duration expressing the difference between two date, time, or datetime.\n Examples >>> s = pd.Series(pd.to_timedelta(np.arange(5), unit=\"D\")) >>> s 0 0 days 1 1 days 2 2 days 3 3 days 4 4 days dtype: timedelta64[s] >>> s.dt.to_pytimedelta() array([datetime.timedelta(0), datetime.timedelta(days=1), datetime.timedelta(days=2), datetime.timedelta(days=3), datetime.timedelta(days=4)], dtype=object)",
     "markdown_length": 872,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.to_pytimedelta — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.to_pytimedelta — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.804430",
+    "crawled_at": "2026-08-26T06:49:16.053772",
     "type": "webpage"
 }

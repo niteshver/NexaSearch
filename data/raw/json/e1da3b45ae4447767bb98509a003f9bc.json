@@ -2,7 +2,7 @@
     "id": "e1da3b45ae4447767bb98509a003f9bc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.to_series.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.to_series.html",
-    "title": "pandas.Index.to_series — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.to_series — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.to_series#\n\n- \nfinal Index.to_series(*index=None* ,*name=None* )[source]#\n- Create a Series with both index and values equal to the index keys. Useful with map for returning an indexer based on an index. \n  - Parameters:\n    - **index** Index or array-like, optional\n    - Index of resulting Series. If None, defaults to original index.\n    - **name** str, optional\n    - Name of resulting Series. If None, defaults to name of original index.\n  - Returns:\n    - Series\n    - The dtype will be based on the type of the Index values.\n See also \n  - `Index.to_frame`\n  - Convert an Index to a DataFrame.\n  - `Series.to_frame`\n  - Convert Series to DataFrame.\n Examples >>> idx = pd.Index([\"Ant\", \"Bear\", \"Cow\"], name=\"animal\") By default, the original index and original name is reused. >>> idx.to_series() animal Ant Ant Bear Bear Cow Cow Name: animal, dtype: str To enforce a new index, specify new labels to `index` :>>> idx.to_series(index=[0, 1, 2]) 0 Ant 1 Bear 2 Cow Name: animal, dtype: str To override the name of the resulting column, specify `name` :>>> idx.to_series(name=\"zoo\") animal Ant Ant Bear Bear Cow Cow Name: zoo, dtype: str",
     "markdown_length": 1157,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.to_series — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.to_series — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.384024",
+    "crawled_at": "2026-08-26T06:48:50.859319",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "bd51ed0da28a16ea4a35cc2b6ef84460",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.quarter.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.quarter.html",
-    "title": "pandas.PeriodIndex.quarter — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.PeriodIndex.quarter — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.quarter#\n\n- property PeriodIndex.quarter[source]#\n- The quarter of the date. Returns the quarter (1 through 4) for each period in the index. See also \n  - `PeriodIndex.qyear`\n  - Fiscal year the Period lies in according to its starting-quarter.\n Examples >>> idx = pd.PeriodIndex([\"2023-01\", \"2023-02\", \"2023-03\"], freq=\"M\") >>> idx.quarter Index([1, 1, 1], dtype='int64')",
     "markdown_length": 393,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.quarter — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.PeriodIndex.quarter — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.quarter.html"
     },
-    "crawled_at": "2026-08-10T11:47:56.322874",
+    "crawled_at": "2026-08-26T06:50:32.365798",
     "type": "webpage"
 }

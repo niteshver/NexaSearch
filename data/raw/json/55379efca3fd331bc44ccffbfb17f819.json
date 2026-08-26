@@ -1,0 +1,22 @@
+{
+    "id": "55379efca3fd331bc44ccffbfb17f819",
+    "url": "https://pandas.pydata.org/pandas-docs/version/2.2/_sources/reference/api/pandas.CategoricalIndex.map.rst.txt",
+    "canonical_url": "https://pandas.pydata.org/pandas-docs/version/2.2/_sources/reference/api/pandas.CategoricalIndex.map.rst.txt",
+    "title": "https://pandas.pydata.org/pandas-docs/version/2.2/_sources/reference/api/pandas.CategoricalIndex.map.rst.txt",
+    "status": 200,
+    "markdown": "pandas.CategoricalIndex.map =========================== .. currentmodule:: pandas .. automethod:: CategoricalIndex.map",
+    "markdown_length": 118,
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.CategoricalIndex.map.html"
+    },
+    "crawled_at": "2026-08-26T06:52:11.339887",
+    "type": "webpage"
+}

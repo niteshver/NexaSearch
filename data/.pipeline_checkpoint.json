@@ -1,7 +1,7 @@
 {
   "completed_stages": [
-    "seeding",
-    "crawling"
+    "crawling",
+    "seeding"
   ],
-  "timestamp": "2026-08-10T11:48:35.539809"
+  "timestamp": "2026-08-26T06:52:11.944907"
 }

@@ -12,9 +12,9 @@ dtypes).
     - **inplace** bool, default False
     - Whether to perform the operation in place on the data.
     - **axis** int, default None
-    - Alignment axis if needed. For Series this parameter is unused and defaults to 0.
+    - Alignment axis, used only when aligning other with the calling object; it has no effect on the alignment of cond, which is always aligned on the calling object’s labels. For Series this parameter is unused and defaults to 0.
     - **level** int, default None
-    - Alignment level if needed.
+    - Alignment level, used only when aligning other with the calling object; it has no effect on the alignment of cond.
   - Returns:
     - Series or DataFrame
     - When applied to a Series, the function will return a Series, and when applied to a DataFrame, it will return a DataFrame.

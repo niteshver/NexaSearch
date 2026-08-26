@@ -2,7 +2,7 @@
     "id": "bd808dc18159a426ed3298f93ee893fb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.isoweekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.isoweekday.html",
-    "title": "pandas.Timestamp.isoweekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.isoweekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.isoweekday#\n\n- Timestamp.isoweekday()#\n- Return the day of the week represented by the date. Monday == 1 … Sunday == 7. See also \n  - `Timestamp.weekday`\n  - Return the day of the week with Monday=0, Sunday=6.\n  - `Timestamp.isocalendar`\n  - Return a tuple containing ISO year, week number and weekday.\n  - `datetime.date.isoweekday`\n  - Equivalent method in datetime module.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00') >>> ts Timestamp('2023-01-01 10:00:00') >>> ts.isoweekday() 7",
     "markdown_length": 511,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.isoweekday — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.isoweekday — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.138066",
+    "crawled_at": "2026-08-26T06:51:07.704166",
     "type": "webpage"
 }

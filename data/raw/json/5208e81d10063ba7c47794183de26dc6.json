@@ -2,7 +2,7 @@
     "id": "5208e81d10063ba7c47794183de26dc6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.tz_convert.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.tz_convert.html",
-    "title": "pandas.Timestamp.tz_convert — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.tz_convert — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.tz_convert#\n\n- \nTimestamp.tz_convert(*tz* )#\n- Convert timezone-aware Timestamp to another time zone. This method is used to convert a timezone-aware Timestamp object to a different time zone. The original UTC time remains the same; only the time zone information is changed. If the Timestamp is timezone-naive, a TypeError is raised. \n  - Parameters:\n    - **tz** str, zoneinfo.ZoneInfo, pytz.timezone, dateutil.tz.tzfile or None\n    - Time zone for time which Timestamp will be converted to. None will remove timezone holding UTC time.\n  - Returns:\n    - **converted** Timestamp\n  - Raises:\n    - TypeError\n    - If Timestamp is tz-naive.\n See also \n  - `Timestamp.tz_localize`\n  - Localize the Timestamp to a timezone.\n  - `DatetimeIndex.tz_convert`\n  - Convert a DatetimeIndex to another time zone.\n  - `DatetimeIndex.tz_localize`\n  - Localize a DatetimeIndex to a specific time zone.\n  - `datetime.datetime.astimezone`\n  - Convert a datetime object to another time zone.\n Examples Create a timestamp object with UTC timezone: >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651', tz='UTC') >>> ts Timestamp('2020-03-14 15:32:52.192548651+0000', tz='UTC') Change to Tokyo timezone: >>> ts.tz_convert(tz='Asia/Tokyo') Timestamp('2020-03-15 00:32:52.192548651+0900', tz='Asia/Tokyo') Can also use `astimezone` :>>> ts.astimezone(tz='Asia/Tokyo') Timestamp('2020-03-15 00:32:52.192548651+0900', tz='Asia/Tokyo') Analogous for `pd.NaT` :>>> pd.NaT.tz_convert(tz='Asia/Tokyo') NaT",
     "markdown_length": 1499,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.tz_convert — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.tz_convert — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.712049",
+    "crawled_at": "2026-08-26T06:50:38.837253",
     "type": "webpage"
 }

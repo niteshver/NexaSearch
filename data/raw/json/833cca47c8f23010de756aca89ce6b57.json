@@ -2,7 +2,7 @@
     "id": "833cca47c8f23010de756aca89ce6b57",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.value_counts.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.value_counts.html",
-    "title": "pandas.DataFrame.value_counts — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.value_counts — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.value_counts#\n\n- \nDataFrame.value_counts(*subset=None* ,*normalize=False* ,*sort=True* ,*ascending=False* ,*dropna=True* )[source]#\n- Return a Series containing the frequency of each distinct row in the DataFrame. The resulting Series is indexed by the unique row combinations found in the DataFrame (or the specified subset of columns). By default the counts are sorted in descending order, and rows with `NaN` values\nin any column are excluded.\n  - Parameters:\n    - **subset** Hashable or a sequence of the previous, optional\n    - Columns to use when counting unique combinations.\n    - **normalize** bool, default False\n    - Return proportions rather than frequencies.\n    - **sort** bool, default True\n    - Stable sort by frequencies when True. Preserve the order of the data when False. Changed in version 3.0.0: Prior to 3.0.0, `sort=False` would sort by the columns values.Changed in version 3.0.0: Prior to 3.0.0, the sort was unstable.\n    - **ascending** bool, default False\n    - Sort in ascending order.\n    - **dropna** bool, default True\n    - Do not include counts of rows that contain NA values.\n  - Returns:\n    - Series\n    - Series containing the frequency of each distinct row in the DataFrame.\n See also \n  - `Series.value_counts`\n  - Equivalent method on Series.\n Notes The returned Series will have a MultiIndex with one level per input column but an Index (non-multi) for a single label. By default, rows that contain any NA values are omitted from the result. By default, the resulting Series will be sorted by frequencies in descending order so that the first element is the most frequently-occurring row. Examples >>> df = pd.DataFrame( ... {\"num_legs\": [2, 4, 4, 6], \"num_wings\": [2, 0, 0, 0]}, ... index=[\"falcon\", \"dog\", \"cat\", \"ant\"], ... ) >>> df num_legs num_wings falcon 2 2 dog 4 0 cat 4 0 ant 6 0 >>> df.value_counts() num_legs num_wings 4 0 2 2 2 1 6 0 1 Name: count, dtype: int64 >>> df.value_counts(sort=False) num_legs num_wings 2 2 1 4 0 2 6 0 1 Name: count, dtype: int64 >>> df.value_counts(ascending=True) num_legs num_wings 2 2 1 6 0 1 4 0 2 Name: count, dtype: int64 >>> df.value_counts(normalize=True) num_legs num_wings 4 0 0.50 2 2 0.25 6 0 0.25 Name: proportion, dtype: float64 With dropna set to False we can also count rows with NA values. >>> df = pd.DataFrame( ... { ... \"first_name\": [\"John\", \"Anne\", \"John\", \"Beth\"], ... \"middle_name\": [\"Smith\", pd.NA, pd.NA, \"Louise\"], ... } ... ) >>> df first_name middle_name 0 John Smith 1 Anne NaN 2 John NaN 3 Beth Louise >>> df.value_counts() first_name middle_name John Smith 1 Beth Louise 1 Name: count, dtype: int64 >>> df.value_counts(dropna=False) first_name middle_name John Smith 1 Anne NaN 1 John NaN 1 Beth Louise 1 Name: count, dtype: int64 >>> df.value_counts(\"first_name\") first_name John 2 Anne 1 Beth 1 Name: count, dtype: int64",
     "markdown_length": 2861,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.value_counts — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.value_counts — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.value_counts.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.211794",
+    "crawled_at": "2026-08-26T06:49:07.155250",
     "type": "webpage"
 }

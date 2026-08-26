@@ -2,7 +2,7 @@
     "id": "2339bc89867e3963ec9aa72f2bfc3601",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.copy.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.copy.html",
-    "title": "pandas.HDFStore.copy — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.HDFStore.copy — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.copy#\n\n- \nHDFStore.copy(*file* ,*mode='w'* ,*propindexes=True* ,*keys=None* ,*complib=None* ,*complevel=None* ,*fletcher32=False* ,*overwrite=True* )[source]#\n- Copy the existing store to a new file, updating in place. Each object stored in the current `HDFStore` is read and re-written\nto the destination file, which can be useful for repacking (to\nreclaim space after deletes), changing compression options, or\ncloning a subset of keys.\n  - Parameters:\n    - **file** str or path-like\n    - Destination file to write to.\n    - **mode** str, default ‘w’\n    - File mode for the destination, see `HDFStore` .\n    - **propindexes** bool, default True\n    - Restore indexes in copied file.\n    - **keys** list, optional\n    - List of keys to include in the copy (defaults to all).\n    - **complib** str, optional\n    - Compression library, see `HDFStore` .\n    - **complevel** int, optional\n    - Compression level, see `HDFStore` .\n    - **fletcher32** bool, default False\n    - Whether to use the Fletcher32 checksum, see `HDFStore` .\n    - **overwrite** bool, default True\n    - Whether to overwrite (remove and replace) existing nodes in the new store.\n  - Returns:\n    - HDFStore\n    - Open file handle of the new store.\n See also \n  - `HDFStore.put`\n  - Write an object to the store.\n  - `HDFStore.append`\n  - Append to an existing table.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> new_store = store.copy(\"store_copy.h5\") >>> new_store.close() >>> store.close()",
     "markdown_length": 1581,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.copy — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.HDFStore.copy — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.529364",
+    "crawled_at": "2026-08-26T06:49:07.717609",
     "type": "webpage"
 }

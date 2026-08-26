@@ -1,0 +1,83 @@
+{
+    "id": "eba9b1d3e2f15a1b5bd7dfb2ce4d3519",
+    "url": "http://colah.github.io/posts/tags/data_visualization.html",
+    "canonical_url": "http://colah.github.io/posts/tags/data_visualization.html",
+    "title": "Data Visualization Posts - colah's blog",
+    "status": 200,
+    "markdown": "Toggle navigation\ncolah's blog\nBlog\nAbout\nContact\nData Visualization Posts\nVisualizing MNIST: An Exploration of Dimensionality Reduction\n-\nOctober 9, 2014\nEnable JavaScript for footnotes, Disqus comments, and other cool stuff.",
+    "markdown_length": 226,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/posts/2014-10-Visualizing-MNIST/",
+            "text": "Visualizing MNIST: An Exploration of Dimensionality Reduction",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/rss.xml",
+            "text": "RSS feed",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Data Visualization Posts - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-10-Visualizing-MNIST/"
+    },
+    "crawled_at": "2026-08-26T06:47:17.668156",
+    "type": "webpage"
+}

@@ -2,7 +2,7 @@
     "id": "1d001384c6844e170e1388387158e0e4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.max.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.max.html",
-    "title": "pandas.DataFrame.max — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.max — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.max#\n\n- \nDataFrame.max(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return the maximum of the values over the requested axis. If you want the *index* of the maximum, use`idxmax` .\nThis is the equivalent of the`numpy.ndarray` method`argmax` .\n  - Parameters:\n    - **axis** {index (0), columns (1)}, default 0\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation\nacross both axes.Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Series or scalar\n    - Value containing the calculation referenced in the description.\n See also \n  - `Series.sum`\n  - Return the sum.\n  - `Series.min`\n  - Return the minimum.\n  - `Series.max`\n  - Return the maximum.\n  - `Series.idxmin`\n  - Return the index of the minimum.\n  - `Series.idxmax`\n  - Return the index of the maximum.\n  - `DataFrame.sum`\n  - Return the sum over the requested axis.\n  - `DataFrame.min`\n  - Return the minimum over the requested axis.\n  - `DataFrame.max`\n  - Return the maximum over the requested axis.\n  - `DataFrame.idxmin`\n  - Return the index of the minimum over the requested axis.\n  - `DataFrame.idxmax`\n  - Return the index of the maximum over the requested axis.\n Examples >>> idx = pd.MultiIndex.from_arrays( ... [[\"warm\", \"warm\", \"cold\", \"cold\"], [\"dog\", \"falcon\", \"fish\", \"spider\"]], ... names=[\"blooded\", \"animal\"], ... ) >>> s = pd.Series([4, 2, 0, 8], name=\"legs\", index=idx) >>> s blooded animal warm dog 4 falcon 2 cold fish 0 spider 8 Name: legs, dtype: int64 >>> s.max() 8",
     "markdown_length": 1949,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.max — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.max — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.max.html"
     },
-    "crawled_at": "2026-08-10T11:46:47.189443",
+    "crawled_at": "2026-08-26T06:49:03.489290",
     "type": "webpage"
 }

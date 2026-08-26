@@ -2,7 +2,7 @@
     "id": "1cdd4449b71603b4355acb7d3d877181",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.pipe.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.pipe.html",
-    "title": "pandas.Series.pipe — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.pipe — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.pipe#\n\n- \nSeries.pipe(*func* ,**args* ,***kwargs* )[source]#\n- Apply chainable functions that expect Series or DataFrames. Passes the object as the first argument to each function, so that `df.pipe(f).pipe(g)` is equivalent to`g(f(df))` .\nImproves readability when chaining several transformations.\n  - Parameters:\n    - **func** function\n    - Function to apply to the Series/DataFrame. `args` , and`kwargs` are passed into`func` .\nAlternatively a`(callable, data_keyword)` tuple where`data_keyword` is a string indicating the keyword of`callable` that expects the Series/DataFrame.\n    - ***args** iterable, optional\n    - Positional arguments passed into `func` .\n    - ****kwargs** mapping, optional\n    - A dictionary of keyword arguments passed into `func` .\n  - Returns:\n    - The return type of `func` .\n    - The result of applying `func` to the Series or DataFrame.\n  - The return type of \n See also \n  - `DataFrame.apply`\n  - Apply a function along input axis of DataFrame.\n  - `DataFrame.map`\n  - Apply a function elementwise on a whole DataFrame.\n  - `Series.map`\n  - Apply a mapping correspondence on a `Series` .\n Notes Use `.pipe` when chaining together functions that expect\nSeries, DataFrames or GroupBy objects.Examples Constructing an income DataFrame from a dictionary. >>> data = [[8000, 1000], [9500, np.nan], [5000, 2000]] >>> df = pd.DataFrame(data, columns=[\"Salary\", \"Others\"]) >>> df Salary Others 0 8000 1000.0 1 9500 NaN 2 5000 2000.0 Functions that perform tax reductions on an income DataFrame. >>> def subtract_federal_tax(df): ... return df * 0.9 >>> def subtract_state_tax(df, rate): ... return df * (1 - rate) >>> def subtract_national_insurance(df, rate, rate_increase): ... new_rate = rate + rate_increase ... return df * (1 - new_rate) Instead of writing >>> subtract_national_insurance( ... subtract_state_tax(subtract_federal_tax(df), rate=0.12), ... rate=0.05, ... rate_increase=0.02, ... ) You can write >>> ( ... df.pipe(subtract_federal_tax) ... .pipe(subtract_state_tax, rate=0.12) ... .pipe(subtract_national_insurance, rate=0.05, rate_increase=0.02) ... ) Salary Others 0 5892.48 736.56 1 6997.32 NaN 2 3682.80 1473.12 If you have a function that takes the data as (say) the second argument, pass a tuple indicating which keyword expects the data. For example, suppose `national_insurance` takes its data as`df` in the second argument:>>> def subtract_national_insurance(rate, df, rate_increase): ... new_rate = rate + rate_increase ... return df * (1 - new_rate) >>> ( ... df.pipe(subtract_federal_tax) ... .pipe(subtract_state_tax, rate=0.12) ... .pipe( ... (subtract_national_insurance, \"df\"), rate=0.05, rate_increase=0.02 ... ) ... ) Salary Others 0 5892.48 736.56 1 6997.32 NaN 2 3682.80 1473.12",
     "markdown_length": 2765,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.pipe — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.pipe — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:55.910829",
+    "crawled_at": "2026-08-26T06:49:20.050142",
     "type": "webpage"
 }

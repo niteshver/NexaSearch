@@ -2,7 +2,7 @@
     "id": "a94583cb9586cec558af3f0a270d1fb8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.plot_params.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.plot_params.html",
-    "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.plot_params#\n\n- pandas.plotting.plot_params = {'xaxis.compat': False}#\n- Stores pandas plotting options. Allows for parameter aliasing so you can just use parameter names that are the same as the plot function parameters, but is stored in a canonical format that makes it easy to breakdown into groups later. See also \n  - `plotting.register_matplotlib_converters`\n  - Register pandas formatters and converters with matplotlib.\n  - `plotting.bootstrap_plot`\n  - Bootstrap plot on mean, median and mid-range statistics.\n  - `plotting.autocorrelation_plot`\n  - Autocorrelation plot for time series.\n  - `plotting.lag_plot`\n  - Lag plot for time series.\n Examples >>> np.random.seed(42) >>> df = pd.DataFrame( ... {\"A\": np.random.randn(10), \"B\": np.random.randn(10)}, ... index=pd.date_range(\"1/1/2000\", freq=\"4MS\", periods=10), ... ) >>> with pd.plotting.plot_params.use(\"x_compat\", True): ... _ = df[\"A\"].plot(color=\"r\") ... _ = df[\"B\"].plot(color=\"g\")",
     "markdown_length": 969,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.826801",
+    "crawled_at": "2026-08-26T06:48:14.207413",
     "type": "webpage"
 }

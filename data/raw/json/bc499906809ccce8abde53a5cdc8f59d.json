@@ -2,7 +2,7 @@
     "id": "bc499906809ccce8abde53a5cdc8f59d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.asm8.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.asm8.html",
-    "title": "pandas.Timestamp.asm8 — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.asm8 — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.asm8#\n\n- Timestamp.asm8#\n- Return numpy datetime64 format with same precision. This property provides interoperability with NumPy datetime operations. See also \n  - `numpy.datetime64`\n  - Numpy datatype for dates and times with high precision.\n  - `Timestamp.to_numpy`\n  - Convert the Timestamp to a NumPy datetime64.\n  - `to_datetime`\n  - Convert argument to datetime.\n Examples >>> ts = pd.Timestamp(2020, 3, 14, 15) >>> ts.asm8 np.datetime64('2020-03-14T15:00:00.000000')",
     "markdown_length": 493,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.asm8 — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.asm8 — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.428050",
+    "crawled_at": "2026-08-26T06:49:54.180158",
     "type": "webpage"
 }

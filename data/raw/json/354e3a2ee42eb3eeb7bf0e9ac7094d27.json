@@ -2,7 +2,7 @@
     "id": "354e3a2ee42eb3eeb7bf0e9ac7094d27",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.remove_unused_levels.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.remove_unused_levels.html",
-    "title": "pandas.MultiIndex.remove_unused_levels — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.remove_unused_levels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.remove_unused_levels#\n\n- MultiIndex.remove_unused_levels()[source]#\n- Create new MultiIndex from current that removes unused levels. Unused level(s) means levels that are not expressed in the labels. The resulting MultiIndex will have the same outward appearance, meaning the same .values and ordering. It will also be .equals() to the original. The remove_unused_levels method is useful in cases where you have a MultiIndex with hierarchical levels, but some of these levels are no longer needed due to filtering or subsetting operations. By removing the unused levels, the resulting MultiIndex becomes more compact and efficient, which can improve performance in subsequent operations. \n  - Returns:\n    - MultiIndex\n    - A new MultiIndex with unused levels removed.\n See also \n  - `MultiIndex.droplevel`\n  - Remove specified levels from a MultiIndex.\n  - `MultiIndex.reorder_levels`\n  - Rearrange levels of a MultiIndex.\n  - `MultiIndex.set_levels`\n  - Set new levels on a MultiIndex.\n Examples >>> mi = pd.MultiIndex.from_product([range(2), list(\"ab\")]) >>> mi MultiIndex([(0, 'a'), (0, 'b'), (1, 'a'), (1, 'b')], ) >>> mi[2:] MultiIndex([(1, 'a'), (1, 'b')], ) The 0 from the first level is not represented and can be removed >>> mi2 = mi[2:].remove_unused_levels() >>> mi2.levels FrozenList([[1], ['a', 'b']])",
     "markdown_length": 1336,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.remove_unused_levels — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.remove_unused_levels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:41.540525",
+    "crawled_at": "2026-08-26T06:48:53.012587",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "2cffad2916901ea4d379ab89bd447dc9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.value.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.value.html",
-    "title": "pandas.Timedelta.value — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timedelta.value — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.value#\n\n- Timedelta.value#\n- Return the value of Timedelta object in nanoseconds. Return the total seconds, milliseconds and microseconds of the timedelta as nanoseconds. \n  - Returns:\n    - int\n See also \n  - `Timedelta.unit`\n  - Return the unit of Timedelta object.\n Examples >>> pd.Timedelta(1, \"us\").value 1000",
     "markdown_length": 333,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.value — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timedelta.value — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.386629",
+    "crawled_at": "2026-08-26T06:51:26.449563",
     "type": "webpage"
 }

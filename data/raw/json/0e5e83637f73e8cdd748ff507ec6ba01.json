@@ -2,7 +2,7 @@
     "id": "0e5e83637f73e8cdd748ff507ec6ba01",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.infer_freq.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.infer_freq.html",
-    "title": "pandas.infer_freq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.infer_freq — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.infer_freq#\n\n- \npandas.infer_freq(*index* )[source]#\n- Infer the most likely frequency given the input index. Deprecated since version 3.1.0: A future version of pandas will return a `BaseOffset` instead of\na string. Use`pd.set_option('future.infer_freq_returns_offset', True)` to opt in\nto the future behavior.This method attempts to deduce the most probable frequency (e.g., ‘D’ for daily, ‘H’ for hourly) from a sequence of datetime-like objects. It is particularly useful when the frequency of a time series is not explicitly set or known but can be inferred from its values. \n  - Parameters:\n    - **index** DatetimeIndex, TimedeltaIndex, Series or array-like\n    - If passed a Series will use the values of the series (NOT THE INDEX).\n  - Returns:\n    - str or None\n    - None if no discernible frequency.\n  - Raises:\n    - TypeError\n    - If the index is not datetime-like.\n    - ValueError\n    - If there are fewer than three values.\n See also \n  - `date_range`\n  - Return a fixed frequency DatetimeIndex.\n  - `timedelta_range`\n  - Return a fixed frequency TimedeltaIndex with day as the default.\n  - `period_range`\n  - Return a fixed frequency PeriodIndex.\n  - `DatetimeIndex.freq`\n  - Return the frequency object if it is set, otherwise None.\n Examples >>> idx = pd.date_range(start=\"2020/12/01\", end=\"2020/12/30\", periods=30) >>> pd.infer_freq(idx) 'D'",
     "markdown_length": 1372,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.infer_freq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.infer_freq — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.895711",
+    "crawled_at": "2026-08-26T06:50:50.763691",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "215f3c9a67a2515b0645f4b415114c1a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessHour.name.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessHour.name.html",
-    "title": "pandas.tseries.offsets.BusinessHour.name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BusinessHour.name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BusinessHour.name#\n\n- BusinessHour.name#\n- Return a string representing the base frequency. Deprecated since version 3.1.0: The `.name` property is deprecated. Use`.rule_code` instead.This is typically a short string alias (e.g., ‘h’ for hourly, ‘D’ for daily) used to identify the offset type, regardless of the n multiplier. See also \n  - `tseries.offsets.Week`\n  - Represents a weekly offset.\n  - `DateOffset`\n  - Base class for all other offset classes.\n  - `tseries.offsets.Day`\n  - Represents a single day offset.\n  - `tseries.offsets.MonthEnd`\n  - Represents a monthly offset that snaps to the end of the month.\n Examples >>> pd.offsets.Hour().name 'h' >>> pd.offsets.Hour(5).name 'h'",
     "markdown_length": 716,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BusinessHour.name — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BusinessHour.name — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:13.918969",
+    "crawled_at": "2026-08-26T06:51:26.838004",
     "type": "webpage"
 }

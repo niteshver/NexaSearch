@@ -2,7 +2,7 @@
     "id": "467491f221c352091cae38bef1c2854f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.create_table_index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.create_table_index.html",
-    "title": "pandas.HDFStore.create_table_index — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.HDFStore.create_table_index — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.create_table_index#\n\n- \nHDFStore.create_table_index(*key* ,*columns=None* ,*optlevel=None* ,*kind=None* )[source]#\n- Create a pytables index on the table. Indexes are automatically created on indexable axes and `data_columns` during`append` /`put` when`index=True` (the default). This method lets you add or rebuild indexes after\nthe fact, which is**highly encouraged** because it greatly speeds\nup`select` calls that filter on the indexed dimension.\n  - Parameters:\n    - **key** str\n    - Object stored in the file to index.\n    - **columns** None, bool, or listlike[str]\n    - Indicate which columns to create an index on. \n      - False : Do not create any indexes.\n      - True : Create indexes on all columns.\n      - None : Create indexes on all columns.\n      - listlike : Create indexes on the given columns.\n    - **optlevel** int or None, default None\n    - Optimization level, if None, pytables defaults to 6.\n    - **kind** str or None, default None\n    - Kind of index, if None, pytables defaults to “medium”.\n  - Raises:\n    - TypeError\n    - If the node is not a table.\n See also \n  - `HDFStore.append`\n  - Append data to an existing table; columns are indexed automatically by default.\n  - `HDFStore.select`\n  - Filter on indexed columns for fast retrieval.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.append(\"data\", df, format=\"table\", index=False) >>> store.create_table_index(\"data\", columns=[\"A\"]) >>> store.close()",
     "markdown_length": 1531,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.create_table_index — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.HDFStore.create_table_index — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.510067",
+    "crawled_at": "2026-08-26T06:49:07.736771",
     "type": "webpage"
 }

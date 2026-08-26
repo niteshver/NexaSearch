@@ -2,7 +2,7 @@
     "id": "55e3b5531bbad974df0dbbb113a032ec",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.IntervalArray.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.IntervalArray.html",
-    "title": "pandas.arrays.IntervalArray — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.arrays.IntervalArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.arrays.IntervalArray#\n\n- \nclass pandas.arrays.IntervalArray(*data* ,*closed=None* ,*dtype=None* ,*copy=False* ,*verify_integrity=True* )[source]#\n- Pandas array for interval data that are closed on the same side. An IntervalArray stores an array of Interval objects, where each Interval represents a contiguous span of values. All intervals in the array must have the same closure (left, right, both, or neither). \n  - Parameters:\n    - **data** array-like (1-dimensional)\n    - Array-like (ndarray, `DatetimeArray` ,`TimedeltaArray` ) containing\nInterval objects from which to build the IntervalArray.\n    - **closed** {‘left’, ‘right’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the intervals are closed on the left-side, right-side, both or neither.\n    - **dtype** dtype or None, default None\n    - If None, dtype will be inferred.\n    - **copy** bool, default False\n    - Copy the input data.\n    - **verify_integrity** bool, default True\n    - Verify that the IntervalArray is valid.\n Attributes `left`Return the left endpoints of each Interval in the IntervalArray as an Index. `right`Return the right endpoints of each Interval in the IntervalArray as an Index. `closed`String describing the inclusive side the intervals. `mid`Return the midpoint of each Interval in the IntervalArray as an Index. `length`Return an Index with entries denoting the length of each Interval. `is_empty`Indicates if an interval is empty, meaning it contains no points. `is_non_overlapping_monotonic`Return a boolean whether the IntervalArray/IntervalIndex is non-overlapping and monotonic. Methods `from_arrays` (left, right[, closed, copy, dtype])Construct from two arrays defining the left and right bounds. `from_tuples` (data[, closed, copy, dtype])Construct an IntervalArray from an array-like of tuples. `from_breaks` (breaks[, closed, copy, dtype])Construct an IntervalArray from an array of splits. `contains` (other)Check elementwise if the Intervals contain the value. `overlaps` (other)Check elementwise if an Interval overlaps the values in the IntervalArray. `set_closed` (closed)Return an identical IntervalArray closed on the specified side. `to_tuples` ([na_tuple])Return an ndarray (if self is IntervalArray) or Index (if self is IntervalIndex) of tuples of the form (left, right). See also \n  - `Index`\n  - The base pandas Index type.\n  - `Interval`\n  - A bounded slice-like interval; the elements of an IntervalArray.\n  - `interval_range`\n  - Function to create a fixed frequency IntervalIndex.\n  - `cut`\n  - Bin values into discrete Intervals.\n  - `qcut`\n  - Bin values into equal-sized Intervals based on rank or sample quantiles.\n Notes See the user guide for more. Examples A new `IntervalArray` can be constructed directly from an array-like of`Interval` objects:\n>>> pd.arrays.IntervalArray([pd.Interval(0, 1), pd.Interval(1, 5)])\n<IntervalArray>\n[(0, 1], (1, 5]]\nLength: 2, dtype: interval[int64, right]It may also be constructed using one of the constructor methods: `IntervalArray.from_arrays()` ,`IntervalArray.from_breaks()` , and`IntervalArray.from_tuples()` .",
     "markdown_length": 3095,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.arrays.IntervalArray — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.arrays.IntervalArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_empty.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.146532",
+    "crawled_at": "2026-08-26T06:49:31.924112",
     "type": "webpage"
 }

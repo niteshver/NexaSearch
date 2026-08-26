@@ -2,7 +2,7 @@
     "id": "4b2df1d34ddad9d266933182ee8d16ae",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.read_orc.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.read_orc.html",
-    "title": "pandas.read_orc — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.read_orc — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.read_orc#\n\n- \npandas.read_orc(*path* ,*columns=None* ,*dtype_backend=<no_default>* ,*filesystem=None* ,***kwargs* )[source]#\n- Load an ORC object from the file path, returning a DataFrame. This function requires the pyarrow library. ORC is a columnar storage format that provides efficient compression and fast retrieval for analytical workloads. It allows reading specific columns, handling different filesystem types (such as local storage, cloud storage via fsspec, or pyarrow filesystem), and supports different data type backends, including numpy_nullable and pyarrow. \n  - Parameters:\n    - **path** str, path object, or file-like object\n    - String, path object (implementing `os.PathLike[str]` ), or file-like\nobject implementing a binary`read()` function. The string could be a URL.\nValid URL schemes include http, ftp, s3, and file. For file URLs, a host is\nexpected. A local file could be:`file://localhost/path/to/table.orc` .Certain URL schemes may require additional packages. For example, S3 URLs require the `s3fs` library. See\nOptional dependencies for a full list.\n    - **columns** list, default None\n    - If not None, only these columns will be read from the file. Output always follows the ordering of the file and not the columns list. This mirrors the original behaviour of `pyarrow.orc.ORCFile.read()` .\n    - **dtype_backend** {‘numpy_nullable’, ‘pyarrow’}\n    - Back-end data type applied to the resultant `DataFrame` (still experimental). If not specified, the default behavior\nis to not use nullable data types. If specified, the behavior\nis as follows:\n      - `\"numpy_nullable\"` : returns nullable-dtype-backed`DataFrame`\n      - `\"pyarrow\"` : returns pyarrow-backed nullable`ArrowDtype``DataFrame`\n Added in version 2.0.\n    - **filesystem** fsspec or pyarrow filesystem, default None\n    - Filesystem object to use when reading the orc file. Added in version 2.1.0.\n    - ****kwargs**\n    - Any additional kwargs are passed to pyarrow.\n  - Returns:\n    - DataFrame\n    - DataFrame based on the ORC file.\n See also \n  - `read_csv`\n  - Read a comma-separated values (csv) file into a pandas DataFrame.\n  - `read_excel`\n  - Read an Excel file into a pandas DataFrame.\n  - `read_spss`\n  - Read an SPSS file into a pandas DataFrame.\n  - `read_sas`\n  - Load a SAS file into a pandas DataFrame.\n  - `read_feather`\n  - Load a feather-format object into a pandas DataFrame.\n Notes Before using this function you should read the user guide about ORC and install optional dependencies. If `path` is a URI scheme pointing to a local or remote file (e.g. “s3://”),\na`pyarrow.fs` filesystem will be attempted to read the file. You can also pass a\npyarrow or fsspec filesystem object into the filesystem keyword to override this\nbehavior.Examples >>> result = pd.read_orc(\"example_pa.orc\")",
     "markdown_length": 2817,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.read_orc — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.read_orc — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
     },
-    "crawled_at": "2026-08-10T11:47:08.040883",
+    "crawled_at": "2026-08-26T06:51:25.849581",
     "type": "webpage"
 }

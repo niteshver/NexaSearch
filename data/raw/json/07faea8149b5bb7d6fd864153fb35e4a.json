@@ -2,7 +2,7 @@
     "id": "07faea8149b5bb7d6fd864153fb35e4a",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.seconds.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.seconds.html",
-    "title": "pandas.TimedeltaIndex.seconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.TimedeltaIndex.seconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.seconds#\n\n- property TimedeltaIndex.seconds[source]#\n- Number of seconds (>= 0 and less than 1 day) for each element. This attribute returns the seconds component of each timedelta value, which is the number of seconds remaining after subtracting whole days. Values range from 0 to 86399. See also \n  - `Series.dt.seconds`\n  - Return number of seconds for each element.\n  - `Series.dt.nanoseconds`\n  - Return number of nanoseconds for each element.\n Examples For Series: >>> ser = pd.Series(pd.to_timedelta([1, 2, 3], unit='s')) >>> ser 0 0 days 00:00:01 1 0 days 00:00:02 2 0 days 00:00:03 dtype: timedelta64[s] >>> ser.dt.seconds 0 1 1 2 2 3 dtype: int32 For TimedeltaIndex: >>> tdelta_idx = pd.to_timedelta([1, 2, 3], unit='s') >>> tdelta_idx TimedeltaIndex(['0 days 00:00:01', '0 days 00:00:02', '0 days 00:00:03'], dtype='timedelta64[s]', freq=None) >>> tdelta_idx.seconds Index([1, 2, 3], dtype='int32')",
     "markdown_length": 933,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.seconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.TimedeltaIndex.seconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.seconds.html"
     },
-    "crawled_at": "2026-08-10T11:48:10.686737",
+    "crawled_at": "2026-08-26T06:50:41.079016",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "117ffcbee9c64ef16521237c01087df6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.duplicated.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.duplicated.html",
-    "title": "pandas.Index.duplicated — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.duplicated — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.duplicated#\n\n- \nIndex.duplicated(*keep='first'* )[source]#\n- Indicate duplicate index values. Duplicated values are indicated as `True` values in the resulting\narray. Either all duplicates, all except the first, or all except the\nlast occurrence of duplicates can be indicated.\n  - Parameters:\n    - **keep** {‘first’, ‘last’, False}, default ‘first’\n    - The value or values in a set of duplicates to mark as missing. \n      - ‘first’ : Mark duplicates as `True` except for the first\noccurrence.\n      - ‘last’ : Mark duplicates as `True` except for the last\noccurrence.\n      - `False` : Mark all duplicates as`True` .\n  - Returns:\n    - np.ndarray[bool]\n    - A numpy array of boolean values indicating duplicate index values.\n See also \n  - `Series.duplicated`\n  - Equivalent method on pandas.Series.\n  - `DataFrame.duplicated`\n  - Equivalent method on pandas.DataFrame.\n  - `Index.drop_duplicates`\n  - Remove duplicate values from Index.\n Examples By default, for each set of duplicated values, the first occurrence is set to False and all others to True: >>> idx = pd.Index([\"llama\", \"cow\", \"llama\", \"beetle\", \"llama\"]) >>> idx.duplicated() array([False, False, True, False, True]) which is equivalent to >>> idx.duplicated(keep=\"first\") array([False, False, True, False, True]) By using ‘last’, the last occurrence of each set of duplicated values is set on False and all others on True: >>> idx.duplicated(keep=\"last\") array([ True, False, True, False, False]) By setting keep on `False` , all duplicates are True:>>> idx.duplicated(keep=False) array([ True, False, True, False, True])",
     "markdown_length": 1609,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.duplicated — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.duplicated — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:39.006581",
+    "crawled_at": "2026-08-26T06:48:48.385314",
     "type": "webpage"
 }

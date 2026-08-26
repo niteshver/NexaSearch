@@ -2,7 +2,7 @@
     "id": "fd44a2b566c2536b6668672db0be8555",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.notnull.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.notnull.html",
-    "title": "pandas.DataFrame.notnull — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.notnull — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.notnull#\n\n- DataFrame.notnull()[source]#\n- DataFrame.notnull is an alias for DataFrame.notna. Detect existing (non-missing) values. Return a boolean same-sized object indicating if the values are not NA. Non-missing values get mapped to True. Characters such as empty strings `''` or`numpy.inf` are not considered NA values.\nNA values, such as None or`numpy.NaN` , get mapped to False\nvalues.\n  - Returns:\n    - Series/DataFrame\n    - Mask of bool values for each element in Series/DataFrame that indicates whether an element is not an NA value.\n See also \n  - `Series.notnull`\n  - Alias of notna.\n  - `DataFrame.notnull`\n  - Alias of notna.\n  - `Series.isna`\n  - Boolean inverse of notna.\n  - `DataFrame.isna`\n  - Boolean inverse of notna.\n  - `Series.dropna`\n  - Omit axes labels with missing values.\n  - `DataFrame.dropna`\n  - Omit axes labels with missing values.\n  - `notna`\n  - Top-level notna.\n Examples Show which entries in a DataFrame are not NA. >>> df = pd.DataFrame( ... dict( ... age=[5, 6, np.nan], ... born=[ ... pd.NaT, ... pd.Timestamp(\"1939-05-27\"), ... pd.Timestamp(\"1940-04-25\"), ... ], ... name=[\"Alfred\", \"Batman\", \"\"], ... toy=[None, \"Batmobile\", \"Joker\"], ... ) ... ) >>> df age born name toy 0 5.0 NaT Alfred NaN 1 6.0 1939-05-27 Batman Batmobile 2 NaN 1940-04-25 Joker >>> df.notnull() age born name toy 0 True False True False 1 True True True True 2 False True True True Show which entries in a Series are not NA. >>> ser = pd.Series([5, 6, np.nan]) >>> ser 0 5.0 1 6.0 2 NaN dtype: float64 >>> ser.notnull() 0 True 1 True 2 False dtype: bool",
     "markdown_length": 1590,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.notnull — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.notnull — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:47.446337",
+    "crawled_at": "2026-08-26T06:49:03.966948",
     "type": "webpage"
 }

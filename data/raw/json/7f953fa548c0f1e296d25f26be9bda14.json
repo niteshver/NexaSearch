@@ -2,7 +2,7 @@
     "id": "7f953fa548c0f1e296d25f26be9bda14",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.sortlevel.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.sortlevel.html",
-    "title": "pandas.MultiIndex.sortlevel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.sortlevel — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.sortlevel#\n\n- \nMultiIndex.sortlevel(*level=0* ,*ascending=True* ,*sort_remaining=True* ,*na_position='first'* )[source]#\n- Sort MultiIndex at the requested level. This method is useful when dealing with MultiIndex objects, allowing for sorting at a specific level of the index. The function preserves the relative ordering of data within the same level while sorting the overall MultiIndex. The method provides flexibility with the ascending parameter to define the sort order and with the sort_remaining parameter to control whether the remaining levels should also be sorted. Sorting a MultiIndex can be crucial when performing operations that require ordered indices, such as grouping or merging datasets. The na_position argument is important in handling missing values consistently across different levels. \n  - Parameters:\n    - **level** list-like, int or str, default 0\n    - If a string is given, must be a name of the level. If list-like must be names or ints of levels.\n    - **ascending** bool, default True\n    - False to sort in descending order. Can also be a list to specify a directed ordering.\n    - **sort_remaining** bool, default True\n    - If True, sorts by the remaining levels after sorting by the specified level.\n    - **na_position** {‘first’ or ‘last’}, default ‘first’\n    - Argument ‘first’ puts NaNs at the beginning, ‘last’ puts NaNs at the end. Added in version 2.1.0.\n  - Returns:\n    - **sorted_index** pd.MultiIndex\n    - Resulting index.\n    - **indexer** np.ndarray[np.intp]\n    - Indices of output values in original index.\n See also \n  - `MultiIndex`\n  - A multi-level, or hierarchical, index object for pandas objects.\n  - `Index.sort_values`\n  - Sort Index values.\n  - `DataFrame.sort_index`\n  - Sort DataFrame by the index.\n  - `Series.sort_index`\n  - Sort Series by the index.\n Examples >>> mi = pd.MultiIndex.from_arrays([[0, 0], [2, 1]]) >>> mi MultiIndex([(0, 2), (0, 1)], ) >>> mi.sortlevel() (MultiIndex([(0, 1), (0, 2)], ), array([1, 0])) >>> mi.sortlevel(sort_remaining=False) (MultiIndex([(0, 2), (0, 1)], ), array([0, 1])) >>> mi.sortlevel(1) (MultiIndex([(0, 1), (0, 2)], ), array([1, 0])) >>> mi.sortlevel(1, ascending=False) (MultiIndex([(0, 2), (0, 1)], ), array([0, 1]))",
     "markdown_length": 2248,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.sortlevel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.sortlevel — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.sortlevel.html"
     },
-    "crawled_at": "2026-08-10T11:47:47.274469",
+    "crawled_at": "2026-08-26T06:49:34.358199",
     "type": "webpage"
 }

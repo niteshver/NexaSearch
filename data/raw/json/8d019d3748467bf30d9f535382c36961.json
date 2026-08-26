@@ -2,7 +2,7 @@
     "id": "8d019d3748467bf30d9f535382c36961",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IndexSlice.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IndexSlice.html",
-    "title": "pandas.IndexSlice — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IndexSlice — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.IndexSlice#\n\n- pandas.IndexSlice = <pandas.core.indexing._IndexSlice object>#\n- Create an object to more easily perform multi-index slicing. `IndexSlice` is a convenience object that allows the use of natural\nslice syntax (`start:stop` ) when selecting from a`MultiIndex` ,\nrather than requiring explicit`slice()` calls.See also \n  - `MultiIndex.remove_unused_levels`\n  - New MultiIndex with no unused levels.\n Notes See Defined Levels for further info on slicing a MultiIndex. Examples >>> midx = pd.MultiIndex.from_product([[\"A0\", \"A1\"], [\"B0\", \"B1\", \"B2\", \"B3\"]]) >>> columns = [\"foo\", \"bar\"] >>> dfmi = pd.DataFrame( ... np.arange(16).reshape((len(midx), len(columns))), ... index=midx, ... columns=columns, ... ) Using the default slice command: >>> dfmi.loc[(slice(None), slice(\"B0\", \"B1\")), :] foo bar A0 B0 0 1 B1 2 3 A1 B0 8 9 B1 10 11 Using the IndexSlice class for a more intuitive command: >>> idx = pd.IndexSlice >>> dfmi.loc[idx[:, \"B0\":\"B1\"], :] foo bar A0 B0 0 1 B1 2 3 A1 B0 8 9 B1 10 11",
     "markdown_length": 1013,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IndexSlice — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IndexSlice — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IndexSlice.html"
     },
-    "crawled_at": "2026-08-10T11:47:51.252999",
+    "crawled_at": "2026-08-26T06:50:14.730256",
     "type": "webpage"
 }

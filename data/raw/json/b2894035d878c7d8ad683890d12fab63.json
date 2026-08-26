@@ -2,7 +2,7 @@
     "id": "b2894035d878c7d8ad683890d12fab63",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.nsmallest.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.nsmallest.html",
-    "title": "pandas.api.typing.SeriesGroupBy.nsmallest — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.nsmallest — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.nsmallest#\n\n- \nSeriesGroupBy.nsmallest(*n=5* ,*keep='first'* )[source]#\n- Return the smallest n elements. Within each group, returns the n smallest values sorted in ascending order. The `keep` parameter controls how ties are\nhandled when there are duplicate values at the boundary.\n  - Parameters:\n    - **n** int, default 5\n    - Return this many ascending sorted values.\n    - **keep** {‘first’, ‘last’, ‘all’}, default ‘first’\n    - When there are duplicate values that cannot all fit in a Series of n elements: \n      - `first` : return the first n occurrences in order\nof appearance.\n      - `last` : return the last n occurrences in reverse\norder of appearance.\n      - `all` : keep all occurrences. This can result in a Series of\nsize larger than n.\n  - Returns:\n    - Series\n    - The n smallest values in the Series, sorted in increasing order.\n See also \n  - `Series.nlargest`\n  - Get the n largest elements.\n  - `Series.sort_values`\n  - Sort Series by values.\n  - `Series.head`\n  - Return the first n rows.\n Notes Faster than `.sort_values().head(n)` for small n relative to\nthe size of the`Series` object.Examples >>> s = pd.Series([1, 2, 3, 4, 5, 6]) >>> s 0 1 1 2 2 3 3 4 4 5 5 6 dtype: int64 >>> s.groupby([1, 1, 1, 2, 2, 2]).nsmallest(n=2) 1 0 1 1 2 2 3 4 4 5 dtype: int64",
     "markdown_length": 1322,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.nsmallest — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.nsmallest — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.527558",
+    "crawled_at": "2026-08-26T06:51:37.603055",
     "type": "webpage"
 }

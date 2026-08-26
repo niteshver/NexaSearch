@@ -2,7 +2,7 @@
     "id": "20ff8eec54eccc18d3856c70da44c4e0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.asof.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.asof.html",
-    "title": "pandas.Index.asof — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.asof — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.asof#\n\n- \nfinal Index.asof(*label* )[source]#\n- Return the label from the index, or, if not present, the previous one. Assuming that the index is sorted, return the passed index label if it is in the index, or return the previous index label if the passed one is not in the index. \n  - Parameters:\n    - **label** object\n    - The label up to which the method returns the latest index label.\n  - Returns:\n    - object\n    - The passed label if it is in the index. The previous label if the passed label is not in the sorted index or NaN if there is no such label.\n See also \n  - `Series.asof`\n  - Return the latest value in a Series up to the passed index.\n  - `merge_asof`\n  - Perform an asof merge (similar to left join but it matches on nearest key rather than equal key).\n  - `Index.get_loc`\n  - An asof is a thin wrapper around get_loc with method=’pad’.\n Examples Index.asof returns the latest index label up to the passed label. >>> idx = pd.Index([\"2013-12-31\", \"2014-01-02\", \"2014-01-03\"]) >>> idx.asof(\"2014-01-01\") '2013-12-31' If the label is in the index, the method returns the passed label. >>> idx.asof(\"2014-01-02\") '2014-01-02' If all of the labels in the index are later than the passed label, NaN is returned. >>> idx.asof(\"1999-01-02\") nan If the index is not sorted, an error is raised. >>> idx_not_sorted = pd.Index([\"2013-12-31\", \"2015-01-02\", \"2014-01-03\"]) >>> idx_not_sorted.asof(\"2013-12-31\") Traceback (most recent call last): ValueError: index must be monotonic increasing or decreasing",
     "markdown_length": 1531,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.asof — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.asof — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:38.717331",
+    "crawled_at": "2026-08-26T06:48:47.802014",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "e8d8f694c954004817fe781d4d16b885",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sparse.to_dense.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sparse.to_dense.html",
-    "title": "pandas.DataFrame.sparse.to_dense — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.sparse.to_dense — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.sparse.to_dense#\n\n- DataFrame.sparse.to_dense()[source]#\n- Convert a DataFrame with sparse values to dense. This method converts all SparseArray columns in the DataFrame to regular NumPy arrays. \n  - Returns:\n    - DataFrame\n    - A DataFrame with the same values stored as dense arrays.\n See also \n  - `DataFrame.sparse.density`\n  - Ratio of non-sparse points to total (dense) data points.\n Examples >>> df = pd.DataFrame({\"A\": pd.arrays.SparseArray([0, 1, 0])}) >>> df.sparse.to_dense() A 0 0 1 1 2 0",
     "markdown_length": 521,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.sparse.to_dense — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.sparse.to_dense — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.559862",
+    "crawled_at": "2026-08-26T06:49:05.929649",
     "type": "webpage"
 }

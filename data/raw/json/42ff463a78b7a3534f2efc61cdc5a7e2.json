@@ -2,7 +2,7 @@
     "id": "42ff463a78b7a3534f2efc61cdc5a7e2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.get.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.get.html",
-    "title": "pandas.DataFrame.get — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.get — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.get#\n\n- \nDataFrame.get(*key* ,*default=None* )[source]#\n- Get item from object for given key (ex: DataFrame column). Returns `default` value if not found.\n  - Parameters:\n    - **key** object\n    - Key for which item should be returned.\n    - **default** object, default None\n    - Default value to return if key is not found.\n  - Returns:\n    - same type as items contained in object\n    - Item for given key or `default` value, if key is not found.\n See also \n  - `DataFrame.get`\n  - Get item from object for given key (ex: DataFrame column).\n  - `Series.get`\n  - Get item from object for given key (ex: DataFrame column).\n Examples >>> df = pd.DataFrame( ... [ ... [24.3, 75.7, \"high\"], ... [31, 87.8, \"high\"], ... [22, 71.6, \"medium\"], ... [35, 95, \"medium\"], ... ], ... columns=[\"temp_celsius\", \"temp_fahrenheit\", \"windspeed\"], ... index=pd.date_range(start=\"2014-02-12\", end=\"2014-02-15\", freq=\"D\"), ... ) >>> df temp_celsius temp_fahrenheit windspeed 2014-02-12 24.3 75.7 high 2014-02-13 31.0 87.8 high 2014-02-14 22.0 71.6 medium 2014-02-15 35.0 95.0 medium >>> df.get([\"temp_celsius\", \"windspeed\"]) temp_celsius windspeed 2014-02-12 24.3 high 2014-02-13 31.0 high 2014-02-14 22.0 medium 2014-02-15 35.0 medium >>> ser = df[\"windspeed\"] >>> ser.get(\"2014-02-13\") 'high' If the key isn’t found, the default value will be used. >>> df.get([\"temp_celsius\", \"temp_kelvin\"], default=\"default_value\") 'default_value' >>> ser.get(\"2014-02-10\", \"[unknown]\") '[unknown]' When passing a list of keys, all keys must be present. If any key is missing, the `default` value is returned instead of a partial result.>>> ser = pd.Series([\"a\", \"b\", \"c\"], index=[1, 2, 3]) >>> ser.get([1, 2]) 1 a 2 b dtype: str >>> ser.get([1, 2, -1]) is None True",
     "markdown_length": 1756,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.get — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.get — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:46.510785",
+    "crawled_at": "2026-08-26T06:49:02.199240",
     "type": "webpage"
 }

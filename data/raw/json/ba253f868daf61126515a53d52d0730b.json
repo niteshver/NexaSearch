@@ -2,7 +2,7 @@
     "id": "ba253f868daf61126515a53d52d0730b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.as_unit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.as_unit.html",
-    "title": "pandas.Timedelta.as_unit — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timedelta.as_unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.as_unit#\n\n- \nTimedelta.as_unit(*unit* ,*round_ok=True* )#\n- Convert the underlying int64 representation to the given unit. Converts the Timedelta to a new resolution specified by `unit` .\nIf the conversion would require rounding (loss of precision), this\nis allowed by default. Set`round_ok=False` to raise an error instead.\n  - Parameters:\n    - **unit** {“ns”, “us”, “ms”, “s”}\n    - **round_ok** bool, default True\n    - If False and the conversion requires rounding, raise.\n  - Returns:\n    - Timedelta\n See also \n  - `Timedelta`\n  - Represents a duration, the difference between two dates or times.\n  - `to_timedelta`\n  - Convert argument to timedelta.\n  - `Timedelta.asm8`\n  - Return a numpy timedelta64 array scalar view.\n Examples >>> td = pd.Timedelta('1001ms') >>> td Timedelta('0 days 00:00:01.001000') >>> td.as_unit('s') Timedelta('0 days 00:00:01')",
     "markdown_length": 881,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.as_unit — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timedelta.as_unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.as_unit.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.949380",
+    "crawled_at": "2026-08-26T06:49:34.456419",
     "type": "webpage"
 }

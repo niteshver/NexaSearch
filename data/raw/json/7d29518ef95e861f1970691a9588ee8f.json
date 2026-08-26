@@ -2,7 +2,7 @@
     "id": "7d29518ef95e861f1970691a9588ee8f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.islower.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.islower.html",
-    "title": "pandas.Series.str.islower — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.islower — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.islower#\n\n- Series.str.islower()[source]#\n- Check whether all characters in each string are lowercase. This is equivalent to running the Python string method `str.islower()` for each element of the Series/Index. If a string\nhas zero characters,`False` is returned for that check.\n  - Returns:\n    - Series or Index of bool\n    - Series or Index of boolean values with the same length as the original Series/Index.\n See also \n  - `Series.str.isalpha`\n  - Check whether all characters are alphabetic.\n  - `Series.str.isnumeric`\n  - Check whether all characters are numeric.\n  - `Series.str.isalnum`\n  - Check whether all characters are alphanumeric.\n  - `Series.str.isdigit`\n  - Check whether all characters are digits.\n  - `Series.str.isdecimal`\n  - Check whether all characters are decimal.\n  - `Series.str.isspace`\n  - Check whether all characters are whitespace.\n  - `Series.str.isascii`\n  - Check whether all characters are ascii.\n  - `Series.str.isupper`\n  - Check whether all characters are uppercase.\n  - `Series.str.istitle`\n  - Check whether all characters are titlecase.\n Examples >>> s5 = pd.Series([\"leopard\", \"Golden Eagle\", \"SNAKE\", \"\"]) >>> s5.str.islower() 0 True 1 False 2 False 3 False dtype: bool",
     "markdown_length": 1234,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.islower — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.islower — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.051546",
+    "crawled_at": "2026-08-26T06:50:46.302399",
     "type": "webpage"
 }

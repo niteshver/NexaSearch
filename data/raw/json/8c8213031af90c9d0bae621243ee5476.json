@@ -2,7 +2,7 @@
     "id": "8c8213031af90c9d0bae621243ee5476",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rfind.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rfind.html",
-    "title": "pandas.Series.str.rfind — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.rfind — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.rfind#\n\n- \nSeries.str.rfind(*sub* ,*start=0* ,*end=None* )[source]#\n- Return highest indexes in each strings in the Series/Index. Each of returned indexes corresponds to the position where the substring is fully contained between [start:end]. Return -1 on failure. Equivalent to standard `str.rfind()` .\n  - Parameters:\n    - **sub** str\n    - Substring being searched.\n    - **start** int\n    - Left edge index.\n    - **end** int\n    - Right edge index.\n  - Returns:\n    - Series or Index of int.\n    - A Series (if the input is a Series) or an Index (if the input is an Index) of the highest indexes corresponding to the positions where the substring is found in each string of the input.\n See also \n  - `find`\n  - Return lowest indexes in each strings.\n Examples For Series.str.find: >>> ser = pd.Series([\"_cow_\", \"duck_\", \"do_v_e\"]) >>> ser.str.find(\"_\") 0 0 1 4 2 2 dtype: int64 For Series.str.rfind: >>> ser = pd.Series([\"_cow_\", \"duck_\", \"do_v_e\"]) >>> ser.str.rfind(\"_\") 0 4 1 4 2 4 dtype: int64",
     "markdown_length": 1023,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.rfind — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.rfind — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.561714",
+    "crawled_at": "2026-08-26T06:50:40.757843",
     "type": "webpage"
 }

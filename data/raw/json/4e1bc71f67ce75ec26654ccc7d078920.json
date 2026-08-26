@@ -2,7 +2,7 @@
     "id": "4e1bc71f67ce75ec26654ccc7d078920",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.mode.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.mode.html",
-    "title": "pandas.DataFrame.mode — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.mode — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.mode#\n\n- \nDataFrame.mode(*axis=0* ,*numeric_only=False* ,*dropna=True* )[source]#\n- Get the mode(s) of each element along the selected axis. The mode of a set of values is the value that appears most often. It can be multiple values. \n  - Parameters:\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to iterate over while searching for the mode: \n      - 0 or ‘index’ : get mode of each column\n      - 1 or ‘columns’ : get mode of each row.\n    - **numeric_only** bool, default False\n    - If True, only apply to numeric columns.\n    - **dropna** bool, default True\n    - Don’t consider counts of NaN/NaT.\n  - Returns:\n    - DataFrame\n    - The modes of each column or row.\n See also \n  - `Series.mode`\n  - Return the highest frequency value in a Series.\n  - `Series.value_counts`\n  - Return the counts of values in a Series.\n Examples >>> df = pd.DataFrame( ... [ ... (\"bird\", 2, 2), ... (\"mammal\", 4, np.nan), ... (\"arthropod\", 8, 0), ... (\"bird\", 2, np.nan), ... ], ... index=(\"falcon\", \"horse\", \"spider\", \"ostrich\"), ... columns=(\"species\", \"legs\", \"wings\"), ... ) >>> df species legs wings falcon bird 2 2.0 horse mammal 4 NaN spider arthropod 8 0.0 ostrich bird 2 NaN By default, missing values are not considered, and the mode of wings are both 0 and 2. Because the resulting DataFrame has two rows, the second row of `species` and`legs` contains`NaN` .>>> df.mode() species legs wings 0 bird 2.0 0.0 1 NaN NaN 2.0 Setting `dropna=False``NaN` values are considered and they can be\nthe mode (like for wings).>>> df.mode(dropna=False) species legs wings 0 bird 2 NaN Setting `numeric_only=True` , only the mode of numeric columns is\ncomputed, and columns of other types are ignored.>>> df.mode(numeric_only=True) legs wings 0 2.0 0.0 1 NaN 2.0 To compute the mode over columns and not rows, use the axis parameter: >>> df.mode(axis=\"columns\", numeric_only=True) 0 1 falcon 2.0 NaN horse 4.0 NaN spider 0.0 8.0 ostrich 2.0 NaN",
     "markdown_length": 1972,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.mode — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.mode — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:47.288847",
+    "crawled_at": "2026-08-26T06:49:03.726896",
     "type": "webpage"
 }

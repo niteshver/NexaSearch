@@ -2,7 +2,7 @@
     "id": "25dd372eb1bdc9602dea64545870d01e",
     "url": "http://pandas.pydata.org/docs/dev/reference/extensions.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/extensions.html",
-    "title": "Extensions — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Extensions — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# Extensions#\n\nThese are primarily intended for library authors looking to extend pandas objects.\n\n| `api.extensions.register_extension_dtype` (cls) | Register an ExtensionType with pandas as class decorator. | \n| `api.extensions.register_dataframe_accessor` (name) | Register a custom accessor on DataFrame objects. | \n| `api.extensions.register_series_accessor` (name) | Register a custom accessor on Series objects. | \n| `api.extensions.register_index_accessor` (name) | Register a custom accessor on Index objects. | \n\n| `api.extensions.ExtensionDtype` () | A custom data type, to be paired with an ExtensionArray. | \n| `api.extensions.ExtensionArray` () | Abstract base class for custom 1-D array types. | \n| `arrays.NumpyExtensionArray` (values[, copy]) | A pandas ExtensionArray for NumPy data. | \n\nAdditionally, we have some utility methods for ensuring your object behaves correctly.\n\n| `api.indexers.check_array_indexer` (array, indexer) | Check if indexer is a valid array indexer for array. | \n\nThe sentinel `pandas.api.extensions.no_default` is used as the default\nvalue in some methods. Use an `is` comparison to check if the user\nprovides a non-default value.",
     "markdown_length": 1174,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Extensions — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Extensions — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:43.033766",
+    "crawled_at": "2026-08-26T06:48:55.884550",
     "type": "webpage"
 }

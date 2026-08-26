@@ -2,7 +2,7 @@
     "id": "f491a6806f4b035c368cfc345ce83bfa",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.set_axis.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.set_axis.html",
-    "title": "pandas.DataFrame.set_axis — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.set_axis — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.set_axis#\n\n- \nDataFrame.set_axis(*labels* ,*** ,*axis=0* ,*copy=<no_default>* )[source]#\n- Assign desired index to given axis. Indexes for column or row labels can be changed by assigning a list-like or Index. \n  - Parameters:\n    - **labels** list-like, Index\n    - The values for the new index.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to update. The value 0 identifies the rows. For Series this parameter is unused and defaults to 0.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - DataFrame\n    - An object of type DataFrame.\n See also \n  - `DataFrame.rename_axis`\n  - Alter the name of the index or columns.\n Examples >>> df = pd.DataFrame({\"A\": [1, 2, 3], \"B\": [4, 5, 6]}) Change the row labels. >>> df.set_axis([\"a\", \"b\", \"c\"], axis=\"index\") A B a 1 4 b 2 5 c 3 6 Change the column labels. >>> df.set_axis([\"I\", \"II\"], axis=\"columns\") I II 0 1 4 1 2 5 2 3 6",
     "markdown_length": 1292,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.set_axis — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.set_axis — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.290737",
+    "crawled_at": "2026-08-26T06:49:05.441138",
     "type": "webpage"
 }

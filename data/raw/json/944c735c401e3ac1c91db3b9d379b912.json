@@ -2,7 +2,7 @@
     "id": "944c735c401e3ac1c91db3b9d379b912",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BHalfYearEnd.n.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BHalfYearEnd.n.html",
-    "title": "pandas.tseries.offsets.BHalfYearEnd.n — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BHalfYearEnd.n — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BHalfYearEnd.n#\n\n- BHalfYearEnd.n#\n- Return the count of the number of periods. This represents how many multiples of the offset frequency should be applied. For example, `Hour(5)` has`n=5` .See also \n  - `DateOffset.normalize`\n  - Return boolean whether the frequency can align with midnight.\n Examples >>> pd.offsets.Hour(5).n 5 >>> pd.offsets.Day(3).n 3",
     "markdown_length": 381,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BHalfYearEnd.n — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BHalfYearEnd.n — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:09.553370",
+    "crawled_at": "2026-08-26T06:51:08.292251",
     "type": "webpage"
 }

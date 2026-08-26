@@ -2,7 +2,7 @@
     "id": "7517888efc97105a4a068b43627bd425",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.DateOffset.rollback.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.DateOffset.rollback.html",
-    "title": "pandas.tseries.offsets.DateOffset.rollback — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.DateOffset.rollback — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.DateOffset.rollback#\n\n- \nDateOffset.rollback(*dt* )#\n- Roll provided date backward to next offset only if not on offset. If the provided date is already on an offset, it is returned unchanged. Otherwise, the date is rolled backward to the previous offset boundary. \n  - Parameters:\n    - **dt** datetime or Timestamp\n    - Timestamp to rollback.\n  - Returns:\n    - Timestamp\n    - Rolled timestamp if not on offset, otherwise unchanged timestamp.\n See also \n  - `rollforward`\n  - Roll provided date forward to next offset only if not on offset.\n  - `is_on_offset`\n  - Return boolean whether a timestamp intersects with this frequency.\n Examples >>> ts = pd.Timestamp(\"2025-01-15 09:00:00\") >>> offset = pd.tseries.offsets.MonthEnd() Timestamp is not on the offset (not a month end), so it rolls backward: >>> offset.rollback(ts) Timestamp('2024-12-31 09:00:00') If the timestamp is already on the offset, it remains unchanged: >>> ts_on_offset = pd.Timestamp(\"2025-01-31\") >>> offset.rollback(ts_on_offset) Timestamp('2025-01-31 00:00:00')",
     "markdown_length": 1064,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.DateOffset.rollback — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.DateOffset.rollback — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:19.430626",
+    "crawled_at": "2026-08-26T06:51:05.876670",
     "type": "webpage"
 }

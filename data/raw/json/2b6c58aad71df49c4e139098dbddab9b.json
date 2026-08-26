@@ -2,7 +2,7 @@
     "id": "2b6c58aad71df49c4e139098dbddab9b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.struct.explode.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.struct.explode.html",
-    "title": "pandas.Series.struct.explode — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.struct.explode — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.struct.explode#\n\n- Series.struct.explode()[source]#\n- Extract all child fields of a struct as a DataFrame. Each child field of the struct becomes a column in the resulting DataFrame, with column names matching the struct field names. \n  - Returns:\n    - pandas.DataFrame\n    - The data corresponding to all child fields.\n See also \n  - `Series.struct.field`\n  - Return a single child field as a Series.\n Examples >>> import pyarrow as pa >>> s = pd.Series( ... [ ... {\"version\": 1, \"project\": \"pandas\"}, ... {\"version\": 2, \"project\": \"pandas\"}, ... {\"version\": 1, \"project\": \"numpy\"}, ... ], ... dtype=pd.ArrowDtype( ... pa.struct([(\"version\", pa.int64()), (\"project\", pa.string())]) ... ), ... ) >>> s.struct.explode() version project 0 1 pandas 1 2 pandas 2 1 numpy",
     "markdown_length": 783,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.struct.explode — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.struct.explode — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.051549",
+    "crawled_at": "2026-08-26T06:50:37.342031",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "aefd44eba7f2a9ed0994f3754a49a898",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.idxmin.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.idxmin.html",
-    "title": "pandas.DataFrame.idxmin — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.idxmin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.idxmin#\n\n- \nDataFrame.idxmin(*axis=0* ,*skipna=True* ,*numeric_only=False* )[source]#\n- Return index of first occurrence of minimum over requested axis. NA/null values are excluded. \n  - Parameters:\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to use. 0 or ‘index’ for row-wise, 1 or ‘columns’ for column-wise.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If the entire DataFrame is NA, or if `skipna=False` and there is an NA value, this method\nwill raise a`ValueError` .\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data.\n  - Returns:\n    - Series\n    - Indexes of minima along the specified axis.\n  - Raises:\n    - ValueError\n      - If the row/column is empty\n See also \n  - `Series.idxmin`\n  - Return index of the minimum element.\n Notes This method is the DataFrame version of `ndarray.argmin` .Examples Consider a dataset containing food consumption in Argentina. >>> df = pd.DataFrame( ... { ... \"consumption\": [10.51, 103.11, 55.48], ... \"co2_emissions\": [37.2, 19.66, 1712], ... }, ... index=[\"Pork\", \"Wheat Products\", \"Beef\"], ... ) >>> df consumption co2_emissions Pork 10.51 37.20 Wheat Products 103.11 19.66 Beef 55.48 1712.00 By default, it returns the index for the minimum value in each column. >>> df.idxmin() consumption Pork co2_emissions Wheat Products dtype: str To return the index for the minimum value in each row, use `axis=\"columns\"` .>>> df.idxmin(axis=\"columns\") Pork consumption Wheat Products co2_emissions Beef consumption dtype: str",
     "markdown_length": 1571,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.idxmin — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.idxmin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:46.706558",
+    "crawled_at": "2026-08-26T06:49:02.596572",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "9e5ef3a0b039fb784292be2cb2405967",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.notna.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.notna.html",
-    "title": "pandas.Index.notna — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.notna — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.notna#\n\n- final Index.notna()[source]#\n- Detect existing (non-missing) values. Return a boolean same-sized object indicating if the values are not NA. Non-missing values get mapped to `True` . Characters such as empty\nstrings`''` or`numpy.inf` are not considered NA values.\nNA values, such as None or`numpy.NaN` , get mapped to`False` values.\n  - Returns:\n    - numpy.ndarray[bool]\n    - Boolean array to indicate which entries are not NA.\n See also \n  - `Index.notnull`\n  - Alias of notna.\n  - `Index.isna`\n  - Inverse of notna.\n  - `notna`\n  - Top-level notna.\n Examples Show which entries in an Index are not NA. The result is an array. >>> idx = pd.Index([5.2, 6.0, np.nan]) >>> idx Index([5.2, 6.0, nan], dtype='float64') >>> idx.notna() array([ True, True, False]) Empty strings are not considered NA values. None is considered a NA value. >>> idx = pd.Index([\"black\", \"\", \"red\", None]) >>> idx Index(['black', '', 'red', nan], dtype='str') >>> idx.notna() array([ True, True, True, False])",
     "markdown_length": 1011,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.notna — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.notna — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.notna.html"
     },
-    "crawled_at": "2026-08-10T11:47:56.152320",
+    "crawled_at": "2026-08-26T06:49:53.178307",
     "type": "webpage"
 }

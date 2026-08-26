@@ -2,7 +2,7 @@
     "id": "9626d580fe6caa60e0f275bc898cd96c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.extract.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.extract.html",
-    "title": "pandas.Series.str.extract — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.extract — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.extract#\n\n- \nSeries.str.extract(*pat* ,*flags=0* ,*expand=True* )[source]#\n- Extract capture groups in the regex pat as columns in a DataFrame. For each subject string in the Series, extract groups from the first match of regular expression pat. \n  - Parameters:\n    - **pat** str\n    - Regular expression pattern with capturing groups.\n    - **flags** int, default 0 (no flags)\n    - Flags from the `re` module, e.g.`re.IGNORECASE` , that\nmodify regular expression matching for things like case,\nspaces, etc. For more details, see`re` .\n    - **expand** bool, default True\n    - If True, return DataFrame with one column per capture group. If False, return a Series/Index if there is one capture group or DataFrame if there are multiple capture groups.\n  - Returns:\n    - DataFrame or Series or Index\n    - A DataFrame with one row for each subject string, and one column for each group. Any capture group names in regular expression pat will be used for column names; otherwise capture group numbers will be used. The dtype of each result column is always object, even when no match is found. If `expand=False` and pat has only one capture group, then\nreturn a Series (if subject is a Series) or Index (if subject\nis an Index).\n See also \n  - `extractall`\n  - Returns all matches (not just the first match).\n Examples A pattern with two groups will return a DataFrame with two columns. Non-matches will be NaN. >>> s = pd.Series([\"a1\", \"b2\", \"c3\"]) >>> s.str.extract(r\"([ab])(\\d)\") 0 1 0 a 1 1 b 2 2 NaN NaN A pattern may contain optional groups. >>> s.str.extract(r\"([ab])?(\\d)\") 0 1 0 a 1 1 b 2 2 NaN 3 Named groups will become column names in the result. >>> s.str.extract(r\"(?P<letter>[ab])(?P<digit>\\d)\") letter digit 0 a 1 1 b 2 2 NaN NaN A pattern with one group will return a DataFrame with one column if expand=True. >>> s.str.extract(r\"[ab](\\d)\", expand=True) 0 0 1 1 2 2 NaN A pattern with one group will return a Series if expand=False. >>> s.str.extract(r\"[ab](\\d)\", expand=False) 0 1 1 2 2 NaN dtype: str",
     "markdown_length": 2040,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.extract — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.extract — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.678002",
+    "crawled_at": "2026-08-26T06:47:59.344526",
     "type": "webpage"
 }

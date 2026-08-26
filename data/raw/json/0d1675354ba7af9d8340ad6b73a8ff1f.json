@@ -2,7 +2,7 @@
     "id": "0d1675354ba7af9d8340ad6b73a8ff1f",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.has_duplicates.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.has_duplicates.html",
-    "title": "pandas.Index.has_duplicates — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.has_duplicates — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.has_duplicates#\n\n- property Index.has_duplicates[source]#\n- Check if the Index has duplicate values. This is the inverse of `is_unique` . It returns`True` if any value appears more than once in the index,`False` otherwise.\n  - Returns:\n    - bool\n    - Whether or not the Index has duplicate values.\n See also \n  - `Index.is_unique`\n  - Inverse method that checks if it has unique values.\n Examples >>> idx = pd.Index([1, 5, 7, 7]) >>> idx.has_duplicates True >>> idx = pd.Index([1, 5, 7]) >>> idx.has_duplicates False >>> idx = pd.Index([\"Watermelon\", \"Orange\", \"Apple\", \"Watermelon\"]).astype( ... \"category\" ... ) >>> idx.has_duplicates True >>> idx = pd.Index([\"Orange\", \"Apple\", \"Watermelon\"]).astype(\"category\") >>> idx.has_duplicates False",
     "markdown_length": 760,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.has_duplicates — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.has_duplicates — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.has_duplicates.html"
     },
-    "crawled_at": "2026-08-10T11:47:52.064047",
+    "crawled_at": "2026-08-26T06:49:31.073269",
     "type": "webpage"
 }

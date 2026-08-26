@@ -2,7 +2,7 @@
     "id": "78a292c022bd870a8d6a62f8b7c5e997",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.20.3.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.20.3.html",
-    "title": "Version 0.20.3 (July 7, 2017) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Version 0.20.3 (July 7, 2017) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# Version 0.20.3 (July 7, 2017)#\n\nThis is a minor bug-fix release in the 0.20.x series and includes some small regression fixes and bug fixes. We recommend that all users upgrade to this version.\n\n## Bug fixes#\n\n- Fixed a bug in failing to compute rolling computations of a column-MultiIndexed `DataFrame` (GH 16789, GH 16825)\n- Fixed a pytest marker failing downstream packages’ tests suites (GH 16680)\n\n### Conversion#\n\n- Bug in pickle compat prior to the v0.20.x series, when `UTC` is a timezone in a Series/DataFrame/Index (GH 16608)\n- Bug in `Series` construction when passing a`Series` with`dtype='category'` (GH 16524).\n- Bug in `DataFrame.astype()` when passing a`Series` as the`dtype` kwarg. (GH 16717).\n\n### Indexing#\n\n- Bug in `Float64Index` causing an empty array instead of`None` to be returned from`.get(np.nan)` on a Series whose index did not contain any`NaN` s (GH 8569)\n- Bug in `MultiIndex.isin` causing an error when passing an empty iterable (GH 16777)\n- Fixed a bug in a slicing DataFrame/Series that have a `TimedeltaIndex` (GH 16637)\n\n### IO#\n\n- Bug in `read_csv()` in which files weren’t opened as binary files by the C engine on Windows, causing EOF characters mid-field, which would fail (GH 16039, GH 16559, GH 16675)\n- Bug in `read_hdf()` in which reading a`Series` saved to an HDF file in ‘fixed’ format fails when an explicit`mode='r'` argument is supplied (GH 16583)\n- Bug in `DataFrame.to_latex()` where`bold_rows` was wrongly specified to be`True` by default, whereas in reality row labels remained non-bold whatever parameter provided. (GH 16707)\n- Fixed an issue with `DataFrame.style()` where generated element ids were not unique (GH 16780)\n- Fixed loading a `DataFrame` with a`PeriodIndex` , from a`format='fixed'` HDFStore, in Python 3, that was written in Python 2 (GH 16781)\n\n### Plotting#\n\n- Fixed regression that prevented RGB and RGBA tuples from being used as color arguments (GH 16233)\n- Fixed an issue with `DataFrame.plot.scatter()` that incorrectly raised a`KeyError` when categorical data is used for plotting (GH 16199)\n\n### Reshaping#\n\n### Categorical#\n\n- Bug in `DataFrame.sort_values` not respecting the`kind` parameter with categorical data (GH 16793)\n\n## Contributors#\n\nA total of 20 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Bran Yang\n- Chris\n- Chris Kerr +\n- DSM\n- David Gwynne\n- Douglas Rudd\n- Forbidden Donut +\n- Jeff Reback\n- Joris Van den Bossche\n- Karel De Brabandere +\n- Peter Quackenbush +\n- Pradyumna Reddy Chinthala +\n- Telt +\n- Tom Augspurger\n- chris-b1\n- gfyoung\n- ian +\n- jdeschenes +\n- kjford +\n- ri938 +",
     "markdown_length": 2654,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Version 0.20.3 (July 7, 2017) — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Version 0.20.3 (July 7, 2017) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-10T11:48:30.674776",
+    "crawled_at": "2026-08-26T06:52:06.780152",
     "type": "webpage"
 }

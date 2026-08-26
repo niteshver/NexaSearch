@@ -2,7 +2,7 @@
     "id": "b88bdbadf80d3865ff3543cc46a9369c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CBMonthEnd.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CBMonthEnd.html",
-    "title": "pandas.tseries.offsets.CBMonthEnd — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.CBMonthEnd — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "pandas.tseries.offsets.CBMonthEnd# pandas.tseries.offsets.CBMonthEnd# alias of CustomBusinessMonthEnd",
     "markdown_length": 101,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.CBMonthEnd — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.CBMonthEnd — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:15.511697",
+    "crawled_at": "2026-08-26T06:51:39.494095",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "8d9ae2deb23efb8d2f665ed622ba1b3d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.len.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.len.html",
-    "title": "pandas.Series.str.len — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.len — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.len#\n\n- Series.str.len()[source]#\n- Compute the length of each element in the Series/Index. The element may be a sequence (such as a string, tuple or list) or a collection (such as a dictionary). \n  - Returns:\n    - Series or Index of int\n    - A Series or Index of integer values indicating the length of each element in the Series or Index.\n See also \n  - `str.len`\n  - Python built-in function returning the length of an object.\n  - `Series.size`\n  - Returns the length of the Series.\n Examples Returns the length (number of characters) in a string. Returns the number of entries for dictionaries, lists or tuples. >>> s = pd.Series( ... [\"dog\", \"\", 5, {\"foo\": \"bar\"}, [2, 3, 5, 7], (\"one\", \"two\", \"three\")] ... ) >>> s 0 dog 1 2 5 3 {'foo': 'bar'} 4 [2, 3, 5, 7] 5 (one, two, three) dtype: object >>> s.str.len() 0 3.0 1 0.0 2 NaN 3 1.0 4 4.0 5 3.0 dtype: float64",
     "markdown_length": 887,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.len — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.len — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.223309",
+    "crawled_at": "2026-08-26T06:51:10.858629",
     "type": "webpage"
 }

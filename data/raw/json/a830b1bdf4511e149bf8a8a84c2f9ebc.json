@@ -2,7 +2,7 @@
     "id": "a830b1bdf4511e149bf8a8a84c2f9ebc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.codes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.codes.html",
-    "title": "pandas.MultiIndex.codes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.codes#\n\n- property MultiIndex.codes[source]#\n- Codes of the MultiIndex. Codes are the position of the index value in the list of level values for each level. \n  - Returns:\n    - tuple of numpy.ndarray\n    - The codes of the MultiIndex. Each array in the tuple corresponds to a level in the MultiIndex.\n See also \n  - `MultiIndex.set_codes`\n  - Set new codes on MultiIndex.\n Examples >>> arrays = [[1, 1, 2, 2], [\"red\", \"blue\", \"red\", \"blue\"]] >>> mi = pd.MultiIndex.from_arrays(arrays, names=(\"number\", \"color\")) >>> mi.codes FrozenList([[0, 0, 1, 1], [1, 0, 1, 0]])",
     "markdown_length": 586,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.codes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:41.098155",
+    "crawled_at": "2026-08-26T06:48:52.179811",
     "type": "webpage"
 }

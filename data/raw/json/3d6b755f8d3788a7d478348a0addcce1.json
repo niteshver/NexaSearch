@@ -2,7 +2,7 @@
     "id": "3d6b755f8d3788a7d478348a0addcce1",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.memory_usage.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.memory_usage.html",
-    "title": "pandas.Index.memory_usage — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.memory_usage — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Index.memory_usage#\n\n- \nIndex.memory_usage(*deep=False* )[source]#\n- Memory usage of the values. Returns the number of bytes consumed by the Index. When `deep=True` ,\nthe memory consumption of underlying objects referencing this Index\n(e.g., the characters of object-dtype values) is included.\n  - Parameters:\n    - **deep** bool, default False\n    - Introspect the data deeply, interrogate object dtypes for system-level memory consumption.\n  - Returns:\n    - bytes used\n    - Returns memory usage of the values in the Index in bytes.\n See also \n  - `numpy.ndarray.nbytes`\n  - Total bytes consumed by the elements of the array.\n Notes Memory usage does not include memory consumed by elements that are not components of the array if deep=False or if used on PyPy Examples >>> idx = pd.Index([1, 2, 3]) >>> idx.memory_usage() 24",
     "markdown_length": 837,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.memory_usage — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.memory_usage — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.memory_usage.html"
     },
-    "crawled_at": "2026-08-10T11:47:46.488768",
+    "crawled_at": "2026-08-26T06:49:38.199398",
     "type": "webpage"
 }

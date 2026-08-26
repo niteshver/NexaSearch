@@ -2,7 +2,7 @@
     "id": "e734ddbb48cdb6a362566de8402a1986",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.from_coo.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.from_coo.html",
-    "title": "pandas.Series.sparse.from_coo — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.sparse.from_coo — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.sparse.from_coo#\n\n- \nclassmethod Series.sparse.from_coo(*A* ,*dense_index=False* )[source]#\n- Create a Series with sparse values from a scipy.sparse.coo_matrix. This method takes a `scipy.sparse.coo_matrix` (coordinate format) as input and\nreturns a pandas`Series` where the non-zero elements are represented as\nsparse values. The index of the Series can either include only the coordinates\nof non-zero elements (default behavior) or the full sorted set of coordinates\nfrom the matrix if`dense_index` is set to True.\n  - Parameters:\n    - **A** scipy.sparse.coo_matrix\n    - The sparse matrix in coordinate format from which the sparse Series will be created.\n    - **dense_index** bool, default False\n    - If False (default), the index consists of only the coords of the non-null entries of the original coo_matrix. If True, the index consists of the full sorted (row, col) coordinates of the coo_matrix.\n  - Returns:\n    - **s** Series\n    - A Series with sparse values.\n See also \n  - `DataFrame.sparse.from_spmatrix`\n  - Create a new DataFrame from a scipy sparse matrix.\n  - `scipy.sparse.coo_matrix`\n  - A sparse matrix in COOrdinate format.\n Examples >>> from scipy import sparse >>> A = sparse.coo_matrix( ... ([3.0, 1.0, 2.0], ([1, 0, 0], [0, 2, 3])), shape=(3, 4) ... ) >>> A <COOrdinate sparse matrix of dtype 'float64' with 3 stored elements and shape (3, 4)> >>> A.todense() matrix([[0., 0., 1., 2.], [3., 0., 0., 0.], [0., 0., 0., 0.]]) >>> ss = pd.Series.sparse.from_coo(A) >>> ss 0 2 1.0 3 2.0 1 0 3.0 dtype: Sparse[float64, nan]",
     "markdown_length": 1562,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.sparse.from_coo — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.sparse.from_coo — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.219988",
+    "crawled_at": "2026-08-26T06:49:22.620257",
     "type": "webpage"
 }

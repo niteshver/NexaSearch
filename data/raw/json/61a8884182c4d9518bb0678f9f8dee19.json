@@ -2,7 +2,7 @@
     "id": "61a8884182c4d9518bb0678f9f8dee19",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.is_leap_year.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.is_leap_year.html",
-    "title": "pandas.PeriodIndex.is_leap_year — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.PeriodIndex.is_leap_year — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.is_leap_year#\n\n- property PeriodIndex.is_leap_year[source]#\n- Logical indicating if the date belongs to a leap year. Returns a boolean array where `True` indicates the period’s year\nis a leap year.See also \n  - `PeriodIndex.qyear`\n  - Fiscal year the Period lies in according to its starting-quarter.\n  - `PeriodIndex.year`\n  - The year of the period.\n Examples >>> idx = pd.PeriodIndex([\"2023\", \"2024\", \"2025\"], freq=\"Y\") >>> idx.is_leap_year array([False, True, False])",
     "markdown_length": 492,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.is_leap_year — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.PeriodIndex.is_leap_year — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.is_leap_year.html"
     },
-    "crawled_at": "2026-08-10T11:48:05.853560",
+    "crawled_at": "2026-08-26T06:49:26.514258",
     "type": "webpage"
 }

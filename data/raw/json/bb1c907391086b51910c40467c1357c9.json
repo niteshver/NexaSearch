@@ -2,7 +2,7 @@
     "id": "bb1c907391086b51910c40467c1357c9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.npoints.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.npoints.html",
-    "title": "pandas.Series.sparse.npoints — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.sparse.npoints — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.sparse.npoints#\n\n- Series.sparse.npoints[source]#\n- The number of non- `fill_value` points.This property returns the number of elements in the sparse series that are not equal to the `fill_value` . Sparse data structures store only the\nnon-`fill_value` elements, reducing memory usage when the majority of\nvalues are the same.See also \n  - `Series.sparse.to_dense`\n  - Convert a Series from sparse values to dense.\n  - `Series.sparse.fill_value`\n  - Elements in `data` that are`fill_value` are not stored.\n  - `Series.sparse.density`\n  - The percent of non- `fill_value` points, as decimal.\n Examples >>> from pandas.arrays import SparseArray >>> s = SparseArray([0, 0, 1, 1, 1], fill_value=0) >>> s.npoints 3",
     "markdown_length": 725,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.sparse.npoints — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.sparse.npoints — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.271243",
+    "crawled_at": "2026-08-26T06:49:22.722258",
     "type": "webpage"
 }

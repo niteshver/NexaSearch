@@ -2,7 +2,7 @@
     "id": "edea88b8b556f427d03b5d765eab7dcd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.isascii.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.isascii.html",
-    "title": "pandas.Series.str.isascii — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.isascii — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.isascii#\n\n- Series.str.isascii()[source]#\n- Check whether all characters in each string are ascii. This is equivalent to running the Python string method `str.isascii()` for each element of the Series/Index. If a string\nhas zero characters,`False` is returned for that check.\n  - Returns:\n    - Series or Index of bool\n    - Series or Index of boolean values with the same length as the original Series/Index.\n See also \n  - `Series.str.isalpha`\n  - Check whether all characters are alphabetic.\n  - `Series.str.isnumeric`\n  - Check whether all characters are numeric.\n  - `Series.str.isalnum`\n  - Check whether all characters are alphanumeric.\n  - `Series.str.isdigit`\n  - Check whether all characters are digits.\n  - `Series.str.isdecimal`\n  - Check whether all characters are decimal.\n  - `Series.str.isspace`\n  - Check whether all characters are whitespace.\n  - `Series.str.islower`\n  - Check whether all characters are lowercase.\n  - `Series.str.isupper`\n  - Check whether all characters are uppercase.\n  - `Series.str.istitle`\n  - Check whether all characters are titlecase.\n Examples The `s5.str.isascii` method checks for whether all characters are ascii\ncharacters, which includes digits 0-9, capital and lowercase letters A-Z,\nand some other special characters.>>> s5 = pd.Series([\"ö\", \"see123\", \"hello world\", \"\"]) >>> s5.str.isascii() 0 False 1 True 2 True 3 True dtype: bool",
     "markdown_length": 1406,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.isascii — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.isascii — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.939784",
+    "crawled_at": "2026-08-26T06:51:15.190021",
     "type": "webpage"
 }

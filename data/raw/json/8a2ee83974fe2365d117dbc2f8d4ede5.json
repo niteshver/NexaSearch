@@ -2,7 +2,7 @@
     "id": "8a2ee83974fe2365d117dbc2f8d4ede5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessDay.is_quarter_start.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessDay.is_quarter_start.html",
-    "title": "pandas.tseries.offsets.BusinessDay.is_quarter_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BusinessDay.is_quarter_start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BusinessDay.is_quarter_start#\n\n- \nBusinessDay.is_quarter_start(*ts* )#\n- Return boolean whether a timestamp occurs on the quarter start. This method checks if the given timestamp falls on the first day of a calendar quarter (January 1, April 1, July 1, or October 1). \n  - Parameters:\n    - **ts** Timestamp\n    - The timestamp to check.\n See also \n  - `is_quarter_end`\n  - Return boolean whether a timestamp occurs on the quarter end.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.Hour(5) >>> freq.is_quarter_start(ts) True",
     "markdown_length": 569,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BusinessDay.is_quarter_start — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BusinessDay.is_quarter_start — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:12.871714",
+    "crawled_at": "2026-08-26T06:51:26.605156",
     "type": "webpage"
 }

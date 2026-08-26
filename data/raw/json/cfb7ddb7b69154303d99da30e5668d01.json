@@ -2,7 +2,7 @@
     "id": "cfb7ddb7b69154303d99da30e5668d01",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.to_numpy.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.to_numpy.html",
-    "title": "pandas.Timestamp.to_numpy — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.to_numpy — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.to_numpy#\n\n- \nTimestamp.to_numpy(*dtype=None* ,*copy=False* )#\n- Convert the Timestamp to a NumPy datetime64. This is an alias method for Timestamp.to_datetime64(). The dtype and copy parameters are available here only for compatibility. Their values will not affect the return value. \n  - Parameters:\n    - **dtype** dtype, optional\n    - Data type of the output, ignored in this method as the return type is always numpy.datetime64.\n    - **copy** bool, default False\n    - Whether to ensure that the returned value is a new object. This parameter is also ignored as the method does not support copying.\n  - Returns:\n    - numpy.datetime64\n See also \n  - `DatetimeIndex.to_numpy`\n  - Similar method for DatetimeIndex.\n Examples >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651') >>> ts.to_numpy() np.datetime64('2020-03-14T15:32:52.192548651') Analogous for `pd.NaT` :>>> pd.NaT.to_numpy() np.datetime64('NaT','ns')",
     "markdown_length": 940,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.to_numpy — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.to_numpy — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.575546",
+    "crawled_at": "2026-08-26T06:51:31.842142",
     "type": "webpage"
 }

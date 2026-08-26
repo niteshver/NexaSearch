@@ -2,7 +2,7 @@
     "id": "89a6787e80234b91eb8eca2931eebc9f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.SemiMonthBegin.day_of_month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.SemiMonthBegin.day_of_month.html",
-    "title": "pandas.tseries.offsets.SemiMonthBegin.day_of_month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.SemiMonthBegin.day_of_month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.SemiMonthBegin.day_of_month#\n\n- SemiMonthBegin.day_of_month#\n- Return the day of the month for the semi-monthly offset. This specifies the day of the month on which the offset falls, in addition to the start (1st) or end (last day) of the month. See also \n  - `SemiMonthBegin`\n  - Offset at the start of the month and mid-month.\n  - `SemiMonthEnd`\n  - Offset at mid-month and end of month.\n Examples >>> pd.offsets.SemiMonthBegin().day_of_month 15 >>> pd.offsets.SemiMonthBegin(day_of_month=20).day_of_month 20",
     "markdown_length": 535,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.SemiMonthBegin.day_of_month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.SemiMonthBegin.day_of_month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:48:17.431426",
+    "crawled_at": "2026-08-26T06:51:38.879954",
     "type": "webpage"
 }

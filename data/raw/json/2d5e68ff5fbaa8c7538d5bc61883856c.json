@@ -2,7 +2,7 @@
     "id": "2d5e68ff5fbaa8c7538d5bc61883856c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fromordinal.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fromordinal.html",
-    "title": "pandas.Timestamp.fromordinal — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.fromordinal — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.fromordinal#\n\n- \nclassmethod Timestamp.fromordinal(*ordinal* ,*tz=None* )#\n- Construct a timestamp from a proleptic Gregorian ordinal. This method creates a Timestamp object corresponding to the given proleptic Gregorian ordinal, which is a count of days from January 1, 0001 (using the proleptic Gregorian calendar). The time part of the Timestamp is set to midnight (00:00:00) by default. \n  - Parameters:\n    - **ordinal** int\n    - Date corresponding to a proleptic Gregorian ordinal.\n    - **tz** str, zoneinfo.ZoneInfo, pytz.timezone, dateutil.tz.tzfile or None\n    - Time zone for the Timestamp.\n  - Returns:\n    - Timestamp\n    - A Timestamp object representing the specified ordinal date.\n See also \n  - `Timestamp`\n  - Represents a single timestamp, similar to datetime.\n  - `to_datetime`\n  - Converts various types of data to datetime.\n Notes By definition there cannot be any tz info on the ordinal itself. Examples Convert an ordinal to a Timestamp: >>> pd.Timestamp.fromordinal(737425) Timestamp('2020-01-01 00:00:00') Create a Timestamp from an ordinal with timezone information: >>> pd.Timestamp.fromordinal(737425, tz='UTC') Timestamp('2020-01-01 00:00:00+0000', tz='UTC')",
     "markdown_length": 1208,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.fromordinal — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.fromordinal — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.860150",
+    "crawled_at": "2026-08-26T06:50:40.642559",
     "type": "webpage"
 }

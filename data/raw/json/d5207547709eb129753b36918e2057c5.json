@@ -2,7 +2,7 @@
     "id": "d5207547709eb129753b36918e2057c5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.__dataframe__.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.__dataframe__.html",
-    "title": "pandas.DataFrame.__dataframe__ — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.__dataframe__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.__dataframe__#\n\n- \nDataFrame.__dataframe__(*nan_as_null=False* ,*allow_copy=True* )[source]#\n- Return the dataframe interchange object implementing the interchange protocol. Deprecated since version 3.0.0: The Dataframe Interchange Protocol is deprecated. For dataframe-agnostic code, you may want to look into: Note For new development, we highly recommend using the Arrow C Data Interface alongside the Arrow PyCapsule Interface instead of the interchange protocol Warning Due to severe implementation issues, we recommend only considering using the interchange protocol in the following cases: \n  - converting to pandas: for pandas >= 2.0.3\n  - converting from pandas: for pandas >= 3.0.0\n \n  - Parameters:\n    - **nan_as_null** bool, default False\n    - nan_as_null is DEPRECATED and has no effect. Please avoid using it; it will be removed in a future release.\n    - **allow_copy** bool, default True\n    - Whether to allow memory copying when exporting. If set to False it would cause non-zero-copy exports to fail.\n  - Returns:\n    - DataFrame interchange object\n    - The object which consuming library can use to ingress the dataframe.\n See also \n  - `DataFrame.from_records`\n  - Constructor from tuples, also record arrays.\n  - `DataFrame.from_dict`\n  - From dicts of Series, arrays, or dicts.\n Notes Details on the interchange protocol: https://data-apis.org/dataframe-protocol/latest/index.html Examples >>> df_not_necessarily_pandas = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> interchange_object = df_not_necessarily_pandas.__dataframe__() >>> interchange_object.column_names() Index(['A', 'B'], dtype='str') >>> df_pandas = pd.api.interchange.from_dataframe( ... interchange_object.select_columns_by_name([\"A\"]) ... ) >>> df_pandas A 0 1 1 2 These methods ( `column_names` ,`select_columns_by_name` ) should work\nfor any dataframe library which implements the interchange protocol.",
     "markdown_length": 1917,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.__dataframe__ — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.__dataframe__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.279524",
+    "crawled_at": "2026-08-26T06:48:59.894336",
     "type": "webpage"
 }

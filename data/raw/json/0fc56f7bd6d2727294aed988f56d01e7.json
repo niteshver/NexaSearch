@@ -2,7 +2,7 @@
     "id": "0fc56f7bd6d2727294aed988f56d01e7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.nanoseconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.nanoseconds.html",
-    "title": "pandas.Series.dt.nanoseconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.nanoseconds — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.nanoseconds#\n\n- Series.dt.nanoseconds[source]#\n- Number of nanoseconds (>= 0 and less than 1 microsecond) for each element. This attribute returns the nanoseconds component of each timedelta value, which is the number of nanoseconds remaining after subtracting whole microseconds. Values range from 0 to 999. See also \n  - `Series.dt.seconds`\n  - Return number of seconds for each element.\n  - `Series.dt.microseconds`\n  - Return number of microseconds for each element.\n Examples For Series: >>> ser = pd.Series(pd.to_timedelta([1, 2, 3], unit='ns')) >>> ser 0 0 days 00:00:00.000000001 1 0 days 00:00:00.000000002 2 0 days 00:00:00.000000003 dtype: timedelta64[ns] >>> ser.dt.nanoseconds 0 1 1 2 2 3 dtype: int32 For TimedeltaIndex: >>> tdelta_idx = pd.to_timedelta([1, 2, 3], unit='ns') >>> tdelta_idx TimedeltaIndex(['0 days 00:00:00.000000001', '0 days 00:00:00.000000002', '0 days 00:00:00.000000003'], dtype='timedelta64[ns]', freq=None) >>> tdelta_idx.nanoseconds Index([1, 2, 3], dtype='int32')",
     "markdown_length": 1022,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.nanoseconds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.nanoseconds — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.442676",
+    "crawled_at": "2026-08-26T06:49:15.314188",
     "type": "webpage"
 }

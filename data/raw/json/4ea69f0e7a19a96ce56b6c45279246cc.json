@@ -2,10 +2,10 @@
     "id": "4ea69f0e7a19a96ce56b6c45279246cc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sub.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sub.html",
-    "title": "pandas.Series.sub — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.sub — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
-    "markdown": "# pandas.Series.sub#\n\n- \nSeries.sub(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Subtraction of series and other, element-wise (binary operator sub). Equivalent to `series - other` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** object\n    - When a Series is provided, will align on indexes. For all other types, will behave the same as `-` but with possibly different results due\nto the other arguments.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** None or float value, default None (NaN)\n    - Fill existing missing (NaN) values, and any new element needed for successful Series alignment, with this value before computation. If data in both corresponding Series locations is missing the result of filling (at that location) will be missing.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.rsub`\n  - Reverse of the Subtraction operator, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan], index=[\"a\", \"b\", \"c\", \"d\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=[\"a\", \"b\", \"d\", \"e\"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.subtract(b, fill_value=0) a 0.0 b 1.0 c 1.0 d -1.0 e NaN dtype: float64",
-    "markdown_length": 1517,
+    "markdown": "# pandas.Series.sub#\n\n- \nSeries.sub(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Subtraction of series and other, element-wise (binary operator sub). Equivalent to `series - other` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** object\n    - When a Series is provided, will align on indexes. For all other types, will behave the same as `-` but with possibly different results due\nto the other arguments.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** scalar or None, default None\n    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.rsub`\n  - Reverse of the Subtraction operator, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan], index=[\"a\", \"b\", \"c\", \"d\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=[\"a\", \"b\", \"d\", \"e\"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.subtract(b, fill_value=0) a 0.0 b 1.0 c 1.0 d -1.0 e NaN dtype: float64",
+    "markdown_length": 1469,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sub.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.sub — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.sub — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:59.116091",
+    "crawled_at": "2026-08-26T06:50:37.978168",
     "type": "webpage"
 }

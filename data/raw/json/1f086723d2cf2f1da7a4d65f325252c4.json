@@ -2,7 +2,7 @@
     "id": "1f086723d2cf2f1da7a4d65f325252c4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.size.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.size.html",
-    "title": "pandas.DataFrame.size — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.size — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.size#\n\n- property DataFrame.size[source]#\n- Return an int representing the number of elements in this object. Return the number of rows if Series. Otherwise return the number of rows times number of columns if DataFrame. See also \n  - `numpy.ndarray.size`\n  - Number of elements in the array.\n Examples >>> s = pd.Series({\"a\": 1, \"b\": 2, \"c\": 3}) >>> s.size 3 >>> df = pd.DataFrame({\"col1\": [1, 2], \"col2\": [3, 4]}) >>> df.size 4",
     "markdown_length": 448,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.size — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.size — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.410310",
+    "crawled_at": "2026-08-26T06:49:05.601415",
     "type": "webpage"
 }

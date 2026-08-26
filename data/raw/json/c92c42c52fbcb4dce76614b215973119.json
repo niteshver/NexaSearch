@@ -2,7 +2,7 @@
     "id": "c92c42c52fbcb4dce76614b215973119",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset.html",
-    "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset#\n\n- CustomBusinessMonthEnd.m_offset#\n- Return a MonthBegin or MonthEnd offset. This is used internally to compute the month-based component of the custom business month offset calculation. See also \n  - `tseries.offsets.MonthBegin`\n  - Represents the start of the month.\n  - `tseries.offsets.MonthEnd`\n  - Represents the end of the month.\n Examples >>> pd.offsets.CustomBusinessMonthBegin().m_offset <MonthBegin> >>> pd.offsets.CustomBusinessMonthEnd().m_offset <MonthEnd>",
     "markdown_length": 529,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.CustomBusinessMonthEnd.m_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:18.616658",
+    "crawled_at": "2026-08-26T06:51:10.597719",
     "type": "webpage"
 }

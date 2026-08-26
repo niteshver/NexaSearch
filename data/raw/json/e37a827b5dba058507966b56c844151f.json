@@ -2,7 +2,7 @@
     "id": "e37a827b5dba058507966b56c844151f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.interval_range.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.interval_range.html",
-    "title": "pandas.interval_range — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.interval_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.interval_range#\n\n- \npandas.interval_range(*start=None* ,*end=None* ,*periods=None* ,*freq=None* ,*name=None* ,*closed='right'* )[source]#\n- Return a fixed frequency IntervalIndex. This function generates a sequence of evenly spaced intervals over a specified range, supporting numeric, datetime-like, and timedelta endpoints. \n  - Parameters:\n    - **start** numeric or datetime-like, default None\n    - Left bound for generating intervals.\n    - **end** numeric or datetime-like, default None\n    - Right bound for generating intervals.\n    - **periods** int, default None\n    - Number of periods to generate.\n    - **freq** numeric, str, Timedelta, datetime.timedelta, or DateOffset, default None\n    - The length of each interval. Must be consistent with the type of start and end, e.g. 2 for numeric, or ‘5H’ for datetime-like. Default is 1 for numeric and ‘D’ for datetime-like.\n    - **name** str, default None\n    - Name of the resulting IntervalIndex.\n    - **closed** {‘left’, ‘right’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the intervals are closed on the left-side, right-side, both or neither.\n  - Returns:\n    - IntervalIndex\n    - Object with a fixed frequency.\n See also \n  - `IntervalIndex`\n  - An Index of intervals that are all closed on the same side.\n Notes Of the four parameters `start` ,`end` ,`periods` , and`freq` ,\nexactly three must be specified. If`freq` is omitted, the resulting`IntervalIndex` will have`periods` linearly spaced elements between`start` and`end` , inclusively.To learn more about datetime-like frequency strings, please see this link. Examples Numeric `start` and`end` is supported.>>> pd.interval_range(start=0, end=5) IntervalIndex([(0, 1], (1, 2], (2, 3], (3, 4], (4, 5]], dtype='interval[int64, right]') Additionally, datetime-like input is also supported. >>> pd.interval_range( ... start=pd.Timestamp(\"2017-01-01\"), end=pd.Timestamp(\"2017-01-04\") ... ) IntervalIndex([(2017-01-01 00:00:00, 2017-01-02 00:00:00], (2017-01-02 00:00:00, 2017-01-03 00:00:00], (2017-01-03 00:00:00, 2017-01-04 00:00:00]], dtype='interval[datetime64[us], right]') The `freq` parameter specifies the frequency between the left and right.\nendpoints of the individual intervals within the`IntervalIndex` .  For\nnumeric`start` and`end` , the frequency must also be numeric.>>> pd.interval_range(start=0, periods=4, freq=1.5) IntervalIndex([(0.0, 1.5], (1.5, 3.0], (3.0, 4.5], (4.5, 6.0]], dtype='interval[float64, right]') Similarly, for datetime-like `start` and`end` , the frequency must be\nconvertible to a DateOffset.>>> pd.interval_range(start=pd.Timestamp(\"2017-01-01\"), periods=3, freq=\"MS\") IntervalIndex([(2017-01-01 00:00:00, 2017-02-01 00:00:00], (2017-02-01 00:00:00, 2017-03-01 00:00:00], (2017-03-01 00:00:00, 2017-04-01 00:00:00]], dtype='interval[datetime64[us], right]') Specify `start` ,`end` , and`periods` ; the frequency is generated\nautomatically (linearly spaced).>>> pd.interval_range(start=0, end=6, periods=4) IntervalIndex([(0.0, 1.5], (1.5, 3.0], (3.0, 4.5], (4.5, 6.0]], dtype='interval[float64, right]') The `closed` parameter specifies which endpoints of the individual\nintervals within the`IntervalIndex` are closed.>>> pd.interval_range(end=5, periods=4, closed=\"both\") IntervalIndex([[1, 2], [2, 3], [3, 4], [4, 5]], dtype='interval[int64, both]')",
     "markdown_length": 3327,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.interval_range — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.interval_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.906253",
+    "crawled_at": "2026-08-26T06:49:54.665136",
     "type": "webpage"
 }

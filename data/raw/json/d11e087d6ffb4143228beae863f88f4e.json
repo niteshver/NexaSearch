@@ -2,7 +2,7 @@
     "id": "d11e087d6ffb4143228beae863f88f4e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.swapcase.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.swapcase.html",
-    "title": "pandas.Series.str.swapcase — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.str.swapcase — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.swapcase#\n\n- Series.str.swapcase()[source]#\n- Convert strings in the Series/Index to be swapcased. Equivalent to `str.swapcase()` .\n  - Returns:\n    - Series or Index of objects\n    - A Series or Index where the strings are modified by `str.swapcase()` .\n See also \n  - `Series.str.lower`\n  - Converts all characters to lowercase.\n  - `Series.str.upper`\n  - Converts all characters to uppercase.\n  - `Series.str.title`\n  - Converts first character of each word to uppercase and remaining to lowercase.\n  - `Series.str.capitalize`\n  - Converts first character to uppercase and remaining to lowercase.\n  - `Series.str.swapcase`\n  - Converts uppercase to lowercase and lowercase to uppercase.\n  - `Series.str.casefold`\n  - Removes all case distinctions in the string.\n Examples >>> s = pd.Series([\"lower\", \"CAPITALS\", \"this is a sentence\", \"SwApCaSe\"]) >>> s 0 lower 1 CAPITALS 2 this is a sentence 3 SwApCaSe dtype: str >>> s.str.lower() 0 lower 1 capitals 2 this is a sentence 3 swapcase dtype: str >>> s.str.upper() 0 LOWER 1 CAPITALS 2 THIS IS A SENTENCE 3 SWAPCASE dtype: str >>> s.str.title() 0 Lower 1 Capitals 2 This Is A Sentence 3 Swapcase dtype: str >>> s.str.capitalize() 0 Lower 1 Capitals 2 This is a sentence 3 Swapcase dtype: str >>> s.str.swapcase() 0 LOWER 1 capitals 2 THIS IS A SENTENCE 3 sWaPcAsE dtype: str",
     "markdown_length": 1345,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.swapcase — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.str.swapcase — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:58.869040",
+    "crawled_at": "2026-08-26T06:51:17.217148",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "5ff59481681bcf58e4f74bf78f09730f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_tuples.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_tuples.html",
-    "title": "pandas.IntervalIndex.from_tuples — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IntervalIndex.from_tuples — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.from_tuples#\n\n- \nclassmethod IntervalIndex.from_tuples(*data* ,*closed='right'* ,*name=None* ,*copy=False* ,*dtype=None* )[source]#\n- Construct an IntervalIndex from an array-like of tuples. Each tuple in *data* should contain exactly two elements representing\nthe left and right bounds of an interval.\n  - Parameters:\n    - **data** array-like (1-dimensional)\n    - Array of tuples.\n    - **closed** {‘left’, ‘right’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the intervals are closed on the left-side, right-side, both or neither.\n    - **name** str, optional\n    - Name of the resulting IntervalIndex.\n    - **copy** bool, default False\n    - By-default copy the data, this is compat only and ignored.\n    - **dtype** dtype or None, default None\n    - If None, dtype will be inferred.\n  - Returns:\n    - IntervalIndex\n See also \n  - `interval_range`\n  - Function to create a fixed frequency IntervalIndex.\n  - `IntervalIndex.from_arrays`\n  - Construct an IntervalIndex from a left and right array.\n  - `IntervalIndex.from_breaks`\n  - Construct an IntervalIndex from an array of splits.\n Examples >>> pd.IntervalIndex.from_tuples([(0, 1), (1, 2)]) IntervalIndex([(0, 1], (1, 2]], dtype='interval[int64, right]')",
     "markdown_length": 1244,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.from_tuples — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IntervalIndex.from_tuples — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.699794",
+    "crawled_at": "2026-08-26T06:48:51.442305",
     "type": "webpage"
 }

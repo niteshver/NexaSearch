@@ -2,7 +2,7 @@
     "id": "f4fb7e730ae83e214690fe8d2f0e0146",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.swaplevel.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.swaplevel.html",
-    "title": "pandas.DataFrame.swaplevel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.swaplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.swaplevel#\n\n- \nDataFrame.swaplevel(*i=-2* ,*j=-1* ,*axis=0* )[source]#\n- Swap levels i and j in a `MultiIndex` .Default is to swap the two innermost levels of the index. \n  - Parameters:\n    - **i, j** int or str\n    - Levels of the indices to be swapped. Can pass level name as string.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to swap levels on. 0 or ‘index’ for row-wise, 1 or ‘columns’ for column-wise.\n  - Returns:\n    - DataFrame\n    - DataFrame with levels swapped in MultiIndex.\n See also \n  - `DataFrame.reorder_levels`\n  - Reorder levels of MultiIndex.\n  - `DataFrame.sort_index`\n  - Sort MultiIndex.\n Examples >>> df = pd.DataFrame( ... {\"Grade\": [\"A\", \"B\", \"A\", \"C\"]}, ... index=[ ... [\"Final exam\", \"Final exam\", \"Coursework\", \"Coursework\"], ... [\"History\", \"Geography\", \"History\", \"Geography\"], ... [\"January\", \"February\", \"March\", \"April\"], ... ], ... ) >>> df Grade Final exam History January A Geography February B Coursework History March A Geography April C In the following example, we will swap the levels of the indices. Here, we will swap the levels column-wise, but levels can be swapped row-wise in a similar manner. Note that column-wise is the default behaviour. By not supplying any arguments for i and j, we swap the last and second to last indices. >>> df.swaplevel() Grade Final exam January History A February Geography B Coursework March History A April Geography C By supplying one argument, we can choose which index to swap the last index with. We can for example swap the first index with the last one as follows. >>> df.swaplevel(0) Grade January History Final exam A February Geography Final exam B March History Coursework A April Geography Coursework C We can also define explicitly which indices we want to swap by supplying values for both i and j. Here, we for example swap the first and second indices. >>> df.swaplevel(0, 1) Grade History Final exam January A Geography Final exam February B History Coursework March A Geography Coursework April C",
     "markdown_length": 2042,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.swaplevel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.swaplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.swaplevel.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.640553",
+    "crawled_at": "2026-08-26T06:49:06.137006",
     "type": "webpage"
 }

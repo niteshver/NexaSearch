@@ -2,7 +2,7 @@
     "id": "04e748c78a400c78c6ed7bcbacf341aa",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.EmptyDataError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.EmptyDataError.html",
-    "title": "pandas.errors.EmptyDataError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.EmptyDataError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.EmptyDataError#\n\n- exception pandas.errors.EmptyDataError[source]#\n- Exception raised in `pd.read_csv` when empty data or header is encountered.This error is typically encountered when attempting to read an empty file or an invalid file where no data or headers are present. See also \n  - `read_csv`\n  - Read a comma-separated values (CSV) file into DataFrame.\n  - `errors.ParserError`\n  - Exception that is raised by an error encountered in parsing file contents.\n  - `errors.DtypeWarning`\n  - Warning raised when reading different dtypes in a column from a file.\n Examples >>> from io import StringIO >>> empty = StringIO() >>> pd.read_csv(empty) Traceback (most recent call last): EmptyDataError: No columns to parse from file",
     "markdown_length": 745,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.EmptyDataError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.EmptyDataError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.437044",
+    "crawled_at": "2026-08-26T06:51:52.264910",
     "type": "webpage"
 }

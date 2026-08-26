@@ -2,7 +2,7 @@
     "id": "66270881f42057c461c5ad92678d0237",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.stata.StataWriter.write_file.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.stata.StataWriter.write_file.html",
-    "title": "pandas.io.stata.StataWriter.write_file — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.stata.StataWriter.write_file — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.io.stata.StataWriter.write_file#\n\n- StataWriter.write_file()[source]#\n- Export DataFrame object to Stata dta format. This method writes the contents of a pandas DataFrame to a .dta file compatible with Stata. It includes features for handling value labels, variable types, and metadata like timestamps and data labels. The output file can then be read and used in Stata or other compatible statistical tools. See also \n  - `read_stata`\n  - Read Stata file into DataFrame.\n  - `DataFrame.to_stata`\n  - Export DataFrame object to Stata dta format.\n  - `io.stata.StataWriter`\n  - A class for writing Stata binary dta files.\n Examples >>> df = pd.DataFrame( ... { ... \"fully_labelled\": [1, 2, 3, 3, 1], ... \"partially_labelled\": [1.0, 2.0, np.nan, 9.0, np.nan], ... \"Y\": [7, 7, 9, 8, 10], ... \"Z\": pd.Categorical([\"j\", \"k\", \"l\", \"k\", \"j\"]), ... } ... ) >>> path = \"/My_path/filename.dta\" >>> labels = { ... \"fully_labelled\": {1: \"one\", 2: \"two\", 3: \"three\"}, ... \"partially_labelled\": {1.0: \"one\", 2.0: \"two\"}, ... } >>> writer = pd.io.stata.StataWriter( ... path, df, value_labels=labels ... ) >>> writer.write_file() >>> df = pd.read_stata(path) >>> df index fully_labelled partially_labeled Y Z 0 0 one one 7 j 1 1 two two 7 k 2 2 three NaN 9 l 3 3 three 9.0 8 k 4 4 one NaN 10 j",
     "markdown_length": 1287,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.stata.StataWriter.write_file — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.stata.StataWriter.write_file — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.560349",
+    "crawled_at": "2026-08-26T06:50:11.239038",
     "type": "webpage"
 }

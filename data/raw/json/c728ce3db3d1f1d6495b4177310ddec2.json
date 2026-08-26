@@ -2,7 +2,7 @@
     "id": "c728ce3db3d1f1d6495b4177310ddec2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.left.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.left.html",
-    "title": "pandas.Interval.left — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Interval.left — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Interval.left#\n\n- Interval.left#\n- Left bound for the interval. The left endpoint of the interval. Whether it is included in the interval depends on the value of `closed` .See also \n  - `Interval.right`\n  - Return the right bound for the interval.\n  - `numpy.ndarray.left`\n  - A similar method in numpy for obtaining the left endpoint(s) of intervals.\n Examples >>> interval = pd.Interval(left=1, right=2, closed='left') >>> interval Interval(1, 2, closed='left') >>> interval.left 1",
     "markdown_length": 492,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Interval.left — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Interval.left — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.981943",
+    "crawled_at": "2026-08-26T06:49:08.598666",
     "type": "webpage"
 }

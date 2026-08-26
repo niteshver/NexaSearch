@@ -10,8 +10,8 @@ fill_value for missing data in either one of the inputs.
 to the other arguments.
     - **level** int or name
     - Broadcast across a level, matching Index values on the passed MultiIndex level.
-    - **fill_value** None or float value, default None (NaN)
-    - Fill existing missing (NaN) values, and any new element needed for successful Series alignment, with this value before computation. If data in both corresponding Series locations is missing the result of filling (at that location) will be missing.
+    - **fill_value** scalar or None, default None
+    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.
     - **axis** {0 or ‘index’}
     - Unused. Parameter needed for compatibility with DataFrame.
   - Returns:

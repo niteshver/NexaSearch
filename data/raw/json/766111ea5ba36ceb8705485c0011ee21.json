@@ -2,7 +2,7 @@
     "id": "766111ea5ba36ceb8705485c0011ee21",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.components.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.components.html",
-    "title": "pandas.Timedelta.components — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timedelta.components — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.components#\n\n- Timedelta.components#\n- Return a components namedtuple-like. Each component represents a different time unit, allowing you to access the breakdown of the total duration in terms of days, hours, minutes, seconds, milliseconds, microseconds, and nanoseconds. See also \n  - `Timedelta.total_seconds`\n  - Returns the total duration of the Timedelta in seconds.\n  - `to_timedelta`\n  - Convert argument to Timedelta.\n  - `Timedelta`\n  - Represents a duration, the difference between two dates or times.\n Examples >>> td = pd.Timedelta('2 day 4 min 3 us 42 ns') >>> td.components Components(days=2, hours=0, minutes=4, seconds=0, milliseconds=0, microseconds=3, nanoseconds=42)",
     "markdown_length": 704,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.components — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timedelta.components — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.components.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.060980",
+    "crawled_at": "2026-08-26T06:49:58.347317",
     "type": "webpage"
 }

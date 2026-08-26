@@ -2,7 +2,7 @@
     "id": "98f20bfd60d1ca9b0f7b8e868f722837",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253Quarter.kwds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253Quarter.kwds.html",
-    "title": "pandas.tseries.offsets.FY5253Quarter.kwds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.FY5253Quarter.kwds — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.FY5253Quarter.kwds#\n\n- FY5253Quarter.kwds#\n- Return a dict of extra parameters for the offset. These parameters exclude `n` and`normalize` , which are common\nto all offsets. The returned dictionary can be passed to the offset\nconstructor to recreate the offset with the same settings.See also \n  - `tseries.offsets.DateOffset`\n  - The base class for all pandas date offsets.\n  - `tseries.offsets.WeekOfMonth`\n  - Represents the week of the month.\n  - `tseries.offsets.LastWeekOfMonth`\n  - Represents the last week of the month.\n Examples >>> pd.DateOffset(5).kwds {} >>> pd.offsets.FY5253Quarter().kwds {'weekday': 0, 'startingMonth': 1, 'qtr_with_extra_week': 1, 'variation': 'nearest'}",
     "markdown_length": 712,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.FY5253Quarter.kwds — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.FY5253Quarter.kwds — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:22.059550",
+    "crawled_at": "2026-08-26T06:51:43.238100",
     "type": "webpage"
 }

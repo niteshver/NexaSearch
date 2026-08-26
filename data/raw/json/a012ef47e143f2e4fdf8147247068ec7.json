@@ -2,7 +2,7 @@
     "id": "a012ef47e143f2e4fdf8147247068ec7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.ceil.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.ceil.html",
-    "title": "pandas.Timestamp.ceil — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.ceil — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.ceil#\n\n- \nTimestamp.ceil(*freq* ,*ambiguous='raise'* ,*nonexistent='raise'* )#\n- Return a new Timestamp ceiled to this resolution. This method rounds the Timestamp up to the nearest boundary of the given frequency. The result will never be earlier than the original Timestamp. \n  - Parameters:\n    - **freq** str or timedelta\n    - Frequency string or timedelta value indicating the ceiling resolution.\n    - **ambiguous** bool or {‘raise’, ‘NaT’}, default ‘raise’\n    - The behavior is as follows: \n      - bool contains flags to determine if time is dst or not (note that this flag is only applicable for ambiguous fall dst dates).\n      - ‘NaT’ will return NaT for an ambiguous time.\n      - ‘raise’ will raise a ValueError for an ambiguous time.\n    - **nonexistent** {‘raise’, ‘shift_forward’, ‘shift_backward’, ‘NaT’, timedelta}, default ‘raise’\n    - A nonexistent time does not exist in a particular timezone where clocks moved forward due to DST. \n      - ‘shift_forward’ will shift the nonexistent time forward to the closest existing time.\n      - ‘shift_backward’ will shift the nonexistent time backward to the closest existing time.\n      - ‘NaT’ will return NaT where there are nonexistent times.\n      - timedelta objects will shift nonexistent times by the timedelta.\n      - ‘raise’ will raise a ValueError if there are nonexistent times.\n  - Raises:\n    - ValueError if the freq cannot be converted.\n See also \n  - `Timestamp.floor`\n  - Round down a Timestamp to the specified resolution.\n  - `Timestamp.round`\n  - Round a Timestamp to the specified resolution.\n  - `Series.dt.ceil`\n  - Ceil the datetime values in a Series.\n Notes If the Timestamp has a timezone, ceiling will take place relative to the local (“wall”) time and re-localized to the same timezone. When ceiling near daylight savings time, use `nonexistent` and`ambiguous` to\ncontrol the re-localization behavior.Examples Create a timestamp object: >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651') A timestamp can be ceiled using multiple frequency units: >>> ts.ceil(freq='h') # hour Timestamp('2020-03-14 16:00:00') >>> ts.ceil(freq='min') # minute Timestamp('2020-03-14 15:33:00') >>> ts.ceil(freq='s') # seconds Timestamp('2020-03-14 15:32:53') >>> ts.ceil(freq='us') # microseconds Timestamp('2020-03-14 15:32:52.192549') `freq` can also be a multiple of a single unit, like ‘5min’ (i.e.  5 minutes):>>> ts.ceil(freq='5min') Timestamp('2020-03-14 15:35:00') or a combination of multiple units, like ‘1h30min’ (i.e. 1 hour and 30 minutes): >>> ts.ceil(freq='1h30min') Timestamp('2020-03-14 16:30:00') `freq` can also be a timedelta value:>>> ts.ceil(freq=pd.Timedelta('1h30min')) Timestamp('2020-03-14 16:30:00') Analogous for `pd.NaT` :>>> pd.NaT.ceil() NaT When rounding near a daylight savings time transition, use `ambiguous` or`nonexistent` to control how the timestamp should be re-localized.>>> ts_tz = pd.Timestamp(\"2021-10-31 01:30:00\").tz_localize(\"Europe/Amsterdam\") >>> ts_tz.ceil(\"h\", ambiguous=False) Timestamp('2021-10-31 02:00:00+0100', tz='Europe/Amsterdam') >>> ts_tz.ceil(\"h\", ambiguous=True) Timestamp('2021-10-31 02:00:00+0200', tz='Europe/Amsterdam')",
     "markdown_length": 3185,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.ceil — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.ceil — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.510192",
+    "crawled_at": "2026-08-26T06:49:29.341560",
     "type": "webpage"
 }

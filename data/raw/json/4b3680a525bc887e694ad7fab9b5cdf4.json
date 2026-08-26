@@ -2,7 +2,7 @@
     "id": "4b3680a525bc887e694ad7fab9b5cdf4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessMonthBegin.is_on_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BusinessMonthBegin.is_on_offset.html",
-    "title": "pandas.tseries.offsets.BusinessMonthBegin.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BusinessMonthBegin.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BusinessMonthBegin.is_on_offset#\n\n- \nBusinessMonthBegin.is_on_offset(*dt* )#\n- Return boolean whether a timestamp intersects with this frequency. This method determines if a given timestamp aligns with the specific day of the month defined by this offset. For month-based offsets, it checks whether the timestamp’s day matches the expected day according to the offset’s configuration (e.g., start of month, end of month, or first/last business day). \n  - Parameters:\n    - **dt** datetime\n    - Timestamp to check intersection with frequency.\n  - Returns:\n    - bool\n    - True if the timestamp is on the offset, False otherwise.\n See also \n  - `tseries.offsets.MonthBegin`\n  - DateOffset of one month at beginning.\n  - `tseries.offsets.MonthEnd`\n  - DateOffset of one month end.\n  - `tseries.offsets.BusinessMonthBegin`\n  - DateOffset of one month at the first business day.\n  - `tseries.offsets.BusinessMonthEnd`\n  - DateOffset of one month at the last business day.\n Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> pd.offsets.MonthBegin().is_on_offset(ts) True >>> ts = pd.Timestamp(2022, 1, 15) >>> pd.offsets.MonthBegin().is_on_offset(ts) False >>> ts = pd.Timestamp(2022, 1, 31) >>> pd.offsets.MonthEnd().is_on_offset(ts) True",
     "markdown_length": 1256,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BusinessMonthBegin.is_on_offset — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BusinessMonthBegin.is_on_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:14.362521",
+    "crawled_at": "2026-08-26T06:51:27.823642",
     "type": "webpage"
 }

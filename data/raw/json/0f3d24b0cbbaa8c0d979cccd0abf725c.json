@@ -2,7 +2,7 @@
     "id": "0f3d24b0cbbaa8c0d979cccd0abf725c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.round.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.round.html",
-    "title": "pandas.DataFrame.round — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.round — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.round#\n\n- \nDataFrame.round(*decimals=0* ,**args* ,***kwargs* )[source]#\n- Round numeric columns in a DataFrame to a variable number of decimal places. Each column can be rounded to a different number of decimal places by passing a dict or Series mapping column names to the desired precision. Non-numeric columns are left unchanged. \n  - Parameters:\n    - **decimals** int, dict, Series\n    - Number of decimal places to round each column to. If an int is given, round each column to the same number of places. Otherwise dict and Series round to variable numbers of places. Column names should be in the keys if decimals is a dict-like, or in the index if decimals is a Series. Any columns not included in decimals will be left as is. Elements of decimals which are not columns of the input will be ignored.\n    - ***args**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - DataFrame\n    - A DataFrame with the affected columns rounded to the specified number of decimal places.\n See also \n  - `numpy.around`\n  - Round a numpy array to the given number of decimals.\n  - `Series.round`\n  - Round a Series to the given number of decimals.\n Notes For values exactly halfway between rounded decimal values, pandas rounds to the nearest even value (e.g. -0.5 and 0.5 round to 0.0, 1.5 and 2.5 round to 2.0, etc.). Examples >>> df = pd.DataFrame( ... [(0.21, 0.32), (0.01, 0.67), (0.66, 0.03), (0.21, 0.18)], ... columns=[\"dogs\", \"cats\"], ... ) >>> df dogs cats 0 0.21 0.32 1 0.01 0.67 2 0.66 0.03 3 0.21 0.18 By providing an integer each column is rounded to the same number of decimal places >>> df.round(1) dogs cats 0 0.2 0.3 1 0.0 0.7 2 0.7 0.0 3 0.2 0.2 With a dict, the number of places for specific columns can be specified with the column names as key and the number of decimal places as value >>> df.round({\"dogs\": 1, \"cats\": 0}) dogs cats 0 0.2 0.0 1 0.0 1.0 2 0.7 0.0 3 0.2 0.0 Using a Series, the number of places for specific columns can be specified with the column names as index and the number of decimal places as value >>> decimals = pd.Series([0, 1], index=[\"cats\", \"dogs\"]) >>> df.round(decimals) dogs cats 0 0.2 0.0 1 0.0 1.0 2 0.7 0.0 3 0.2 0.0",
     "markdown_length": 2454,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.round — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.round — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:48.151834",
+    "crawled_at": "2026-08-26T06:49:05.228252",
     "type": "webpage"
 }

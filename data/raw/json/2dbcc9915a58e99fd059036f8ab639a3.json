@@ -2,7 +2,7 @@
     "id": "2dbcc9915a58e99fd059036f8ab639a3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.month.html",
-    "title": "pandas.Series.dt.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.month#\n\n- Series.dt.month[source]#\n- The month as January=1, December=12. This attribute returns the month component of each datetime value in the Series/Index. Months are numbered from 1 (January) through 12 (December). See also \n  - `DatetimeIndex.year`\n  - The year of the datetime.\n  - `DatetimeIndex.day`\n  - The day of the datetime.\n Examples >>> datetime_series = pd.Series( ... pd.date_range(\"2000-01-01\", periods=3, freq=\"ME\") ... ) >>> datetime_series 0 2000-01-31 1 2000-02-29 2 2000-03-31 dtype: datetime64[us] >>> datetime_series.dt.month 0 1 1 2 2 3 dtype: int32",
     "markdown_length": 595,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.415334",
+    "crawled_at": "2026-08-26T06:49:15.145049",
     "type": "webpage"
 }

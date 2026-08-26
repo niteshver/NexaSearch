@@ -2,7 +2,7 @@
     "id": "16d76078c72a2da89488a8918c7d2de3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.axes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.axes.html",
-    "title": "pandas.DataFrame.axes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.axes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.axes#\n\n- property DataFrame.axes[source]#\n- Return a list representing the axes of the DataFrame. It has the row axis labels and column axis labels as the only members. They are returned in that order. See also \n  - `DataFrame.index`\n  - The index (row labels) of the DataFrame.\n  - `DataFrame.columns`\n  - The column labels of the DataFrame.\n Examples >>> df = pd.DataFrame({\"col1\": [1, 2], \"col2\": [3, 4]}) >>> df.axes [RangeIndex(start=0, stop=2, step=1), Index(['col1', 'col2'], dtype='str')]",
     "markdown_length": 515,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.axes — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.axes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.696029",
+    "crawled_at": "2026-08-26T06:49:00.599091",
     "type": "webpage"
 }

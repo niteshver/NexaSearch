@@ -2,7 +2,7 @@
     "id": "f4ea31cb9c4d2036fc851eb49689e2e1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ChainedAssignmentError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ChainedAssignmentError.html",
-    "title": "pandas.errors.ChainedAssignmentError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.ChainedAssignmentError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.errors.ChainedAssignmentError#\n\n- exception pandas.errors.ChainedAssignmentError[source]#\n- Warning raised when trying to set using chained assignment. With Copy-on-Write now always enabled, chained assignment can never work. In such a situation, we are always setting into a temporary object that is the result of an indexing operation (getitem), which under Copy-on-Write always behaves as a copy. Thus, assigning through a chain can never update the original Series or DataFrame. For more information on Copy-on-Write, see the user guide. See also \n  - `DataFrame.loc`\n  - Access a group of rows and columns by label(s) or a boolean array.\n  - `DataFrame.iloc`\n  - Purely integer-location based indexing for selection by position.\n  - `Series.loc`\n  - Access a group of rows by label(s) or a boolean array.\n Examples >>> df = pd.DataFrame({\"A\": [1, 1, 1, 2, 2]}, columns=[\"A\"]) >>> df[\"A\"][0:3] = 10 ... # ChainedAssignmentError: ...",
     "markdown_length": 945,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.ChainedAssignmentError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.ChainedAssignmentError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.392012",
+    "crawled_at": "2026-08-26T06:51:50.547272",
     "type": "webpage"
 }

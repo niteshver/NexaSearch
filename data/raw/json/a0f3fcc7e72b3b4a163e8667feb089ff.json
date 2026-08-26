@@ -2,7 +2,7 @@
     "id": "a0f3fcc7e72b3b4a163e8667feb089ff",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.day.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.day.html",
-    "title": "pandas.Timestamp.day — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.day — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.day#\n\n- Timestamp.day#\n- Return the day of the Timestamp. Days are numbered from 1 through the number of days in the month. \n  - Returns:\n    - int\n    - The day of the Timestamp.\n See also \n  - `Timestamp.week`\n  - Return the week number of the year.\n  - `Timestamp.weekday`\n  - Return the day of the week.\n Examples >>> ts = pd.Timestamp(\"2024-08-31 16:16:30\") >>> ts.day 31",
     "markdown_length": 395,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.day — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.day — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:00.572432",
+    "crawled_at": "2026-08-26T06:50:18.949159",
     "type": "webpage"
 }

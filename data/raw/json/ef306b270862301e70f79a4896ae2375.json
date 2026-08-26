@@ -2,7 +2,7 @@
     "id": "ef306b270862301e70f79a4896ae2375",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.month.html",
-    "title": "pandas.Period.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Period.month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Period.month#\n\n- Period.month#\n- Return the month this Period falls on. Months are numbered from 1 (January) through 12 (December). \n  - Returns:\n    - int\n See also \n  - `period.week`\n  - Get the week of the year on the given Period.\n  - `Period.year`\n  - Return the year this Period falls on.\n  - `Period.day`\n  - Return the day of the month this Period falls on.\n Notes The month is based on the ordinal and base attributes of the Period. Examples Create a Period object for January 2022 and get the month: >>> period = pd.Period('2022-01', 'M') >>> period.month 1 Period object with no specified frequency, resulting in a default frequency: >>> period = pd.Period('2022', 'Y') >>> period.month 12 Create a Period object with a specified frequency but an incomplete date string: >>> period = pd.Period('2022', 'M') >>> period.month 1 Handle a case where the Period object is empty, which results in NaN: >>> period = pd.Period('nan', 'M') >>> period.month nan",
     "markdown_length": 971,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Period.month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:50.541765",
+    "crawled_at": "2026-08-26T06:49:09.643386",
     "type": "webpage"
 }

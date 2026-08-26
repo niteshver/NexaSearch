@@ -2,7 +2,7 @@
     "id": "53bbfa18f1546c8d0c6234a4075f287d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_quarter_end.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_quarter_end.html",
-    "title": "pandas.Timestamp.is_quarter_end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.is_quarter_end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.is_quarter_end#\n\n- Timestamp.is_quarter_end#\n- Check if date is last day of the quarter. Quarters end on the last day of March, June, September, and December in the standard calendar. \n  - Returns:\n    - bool\n    - True if date is last day of the quarter.\n See also \n  - `Timestamp.is_quarter_start`\n  - Similar property indicating the quarter start.\n  - `Timestamp.quarter`\n  - Return the quarter of the date.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.is_quarter_end False >>> ts = pd.Timestamp(2020, 3, 31) >>> ts.is_quarter_end True",
     "markdown_length": 564,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.is_quarter_end — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.is_quarter_end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.011765",
+    "crawled_at": "2026-08-26T06:51:19.900342",
     "type": "webpage"
 }

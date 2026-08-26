@@ -2,7 +2,7 @@
     "id": "4e54e30483c2fa96f303eae7df1fe1f7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.describe_option.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.describe_option.html",
-    "title": "pandas.describe_option — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.describe_option — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.describe_option#\n\n- \npandas.describe_option(*pat=''* ,*_print_desc=True* )[source]#\n- Print the description for one or more registered options. Call with no arguments to get a listing for all registered options. \n  - Parameters:\n    - **pat** str, default “”\n    - String or string regexp pattern. Empty string will return all options. For regexp strings, all matching keys will have their description displayed.\n    - **_print_desc** bool, default True\n    - If True (default) the description(s) will be printed to stdout. Otherwise, the description(s) will be returned as a string (for testing).\n  - Returns:\n    - None\n    - If `_print_desc=True` .\n    - str\n    - If the description(s) as a string if `_print_desc=False` .\n See also \n  - `get_option`\n  - Retrieve the value of the specified option.\n  - `set_option`\n  - Set the value of the specified option or options.\n  - `reset_option`\n  - Reset one or more options to their default value.\n Notes For all available options, please view the User Guide. Examples >>> pd.describe_option(\"display.max_columns\") display.max_columns : int If max_cols is exceeded, switch to truncate view...",
     "markdown_length": 1150,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.describe_option — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.describe_option — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/options.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.345400",
+    "crawled_at": "2026-08-26T06:51:00.552546",
     "type": "webpage"
 }

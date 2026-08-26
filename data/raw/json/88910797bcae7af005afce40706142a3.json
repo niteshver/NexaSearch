@@ -2,7 +2,7 @@
     "id": "88910797bcae7af005afce40706142a3",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html",
-    "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.length#\n\n- property IntervalIndex.length[source]#\n- Calculate the length of each interval in the IntervalIndex. This method returns a new Index containing the lengths of each interval in the IntervalIndex. The length of an interval is defined as the difference between its end and its start. \n  - Returns:\n    - Index\n    - An Index containing the lengths of each interval.\n See also \n  - `Interval.length`\n  - Return the length of the Interval.\n Examples >>> intervals = pd.IntervalIndex.from_arrays( ... [1, 2, 3], [4, 5, 6], closed=\"right\" ... ) >>> intervals.length Index([3, 3, 3], dtype='int64') >>> intervals = pd.IntervalIndex.from_tuples([(1, 5), (6, 10), (11, 15)]) >>> intervals.length Index([4, 4, 4], dtype='int64')",
     "markdown_length": 751,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html"
     },
-    "crawled_at": "2026-08-10T11:47:55.792094",
+    "crawled_at": "2026-08-26T06:49:51.271063",
     "type": "webpage"
 }

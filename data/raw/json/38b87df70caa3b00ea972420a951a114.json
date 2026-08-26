@@ -2,7 +2,7 @@
     "id": "38b87df70caa3b00ea972420a951a114",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.get_loc.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.get_loc.html",
-    "title": "pandas.IntervalIndex.get_loc — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.IntervalIndex.get_loc — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.get_loc#\n\n- \nIntervalIndex.get_loc(*key* )[source]#\n- Get integer location, slice or boolean mask for requested label. The get_loc method is used to retrieve the integer index, a slice for slicing objects, or a boolean mask indicating the presence of the label in the IntervalIndex. \n  - Parameters:\n    - **key** label\n    - The value or range to find in the IntervalIndex.\n  - Returns:\n    - int if unique index, slice if monotonic index, else mask\n    - The position or positions found. This could be a single number, a range, or an array of true/false values indicating the position(s) of the label.\n See also \n  - `IntervalIndex.get_indexer_non_unique`\n  - Compute indexer and mask for new index given the current index.\n  - `Index.get_loc`\n  - Similar method in the base Index class.\n Examples >>> i1, i2 = pd.Interval(0, 1), pd.Interval(1, 2) >>> index = pd.IntervalIndex([i1, i2]) >>> index.get_loc(1) 0 You can also supply a point inside an interval. >>> index.get_loc(1.5) 1 If a label is in several intervals, you get the locations of all the relevant intervals. >>> i3 = pd.Interval(0, 2) >>> overlapping_index = pd.IntervalIndex([i1, i2, i3]) >>> overlapping_index.get_loc(0.5) array([ True, False, True]) Only exact matches will be returned if an interval is provided. >>> index.get_loc(pd.Interval(0, 1)) 0",
     "markdown_length": 1344,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.get_loc — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.IntervalIndex.get_loc — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.get_loc.html"
     },
-    "crawled_at": "2026-08-10T11:48:01.699886",
+    "crawled_at": "2026-08-26T06:49:50.936219",
     "type": "webpage"
 }

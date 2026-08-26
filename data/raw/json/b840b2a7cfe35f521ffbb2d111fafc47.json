@@ -2,7 +2,7 @@
     "id": "b840b2a7cfe35f521ffbb2d111fafc47",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.clear.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.clear.html",
-    "title": "pandas.io.formats.style.Styler.clear — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.clear — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.clear#\n\n- Styler.clear()[source]#\n- Reset the `Styler` , removing any previously applied styles.Returns None. See also \n  - `Styler.apply`\n  - Apply a CSS-styling function column-wise, row-wise, or table-wise.\n  - `Styler.export`\n  - Export the styles applied to the current Styler.\n  - `Styler.map`\n  - Apply a CSS-styling function elementwise.\n  - `Styler.use`\n  - Set the styles on the current Styler.\n Examples >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, np.nan]}) After any added style: >>> df.style.highlight_null(color=\"yellow\") Remove it with: >>> df.style.clear() Please see: Table Visualization for more examples.",
     "markdown_length": 657,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.clear — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.clear — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.936950",
+    "crawled_at": "2026-08-26T06:51:51.454238",
     "type": "webpage"
 }

@@ -1,0 +1,35 @@
+{
+    "id": "ebdbd7c77caaf0c11f68fa047f1c5d0a",
+    "url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/pagerank/twi.html",
+    "canonical_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/pagerank/twi.html",
+    "title": "Twilight Fanfics by PageRank",
+    "status": 200,
+    "markdown": "The following is a list of top fanfics by PageRank. A high number is good. For more information, see the main post.\n\n- The Blessing and the Curse (18.6217297811)\n- Tropic of Virgo (15.0218120789)\n- A Rough Start (12.7611042705)\n- Creature of Habit (12.6476879833)\n- The Plan (10.212420851)\n- High Anxiety (9.03310345142)\n- For the Summer (8.76037948412)\n- The Vampire in the Basement (8.72666750989)\n- The Cannabean Betrothal (8.68746342005)\n- The Best I Ever Had (8.68039369571)\n- Bonne Foi (8.4738504923)\n- An Introduction to Swirl and Daisy (8.28126254709)\n- Faking It (8.2616413991)\n- The Tutor (8.1764890139)\n- This Is Not My Life (8.06489965249)\n- Hiding in Plain Sight (8.00810676588)\n- Stranger Than Fiction (7.92074994374)\n- A Pound of Flesh (7.50953976517)\n- The Naked Guy Upstairs (7.42626819509)\n- Elemental (7.37734667628)\n- Unexpected Circumstances (7.37035185006)\n- Expectations and Other Moving Pieces (7.28010140293)\n- Stay (7.27113062914)\n- Firefly in Summer (7.19652113703)\n- Beyond Time (7.07867886352)\n- Midnight Desire (6.69560758486)\n- The Red Line (6.51871391738)\n- Inside Man (6.47535314932)\n- Starry Eyed Inside (6.37308438932)\n- Hit By Destiny (6.31508131568)\n- The Education of Professor Cullen (6.18948379938)\n- Late Night Encounters (6.18124145065)\n- Dear Mr Masen (6.16128049521)\n- Bella Swan: Kidnapper (6.040239309)\n- There is a Light (5.98854879379)\n- Written in the Stars (5.89636564783)\n- Bare (5.89533561142)\n- Breaking News (5.8544308083)\n- Volition (5.77352170873)\n- Shadowboxer (5.59716817127)\n- Holding Out For You (5.51096737933)\n- His Personal Assistant (5.50127008336)\n- We Come to Life Beneath the Stars (5.4564434169)\n- String Theory (5.42876364772)\n- Last Tango in Forks (5.31354582727)\n- Only Human (5.31340183063)\n- High Fidelity (5.295579183)\n- Parachute (5.26535551218)\n- Love in My Box (5.25906103169)\n- Alphabet Weekends (5.23045909129)\n- Paper CutOuts (5.1326342224)\n- The Blizzard (5.0763917419)\n- Summer of Salt (5.06942815529)\n- A Quiet Fire (4.99330773377)\n- Company Loves Misery (4.9721339522)\n- We Were Here (4.96093225821)\n- Grasping Darkness (4.91856264643)\n- The Screamers (4.81006034582)\n- I Hate Myself For Loving You (4.80460056297)\n- Son of a Preacher Man (4.75111349413)\n- Illegal Contact (4.65666256214)\n- My Brother's Best Friend (4.54884358915)\n- The Art Teacher (4.54875608848)\n- Ride (4.51540552819)\n- Help Wanted (4.40609914611)\n- The Wedding Party (4.36703023769)\n- Ethan Church (4.2707606231)\n- A May to December Romance (4.22808621592)\n- When Fiction Becomes Reality (4.19152146636)\n- No Ordinary Proposal (4.18944592609)\n- Innocent, Vigilant, Ordinary (4.13807511584)\n- Rhapsody in B (4.13180459363)\n- Outbound (3.97395864041)\n- Pocket Change (3.9349047449)\n- There Will Be Blood (3.85433382181)\n- La canzone della Bella Cigna (3.84560101941)\n- Resident Geek (3.83439323539)\n- If Love Could Light a Candle (3.79463682294)\n- The Mirrors (3.77709241972)\n- Unplanned Perfection (3.71524488231)\n- The Ex Factor : Edward & Bella (3.67073211494)\n- Branching Inward (3.64136204026)\n- A World Without Sound (3.64074661116)\n- The Port Angeles Players (3.61914385656)\n- Animate Me (3.58683907133)\n- Realize (3.52430814621)\n- The Fallout (3.50880408958)\n- Art After 5 (3.50816580008)\n- Laid Bare (3.42148650588)\n- The Cellar (3.41901416289)\n- Osa Bella (3.28921201606)\n- The Harder they Fall (3.2613752785)\n- Luminescence (3.25445067577)\n- Guardian (3.22422039096)\n- The Bigger They Are (3.19483514036)\n- Awake in the Infinite Cold (3.18795618081)\n- Offside (3.16335104332)\n- Scotch, Gin, and the New Girl (3.13920640105)\n- The Diva Diaries (3.09982746627)\n- Plight Thee My Troth (3.0877136472)",
+    "markdown_length": 3661,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/",
+            "text": "main post",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Twilight Fanfics by PageRank",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/"
+    },
+    "crawled_at": "2026-08-26T06:47:10.762448",
+    "type": "webpage"
+}

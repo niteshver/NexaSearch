@@ -1,0 +1,119 @@
+{
+    "id": "9e5f97e38acb9216cb742f622395d896",
+    "url": "http://colah.github.io/posts/tags/deep_learning.html",
+    "canonical_url": "http://colah.github.io/posts/tags/deep_learning.html",
+    "title": "Deep Learning Posts - colah's blog",
+    "status": 200,
+    "markdown": "# Deep Learning Posts\n\n    Visualizing MNIST: An Exploration of Dimensionality Reduction\n    - October  9, 2014\n\n    Conv Nets: A Modular Perspective\n    - July  8, 2014\n\n    Deep Learning, NLP, and Representations\n    - July  7, 2014\n\n    Neural Networks, Manifolds, and Topology\n    - April  6, 2014",
+    "markdown_length": 301,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/posts/2014-10-Visualizing-MNIST/",
+            "text": "Visualizing MNIST: An Exploration of Dimensionality Reduction",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/posts/2014-07-Conv-Nets-Modular/",
+            "text": "Conv Nets: A Modular Perspective",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/",
+            "text": "Deep Learning, NLP, and Representations",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/posts/2014-03-NN-Manifolds-Topology/",
+            "text": "Neural Networks, Manifolds, and Topology",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/rss.xml",
+            "text": "RSS feed",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Deep Learning Posts - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://colah.github.io/posts/2014-07-NLP-RNNs-Representations/"
+    },
+    "crawled_at": "2026-08-26T06:47:17.672984",
+    "type": "webpage"
+}

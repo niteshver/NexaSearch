@@ -2,7 +2,7 @@
     "id": "749ccf5633ca3fbb69bd442f49148c5e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.apply.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.apply.html",
-    "title": "pandas.io.formats.style.Styler.apply — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.apply — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.apply#\n\n- \nStyler.apply(*func* ,*axis=0* ,*subset=None* ,***kwargs* )[source]#\n- Apply a CSS-styling function column-wise, row-wise, or table-wise. Updates the HTML representation with the result. \n  - Parameters:\n    - **func** function\n    - `func` should take a Series if`axis` in [0,1] and return a list-like\nobject of same length, or a Series, not necessarily of same length, with\nvalid index labels considering`subset` .`func` should take a DataFrame if`axis` is`None` and return either\nan ndarray with the same shape or a DataFrame, not necessarily of the same\nshape, with valid index and columns labels considering`subset` .\n    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default 0\n    - Apply to each column ( `axis=0` or`'index'` ), to each row\n(`axis=1` or`'columns'` ), or to the entire DataFrame at once\nwith`axis=None` .\n    - **subset** label, array-like, IndexSlice, optional\n    - A valid 2d input to DataFrame.loc[<subset>], or, in the case of a 1d input or single key, to DataFrame.loc[:, <subset>] where the columns are prioritised, to limit `data` to*before* applying the function.\n    - ****kwargs** dict\n    - Pass along to `func` .\n  - Returns:\n    - Styler\n    - Instance of class with CSS applied to its HTML representation.\n See also \n  - `Styler.map_index`\n  - Apply a CSS-styling function to headers elementwise.\n  - `Styler.apply_index`\n  - Apply a CSS-styling function to headers level-wise.\n  - `Styler.map`\n  - Apply a CSS-styling function elementwise.\n Notes The elements of the output of `func` should be CSS styles as strings, in the\nformat ‘attribute: value; attribute2: value2; …’ or,\nif nothing is to be applied to that element, an empty string or`None` .This is similar to `DataFrame.apply` , except that`axis=None` applies the function to the entire DataFrame at once,\nrather than column-wise or row-wise.Examples >>> def highlight_max(x, color): ... return np.where(x == np.nanmax(x.to_numpy()), f\"color: {color};\", None) >>> df = pd.DataFrame(np.random.randn(5, 2), columns=[\"A\", \"B\"]) >>> df.style.apply(highlight_max, color=\"red\") >>> df.style.apply(highlight_max, color=\"blue\", axis=1) >>> df.style.apply(highlight_max, color=\"green\", axis=None) Using `subset` to restrict application to a single column or multiple columns>>> df.style.apply(highlight_max, color=\"red\", subset=\"A\") ... >>> df.style.apply(highlight_max, color=\"red\", subset=[\"A\", \"B\"]) ... Using a 2d input to `subset` to select rows in addition to columns>>> df.style.apply(highlight_max, color=\"red\", subset=([0, 1, 2], slice(None))) ... >>> df.style.apply(highlight_max, color=\"red\", subset=(slice(0, 5, 2), \"A\")) ... Using a function which returns a Series / DataFrame of unequal length but containing valid index labels >>> df = pd.DataFrame([[1, 2], [3, 4], [4, 6]], index=[\"A1\", \"A2\", \"Total\"]) >>> total_style = pd.Series(\"font-weight: bold;\", index=[\"Total\"]) >>> df.style.apply(lambda s: total_style) See Table Visualization user guide for more details.",
     "markdown_length": 3014,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.apply — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.apply — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.920816",
+    "crawled_at": "2026-08-26T06:51:52.233539",
     "type": "webpage"
 }

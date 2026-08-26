@@ -2,7 +2,7 @@
     "id": "e014accbda04dd97195e40ebff9c6b3c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.value_counts.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.value_counts.html",
-    "title": "pandas.Index.value_counts — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.value_counts — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.value_counts#\n\n- \nIndex.value_counts(*normalize=False* ,*sort=True* ,*ascending=False* ,*bins=None* ,*dropna=True* )[source]#\n- Return a Series containing counts of unique values. The resulting object will be in descending order so that the first element is the most frequently-occurring element. Excludes NA values by default. \n  - Parameters:\n    - **normalize** bool, default False\n    - If True then the object returned will contain the relative frequencies of the unique values.\n    - **sort** bool, default True\n    - Stable sort by frequencies when True. Preserve the order of the data when False. Changed in version 3.0.0: Prior to 3.0.0, the sort was unstable.\n    - **ascending** bool, default False\n    - Sort in ascending order.\n    - **bins** int, optional\n    - Rather than count values, group them into half-open bins, a convenience for `pd.cut` , only works with numeric data.\n    - **dropna** bool, default True\n    - Don’t include counts of NaN.\n  - Returns:\n    - Series\n    - Series containing counts of unique values.\n See also \n  - `Series.count`\n  - Number of non-NA elements in a Series.\n  - `DataFrame.count`\n  - Number of non-NA elements in a DataFrame.\n  - `DataFrame.value_counts`\n  - Equivalent method on DataFrames.\n Examples >>> index = pd.Index([3, 1, 2, 3, 4, np.nan]) >>> index.value_counts() 3.0 2 1.0 1 2.0 1 4.0 1 Name: count, dtype: int64 With normalize set to True, returns the relative frequency by dividing all values by the sum of values. >>> s = pd.Series([3, 1, 2, 3, 4, np.nan]) >>> s.value_counts(normalize=True) 3.0 0.4 1.0 0.2 2.0 0.2 4.0 0.2 Name: proportion, dtype: float64 **bins**Bins can be useful for going from a continuous variable to a categorical variable; instead of counting unique apparitions of values, divide the index in the specified number of half-open bins. >>> s.value_counts(bins=3) (0.996, 2.0] 2 (2.0, 3.0] 2 (3.0, 4.0] 1 Name: count, dtype: int64 **dropna**With dropna set to False we can also see NaN index values. >>> s.value_counts(dropna=False) 3.0 2 1.0 1 2.0 1 4.0 1 NaN 1 Name: count, dtype: int64 **Categorical Dtypes**Rows with categorical type will be counted as one group if they have same categories and order. In the example below, even though `a` ,`c` , and`d` all have the same data types of`category` ,\nonly`c` and`d` will be counted as one group\nsince`a` doesn’t have the same categories.>>> df = pd.DataFrame({\"a\": [1], \"b\": [\"2\"], \"c\": [3], \"d\": [3]}) >>> df = df.astype({\"a\": \"category\", \"c\": \"category\", \"d\": \"category\"}) >>> df a b c d 0 1 2 3 3 >>> df.dtypes a category b str c category d category dtype: object >>> df.dtypes.value_counts() category 2 category 1 str 1 Name: count, dtype: int64",
     "markdown_length": 2704,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.value_counts — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.value_counts — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:40.433146",
+    "crawled_at": "2026-08-26T06:48:51.099112",
     "type": "webpage"
 }

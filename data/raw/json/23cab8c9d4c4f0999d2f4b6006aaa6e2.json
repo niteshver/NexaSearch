@@ -2,7 +2,7 @@
     "id": "23cab8c9d4c4f0999d2f4b6006aaa6e2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.keys.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.keys.html",
-    "title": "pandas.Series.keys — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.keys — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.keys#\n\n- Series.keys()[source]#\n- Return alias for index. This method provides dictionary-like compatibility by returning the index of the Series, analogous to the keys of a dictionary. \n  - Returns:\n    - Index\n    - Index of the Series.\n See also \n  - `Series.index`\n  - The index (axis labels) of the Series.\n Examples >>> s = pd.Series([1, 2, 3], index=[0, 1, 2]) >>> s.keys() Index([0, 1, 2], dtype='int64')",
     "markdown_length": 428,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.keys — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.keys — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:55.140338",
+    "crawled_at": "2026-08-26T06:49:18.528263",
     "type": "webpage"
 }

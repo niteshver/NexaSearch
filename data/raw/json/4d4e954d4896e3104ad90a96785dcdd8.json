@@ -2,7 +2,7 @@
     "id": "4d4e954d4896e3104ad90a96785dcdd8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.rename_axis.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.rename_axis.html",
-    "title": "pandas.DataFrame.rename_axis — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DataFrame.rename_axis — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.rename_axis#\n\n- \nDataFrame.rename_axis(*mapper=<no_default>* ,*** ,*index=<no_default>* ,*columns=<no_default>* ,*axis=0* ,*copy=<no_default>* ,*inplace=False* )[source]#\n- Set the name of the axis for the index or columns. This method is useful for labeling the axes in a MultiIndex or for providing descriptive names to axes. \n  - Parameters:\n    - **mapper** scalar, list-like, optional\n    - Value to set the axis name attribute. Use either `mapper` and`axis` to\nspecify the axis to target with`mapper` , or`index` and/or`columns` .\n    - **index** scalar, list-like, dict-like or function, optional\n    - A scalar, list-like, dict-like or functions transformations to apply to that axis’ values.\n    - **columns** scalar, list-like, dict-like or function, optional\n    - A scalar, list-like, dict-like or functions transformations to apply to that axis’ values.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to rename.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n    - **inplace** bool, default False\n    - Modifies the object directly, instead of creating a new Series or DataFrame.\n  - Returns:\n    - DataFrame, or None\n    - The same type as the caller or None if `inplace=True` .\n See also \n  - `Series.rename`\n  - Alter Series index labels or name.\n  - `DataFrame.rename`\n  - Alter DataFrame index labels or name.\n  - `Index.rename`\n  - Set new names on index.\n Notes `DataFrame.rename_axis` supports two calling conventions\n  - `(index=index_mapper, columns=columns_mapper, ...)`\n  - `(mapper, axis={'index', 'columns'}, ...)`\n The first calling convention will only modify the names of the index and/or the names of the Index object that is the columns. In this case, the parameter `copy` is ignored.The second calling convention will modify the names of the corresponding index if mapper is a list or a scalar. However, if mapper is dict-like or a function, it will use the deprecated behavior of modifying the axis *labels* .We *highly* recommend using keyword arguments to clarify your\nintent.Examples **DataFrame**>>> df = pd.DataFrame( ... {\"num_legs\": [4, 4, 2], \"num_arms\": [0, 0, 2]}, [\"dog\", \"cat\", \"monkey\"] ... ) >>> df num_legs num_arms dog 4 0 cat 4 0 monkey 2 2 >>> df = df.rename_axis(\"animal\") >>> df num_legs num_arms animal dog 4 0 cat 4 0 monkey 2 2 >>> df = df.rename_axis(\"limbs\", axis=\"columns\") >>> df limbs num_legs num_arms animal dog 4 0 cat 4 0 monkey 2 2 **MultiIndex**>>> df.index = pd.MultiIndex.from_product( ... [[\"mammal\"], [\"dog\", \"cat\", \"monkey\"]], names=[\"type\", \"name\"] ... ) >>> df limbs num_legs num_arms type name mammal dog 4 0 cat 4 0 monkey 2 2 >>> df.rename_axis(index={\"type\": \"class\"}) limbs num_legs num_arms class name mammal dog 4 0 cat 4 0 monkey 2 2 >>> df.rename_axis(columns=str.upper) LIMBS num_legs num_arms type name mammal dog 4 0 cat 4 0 monkey 2 2",
     "markdown_length": 3226,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.rename_axis — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DataFrame.rename_axis — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
     },
-    "crawled_at": "2026-08-10T11:46:47.968862",
+    "crawled_at": "2026-08-26T06:49:04.874748",
     "type": "webpage"
 }

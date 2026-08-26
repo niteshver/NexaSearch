@@ -2,7 +2,7 @@
     "id": "78657a58d2518476503fd6521041e382",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.kurt.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.kurt.html",
-    "title": "pandas.api.typing.SeriesGroupBy.kurt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.kurt — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.kurt#\n\n- \nSeriesGroupBy.kurt(*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased kurtosis within groups. Kurtosis measures the tailedness of a distribution. This method computes Fisher’s definition of kurtosis (normal distribution has a kurtosis of zero) for each group, using the unbiased estimator. \n  - Parameters:\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Not implemented for Series.\n    - ****kwargs**\n    - Additional keyword arguments to be passed to the function.\n  - Returns:\n    - Series\n    - Unbiased kurtosis within groups.\n See also \n  - `Series.kurt`\n  - Return unbiased kurtosis over requested axis.\n Examples >>> ser = pd.Series( ... [390.0, 350.0, 357.0, 333.0, np.nan, 22.0, 20.0, 30.0, 40.0, 41.0], ... index=[ ... \"Falcon\", ... \"Falcon\", ... \"Falcon\", ... \"Falcon\", ... \"Falcon\", ... \"Parrot\", ... \"Parrot\", ... \"Parrot\", ... \"Parrot\", ... \"Parrot\", ... ], ... name=\"Max Speed\", ... ) >>> ser Falcon 390.0 Falcon 350.0 Falcon 357.0 Falcon 333.0 Falcon NaN Parrot 22.0 Parrot 20.0 Parrot 30.0 Parrot 40.0 Parrot 41.0 Name: Max Speed, dtype: float64 >>> ser.groupby(level=0).kurt() Falcon 1.622109 Parrot -2.878714 Name: Max Speed, dtype: float64 >>> ser.groupby(level=0).kurt(skipna=False) Falcon NaN Parrot -2.878714 Name: Max Speed, dtype: float64",
     "markdown_length": 1469,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.kurt — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.kurt — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.406827",
+    "crawled_at": "2026-08-26T06:51:23.898122",
     "type": "webpage"
 }

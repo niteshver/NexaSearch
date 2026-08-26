@@ -2,7 +2,7 @@
     "id": "e085a87f0ec2f094d7f4b691dd397227",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.deregister_matplotlib_converters.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.deregister_matplotlib_converters.html",
-    "title": "pandas.plotting.deregister_matplotlib_converters — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.plotting.deregister_matplotlib_converters — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.deregister_matplotlib_converters#\n\n- pandas.plotting.deregister_matplotlib_converters()[source]#\n- Remove pandas formatters and converters. Removes the custom converters added by `register()` . This\nattempts to set the state of the registry back to the state before\npandas registered its own units. Converters for pandas’ own types like\nTimestamp and Period are removed completely. Converters for types\npandas overwrites, like`datetime.datetime` , are restored to their\noriginal value.See also \n  - `register_matplotlib_converters`\n  - Register pandas formatters and converters with matplotlib.\n Examples The following line is done automatically by pandas so the plot can be rendered: >>> pd.plotting.register_matplotlib_converters() >>> df = pd.DataFrame( ... {\"ts\": pd.period_range(\"2020\", periods=2, freq=\"M\"), \"y\": [1, 2]} ... ) >>> plot = df.plot.line(x=\"ts\", y=\"y\") Unsetting the register manually an error will be raised: >>> pd.set_option( ... \"plotting.matplotlib.register_converters\", False ... ) >>> df.plot.line(x=\"ts\", y=\"y\") Traceback (most recent call last): TypeError: float() argument must be a string or a real number, not 'Period'",
     "markdown_length": 1167,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.deregister_matplotlib_converters — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.plotting.deregister_matplotlib_converters — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.791225",
+    "crawled_at": "2026-08-26T06:50:57.366483",
     "type": "webpage"
 }

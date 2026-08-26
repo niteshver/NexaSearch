@@ -2,7 +2,7 @@
     "id": "0d06aca6abe82704580f4198fbf5c847",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix.html",
-    "title": "pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix#\n\n- FY5253Quarter.get_rule_code_suffix()#\n- Return the suffix component of the rule code. The suffix combines the variation prefix, starting month abbreviation, and weekday abbreviation into a string format. \n  - Returns:\n    - str\n    - Suffix string in the format “{variation}-{month}-{weekday}”. The variation is “N” for nearest or “L” for last.\n See also \n  - `FY5253.rule_code`\n  - Return the complete rule code string.\n  - `FY5253Quarter.rule_code`\n  - Return the complete rule code string for FY5253Quarter.\n Examples >>> offset = pd.offsets.FY5253(weekday=4, startingMonth=12, variation=\"nearest\") >>> offset.get_rule_code_suffix() 'N-DEC-FRI' >>> offset = pd.offsets.FY5253(weekday=0, startingMonth=1, variation=\"last\") >>> offset.get_rule_code_suffix() 'L-JAN-MON'",
     "markdown_length": 834,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.FY5253Quarter.get_rule_code_suffix — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:21.646771",
+    "crawled_at": "2026-08-26T06:51:21.041364",
     "type": "webpage"
 }

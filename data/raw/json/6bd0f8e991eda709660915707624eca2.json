@@ -2,7 +2,7 @@
     "id": "6bd0f8e991eda709660915707624eca2",
     "url": "http://pandas.pydata.org/docs/dev/getting_started/comparison/index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/getting_started/comparison/index.html",
-    "title": "Comparison with other tools — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "Comparison with other tools — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "Comparison with other tools# Comparison with R / R libraries Quick reference Base R plyr reshape / reshape2 Comparison with SQL Copies vs. in place operations SELECT WHERE GROUP BY JOIN UNION LIMIT pandas equivalents for some SQL analytic and aggregate functions UPDATE DELETE Comparison with spreadsheets Data structures Data input / output Data operations String processing Merging Other considerations Comparison with SAS Data structures Data input / output Data operations String processing Merging Missing data GroupBy Other considerations Comparison with Stata Data structures Data input / output Data operations String processing Merging Missing data GroupBy Other considerations Comparison with SPSS Data structures Copies vs. in place operations Data input / output Data operations String processing Merging GroupBy operations Missing data Other considerations Output management",
     "markdown_length": 887,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Comparison with other tools — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "Comparison with other tools — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/getting_started/index.html"
     },
-    "crawled_at": "2026-08-10T11:46:44.480552",
+    "crawled_at": "2026-08-26T06:48:58.417643",
     "type": "webpage"
 }

@@ -2,10 +2,10 @@
     "id": "ff9420dd7af791d4863582f475653a47",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.to_pydatetime.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.to_pydatetime.html",
-    "title": "pandas.Series.dt.to_pydatetime — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.dt.to_pydatetime — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
-    "markdown": "# pandas.Series.dt.to_pydatetime#\n\n- Series.dt.to_pydatetime()[source]#\n- Return the data as a Series of `datetime.datetime` objects.Timezone information is retained if present. Warning Python’s datetime uses microsecond resolution, which is lower than pandas (nanosecond). The values are truncated. \n  - Returns:\n    - numpy.ndarray\n    - Object dtype array containing native Python datetime objects.\n See also \n  - `datetime.datetime`\n  - Standard library value for a datetime.\n Examples >>> s = pd.Series(pd.date_range(\"20180310\", periods=2)) >>> s 0 2018-03-10 1 2018-03-11 dtype: datetime64[us] >>> s.dt.to_pydatetime() 0 2018-03-10 00:00:00 1 2018-03-11 00:00:00 dtype: object pandas’ nanosecond precision is truncated to microseconds. >>> s = pd.Series(pd.date_range(\"20180310\", periods=2, freq=\"ns\")) >>> s 0 2018-03-10 00:00:00.000000000 1 2018-03-10 00:00:00.000000001 dtype: datetime64[ns] >>> s.dt.to_pydatetime() 0 2018-03-10 00:00:00 1 2018-03-10 00:00:00 dtype: object",
-    "markdown_length": 983,
+    "markdown": "# pandas.Series.dt.to_pydatetime#\n\n- Series.dt.to_pydatetime()[source]#\n- Return the data as a Series of `datetime.datetime` objects.Timezone information is retained if present. Warning Python’s datetime uses microsecond resolution, which is lower than pandas (nanosecond). The values are truncated. \n  - Returns:\n    - Series\n    - Series containing native Python datetime objects.\n See also \n  - `datetime.datetime`\n  - Standard library value for a datetime.\n Examples >>> s = pd.Series(pd.date_range(\"20180310\", periods=2)) >>> s 0 2018-03-10 1 2018-03-11 dtype: datetime64[us] >>> s.dt.to_pydatetime() 0 2018-03-10 00:00:00 1 2018-03-11 00:00:00 dtype: object pandas’ nanosecond precision is truncated to microseconds. >>> s = pd.Series(pd.date_range(\"20180310\", periods=2, freq=\"ns\")) >>> s 0 2018-03-10 00:00:00.000000000 1 2018-03-10 00:00:00.000000001 dtype: datetime64[ns] >>> s.dt.to_pydatetime() 0 2018-03-10 00:00:00 1 2018-03-10 00:00:00 dtype: object",
+    "markdown_length": 964,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.to_pydatetime.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.to_pydatetime — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.dt.to_pydatetime — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:53.860906",
+    "crawled_at": "2026-08-26T06:49:15.885373",
     "type": "webpage"
 }

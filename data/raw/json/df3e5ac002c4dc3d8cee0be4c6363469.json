@@ -2,7 +2,7 @@
     "id": "df3e5ac002c4dc3d8cee0be4c6363469",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_unordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_unordered.html",
-    "title": "pandas.CategoricalIndex.as_unordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.CategoricalIndex.as_unordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.as_unordered#\n\n- CategoricalIndex.as_unordered()[source]#\n- Set the Categorical to be unordered. This method returns a new Categorical with the ordered attribute set to False, disabling comparison operations between categories. \n  - Returns:\n    - Categorical\n    - Unordered Categorical.\n See also \n  - `as_ordered`\n  - Set the Categorical to be ordered.\n Examples For `pandas.Series` :>>> raw_cat = pd.Categorical([\"a\", \"b\", \"c\", \"a\"], ordered=True) >>> ser = pd.Series(raw_cat) >>> ser.cat.ordered True >>> ser = ser.cat.as_unordered() >>> ser.cat.ordered False For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"b\", \"c\", \"a\"], ordered=True) >>> ci.ordered True >>> ci = ci.as_unordered() >>> ci.ordered False",
     "markdown_length": 754,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.as_unordered — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.CategoricalIndex.as_unordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:37.261133",
+    "crawled_at": "2026-08-26T06:48:44.914028",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "f7d02096f7a2bb4439e8a6981155a32a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.str.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.str.html",
-    "title": "pandas.Index.str — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Index.str — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Index.str#\n\n- Index.str()[source]#\n- Vectorized string functions for Series and Index. NAs stay NA unless handled otherwise by a particular method. Patterned after Python’s string methods, with some inspiration from R’s stringr package. \n  - Parameters:\n    - **data** Series or Index\n    - The content of the Series or Index.\n See also \n  - `Series.str`\n  - Vectorized string functions for Series.\n  - `Index.str`\n  - Vectorized string functions for Index.\n Examples >>> s = pd.Series([\"A_Str_Series\"]) >>> s 0 A_Str_Series dtype: str >>> s.str.split(\"_\") 0 [A, Str, Series] dtype: object >>> s.str.replace(\"_\", \"\") 0 AStrSeries dtype: str",
     "markdown_length": 649,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.str — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Index.str — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.697791",
+    "crawled_at": "2026-08-26T06:49:08.088688",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "b3fc3bac1e6308a12972082bcbe46395",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_pydatetime.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_pydatetime.html",
-    "title": "pandas.DatetimeIndex.to_pydatetime — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.DatetimeIndex.to_pydatetime — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.to_pydatetime#\n\n- DatetimeIndex.to_pydatetime()[source]#\n- Return an ndarray of `datetime.datetime` objects.This method converts each element in the DatetimeArray to a native Python `datetime.datetime` object, including timezone information\nif present.\n  - Returns:\n    - numpy.ndarray\n    - An ndarray of `datetime.datetime` objects.\n See also \n  - `DatetimeIndex.to_julian_date`\n  - Converts Datetime Array to float64 ndarray of Julian Dates.\n Examples >>> idx = pd.date_range(\"2018-02-27\", periods=3) >>> idx.to_pydatetime() array([datetime.datetime(2018, 2, 27, 0, 0), datetime.datetime(2018, 2, 28, 0, 0), datetime.datetime(2018, 3, 1, 0, 0)], dtype=object)",
     "markdown_length": 685,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.to_pydatetime — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.DatetimeIndex.to_pydatetime — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_pydatetime.html"
     },
-    "crawled_at": "2026-08-10T11:47:44.689843",
+    "crawled_at": "2026-08-26T06:49:24.840174",
     "type": "webpage"
 }

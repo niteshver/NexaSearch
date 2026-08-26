@@ -2,7 +2,7 @@
     "id": "2a8957297a56f89b014c24695bd2d3be",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Flags.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Flags.html",
-    "title": "pandas.Flags — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Flags — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Flags#\n\n- \nclass pandas.Flags(*obj* ,*** ,*allows_duplicate_labels* )[source]#\n- Flags that apply to pandas objects. “Flags” differ from “metadata”. Flags reflect properties of the pandas object (the Series or DataFrame). Metadata refer to properties of the dataset, and should be stored in DataFrame.attrs. \n  - Parameters:\n    - **obj** Series or DataFrame\n    - The object these flags are associated with.\n    - **allows_duplicate_labels** bool, default True\n    - Whether to allow duplicate labels in this object. By default, duplicate labels are permitted. Setting this to `False` will\ncause an`errors.DuplicateLabelError` to be raised when\nindex (or columns for DataFrame) is not unique, or any\nsubsequent operation on introduces duplicates.\nSee Disallowing Duplicate Labels for more.Warning This is an experimental feature. Currently, many methods fail to propagate the `allows_duplicate_labels` value. In future versions\nit is expected that every method taking or returning one or more\nDataFrame or Series objects will propagate`allows_duplicate_labels` .\n See also \n  - `DataFrame.attrs`\n  - Dictionary of global attributes of this dataset.\n  - `Series.attrs`\n  - Dictionary of global attributes of this dataset.\n Examples Attributes can be set in two ways: >>> df = pd.DataFrame() >>> df.flags <Flags(allows_duplicate_labels=True)> >>> df.flags.allows_duplicate_labels = False >>> df.flags <Flags(allows_duplicate_labels=False)> >>> df.flags[\"allows_duplicate_labels\"] = True >>> df.flags <Flags(allows_duplicate_labels=True)> Attributes `allows_duplicate_labels`Whether this object allows duplicate labels. Methods",
     "markdown_length": 1634,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Flags — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Flags — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:49.385737",
+    "crawled_at": "2026-08-26T06:49:07.575921",
     "type": "webpage"
 }

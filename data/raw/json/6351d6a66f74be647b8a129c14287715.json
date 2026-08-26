@@ -2,7 +2,7 @@
     "id": "6351d6a66f74be647b8a129c14287715",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.size.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.size.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.size — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.size — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.size#\n\n- DataFrameGroupBy.size()[source]#\n- Compute group sizes. Returns the number of rows in each group. This is useful for understanding the distribution of data across groups. \n  - Returns:\n    - DataFrame or Series\n    - Number of rows in each group as a Series if as_index is True or a DataFrame if as_index is False.\n See also \n  - `Series.size`\n  - Apply function size to a Series.\n  - `DataFrame.size`\n  - Apply function size to each row or column of a DataFrame.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\"] >>> ser = pd.Series([1, 2, 3], index=lst) >>> ser a 1 a 2 b 3 dtype: int64 >>> ser.groupby(level=0).size() a 2 b 1 dtype: int64 >>> data = [[1, 2, 3], [1, 5, 6], [7, 8, 9]] >>> df = pd.DataFrame( ... data, columns=[\"a\", \"b\", \"c\"], index=[\"owl\", \"toucan\", \"eagle\"] ... ) >>> df a b c owl 1 2 3 toucan 1 5 6 eagle 7 8 9 >>> df.groupby(\"a\").size() a 1 2 7 1 dtype: int64 For Resampler: >>> ser = pd.Series( ... [1, 2, 3], ... index=pd.DatetimeIndex([\"2023-01-01\", \"2023-01-15\", \"2023-02-01\"]), ... ) >>> ser 2023-01-01 1 2023-01-15 2 2023-02-01 3 dtype: int64 >>> ser.resample(\"MS\").size() 2023-01-01 2 2023-02-01 1 Freq: MS, dtype: int64",
     "markdown_length": 1200,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.size — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.size — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:03.969835",
+    "crawled_at": "2026-08-26T06:51:35.345410",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "aef55cbade6b13a0e3d75c8bef3caf63",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.to_pytimedelta.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.to_pytimedelta.html",
-    "title": "pandas.TimedeltaIndex.to_pytimedelta — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.TimedeltaIndex.to_pytimedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.to_pytimedelta#\n\n- TimedeltaIndex.to_pytimedelta()[source]#\n- Return an ndarray of datetime.timedelta objects. Each element of the `TimedeltaIndex` is converted to the\ncorresponding native Python`datetime.timedelta` object.\n  - Returns:\n    - numpy.ndarray\n    - A NumPy `timedelta64` object representing the same duration as the\noriginal pandas`Timedelta` object. The precision of the resulting\nobject is in nanoseconds, which is the default\ntime resolution used by pandas for`Timedelta` objects, ensuring\nhigh precision for time-based calculations.\n See also \n  - `to_timedelta`\n  - Convert argument to timedelta format.\n  - `Timedelta`\n  - Represents a duration between two dates or times.\n  - `DatetimeIndex`\n  - Index of datetime64 data.\n  - `Timedelta.components`\n  - Return a components namedtuple-like of a single timedelta.\n Examples >>> tdelta_idx = pd.to_timedelta([1, 2, 3], unit=\"D\") >>> tdelta_idx TimedeltaIndex(['1 days', '2 days', '3 days'], dtype='timedelta64[s]', freq=None) >>> tdelta_idx.to_pytimedelta() array([datetime.timedelta(days=1), datetime.timedelta(days=2), datetime.timedelta(days=3)], dtype=object) >>> tidx = pd.TimedeltaIndex(data=[\"1 days 02:30:45\", \"3 days 04:15:10\"]) >>> tidx TimedeltaIndex(['1 days 02:30:45', '3 days 04:15:10'], dtype='timedelta64[us]', freq=None) >>> tidx.to_pytimedelta() array([datetime.timedelta(days=1, seconds=9045), datetime.timedelta(days=3, seconds=15310)], dtype=object)",
     "markdown_length": 1462,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.to_pytimedelta — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.TimedeltaIndex.to_pytimedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.to_pytimedelta.html"
     },
-    "crawled_at": "2026-08-10T11:48:10.894101",
+    "crawled_at": "2026-08-26T06:51:26.999254",
     "type": "webpage"
 }

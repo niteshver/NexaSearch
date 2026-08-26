@@ -2,7 +2,7 @@
     "id": "08acb4775adb0674fb9e5877b0ab8b01",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.month.html",
-    "title": "pandas.Timestamp.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Timestamp.month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.month#\n\n- Timestamp.month#\n- Return the month of the Timestamp. Months are numbered from 1 (January) through 12 (December). \n  - Returns:\n    - int\n    - The month of the Timestamp.\n See also \n  - `Timestamp.day`\n  - Return the day of the Timestamp.\n  - `Timestamp.year`\n  - Return the year of the Timestamp.\n Examples >>> ts = pd.Timestamp(\"2024-08-31 16:16:30\") >>> ts.month 8",
     "markdown_length": 397,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Timestamp.month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:47:01.219543",
+    "crawled_at": "2026-08-26T06:51:14.659290",
     "type": "webpage"
 }

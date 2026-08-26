@@ -2,7 +2,7 @@
     "id": "3a8e22d573b8f0ed80562cd1f9f25268",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.swaplevel.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.swaplevel.html",
-    "title": "pandas.MultiIndex.swaplevel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.MultiIndex.swaplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.swaplevel#\n\n- \nMultiIndex.swaplevel(*i=-2* ,*j=-1* )[source]#\n- Swap level i with level j. Calling this method does not change the ordering of the values. Default is to swap the last two levels of the MultiIndex. \n  - Parameters:\n    - **i** int, str, default -2\n    - First level of index to be swapped. Can pass level name as string. Type of parameters can be mixed. If i is a negative int, the first level is indexed relative to the end of the MultiIndex.\n    - **j** int, str, default -1\n    - Second level of index to be swapped. Can pass level name as string. Type of parameters can be mixed. If j is a negative int, the second level is indexed relative to the end of the MultiIndex.\n  - Returns:\n    - MultiIndex\n    - A new MultiIndex.\n See also \n  - `Series.swaplevel`\n  - Swap levels i and j in a MultiIndex.\n  - `DataFrame.swaplevel`\n  - Swap levels i and j in a MultiIndex on a particular axis.\n Examples >>> mi = pd.MultiIndex( ... levels=[[\"a\", \"b\"], [\"bb\", \"aa\"], [\"aaa\", \"bbb\"]], ... codes=[[0, 0, 1, 1], [0, 1, 0, 1], [1, 0, 1, 0]], ... ) >>> mi MultiIndex([('a', 'bb', 'bbb'), ('a', 'aa', 'aaa'), ('b', 'bb', 'bbb'), ('b', 'aa', 'aaa')], ) >>> mi.swaplevel() MultiIndex([('a', 'bbb', 'bb'), ('a', 'aaa', 'aa'), ('b', 'bbb', 'bb'), ('b', 'aaa', 'aa')], ) >>> mi.swaplevel(0) MultiIndex([('bbb', 'bb', 'a'), ('aaa', 'aa', 'a'), ('bbb', 'bb', 'b'), ('aaa', 'aa', 'b')], ) >>> mi.swaplevel(0, 1) MultiIndex([('bb', 'a', 'bbb'), ('aa', 'a', 'aaa'), ('bb', 'b', 'bbb'), ('aa', 'b', 'aaa')], )",
     "markdown_length": 1524,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.swaplevel — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.MultiIndex.swaplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.as_ordered.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-10T11:46:41.680244",
+    "crawled_at": "2026-08-26T06:48:53.238380",
     "type": "webpage"
 }

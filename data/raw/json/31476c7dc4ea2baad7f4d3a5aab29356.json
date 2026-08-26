@@ -2,7 +2,7 @@
     "id": "31476c7dc4ea2baad7f4d3a5aab29356",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearEnd.month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.BYearEnd.month.html",
-    "title": "pandas.tseries.offsets.BYearEnd.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.tseries.offsets.BYearEnd.month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.offsets.BYearEnd.month#\n\n- BYearEnd.month#\n- Return the month of the year on which this offset applies. Returns an integer representing the month (1-12) that this offset targets. For year-based offsets, this determines which month is used for calculations. See also \n  - `tseries.offsets.YearEnd`\n  - Offset to end of year.\n  - `tseries.offsets.YearBegin`\n  - Offset to start of year.\n  - `tseries.offsets.BYearEnd`\n  - Offset to last business day of year.\n  - `tseries.offsets.BYearBegin`\n  - Offset to first business day of year.\n Examples >>> pd.offsets.BYearBegin().month 1 >>> pd.offsets.BYearBegin(month=6).month 6",
     "markdown_length": 637,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.offsets.BYearEnd.month — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.tseries.offsets.BYearEnd.month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-10T11:47:12.333277",
+    "crawled_at": "2026-08-26T06:51:40.280501",
     "type": "webpage"
 }

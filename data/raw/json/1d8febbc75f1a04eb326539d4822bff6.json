@@ -2,7 +2,7 @@
     "id": "1d8febbc75f1a04eb326539d4822bff6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.categories.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.categories.html",
-    "title": "pandas.CategoricalDtype.categories — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.CategoricalDtype.categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalDtype.categories#\n\n- property CategoricalDtype.categories[source]#\n- An `Index` containing the unique categories allowed.If no categories were explicitly provided at construction time, this will be `None` until the`CategoricalDtype` is attached to actual\ndata.See also \n  - `ordered`\n  - Whether the categories have an ordered relationship.\n Examples >>> cat_type = pd.CategoricalDtype(categories=[\"a\", \"b\"], ordered=True) >>> cat_type.categories Index(['a', 'b'], dtype='str')",
     "markdown_length": 497,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalDtype.categories — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.CategoricalDtype.categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
     },
-    "crawled_at": "2026-08-10T11:46:45.205193",
+    "crawled_at": "2026-08-26T06:48:59.705927",
     "type": "webpage"
 }

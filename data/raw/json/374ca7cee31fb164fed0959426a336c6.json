@@ -2,7 +2,7 @@
     "id": "374ca7cee31fb164fed0959426a336c6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sparse.html",
-    "title": "pandas.Series.sparse — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.Series.sparse — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
     "status": 200,
     "markdown": "# pandas.Series.sparse#\n\n- Series.sparse()[source]#\n- Accessor for SparseArray from other sparse matrix data types. Provides methods and properties to work with the underlying sparse data in a Series or DataFrame. It allows accessing sparse-specific attributes such as fill value, density, and stored non-fill values, as well as converting to and from scipy sparse matrices. \n  - Parameters:\n    - **data** Series or DataFrame\n    - The Series or DataFrame to which the SparseAccessor is attached.\n See also \n  - `Series.sparse.to_coo`\n  - Create a scipy.sparse.coo_matrix from a Series with MultiIndex.\n  - `Series.sparse.from_coo`\n  - Create a Series with sparse values from a scipy.sparse.coo_matrix.\n Examples >>> ser = pd.Series([0, 0, 2, 2, 2], dtype=\"Sparse[int]\") >>> ser.sparse.density 0.6 >>> ser.sparse.sp_values array([2, 2, 2])",
     "markdown_length": 840,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.sparse — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.Series.sparse — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
     },
-    "crawled_at": "2026-08-10T11:46:57.189978",
+    "crawled_at": "2026-08-26T06:49:22.671223",
     "type": "webpage"
 }
