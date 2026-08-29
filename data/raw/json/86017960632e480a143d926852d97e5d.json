@@ -2,7 +2,7 @@
     "id": "86017960632e480a143d926852d97e5d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.andrews_curves.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.andrews_curves.html",
-    "title": "pandas.plotting.andrews_curves — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.plotting.andrews_curves — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.andrews_curves#\n\n- \npandas.plotting.andrews_curves(*frame* ,*class_column* ,*ax=None* ,*samples=200* ,*color=None* ,*colormap=None* ,***kwargs* )[source]#\n- Generate a matplotlib plot for visualizing clusters of multivariate data. Andrews curves have the functional form: Where \n  - Parameters:\n    - **frame** DataFrame\n    - Data to be plotted, preferably normalized to (0.0, 1.0).\n    - **class_column** label\n    - Name of the column containing class names.\n    - **ax** axes object, default None\n    - Axes to use.\n    - **samples** int\n    - Number of points to plot in each curve.\n    - **color** str, list[str] or tuple[str], optional\n    - Colors to use for the different classes. Colors can be strings or 3-element floating point RGB values.\n    - **colormap** str or matplotlib colormap object, default None\n    - Colormap to select colors from. If a string, load colormap with that name from matplotlib.\n    - ****kwargs**\n    - Options to pass to matplotlib plotting method.\n  - Returns:\n    - `matplotlib.axes.Axes`\n    - The matplotlib Axes object with the plot.\n See also \n  - `plotting.parallel_coordinates`\n  - Plot parallel coordinates chart.\n  - `DataFrame.plot`\n  - Make plots of Series or DataFrame.\n Examples >>> df = pd.DataFrame( ... { ... \"SepalLength\": [6.5, 7.7, 5.1, 5.8, 7.6, 5.0, 5.4, 4.6, 6.7, 4.6], ... \"SepalWidth\": [3.0, 3.8, 3.8, 2.7, 3.0, 2.3, 3.0, 3.2, 3.3, 3.6], ... \"PetalLength\": [5.5, 6.7, 1.9, 5.1, 6.6, 3.3, 4.5, 1.4, 5.7, 1.0], ... \"PetalWidth\": [1.8, 2.2, 0.4, 1.9, 2.1, 1.0, 1.5, 0.2, 2.1, 0.2], ... \"Name\": [ ... \"virginica\", ... \"virginica\", ... \"setosa\", ... \"virginica\", ... \"virginica\", ... \"versicolor\", ... \"versicolor\", ... \"setosa\", ... \"virginica\", ... \"setosa\", ... ], ... } ... ) >>> pd.plotting.andrews_curves(df, \"Name\")",
     "markdown_length": 1799,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.andrews_curves — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.plotting.andrews_curves — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:26.869316",
+    "crawled_at": "2026-08-28T15:52:24.298591",
     "type": "webpage"
 }

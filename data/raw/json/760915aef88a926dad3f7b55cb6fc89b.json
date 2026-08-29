@@ -2,7 +2,7 @@
     "id": "760915aef88a926dad3f7b55cb6fc89b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.reindex_like.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.reindex_like.html",
-    "title": "pandas.Series.reindex_like — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.reindex_like — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.reindex_like#\n\n- \nSeries.reindex_like(*other* ,*method=None* ,*copy=<no_default>* ,*limit=None* ,*tolerance=None* )[source]#\n- Return an object with matching indices as other object. Conform the object to the same index on all axes. Optional filling logic, placing NaN in locations having no value in the previous index. A new object is produced unless the new index is equivalent to the current one and copy=False. \n  - Parameters:\n    - **other** Object of the same data type\n    - Its row and column indices are used to define the new indices of this object.\n    - **method** {None, ‘backfill’/’bfill’, ‘pad’/’ffill’, ‘nearest’}\n    - Method to use for filling holes in reindexed DataFrame. Please note: this is only applicable to DataFrames/Series with a monotonically increasing/decreasing index. Deprecated since version 3.0.0. \n      - None (default): don’t fill gaps\n      - pad / ffill: propagate last valid observation forward to next valid\n      - backfill / bfill: use next valid observation to fill gap\n      - nearest: use nearest valid observations to fill gap.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n    - **limit** int, default None\n    - Maximum number of consecutive labels to fill for inexact matches.\n    - **tolerance** optional\n    - Maximum distance between original and new labels for inexact matches. The values of the index at the matching locations must satisfy the equation `abs(index[indexer] - target) <= tolerance` .Tolerance may be a scalar value, which applies the same tolerance to all values, or list-like, which applies variable tolerance per element. List-like includes list, tuple, array, Series, and must be the same size as the index and its dtype must exactly match the index’s type.\n  - Returns:\n    - Series or DataFrame\n    - Same type as caller, but with changed indices on each axis.\n See also \n  - `DataFrame.set_index`\n  - Set row labels.\n  - `DataFrame.reset_index`\n  - Remove row labels or move them to new columns.\n  - `DataFrame.reindex`\n  - Change to new indices or expand indices.\n Notes Same as calling `.reindex(index=other.index, columns=other.columns,...)` .Examples >>> df1 = pd.DataFrame( ... [ ... [24.3, 75.7, \"high\"], ... [31, 87.8, \"high\"], ... [22, 71.6, \"medium\"], ... [35, 95, \"medium\"], ... ], ... columns=[\"temp_celsius\", \"temp_fahrenheit\", \"windspeed\"], ... index=pd.date_range(start=\"2014-02-12\", end=\"2014-02-15\", freq=\"D\"), ... ) >>> df1 temp_celsius temp_fahrenheit windspeed 2014-02-12 24.3 75.7 high 2014-02-13 31.0 87.8 high 2014-02-14 22.0 71.6 medium 2014-02-15 35.0 95.0 medium >>> df2 = pd.DataFrame( ... [[28, \"low\"], [30, \"low\"], [35.1, \"medium\"]], ... columns=[\"temp_celsius\", \"windspeed\"], ... index=pd.DatetimeIndex([\"2014-02-12\", \"2014-02-13\", \"2014-02-15\"]), ... ) >>> df2 temp_celsius windspeed 2014-02-12 28.0 low 2014-02-13 30.0 low 2014-02-15 35.1 medium >>> df2.reindex_like(df1) temp_celsius temp_fahrenheit windspeed 2014-02-12 28.0 NaN low 2014-02-13 30.0 NaN low 2014-02-14 NaN NaN NaN 2014-02-15 35.1 NaN medium",
     "markdown_length": 3394,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.reindex_like — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.reindex_like — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:21.110208",
+    "crawled_at": "2026-08-28T15:50:01.218042",
     "type": "webpage"
 }

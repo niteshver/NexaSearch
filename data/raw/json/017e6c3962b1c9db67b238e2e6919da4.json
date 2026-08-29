@@ -2,7 +2,7 @@
     "id": "017e6c3962b1c9db67b238e2e6919da4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.na_value.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.na_value.html",
-    "title": "pandas.api.extensions.ExtensionDtype.na_value — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionDtype.na_value — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.api.extensions.ExtensionDtype.na_value# property ExtensionDtype.na_value[source]# Default NA value to use for this type. This is used in e.g. ExtensionArray.take. This should be the user-facing “boxed” version of the NA value, not the physical NA value for storage. e.g. for JSONArray, this is an empty dictionary.",
     "markdown_length": 321,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionDtype.na_value — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionDtype.na_value — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.573437",
+    "crawled_at": "2026-08-28T15:51:50.971874",
     "type": "webpage"
 }

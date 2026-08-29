@@ -2,7 +2,7 @@
     "id": "dad3da7c270d960c4bb65a6977490fbf",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.timetz.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.timetz.html",
-    "title": "pandas.Series.dt.timetz — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.timetz — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.timetz#\n\n- Series.dt.timetz[source]#\n- Returns numpy array of `datetime.time` objects with timezones.The time part of the Timestamps. See also \n  - `DatetimeIndex.time`\n  - Returns numpy array of `datetime.time` objects. The time part of the Timestamps.\n  - `DatetimeIndex.tz`\n  - Return the timezone.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.timetz 0 10:00:00+00:00 1 11:00:00+00:00 dtype: object For DatetimeIndex: >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"] ... ) >>> idx.timetz array([datetime.time(10, 0, tzinfo=datetime.timezone.utc), datetime.time(11, 0, tzinfo=datetime.timezone.utc)], dtype=object)",
     "markdown_length": 848,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.timetz — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.timetz — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:15.829798",
+    "crawled_at": "2026-08-28T15:49:22.962835",
     "type": "webpage"
 }

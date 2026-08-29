@@ -2,7 +2,7 @@
     "id": "6d4584b2421a22a84113a8c838958a50",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.product.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.product.html",
-    "title": "pandas.DataFrame.product — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.product — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.product#\n\n- \nDataFrame.product(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,*min_count=0* ,***kwargs* )[source]#\n- Return the product of the values over the requested axis. This multiplies all values in each column (or row when `axis=1` ) together, skipping missing values by default.\nAn empty or all-NA column returns`1` unless`min_count` is specified.\n  - Parameters:\n    - **axis** {index (0), columns (1)}, default 0\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. Warning The behavior of DataFrame.prod with `axis=None` is deprecated,\nin a future version this will reduce over both axes and return a scalar\nTo retain the old behavior, pass axis=0 (or do not pass axis).Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Not implemented for Series.\n    - **min_count** int, default 0\n    - The required number of valid values to perform the operation. If fewer than `min_count` non-NA values are present the result will be NA.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Series or scalar\n    - The product of the values over the requested axis.\n See also \n  - `Series.sum`\n  - Return the sum.\n  - `Series.min`\n  - Return the minimum.\n  - `Series.max`\n  - Return the maximum.\n  - `Series.idxmin`\n  - Return the index of the minimum.\n  - `Series.idxmax`\n  - Return the index of the maximum.\n  - `DataFrame.sum`\n  - Return the sum over the requested axis.\n  - `DataFrame.min`\n  - Return the minimum over the requested axis.\n  - `DataFrame.max`\n  - Return the maximum over the requested axis.\n  - `DataFrame.idxmin`\n  - Return the index of the minimum over the requested axis.\n  - `DataFrame.idxmax`\n  - Return the index of the maximum over the requested axis.\n Examples By default, the product of an empty or all-NA Series is `1`>>> pd.Series([], dtype=\"float64\").prod() 1.0 This can be controlled with the `min_count` parameter>>> pd.Series([], dtype=\"float64\").prod(min_count=1) nan Thanks to the `skipna` parameter,`min_count` handles all-NA and\nempty series identically.>>> pd.Series([np.nan]).prod() 1.0 >>> pd.Series([np.nan]).prod(min_count=1) nan",
     "markdown_length": 2427,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.product — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.product — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:04.597230",
+    "crawled_at": "2026-08-28T15:46:42.276909",
     "type": "webpage"
 }

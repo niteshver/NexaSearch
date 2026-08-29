@@ -2,7 +2,7 @@
     "id": "7fc5c78232f04e411513a5739b35b804",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_indexer_for.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_indexer_for.html",
-    "title": "pandas.Index.get_indexer_for — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.get_indexer_for — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.get_indexer_for#\n\n- \nfinal Index.get_indexer_for(*target* )[source]#\n- Guaranteed return of an indexer even when non-unique. This dispatches to get_indexer or get_indexer_non_unique as appropriate. \n  - Parameters:\n    - **target** Index\n    - An iterable containing the values to be used for computing indexer.\n  - Returns:\n    - np.ndarray[np.intp]\n    - List of indices.\n See also \n  - `Index.get_indexer`\n  - Computes indexer and mask for new index given the current index.\n  - `Index.get_non_unique`\n  - Returns indexer and masks for new index given the current index.\n Examples >>> idx = pd.Index([np.nan, \"var1\", np.nan]) >>> idx.get_indexer_for([np.nan]) array([0, 2])",
     "markdown_length": 691,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.get_indexer_for — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.get_indexer_for — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:48.581840",
+    "crawled_at": "2026-08-28T15:47:38.585230",
     "type": "webpage"
 }

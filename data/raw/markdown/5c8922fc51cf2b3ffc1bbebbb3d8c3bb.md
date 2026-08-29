@@ -274,15 +274,15 @@ The above exception was the direct cause of the following exception:
 KeyError                                  Traceback (most recent call last)
 Cell In[27], line 1
 ----> 1 df.apply(f, axis="columns")
-File ~/work/pandas/pandas/pandas/core/frame.py:14920, in DataFrame.apply(self, func, axis, raw, result_type, args, by_row, engine, engine_kwargs, **kwargs)
-  14916                 engine_kwargs=engine_kwargs,
-  14917                 args=args,
-  14918                 kwargs=kwargs,
-  14919             )
-> 14920             return op.apply().__finalize__(self, method="apply")
-  14921         elif hasattr(engine, "__pandas_udf__"):
-  14922             if result_type is not None:
-  14923                 raise NotImplementedError(
+File ~/work/pandas/pandas/pandas/core/frame.py:14970, in DataFrame.apply(self, func, axis, raw, result_type, args, by_row, engine, engine_kwargs, **kwargs)
+  14966                 engine_kwargs=engine_kwargs,
+  14967                 args=args,
+  14968                 kwargs=kwargs,
+  14969             )
+> 14970             return op.apply().__finalize__(self, method="apply")
+  14971         elif hasattr(engine, "__pandas_udf__"):
+  14972             if result_type is not None:
+  14973                 raise NotImplementedError(
 File ~/work/pandas/pandas/pandas/core/apply.py:1061, in FrameApply.apply(self)
    1058 elif self.raw:
    1059     return self.apply_raw(engine=self.engine, engine_kwargs=self.engine_kwargs)

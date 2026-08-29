@@ -2,7 +2,7 @@
     "id": "d9fa9620fcbfea458be66348db1d36fe",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.day_of_week.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.day_of_week.html",
-    "title": "pandas.Series.dt.day_of_week — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.day_of_week — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.day_of_week#\n\n- Series.dt.day_of_week[source]#\n- The day of the week with Monday=0, Sunday=6. Return the day of the week. It is assumed the week starts on Monday, which is denoted by 0 and ends on Sunday which is denoted by 6. This method is available on both Series with datetime values (using the dt accessor) or DatetimeIndex. \n  - Returns:\n    - Series or Index\n    - Containing integers indicating the day number.\n See also \n  - `Series.dt.weekday`\n  - Alias.\n  - `Series.dt.day_name`\n  - Returns the name of the day of the week.\n Examples >>> s = pd.date_range('2016-12-31', '2017-01-08', freq='D').to_series() >>> s.dt.day_of_week 2016-12-31 5 2017-01-01 6 2017-01-02 0 2017-01-03 1 2017-01-04 2 2017-01-05 3 2017-01-06 4 2017-01-07 5 2017-01-08 6 Freq: D, dtype: int32",
     "markdown_length": 795,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.day_of_week — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.day_of_week — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:13.911460",
+    "crawled_at": "2026-08-28T15:49:09.482001",
     "type": "webpage"
 }

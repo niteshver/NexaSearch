@@ -2,7 +2,7 @@
     "id": "01b5caf95ff4ad200cf3dc059630e7d8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.length.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.length.html",
-    "title": "pandas.Interval.length — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Interval.length — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Interval.length#\n\n- Interval.length#\n- Return the length of the Interval. The length is the distance between the right and left bounds, i.e. `right - left` . For time-like bounds this returns a`timedelta` or`Timedelta` .See also \n  - `Interval.is_empty`\n  - Indicates if an interval contains no points.\n Examples >>> interval = pd.Interval(left=1, right=2, closed='left') >>> interval Interval(1, 2, closed='left') >>> interval.length 1",
     "markdown_length": 445,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Interval.length — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Interval.length — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_empty.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:08.638934",
+    "crawled_at": "2026-08-28T15:48:02.193610",
     "type": "webpage"
 }

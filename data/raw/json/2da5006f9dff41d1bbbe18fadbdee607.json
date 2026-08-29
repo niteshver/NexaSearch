@@ -2,7 +2,7 @@
     "id": "2da5006f9dff41d1bbbe18fadbdee607",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.radviz.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.radviz.html",
-    "title": "pandas.plotting.radviz — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.plotting.radviz — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.radviz#\n\n- \npandas.plotting.radviz(*frame* ,*class_column* ,*ax=None* ,*color=None* ,*colormap=None* ,***kwds* )[source]#\n- Plot a multidimensional dataset in 2D. Each Series in the DataFrame is represented as an evenly distributed slice on a circle. Each data point is rendered in the circle according to the value on each Series. Highly correlated Series in the DataFrame are placed closer on the unit circle. RadViz allows you to project an N-dimensional data set into a 2D space where the influence of each dimension can be interpreted as a balance between the influence of all dimensions. More info available at the original article describing RadViz. \n  - Parameters:\n    - **frame** DataFrame\n    - Object holding the data.\n    - **class_column** str\n    - Column name containing the name of the data point category.\n    - **ax**`matplotlib.axes.Axes` , optional\n    - A plot instance to which to add the information.\n    - **color** list[str] or tuple[str], optional\n    - Assign a color to each category. Example: [‘blue’, ‘green’].\n    - **colormap** str or`matplotlib.colors.Colormap` , default None\n    - Colormap to select colors from. If string, load colormap with that name from matplotlib.\n    - ****kwds**\n    - Options to pass to matplotlib scatter plotting method.\n  - Returns:\n    - `matplotlib.axes.Axes`\n    - The Axes object from Matplotlib.\n See also \n  - `plotting.andrews_curves`\n  - Plot clustering visualization.\n Examples >>> df = pd.DataFrame( ... { ... \"SepalLength\": [6.5, 7.7, 5.1, 5.8, 7.6, 5.0, 5.4, 4.6, 6.7, 4.6], ... \"SepalWidth\": [3.0, 3.8, 3.8, 2.7, 3.0, 2.3, 3.0, 3.2, 3.3, 3.6], ... \"PetalLength\": [5.5, 6.7, 1.9, 5.1, 6.6, 3.3, 4.5, 1.4, 5.7, 1.0], ... \"PetalWidth\": [1.8, 2.2, 0.4, 1.9, 2.1, 1.0, 1.5, 0.2, 2.1, 0.2], ... \"Category\": [ ... \"virginica\", ... \"virginica\", ... \"setosa\", ... \"virginica\", ... \"virginica\", ... \"versicolor\", ... \"versicolor\", ... \"setosa\", ... \"virginica\", ... \"setosa\", ... ], ... } ... ) >>> pd.plotting.radviz(df, \"Category\")",
     "markdown_length": 2018,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.radviz — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.plotting.radviz — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:50:55.470271",
+    "crawled_at": "2026-08-28T15:52:26.809177",
     "type": "webpage"
 }

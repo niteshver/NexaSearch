@@ -2,7 +2,7 @@
     "id": "686e8676f0c4d83dae4805fec4d509d2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.is_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.is_dtype.html",
-    "title": "pandas.api.extensions.ExtensionDtype.is_dtype — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionDtype.is_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionDtype.is_dtype#\n\n- \nclassmethod ExtensionDtype.is_dtype(*dtype* )[source]#\n- Check if we match ‘dtype’. \n  - Parameters:\n    - **dtype** object\n    - The object to check.\n  - Returns:\n    - bool\n Notes The default implementation is True if \n  1. `cls.construct_from_string(dtype)` is an instance\nof`cls` .\n  2. `dtype` is an object and is an instance of`cls`\n  3. `dtype` has a`dtype` attribute, and any of the above\nconditions is true for`dtype.dtype` .",
     "markdown_length": 487,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionDtype.is_dtype — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionDtype.is_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.498167",
+    "crawled_at": "2026-08-28T15:51:50.400119",
     "type": "webpage"
 }

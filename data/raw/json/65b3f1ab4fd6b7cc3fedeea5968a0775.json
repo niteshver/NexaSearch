@@ -2,7 +2,7 @@
     "id": "65b3f1ab4fd6b7cc3fedeea5968a0775",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_indexer.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_indexer.html",
-    "title": "pandas.MultiIndex.get_indexer — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.MultiIndex.get_indexer — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.get_indexer#\n\n- \nMultiIndex.get_indexer(*target* ,*method=None* ,*limit=None* ,*tolerance=None* )[source]#\n- Compute indexer and mask for new index given the current index. The indexer should be then used as an input to ndarray.take to align the current data to the new index. \n  - Parameters:\n    - **target** Index\n    - An iterable containing the values to be used for computing indexer.\n    - **method** {None, ‘pad’/’ffill’, ‘backfill’/’bfill’, ‘nearest’}, optional\n      - default: exact matches only.\n      - pad / ffill: find the PREVIOUS index value if no exact match.\n      - backfill / bfill: use NEXT index value if no exact match\n      - nearest: use the NEAREST index value if no exact match. Tied distances are broken by preferring the larger index value.\n    - **limit** int, optional\n    - Maximum number of consecutive labels in `target` to match for\ninexact matches.\n    - **tolerance** optional\n    - Maximum distance between original and new labels for inexact matches. The values of the index at the matching locations must satisfy the equation `abs(index[indexer] - target) <= tolerance` .Tolerance may be a scalar value, which applies the same tolerance to all values, or list-like, which applies variable tolerance per element. List-like includes list, tuple, array, Series, and must be the same size as the index and its dtype must exactly match the index’s type.\n  - Returns:\n    - np.ndarray[np.intp]\n    - Integers from 0 to n - 1 indicating that the index at these positions matches the corresponding target values. Missing values in the target are marked by -1.\n See also \n  - `Index.get_indexer_for`\n  - Returns an indexer even when non-unique.\n  - `Index.get_non_unique`\n  - Returns indexer and masks for new index given the current index.\n Notes Returns -1 for unmatched values, for further explanation see the example below. Examples >>> index = pd.Index([\"c\", \"a\", \"b\"]) >>> index.get_indexer([\"a\", \"b\", \"x\"]) array([ 1, 2, -1]) Notice that the return value is an array of locations in `index` and`x` is marked by -1, as it is not in`index` .",
     "markdown_length": 2098,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.get_indexer — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.MultiIndex.get_indexer — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_indexer.html"
     },
-    "crawled_at": "2026-08-26T06:52:05.990189",
+    "crawled_at": "2026-08-28T20:36:12.907203",
     "type": "webpage"
 }

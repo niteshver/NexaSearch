@@ -2,7 +2,7 @@
     "id": "0f2871bdf0659885730e1582be915c41",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sparse.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sparse.html",
-    "title": "pandas.DataFrame.sparse — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.sparse — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.sparse#\n\n- DataFrame.sparse()[source]#\n- DataFrame accessor for sparse data. It allows users to interact with a DataFrame that contains sparse data types (SparseDtype). It provides methods and attributes to efficiently work with sparse storage, reducing memory usage while maintaining compatibility with standard pandas operations. \n  - Parameters:\n    - **data** scipy.sparse.spmatrix\n    - Must be convertible to csc format.\n See also \n  - `DataFrame.sparse.density`\n  - Ratio of non-sparse points to total (dense) data points.\n Examples >>> df = pd.DataFrame({\"a\": [1, 2, 0, 0], \"b\": [3, 0, 0, 4]}, dtype=\"Sparse[int]\") >>> df.sparse.density np.float64(0.5)",
     "markdown_length": 679,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.sparse — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.sparse — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:05.848261",
+    "crawled_at": "2026-08-28T15:46:55.418555",
     "type": "webpage"
 }

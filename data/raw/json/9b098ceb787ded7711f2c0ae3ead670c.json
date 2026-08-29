@@ -2,7 +2,7 @@
     "id": "9b098ceb787ded7711f2c0ae3ead670c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_categorical_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_categorical_dtype.html",
-    "title": "pandas.api.types.is_categorical_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_categorical_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_categorical_dtype#\n\n- \npandas.api.types.is_categorical_dtype(*arr_or_dtype* )[source]#\n- Check whether an array-like or dtype is of the Categorical dtype. Deprecated since version 2.2.0: Use isinstance(dtype, pd.CategoricalDtype) instead. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array-like or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array-like or dtype is of the Categorical dtype.\n See also \n  - `api.types.is_list_like`\n  - Check if the object is list-like.\n  - `api.types.is_complex_dtype`\n  - Check whether the provided array or dtype is of a complex dtype.\n Examples >>> from pandas.api.types import is_categorical_dtype >>> from pandas import CategoricalDtype >>> is_categorical_dtype(object) False >>> is_categorical_dtype(CategoricalDtype()) True >>> is_categorical_dtype([1, 2, 3]) False >>> is_categorical_dtype(pd.Categorical([1, 2, 3])) True >>> is_categorical_dtype(pd.CategoricalIndex([1, 2, 3])) True",
     "markdown_length": 995,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_categorical_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_categorical_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:49.300036",
+    "crawled_at": "2026-08-28T15:51:55.435142",
     "type": "webpage"
 }

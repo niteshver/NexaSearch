@@ -2,7 +2,7 @@
     "id": "83cccd8d8f54ef1f6a008d85c4ccee49",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.InvalidComparison.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.InvalidComparison.html",
-    "title": "pandas.errors.InvalidComparison — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.InvalidComparison — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.errors.InvalidComparison# exception pandas.errors.InvalidComparison[source]# Exception is raised by _validate_comparison_value to indicate an invalid comparison. Notes This is an internal error.",
     "markdown_length": 201,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.InvalidComparison — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.InvalidComparison — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:49.147930",
+    "crawled_at": "2026-08-28T17:58:58.672656",
     "type": "webpage"
 }

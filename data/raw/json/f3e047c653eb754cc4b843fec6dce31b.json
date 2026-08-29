@@ -2,7 +2,7 @@
     "id": "f3e047c653eb754cc4b843fec6dce31b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.pct_change.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.pct_change.html",
-    "title": "pandas.api.typing.SeriesGroupBy.pct_change — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.pct_change — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.pct_change#\n\n- \nSeriesGroupBy.pct_change(*periods=1* ,*fill_method=None* ,*freq=None* )[source]#\n- Calculate pct_change of each value to previous entry in group. This method calculates the percentage change between the current and a prior element within each group, useful for computing growth rates. \n  - Parameters:\n    - **periods** int, default 1\n    - Periods to shift for calculating percentage change. Comparing with a period of 1 means adjacent elements are compared, whereas a period of 2 compares every other element.\n    - **fill_method** None\n    - Must be None. This argument will be removed in a future version of pandas.\n    - **freq** str, pandas offset object, or None, default None\n    - The frequency increment for time series data (e.g., ‘M’ for month-end). If None, the frequency is inferred from the index. Relevant for time series data only.\n  - Returns:\n    - Series or DataFrame\n    - Percentage changes within each group.\n See also \n  - `Series.pct_change`\n  - Apply function pct_change to a Series.\n  - `DataFrame.pct_change`\n  - Apply function pct_change to each row or column of a DataFrame.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\", \"b\"] >>> ser = pd.Series([1, 2, 3, 4], index=lst) >>> ser a 1 a 2 b 3 b 4 dtype: int64 >>> ser.groupby(level=0).pct_change() a NaN a 1.000000 b NaN b 0.333333 dtype: float64 For DataFrameGroupBy: >>> data = [[1, 2, 3], [1, 5, 6], [2, 5, 8], [2, 6, 9]] >>> df = pd.DataFrame( ... data, ... columns=[\"a\", \"b\", \"c\"], ... index=[\"tuna\", \"salmon\", \"catfish\", \"goldfish\"], ... ) >>> df a b c tuna 1 2 3 salmon 1 5 6 catfish 2 5 8 goldfish 2 6 9 >>> df.groupby(\"a\").pct_change() b c tuna NaN NaN salmon 1.5 1.000 catfish NaN NaN goldfish 0.2 0.125",
     "markdown_length": 1750,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.pct_change — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.pct_change — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:34.066498",
+    "crawled_at": "2026-08-28T17:58:28.473434",
     "type": "webpage"
 }

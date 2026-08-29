@@ -2,7 +2,7 @@
     "id": "0c45048ea2710cac94a5a9c5e2298f79",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.iat.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.iat.html",
-    "title": "pandas.DataFrame.iat — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.iat — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.iat#\n\n- property DataFrame.iat[source]#\n- Access a single value for a row/column pair by integer position. Similar to `iloc` , in that both provide integer-based lookups. Use`iat` if you only need to get or set a single value in a DataFrame\nor Series.\n  - Raises:\n    - IndexError\n    - When integer position is out of bounds.\n See also \n  - `DataFrame.at`\n  - Access a single value for a row/column label pair.\n  - `DataFrame.loc`\n  - Access a group of rows and columns by label(s).\n  - `DataFrame.iloc`\n  - Access a group of rows and columns by integer position(s).\n Examples >>> df = pd.DataFrame( ... [[0, 2, 3], [0, 4, 1], [10, 20, 30]], columns=[\"A\", \"B\", \"C\"] ... ) >>> df A B C 0 0 2 3 1 0 4 1 2 10 20 30 Get value at specified row/column pair >>> df.iat[1, 2] np.int64(1) Set value at specified row/column pair >>> df.iat[1, 2] = 10 >>> df.iat[1, 2] np.int64(10) Get value within a series >>> df.loc[0].iat[1] np.int64(2)",
     "markdown_length": 949,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.iat — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.iat — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:02.488510",
+    "crawled_at": "2026-08-28T15:46:19.535201",
     "type": "webpage"
 }

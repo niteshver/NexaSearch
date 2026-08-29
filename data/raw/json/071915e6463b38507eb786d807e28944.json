@@ -2,7 +2,7 @@
     "id": "071915e6463b38507eb786d807e28944",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._pad_or_backfill.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._pad_or_backfill.html",
-    "title": "pandas.api.extensions.ExtensionArray._pad_or_backfill — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._pad_or_backfill — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._pad_or_backfill#\n\n- \nExtensionArray._pad_or_backfill(*** ,*method* ,*limit=None* ,*limit_area=None* ,*copy=True* )[source]#\n- Pad or backfill values, used by Series/DataFrame ffill and bfill. This method propagates the last valid observation forward (pad/ffill) or the next valid observation backward (backfill/bfill) to fill NaN values. \n  - Parameters:\n    - **method** {‘backfill’, ‘bfill’, ‘pad’, ‘ffill’}\n    - Method to use for filling holes in reindexed Series: \n      - pad / ffill: propagate last valid observation forward to next valid.\n      - backfill / bfill: use NEXT valid observation to fill gap.\n    - **limit** int, default None\n    - This is the maximum number of consecutive NaN values to forward/backward fill. In other words, if there is a gap with more than this number of consecutive NaNs, it will only be partially filled. If method is not specified, this is the maximum number of entries along the entire axis where NaNs will be filled.\n    - **limit_area** {‘inside’, ‘outside’} or None, default None\n    - Specifies which area to limit filling. - ‘inside’: Limit the filling to the area within the gaps. - ‘outside’: Limit the filling to the area outside the gaps. If None, no limitation is applied.\n    - **copy** bool, default True\n    - Whether to make a copy of the data before filling. If False, then the original should be modified and no new memory should be allocated. For ExtensionArray subclasses that cannot do this, it is at the author’s discretion whether to ignore “copy=False” or to raise. The base class implementation ignores the keyword if any NAs are present.\n  - Returns:\n    - Same type as self\n    - The filled array with the same type as the original.\n See also \n  - `Series.ffill`\n  - Forward fill missing values.\n  - `Series.bfill`\n  - Backward fill missing values.\n  - `DataFrame.ffill`\n  - Forward fill missing values in DataFrame.\n  - `DataFrame.bfill`\n  - Backward fill missing values in DataFrame.\n  - `api.types.isna`\n  - Check for missing values.\n  - `api.types.isnull`\n  - Check for missing values.\n Examples >>> arr = pd.array([np.nan, np.nan, 2, 3, np.nan, np.nan]) >>> arr._pad_or_backfill(method=\"backfill\", limit=1) <IntegerArray> [<NA>, 2, 2, 3, <NA>, <NA>] Length: 6, dtype: Int64",
     "markdown_length": 2288,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._pad_or_backfill — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._pad_or_backfill — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.641083",
+    "crawled_at": "2026-08-28T15:51:40.101545",
     "type": "webpage"
 }

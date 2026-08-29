@@ -2,7 +2,7 @@
     "id": "af7a408f82fc9a01ad773ba56661b3ba",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rsplit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rsplit.html",
-    "title": "pandas.Series.str.rsplit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.rsplit — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.rsplit#\n\n- \nSeries.str.rsplit(*pat=None* ,*** ,*n=-1* ,*expand=False* )[source]#\n- Split strings around given separator/delimiter. Splits the string in the Series/Index from the end, at the specified delimiter string. \n  - Parameters:\n    - **pat** str, optional\n    - String to split on. Does not support regex. If not specified, split on whitespace.\n    - **n** int, default -1 (all)\n    - Limit number of splits in output. `None` , 0 and -1 will be interpreted as return all splits.\n    - **expand** bool, default False\n    - Expand the split strings into separate columns. \n      - If `True` , return DataFrame/MultiIndex expanding dimensionality.\n      - If `False` , return Series/Index, containing lists of strings.\n  - Returns:\n    - Series, Index, DataFrame or MultiIndex\n    - Type matches caller unless `expand=True` (see Notes).\n See also \n  - `Series.str.split`\n  - Split strings around given separator/delimiter or regular expression.\n  - `Series.str.join`\n  - Join lists contained as elements in the Series/Index with passed delimiter.\n  - `re.split`\n  - Standard library version for split with `regex=True` .\n  - `str.split`\n  - Standard library version for split with `regex=False` .\n  - `str.rsplit`\n  - Standard library version for rsplit.\n Notes The handling of the n keyword depends on the number of found splits: \n  - If found splits > n, make first n splits only\n  - If found splits <= n, make all splits\n  - If for a certain row the number of found splits is less than the maximum number of splits found across all rows, append None for padding if `expand=True`\n If using `expand=True` , Series and Index callers return DataFrame and\nMultiIndex objects, respectively. The number of columns equals the\nmaximum number of splits found in the data plus one and can be less\nthan`n + 1` ; n is an upper bound on the number of splits, not a\nguaranteed output width. To get a fixed number of columns, reindex\nthe result, e.g.`.reindex(range(n + 1), axis=1)` .Examples >>> s = pd.Series( ... [ ... \"this is a regular sentence\", ... \"https://docs.python.org/3/tutorial/index.html\", ... np.nan, ... ] ... ) >>> s 0 this is a regular sentence 1 https://docs.python.org/3/tutorial/index.html 2 NaN dtype: str In the default setting, the string is split by whitespace. >>> s.str.split() 0 [this, is, a, regular, sentence] 1 [https://docs.python.org/3/tutorial/index.html] 2 NaN dtype: object Without the n parameter, the outputs of rsplit and split are identical. >>> s.str.rsplit() 0 [this, is, a, regular, sentence] 1 [https://docs.python.org/3/tutorial/index.html] 2 NaN dtype: object The n parameter can be used to limit the number of splits on the delimiter. The outputs of split and rsplit are different. >>> s.str.split(n=2) 0 [this, is, a regular sentence] 1 [https://docs.python.org/3/tutorial/index.html] 2 NaN dtype: object >>> s.str.rsplit(n=2) 0 [this is a, regular, sentence] 1 [https://docs.python.org/3/tutorial/index.html] 2 NaN dtype: object The pat parameter can be used to split by other characters. >>> s.str.split(pat=\"/\") 0 [this is a regular sentence] 1 [https:, , docs.python.org, 3, tutorial, index... 2 NaN dtype: object When using `expand=True` , the split elements will expand out into\nseparate columns. If NaN is present, it is propagated throughout\nthe columns during the split.>>> s.str.split(expand=True) 0 1 2 3 4 0 this is a regular sentence 1 https://docs.python.org/3/tutorial/index.html NaN NaN NaN NaN 2 NaN NaN NaN NaN NaN For slightly more complex use cases like splitting the html document name from a url, a combination of parameter settings can be used. >>> s.str.rsplit(\"/\", n=1, expand=True) 0 1 0 this is a regular sentence NaN 1 https://docs.python.org/3/tutorial index.html 2 NaN NaN",
     "markdown_length": 3762,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.rsplit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.rsplit — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:14.183719",
+    "crawled_at": "2026-08-28T15:50:31.283098",
     "type": "webpage"
 }

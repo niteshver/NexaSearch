@@ -2,7 +2,7 @@
     "id": "3c01e17b583f019c70a78fef76c0cd9a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.is_unique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.is_unique.html",
-    "title": "pandas.Index.is_unique — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.is_unique — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.is_unique#\n\n- Index.is_unique[source]#\n- Return if the index has unique values. The uniqueness check is based on exact equality of values. An index with no repeated values returns `True` , otherwise`False` .\n  - Returns:\n    - bool\n See also \n  - `Index.has_duplicates`\n  - Inverse method that checks if it has duplicate values.\n Examples >>> idx = pd.Index([1, 5, 7, 7]) >>> idx.is_unique False >>> idx = pd.Index([1, 5, 7]) >>> idx.is_unique True >>> idx = pd.Index([\"Watermelon\", \"Orange\", \"Apple\", \"Watermelon\"]).astype( ... \"category\" ... ) >>> idx.is_unique False >>> idx = pd.Index([\"Orange\", \"Apple\", \"Watermelon\"]).astype(\"category\") >>> idx.is_unique True",
     "markdown_length": 680,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.is_unique — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.is_unique — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:49.342096",
+    "crawled_at": "2026-08-28T15:47:43.703707",
     "type": "webpage"
 }

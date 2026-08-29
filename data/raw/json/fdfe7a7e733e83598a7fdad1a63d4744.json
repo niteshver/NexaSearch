@@ -2,7 +2,7 @@
     "id": "fdfe7a7e733e83598a7fdad1a63d4744",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_period_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_period_dtype.html",
-    "title": "pandas.api.types.is_period_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_period_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_period_dtype#\n\n- \npandas.api.types.is_period_dtype(*arr_or_dtype* )[source]#\n- Check whether an array-like or dtype is of the Period dtype. Deprecated since version 2.2.0: Use isinstance(dtype, pd.PeriodDtype) instead. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array-like or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array-like or dtype is of the Period dtype.\n See also \n  - `api.types.is_timedelta64_ns_dtype`\n  - Check whether the provided array or dtype is of the timedelta64[ns] dtype.\n  - `api.types.is_timedelta64_dtype`\n  - Check whether an array-like or dtype is of the timedelta64 dtype.\n Examples >>> from pandas.api.types import is_period_dtype >>> is_period_dtype(object) False >>> is_period_dtype(pd.PeriodDtype(freq=\"D\")) True >>> is_period_dtype([1, 2, 3]) False >>> is_period_dtype(pd.Period(\"2017-01-01\")) False >>> is_period_dtype(pd.PeriodIndex([], freq=\"Y\")) True",
     "markdown_length": 960,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_period_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_period_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:32.868693",
+    "crawled_at": "2026-08-28T15:52:03.653025",
     "type": "webpage"
 }

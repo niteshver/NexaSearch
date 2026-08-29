@@ -2,7 +2,7 @@
     "id": "3a39f87e88cc4528fb730c6bd1c62b15",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.count.html",
-    "title": "pandas.api.extensions.ExtensionArray.count — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.count — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.count#\n\n- ExtensionArray.count()[source]#\n- Count the number of non-NA values in the array. This method returns the number of elements in the `ExtensionArray` that are not missing (i.e., not NA/null).\n  - Returns:\n    - scalar\n    - Number of non-NA values in the Series.\n See also \n  - `Series.count`\n  - Count the number of non-NA values in a Series.\n Examples >>> s = pd.array([1, pd.NA, 3]) >>> s.count() np.int64(2)",
     "markdown_length": 459,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.count — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.count — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.800663",
+    "crawled_at": "2026-08-28T15:51:41.691896",
     "type": "webpage"
 }

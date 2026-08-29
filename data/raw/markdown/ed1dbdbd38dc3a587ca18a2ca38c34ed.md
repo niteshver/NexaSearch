@@ -1,0 +1,22 @@
+# pandas.Series.mod#
+
+- 
+Series.mod(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#
+- Return Modulo of series and other, element-wise (binary operator mod). Equivalent to `series % other` , but with support to substitute a
+fill_value for missing data in either one of the inputs.
+  - Parameters:
+    - **other** Series or scalar value
+    - Series with which to compute modulo.
+    - **level** int or name
+    - Broadcast across a level, matching Index values on the passed MultiIndex level.
+    - **fill_value** scalar or None, default None
+    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.
+    - **axis** {0 or ‘index’}
+    - Unused. Parameter needed for compatibility with DataFrame.
+  - Returns:
+    - Series
+    - The result of the operation.
+ See also 
+  - `Series.rmod`
+  - Reverse of the Modulo operator, see Python documentation for more details.
+ Examples >>> a = pd.Series([1, 1, 1, np.nan], index=["a", "b", "c", "d"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=["a", "b", "d", "e"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.mod(b, fill_value=0) a 0.0 b NaN c NaN d 0.0 e NaN dtype: float64

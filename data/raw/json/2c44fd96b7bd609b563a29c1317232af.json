@@ -2,7 +2,7 @@
     "id": "2c44fd96b7bd609b563a29c1317232af",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._from_factorized.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._from_factorized.html",
-    "title": "pandas.api.extensions.ExtensionArray._from_factorized — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._from_factorized — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._from_factorized#\n\n- \nclassmethod ExtensionArray._from_factorized(*values* ,*original* )[source]#\n- Reconstruct an ExtensionArray after factorization. This method reverses the encoding applied by `factorize()` ,\nrecreating an ExtensionArray from the unique values and original\narray metadata.\n  - Parameters:\n    - **values** ndarray\n    - An integer ndarray with the factorized values.\n    - **original** ExtensionArray\n    - The original ExtensionArray that factorize was called on.\n See also \n  - `factorize`\n  - Top-level factorize method that dispatches here.\n  - `ExtensionArray.factorize`\n  - Encode the extension array as an enumerated type.\n Examples >>> interv_arr = pd.arrays.IntervalArray( ... [pd.Interval(0, 1), pd.Interval(1, 5), pd.Interval(1, 5)] ... ) >>> codes, uniques = pd.factorize(interv_arr) >>> pd.arrays.IntervalArray._from_factorized(uniques, interv_arr) <IntervalArray> [(0, 1], (1, 5]] Length: 2, dtype: interval[int64, right]",
     "markdown_length": 994,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._from_factorized — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._from_factorized — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.528376",
+    "crawled_at": "2026-08-28T15:51:38.066901",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "0e2f9e49ac33585f26b6cd46d7a5154d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_unsigned_integer_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_unsigned_integer_dtype.html",
-    "title": "pandas.api.types.is_unsigned_integer_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_unsigned_integer_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_unsigned_integer_dtype#\n\n- \npandas.api.types.is_unsigned_integer_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of an unsigned integer dtype. The nullable Integer dtypes (e.g. pandas.UInt64Dtype) are also considered as integer by this function. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of an unsigned integer dtype.\n See also \n  - `api.types.is_signed_integer_dtype`\n  - Check whether the provided array or dtype is of a signed integer dtype.\n  - `api.types.is_integer_dtype`\n  - Check whether the provided array or dtype is of an integer dtype.\n  - `api.types.is_numeric_dtype`\n  - Check whether the provided array or dtype is of a numeric dtype.\n Examples >>> from pandas.api.types import is_unsigned_integer_dtype >>> is_unsigned_integer_dtype(str) False >>> is_unsigned_integer_dtype(int) # signed False >>> is_unsigned_integer_dtype(float) False >>> is_unsigned_integer_dtype(np.uint64) True >>> is_unsigned_integer_dtype(\"uint8\") True >>> is_unsigned_integer_dtype(\"UInt8\") True >>> is_unsigned_integer_dtype(pd.UInt8Dtype) True >>> is_unsigned_integer_dtype(np.array([\"a\", \"b\"])) False >>> is_unsigned_integer_dtype(pd.Series([1, 2])) # signed False >>> is_unsigned_integer_dtype(pd.Index([1, 2.0])) # float False >>> is_unsigned_integer_dtype(np.array([1, 2], dtype=np.uint32)) True",
     "markdown_length": 1468,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_unsigned_integer_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_unsigned_integer_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:23.852335",
+    "crawled_at": "2026-08-28T15:52:07.216755",
     "type": "webpage"
 }

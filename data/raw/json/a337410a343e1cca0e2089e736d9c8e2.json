@@ -2,7 +2,7 @@
     "id": "a337410a343e1cca0e2089e736d9c8e2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.year.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.year.html",
-    "title": "pandas.Timestamp.year — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.year — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.year#\n\n- Timestamp.year#\n- Return the year of the Timestamp. The year is returned as an integer following the Gregorian calendar. \n  - Returns:\n    - int\n    - The year of the Timestamp.\n See also \n  - `Timestamp.month`\n  - Return the month of the Timestamp.\n  - `Timestamp.day`\n  - Return the day of the Timestamp.\n Examples >>> ts = pd.Timestamp(\"2024-08-31 16:16:30\") >>> ts.year 2024",
     "markdown_length": 406,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.year — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.year — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:42.883614",
+    "crawled_at": "2026-08-28T15:51:34.877483",
     "type": "webpage"
 }

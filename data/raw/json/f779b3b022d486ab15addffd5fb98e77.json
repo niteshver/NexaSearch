@@ -2,7 +2,7 @@
     "id": "f779b3b022d486ab15addffd5fb98e77",
     "url": "http://pandas.pydata.org/docs/dev/reference/resampling.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html",
-    "title": "Resampling — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "Resampling — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# Resampling#\n\nNote\n\nFor an overview, see Time series / date functionality.\n\n`pandas.api.typing.Resampler` instances are returned by\nresample calls: `pandas.DataFrame.resample()`, `pandas.Series.resample()`.\n\n## Indexing, iteration#\n\n| `Resampler.__iter__` () | Groupby iterator. | \n| `Resampler.groups` | Dict {group name -> group labels}. | \n| `Resampler.indices` | Dict {group name -> group indices}. | \n| `Resampler.get_group` (name) | Construct DataFrame from group with provided name. | \n\n## Function application#\n\n| `Resampler.apply` ([func]) | Aggregate using one or more operations over the specified axis. | \n| `Resampler.aggregate` ([func]) | Aggregate using one or more operations over the specified axis. | \n| `Resampler.transform` (arg, *args, **kwargs) | Call function producing a like-indexed Series on each group. | \n| `Resampler.pipe` (func, *args, **kwargs) | Apply a `func` with arguments to this Resampler object and return its result. | \n\n## Upsampling#\n\n| `Resampler.ffill` ([limit]) | Forward fill the values. | \n| `Resampler.bfill` ([limit]) | Backward fill the new missing values in the resampled data. | \n| `Resampler.nearest` ([limit]) | Resample by using the nearest value. | \n| `Resampler.asfreq` ([fill_value]) | Return the values at the new freq, essentially a reindex. | \n| `Resampler.interpolate` ([method, axis, limit, ...]) | Interpolate values between target timestamps according to different methods. | \n\n## Computations / descriptive stats#\n\n| `Resampler.count` () | Compute count of group, excluding missing values. | \n| `Resampler.nunique` () | Return number of unique elements in the group. | \n| `Resampler.first` ([numeric_only, min_count, ...]) | Compute the first non-null entry of each column. | \n| `Resampler.last` ([numeric_only, min_count, skipna]) | Compute the last non-null entry of each column. | \n| `Resampler.max` ([numeric_only, min_count]) | Compute max value of group. | \n| `Resampler.mean` ([numeric_only]) | Compute mean of groups, excluding missing values. | \n| `Resampler.median` ([numeric_only]) | Compute median of groups, excluding missing values. | \n| `Resampler.min` ([numeric_only, min_count]) | Compute min value of group. | \n| `Resampler.ohlc` () | Compute open, high, low and close values of a group, excluding missing values. | \n| `Resampler.prod` ([numeric_only, min_count]) | Compute prod of group values. | \n| `Resampler.size` () | Compute group sizes. | \n| `Resampler.sem` ([ddof, numeric_only]) | Compute standard error of the mean of groups, excluding missing values. | \n| `Resampler.std` ([ddof, numeric_only]) | Compute standard deviation of groups, excluding missing values. | \n| `Resampler.sum` ([numeric_only, min_count]) | Compute sum of group values. | \n| `Resampler.var` ([ddof, numeric_only]) | Compute variance of groups, excluding missing values. | \n| `Resampler.quantile` ([q]) | Return value at the given quantile. |",
     "markdown_length": 2907,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Resampling — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "Resampling — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:56.703620",
+    "crawled_at": "2026-08-28T15:52:40.275141",
     "type": "webpage"
 }

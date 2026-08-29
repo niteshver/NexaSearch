@@ -2,7 +2,7 @@
     "id": "e19ece6d99c47a6fab8ba9fd4a979687",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.index.html",
-    "title": "pandas.DataFrame.index — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.index — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.index#\n\n- DataFrame.index#\n- The index (row labels) of the DataFrame. The index of a DataFrame is a series of labels that identify each row. The labels can be integers, strings, or any other hashable type. The index is used for label-based access and alignment, and can be accessed or modified using this attribute. \n  - Returns:\n    - pandas.Index\n    - The index labels of the DataFrame.\n See also \n  - `DataFrame.columns`\n  - The column labels of the DataFrame.\n  - `DataFrame.to_numpy`\n  - Convert the DataFrame to a NumPy array.\n Examples >>> df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Aritra'], ... 'Age': [25, 30, 35], ... 'Location': ['Seattle', 'New York', 'Kona']}, ... index=([10, 20, 30])) >>> df.index Index([10, 20, 30], dtype='int64') In this example, we create a DataFrame with 3 rows and 3 columns, including Name, Age, and Location information. We set the index labels to be the integers 10, 20, and 30. We then access the index attribute of the DataFrame, which returns an Index object containing the index labels. >>> df.index = [100, 200, 300] >>> df Name Age Location 100 Alice 25 Seattle 200 Bob 30 New York 300 Aritra 35 Kona In this example, we modify the index labels of the DataFrame by assigning a new list of labels to the index attribute. The DataFrame is then updated with the new labels, and the output shows the modified DataFrame.",
     "markdown_length": 1385,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.index — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.index — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:02.676618",
+    "crawled_at": "2026-08-28T15:46:21.601446",
     "type": "webpage"
 }

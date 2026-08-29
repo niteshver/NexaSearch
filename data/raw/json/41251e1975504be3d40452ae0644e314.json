@@ -2,7 +2,7 @@
     "id": "41251e1975504be3d40452ae0644e314",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.tolist.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.tolist.html",
-    "title": "pandas.api.extensions.ExtensionArray.tolist — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.tolist — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.tolist#\n\n- ExtensionArray.tolist()[source]#\n- Return a list of the values. These are each a scalar type, which is a Python scalar (for str, int, float) or a pandas scalar (for Timestamp/Timedelta/Interval/Period) \n  - Returns:\n    - list\n    - Python list of values in array.\n See also \n  - `Index.to_list`\n  - Return a list of the values in the Index.\n  - `Series.to_list`\n  - Return a list of the values in the Series.\n Examples >>> arr = pd.array([1, 2, 3]) >>> arr.tolist() [1, 2, 3]",
     "markdown_length": 526,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.tolist — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.tolist — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.346713",
+    "crawled_at": "2026-08-28T15:51:48.760245",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "a1b133538e84116d1809a0d781b2977c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.max.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.max.html",
-    "title": "pandas.api.typing.Rolling.max — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Rolling.max — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.max#\n\n- \nRolling.max(*numeric_only=False* ,**args* ,*engine=None* ,*engine_kwargs=None* ,***kwargs* )[source]#\n- Calculate the rolling maximum. This is equivalent to applying `numpy.max` over each rolling window.\n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ***args** iterable, optional\n    - Positional arguments passed into `func` .\n    - **engine** str, default None\n      - `'cython'` : Runs the operation through C-extensions from cython.\n      - `'numba'` : Runs the operation through JIT compiled code from numba.\n      - `None` : Defaults to`'cython'` or\nglobally setting`compute.use_numba`\n    - **engine_kwargs** dict, default None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n      - For `'numba'` engine, the engine can accept`nogil` and`parallel` dictionary keys. The values must either be`True` or`False` .\n The default `engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}` .\n    - ****kwargs** mapping, optional\n    - A dictionary of keyword arguments passed into `func` .\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.max`\n  - Aggregating max for Series.\n  - `DataFrame.max`\n  - Aggregating max for DataFrame.\n Notes See Numba engine and Numba (JIT compilation) for extended documentation and performance considerations for the Numba engine. Examples >>> ser = pd.Series([1, 2, 3, 4]) >>> ser.rolling(2).max() 0 NaN 1 2.0 2 3.0 3 4.0 dtype: float64",
     "markdown_length": 1723,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.max — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Rolling.max — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:54.711923",
+    "crawled_at": "2026-08-28T17:57:56.511266",
     "type": "webpage"
 }

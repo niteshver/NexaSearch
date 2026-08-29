@@ -2,7 +2,7 @@
     "id": "603bd084566eefd992b85a161e0ee030",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.second.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.second.html",
-    "title": "pandas.Series.dt.second — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.second — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.second#\n\n- Series.dt.second[source]#\n- The seconds of the datetime. This attribute returns the second component of each datetime value in the Series/Index. Values range from 0 to 59. See also \n  - `DatetimeIndex.minute`\n  - The minutes of the datetime.\n  - `DatetimeIndex.microsecond`\n  - The microseconds of the datetime.\n  - `DatetimeIndex.nanosecond`\n  - The nanoseconds of the datetime.\n Examples >>> datetime_series = pd.Series( ... pd.date_range(\"2000-01-01\", periods=3, freq=\"s\") ... ) >>> datetime_series 0 2000-01-01 00:00:00 1 2000-01-01 00:00:01 2 2000-01-01 00:00:02 dtype: datetime64[us] >>> datetime_series.dt.second 0 0 1 1 2 2 dtype: int32",
     "markdown_length": 674,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.second — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.second — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:15.555904",
+    "crawled_at": "2026-08-28T15:49:20.846579",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "ed12888ed353c8b1074b61756d22d673",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.2.2.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.2.2.html",
-    "title": "What’s new in 1.2.2 (February 09, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.2.2 (February 09, 2021) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.2.2 (February 09, 2021)#\n\nThese are the changes in pandas 1.2.2. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Fixed regression in `read_excel()` that caused it to raise`AttributeError` when checking version of older xlrd versions (GH 38955)\n- Fixed regression in `DataFrame` constructor reordering element when construction from datetime ndarray with dtype not`\"datetime64[ns]\"` (GH 39422)\n- Fixed regression in `DataFrame.astype()` and`Series.astype()` not casting to bytes dtype (GH 39474)\n- Fixed regression in `to_pickle()` failing to create bz2/xz compressed pickle files with`protocol=5` (GH 39002)\n- Fixed regression in `pandas.testing.assert_series_equal()` and`pandas.testing.assert_frame_equal()` always raising`AssertionError` when comparing extension dtypes (GH 39410)\n- Fixed regression in `to_csv()` opening`codecs.StreamWriter` in binary mode instead of in text mode and ignoring user-provided`mode` (GH 39247)\n- Fixed regression in `Categorical.astype()` casting to incorrect dtype when`np.int32` is passed to dtype argument (GH 39402)\n- Fixed regression in `to_excel()` creating corrupt files when appending (`mode=\"a\"` ) to an existing file (GH 39576)\n- Fixed regression in `DataFrame.transform()` failing in case of an empty DataFrame or Series (GH 39636)\n- Fixed regression in `groupby()` or`resample()` when aggregating an all-NaN or numeric object dtype column (GH 39329)\n- Fixed regression in `Rolling.count()` where the`min_periods` argument would be set to`0` after the operation (GH 39554)\n- Fixed regression in `read_excel()` that incorrectly raised when the argument`io` was a non-path and non-buffer and the`engine` argument was specified (GH 39528)\n\n## Bug fixes#\n\n- `pandas.read_excel()` error message when a specified`sheetname` does not exist is now uniform across engines (GH 39250)\n- Fixed bug in `pandas.read_excel()` producing incorrect results when the engine`openpyxl` is used and the excel file is missing or has incorrect dimension information; the fix requires`openpyxl` >= 3.0.0, prior versions may still fail (GH 38956, GH 39001)\n- Fixed bug in `pandas.read_excel()` sometimes producing a`DataFrame` with trailing rows of`np.nan` when the engine`openpyxl` is used (GH 39181)\n\n## Contributors#\n\nA total of 14 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Andrew Wieteska\n- Erfan Nariman\n- Joris Van den Bossche\n- Matthew Roeschke\n- MeeseeksMachine\n- Pandas Development Team\n- Pav A\n- Richard Shadrach\n- Simon Hawkins\n- Thomas Li\n- Torsten Wörtwein\n- Vladimir Podolskiy +\n- jbrockmendel\n- patrick",
     "markdown_length": 2686,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.2.2 (February 09, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.2.2 (February 09, 2021) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:54.734609",
+    "crawled_at": "2026-08-28T16:00:06.167826",
     "type": "webpage"
 }

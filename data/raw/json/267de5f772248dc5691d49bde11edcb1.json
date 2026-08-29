@@ -2,7 +2,7 @@
     "id": "267de5f772248dc5691d49bde11edcb1",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.dtypes.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.dtypes.html",
-    "title": "pandas.MultiIndex.dtypes — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.MultiIndex.dtypes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.dtypes#\n\n- MultiIndex.dtypes[source]#\n- Return the dtypes as a Series for the underlying MultiIndex. Each element in the returned Series corresponds to the dtype of one level of the MultiIndex, indexed by the level names. See also \n  - `Index.dtype`\n  - Return the dtype object of the underlying data.\n  - `Series.dtypes`\n  - Return the data type of the underlying Series.\n Examples >>> idx = pd.MultiIndex.from_product( ... [(0, 1, 2), (\"green\", \"purple\")], names=[\"number\", \"color\"] ... ) >>> idx MultiIndex([(0, 'green'), (0, 'purple'), (1, 'green'), (1, 'purple'), (2, 'green'), (2, 'purple')], names=['number', 'color']) >>> idx.dtypes number int64 color object dtype: object",
     "markdown_length": 700,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.dtypes — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.MultiIndex.dtypes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.dtypes.html"
     },
-    "crawled_at": "2026-08-26T06:49:56.498075",
+    "crawled_at": "2026-08-28T20:44:35.684398",
     "type": "webpage"
 }

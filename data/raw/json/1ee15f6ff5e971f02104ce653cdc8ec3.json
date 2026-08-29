@@ -2,7 +2,7 @@
     "id": "1ee15f6ff5e971f02104ce653cdc8ec3",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.rename_categories.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.rename_categories.html",
-    "title": "pandas.CategoricalIndex.rename_categories — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.CategoricalIndex.rename_categories — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.rename_categories#\n\n- \nCategoricalIndex.rename_categories(*new_categories* )[source]#\n- Rename categories. This method is commonly used to re-label or adjust the category names in categorical data without changing the underlying data. It is useful in situations where you want to modify the labels used for clarity, consistency, or readability. \n  - Parameters:\n    - **new_categories** list-like, dict-like or callable\n    - New categories which will replace old categories. \n      - list-like: all items must be unique and the number of items in the new categories must match the existing number of categories.\n      - dict-like: specifies a mapping from old categories to new. Categories not contained in the mapping are passed through and extra categories in the mapping are ignored.\n      - callable : a callable that is called on all items in the old categories and whose return values comprise the new categories.\n  - Returns:\n    - Categorical\n    - Categorical with renamed categories.\n  - Raises:\n    - ValueError\n    - If new categories are list-like and do not have the same number of items than the current categories or do not validate as categories\n See also \n  - `reorder_categories`\n  - Reorder categories.\n  - `add_categories`\n  - Add new categories.\n  - `remove_categories`\n  - Remove the specified categories.\n  - `remove_unused_categories`\n  - Remove categories which are not used.\n  - `set_categories`\n  - Set the categories to the specified ones.\n Examples >>> c = pd.Categorical([\"a\", \"a\", \"b\"]) >>> c.rename_categories([0, 1]) [0, 0, 1] Categories (2, int64): [0, 1] For dict-like `new_categories` , extra keys are ignored and\ncategories not in the dictionary are passed through>>> c.rename_categories({\"a\": \"A\", \"c\": \"C\"}) ['A', 'A', 'b'] Categories (2, str): ['A', 'b'] You may also provide a callable to create the new categories >>> c.rename_categories(lambda x: x.upper()) ['A', 'A', 'B'] Categories (2, str): ['A', 'B']",
     "markdown_length": 1976,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.rename_categories — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.CategoricalIndex.rename_categories — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.rename_categories.html"
     },
-    "crawled_at": "2026-08-26T06:49:47.158557",
+    "crawled_at": "2026-08-28T19:47:18.035070",
     "type": "webpage"
 }

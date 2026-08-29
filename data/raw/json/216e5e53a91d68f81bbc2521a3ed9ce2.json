@@ -2,7 +2,7 @@
     "id": "216e5e53a91d68f81bbc2521a3ed9ce2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.nth.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.nth.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.nth — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.nth — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.nth#\n\n- property DataFrameGroupBy.nth[source]#\n- Take the nth row from each group if n is an int, otherwise a subset of rows. Can be either a call or an index. dropna is not available with index notation. Index notation accepts a comma separated list of integers and slices. If dropna, will take the nth non-null row, dropna is either ‘all’ or ‘any’; this is equivalent to calling dropna(how=dropna) before the groupby. \n  - Returns:\n    - Series or DataFrame\n    - N-th value within each group.\n See also \n  - `Series.nth`\n  - Apply function nth to a Series.\n  - `DataFrame.nth`\n  - Apply function nth to each row or column of a DataFrame.\n Examples >>> df = pd.DataFrame( ... {\"A\": [1, 1, 2, 1, 2], \"B\": [np.nan, 2, 3, 4, 5]}, columns=[\"A\", \"B\"] ... ) >>> g = df.groupby(\"A\") >>> g.nth(0) A B 0 1 NaN 2 2 3.0 >>> g.nth(1) A B 1 1 2.0 4 2 5.0 >>> g.nth(-1) A B 3 1 4.0 4 2 5.0 >>> g.nth([0, 1]) A B 0 1 NaN 1 1 2.0 2 2 3.0 4 2 5.0 >>> g.nth(slice(None, -1)) A B 0 1 NaN 1 1 2.0 2 2 3.0 Index notation may also be used >>> g.nth[0, 1] A B 0 1 NaN 1 1 2.0 2 2 3.0 4 2 5.0 >>> g.nth[:-1] A B 0 1 NaN 1 1 2.0 2 2 3.0 Specifying dropna allows ignoring `NaN` values>>> g.nth(0, dropna=\"any\") A B 1 1 2.0 2 2 3.0 When the specified `n` is larger than any of the groups, an\nempty DataFrame is returned>>> g.nth(3, dropna=\"any\") Empty DataFrame Columns: [A, B] Index: []",
     "markdown_length": 1399,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.nth — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.nth — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:09.545471",
+    "crawled_at": "2026-08-28T17:57:06.920052",
     "type": "webpage"
 }

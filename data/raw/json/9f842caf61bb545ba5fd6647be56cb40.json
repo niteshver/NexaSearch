@@ -2,7 +2,7 @@
     "id": "9f842caf61bb545ba5fd6647be56cb40",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.as_unit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.as_unit.html",
-    "title": "pandas.Timestamp.as_unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.as_unit — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.as_unit#\n\n- \nTimestamp.as_unit(*unit* ,*round_ok=True* )#\n- Convert the underlying int64 representation to the given unit. This method changes the resolution of the Timestamp’s internal representation. When converting to a coarser resolution (e.g., nanoseconds to seconds), precision may be lost through rounding unless `round_ok` is set to False.\n  - Parameters:\n    - **unit** {“ns”, “us”, “ms”, “s”}\n    - **round_ok** bool, default True\n    - If False and the conversion requires rounding, raise.\n  - Returns:\n    - Timestamp\n See also \n  - `Timestamp.asm8`\n  - Return numpy datetime64 format with same precision.\n  - `Timestamp.to_pydatetime`\n  - Convert Timestamp object to a native Python datetime object.\n  - `to_timedelta`\n  - Convert argument into timedelta object, which can represent differences in times.\n Examples >>> ts = pd.Timestamp('2023-01-01 00:00:00.01') >>> ts Timestamp('2023-01-01 00:00:00.010000') >>> ts.unit 'us' >>> ts = ts.as_unit('s') >>> ts Timestamp('2023-01-01 00:00:00') >>> ts.unit 's'",
     "markdown_length": 1039,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.as_unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.as_unit — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.as_unit.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:22.976321",
+    "crawled_at": "2026-08-28T15:51:07.355081",
     "type": "webpage"
 }

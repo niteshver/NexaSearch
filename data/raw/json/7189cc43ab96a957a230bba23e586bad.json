@@ -2,7 +2,7 @@
     "id": "7189cc43ab96a957a230bba23e586bad",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.HolidayCalendarFactory.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.HolidayCalendarFactory.html",
-    "title": "pandas.tseries.holiday.HolidayCalendarFactory — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.HolidayCalendarFactory — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.HolidayCalendarFactory#\n\n- \npandas.tseries.holiday.HolidayCalendarFactory(*name* ,*base* ,*other* ,*base_class=<class 'pandas.tseries.holiday.AbstractHolidayCalendar'>* )[source]#\n- Create a holiday calendar class from two sets of rules. The rules of `base` and`other` are merged by holiday name, with`base` winning any clash, and the result becomes the`rules` of a new\ncalendar class. That class registers itself under`name` , so`get_calendar()` can find it later.\n  - Parameters:\n    - **name** str\n    - Name of the calendar class to create.\n    - **base** AbstractHolidayCalendar\n    - Instance/subclass or array of Holiday objects whose rules take precedence.\n    - **other** AbstractHolidayCalendar\n    - Instance/subclass or array of Holiday objects to merge into `base` .\n    - **base_class** type, default AbstractHolidayCalendar\n    - The class the new calendar class inherits from.\n  - Returns:\n    - type\n    - A new subclass of `base_class` holding the merged rules.\n See also \n  - `tseries.holiday.AbstractHolidayCalendar.merge_class`\n  - Merge holiday calendars together.\n  - `tseries.holiday.get_calendar`\n  - Return an instance of a calendar based on its name.\n  - `tseries.holiday.register`\n  - Add a holiday calendar class to the registry of named calendars.\n Examples >>> from pandas.tseries.holiday import ( ... AbstractHolidayCalendar, ... HolidayCalendarFactory, ... USLaborDay, ... USMemorialDay, ... ) >>> class MyCalendar(AbstractHolidayCalendar): ... rules = [USMemorialDay] >>> NewCalendar = HolidayCalendarFactory(\"NewCalendar\", MyCalendar, USLaborDay) >>> [rule.name for rule in NewCalendar.rules] ['Labor Day', 'Memorial Day']",
     "markdown_length": 1682,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.HolidayCalendarFactory — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.HolidayCalendarFactory — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.487839",
+    "crawled_at": "2026-08-28T18:00:00.743172",
     "type": "webpage"
 }

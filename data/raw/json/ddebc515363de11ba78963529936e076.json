@@ -2,7 +2,7 @@
     "id": "ddebc515363de11ba78963529936e076",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.to_timedelta.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.to_timedelta.html",
-    "title": "pandas.to_timedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.to_timedelta — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.to_timedelta#\n\n- \npandas.to_timedelta(*arg* ,*unit=None* ,*errors='raise'* )[source]#\n- Convert argument to timedelta. Timedeltas are absolute differences in times, expressed in difference units (e.g. days, hours, minutes, seconds). This method converts an argument from a recognized timedelta format / value into a Timedelta type. \n  - Parameters:\n    - **arg** str, timedelta, list-like or Series\n    - The data to be converted to timedelta. Changed in version 2.0: Strings with units ‘M’, ‘Y’ and ‘y’ do not represent unambiguous timedelta values and will raise an exception.\n    - **unit** str, optional\n    - Denotes the unit of the arg for numeric arg. Defaults to `\"ns\"` .Possible values: \n      - ‘W’\n      - ‘D’ / ‘days’ / ‘day’\n      - ‘hours’ / ‘hour’ / ‘hr’ / ‘h’\n      - ‘m’ / ‘minute’ / ‘min’ / ‘minutes’\n      - ‘s’ / ‘seconds’ / ‘sec’ / ‘second’\n      - ‘ms’ / ‘milliseconds’ / ‘millisecond’ / ‘milli’ / ‘millis’\n      - ‘us’ / ‘microseconds’ / ‘microsecond’ / ‘micro’ / ‘micros’\n      - ‘ns’ / ‘nanoseconds’ / ‘nano’ / ‘nanos’ / ‘nanosecond’\n Must not be specified when arg contains strings and `errors=\"raise\"` .\n    - **errors** {‘raise’, ‘coerce’}, default ‘raise’\n      - If ‘raise’, then invalid parsing will raise an exception.\n      - If ‘coerce’, then invalid parsing will be set as NaT.\n  - Returns:\n    - timedelta\n    - If parsing succeeded. Return type depends on input: \n      - list-like: TimedeltaIndex of timedelta64 dtype\n      - Series: Series of timedelta64 dtype\n      - scalar: Timedelta\n See also \n  - `DataFrame.astype`\n  - Cast argument to a specified dtype.\n  - `to_datetime`\n  - Convert argument to datetime.\n  - `convert_dtypes`\n  - Convert dtypes.\n Notes If the precision is higher than nanoseconds, the precision of the duration is truncated to nanoseconds for string inputs. Examples Parsing a single string to a Timedelta: >>> pd.to_timedelta(\"1 days 06:05:01.00003\") Timedelta('1 days 06:05:01.000030') >>> pd.to_timedelta(\"15.5us\") Timedelta('0 days 00:00:00.000015500') Parsing a list or array of strings: >>> pd.to_timedelta([\"1 days 06:05:01.00003\", \"15.5us\", \"nan\"]) TimedeltaIndex(['1 days 06:05:01.000030000', '0 days 00:00:00.000015500', NaT], dtype='timedelta64[ns]', freq=None) Converting numbers by specifying the unit keyword argument: >>> pd.to_timedelta(np.arange(5), unit=\"s\") TimedeltaIndex(['0 days 00:00:00', '0 days 00:00:01', '0 days 00:00:02', '0 days 00:00:03', '0 days 00:00:04'], dtype='timedelta64[s]', freq=None) >>> pd.to_timedelta(np.arange(5), unit=\"D\") TimedeltaIndex(['0 days', '1 days', '2 days', '3 days', '4 days'], dtype='timedelta64[s]', freq=None)",
     "markdown_length": 2642,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.to_timedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.to_timedelta — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.to_pytimedelta.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:27.514271",
+    "crawled_at": "2026-08-28T15:52:31.525830",
     "type": "webpage"
 }

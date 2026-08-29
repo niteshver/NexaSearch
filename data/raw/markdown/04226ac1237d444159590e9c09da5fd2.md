@@ -1,0 +1,825 @@
+# Version 0.18.1 (May 3, 2016)#
+
+This is a minor bug-fix release from 0.18.0 and includes a large number of bug fixes along with several new features, enhancements, and performance improvements. We recommend that all users upgrade to this version.
+
+Highlights include:
+
+- `.groupby(...)` has been enhanced to provide convenient syntax when working with`.rolling(..)` ,`.expanding(..)` and`.resample(..)` per group, see here
+- `pd.to_datetime()` has gained the ability to assemble dates from a`DataFrame` , see here
+- Method chaining improvements, see here.
+- Custom business hour offset, see here.
+- Many bug fixes in the handling of `sparse` , see here
+- Expanded the Tutorials section with a feature on modern pandas, courtesy of @TomAugsburger. (GH 13045).
+
+## New features#
+
+### Custom business hour#
+
+The `CustomBusinessHour` is a mixture of `BusinessHour` and `CustomBusinessDay` which
+allows you to specify arbitrary holidays. For details,
+see Custom Business Hour (GH 11514)
+
+```
+In [1]: from pandas.tseries.offsets import CustomBusinessHour
+In [2]: from pandas.tseries.holiday import USFederalHolidayCalendar
+In [3]: bhour_us = CustomBusinessHour(calendar=USFederalHolidayCalendar())
+```
+Friday before MLK Day
+
+```
+In [4]: import datetime
+In [5]: dt = datetime.datetime(2014, 1, 17, 15)
+In [6]: dt + bhour_us
+Out[6]: Timestamp('2014-01-17 16:00:00')
+```
+Tuesday after MLK Day (Monday is skipped because it’s a holiday)
+
+```
+In [7]: dt + bhour_us * 2
+Out[7]: Timestamp('2014-01-20 09:00:00')
+```
+### Method `.groupby(..)` syntax with window and resample operations#
+
+`.groupby(...)` has been enhanced to provide convenient syntax when working with `.rolling(..)`, `.expanding(..)` and `.resample(..)` per group, see (GH 12486, GH 12738).
+
+You can now use `.rolling(..)` and `.expanding(..)` as methods on groupbys. These return another deferred object (similar to what `.rolling()` and `.expanding()` do on ungrouped pandas objects). You can then operate on these `RollingGroupby` objects in a similar manner.
+
+Previously you would have to do this to get a rolling window mean per-group:
+
+```
+In [8]: df = pd.DataFrame({"A": [1] * 20 + [2] * 12 + [3] * 8, "B": np.arange(40)})
+In [9]: df
+Out[9]: 
+    A   B
+0   1   0
+1   1   1
+2   1   2
+3   1   3
+4   1   4
+.. ..  ..
+35  3  35
+36  3  36
+37  3  37
+38  3  38
+39  3  39
+[40 rows x 2 columns]
+```
+```
+In [1]: df.groupby("A").apply(lambda x: x.rolling(4).B.mean())
+Out[1]:
+A
+1  0      NaN
+   1      NaN
+   2      NaN
+   3      1.5
+   4      2.5
+   5      3.5
+   6      4.5
+   7      5.5
+   8      6.5
+   9      7.5
+   10     8.5
+   11     9.5
+   12    10.5
+   13    11.5
+   14    12.5
+   15    13.5
+   16    14.5
+   17    15.5
+   18    16.5
+   19    17.5
+2  20     NaN
+   21     NaN
+   22     NaN
+   23    21.5
+   24    22.5
+   25    23.5
+   26    24.5
+   27    25.5
+   28    26.5
+   29    27.5
+   30    28.5
+   31    29.5
+3  32     NaN
+   33     NaN
+   34     NaN
+   35    33.5
+   36    34.5
+   37    35.5
+   38    36.5
+   39    37.5
+Name: B, dtype: float64
+```
+Now you can do:
+
+```
+In [10]: df.groupby("A").rolling(4).B.mean()
+Out[10]: 
+A    
+1  0      NaN
+   1      NaN
+   2      NaN
+   3      1.5
+   4      2.5
+         ... 
+3  35    33.5
+   36    34.5
+   37    35.5
+   38    36.5
+   39    37.5
+Name: B, Length: 40, dtype: float64
+```
+For `.resample(..)` type of operations, previously you would have to:
+
+```
+In [11]: df = pd.DataFrame(
+   ....:     {
+   ....:         "date": pd.date_range(start="2016-01-01", periods=4, freq="W"),
+   ....:         "group": [1, 1, 2, 2],
+   ....:         "val": [5, 6, 7, 8],
+   ....:     }
+   ....: ).set_index("date")
+   ....: 
+In [12]: df
+Out[12]: 
+            group  val
+date                  
+2016-01-03      1    5
+2016-01-10      1    6
+2016-01-17      2    7
+2016-01-24      2    8
+[4 rows x 2 columns]
+```
+```
+In[1]: df.groupby("group").apply(lambda x: x.resample("1D").ffill())
+Out[1]:
+                  group  val
+group date
+1     2016-01-03      1    5
+      2016-01-04      1    5
+      2016-01-05      1    5
+      2016-01-06      1    5
+      2016-01-07      1    5
+      2016-01-08      1    5
+      2016-01-09      1    5
+      2016-01-10      1    6
+2     2016-01-17      2    7
+      2016-01-18      2    7
+      2016-01-19      2    7
+      2016-01-20      2    7
+      2016-01-21      2    7
+      2016-01-22      2    7
+      2016-01-23      2    7
+      2016-01-24      2    8
+```
+Now you can do:
+
+```
+In[1]: df.groupby("group").resample("1D").ffill()
+Out[1]:
+                  group  val
+group date
+1     2016-01-03      1    5
+      2016-01-04      1    5
+      2016-01-05      1    5
+      2016-01-06      1    5
+      2016-01-07      1    5
+      2016-01-08      1    5
+      2016-01-09      1    5
+      2016-01-10      1    6
+2     2016-01-17      2    7
+      2016-01-18      2    7
+      2016-01-19      2    7
+      2016-01-20      2    7
+      2016-01-21      2    7
+      2016-01-22      2    7
+      2016-01-23      2    7
+      2016-01-24      2    8
+```
+### Method chaining improvements#
+
+The following methods / indexers now accept a `callable`. It is intended to make
+these more useful in method chains, see the documentation.
+(GH 11485, GH 12533)
+
+- `.where()` and`.mask()`
+- `.loc[]` ,`iloc[]` and`.ix[]`
+- `[]` indexing
+
+#### Methods `.where()` and `.mask()`#
+
+These can accept a callable for the condition and `other`
+arguments.
+
+```
+In [13]: df = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6], "C": [7, 8, 9]})
+In [14]: df.where(lambda x: x > 4, lambda x: x + 10)
+Out[14]: 
+    A   B  C
+0  11  14  7
+1  12   5  8
+2  13   6  9
+[3 rows x 3 columns]
+```
+#### Methods `.loc[]`, `.iloc[]`, `.ix[]`#
+
+These can accept a callable, and a tuple of callable as a slicer. The callable can return a valid boolean indexer or anything which is valid for these indexer’s input.
+
+```
+# callable returns bool indexer
+In [15]: df.loc[lambda x: x.A >= 2, lambda x: x.sum() > 10]
+Out[15]: 
+   B  C
+1  5  8
+2  6  9
+[2 rows x 2 columns]
+# callable returns list of labels
+In [16]: df.loc[lambda x: [1, 2], lambda x: ["A", "B"]]
+Out[16]: 
+   A  B
+1  2  5
+2  3  6
+[2 rows x 2 columns]
+```
+#### Indexing with `[]`#
+
+Finally, you can use a callable in `[]` indexing of Series, DataFrame and Panel.
+The callable must return a valid input for `[]` indexing depending on its
+class and index type.
+
+```
+In [17]: df[lambda x: "A"]
+Out[17]: 
+0    1
+1    2
+2    3
+Name: A, Length: 3, dtype: int64
+```
+Using these methods / indexers, you can chain data selection operations without using temporary variable.
+
+```
+In [18]: bb = pd.read_csv("data/baseball.csv", index_col="id")
+In [19]: (bb.groupby(["year", "team"]).sum(numeric_only=True).loc[lambda df: df.r > 100])
+Out[19]: 
+           stint    g    ab    r    h  X2b  ...     so   ibb   hbp    sh    sf  gidp
+year team                                   ...                                     
+2007 CIN       6  379   745  101  203   35  ...  127.0  14.0   1.0   1.0  15.0  18.0
+     DET       5  301  1062  162  283   54  ...  176.0   3.0  10.0   4.0   8.0  28.0
+     HOU       4  311   926  109  218   47  ...  212.0   3.0   9.0  16.0   6.0  17.0
+     LAN      11  413  1021  153  293   61  ...  141.0   8.0   9.0   3.0   8.0  29.0
+     NYN      13  622  1854  240  509  101  ...  310.0  24.0  23.0  18.0  15.0  48.0
+     SFN       5  482  1305  198  337   67  ...  188.0  51.0   8.0  16.0   6.0  41.0
+     TEX       2  198   729  115  200   40  ...  140.0   4.0   5.0   2.0   8.0  16.0
+     TOR       4  459  1408  187  378   96  ...  265.0  16.0  12.0   4.0  16.0  38.0
+[8 rows x 18 columns]
+```
+### Partial string indexing on `DatetimeIndex` when part of a `MultiIndex`#
+
+Partial string indexing now matches on `DateTimeIndex` when part of a `MultiIndex` (GH 10331)
+
+```
+In [20]: dft2 = pd.DataFrame(
+   ....:     np.random.randn(20, 1),
+   ....:     columns=["A"],
+   ....:     index=pd.MultiIndex.from_product(
+   ....:         [pd.date_range("20130101", periods=10, freq="12H"), ["a", "b"]]
+   ....:     ),
+   ....: )
+   ....:
+In [21]: dft2
+Out[21]:
+                              A
+2013-01-01 00:00:00 a  0.469112
+                    b -0.282863
+2013-01-01 12:00:00 a -1.509059
+                    b -1.135632
+2013-01-02 00:00:00 a  1.212112
+...                         ...
+2013-01-04 12:00:00 b  0.271860
+2013-01-05 00:00:00 a -0.424972
+                    b  0.567020
+2013-01-05 12:00:00 a  0.276232
+                    b -1.087401
+[20 rows x 1 columns]
+In [22]: dft2.loc["2013-01-05"]
+Out[22]:
+                              A
+2013-01-05 00:00:00 a -0.424972
+                    b  0.567020
+2013-01-05 12:00:00 a  0.276232
+                    b -1.087401
+[4 rows x 1 columns]
+```
+On other levels
+
+```
+In [26]: idx = pd.IndexSlice
+In [27]: dft2 = dft2.swaplevel(0, 1).sort_index()
+In [28]: dft2
+Out[28]:
+                              A
+a 2013-01-01 00:00:00  0.469112
+  2013-01-01 12:00:00 -1.509059
+  2013-01-02 00:00:00  1.212112
+  2013-01-02 12:00:00  0.119209
+  2013-01-03 00:00:00 -0.861849
+...                         ...
+b 2013-01-03 12:00:00  1.071804
+  2013-01-04 00:00:00 -0.706771
+  2013-01-04 12:00:00  0.271860
+  2013-01-05 00:00:00  0.567020
+  2013-01-05 12:00:00 -1.087401
+[20 rows x 1 columns]
+In [29]: dft2.loc[idx[:, "2013-01-05"], :]
+Out[29]:
+                              A
+a 2013-01-05 00:00:00 -0.424972
+  2013-01-05 12:00:00  0.276232
+b 2013-01-05 00:00:00  0.567020
+  2013-01-05 12:00:00 -1.087401
+[4 rows x 1 columns]
+```
+### Assembling datetimes#
+
+`pd.to_datetime()` has gained the ability to assemble datetimes from a passed in `DataFrame` or a dict. (GH 8158).
+
+```
+In [20]: df = pd.DataFrame(
+   ....:     {"year": [2015, 2016], "month": [2, 3], "day": [4, 5], "hour": [2, 3]}
+   ....: )
+   ....: 
+In [21]: df
+Out[21]: 
+   year  month  day  hour
+0  2015      2    4     2
+1  2016      3    5     3
+[2 rows x 4 columns]
+```
+Assembling using the passed frame.
+
+```
+In [22]: pd.to_datetime(df)
+Out[22]: 
+0   2015-02-04 02:00:00
+1   2016-03-05 03:00:00
+Length: 2, dtype: datetime64[us]
+```
+You can pass only the columns that you need to assemble.
+
+```
+In [23]: pd.to_datetime(df[["year", "month", "day"]])
+Out[23]: 
+0   2015-02-04
+1   2016-03-05
+Length: 2, dtype: datetime64[us]
+```
+### Other enhancements#
+
+- `pd.read_csv()` now supports`delim_whitespace=True` for the Python engine (GH 12958)
+- `pd.read_csv()` now supports opening ZIP files that contains a single CSV, via extension inference or explicit`compression='zip'` (GH 12175)
+- `pd.read_csv()` now supports opening files using xz compression, via extension inference or explicit`compression='xz'` is specified;`xz` compressions is also supported by`DataFrame.to_csv` in the same way (GH 11852)
+- `pd.read_msgpack()` now always gives writeable ndarrays even when compression is used (GH 12359).
+- `pd.read_msgpack()` now supports serializing and de-serializing categoricals with msgpack (GH 12573)
+- `.to_json()` now supports`NDFrames` that contain categorical and sparse data (GH 10778)
+- `interpolate()` now supports`method='akima'` (GH 7588).
+- `pd.read_excel()` now accepts path objects (e.g.`pathlib.Path` ,`py.path.local` ) for the file path, in line with other`read_*` functions (GH 12655)
+- Added `.weekday_name` property as a component to`DatetimeIndex` and the`.dt` accessor. (GH 11128)
+- `Index.take` now handles`allow_fill` and`fill_value` consistently (GH 12631)In [24]: idx = pd.Index([1.0, 2.0, 3.0, 4.0], dtype="float") # default, allow_fill=True, fill_value=None In [25]: idx.take([2, -1]) Out[25]: Index([3.0, 4.0], dtype='float64') In [26]: idx.take([2, -1], fill_value=True) Out[26]: Index([3.0, nan], dtype='float64')
+- `Index` now supports`.str.get_dummies()` which returns`MultiIndex` , see Creating Indicator Variables (GH 10008, GH 10103)In [27]: idx = pd.Index(["a|b", "a|c", "b|c"]) In [28]: idx.str.get_dummies("|") Out[28]: MultiIndex([(1, 1, 0), (1, 0, 1), (0, 1, 1)], names=['a', 'b', 'c'])
+- `pd.crosstab()` has gained a`normalize` argument for normalizing frequency tables (GH 12569). Examples in the updated docs here.
+- `.resample(..).interpolate()` is now supported (GH 12925)
+- `.isin()` now accepts passed`sets` (GH 12988)
+
+## Sparse changes#
+
+These changes conform sparse handling to return the correct types and work to make a smoother experience with indexing.
+
+`SparseArray.take` now returns a scalar for scalar input, `SparseArray` for others. Furthermore, it handles a negative indexer with the same rule as `Index` (GH 10560, GH 12796)
+
+```
+s = pd.SparseArray([np.nan, np.nan, 1, 2, 3, np.nan, 4, 5, np.nan, 6])
+s.take(0)
+s.take([1, 2, 3])
+```
+- Bug in `SparseSeries[]` indexing with`Ellipsis` raises`KeyError` (GH 9467)
+- Bug in `SparseArray[]` indexing with tuples are not handled properly (GH 12966)
+- Bug in `SparseSeries.loc[]` with list-like input raises`TypeError` (GH 10560)
+- Bug in `SparseSeries.iloc[]` with scalar input may raise`IndexError` (GH 10560)
+- Bug in `SparseSeries.loc[]` ,`.iloc[]` with`slice` returns`SparseArray` , rather than`SparseSeries` (GH 10560)
+- Bug in `SparseDataFrame.loc[]` ,`.iloc[]` may results in dense`Series` , rather than`SparseSeries` (GH 12787)
+- Bug in `SparseArray` addition ignores`fill_value` of right hand side (GH 12910)
+- Bug in `SparseArray` mod raises`AttributeError` (GH 12910)
+- Bug in `SparseArray` pow calculates`1 ** np.nan` as`np.nan` which must be 1 (GH 12910)
+- Bug in `SparseArray` comparison output may incorrect result or raise`ValueError` (GH 12971)
+- Bug in `SparseSeries.__repr__` raises`TypeError` when it is longer than`max_rows` (GH 10560)
+- Bug in `SparseSeries.shape` ignores`fill_value` (GH 10452)
+- Bug in `SparseSeries` and`SparseArray` may have different`dtype` from its dense values (GH 12908)
+- Bug in `SparseSeries.reindex` incorrectly handle`fill_value` (GH 12797)
+- Bug in `SparseArray.to_frame()` results in`DataFrame` , rather than`SparseDataFrame` (GH 9850)
+- Bug in `SparseSeries.value_counts()` does not count`fill_value` (GH 6749)
+- Bug in `SparseArray.to_dense()` does not preserve`dtype` (GH 10648)
+- Bug in `SparseArray.to_dense()` incorrectly handle`fill_value` (GH 12797)
+- Bug in `pd.concat()` of`SparseSeries` results in dense (GH 10536)
+- Bug in `pd.concat()` of`SparseDataFrame` incorrectly handle`fill_value` (GH 9765)
+- Bug in `pd.concat()` of`SparseDataFrame` may raise`AttributeError` (GH 12174)
+- Bug in `SparseArray.shift()` may raise`NameError` or`TypeError` (GH 12908)
+
+## API changes#
+
+### Method `.groupby(..).nth()` changes#
+
+The index in `.groupby(..).nth()` output is now more consistent when the `as_index` argument is passed (GH 11039):
+
+```
+In [29]: df = pd.DataFrame({"A": ["a", "b", "a"], "B": [1, 2, 3]})
+In [30]: df
+Out[30]: 
+   A  B
+0  a  1
+1  b  2
+2  a  3
+[3 rows x 2 columns]
+```
+Previous behavior:
+
+```
+In [3]: df.groupby('A', as_index=True)['B'].nth(0)
+Out[3]:
+0    1
+1    2
+Name: B, dtype: int64
+In [4]: df.groupby('A', as_index=False)['B'].nth(0)
+Out[4]:
+0    1
+1    2
+Name: B, dtype: int64
+```
+New behavior:
+
+```
+In [31]: df.groupby("A", as_index=True)["B"].nth(0)
+Out[31]: 
+0    1
+1    2
+Name: B, Length: 2, dtype: int64
+In [32]: df.groupby("A", as_index=False)["B"].nth(0)
+Out[32]: 
+0    1
+1    2
+Name: B, Length: 2, dtype: int64
+```
+Furthermore, previously, a `.groupby` would always sort, regardless if `sort=False` was passed with `.nth()`.
+
+```
+In [33]: np.random.seed(1234)
+In [34]: df = pd.DataFrame(np.random.randn(100, 2), columns=["a", "b"])
+In [35]: df["c"] = np.random.randint(0, 4, 100)
+```
+Previous behavior:
+
+```
+In [4]: df.groupby('c', sort=True).nth(1)
+Out[4]:
+          a         b
+c
+0 -0.334077  0.002118
+1  0.036142 -2.074978
+2 -0.720589  0.887163
+3  0.859588 -0.636524
+In [5]: df.groupby('c', sort=False).nth(1)
+Out[5]:
+          a         b
+c
+0 -0.334077  0.002118
+1  0.036142 -2.074978
+2 -0.720589  0.887163
+3  0.859588 -0.636524
+```
+New behavior:
+
+```
+In [36]: df.groupby("c", sort=True).nth(1)
+Out[36]: 
+           a         b  c
+2  -0.720589  0.887163  2
+3   0.859588 -0.636524  3
+7  -0.334077  0.002118  0
+21  0.036142 -2.074978  1
+[4 rows x 3 columns]
+In [37]: df.groupby("c", sort=False).nth(1)
+Out[37]: 
+           a         b  c
+2  -0.720589  0.887163  2
+3   0.859588 -0.636524  3
+7  -0.334077  0.002118  0
+21  0.036142 -2.074978  1
+[4 rows x 3 columns]
+```
+### NumPy function compatibility#
+
+Compatibility between pandas array-like methods (e.g. `sum` and `take`) and their `numpy`
+counterparts has been greatly increased by augmenting the signatures of the `pandas` methods so
+as to accept arguments that can be passed in from `numpy`, even if they are not necessarily
+used in the `pandas` implementation (GH 12644, GH 12638, GH 12687)
+
+- `.searchsorted()` for`Index` and`TimedeltaIndex` now accept a`sorter` argument to maintain compatibility with numpy’s`searchsorted` function (GH 12238)
+- Bug in numpy compatibility of `np.round()` on a`Series` (GH 12600)
+
+An example of this signature augmentation is illustrated below:
+
+```
+sp = pd.SparseDataFrame([1, 2, 3])
+sp
+```
+Previous behaviour:
+
+```
+In [2]: np.cumsum(sp, axis=0)
+...
+TypeError: cumsum() takes at most 2 arguments (4 given)
+```
+New behaviour:
+
+```
+np.cumsum(sp, axis=0)
+```
+### Using `.apply` on GroupBy resampling#
+
+Using `apply` on resampling groupby operations (using a `pd.TimeGrouper`) now has the same output types as similar `apply` calls on other groupby operations. (GH 11742).
+
+```
+In [38]: df = pd.DataFrame(
+   ....:     {"date": pd.to_datetime(["10/10/2000", "11/10/2000"]), "value": [10, 13]}
+   ....: )
+   ....: 
+In [39]: df
+Out[39]: 
+        date  value
+0 2000-10-10     10
+1 2000-11-10     13
+[2 rows x 2 columns]
+```
+Previous behavior:
+
+```
+In [1]: df.groupby(pd.TimeGrouper(key='date',
+   ...:                           freq='M')).apply(lambda x: x.value.sum())
+Out[1]:
+...
+TypeError: cannot concatenate a non-NDFrame object
+# Output is a Series
+In [2]: df.groupby(pd.TimeGrouper(key='date',
+   ...:                           freq='M')).apply(lambda x: x[['value']].sum())
+Out[2]:
+date
+2000-10-31  value    10
+2000-11-30  value    13
+dtype: int64
+```
+New behavior:
+
+```
+# Output is a Series
+In [55]: df.groupby(pd.TimeGrouper(key='date',
+    ...:                           freq='M')).apply(lambda x: x.value.sum())
+Out[55]:
+date
+2000-10-31    10
+2000-11-30    13
+Freq: M, dtype: int64
+# Output is a DataFrame
+In [56]: df.groupby(pd.TimeGrouper(key='date',
+    ...:                           freq='M')).apply(lambda x: x[['value']].sum())
+Out[56]:
+            value
+date
+2000-10-31     10
+2000-11-30     13
+```
+### Changes in `read_csv` exceptions#
+
+In order to standardize the `read_csv` API for both the `c` and `python` engines, both will now raise an
+`EmptyDataError`, a subclass of `ValueError`, in response to empty columns or header (GH 12493, GH 12506)
+
+Previous behaviour:
+
+```
+In [1]: import io
+In [2]: df = pd.read_csv(io.StringIO(''), engine='c')
+...
+ValueError: No columns to parse from file
+In [3]: df = pd.read_csv(io.StringIO(''), engine='python')
+...
+StopIteration
+```
+New behaviour:
+
+```
+In [1]: df = pd.read_csv(io.StringIO(''), engine='c')
+...
+pandas.io.common.EmptyDataError: No columns to parse from file
+In [2]: df = pd.read_csv(io.StringIO(''), engine='python')
+...
+pandas.io.common.EmptyDataError: No columns to parse from file
+```
+In addition to this error change, several others have been made as well:
+
+- `CParserError` now sub-classes`ValueError` instead of just a`Exception` (GH 12551)
+- A `CParserError` is now raised instead of a generic`Exception` in`read_csv` when the`c` engine cannot parse a column (GH 12506)
+- A `ValueError` is now raised instead of a generic`Exception` in`read_csv` when the`c` engine encounters a`NaN` value in an integer column (GH 12506)
+- A `ValueError` is now raised instead of a generic`Exception` in`read_csv` when`true_values` is specified, and the`c` engine encounters an element in a column containing unencodable bytes (GH 12506)
+- `pandas.parser.OverflowError` exception has been removed and has been replaced with Python’s built-in`OverflowError` exception (GH 12506)
+- `pd.read_csv()` no longer allows a combination of strings and integers for the`usecols` parameter (GH 12678)
+
+### Method `to_datetime` error changes#
+
+Bugs in `pd.to_datetime()` when passing a `unit` with convertible entries and `errors='coerce'` or non-convertible with `errors='ignore'`. Furthermore, an `OutOfBoundsDateime` exception will be raised when an out-of-range value is encountered for that unit when `errors='raise'`. (GH 11758, GH 13052, GH 13059)
+
+Previous behaviour:
+
+```
+In [27]: pd.to_datetime(1420043460, unit='s', errors='coerce')
+Out[27]: NaT
+In [28]: pd.to_datetime(11111111, unit='D', errors='ignore')
+OverflowError: Python int too large to convert to C long
+In [29]: pd.to_datetime(11111111, unit='D', errors='raise')
+OverflowError: Python int too large to convert to C long
+```
+New behaviour:
+
+```
+In [2]: pd.to_datetime(1420043460, unit='s', errors='coerce')
+Out[2]: Timestamp('2014-12-31 16:31:00')
+In [3]: pd.to_datetime(11111111, unit='D', errors='ignore')
+Out[3]: 11111111
+In [4]: pd.to_datetime(11111111, unit='D', errors='raise')
+OutOfBoundsDatetime: cannot convert input with unit 'D'
+```
+### Other API changes#
+
+- `.swaplevel()` for`Series` ,`DataFrame` ,`Panel` , and`MultiIndex` now features defaults for its first two parameters`i` and`j` that swap the two innermost levels of the index. (GH 12934)
+- `.searchsorted()` for`Index` and`TimedeltaIndex` now accept a`sorter` argument to maintain compatibility with numpy’s`searchsorted` function (GH 12238)
+- `Period` and`PeriodIndex` now raises`IncompatibleFrequency` error which inherits`ValueError` rather than raw`ValueError` (GH 12615)
+- `Series.apply` for category dtype now applies the passed function to each of the`.categories` (and not the`.codes` ), and returns a`category` dtype if possible (GH 12473)
+- `read_csv` will now raise a`TypeError` if`parse_dates` is neither a boolean, list, or dictionary (matches the doc-string) (GH 5636)
+- The default for `.query()/.eval()` is now`engine=None` , which will use`numexpr` if it’s installed; otherwise it will fallback to the`python` engine. This mimics the pre-0.18.1 behavior if`numexpr` is installed (and which, previously, if numexpr was not installed,`.query()/.eval()` would raise). (GH 12749)
+- `pd.show_versions()` now includes`pandas_datareader` version (GH 12740)
+- Provide a proper `__name__` and`__qualname__` attributes for generic functions (GH 12021)
+- `pd.concat(ignore_index=True)` now uses`RangeIndex` as default (GH 12695)
+- `pd.merge()` and`DataFrame.join()` will show a`UserWarning` when merging/joining a single- with a multi-leveled dataframe (GH 9455, GH 12219)
+- Compat with `scipy` > 0.17 for deprecated`piecewise_polynomial` interpolation method; support for the replacement`from_derivatives` method (GH 12887)
+
+### Deprecations#
+
+## Performance improvements#
+
+- Improved speed of SAS reader (GH 12656, GH 12961)
+- Performance improvements in `.groupby(..).cumcount()` (GH 11039)
+- Improved memory usage in `pd.read_csv()` when using`skiprows=an_integer` (GH 13005)
+- Improved performance of `DataFrame.to_sql` when checking case sensitivity for tables. Now only checks if table has been created correctly when table name is not lower case. (GH 12876)
+- Improved performance of `Period` construction and time series plotting (GH 12903, GH 11831).
+- Improved performance of `.str.encode()` and`.str.decode()` methods (GH 13008)
+- Improved performance of `to_numeric` if input is numeric dtype (GH 12777)
+- Improved performance of sparse arithmetic with `IntIndex` (GH 13036)
+
+## Bug fixes#
+
+- `usecols` parameter in`pd.read_csv` is now respected even when the lines of a CSV file are not even (GH 12203)
+- Bug in `groupby.transform(..)` when`axis=1` is specified with a non-monotonic ordered index (GH 12713)
+- Bug in `Period` and`PeriodIndex` creation raises`KeyError` if`freq="Minute"` is specified. Note that “Minute” freq is deprecated in v0.17.0, and recommended to use`freq="T"` instead (GH 11854)
+- Bug in `.resample(...).count()` with a`PeriodIndex` always raising a`TypeError` (GH 12774)
+- Bug in `.resample(...)` with a`PeriodIndex` casting to a`DatetimeIndex` when empty (GH 12868)
+- Bug in `.resample(...)` with a`PeriodIndex` when resampling to an existing frequency (GH 12770)
+- Bug in printing data which contains `Period` with different`freq` raises`ValueError` (GH 12615)
+- Bug in `Series` construction with`Categorical` and`dtype='category'` is specified (GH 12574)
+- Bugs in concatenation with a coercible dtype was too aggressive, resulting in different dtypes in output formatting when an object was longer than `display.max_rows` (GH 12411, GH 12045, GH 11594, GH 10571, GH 12211)
+- Bug in `float_format` option with option not being validated as a callable. (GH 12706)
+- Bug in `GroupBy.filter` when`dropna=False` and no groups fulfilled the criteria (GH 12768)
+- Bug in `__name__` of`.cum*` functions (GH 12021)
+- Bug in `.astype()` of a`Float64Inde/Int64Index` to an`Int64Index` (GH 12881)
+- Bug in round tripping an integer based index in `.to_json()/.read_json()` when`orient='index'` (the default) (GH 12866)
+- Bug in plotting `Categorical` dtypes cause error when attempting stacked bar plot (GH 13019)
+- Compat with >= `numpy` 1.11 for`NaT` comparisons (GH 12969)
+- Bug in `.drop()` with a non-unique`MultiIndex` . (GH 12701)
+- Bug in `.concat` of datetime tz-aware and naive DataFrames (GH 12467)
+- Bug in correctly raising a `ValueError` in`.resample(..).fillna(..)` when passing a non-string (GH 12952)
+- Bug fixes in various encoding and header processing issues in `pd.read_sas()` (GH 12659, GH 12654, GH 12647, GH 12809)
+- Bug in `pd.crosstab()` where would silently ignore`aggfunc` if`values=None` (GH 12569).
+- Potential segfault in `DataFrame.to_json` when serialising`datetime.time` (GH 11473).
+- Potential segfault in `DataFrame.to_json` when attempting to serialise 0d array (GH 11299).
+- Segfault in `to_json` when attempting to serialise a`DataFrame` or`Series` with non-ndarray values; now supports serialization of`category` ,`sparse` , and`datetime64[ns, tz]` dtypes (GH 10778).
+- Bug in `DataFrame.to_json` with unsupported dtype not passed to default handler (GH 12554).
+- Bug in `.align` not returning the sub-class (GH 12983)
+- Bug in aligning a `Series` with a`DataFrame` (GH 13037)
+- Bug in `ABCPanel` in which`Panel4D` was not being considered as a valid instance of this generic type (GH 12810)
+- Bug in consistency of `.name` on`.groupby(..).apply(..)` cases (GH 12363)
+- Bug in `Timestamp.__repr__` that caused`pprint` to fail in nested structures (GH 12622)
+- Bug in `Timedelta.min` and`Timedelta.max` , the properties now report the true minimum/maximum`timedeltas` as recognized by pandas. See the documentation. (GH 12727)
+- Bug in `.quantile()` with interpolation may coerce to`float` unexpectedly (GH 12772)
+- Bug in `.quantile()` with empty`Series` may return scalar rather than empty`Series` (GH 12772)
+- Bug in `.loc` with out-of-bounds in a large indexer would raise`IndexError` rather than`KeyError` (GH 12527)
+- Bug in resampling when using a `TimedeltaIndex` and`.asfreq()` , would previously not include the final fencepost (GH 12926)
+- Bug in equality testing with a `Categorical` in a`DataFrame` (GH 12564)
+- Bug in `GroupBy.first()` ,`.last()` returns incorrect row when`TimeGrouper` is used (GH 7453)
+- Bug in `pd.read_csv()` with the`c` engine when specifying`skiprows` with newlines in quoted items (GH 10911, GH 12775)
+- Bug in `DataFrame` timezone lost when assigning tz-aware datetime`Series` with alignment (GH 12981)
+- Bug in `.value_counts()` when`normalize=True` and`dropna=True` where nulls still contributed to the normalized count (GH 12558)
+- Bug in `Series.value_counts()` loses name if its dtype is`category` (GH 12835)
+- Bug in `Series.value_counts()` loses timezone info (GH 12835)
+- Bug in `Series.value_counts(normalize=True)` with`Categorical` raises`UnboundLocalError` (GH 12835)
+- Bug in `Panel.fillna()` ignoring`inplace=True` (GH 12633)
+- Bug in `pd.read_csv()` when specifying`names` ,`usecols` , and`parse_dates` simultaneously with the`c` engine (GH 9755)
+- Bug in `pd.read_csv()` when specifying`delim_whitespace=True` and`lineterminator` simultaneously with the`c` engine (GH 12912)
+- Bug in `Series.rename` ,`DataFrame.rename` and`DataFrame.rename_axis` not treating`Series` as mappings to relabel (GH 12623).
+- Clean in `.rolling.min` and`.rolling.max` to enhance dtype handling (GH 12373)
+- Bug in `groupby` where complex types are coerced to float (GH 12902)
+- Bug in `Series.map` raises`TypeError` if its dtype is`category` or tz-aware`datetime` (GH 12473)
+- Bugs on 32bit platforms for some test comparisons (GH 12972)
+- Bug in index coercion when falling back from `RangeIndex` construction (GH 12893)
+- Better error message in window functions when invalid argument (e.g. a float window) is passed (GH 12669)
+- Bug in slicing subclassed `DataFrame` defined to return subclassed`Series` may return normal`Series` (GH 11559)
+- Bug in `.str` accessor methods may raise`ValueError` if input has`name` and the result is`DataFrame` or`MultiIndex` (GH 12617)
+- Bug in `DataFrame.last_valid_index()` and`DataFrame.first_valid_index()` on empty frames (GH 12800)
+- Bug in `CategoricalIndex.get_loc` returns different result from regular`Index` (GH 12531)
+- Bug in `PeriodIndex.resample` where name not propagated (GH 12769)
+- Bug in `date_range``closed` keyword and timezones (GH 12684).
+- Bug in `pd.concat` raises`AttributeError` when input data contains tz-aware datetime and timedelta (GH 12620)
+- Bug in `pd.concat` did not handle empty`Series` properly (GH 11082)
+- Bug in `.plot.bar` alignment when`width` is specified with`int` (GH 12979)
+- Bug in `fill_value` is ignored if the argument to a binary operator is a constant (GH 12723)
+- Bug in `pd.read_html()` when using bs4 flavor and parsing table with a header and only one column (GH 9178)
+- Bug in `.pivot_table` when`margins=True` and`dropna=True` where nulls still contributed to margin count (GH 12577)
+- Bug in `.pivot_table` when`dropna=False` where table index/column names disappear (GH 12133)
+- Bug in `pd.crosstab()` when`margins=True` and`dropna=False` which raised (GH 12642)
+- Bug in `Series.name` when`name` attribute can be a hashable type (GH 12610)
+- Bug in `.describe()` resets categorical columns information (GH 11558)
+- Bug where `loffset` argument was not applied when calling`resample().count()` on a timeseries (GH 12725)
+- `pd.read_excel()` now accepts column names associated with keyword argument`names` (GH 12870)
+- Bug in `pd.to_numeric()` with`Index` returns`np.ndarray` , rather than`Index` (GH 12777)
+- Bug in `pd.to_numeric()` with datetime-like may raise`TypeError` (GH 12777)
+- Bug in `pd.to_numeric()` with scalar raises`ValueError` (GH 12777)
+
+## Contributors#
+
+A total of 60 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.
+
+- Andrew Fiore-Gartland +
+- Bastiaan +
+- Benoît Vinot +
+- Brandon Rhodes +
+- DaCoEx +
+- Drew Fustin +
+- Ernesto Freitas +
+- Filip Ter +
+- Gregory Livschitz +
+- Gábor Lipták
+- Hassan Kibirige +
+- Iblis Lin
+- Israel Saeta Pérez +
+- Jason Wolosonovich +
+- Jeff Reback
+- Joe Jevnik
+- Joris Van den Bossche
+- Joshua Storck +
+- Ka Wo Chen
+- Kerby Shedden
+- Kieran O’Mahony
+- Leif Walsh +
+- Mahmoud Lababidi +
+- Maoyuan Liu +
+- Mark Roth +
+- Matt Wittmann
+- MaxU +
+- Maximilian Roos
+- Michael Droettboom +
+- Nick Eubank
+- Nicolas Bonnotte
+- OXPHOS +
+- Pauli Virtanen +
+- Peter Waller +
+- Pietro Battiston
+- Prabhjot Singh +
+- Robin Wilson
+- Roger Thomas +
+- Sebastian Bank
+- Stephen Hoover
+- Tim Hopper +
+- Tom Augspurger
+- WANG Aiyong
+- Wes Turner
+- Winand +
+- Xbar +
+- Yan Facai +
+- adneu +
+- ajenkins-cargometrics +
+- behzad nouri
+- chinskiy +
+- gfyoung
+- jeps-journal +
+- jonaslb +
+- kotrfa +
+- nileracecrew +
+- onesandzeroes
+- rs2 +
+- sinhrks
+- tsdlovell +

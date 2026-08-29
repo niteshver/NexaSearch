@@ -2,7 +2,7 @@
     "id": "202101275a0ee592ccb954daa5a72b42",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.plot.pie.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.plot.pie.html",
-    "title": "pandas.DataFrame.plot.pie — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.plot.pie — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.plot.pie#\n\n- \nDataFrame.plot.pie(*y=None* ,***kwargs* )[source]#\n- Generate a pie plot. A pie plot is a proportional representation of the numerical data in a column. This function wraps `matplotlib.pyplot.pie()` for the\nspecified column. If no column reference is passed and`subplots=True` a pie plot is drawn for each numerical column\nindependently.\n  - Parameters:\n    - **y** int or label, optional\n    - Label or position of the column to plot. If not provided, `subplots=True` argument must be passed.\n    - ****kwargs**\n    - Keyword arguments to pass on to `DataFrame.plot()` .\n  - Returns:\n    - matplotlib.axes.Axes or np.ndarray of them\n    - A NumPy array is returned when subplots is True.\n See also \n  - `Series.plot.pie`\n  - Generate a pie plot for a Series.\n  - `DataFrame.plot`\n  - Make plots of a DataFrame.\n Examples In the example below we have a DataFrame with the information about planet’s mass and radius. We pass the ‘mass’ column to the pie function to get a pie plot. >>> df = pd.DataFrame( ... {\"mass\": [0.330, 4.87, 5.97], \"radius\": [2439.7, 6051.8, 6378.1]}, ... index=[\"Mercury\", \"Venus\", \"Earth\"], ... ) >>> plot = df.plot.pie(y=\"mass\", figsize=(5, 5)) >>> plot = df.plot.pie(subplots=True, figsize=(11, 6))",
     "markdown_length": 1258,
@@ -274,13 +274,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.DataFrame.plot.pie — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.plot.pie — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:04.676012",
+    "crawled_at": "2026-08-28T15:46:40.698521",
     "type": "webpage"
 }

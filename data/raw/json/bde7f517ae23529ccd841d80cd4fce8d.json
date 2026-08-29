@@ -2,7 +2,7 @@
     "id": "bde7f517ae23529ccd841d80cd4fce8d",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.25.2.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.25.2.html",
-    "title": "What’s new in 0.25.2 (October 15, 2019) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 0.25.2 (October 15, 2019) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 0.25.2 (October 15, 2019)#\n\nThese are the changes in pandas 0.25.2. See Release notes for a full changelog including other versions of pandas.\n\nNote\n\npandas 0.25.2 adds compatibility for Python 3.8 (GH 28147).\n\n## Bug fixes#\n\n### Indexing#\n\n### IO#\n\n- Fix regression in notebook display where `<th>` tags were missing for`DataFrame.index` values (GH 28204).\n- Regression in `to_csv()` where writing a`Series` or`DataFrame` indexed by an`IntervalIndex` would incorrectly raise a`TypeError` (GH 28210)\n- Fix `to_csv()` with`ExtensionArray` with list-like values (GH 28840).\n\n### GroupBy/resample/rolling#\n\n- Bug incorrectly raising an `IndexError` when passing a list of quantiles to`DataFrameGroupBy.quantile()` (GH 28113).\n- Bug in `GroupBy.shift()` ,`GroupBy.bfill()` and`GroupBy.ffill()` where timezone information would be dropped (GH 19995, GH 27992)\n\n### Other#\n\n## Contributors#\n\nA total of 6 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Felix Divo +\n- Jeremy Schendel\n- Joris Van den Bossche\n- MeeseeksMachine\n- Tom Augspurger\n- jbrockmendel",
     "markdown_length": 1139,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 0.25.2 (October 15, 2019) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 0.25.2 (October 15, 2019) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:52:01.571203",
+    "crawled_at": "2026-08-28T15:54:56.601737",
     "type": "webpage"
 }

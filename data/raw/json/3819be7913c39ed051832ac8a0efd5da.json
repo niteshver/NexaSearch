@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.week.html"
     },
-    "crawled_at": "2026-08-26T06:51:11.280147",
+    "crawled_at": "2026-08-28T20:07:11.411028",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "1245e1be54cb60c647df0c931c9e495c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.kurt.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.kurt.html",
-    "title": "pandas.Series.kurt — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.kurt — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.kurt#\n\n- \nSeries.kurt(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased kurtosis over requested axis. Kurtosis obtained using Fisher’s definition of kurtosis (kurtosis of normal == 0.0). Normalized by N-1. \n  - Parameters:\n    - **axis** {index (0)}\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation\nacross both axes.Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - scalar\n    - Unbiased kurtosis.\n See also \n  - `Series.skew`\n  - Return unbiased skew over requested axis.\n  - `Series.var`\n  - Return unbiased variance over requested axis.\n  - `Series.std`\n  - Return unbiased standard deviation over requested axis.\n Examples >>> s = pd.Series([1, 2, 2, 3], index=[\"cat\", \"dog\", \"dog\", \"mouse\"]) >>> s cat 1 dog 2 dog 2 mouse 3 dtype: int64 >>> round(s.kurt(), 6) 1.5",
     "markdown_length": 1282,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.kurt — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.kurt — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:18.585255",
+    "crawled_at": "2026-08-28T15:49:42.592533",
     "type": "webpage"
 }

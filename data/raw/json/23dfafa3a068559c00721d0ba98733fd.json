@@ -2,7 +2,7 @@
     "id": "23dfafa3a068559c00721d0ba98733fd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.ohlc.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.ohlc.html",
-    "title": "pandas.api.typing.Resampler.ohlc — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Resampler.ohlc — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.ohlc#\n\n- final Resampler.ohlc()[source]#\n- Compute open, high, low and close values of a group, excluding missing values. This method computes OHLC (Open-High-Low-Close) values, commonly used in financial data analysis to summarize price movements within time periods. \n  - Returns:\n    - DataFrame\n    - Open, high, low and close values within each group.\n See also \n  - `DataFrame.agg`\n  - Aggregate using one or more operations over the specified axis.\n  - `DataFrame.resample`\n  - Resample time-series data.\n  - `DataFrame.groupby`\n  - Group DataFrame using a mapper or by a Series of columns.\n Examples >>> ser = pd.Series( ... [1, 3, 2, 4, 3, 5], ... index=pd.DatetimeIndex( ... [ ... \"2023-01-01\", ... \"2023-01-10\", ... \"2023-01-15\", ... \"2023-02-01\", ... \"2023-02-10\", ... \"2023-02-15\", ... ] ... ), ... ) >>> ser.resample(\"MS\").ohlc() open high low close 2023-01-01 1 3 1 2 2023-02-01 4 5 3 5",
     "markdown_length": 931,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.ohlc — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Resampler.ohlc — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.445068",
+    "crawled_at": "2026-08-28T17:57:48.059442",
     "type": "webpage"
 }

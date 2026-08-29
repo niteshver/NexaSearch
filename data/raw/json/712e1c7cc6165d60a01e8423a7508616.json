@@ -2,7 +2,7 @@
     "id": "712e1c7cc6165d60a01e8423a7508616",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.categories.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.categories.html",
-    "title": "pandas.Series.cat.categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.cat.categories — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.cat.categories#\n\n- Series.cat.categories[source]#\n- The categories of this categorical. Setting assigns new values to each category (effectively a rename of each individual category). The assigned value has to be a list-like object. All items must be unique and the number of items in the new categories must be the same as the number of items in the old categories. \n  - Raises:\n    - ValueError\n    - If the new categories do not validate as categories or if the number of new categories is unequal the number of old categories\n See also \n  - `rename_categories`\n  - Rename categories.\n  - `reorder_categories`\n  - Reorder categories.\n  - `add_categories`\n  - Add new categories.\n  - `remove_categories`\n  - Remove the specified categories.\n  - `remove_unused_categories`\n  - Remove categories which are not used.\n  - `set_categories`\n  - Set the categories to the specified ones.\n Examples For `pandas.Series` :>>> ser = pd.Series([\"a\", \"b\", \"c\", \"a\"], dtype=\"category\") >>> ser.cat.categories Index(['a', 'b', 'c'], dtype='str') >>> raw_cat = pd.Categorical([None, \"b\", \"c\", None], categories=[\"b\", \"c\", \"d\"]) >>> ser = pd.Series(raw_cat) >>> ser.cat.categories Index(['b', 'c', 'd'], dtype='str') For `pandas.Categorical` :>>> cat = pd.Categorical([\"a\", \"b\"], ordered=True) >>> cat.categories Index(['a', 'b'], dtype='str') For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"c\", \"b\", \"a\", \"c\", \"b\"]) >>> ci.categories Index(['a', 'b', 'c'], dtype='str') >>> ci = pd.CategoricalIndex([\"a\", \"c\"], categories=[\"c\", \"b\", \"a\"]) >>> ci.categories Index(['c', 'b', 'a'], dtype='str')",
     "markdown_length": 1613,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cat.categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.cat.categories — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:11.928534",
+    "crawled_at": "2026-08-28T15:48:54.937154",
     "type": "webpage"
 }

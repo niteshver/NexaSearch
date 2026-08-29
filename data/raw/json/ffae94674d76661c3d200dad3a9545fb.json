@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.identical.html"
     },
-    "crawled_at": "2026-08-26T06:50:08.746604",
+    "crawled_at": "2026-08-28T20:09:31.573666",
     "type": "webpage"
 }

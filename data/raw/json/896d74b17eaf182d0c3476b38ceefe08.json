@@ -2,7 +2,7 @@
     "id": "896d74b17eaf182d0c3476b38ceefe08",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._reduce.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._reduce.html",
-    "title": "pandas.api.extensions.ExtensionArray._reduce — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._reduce — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._reduce#\n\n- \nExtensionArray._reduce(*name* ,*** ,*skipna=True* ,*keepdims=False* ,***kwargs* )[source]#\n- Return a scalar result of performing the reduction operation. This method dispatches to the appropriate reduction method (e.g., sum, mean, min, max) based on the name parameter and returns the result. \n  - Parameters:\n    - **name** str\n    - Name of the function, supported values are: { any, all, min, max, sum, mean, median, prod, std, var, sem, kurt, skew }.\n    - **skipna** bool, default True\n    - If True, skip NaN values.\n    - **keepdims** bool, default False\n    - If False, a scalar is returned. If True, the result has dimension with size one along the reduced axis.\n    - ****kwargs**\n    - Additional keyword arguments passed to the reduction function. Currently, ddof is the only supported kwarg.\n  - Returns:\n    - scalar or ndarray:\n    - The result of the reduction operation. The type of the result depends on keepdims: - If keepdims is False, a scalar value is returned. - If keepdims is True, the result is wrapped in a numpy array with a single element.\n  - Raises:\n    - **TypeError** subclass does not define operations\n See also \n  - `Series.min`\n  - Return the minimum value.\n  - `Series.max`\n  - Return the maximum value.\n  - `Series.sum`\n  - Return the sum of values.\n  - `Series.mean`\n  - Return the mean of values.\n  - `Series.median`\n  - Return the median of values.\n  - `Series.std`\n  - Return the standard deviation.\n  - `Series.var`\n  - Return the variance.\n  - `Series.prod`\n  - Return the product of values.\n  - `Series.sem`\n  - Return the standard error of the mean.\n  - `Series.kurt`\n  - Return the kurtosis.\n  - `Series.skew`\n  - Return the skewness.\n Examples >>> pd.array([1, 2, 3])._reduce(\"min\") np.int64(1) >>> pd.array([1, 2, 3])._reduce(\"max\") np.int64(3) >>> pd.array([1, 2, 3])._reduce(\"sum\") np.int64(6) >>> pd.array([1, 2, 3])._reduce(\"mean\") np.float64(2.0) >>> pd.array([1, 2, 3])._reduce(\"median\") np.float64(2.0)",
     "markdown_length": 2012,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._reduce — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._reduce — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.663961",
+    "crawled_at": "2026-08-28T15:51:40.432957",
     "type": "webpage"
 }

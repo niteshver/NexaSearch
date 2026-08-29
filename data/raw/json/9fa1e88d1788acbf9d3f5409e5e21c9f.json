@@ -2,7 +2,7 @@
     "id": "9fa1e88d1788acbf9d3f5409e5e21c9f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ExcelFile.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ExcelFile.html",
-    "title": "pandas.ExcelFile — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.ExcelFile — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.ExcelFile#\n\n- \nclass pandas.ExcelFile(*path_or_buffer* ,*engine=None* ,*storage_options=None* ,*engine_kwargs=None* )[source]#\n- Class for parsing tabular Excel sheets into DataFrame objects. See read_excel for more documentation. \n  - Parameters:\n    - **path_or_buffer** str, bytes, pathlib.Path,\n    - A file-like object, xlrd workbook or openpyxl workbook. If a string or path object, expected to be a path to a .xls, .xlsx, .xlsb, .xlsm, .odf, .ods, or .odt file.\n    - **engine** str, default None\n    - If io is not a buffer or path, this must be set to identify io. Supported engines: `xlrd` ,`openpyxl` ,`odf` ,`pyxlsb` ,`calamine` Engine compatibility :\n      - `xlrd` supports old-style Excel files (.xls).\n      - `openpyxl` supports newer Excel file formats.\n      - `odf` supports OpenDocument file formats (.odf, .ods, .odt).\n      - `pyxlsb` supports Binary Excel files.\n      - `calamine` supports Excel (.xls, .xlsx, .xlsm, .xlsb)\nand OpenDocument (.ods) file formats.\n The engine xlrd now only supports old-style `.xls` files.\nWhen`engine=None` , the following logic will be\nused to determine the engine:\n        - If `path_or_buffer` is an OpenDocument format (.odf, .ods, .odt),\n        - then odf will be used.\n      - If \n        - Otherwise if `path_or_buffer` is an xls format,\n        - `xlrd` will be used.\n      - Otherwise if \n        - Otherwise if `path_or_buffer` is in xlsb format,\n        - pyxlsb will be used.\n      - Otherwise if \n        - Otherwise if openpyxl is installed,\n        - then `openpyxl` will be used.\n      - Otherwise if `xlrd >= 2.0` is installed, a`ValueError` will be raised.\n Deprecated since version 3.1.0: For xlsx/xlsm files the default engine will change from `openpyxl` to`calamine` in a future version. Pass`engine` explicitly, or set the`io.excel.xlsx.reader` option (xlsm\nfiles are format-detected as xlsx), to keep the current behavior.Warning Please do not report issues when using `xlrd` to read`.xlsx` files.\nThis is not supported, switch to using`openpyxl` instead.\n    - **storage_options** dict, optional\n    - Extra options that make sense for a particular storage connection, e.g. host, port, username, password, etc. For HTTP(S) URLs the key-value pairs are forwarded to `urllib.request.Request` as header options. For other\nURLs (e.g. starting with “s3://”, and “gcs://”) the key-value pairs are\nforwarded to`fsspec.open` . Please see`fsspec` and`urllib` for more\ndetails, and for more examples on storage options refer here.\n    - **engine_kwargs** dict, optional\n    - Arbitrary keyword arguments passed to excel engine.\n See also \n  - `DataFrame.to_excel`\n  - Write DataFrame to an Excel file.\n  - `DataFrame.to_csv`\n  - Write DataFrame to a comma-separated values (csv) file.\n  - `read_csv`\n  - Read a comma-separated values (csv) file into DataFrame.\n  - `read_fwf`\n  - Read a table of fixed-width formatted lines into DataFrame.\n Examples >>> file = pd.ExcelFile(\"myfile.xlsx\") >>> with pd.ExcelFile(\"myfile.xls\") as xls: ... df1 = pd.read_excel(xls, \"Sheet1\") Attributes `book`Gets the Excel workbook. `sheet_names`Names of the sheets in the document. Methods `close` ()close io if necessary `parse` ([sheet_name, header, names, ...])(DEPRECATED) Parse specified sheet(s) into a DataFrame.",
     "markdown_length": 3282,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.ExcelFile — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.ExcelFile — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.368617",
+    "crawled_at": "2026-08-28T17:56:27.091962",
     "type": "webpage"
 }

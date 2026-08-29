@@ -2,7 +2,7 @@
     "id": "2a2f931bf54887948d859593241dcec5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.select.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.select.html",
-    "title": "pandas.HDFStore.select — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.select — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.select#\n\n- \nHDFStore.select(*key* ,*where=None* ,*start=None* ,*stop=None* ,*columns=None* ,*iterator=False* ,*chunksize=None* ,*auto_close=False* )[source]#\n- Retrieve pandas object stored in file, optionally based on where criteria. Warning Pandas uses PyTables for reading and writing HDF5 files, which allows serializing object-dtype data with pickle when using the “fixed” format. Loading pickled data received from untrusted sources can be unsafe. See: https://docs.python.org/3/library/pickle.html for more. \n  - Parameters:\n    - **key** str\n    - Object being retrieved from file.\n    - **where** list or None\n    - List of Term (or convertible) objects, optional.\n    - **start** int or None\n    - Row number to start selection.\n    - **stop** int, default None\n    - Row number to stop selection.\n    - **columns** list or None\n    - A list of columns that if not None, will limit the return columns.\n    - **iterator** bool or False\n    - Returns an iterator.\n    - **chunksize** int or None\n    - Number or rows to include in iteration, return an iterator.\n    - **auto_close** bool or False\n    - Should automatically close the store when finished.\n  - Returns:\n    - object\n    - Retrieved object from file.\n See also \n  - `HDFStore.select_as_coordinates`\n  - Returns the selection as an index.\n  - `HDFStore.select_column`\n  - Returns a single column from the table.\n  - `HDFStore.select_as_multiple`\n  - Retrieves pandas objects from multiple tables.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> store.get(\"data\") >>> print(store.keys()) ['/data1', '/data2'] >>> store.select(\"/data1\") A B 0 1 2 1 3 4 >>> store.select(\"/data1\", where=\"columns == A\") A 0 1 1 3 >>> store.close()",
     "markdown_length": 1809,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.select — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.select — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.952601",
+    "crawled_at": "2026-08-28T17:56:36.985935",
     "type": "webpage"
 }

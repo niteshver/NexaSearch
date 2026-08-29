@@ -2,7 +2,7 @@
     "id": "08e18b3123909c045b3c7de70c14c920",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_slice_bound.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_slice_bound.html",
-    "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.get_slice_bound#\n\n- \nIndex.get_slice_bound(*label* ,*side* )[source]#\n- Calculate slice bound that corresponds to given label. Returns leftmost (one-past-the-rightmost if `side=='right'` ) position\nof given label.\n  - Parameters:\n    - **label** object\n    - The label for which to calculate the slice bound.\n    - **side** {‘left’, ‘right’}\n    - if ‘left’ return leftmost position of given label. if ‘right’ return one-past-the-rightmost position of given label.\n  - Returns:\n    - int\n    - Index of label.\n See also \n  - `Index.get_loc`\n  - Get integer location, slice or boolean mask for requested label.\n Examples >>> idx = pd.RangeIndex(5) >>> idx.get_slice_bound(3, \"left\") 3 >>> idx.get_slice_bound(3, \"right\") 4 If `label` is non-unique in the index, an error will be raised.>>> idx_duplicate = pd.Index([\"a\", \"b\", \"a\", \"c\", \"d\"]) >>> idx_duplicate.get_slice_bound(\"a\", \"left\") Traceback (most recent call last): KeyError: Cannot get left slice bound for non-unique label: 'a'",
     "markdown_length": 1001,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.get_slice_bound — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:48.776858",
+    "crawled_at": "2026-08-28T15:47:40.497914",
     "type": "webpage"
 }

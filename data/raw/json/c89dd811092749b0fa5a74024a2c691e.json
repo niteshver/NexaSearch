@@ -2,7 +2,7 @@
     "id": "c89dd811092749b0fa5a74024a2c691e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.isocalendar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.isocalendar.html",
-    "title": "pandas.Timestamp.isocalendar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.isocalendar — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.isocalendar#\n\n- Timestamp.isocalendar()#\n- Return a named tuple containing ISO year, week number, and weekday. The ISO 8601 calendar is a widely used international standard. The returned named tuple has three components: `year` ,`week` , and`weekday` . The ISO year may differ from the Gregorian year for dates\nnear the start or end of a calendar year.See also \n  - `DatetimeIndex.isocalendar`\n  - Return a 3-tuple containing ISO year, week number, and weekday for the given DatetimeIndex object.\n  - `datetime.date.isocalendar`\n  - The equivalent method for datetime.date objects.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00') >>> ts Timestamp('2023-01-01 10:00:00') >>> ts.isocalendar() datetime.IsoCalendarDate(year=2022, week=52, weekday=7)",
     "markdown_length": 772,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.isocalendar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.isocalendar — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:06.849055",
+    "crawled_at": "2026-08-28T15:51:18.891305",
     "type": "webpage"
 }

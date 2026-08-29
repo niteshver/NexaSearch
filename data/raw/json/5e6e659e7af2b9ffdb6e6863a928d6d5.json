@@ -2,7 +2,7 @@
     "id": "5e6e659e7af2b9ffdb6e6863a928d6d5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.days.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.days.html",
-    "title": "pandas.TimedeltaIndex.days — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.TimedeltaIndex.days — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.days#\n\n- property TimedeltaIndex.days[source]#\n- Number of days for each element. This attribute returns the number of whole days in each timedelta value. It represents the days component of the duration, not the total duration expressed in days. See also \n  - `Series.dt.seconds`\n  - Return number of seconds for each element.\n  - `Series.dt.microseconds`\n  - Return number of microseconds for each element.\n  - `Series.dt.nanoseconds`\n  - Return number of nanoseconds for each element.\n Examples For Series: >>> ser = pd.Series(pd.to_timedelta([1, 2, 3], unit='D')) >>> ser 0 1 days 1 2 days 2 3 days dtype: timedelta64[s] >>> ser.dt.days 0 1 1 2 2 3 dtype: int64 For TimedeltaIndex: >>> tdelta_idx = pd.to_timedelta([\"0 days\", \"10 days\", \"20 days\"]) >>> tdelta_idx TimedeltaIndex(['0 days', '10 days', '20 days'], dtype='timedelta64[us]', freq=None) >>> tdelta_idx.days Index([0, 10, 20], dtype='int64')",
     "markdown_length": 930,
@@ -251,14 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.days — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.TimedeltaIndex.days — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
-        "score": 0.05454545671289617
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:55.366584",
+    "crawled_at": "2026-08-28T15:51:01.668991",
     "type": "webpage"
 }

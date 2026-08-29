@@ -2,7 +2,7 @@
     "id": "43ebdcb3ed32f0218451d90ef03cf276",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.isin.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.isin.html",
-    "title": "pandas.DataFrame.isin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.isin — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.isin#\n\n- \nDataFrame.isin(*values* )[source]#\n- Whether each element in the DataFrame is contained in values. Returns a DataFrame of the same shape with boolean values: True where the element is in the corresponding structure of `values` , False otherwise.`values` can be a list, dict,\nSeries, or DataFrame; alignment rules depend on its type.\n  - Parameters:\n    - **values** iterable, Series, DataFrame or dict\n    - The result will only be true at a location if all the labels match. If values is a Series, that’s the index. If values is a dict, the keys must be the column names, which must match. If values is a DataFrame, then both the index and column labels must match.\n  - Returns:\n    - DataFrame\n    - DataFrame of booleans showing whether each element in the DataFrame is contained in values.\n See also \n  - `DataFrame.eq`\n  - Equality test for DataFrame.\n  - `Series.isin`\n  - Equivalent method on Series.\n  - `Series.str.contains`\n  - Test if pattern or regex is contained within a string of a Series or Index.\n Notes `__iter__` is used (and not`__contains__` ) to iterate over values\nwhen checking if it contains the elements in DataFrame.Examples >>> df = pd.DataFrame( ... {\"num_legs\": [2, 4], \"num_wings\": [2, 0]}, index=[\"falcon\", \"dog\"] ... ) >>> df num_legs num_wings falcon 2 2 dog 4 0 When `values` is a list check whether every value in the DataFrame\nis present in the list (which animals have 0 or 2 legs or wings)>>> df.isin([0, 2]) num_legs num_wings falcon True True dog False True To check if `values` is*not* in the DataFrame, use the`~` operator:>>> ~df.isin([0, 2]) num_legs num_wings falcon False False dog True False When `values` is a dict, we can pass values to check for each\ncolumn separately:>>> df.isin({\"num_wings\": [0, 3]}) num_legs num_wings falcon False False dog False True When `values` is a Series or DataFrame the index and column must\nmatch. Note that ‘falcon’ does not match based on the number of legs\nin other.>>> other = pd.DataFrame( ... {\"num_legs\": [8, 3], \"num_wings\": [0, 2]}, index=[\"spider\", \"falcon\"] ... ) >>> df.isin(other) num_legs num_wings falcon False True dog False False",
     "markdown_length": 2157,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.isin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.isin — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.isin.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:02.898588",
+    "crawled_at": "2026-08-28T15:46:23.296039",
     "type": "webpage"
 }

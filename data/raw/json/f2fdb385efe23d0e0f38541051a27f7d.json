@@ -2,7 +2,7 @@
     "id": "f2fdb385efe23d0e0f38541051a27f7d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.unstack.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.unstack.html",
-    "title": "pandas.Series.unstack — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.unstack — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.unstack#\n\n- \nSeries.unstack(*level=-1* ,*fill_value=None* ,*sort=True* )[source]#\n- Unstack, also known as pivot, Series with MultiIndex to produce DataFrame. This method pivots a level of the MultiIndex labels, reshaping the Series into a DataFrame where the unstacked level becomes the columns. \n  - Parameters:\n    - **level** int, str, or list of these, default last level\n    - Level(s) to unstack, can pass level name.\n    - **fill_value** scalar value, default None\n    - Value to use when replacing NaN values.\n    - **sort** bool, default True\n    - Sort the level(s) in the resulting MultiIndex columns. This also orders the rows of the result: sorted by the remaining levels if `True` , in order of first appearance if`False` .\n  - Returns:\n    - DataFrame\n    - Unstacked Series.\n See also \n  - `DataFrame.unstack`\n  - Pivot the MultiIndex of a DataFrame.\n Notes Reference the user guide for more examples. Examples >>> s = pd.Series( ... [1, 2, 3, 4], ... index=pd.MultiIndex.from_product([[\"one\", \"two\"], [\"a\", \"b\"]]), ... ) >>> s one a 1 b 2 two a 3 b 4 dtype: int64 >>> s.unstack(level=-1) a b one 1 2 two 3 4 >>> s.unstack(level=0) one two a 1 3 b 2 4",
     "markdown_length": 1184,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.unstack — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.unstack — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:50:27.946104",
+    "crawled_at": "2026-08-28T15:50:48.120513",
     "type": "webpage"
 }

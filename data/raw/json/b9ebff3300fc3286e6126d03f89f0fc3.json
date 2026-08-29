@@ -2,7 +2,7 @@
     "id": "b9ebff3300fc3286e6126d03f89f0fc3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.ordinal.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.ordinal.html",
-    "title": "pandas.Period.ordinal — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Period.ordinal — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Period.ordinal#\n\n- Period.ordinal#\n- Return the integer ordinal for this Period. The ordinal is the internal integer representation of the Period, representing its position in the sequence of periods of the given frequency. It counts from an epoch (e.g., for daily frequency, ordinal 0 corresponds to January 1, 1970). See also \n  - `Period.freq`\n  - Return the frequency of the Period.\n  - `Period.start_time`\n  - Return the start time of the Period.\n Examples >>> period = pd.Period('2020-01', freq='M') >>> period.ordinal 600 >>> period = pd.Period('2020-01-01', freq='D') >>> period.ordinal 18262",
     "markdown_length": 609,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.ordinal — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Period.ordinal — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:09.727606",
+    "crawled_at": "2026-08-28T15:48:27.221641",
     "type": "webpage"
 }

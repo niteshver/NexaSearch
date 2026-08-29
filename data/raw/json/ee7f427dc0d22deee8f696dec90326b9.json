@@ -2,7 +2,7 @@
     "id": "ee7f427dc0d22deee8f696dec90326b9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.select_as_coordinates.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.select_as_coordinates.html",
-    "title": "pandas.HDFStore.select_as_coordinates — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.select_as_coordinates — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.select_as_coordinates#\n\n- \nHDFStore.select_as_coordinates(*key* ,*where=None* ,*start=None* ,*stop=None* )[source]#\n- Return the selection as an Index. Warning Pandas uses PyTables for reading and writing HDF5 files, which allows serializing object-dtype data with pickle when using the “fixed” format. Loading pickled data received from untrusted sources can be unsafe. See: https://docs.python.org/3/library/pickle.html for more. \n  - Parameters:\n    - **key** str\n    - Object being retrieved from file.\n    - **where** list of Term (or convertible) objects, optional\n    - Conditions to apply to the selection. `start` and`stop` are\napplied to the table before`where` .\n    - **start** int, optional\n    - Row number to start selection.\n    - **stop** int, optional\n    - Row number to stop selection.\n  - Returns:\n    - Index\n    - Integer positions of the matching rows; can be passed as `where` to a subsequent`select` .\n See also \n  - `HDFStore.select`\n  - Retrieve a stored object, optionally filtered by `where` .\n  - `HDFStore.select_as_multiple`\n  - Retrieve pandas objects from multiple tables.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.append( ... \"data\", df, format=\"table\", data_columns=[\"A\"] ... ) >>> store.select_as_coordinates(\"data\", \"A>1\") >>> store.close()",
     "markdown_length": 1376,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.select_as_coordinates — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.select_as_coordinates — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.997128",
+    "crawled_at": "2026-08-28T17:56:37.974823",
     "type": "webpage"
 }

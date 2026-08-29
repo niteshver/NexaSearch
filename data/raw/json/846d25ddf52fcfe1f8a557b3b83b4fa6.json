@@ -2,7 +2,7 @@
     "id": "846d25ddf52fcfe1f8a557b3b83b4fa6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.unit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.unit.html",
-    "title": "pandas.Timestamp.unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.unit — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.unit#\n\n- Timestamp.unit#\n- The abbreviation associated with self._creso. This property returns a string representing the time unit of the Timestamp’s resolution. It corresponds to the smallest time unit that can be represented by this Timestamp object. The possible values are: - ‘s’ (second) - ‘ms’ (millisecond) - ‘us’ (microsecond) - ‘ns’ (nanosecond) \n  - Returns:\n    - str\n    - A string abbreviation of the Timestamp’s resolution unit: - ‘s’ for second - ‘ms’ for millisecond - ‘us’ for microsecond - ‘ns’ for nanosecond\n See also \n  - `Timestamp.resolution`\n  - Return resolution of the Timestamp.\n  - `Timedelta`\n  - A duration expressing the difference between two dates or times.\n Examples >>> pd.Timestamp(\"2020-01-01 12:34:56\").unit 'us' >>> pd.Timestamp(\"2020-01-01 12:34:56.123\").unit 'us' >>> pd.Timestamp(\"2020-01-01 12:34:56.123456\").unit 'us' >>> pd.Timestamp(\"2020-01-01 12:34:56.123456789\").unit 'ns'",
     "markdown_length": 940,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.unit — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:19.448107",
+    "crawled_at": "2026-08-28T15:51:31.462464",
     "type": "webpage"
 }

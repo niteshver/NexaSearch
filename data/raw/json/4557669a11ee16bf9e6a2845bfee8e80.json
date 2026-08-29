@@ -2,7 +2,7 @@
     "id": "4557669a11ee16bf9e6a2845bfee8e80",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.UnsortedIndexError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.UnsortedIndexError.html",
-    "title": "pandas.errors.UnsortedIndexError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.UnsortedIndexError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.UnsortedIndexError#\n\n- exception pandas.errors.UnsortedIndexError[source]#\n- Error raised when slicing a MultiIndex which has not been lexsorted. Subclass of KeyError. See also \n  - `DataFrame.sort_index`\n  - Sort a DataFrame by its index.\n  - `DataFrame.set_index`\n  - Set the DataFrame index using existing columns.\n Examples >>> df = pd.DataFrame( ... { ... \"cat\": [0, 0, 1, 1], ... \"color\": [\"white\", \"white\", \"brown\", \"black\"], ... \"lives\": [4, 4, 3, 7], ... }, ... ) >>> df = df.set_index([\"cat\", \"color\"]) >>> df lives cat color 0 white 4 white 4 1 brown 3 black 7 >>> df.loc[(0, \"black\") : (1, \"white\")] Traceback (most recent call last): UnsortedIndexError: 'Key length (2) was greater than MultiIndex lexsort depth (1)'",
     "markdown_length": 745,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.UnsortedIndexError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.UnsortedIndexError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.831899",
+    "crawled_at": "2026-08-28T17:59:10.542176",
     "type": "webpage"
 }

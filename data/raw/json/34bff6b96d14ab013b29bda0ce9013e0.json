@@ -2,7 +2,7 @@
     "id": "34bff6b96d14ab013b29bda0ce9013e0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.empty.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.empty.html",
-    "title": "pandas.DataFrame.empty — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.empty — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.empty#\n\n- property DataFrame.empty[source]#\n- Indicator whether Series/DataFrame is empty. True if Series/DataFrame is entirely empty (no items), meaning any of the axes are of length 0. \n  - Returns:\n    - bool\n    - If Series/DataFrame is empty, return True, if not return False.\n See also \n  - `Series.dropna`\n  - Return series without null values.\n  - `DataFrame.dropna`\n  - Return DataFrame with labels on given axis omitted where (all or any) data are missing.\n Notes If Series/DataFrame contains only NaNs, it is still not considered empty. See the example below. Examples An example of an actual empty DataFrame. Notice the index is empty: >>> df_empty = pd.DataFrame({\"A\": []}) >>> df_empty Empty DataFrame Columns: [A] Index: [] >>> df_empty.empty True If we only have NaNs in our DataFrame, it is not considered empty! We will need to drop the NaNs to make the DataFrame empty: >>> df = pd.DataFrame({\"A\": [np.nan]}) >>> df A 0 NaN >>> df.empty False >>> df.dropna().empty True >>> ser_empty = pd.Series({\"A\": []}) >>> ser_empty A [] dtype: object >>> ser_empty.empty False >>> ser_empty = pd.Series() >>> ser_empty.empty True",
     "markdown_length": 1156,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.empty — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.empty — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:01.609154",
+    "crawled_at": "2026-08-28T15:46:11.805817",
     "type": "webpage"
 }

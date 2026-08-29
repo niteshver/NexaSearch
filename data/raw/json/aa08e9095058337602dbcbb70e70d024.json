@@ -2,7 +2,7 @@
     "id": "aa08e9095058337602dbcbb70e70d024",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.dayofweek.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.dayofweek.html",
-    "title": "pandas.PeriodIndex.dayofweek — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.PeriodIndex.dayofweek — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.dayofweek#\n\n- property PeriodIndex.dayofweek[source]#\n- The day of the week with Monday=0, Sunday=6. Deprecated since version 3.1.0: Use `PeriodIndex.day_of_week` instead.\n\nThe day of the week with Monday=0, Sunday=6.\n\nDeprecated since version 3.1.0: Use `PeriodIndex.day_of_week` instead.",
     "markdown_length": 310,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.dayofweek — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.PeriodIndex.dayofweek — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:53.677530",
+    "crawled_at": "2026-08-28T15:48:32.901672",
     "type": "webpage"
 }

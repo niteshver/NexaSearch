@@ -2,7 +2,7 @@
     "id": "955b5a2ef710e4dc66b69eb1dcc410de",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.iterrows.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.iterrows.html",
-    "title": "pandas.DataFrame.iterrows — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.iterrows — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.iterrows#\n\n- DataFrame.iterrows()[source]#\n- Iterate over DataFrame rows as (index, Series) pairs. Each row is yielded as a (index, Series) tuple; the Series has the same index as the DataFrame columns. Note that dtypes may not be preserved across rows. Prefer `itertuples()` for\nspeed and type consistency.\n  - Yields:\n    - **index** label or tuple of label\n    - The index of the row. A tuple for a MultiIndex.\n    - **data** Series\n    - The data of the row as a Series.\n See also \n  - `DataFrame.itertuples`\n  - Iterate over DataFrame rows as namedtuples of the values.\n  - `DataFrame.items`\n  - Iterate over (column name, Series) pairs.\n Notes \n  1. Because `iterrows` returns a Series for each row,\nit does**not** preserve dtypes across the rows (dtypes are\npreserved across columns for DataFrames).To preserve dtypes while iterating over the rows, it is better to use `itertuples()` which returns namedtuples of the values\nand which is generally faster than`iterrows` .\n  2. You should **never modify** something you are iterating over.\nThis is not guaranteed to work in all cases. Depending on the\ndata types, the iterator returns a copy and not a view, and writing\nto it will have no effect.\n Examples >>> df = pd.DataFrame([[1, 1.5]], columns=[\"int\", \"float\"]) >>> row = next(df.iterrows())[1] >>> row int 1.0 float 1.5 Name: 0, dtype: float64 >>> print(row[\"int\"].dtype) float64 >>> print(df[\"int\"].dtype) int64",
     "markdown_length": 1442,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.iterrows — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.iterrows — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:03.106977",
+    "crawled_at": "2026-08-28T15:46:24.726587",
     "type": "webpage"
 }

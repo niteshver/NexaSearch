@@ -2,7 +2,7 @@
     "id": "5cc677ee835f6d54089c5f3e1a0a72d5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.groups.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.groups.html",
-    "title": "pandas.HDFStore.groups — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.groups — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.groups#\n\n- HDFStore.groups()[source]#\n- Return a list of all the top-level nodes. Each node returned is not a pandas storage object. \n  - Returns:\n    - list\n    - List of objects.\n See also \n  - `HDFStore.get_node`\n  - Returns the node with the key.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> print(store.groups()) >>> store.close() [/data (Group) '' children := ['axis0' (Array), 'axis1' (Array), 'block0_values' (Array), 'block0_items' (Array)]]",
     "markdown_length": 564,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.groups — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.groups — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.821142",
+    "crawled_at": "2026-08-28T17:56:34.314649",
     "type": "webpage"
 }

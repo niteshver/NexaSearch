@@ -25,6 +25,9 @@ dev
 1.2
 1.1
 1.0
+System Settings
+Light
+Dark
 GitHub
 X
 Mastodon
@@ -50,9 +53,14 @@ dev
 1.2
 1.1
 1.0
+System Settings
+Light
+Dark
 GitHub
 X
 Mastodon
+Collapse Sidebar
+Expand Sidebar
 Input/output
 General functions
 Series

@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.ceil.html"
     },
-    "crawled_at": "2026-08-26T06:49:51.722302",
+    "crawled_at": "2026-08-28T20:10:51.172181",
     "type": "webpage"
 }

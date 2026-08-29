@@ -2,7 +2,7 @@
     "id": "7a880ebce120eed10bcee1f3a73fdd8b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.item.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.item.html",
-    "title": "pandas.api.extensions.ExtensionArray.item — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.item — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.item#\n\n- \nExtensionArray.item(*index=None* )[source]#\n- Return the array element at the specified position as a Python scalar. Analogous to `numpy.ndarray.item()` , this converts a single\nelement to a native Python object.\n  - Parameters:\n    - **index** int, optional\n    - Position of the element. If not provided, the array must contain exactly one element.\n  - Returns:\n    - scalar\n    - The element at the specified position.\n  - Raises:\n    - ValueError\n    - If no index is provided and the array does not have exactly one element.\n    - IndexError\n    - If the specified position is out of bounds.\n See also \n  - `numpy.ndarray.item`\n  - Return the item of an array as a scalar.\n Examples >>> arr = pd.array([1], dtype=\"Int64\") >>> arr.item() np.int64(1) >>> arr = pd.array([1, 2, 3], dtype=\"Int64\") >>> arr.item(0) np.int64(1) >>> arr.item(2) np.int64(3)",
     "markdown_length": 903,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.item — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.item — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.117935",
+    "crawled_at": "2026-08-28T15:51:45.657471",
     "type": "webpage"
 }

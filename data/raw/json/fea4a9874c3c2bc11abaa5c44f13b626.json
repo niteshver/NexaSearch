@@ -2,7 +2,7 @@
     "id": "fea4a9874c3c2bc11abaa5c44f13b626",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.columns.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.columns.html",
-    "title": "pandas.DataFrame.columns — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.columns — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.columns#\n\n- DataFrame.columns#\n- The column labels of the DataFrame. This property holds the column names as a pandas `Index` object.\nIt provides an immutable sequence of column labels that can be\nused for data selection, renaming, and alignment in DataFrame operations.\n  - Returns:\n    - pandas.Index\n    - The column labels of the DataFrame.\n See also \n  - `DataFrame.index`\n  - The index (row labels) of the DataFrame.\n  - `DataFrame.axes`\n  - Return a list representing the axes of the DataFrame.\n Examples >>> df = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}) >>> df A B 0 1 3 1 2 4 >>> df.columns Index(['A', 'B'], dtype='str')",
     "markdown_length": 649,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.columns — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.columns — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.810763",
+    "crawled_at": "2026-08-28T15:46:03.486682",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "139c82247acded459aced89305f2b789",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.corrwith.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.corrwith.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.corrwith — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.corrwith — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.corrwith#\n\n- \nDataFrameGroupBy.corrwith(*other* ,*drop=False* ,*method='pearson'* ,*numeric_only=False* )[source]#\n- Compute pairwise correlation. Deprecated since version 3.0.0. Pairwise correlation is computed between rows or columns of DataFrame with rows or columns of Series or DataFrame. DataFrames are first aligned along both axes before computing the correlations. \n  - Parameters:\n    - **other** DataFrame, Series\n    - Object with which to compute correlations.\n    - **drop** bool, default False\n    - Drop missing indices from result.\n    - **method** {‘pearson’, ‘kendall’, ‘spearman’} or callable\n    - Method of correlation: \n      - pearson : standard correlation coefficient\n      - kendall : Kendall Tau correlation coefficient\n      - spearman : Spearman rank correlation\n        - callable: callable with input two 1d ndarrays\n        - and returning a float.\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data. Changed in version 2.0.0: The default value of `numeric_only` is now`False` .\n  - Returns:\n    - Series\n    - Pairwise correlations.\n See also \n  - `DataFrame.corr`\n  - Compute pairwise correlation of columns.\n Examples >>> df1 = pd.DataFrame( ... { ... \"Day\": [1, 1, 1, 2, 2, 2, 3, 3, 3], ... \"Data\": [6, 6, 8, 5, 4, 2, 7, 3, 9], ... } ... ) >>> df2 = pd.DataFrame( ... { ... \"Day\": [1, 1, 1, 2, 2, 2, 3, 3, 3], ... \"Data\": [5, 3, 8, 3, 1, 1, 2, 3, 6], ... } ... ) >>> df1.groupby(\"Day\").corrwith(df2) Data Day Day 1 0.917663 NaN 2 0.755929 NaN 3 0.576557 NaN",
     "markdown_length": 1569,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.corrwith — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.corrwith — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:04.399507",
+    "crawled_at": "2026-08-28T17:56:51.208415",
     "type": "webpage"
 }

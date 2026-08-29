@@ -2,7 +2,7 @@
     "id": "4369cc89835146081f2b34c1bf242e27",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.duplicated.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.duplicated.html",
-    "title": "pandas.api.extensions.ExtensionArray.duplicated — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.duplicated — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.duplicated#\n\n- \nExtensionArray.duplicated(*keep='first'* )[source]#\n- Return boolean ndarray denoting duplicate values. This method identifies duplicate values in the array. The keep parameter controls which occurrences are marked as duplicates. \n  - Parameters:\n    - **keep** {‘first’, ‘last’, False}, default ‘first’\n      - `first` : Mark duplicates as`True` except for the first occurrence.\n      - `last` : Mark duplicates as`True` except for the last occurrence.\n      - False : Mark all duplicates as `True` .\n  - Returns:\n    - ndarray[bool]\n    - With true in indices where elements are duplicated and false otherwise.\n See also \n  - `DataFrame.duplicated`\n  - Return boolean Series denoting duplicate rows.\n  - `Series.duplicated`\n  - Indicate duplicate Series values.\n  - `api.extensions.ExtensionArray.unique`\n  - Compute the ExtensionArray of unique values.\n Examples >>> pd.array([1, 1, 2, 3, 3], dtype=\"Int64\").duplicated() array([False, True, False, False, True])",
     "markdown_length": 1019,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.duplicated — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.duplicated — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.881788",
+    "crawled_at": "2026-08-28T15:51:43.444173",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "7fc2e0274abcbed3dde9cb9b1e394670",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.codes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.codes.html",
-    "title": "pandas.CategoricalIndex.codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.CategoricalIndex.codes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.codes#\n\n- property CategoricalIndex.codes[source]#\n- The category codes of this categorical index. Codes are an array of integers which are the positions of the actual values in the categories array. There is no setter, use the other categorical methods and the normal item setter to change values in the categorical. \n  - Returns:\n    - ndarray[int]\n    - A non-writable view of the `codes` array.\n See also \n  - `Categorical.from_codes`\n  - Make a Categorical from codes.\n  - `CategoricalIndex`\n  - An Index with an underlying `Categorical` .\n Examples For `pandas.Categorical` :>>> cat = pd.Categorical([\"a\", \"b\"], ordered=True) >>> cat.codes array([0, 1], dtype=int8) For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"]) >>> ci.codes array([0, 1, 2, 0, 1, 2], dtype=int8) >>> ci = pd.CategoricalIndex([\"a\", \"c\"], categories=[\"c\", \"b\", \"a\"]) >>> ci.codes array([2, 0], dtype=int8)",
     "markdown_length": 948,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.CategoricalIndex.codes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:45.069392",
+    "crawled_at": "2026-08-28T15:45:50.350762",
     "type": "webpage"
 }

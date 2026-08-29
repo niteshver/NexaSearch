@@ -2,7 +2,7 @@
     "id": "8d80df439292c8108f56edbd3314fb47",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.set_closed.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.set_closed.html",
-    "title": "pandas.IntervalIndex.set_closed — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.IntervalIndex.set_closed — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.set_closed#\n\n- \nIntervalIndex.set_closed(*closed* )[source]#\n- Return an identical IntervalArray closed on the specified side. This method creates a new IntervalArray with the same bounds but with a different closure specification. \n  - Parameters:\n    - **closed** {‘left’, ‘right’, ‘both’, ‘neither’}\n    - Whether the intervals are closed on the left-side, right-side, both or neither.\n  - Returns:\n    - IntervalArray\n    - A new IntervalArray with the specified side closures.\n See also \n  - `IntervalArray.closed`\n  - Returns inclusive side of the Interval.\n  - `arrays.IntervalArray.closed`\n  - Returns inclusive side of the IntervalArray.\n Examples >>> index = pd.arrays.IntervalArray.from_breaks(range(4)) >>> index <IntervalArray> [(0, 1], (1, 2], (2, 3]] Length: 3, dtype: interval[int64, right] >>> index.set_closed(\"both\") <IntervalArray> [[0, 1], [1, 2], [2, 3]] Length: 3, dtype: interval[int64, both]",
     "markdown_length": 939,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.set_closed — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.IntervalIndex.set_closed — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.set_closed.html"
     },
-    "crawled_at": "2026-08-26T06:49:32.558141",
+    "crawled_at": "2026-08-28T19:54:06.650513",
     "type": "webpage"
 }

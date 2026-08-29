@@ -2,7 +2,7 @@
     "id": "7f55fb6a9295f9d4098bca3cc011800a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.astype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.astype.html",
-    "title": "pandas.Index.astype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.astype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.astype#\n\n- \nIndex.astype(*dtype* ,*copy=True* )[source]#\n- Create an Index with values cast to dtypes. The class of a new Index is determined by dtype. When conversion is impossible, a TypeError exception is raised. \n  - Parameters:\n    - **dtype** numpy dtype or pandas type\n    - Dtype for the result Index.\n    - **copy** bool, default True\n    - By default, astype always returns a newly allocated object. If copy is set to False and internal requirements on dtype are satisfied, the original data is used to create a new Index or the original Index is returned.\n  - Returns:\n    - Index\n    - Index with values cast to specified dtype.\n See also \n  - `Index.dtype`\n  - Return the dtype object of the underlying data.\n  - `Index.dtypes`\n  - Return the dtype object of the underlying data.\n  - `Index.convert_dtypes`\n  - Convert columns to the best possible dtypes.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.astype(\"float\") Index([1.0, 2.0, 3.0], dtype='float64')",
     "markdown_length": 1027,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.astype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.astype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:47.898770",
+    "crawled_at": "2026-08-28T15:47:33.893064",
     "type": "webpage"
 }

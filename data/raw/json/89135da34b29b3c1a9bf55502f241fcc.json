@@ -2,7 +2,7 @@
     "id": "89135da34b29b3c1a9bf55502f241fcc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.set_eng_float_format.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.set_eng_float_format.html",
-    "title": "pandas.set_eng_float_format — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.set_eng_float_format — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.set_eng_float_format#\n\n- \npandas.set_eng_float_format(*accuracy=3* ,*use_eng_prefix=False* )[source]#\n- Format float representation in DataFrame with SI notation. Deprecated since version 3.1.0: Use `pd.set_option(\"display.precision\", N)` to control decimal\nprecision, or pass a custom callable to`pd.set_option(\"display.float_format\", func)` .Sets the floating-point display format for `DataFrame` objects using engineering\nnotation (SI units), allowing easier readability of values across wide ranges.\n  - Parameters:\n    - **accuracy** int, default 3\n    - Number of decimal digits after the floating point.\n    - **use_eng_prefix** bool, default False\n    - Whether to represent a value with SI prefixes.\n  - Returns:\n    - None\n    - This method does not return a value. it updates the global display format for floats in DataFrames.\n See also \n  - `set_option`\n  - Set the value of the specified option or options.\n  - `reset_option`\n  - Reset one or more options to their default value.\n Examples Use `pd.set_option(\"display.precision\", N)` to control decimal\nprecision instead:>>> with pd.option_context(\"display.precision\", 3): ... print(pd.DataFrame([1e-9, 1e-3, 1, 1e3, 1e6])) 0 0 1.000e-09 1 1.000e-03 2 1.000e+00 3 1.000e+03 4 1.000e+06",
     "markdown_length": 1258,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.set_eng_float_format — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.set_eng_float_format — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/extensions.html"
     },
-    "crawled_at": "2026-08-26T06:51:18.717226",
+    "crawled_at": "2026-08-28T17:59:52.196045",
     "type": "webpage"
 }

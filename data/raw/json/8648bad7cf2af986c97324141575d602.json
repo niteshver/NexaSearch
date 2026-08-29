@@ -2,7 +2,7 @@
     "id": "8648bad7cf2af986c97324141575d602",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_timestamp.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_timestamp.html",
-    "title": "pandas.Series.to_timestamp — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.to_timestamp — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.to_timestamp#\n\n- \nSeries.to_timestamp(*freq=None* ,*how='start'* ,*copy=<no_default>* )[source]#\n- Cast to DatetimeIndex of Timestamps, at *beginning* of period.This can be changed to the *end* of the period, by specifying how=”e”.\n  - Parameters:\n    - **freq** str, default frequency of PeriodIndex\n    - Desired frequency.\n    - **how** {‘s’, ‘e’, ‘start’, ‘end’}\n    - Convention for converting period to timestamp; start of period vs. end.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - Series with DatetimeIndex\n    - Series with the PeriodIndex cast to DatetimeIndex.\n See also \n  - `Series.to_period`\n  - Inverse method to cast DatetimeIndex to PeriodIndex.\n  - `DataFrame.to_timestamp`\n  - Equivalent method for DataFrame.\n Examples >>> idx = pd.PeriodIndex([\"2023\", \"2024\", \"2025\"], freq=\"Y\") >>> s1 = pd.Series([1, 2, 3], index=idx) >>> s1 2023 1 2024 2 2025 3 Freq: Y-DEC, dtype: int64 The resulting frequency of the Timestamps is YearBegin >>> s1 = s1.to_timestamp() >>> s1 2023-01-01 1 2024-01-01 2 2025-01-01 3 Freq: YS-JAN, dtype: int64 Using freq which is the offset that the Timestamps will have >>> s2 = pd.Series([1, 2, 3], index=idx) >>> s2 = s2.to_timestamp(freq=\"M\") >>> s2 2023-01-31 1 2024-01-31 2 2025-01-31 3 Freq: YE-JAN, dtype: int64",
     "markdown_length": 1657,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.to_timestamp — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.to_timestamp — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:59.735414",
+    "crawled_at": "2026-08-28T15:50:45.029594",
     "type": "webpage"
 }

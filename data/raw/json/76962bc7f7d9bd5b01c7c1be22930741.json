@@ -2,7 +2,7 @@
     "id": "76962bc7f7d9bd5b01c7c1be22930741",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.isalpha.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.isalpha.html",
-    "title": "pandas.Series.str.isalpha — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.isalpha — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.isalpha#\n\n- Series.str.isalpha()[source]#\n- Check whether all characters in each string are alphabetic. This is equivalent to running the Python string method `str.isalpha()` for each element of the Series/Index. If a string\nhas zero characters,`False` is returned for that check.\n  - Returns:\n    - Series or Index of bool\n    - Series or Index of boolean values with the same length as the original Series/Index.\n See also \n  - `Series.str.isnumeric`\n  - Check whether all characters are numeric.\n  - `Series.str.isalnum`\n  - Check whether all characters are alphanumeric.\n  - `Series.str.isdigit`\n  - Check whether all characters are digits.\n  - `Series.str.isdecimal`\n  - Check whether all characters are decimal.\n  - `Series.str.isspace`\n  - Check whether all characters are whitespace.\n  - `Series.str.islower`\n  - Check whether all characters are lowercase.\n  - `Series.str.isascii`\n  - Check whether all characters are ascii.\n  - `Series.str.isupper`\n  - Check whether all characters are uppercase.\n  - `Series.str.istitle`\n  - Check whether all characters are titlecase.\n Examples >>> s1 = pd.Series([\"one\", \"one1\", \"1\", \"\"]) >>> s1.str.isalpha() 0 True 1 False 2 False 3 False dtype: bool",
     "markdown_length": 1218,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.isalpha — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.isalpha — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:00.078498",
+    "crawled_at": "2026-08-28T15:50:21.513718",
     "type": "webpage"
 }

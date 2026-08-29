@@ -2,7 +2,7 @@
     "id": "6f02d975fcbb5a94e6bd75f1c928c8cb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.style.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.style.html",
-    "title": "pandas.DataFrame.style — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.style — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.style#\n\n- property DataFrame.style[source]#\n- Returns a Styler object. Contains methods for building a styled HTML representation of the DataFrame. See also \n  - `io.formats.style.Styler`\n  - Helps style a DataFrame or Series according to the data with HTML and CSS.\n Examples >>> df = pd.DataFrame({\"A\": [1, 2, 3]}) >>> df.style Please see Table Visualization for more examples.",
     "markdown_length": 398,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.style — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.style — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:06.050720",
+    "crawled_at": "2026-08-28T15:46:57.604502",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "0a0a98b0ec7fa83b0ae7f7bf9961232f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ParserError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ParserError.html",
-    "title": "pandas.errors.ParserError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.ParserError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.ParserError#\n\n- exception pandas.errors.ParserError[source]#\n- Exception that is raised by an error encountered in parsing file contents. This is a generic error raised for errors encountered when functions like read_csv or read_html are parsing contents of a file. See also \n  - `read_csv`\n  - Read CSV (comma-separated) file into a DataFrame.\n  - `read_html`\n  - Read HTML table into a DataFrame.\n Examples >>> data = '''a,b,c ... cat,foo,bar ... dog,foo,\"baz''' >>> from io import StringIO >>> pd.read_csv(StringIO(data), skipfooter=1, engine=\"python\") Traceback (most recent call last): ParserError: ',' expected after '\"'. Error could possibly be due to parsing errors in the skipped footer rows",
     "markdown_length": 716,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.ParserError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.ParserError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.716137",
+    "crawled_at": "2026-08-28T17:59:05.176125",
     "type": "webpage"
 }

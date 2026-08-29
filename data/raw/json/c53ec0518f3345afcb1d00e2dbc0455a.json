@@ -2,7 +2,7 @@
     "id": "c53ec0518f3345afcb1d00e2dbc0455a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PandasFutureWarning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.PandasFutureWarning.html",
-    "title": "pandas.errors.PandasFutureWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.PandasFutureWarning — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.PandasFutureWarning#\n\n- exception pandas.errors.PandasFutureWarning[source]#\n- Warning raised for an upcoming change that is a FutureWarning. This warning indicates a change in behavior that will occur in a future version of pandas. Users should update their code accordingly. See also \n  - `errors.PandasChangeWarning`\n  - Class for deprecations that will raise any warning.\n  - `errors.PandasPendingDeprecationWarning`\n  - Class for deprecations that will raise a PendingDeprecationWarning.\n  - `errors.PandasDeprecationWarning`\n  - Class for deprecations that will raise a DeprecationWarning.\n Examples >>> pd.errors.PandasFutureWarning <class 'pandas.errors.PandasFutureWarning'>",
     "markdown_length": 699,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.PandasFutureWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.PandasFutureWarning — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/policies.html"
     },
-    "crawled_at": "2026-08-26T06:51:50.872853",
+    "crawled_at": "2026-08-28T15:52:16.476344",
     "type": "webpage"
 }

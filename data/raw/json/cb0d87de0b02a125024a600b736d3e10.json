@@ -2,7 +2,7 @@
     "id": "cb0d87de0b02a125024a600b736d3e10",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.find.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.find.html",
-    "title": "pandas.Series.str.find — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.find — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.find#\n\n- \nSeries.str.find(*sub* ,*start=0* ,*end=None* )[source]#\n- Return lowest indexes in each strings in the Series/Index. Each of returned indexes corresponds to the position where the substring is fully contained between [start:end]. Return -1 on failure. Equivalent to standard `str.find()` .\n  - Parameters:\n    - **sub** str\n    - Substring being searched.\n    - **start** int\n    - Left edge index.\n    - **end** int\n    - Right edge index.\n  - Returns:\n    - Series or Index of int.\n    - A Series (if the input is a Series) or an Index (if the input is an Index) of the lowest indexes corresponding to the positions where the substring is found in each string of the input.\n See also \n  - `rfind`\n  - Return highest indexes in each strings.\n Examples For Series.str.find: >>> ser = pd.Series([\"_cow_\", \"duck_\", \"do_v_e\"]) >>> ser.str.find(\"_\") 0 0 1 4 2 2 dtype: int64 For Series.str.rfind: >>> ser = pd.Series([\"_cow_\", \"duck_\", \"do_v_e\"]) >>> ser.str.rfind(\"_\") 0 4 1 4 2 4 dtype: int64",
     "markdown_length": 1020,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.find — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.find — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.403208",
+    "crawled_at": "2026-08-28T15:50:19.152813",
     "type": "webpage"
 }

@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.day_of_year.html"
     },
-    "crawled_at": "2026-08-26T06:49:55.109344",
+    "crawled_at": "2026-08-28T20:37:37.754616",
     "type": "webpage"
 }

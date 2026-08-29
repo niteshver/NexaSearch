@@ -2,7 +2,7 @@
     "id": "d8f12f93230db1948874c92c512cdff4",
     "url": "https://pandas.pydata.org/docs/dev/development/policies.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/development/policies.html",
-    "title": "Policies — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "Policies — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# Policies#\n\n## Version policy#\n\npandas uses a loose variant of semantic versioning (SemVer) to govern deprecations, API compatibility, and version numbering.\n\nA pandas release number is made up of `MAJOR.MINOR.PATCH`.\n\nAPI breaking changes should only occur in **major** releases. These changes\nwill be documented, with clear guidance on what is changing, why it’s changing,\nand how to migrate existing code to the new behavior.\n\nWhenever possible, a deprecation path will be provided rather than an outright breaking change.\n\npandas will introduce deprecations in **minor** releases. These deprecations\nwill preserve the existing behavior while emitting a warning that provides\nguidance on:\n\n- How to achieve similar behavior if an alternative is available.\n- The pandas version in which the deprecation will be enforced.\n\nWe will not introduce new deprecations in patch releases.\n\nDeprecations will only be enforced in **major** releases. For example, if a\nbehavior is deprecated in pandas 3.1.0, it will continue to work, with a\nwarning, for all releases in the 3.x series. The behavior will change and the\ndeprecation removed in the next major release (4.0.0).\n\n### Deprecation warnings#\n\nFollowing PDEP-17, pandas uses a three-stage deprecation policy:\n\n1. When a deprecation is first introduced in a minor release, it emits a `PandasDeprecationWarning` . By default, Python hides`DeprecationWarning` outside the`__main__` module, so end users\ntypically will not see these warnings unless they explicitly opt in. This\ngives downstream libraries time to migrate before their users are notified.\n2. In the final minor release before the next major version, the warning is promoted to `PandasFutureWarning` , which Python shows\nby default. End users see these warnings and have one minor release in\nwhich to update their code.\n3. The deprecated behavior is removed in the next major release.\n\nAll warnings about upcoming changes inherit from\n`PandasChangeWarning`. Users can filter or surface\nwarnings using the following subclasses:\n\n- `Pandas4Warning` — changes that will be enforced in pandas 4.0.\n- `Pandas5Warning` — changes that will be enforced in pandas 5.0.\n- `PandasPendingDeprecationWarning` — emits a`PendingDeprecationWarning` , regardless of target version.\n- `PandasDeprecationWarning` — emits a`DeprecationWarning` , regardless of target version.\n- `PandasFutureWarning` — emits a`FutureWarning` , regardless of target version.\n\nNote\n\npandas will sometimes make *behavior changing* bug fixes, as part of\nminor or patch releases. Whether or not a change is a bug fix or an\nAPI-breaking change is a judgement call. We’ll do our best, and we\ninvite you to participate in development discussion on the issue\ntracker or mailing list.\n\nThese policies do not apply to features marked as **experimental** in the documentation.\npandas may change the behavior of experimental features at any time.\n\n## Python support#\n\npandas mirrors the SPEC 0 guideline for Python support.\n\n## Security policy#\n\nTo report a security vulnerability to pandas, please go to pandas-dev/pandas and see the instructions there.",
     "markdown_length": 3114,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Policies — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "Policies — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/development/policies.html"
     },
-    "crawled_at": "2026-08-26T06:48:31.555990",
+    "crawled_at": "2026-08-28T16:00:53.200825",
     "type": "webpage"
 }

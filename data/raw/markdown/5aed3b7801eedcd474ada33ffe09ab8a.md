@@ -1,0 +1,1 @@
+pandas.Interval.closed# Interval.closed# String describing the inclusive side the intervals. Either left, right, both or neither.

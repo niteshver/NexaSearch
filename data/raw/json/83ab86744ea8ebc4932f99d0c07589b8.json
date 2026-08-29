@@ -2,7 +2,7 @@
     "id": "83ab86744ea8ebc4932f99d0c07589b8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.reorder_levels.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.reorder_levels.html",
-    "title": "pandas.DataFrame.reorder_levels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.reorder_levels — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.reorder_levels#\n\n- \nDataFrame.reorder_levels(*order* ,*axis=0* )[source]#\n- Rearrange index or column levels using input `order` .May not drop or duplicate levels. \n  - Parameters:\n    - **order** list of int or list of str\n    - List representing new level order. Reference level by number (position) or by key (label).\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - Where to reorder levels.\n  - Returns:\n    - DataFrame\n    - DataFrame with indices or columns with reordered levels.\n See also \n  - `DataFrame.swaplevel`\n  - Swap levels i and j in a MultiIndex.\n Examples >>> data = { ... \"class\": [\"Mammals\", \"Mammals\", \"Reptiles\"], ... \"diet\": [\"Omnivore\", \"Carnivore\", \"Carnivore\"], ... \"species\": [\"Humans\", \"Dogs\", \"Snakes\"], ... } >>> df = pd.DataFrame(data, columns=[\"class\", \"diet\", \"species\"]) >>> df = df.set_index([\"class\", \"diet\"]) >>> df species class diet Mammals Omnivore Humans Carnivore Dogs Reptiles Carnivore Snakes Let’s reorder the levels of the index: >>> df.reorder_levels([\"diet\", \"class\"]) species diet class Omnivore Mammals Humans Carnivore Mammals Dogs Reptiles Snakes",
     "markdown_length": 1132,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.reorder_levels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.reorder_levels — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.reorder_levels.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:04.922714",
+    "crawled_at": "2026-08-28T15:46:45.777563",
     "type": "webpage"
 }

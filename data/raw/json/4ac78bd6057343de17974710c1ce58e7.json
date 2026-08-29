@@ -2,7 +2,7 @@
     "id": "4ac78bd6057343de17974710c1ce58e7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.at_time.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.at_time.html",
-    "title": "pandas.Series.at_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.at_time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.at_time#\n\n- \nSeries.at_time(*time* ,*asof=False* ,*axis=None* )[source]#\n- Select values at particular time of day (e.g., 9:30AM). This method filters rows whose index has a time component matching the specified time. The index must be a DatetimeIndex. \n  - Parameters:\n    - **time** datetime.time or str\n    - The values to select.\n    - **asof** bool, default False\n    - This parameter is currently not supported.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - For Series this parameter is unused and defaults to 0.\n  - Returns:\n    - Series or DataFrame\n    - The values with the specified time.\n  - Raises:\n    - TypeError\n    - If the index is not a `DatetimeIndex`\n See also \n  - `between_time`\n  - Select values between particular times of the day.\n  - `DatetimeIndex.indexer_at_time`\n  - Get just the index locations for values at particular time of the day.\n Examples >>> i = pd.date_range(\"2018-04-09\", periods=4, freq=\"12h\") >>> ts = pd.DataFrame({\"A\": [1, 2, 3, 4]}, index=i) >>> ts A 2018-04-09 00:00:00 1 2018-04-09 12:00:00 2 2018-04-10 00:00:00 3 2018-04-10 12:00:00 4 >>> ts.at_time(\"12:00\") A 2018-04-09 12:00:00 2 2018-04-10 12:00:00 4",
     "markdown_length": 1188,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.at_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.at_time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:11.337642",
+    "crawled_at": "2026-08-28T15:48:51.152642",
     "type": "webpage"
 }

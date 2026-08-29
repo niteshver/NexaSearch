@@ -2,7 +2,7 @@
     "id": "cf3f1a99ccea2d2efc246d280dc592e8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.date.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.date.html",
-    "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.date#\n\n- property DatetimeIndex.date[source]#\n- Returns numpy array of python `datetime.date` objects.Namely, the date part of Timestamps without time and timezone information. See also \n  - `DatetimeIndex.time`\n  - Returns numpy array of `datetime.time` objects. The time part of the Timestamps.\n  - `DatetimeIndex.year`\n  - The year of the datetime.\n  - `DatetimeIndex.month`\n  - The month as January=1, December=12.\n  - `DatetimeIndex.day`\n  - The day of the datetime.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.date 0 2020-01-01 1 2020-02-01 dtype: object For DatetimeIndex: >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"] ... ) >>> idx.date array([datetime.date(2020, 1, 1), datetime.date(2020, 2, 1)], dtype=object)",
     "markdown_length": 960,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:45.668721",
+    "crawled_at": "2026-08-28T15:47:13.473754",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "0af73c0af18e940b9f6ce605a2e1f60b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_bool.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_bool.html",
-    "title": "pandas.api.types.is_bool — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_bool — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_bool#\n\n- \npandas.api.types.is_bool(*obj* )#\n- Return True if given object is boolean. This function checks whether `obj` is an instance of Python’s built-in`bool` type. It does not return True for numeric values like`0` or`1` that can evaluate as booleans.\n  - Parameters:\n    - **obj** object\n    - Object to check.\n  - Returns:\n    - bool\n See also \n  - `api.types.is_scalar`\n  - Check if the input is a scalar.\n  - `api.types.is_integer`\n  - Check if the input is an integer.\n  - `api.types.is_float`\n  - Check if the input is a float.\n Examples >>> pd.api.types.is_bool(True) True >>> pd.api.types.is_bool(1) False",
     "markdown_length": 640,
@@ -10,6 +10,18 @@
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_bool.html",
             "text": "Skip to main content",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
+            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -234,30 +246,18 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "http://pandas.pydata.org/docs/dev/reference/io.html",
-            "text": "Input/output",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_bool — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_bool — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:00.927450",
+    "crawled_at": "2026-08-28T15:51:54.471844",
     "type": "webpage"
 }

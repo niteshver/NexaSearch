@@ -2,7 +2,7 @@
     "id": "949e9516b0f406d9687e21b8ae4c52a1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.cumprod.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.cumprod.html",
-    "title": "pandas.DataFrame.cumprod — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.cumprod — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.cumprod#\n\n- \nDataFrame.cumprod(*axis=0* ,*skipna=True* ,*numeric_only=False* ,**args* ,***kwargs* )[source]#\n- Return cumulative product over a DataFrame or Series axis. Returns a DataFrame or Series of the same size containing the cumulative product. \n  - Parameters:\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The index or the name of the axis. 0 is equivalent to None or ‘index’. For Series this parameter is unused and defaults to 0.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire row/column is NA, the result will be NA.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ***args, **kwargs**\n    - Additional keywords have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Series or DataFrame\n    - Return cumulative product of Series or DataFrame.\n See also \n  - `DataFrame.prod`\n  - Return the product over DataFrame axis.\n  - `DataFrame.cummax`\n  - Return cumulative maximum over DataFrame axis.\n  - `DataFrame.cummin`\n  - Return cumulative minimum over DataFrame axis.\n  - `DataFrame.cumsum`\n  - Return cumulative sum over DataFrame axis.\n Examples **Series**>>> s = pd.Series([2, np.nan, 5, -1, 0]) >>> s 0 2.0 1 NaN 2 5.0 3 -1.0 4 0.0 dtype: float64 By default, NA values are ignored. >>> s.cumprod() 0 2.0 1 NaN 2 10.0 3 -10.0 4 -0.0 dtype: float64 To include NA values in the operation, use `skipna=False`>>> s.cumprod(skipna=False) 0 2.0 1 NaN 2 NaN 3 NaN 4 NaN dtype: float64 **DataFrame**>>> df = pd.DataFrame( ... [[2.0, 1.0], [3.0, np.nan], [1.0, 0.0]], columns=list(\"AB\") ... ) >>> df A B 0 2.0 1.0 1 3.0 NaN 2 1.0 0.0 By default, iterates over rows and finds the product in each column. This is equivalent to `axis=None` or`axis='index'` .>>> df.cumprod() A B 0 2.0 1.0 1 6.0 NaN 2 6.0 0.0 To iterate over columns and find the product in each row, use `axis=1`>>> df.cumprod(axis=1) A B 0 2.0 2.0 1 3.0 NaN 2 1.0 0.0",
     "markdown_length": 2025,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.cumprod — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.cumprod — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:01.205422",
+    "crawled_at": "2026-08-28T15:46:07.296172",
     "type": "webpage"
 }

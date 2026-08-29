@@ -2,7 +2,7 @@
     "id": "3b184e376036120e13e38c17a8348860",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.__array__.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.__array__.html",
-    "title": "pandas.Series.__array__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.__array__ — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.__array__#\n\n- \nSeries.__array__(*dtype=None* ,*copy=None* )[source]#\n- Return the values as a NumPy array. Users should not call this directly. Rather, it is invoked by `numpy.array()` and`numpy.asarray()` .\n  - Parameters:\n    - **dtype** str or numpy.dtype, optional\n    - The dtype to use for the resulting NumPy array. By default, the dtype is inferred from the data.\n    - **copy** bool or None, optional\n    - See `numpy.asarray()` .\n  - Returns:\n    - numpy.ndarray\n    - The values in the series converted to a `numpy.ndarray` with the specified dtype.\n See also \n  - `array`\n  - Create a new array from data.\n  - `Series.array`\n  - Zero-copy view to the array backing the Series.\n  - `Series.to_numpy`\n  - Series method for similar behavior.\n Examples >>> ser = pd.Series([1, 2, 3]) >>> np.asarray(ser) array([1, 2, 3]) For timezone-aware data, the timezones may be retained with `dtype='object'`>>> tzser = pd.Series(pd.date_range(\"2000\", periods=2, tz=\"CET\")) >>> np.asarray(tzser, dtype=\"object\") array([Timestamp('2000-01-01 00:00:00+0100', tz='CET'), Timestamp('2000-01-02 00:00:00+0100', tz='CET')], dtype=object) Or the values may be localized to UTC and the tzinfo discarded with `dtype='datetime64[ns]'`>>> np.asarray(tzser, dtype=\"datetime64[ns]\") array(['1999-12-31T23:00:00.000000000', ...], dtype='datetime64[ns]')",
     "markdown_length": 1352,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.__array__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.__array__ — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:10.425924",
+    "crawled_at": "2026-08-28T15:48:43.251859",
     "type": "webpage"
 }

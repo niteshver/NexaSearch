@@ -2,7 +2,7 @@
     "id": "cc63bce987fad25791f1ac9eb5ef41c9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.sem.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.sem.html",
-    "title": "pandas.api.typing.Rolling.sem — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Rolling.sem — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.sem#\n\n- \nRolling.sem(*ddof=1* ,*numeric_only=False* )[source]#\n- Calculate the rolling standard error of mean. This is computed as the rolling standard deviation divided by the square root of the rolling count. A minimum of one period is required. \n  - Parameters:\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is `N - ddof` , where`N` represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.sem`\n  - Aggregating sem for Series.\n  - `DataFrame.sem`\n  - Aggregating sem for DataFrame.\n Notes A minimum of one period is required for the calculation. Examples >>> s = pd.Series([0, 1, 2, 3]) >>> s.rolling(2, min_periods=1).sem() 0 NaN 1 0.5 2 0.5 3 0.5 dtype: float64",
     "markdown_length": 1072,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.sem — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Rolling.sem — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.041649",
+    "crawled_at": "2026-08-28T17:58:01.263937",
     "type": "webpage"
 }

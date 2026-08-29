@@ -1,0 +1,62 @@
+{
+    "id": "35faf1f56c4713e2d9f27aa63d2a57dd",
+    "url": "http://numba.pydata.org/",
+    "canonical_url": "http://numba.pydata.org/",
+    "title": "Numba: A High Performance Python Compiler",
+    "status": 200,
+    "markdown": "## Accelerate Python Functions\n\nNumba translates Python functions to optimized machine code at runtime using the industry-standard LLVM compiler library. Numba-compiled numerical algorithms in Python can approach the speeds of C or FORTRAN.\n\nYou don't need to replace the Python interpreter, run a separate compilation step, or even have a C/C++ compiler installed. Just apply one of the Numba decorators to your Python function, and Numba does the rest.\n\nLearn More » Try Now »```\nfrom numba import njit\nimport random\n@njit\ndef monte_carlo_pi(nsamples):\n    acc = 0\n    for i in range(nsamples):\n        x = random.random()\n        y = random.random()\n        if (x ** 2 + y ** 2) < 1.0:\n            acc += 1\n    return 4.0 * acc / nsamples\n```\n## Built for Scientific Computing\n\nNumba is designed to be used with NumPy arrays and functions. Numba generates specialized code for different array data types and layouts to optimize performance. Special decorators can create universal functions that broadcast over NumPy arrays just like NumPy functions do.\n\nNumba also works great with Jupyter notebooks for interactive computing, and with distributed execution frameworks, like Dask and Spark.\n\nLearn More » Try Now »```\n@njit(parallel=True)\ndef logistic_regression(Y, X, w, iterations):\n    for i in range(iterations):\n        w -= np.dot(((1.0 /\n              (1.0 + np.exp(-Y * np.dot(X, w)))\n              - 1.0) * Y), X)\n    return w\n```\n## Parallelize Your Algorithms\n\nNumba offers a range of options for parallelizing your code for CPUs and GPUs, often with only minor code changes.\n\n## Simplified Threading\n\n```\n@njit(parallel=True)\ndef simulator(out):\n    # iterate loop in parallel\n    for i in prange(out.shape[0]):\n        out[i] = run_sim()\n```\nNumba can automatically execute NumPy array expressions on multiple CPU cores and makes it easy to write parallel loops.\n\n## SIMD Vectorization\n\n```\nLBB0_8:\n    vmovups (%rax,%rdx,4), %ymm0\n    vmovups (%rcx,%rdx,4), %ymm1\n    vsubps  %ymm1, %ymm0, %ymm2\n    vaddps  %ymm2, %ymm2, %ymm2\n```\nNumba can automatically translate some loops into vector instructions for 2-4x speed improvements. Numba adapts to your CPU capabilities, whether your CPU supports SSE, AVX, or AVX-512.\n\n## GPU Acceleration\n\nWith support for NVIDIA CUDA, Numba lets you write parallel GPU algorithms entirely from Python.\n\n## Portable Compilation\n\nShip high performance Python applications without the headache of binary compilation and packaging. Your source code remains pure Python while Numba handles the compilation at runtime. We test Numba continuously in more than 200 different platform configurations.\n\nNumba supports Intel and AMD x86, POWER8/9, and ARM CPUs (including Apple M1), NVIDIA GPUs, Python 3.9-3.12, as well as Windows/macOS/Linux. Precompiled Numba binaries for most systems are available as conda packages and pip-installable wheels.\n\nLearn More »",
+    "markdown_length": 2904,
+    "internal_links": [
+        {
+            "href": "http://numba.pydata.org/",
+            "text": "Documentation",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://numba.pydata.org/numba-examples/",
+            "text": "Examples",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://dask.pydata.org/",
+            "text": "Dask",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Numba: A High Performance Python Compiler",
+        "description": "",
+        "keywords": null,
+        "author": "",
+        "og:title": "Numba: A High Performance Python Compiler",
+        "og:description": "Numba is an open source JIT compiler that translates a subset of Python and NumPy code into fast machine code.",
+        "og:image": "/_static/numba-blue-horizontal-rgb.svg",
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.16.2.html"
+    },
+    "crawled_at": "2026-08-28T17:56:23.956090",
+    "type": "webpage"
+}

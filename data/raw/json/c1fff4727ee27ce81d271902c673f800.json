@@ -2,7 +2,7 @@
     "id": "c1fff4727ee27ce81d271902c673f800",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.translate.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.translate.html",
-    "title": "pandas.Series.str.translate — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.translate — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.translate#\n\n- \nSeries.str.translate(*table* )[source]#\n- Map all characters in the string through the given mapping table. This method is equivalent to the standard `str.translate()` method for strings. It maps each character in the string to a new\ncharacter according to the translation table provided. Unmapped\ncharacters are left unchanged, while characters mapped to None\nare removed.\n  - Parameters:\n    - **table** dict\n    - Table is a mapping of Unicode ordinals to Unicode ordinals, strings, or None. Unmapped characters are left untouched. Characters mapped to None are deleted. `str.maketrans()` is a\nhelper function for making translation tables.\n  - Returns:\n    - Series or Index\n    - A new Series or Index with translated strings.\n See also \n  - `Series.str.replace`\n  - Replace occurrences of pattern/regex in the Series with some other string.\n  - `Index.str.replace`\n  - Replace occurrences of pattern/regex in the Index with some other string.\n Examples >>> ser = pd.Series([\"El niño\", \"Françoise\"]) >>> mytable = str.maketrans({\"ñ\": \"n\", \"ç\": \"c\"}) >>> ser.str.translate(mytable) 0 El nino 1 Francoise dtype: str",
     "markdown_length": 1153,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.translate — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.translate — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:18.068573",
+    "crawled_at": "2026-08-28T15:50:34.640921",
     "type": "webpage"
 }

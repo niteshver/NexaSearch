@@ -2,7 +2,7 @@
     "id": "becc8d2f27ba1bd9746a9557f0d51dbb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.asof_locs.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.asof_locs.html",
-    "title": "pandas.Index.asof_locs — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.asof_locs — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.asof_locs#\n\n- \nIndex.asof_locs(*where* ,*mask* )[source]#\n- Return the locations (indices) of labels in the index. As in the `pandas.Index.asof()` , if the label (a particular entry in`where` ) is not in the index, the latest index label up to the\npassed label is chosen and its index returned.If all of the labels in the index are later than a label in `where` ,\n-1 is returned.`mask` is used to ignore`NA` values in the index during calculation.\n  - Parameters:\n    - **where** Index\n    - An Index consisting of an array of timestamps.\n    - **mask** np.ndarray[bool]\n    - Array of booleans denoting where values in the original data are not `NA` .\n  - Returns:\n    - np.ndarray[np.intp]\n    - An array of locations (indices) of the labels from the index which correspond to the return values of `pandas.Index.asof()` for every element in`where` .\n See also \n  - `Index.asof`\n  - Return the label from the index, or, if not present, the previous one.\n Examples >>> idx = pd.date_range(\"2023-06-01\", periods=3, freq=\"D\") >>> where = pd.DatetimeIndex( ... [\"2023-05-30 00:12:00\", \"2023-06-01 00:00:00\", \"2023-06-02 23:59:59\"] ... ) >>> mask = np.ones(3, dtype=bool) >>> idx.asof_locs(where, mask) array([-1, 0, 1]) We can use `mask` to ignore certain values in the index during calculation.>>> mask[1] = False >>> idx.asof_locs(where, mask) array([-1, 0, 0])",
     "markdown_length": 1375,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.asof_locs — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.asof_locs — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:47.853330",
+    "crawled_at": "2026-08-28T15:47:33.218834",
     "type": "webpage"
 }

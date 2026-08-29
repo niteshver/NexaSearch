@@ -2,7 +2,7 @@
     "id": "670ac69f464e6561ff87899d86388eef",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.add.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.add.html",
-    "title": "pandas.DataFrame.add — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.add — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.add#\n\n- \nDataFrame.add(*other* ,*axis='columns'* ,*level=None* ,*fill_value=None* )[source]#\n- Get Addition of dataframe and other, element-wise (binary operator add). Equivalent to `dataframe + other` , but with support to substitute a\nfill_value for missing data in one of the inputs. With reverse version,\nradd.Among flexible wrappers (add, sub, mul, div, floordiv, mod, pow) to arithmetic operators: +, -, *, /, //, %, **. \n  - Parameters:\n    - **other** scalar, sequence, Series, dict or DataFrame\n    - Any single or multiple element data structure, or list-like object.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}\n    - Whether to compare by the index (0 or ‘index’) or columns. (1 or ‘columns’). For Series input, axis to match Series index on.\n    - **level** int or label\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** scalar or None, default None\n    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.\n  - Returns:\n    - DataFrame\n    - Result of the arithmetic operation.\n See also \n  - `DataFrame.add`\n  - Add DataFrames.\n  - `DataFrame.sub`\n  - Subtract DataFrames.\n  - `DataFrame.mul`\n  - Multiply DataFrames.\n  - `DataFrame.div`\n  - Divide DataFrames (float division).\n  - `DataFrame.truediv`\n  - Divide DataFrames (float division).\n  - `DataFrame.floordiv`\n  - Divide DataFrames (integer division).\n  - `DataFrame.mod`\n  - Calculate modulo (remainder after division).\n  - `DataFrame.pow`\n  - Calculate exponential power.\n Notes Mismatched indices will be unioned together. Examples >>> df = pd.DataFrame( ... {\"angles\": [0, 3, 4], \"degrees\": [360, 180, 360]}, ... index=[\"circle\", \"triangle\", \"rectangle\"], ... ) >>> df angles degrees circle 0 360 triangle 3 180 rectangle 4 360 Add a scalar with operator version which return the same results. >>> df + 1 angles degrees circle 1 361 triangle 4 181 rectangle 5 361 >>> df.add(1) angles degrees circle 1 361 triangle 4 181 rectangle 5 361 Add a list and Series by axis with operator version. >>> df + [1, 2] angles degrees circle 1 362 triangle 4 182 rectangle 5 362 >>> df.add([1, 2], axis=\"columns\") angles degrees circle 1 362 triangle 4 182 rectangle 5 362 >>> df.add( ... pd.Series([1, 1, 1], index=[\"circle\", \"triangle\", \"rectangle\"]), ... axis=\"index\", ... ) angles degrees circle 1 361 triangle 4 181 rectangle 5 361 Add a dictionary by axis. >>> df.add({\"angles\": 0, \"degrees\": 2}) angles degrees circle 0 362 triangle 3 182 rectangle 4 362 >>> df.add({\"circle\": 0, \"triangle\": 2, \"rectangle\": 3}, axis=\"index\") angles degrees circle 0 360 triangle 5 182 rectangle 7 363",
     "markdown_length": 2789,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.add — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.add — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.014478",
+    "crawled_at": "2026-08-28T15:45:55.414205",
     "type": "webpage"
 }

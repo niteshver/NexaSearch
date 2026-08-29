@@ -2,7 +2,7 @@
     "id": "f75e8018ce8e3dd928c51b84da1fb24c",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.6.1.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.6.1.html",
-    "title": "Version 0.6.1 (December 13, 2011) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "Version 0.6.1 (December 13, 2011) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# Version 0.6.1 (December 13, 2011)#\n\n## New features#\n\n- Can append single rows (as Series) to a DataFrame\n- Add Spearman and Kendall rank correlation options to Series.corr and DataFrame.corr (GH 428)\n- Added `get_value` and`set_value` methods to\nSeries, DataFrame, and Panel for very low-overhead access (>2x faster in many\ncases) to scalar elements (GH 437, GH 438).`set_value` is capable of\nproducing an enlarged object.\n- Add PyQt table widget to sandbox (GH 435)\n- DataFrame.align can accept Series arguments and an axis option (GH 461)\n- Implement new SparseArray and `SparseList` data structures. SparseSeries now derives from SparseArray (GH 463)\n- Better console printing options (GH 453)\n- Implement fast data ranking for Series and DataFrame, fast versions of scipy.stats.rankdata (GH 428)\n- Implement `DataFrame.from_items` alternate\nconstructor (GH 444)\n- DataFrame.convert_objects method for inferring better dtypes for object columns (GH 302)\n- Add rolling_corr_pairwise function for computing Panel of correlation matrices (GH 189)\n- Add margins option to pivot_table for computing subgroup aggregates (GH 114)\n- Add `Series.from_csv` function (GH 482)\n- Can pass DataFrame/DataFrame and DataFrame/Series to rolling_corr/rolling_cov (GH #462)\n- MultiIndex.get_level_values can accept the level name\n\n## Performance improvements#\n\n- Improve memory usage of `DataFrame.describe` (do not copy data\nunnecessarily) (PR #425)\n- Optimize scalar value lookups in the general case by 25% or more in Series and DataFrame\n- Fix performance regression in cross-sectional count in DataFrame, affecting DataFrame.dropna speed\n- Column deletion in DataFrame copies no data (computes views on blocks) (GH #158)\n\n## Contributors#\n\nA total of 7 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Dieter Vandenbussche\n- Fernando Perez +\n- Jev Kuznetsov +\n- Joon Ro\n- Ralph Bean +\n- Wes McKinney\n- Wouter Overmeire",
     "markdown_length": 1981,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Version 0.6.1 (December 13, 2011) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "Version 0.6.1 (December 13, 2011) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:52:01.069043",
+    "crawled_at": "2026-08-28T15:54:58.137418",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "27ce497114ef07879f66a768186c9ea4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.html",
-    "title": "pandas.CategoricalIndex — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.CategoricalIndex — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex#\n\n- \nclass pandas.CategoricalIndex(*data=None* ,*categories=None* ,*ordered=None* ,*dtype=None* ,*copy=False* ,*name=None* )[source]#\n- Index based on an underlying `Categorical` .CategoricalIndex, like Categorical, can only take on a limited, and usually fixed, number of possible values (categories). Also, like Categorical, it might have an order, but numerical operations (additions, divisions, …) are not possible. \n  - Parameters:\n    - **data** array-like (1-dimensional)\n    - The values of the categorical. If categories are given, values not in categories will be replaced with NaN.\n    - **categories** index-like, optional\n    - The categories for the categorical. Items need to be unique. If the categories are not given here (and also not in dtype), they will be inferred from the data.\n    - **ordered** bool, optional\n    - Whether or not this categorical is treated as an ordered categorical. If not given here or in dtype, the resulting categorical will be unordered.\n    - **dtype** CategoricalDtype or “category”, optional\n    - If `CategoricalDtype` , cannot be used together with\ncategories or ordered.\n    - **copy** bool, default False\n    - Make a copy of input ndarray.\n    - **name** object, optional\n    - Name to be stored in the index.\n Attributes `codes`The category codes of this categorical index. `categories`The categories of this categorical. `ordered`Whether the categories have an ordered relationship. Methods `rename_categories` (new_categories)Rename categories. `reorder_categories` (new_categories[, ordered])Reorder categories as specified in new_categories. `add_categories` (new_categories)Add new categories. `remove_categories` (removals)Remove the specified categories. `remove_unused_categories` ()Remove categories which are not used. `set_categories` (new_categories[, ordered, rename])Set the categories to the specified new categories. `as_ordered` ()Set the Categorical to be ordered. `as_unordered` ()Set the Categorical to be unordered. `map` (mapper[, na_action])Map values using input an input mapping or function. \n  - Raises:\n    - ValueError\n    - If the categories do not validate.\n    - TypeError\n    - If an explicit `ordered=True` is given but no categories and the\nvalues are not sortable.\n See also \n  - `Index`\n  - The base pandas Index type.\n  - `Categorical`\n  - A categorical array.\n  - `CategoricalDtype`\n  - Type for categorical data.\n Notes See the user guide for more. Examples >>> pd.CategoricalIndex([\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"]) CategoricalIndex(['a', 'b', 'c', 'a', 'b', 'c'], categories=['a', 'b', 'c'], ordered=False, dtype='category') `CategoricalIndex` can also be instantiated from a`Categorical` :>>> c = pd.Categorical([\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"]) >>> pd.CategoricalIndex(c) CategoricalIndex(['a', 'b', 'c', 'a', 'b', 'c'], categories=['a', 'b', 'c'], ordered=False, dtype='category') Ordered `CategoricalIndex` can have a min and max value.>>> ci = pd.CategoricalIndex( ... [\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"], ordered=True, categories=[\"c\", \"b\", \"a\"] ... ) >>> ci CategoricalIndex(['a', 'b', 'c', 'a', 'b', 'c'], categories=['c', 'b', 'a'], ordered=True, dtype='category') >>> ci.min() 'c'",
     "markdown_length": 3204,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.CategoricalIndex — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:45.184278",
+    "crawled_at": "2026-08-28T15:45:50.779327",
     "type": "webpage"
 }

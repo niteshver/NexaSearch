@@ -2,7 +2,7 @@
     "id": "72ec9483f66fccd6d0991233406fc20f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.quantile.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.quantile.html",
-    "title": "pandas.Series.quantile — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.quantile — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.quantile#\n\n- \nSeries.quantile(*q=0.5* ,*interpolation='linear'* )[source]#\n- Return value at the given quantile. This method computes the value below which a given fraction of the data falls. When multiple quantiles are requested, a Series indexed by the quantile values is returned. \n  - Parameters:\n    - **q** float or array-like, default 0.5 (50% quantile)\n    - The quantile(s) to compute, which can lie in range: 0 <= q <= 1.\n    - **interpolation** {‘linear’, ‘lower’, ‘higher’, ‘midpoint’, ‘nearest’}\n    - This optional parameter specifies the interpolation method to use, when the desired quantile lies between two data points i and j: \n      - linear: i + (j - i) * (x-i)/(j-i), where (x-i)/(j-i) is the fractional part of the index surrounded by i > j.\n      - lower: i.\n      - higher: j.\n      - nearest: i or j whichever is nearest.\n      - midpoint: (i + j) / 2.\n  - Returns:\n    - float or Series\n    - If `q` is an array, a Series will be returned where the\nindex is`q` and the values are the quantiles, otherwise\na float will be returned.\n See also \n  - `core.window.Rolling.quantile`\n  - Calculate the rolling quantile.\n  - `numpy.percentile`\n  - Returns the q-th percentile(s) of the array elements.\n Examples >>> s = pd.Series([1, 2, 3, 4]) >>> s.quantile(0.5) 2.5 >>> s.quantile([0.25, 0.5, 0.75]) 0.25 1.75 0.50 2.50 0.75 3.25 dtype: float64",
     "markdown_length": 1381,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.quantile — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.quantile — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:20.844680",
+    "crawled_at": "2026-08-28T15:49:59.311835",
     "type": "webpage"
 }

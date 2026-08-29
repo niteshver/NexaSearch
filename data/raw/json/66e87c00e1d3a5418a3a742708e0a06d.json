@@ -2,7 +2,7 @@
     "id": "66e87c00e1d3a5418a3a742708e0a06d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.total_seconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.total_seconds.html",
-    "title": "pandas.Timedelta.total_seconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.total_seconds — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.total_seconds#\n\n- Timedelta.total_seconds()#\n- Total seconds in the duration. This method calculates the total duration in seconds by combining the days, seconds, microseconds, and nanoseconds of the Timedelta object. See also \n  - `to_timedelta`\n  - Convert argument to timedelta.\n  - `Timedelta`\n  - Represents a duration, the difference between two dates or times.\n  - `Timedelta.seconds`\n  - Returns the seconds component of the timedelta.\n  - `Timedelta.microseconds`\n  - Returns the microseconds component of the timedelta.\n Examples >>> td = pd.Timedelta('1min') >>> td Timedelta('0 days 00:01:00') >>> td.total_seconds() 60.0",
     "markdown_length": 652,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.total_seconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.total_seconds — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:54.477474",
+    "crawled_at": "2026-08-28T15:50:58.673747",
     "type": "webpage"
 }

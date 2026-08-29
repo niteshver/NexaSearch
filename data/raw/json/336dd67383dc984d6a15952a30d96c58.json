@@ -2,7 +2,7 @@
     "id": "336dd67383dc984d6a15952a30d96c58",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_iterator.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_iterator.html",
-    "title": "pandas.api.types.is_iterator — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_iterator — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_iterator#\n\n- \npandas.api.types.is_iterator(*obj* )#\n- Check if the object is an iterator. This is intended for generators, not list-like objects. This method checks whether the passed object is an iterator. It returns True if the object is an iterator, and False otherwise. \n  - Parameters:\n    - **obj** The object to check\n    - The object to check for iterator type.\n  - Returns:\n    - **is_iter** bool\n    - Whether obj is an iterator. True if the object is of iterator type, otherwise False.\n See also \n  - `api.types.is_list_like`\n  - Check if the input is list-like.\n Examples >>> import datetime >>> from pandas.api.types import is_iterator >>> is_iterator((x for x in [])) True >>> is_iterator([1, 2, 3]) False >>> is_iterator(datetime.datetime(2017, 1, 1)) False >>> is_iterator(\"foo\") False >>> is_iterator(1) False",
     "markdown_length": 848,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_iterator — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_iterator — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:33.457012",
+    "crawled_at": "2026-08-28T15:52:00.857562",
     "type": "webpage"
 }

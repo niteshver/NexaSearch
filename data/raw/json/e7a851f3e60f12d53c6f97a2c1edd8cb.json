@@ -2,7 +2,7 @@
     "id": "e7a851f3e60f12d53c6f97a2c1edd8cb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.empty.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.empty.html",
-    "title": "pandas.Series.empty — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.empty — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.empty#\n\n- property Series.empty[source]#\n- Indicator whether Index is empty. An Index is considered empty if it has no elements. This property can be useful for quickly checking the state of an Index, especially in data processing and analysis workflows where handling of empty datasets might be required. \n  - Returns:\n    - bool\n    - If Index is empty, return True, if not return False.\n See also \n  - `Index.size`\n  - Return the number of elements in the underlying data.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.empty False >>> idx_empty = pd.Index([]) >>> idx_empty Index([], dtype='object') >>> idx_empty.empty True If we only have NaNs in our DataFrame, it is not considered empty! >>> idx = pd.Index([np.nan, np.nan]) >>> idx Index([nan, nan], dtype='float64') >>> idx.empty False",
     "markdown_length": 852,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.empty — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.empty — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.628972",
+    "crawled_at": "2026-08-28T15:49:28.165131",
     "type": "webpage"
 }

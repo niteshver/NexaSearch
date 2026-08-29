@@ -2,7 +2,7 @@
     "id": "091df9741b63d84bf5b94e5d5d290889",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.identical.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.identical.html",
-    "title": "pandas.Index.identical — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.identical — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.identical#\n\n- \nfinal Index.identical(*other* )[source]#\n- Similar to equals, but checks that object attributes and types are also equal. While `Index.equals()` only checks that the elements are the same,\nthis method additionally verifies that the Index objects have matching\ntypes and attributes (e.g.,`name` ).\n  - Parameters:\n    - **other** Index\n    - The Index object you want to compare with the current Index object.\n  - Returns:\n    - bool\n    - If two Index objects have equal elements and same type True, otherwise False.\n See also \n  - `Index.equals`\n  - Determine if two Index object are equal.\n  - `Index.has_duplicates`\n  - Check if the Index has duplicate values.\n  - `Index.is_unique`\n  - Return if the index has unique values.\n Examples >>> idx1 = pd.Index([\"1\", \"2\", \"3\"]) >>> idx2 = pd.Index([\"1\", \"2\", \"3\"]) >>> idx2.identical(idx1) True >>> idx1 = pd.Index([\"1\", \"2\", \"3\"], name=\"A\") >>> idx2 = pd.Index([\"1\", \"2\", \"3\"], name=\"B\") >>> idx2.identical(idx1) False",
     "markdown_length": 997,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.identical — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.identical — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:48.970580",
+    "crawled_at": "2026-08-28T15:47:40.965088",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "a2138ff138a3c360187528074662694c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.view.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.view.html",
-    "title": "pandas.Timedelta.view — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.view — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.view#\n\n- \nTimedelta.view(*dtype* )#\n- Array view compatibility. This method allows you to reinterpret the underlying data of a Timedelta object as a different dtype. The view method provides a way to reinterpret the internal representation of the Timedelta object without modifying its data. This is particularly useful when you need to work with the underlying data directly, such as for performance optimizations or interfacing with low-level APIs. The returned value is typically the number of nanoseconds since the epoch, represented as an integer or another specified dtype. \n  - Parameters:\n    - **dtype** str or dtype\n    - The dtype to view the underlying data as.\n See also \n  - `Timedelta.asm8`\n  - Return a numpy timedelta64 array scalar view.\n  - `numpy.ndarray.view`\n  - Returns a view of an array with the same data.\n  - `Timedelta.to_numpy`\n  - Converts the Timedelta to a NumPy timedelta64.\n  - `Timedelta.total_seconds`\n  - Returns the total duration of the Timedelta object in seconds.\n Examples >>> td = pd.Timedelta('3D') >>> td Timedelta('3 days 00:00:00') >>> td.view(int) np.int64(259200000000)",
     "markdown_length": 1137,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.view — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.view — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:06.926377",
+    "crawled_at": "2026-08-28T15:50:59.750100",
     "type": "webpage"
 }

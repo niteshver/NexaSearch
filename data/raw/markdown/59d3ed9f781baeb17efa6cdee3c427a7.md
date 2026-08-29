@@ -1,0 +1,45 @@
+# What’s new in 3.0.3 (May 11, 2026)#
+
+These are the changes in pandas 3.0.3. See Release notes for a full changelog including other versions of pandas.
+
+## Enhancements#
+
+- Starting with pandas 3.0.0, time zones are represented by default using the standard library’s `zoneinfo` module (or`datetime.timezone` for fixed
+offsets) instead of using`pytz` (release note).The IO methods using `pyarrow` under the hood such as`read_parquet()` ,`read_feather()` and`read_orc()` (or`read_csv()` when specifying
+the engine) were still returning timezone using`pytz` . Those have now been
+updated to consistently use default`zoneinfo` time zones as well (GH 65134).
+
+## Fixed regressions#
+
+- Fixed a regression in `pandas.bdate_range()` where specifying`end` on a weekend with`periods` returned fewer dates than expected (GH 64834)
+- Fixed a regression in `to_timedelta()` ignoring the`unit` argument for round float values when mixed with non-round floats in a list (GH 65150)
+- Fixed a regression in `Series.rank()` with custom extension dtypes (GH 64976)
+- Fixed a regression in `Timedelta.round()` ,`Timedelta.floor()` , and`Timedelta.ceil()` raising`ZeroDivisionError` for sub-second`freq` (GH 64828)
+- Fixed reading of Parquet files with timezone-aware timestamps or localizing of a timeseries with a `pytz` timezone when an older version of`pytz` was installed (GH 64978)
+- Fixed a regression in `read_csv()` with`engine="c"` where`thousands=","` could incorrectly parse non-numeric values like`"1 ,"` as integers
+instead of strings (GH 64655)
+- Fixed a performance regression when working with timezone-aware timeseries data using a default `zoneinfo` time zone, i.e. slowdown when accessing components or localizing a naive timeseries (GH 64363)
+
+## Bug fixes#
+
+- Fixed `ArrowDtype` string arithmetic for addition between`string` and`large_string` typed arrays (GH 65220)
+- Fixed a bug in adding missing values (e.g. `NA` ) to a pyarrow-backed string array or Series
+raising an error instead of propagating the missing value (GH 64968)
+- Fixed a bug in `Series.rank()` with period dtype and missing values, always sorting missing values at the top, regardless of the`na_option` value (GH 64976)
+- Fixed a bug in reading files with a chained URL scheme (e.g. `tar://` ) with the latest version of`fsspec` (GH 65462).
+- Fixed a hang in `Series.str.replace()` for PyArrow-backed string data when replacing an empty pattern; behavior now matches Python’s`str.replace` (GH 64941).
+
+## Contributors#
+
+A total of 10 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.
+
+- Abinesh N +
+- Albert Y. Shih +
+- An1k4et
+- Aniket Vijay Vishwakarma
+- Boris Bilich +
+- Jeongmin Gil
+- Joris Van den Bossche
+- Lumberbot (aka Jack)
+- jbrockmendel
+- pandas Development Team

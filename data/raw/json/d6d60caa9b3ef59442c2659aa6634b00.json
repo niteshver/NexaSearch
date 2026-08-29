@@ -2,7 +2,7 @@
     "id": "d6d60caa9b3ef59442c2659aa6634b00",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.size.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.size.html",
-    "title": "pandas.Index.size — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.size — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.size#\n\n- property Index.size[source]#\n- Return the number of elements in the underlying data. For a Series or Index this is the length (number of rows). Equivalent to `len(obj)` and`np.prod(obj.shape)` .See also \n  - `Series.ndim`\n  - Number of dimensions of the underlying data, by definition 1.\n  - `Series.shape`\n  - Return a tuple of the shape of the underlying data.\n  - `Series.dtype`\n  - Return the dtype object of the underlying data.\n  - `Series.values`\n  - Return Series as ndarray or ndarray-like depending on the dtype.\n Examples For Series: >>> s = pd.Series([\"Ant\", \"Bear\", \"Cow\"]) >>> s 0 Ant 1 Bear 2 Cow dtype: str >>> s.size 3 For Index: >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.size 3",
     "markdown_length": 755,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.size — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.size — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:50.402200",
+    "crawled_at": "2026-08-28T15:47:52.143441",
     "type": "webpage"
 }

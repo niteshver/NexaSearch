@@ -2,7 +2,7 @@
     "id": "129953211481bd2c3c3611da54be2892",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.quantile.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.quantile.html",
-    "title": "pandas.api.typing.Expanding.quantile — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Expanding.quantile — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.quantile#\n\n- \nExpanding.quantile(*q* ,*interpolation='linear'* ,*numeric_only=False* )[source]#\n- Calculate the expanding quantile. At each step the specified quantile is computed from all prior observations, using the given interpolation method for values between data points. \n  - Parameters:\n    - **q** float\n    - Quantile to compute. 0 <= quantile <= 1.\n    - **interpolation** {‘linear’, ‘lower’, ‘higher’, ‘midpoint’, ‘nearest’}\n    - This optional parameter specifies the interpolation method to use, when the desired quantile lies between two data points i and j: \n      - linear: i + (j - i) * fraction, where fraction is the fractional part of the index surrounded by i and j.\n      - lower: i.\n      - higher: j.\n      - nearest: i or j whichever is nearest.\n      - midpoint: (i + j) / 2.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.quantile`\n  - Aggregating quantile for Series.\n  - `DataFrame.quantile`\n  - Aggregating quantile for DataFrame.\n Examples >>> ser = pd.Series([1, 2, 3, 4, 5, 6], index=[\"a\", \"b\", \"c\", \"d\", \"e\", \"f\"]) >>> ser.expanding(min_periods=4).quantile(0.25) a NaN b NaN c NaN d 1.75 e 2.00 f 2.25 dtype: float64",
     "markdown_length": 1493,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.quantile — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Expanding.quantile — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.551206",
+    "crawled_at": "2026-08-28T17:57:30.338156",
     "type": "webpage"
 }

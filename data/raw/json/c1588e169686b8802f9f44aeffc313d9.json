@@ -2,7 +2,7 @@
     "id": "c1588e169686b8802f9f44aeffc313d9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.repeat.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.repeat.html",
-    "title": "pandas.api.extensions.ExtensionArray.repeat — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.repeat — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.repeat#\n\n- \nExtensionArray.repeat(*repeats* ,*axis=None* )[source]#\n- Repeat elements of an ExtensionArray. Returns a new ExtensionArray where each element of the current ExtensionArray is repeated consecutively a given number of times. \n  - Parameters:\n    - **repeats** int or array of ints\n    - The number of repetitions for each element. This should be a non-negative integer. Repeating 0 times will return an empty ExtensionArray.\n    - **axis** None\n    - Must be `None` . Has no effect but is accepted for compatibility\nwith numpy.\n  - Returns:\n    - ExtensionArray\n    - Newly created ExtensionArray with repeated elements.\n See also \n  - `Series.repeat`\n  - Equivalent function for Series.\n  - `Index.repeat`\n  - Equivalent function for Index.\n  - `numpy.repeat`\n  - Similar method for `numpy.ndarray` .\n  - `ExtensionArray.take`\n  - Take arbitrary positions.\n Examples >>> cat = pd.Categorical([\"a\", \"b\", \"c\"]) >>> cat ['a', 'b', 'c'] Categories (3, str): ['a', 'b', 'c'] >>> cat.repeat(2) ['a', 'a', 'b', 'b', 'c', 'c'] Categories (3, str): ['a', 'b', 'c'] >>> cat.repeat([1, 2, 3]) ['a', 'b', 'b', 'c', 'c', 'c'] Categories (3, str): ['a', 'b', 'c']",
     "markdown_length": 1201,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.repeat — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.repeat — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.171882",
+    "crawled_at": "2026-08-28T15:51:46.881896",
     "type": "webpage"
 }

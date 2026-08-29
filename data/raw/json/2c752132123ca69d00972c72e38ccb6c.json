@@ -2,7 +2,7 @@
     "id": "2c752132123ca69d00972c72e38ccb6c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.frequencies.to_offset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.frequencies.to_offset.html",
-    "title": "pandas.tseries.frequencies.to_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.tseries.frequencies.to_offset — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.frequencies.to_offset#\n\n- \npandas.tseries.frequencies.to_offset(*freq* ,*is_period=False* )#\n- Return DateOffset object from string or datetime.timedelta object. This function converts a frequency string (e.g. `\"5min\"` ,`\"1D1h\"` ,`\"2W\"` ) or a`datetime.timedelta` into a pandas`DateOffset` subclass.\nIt can also pass through existing`BaseOffset` instances unchanged.\n  - Parameters:\n    - **freq** str, datetime.timedelta, BaseOffset or None\n    - The frequency represented.\n    - **is_period** bool, default False\n    - Convert string denoting period frequency to corresponding offsets frequency if is_period=True.\n  - Returns:\n    - BaseOffset subclass or None\n  - Raises:\n    - ValueError\n    - If freq is an invalid frequency\n See also \n  - `BaseOffset`\n  - Standard kind of date increment used for a date range.\n Examples >>> from pandas.tseries.frequencies import to_offset >>> to_offset(\"5min\") <5 * Minutes> >>> to_offset(\"1D1h\") <25 * Hours> >>> to_offset(\"2W\") <2 * Weeks: weekday=6> >>> to_offset(\"2B\") <2 * BusinessDays> >>> to_offset(pd.Timedelta(days=1)) <24 * Hours> >>> to_offset(pd.offsets.Hour()) <Hour> Passing the parameter `is_period` equal to True, you can use a string\ndenoting period frequency:>>> freq = to_offset(freq=\"ME\", is_period=False) >>> freq.rule_code 'ME' >>> freq = to_offset(freq=\"M\", is_period=True) >>> freq.rule_code 'ME'",
     "markdown_length": 1378,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.frequencies.to_offset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.tseries.frequencies.to_offset — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:31.198023",
+    "crawled_at": "2026-08-28T15:52:31.341605",
     "type": "webpage"
 }

@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_indexer.html"
     },
-    "crawled_at": "2026-08-10T11:47:59.472635",
+    "crawled_at": "2026-08-28T19:42:28.564823",
     "type": "webpage"
 }

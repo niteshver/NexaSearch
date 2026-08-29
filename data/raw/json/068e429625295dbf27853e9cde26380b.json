@@ -2,7 +2,7 @@
     "id": "068e429625295dbf27853e9cde26380b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.dtypes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.dtypes.html",
-    "title": "pandas.DataFrame.dtypes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.dtypes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.dtypes#\n\n- property DataFrame.dtypes[source]#\n- Return the dtypes in the DataFrame. This returns a Series with the data type of each column. The result’s index is the original DataFrame’s columns. Columns with mixed types are stored with the `object` dtype. See\nthe User Guide for more.\n  - Returns:\n    - pandas.Series\n    - The data type of each column.\n See also \n  - `Series.dtypes`\n  - Return the dtype object of the underlying data.\n Examples >>> df = pd.DataFrame( ... { ... \"float\": [1.0], ... \"int\": [1], ... \"datetime\": [pd.Timestamp(\"20180310\")], ... \"string\": [\"foo\"], ... } ... ) >>> df.dtypes float float64 int int64 datetime datetime64[us] string str dtype: object",
     "markdown_length": 698,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.dtypes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.dtypes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:01.534253",
+    "crawled_at": "2026-08-28T15:46:10.751964",
     "type": "webpage"
 }

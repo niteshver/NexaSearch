@@ -2,7 +2,7 @@
     "id": "3087f3d2a24acf1dd4c6993f19f6835b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.to_pydatetime.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.to_pydatetime.html",
-    "title": "pandas.Timestamp.to_pydatetime — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.to_pydatetime — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.to_pydatetime#\n\n- \nTimestamp.to_pydatetime(*warn=True* )#\n- Convert a Timestamp object to a native Python datetime object. This method is useful for when you need to utilize a pandas Timestamp object in contexts where native Python datetime objects are expected or required. The conversion discards the nanoseconds component, and a warning can be issued in such cases if desired. \n  - Parameters:\n    - **warn** bool, default True\n    - If True, issues a warning when the timestamp includes nonzero nanoseconds, as these will be discarded during the conversion.\n  - Returns:\n    - datetime.datetime or NaT\n    - Returns a datetime.datetime object representing the timestamp, with year, month, day, hour, minute, second, and microsecond components. If the timestamp is NaT (Not a Time), returns NaT.\n See also \n  - `datetime.datetime`\n  - The standard Python datetime class that this method returns.\n  - `Timestamp.timestamp`\n  - Convert a Timestamp object to POSIX timestamp.\n  - `Timestamp.to_datetime64`\n  - Convert a Timestamp object to numpy.datetime64.\n Examples >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548') >>> ts.to_pydatetime() datetime.datetime(2020, 3, 14, 15, 32, 52, 192548) Analogous for `pd.NaT` :>>> pd.NaT.to_pydatetime() NaT",
     "markdown_length": 1267,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.to_pydatetime — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.to_pydatetime — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:30.460458",
+    "crawled_at": "2026-08-28T15:51:28.784759",
     "type": "webpage"
 }

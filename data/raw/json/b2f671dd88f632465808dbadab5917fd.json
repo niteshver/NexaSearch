@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.set_codes.html"
     },
-    "crawled_at": "2026-08-26T06:50:27.870658",
+    "crawled_at": "2026-08-28T20:35:01.050057",
     "type": "webpage"
 }

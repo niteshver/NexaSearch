@@ -2,7 +2,7 @@
     "id": "babf7e4f2da904f6810727a0b2867ed6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.to_frame.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.to_frame.html",
-    "title": "pandas.TimedeltaIndex.to_frame — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.TimedeltaIndex.to_frame — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.to_frame#\n\n- \nTimedeltaIndex.to_frame(*index=True* ,*name=<no_default>* )[source]#\n- Create a DataFrame with a column containing the Index. This method wraps the Index values into a single-column DataFrame, optionally preserving the original Index as the new DataFrame’s index. \n  - Parameters:\n    - **index** bool, default True\n    - Set the index of the returned DataFrame as the original Index.\n    - **name** Hashable, defaults to index.name\n    - The passed name should substitute for the index name (if it has one).\n  - Returns:\n    - DataFrame\n    - DataFrame containing the original Index data.\n See also \n  - `Index.to_series`\n  - Convert an Index to a Series.\n  - `Series.to_frame`\n  - Convert Series to DataFrame.\n Examples >>> idx = pd.Index([\"Ant\", \"Bear\", \"Cow\"], name=\"animal\") >>> idx.to_frame() animal animal Ant Ant Bear Bear Cow Cow By default, the original Index is reused. To enforce a new Index: >>> idx.to_frame(index=False) animal 0 Ant 1 Bear 2 Cow To override the name of the resulting column, specify name: >>> idx.to_frame(index=False, name=\"zoo\") zoo 0 Ant 1 Bear 2 Cow",
     "markdown_length": 1123,
@@ -251,14 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.to_frame — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.TimedeltaIndex.to_frame — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
-        "score": 0.05454545671289617
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:55.722600",
+    "crawled_at": "2026-08-28T15:51:05.505902",
     "type": "webpage"
 }

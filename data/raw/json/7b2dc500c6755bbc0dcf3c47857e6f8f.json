@@ -2,7 +2,7 @@
     "id": "7b2dc500c6755bbc0dcf3c47857e6f8f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.asfreq.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.asfreq.html",
-    "title": "pandas.api.typing.Resampler.asfreq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Resampler.asfreq — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.asfreq#\n\n- \nfinal Resampler.asfreq(*fill_value=None* )[source]#\n- Return the values at the new freq, essentially a reindex. This method selects data at the specified frequency without aggregation, useful for upsampling to a higher frequency or selecting specific time points. \n  - Parameters:\n    - **fill_value** scalar, optional\n    - Value to use for missing values, applied during upsampling (note this does not fill NaNs that already were present).\n  - Returns:\n    - DataFrame or Series\n    - Values at the specified freq.\n See also \n  - `Series.asfreq`\n  - Convert TimeSeries to specified frequency.\n  - `DataFrame.asfreq`\n  - Convert TimeSeries to specified frequency.\n Examples >>> ser = pd.Series( ... [1, 2, 3, 4], ... index=pd.DatetimeIndex( ... [\"2023-01-01\", \"2023-01-31\", \"2023-02-01\", \"2023-02-28\"] ... ), ... ) >>> ser 2023-01-01 1 2023-01-31 2 2023-02-01 3 2023-02-28 4 dtype: int64 >>> ser.resample(\"MS\").asfreq() 2023-01-01 1 2023-02-01 3 Freq: MS, dtype: int64",
     "markdown_length": 1011,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.asfreq — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Resampler.asfreq — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.409535",
+    "crawled_at": "2026-08-28T17:57:39.261349",
     "type": "webpage"
 }

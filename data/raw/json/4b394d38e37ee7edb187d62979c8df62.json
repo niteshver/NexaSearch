@@ -2,7 +2,7 @@
     "id": "4b394d38e37ee7edb187d62979c8df62",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.bar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.bar.html",
-    "title": "pandas.io.formats.style.Styler.bar — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.bar — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.bar#\n\n- \nStyler.bar(*subset=None* ,*axis=0* ,*** ,*color=None* ,*cmap=None* ,*width=100* ,*height=100* ,*align='mid'* ,*vmin=None* ,*vmax=None* ,*props='width: 10em;'* )[source]#\n- Draw bar chart in the cell backgrounds. Renders horizontal bars as CSS gradients within table cells, proportional to the underlying cell values. Colors can be customized with a single color, a positive/negative pair, or a colormap. \n  - Parameters:\n    - **subset** label, array-like, IndexSlice, optional\n    - A valid 2d input to DataFrame.loc[<subset>], or, in the case of a 1d input or single key, to DataFrame.loc[:, <subset>] where the columns are prioritised, to limit `data` to*before* applying the function.\n    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default 0\n    - Apply to each column ( `axis=0` or`'index'` ), to each row\n(`axis=1` or`'columns'` ), or to the entire DataFrame at once\nwith`axis=None` .\n    - **color** str or 2-tuple/list\n    - If a str is passed, the color is the same for both negative and positive numbers. If 2-tuple/list is used, the first element is the color_negative and the second is the color_positive (eg: [‘#d65f5f’, ‘#5fba7d’]).\n    - **cmap** str, matplotlib.cm.ColorMap\n    - A string name of a matplotlib Colormap, or a Colormap object. Cannot be used together with `color` .\n    - **width** float, default 100\n    - The percentage of the cell, measured from the left, in which to draw the bars, in [0, 100].\n    - **height** float, default 100\n    - The percentage height of the bar in the cell, centrally aligned, in [0,100].\n    - **align** str, int, float, callable, default ‘mid’\n    - How to align the bars within the cells relative to a width adjusted center. If string must be one of: \n      - ‘left’ : bars are drawn rightwards from the minimum data value.\n      - ‘right’ : bars are drawn leftwards from the maximum data value.\n      - ‘zero’ : a value of zero is located at the center of the cell.\n      - ‘mid’ : a value of (max-min)/2 is located at the center of the cell, or if all values are negative (positive) the zero is aligned at the right (left) of the cell.\n      - ‘mean’ : the mean value of the data is located at the center of the cell.\n If a float or integer is given this will indicate the center of the cell. If a callable should take a 1d or 2d array and return a scalar.\n    - **vmin** float, optional\n    - Minimum bar value, defining the left hand limit of the bar drawing range, lower values are clipped to vmin. When None (default): the minimum value of the data will be used.\n    - **vmax** float, optional\n    - Maximum bar value, defining the right hand limit of the bar drawing range, higher values are clipped to vmax. When None (default): the maximum value of the data will be used.\n    - **props** str, optional\n    - The base CSS of the cell that is extended to add the bar chart. Defaults to “width: 10em;”.\n  - Returns:\n    - Styler\n    - Contains list-like attribute with bar chart data as formatted CSS.\n See also \n  - `PlotAccessor.bar`\n  - Vertical bar plot.\n  - `PlotAccessor.line`\n  - Plot Series or DataFrame as lines.\n  - `PlotAccessor.pie`\n  - Generate a pie plot.\n Notes This section of the user guide: Table Visualization gives a number of examples for different settings and color coordination. Examples >>> df = pd.DataFrame({\"A\": [1, 2, 3, 4], \"B\": [3, 4, 5, 6]}) >>> df.style.bar(subset=[\"A\"], color=\"gray\")",
     "markdown_length": 3435,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.bar — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.bar — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:40.948932",
+    "crawled_at": "2026-08-28T17:59:14.728786",
     "type": "webpage"
 }

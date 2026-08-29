@@ -2,7 +2,7 @@
     "id": "0cf9398398356c3663d100f262ae8dc7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.ExponentialMovingWindow.sum.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.ExponentialMovingWindow.sum.html",
-    "title": "pandas.api.typing.ExponentialMovingWindow.sum — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.ExponentialMovingWindow.sum — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.ExponentialMovingWindow.sum#\n\n- \nExponentialMovingWindow.sum(*numeric_only=False* ,*engine=None* ,*engine_kwargs=None* )[source]#\n- Calculate the ewm (exponential weighted moment) sum. The weighting is controlled by the `com` ,`span` ,`halflife` , or`alpha` parameter specified when calling`DataFrame.ewm()` or`Series.ewm()` .\n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - **engine** str, default None\n      - `'cython'` : Runs the operation through C-extensions from cython.\n      - `'numba'` : Runs the operation through JIT compiled code from numba.\n      - `None` : Defaults to`'cython'` or globally setting`compute.use_numba`\n    - **engine_kwargs** dict, default None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n      - For `'numba'` engine, the engine can accept`nogil` and`parallel` dictionary keys. The values must either be`True` or`False` . The default`engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}`\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.ewm`\n  - Calling ewm with Series data.\n  - `DataFrame.ewm`\n  - Calling ewm with DataFrames.\n  - `Series.sum`\n  - Aggregating sum for Series.\n  - `DataFrame.sum`\n  - Aggregating sum for DataFrame.\n Notes See Numba engine and Numba (JIT compilation) for extended documentation and performance considerations for the Numba engine. Examples >>> ser = pd.Series([1, 2, 3, 4]) >>> ser.ewm(alpha=0.2).sum() 0 1.000 1 2.800 2 5.240 3 8.192 dtype: float64",
     "markdown_length": 1640,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.ExponentialMovingWindow.sum — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.ExponentialMovingWindow.sum — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:32.069373",
+    "crawled_at": "2026-08-28T17:57:36.252220",
     "type": "webpage"
 }

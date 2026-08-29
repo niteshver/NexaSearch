@@ -2,7 +2,7 @@
     "id": "43b8544edce6db5b37dc8975447071a0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.aggregate.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.aggregate.html",
-    "title": "pandas.DataFrame.aggregate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.aggregate — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.aggregate#\n\n- \nDataFrame.aggregate(*func=None* ,*axis=0* ,**args* ,***kwargs* )[source]#\n- Aggregate using one or more operations over the specified axis. This method allows combining multiple aggregation functions at once, such as `sum` ,`mean` , and`min` , and can apply them either\nper-column or per-row. It accepts functions as strings, callables,\nlists, or dictionaries mapping column labels to the desired\naggregation(s).\n  - Parameters:\n    - **func** function, str, list or dict\n    - Function to use for aggregating the data. If a function, must either work when passed a DataFrame or when passed to DataFrame.apply. Accepted combinations are: \n      - function\n      - string function name\n      - list of functions and/or function names, e.g. `[np.sum, 'mean']`\n      - dict of axis labels -> functions, function names or list of such.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - If 0 or ‘index’: apply function to each column. If 1 or ‘columns’: apply function to each row.\n    - ***args**\n    - Positional arguments to pass to func.\n    - ****kwargs**\n    - Keyword arguments to pass to func.\n  - Returns:\n    - scalar, Series or DataFrame\n    - The return can be: \n      - scalar : when Series.agg is called with single function\n      - Series : when DataFrame.agg is called with a single function\n      - DataFrame : when DataFrame.agg is called with several functions\n See also \n  - `DataFrame.apply`\n  - Perform any type of operations.\n  - `DataFrame.transform`\n  - Perform transformation type operations.\n  - `DataFrame.groupby`\n  - Perform operations over groups.\n  - `DataFrame.resample`\n  - Perform operations over resampled bins.\n  - `DataFrame.rolling`\n  - Perform operations over rolling window.\n  - `DataFrame.expanding`\n  - Perform operations over expanding window.\n  - `core.window.ewm.ExponentialMovingWindow`\n  - Perform operation over exponential weighted window.\n Notes The aggregation operations are always performed over an axis, either the index (default) or the column axis. This behavior is different from numpy aggregation functions (mean, median, prod, sum, std, var), where the default is to compute the aggregation of the flattened array, e.g., `numpy.mean(arr_2d)` as opposed to`numpy.mean(arr_2d, axis=0)` .agg is an alias for aggregate. Use the alias. Functions that mutate the passed object can produce unexpected behavior or errors and are not supported. See Mutating with User Defined Function (UDF) methods for more details. A passed user-defined-function will be passed a Series for evaluation. If `func` defines an index relabeling,`axis` must be`0` or`index` .Examples >>> df = pd.DataFrame( ... [[1, 2, 3], [4, 5, 6], [7, 8, 9], [np.nan, np.nan, np.nan]], ... columns=[\"A\", \"B\", \"C\"], ... ) Aggregate these functions over the rows. >>> df.agg([\"sum\", \"min\"]) A B C sum 12.0 15.0 18.0 min 1.0 2.0 3.0 Different aggregations per column. >>> df.agg({\"A\": [\"sum\", \"min\"], \"B\": [\"min\", \"max\"]}) A B sum 12.0 NaN min 1.0 2.0 max NaN 8.0 Aggregate different functions over the columns and rename the index of the resulting DataFrame. >>> df.agg(x=(\"A\", \"max\"), y=(\"B\", \"min\"), z=(\"C\", \"mean\")) A B C x 7.0 NaN NaN y NaN 2.0 NaN z NaN NaN 6.0 Aggregate over the columns. >>> df.agg(\"mean\", axis=\"columns\") 0 2.0 1 5.0 2 8.0 3 NaN dtype: float64",
     "markdown_length": 3325,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.aggregate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.aggregate — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.220248",
+    "crawled_at": "2026-08-28T15:45:57.247397",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "a6e4333f096c8386a905db70538cb60a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.encode.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.encode.html",
-    "title": "pandas.Series.str.encode — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.encode — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.encode#\n\n- \nSeries.str.encode(*encoding* ,*errors='strict'* )[source]#\n- Encode character string in the Series/Index using indicated encoding. Equivalent to `str.encode()` .\n  - Parameters:\n    - **encoding** str\n    - Specifies the encoding to be used.\n    - **errors** str, optional\n    - Specifies the error handling scheme. Possible values are those supported by `str.encode()` .\n  - Returns:\n    - Series/Index of objects\n    - A Series or Index with strings encoded into bytes.\n See also \n  - `Series.str.decode`\n  - Decodes bytes into strings in a Series/Index.\n Examples >>> ser = pd.Series([\"cow\", \"123\", \"()\"]) >>> ser.str.encode(encoding=\"ascii\") 0 b'cow' 1 b'123' 2 b'()' dtype: object",
     "markdown_length": 717,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.encode — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.encode — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.121914",
+    "crawled_at": "2026-08-28T15:50:17.660513",
     "type": "webpage"
 }

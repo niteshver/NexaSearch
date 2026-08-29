@@ -2,7 +2,7 @@
     "id": "97810cc5977505c55e59cc6e6a6d9587",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sem.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.sem.html",
-    "title": "pandas.Series.sem — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.sem — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.sem#\n\n- \nSeries.sem(*** ,*axis=None* ,*skipna=True* ,*ddof=1* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased standard error of the mean over requested axis. Normalized by N-1 by default. This can be changed using the ddof argument \n  - Parameters:\n    - **axis** {index (0)}\n    - This parameter is unused and defaults to 0.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire row/column is NA, the result will be NA.\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is N - ddof, where N represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Not implemented for Series.\n    - ****kwargs**\n    - Additional keywords have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - scalar\n    - Unbiased standard error of the mean over requested axis.\n See also \n  - `scipy.stats.sem`\n  - Compute standard error of the mean.\n  - `Series.std`\n  - Return sample standard deviation over requested axis.\n  - `Series.var`\n  - Return unbiased variance over requested axis.\n  - `Series.mean`\n  - Return the mean of the values over the requested axis.\n  - `Series.median`\n  - Return the median of the values over the requested axis.\n  - `Series.mode`\n  - Return the mode(s) of the Series.\n Examples >>> s = pd.Series([1, 2, 3]) >>> round(s.sem(), 6) 0.57735",
     "markdown_length": 1486,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.sem — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.sem — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:22.034938",
+    "crawled_at": "2026-08-28T15:50:08.164341",
     "type": "webpage"
 }

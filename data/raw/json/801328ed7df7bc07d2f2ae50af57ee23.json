@@ -2,7 +2,7 @@
     "id": "801328ed7df7bc07d2f2ae50af57ee23",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.from_custom_template.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.from_custom_template.html",
-    "title": "pandas.io.formats.style.Styler.from_custom_template — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.formats.style.Styler.from_custom_template — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.from_custom_template#\n\n- \nclassmethod Styler.from_custom_template(*searchpath* ,*html_table=None* ,*html_style=None* )[source]#\n- Factory function for creating a subclass of `Styler` .Uses custom templates and Jinja environment. \n  - Parameters:\n    - **searchpath** str or list\n    - Path or paths of directories containing the templates.\n    - **html_table** str\n    - Name of your custom template to replace the html_table template.\n    - **html_style** str\n    - Name of your custom template to replace the html_style template.\n  - Returns:\n    - **MyStyler** subclass of Styler\n    - Has the correct `env` ,`template_html` ,`template_html_table` and`template_html_style` class attributes set.\n See also \n  - `Styler.export`\n  - Export the styles applied to the current Styler.\n  - `Styler.use`\n  - Set the styles on the current Styler.\n Examples >>> from pandas.io.formats.style import Styler >>> EasyStyler = Styler.from_custom_template( ... \"path/to/template\", ... \"template.tpl\", ... ) >>> df = pd.DataFrame({\"A\": [1, 2]}) >>> EasyStyler(df) Please see: Table Visualization for more examples.",
     "markdown_length": 1133,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.from_custom_template — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.formats.style.Styler.from_custom_template — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.057032",
+    "crawled_at": "2026-08-28T17:59:18.466421",
     "type": "webpage"
 }

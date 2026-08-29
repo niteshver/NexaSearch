@@ -2,7 +2,7 @@
     "id": "88910797bcae7af005afce40706142a3",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html",
-    "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.length#\n\n- property IntervalIndex.length[source]#\n- Calculate the length of each interval in the IntervalIndex. This method returns a new Index containing the lengths of each interval in the IntervalIndex. The length of an interval is defined as the difference between its end and its start. \n  - Returns:\n    - Index\n    - An Index containing the lengths of each interval.\n See also \n  - `Interval.length`\n  - Return the length of the Interval.\n Examples >>> intervals = pd.IntervalIndex.from_arrays( ... [1, 2, 3], [4, 5, 6], closed=\"right\" ... ) >>> intervals.length Index([3, 3, 3], dtype='int64') >>> intervals = pd.IntervalIndex.from_tuples([(1, 5), (6, 10), (11, 15)]) >>> intervals.length Index([4, 4, 4], dtype='int64')",
     "markdown_length": 751,
@@ -10,18 +10,6 @@
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
+            "text": "General functions",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.IntervalIndex.length — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.length.html"
     },
-    "crawled_at": "2026-08-26T06:49:51.271063",
+    "crawled_at": "2026-08-28T20:32:36.931972",
     "type": "webpage"
 }

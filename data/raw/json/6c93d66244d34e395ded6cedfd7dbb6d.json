@@ -2,7 +2,7 @@
     "id": "6c93d66244d34e395ded6cedfd7dbb6d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.count.html",
-    "title": "pandas.DataFrame.count — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.count — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.count#\n\n- \nDataFrame.count(*axis=0* ,*numeric_only=False* )[source]#\n- Count non-NA cells for each column or row. The values None, NaN, NaT, `pandas.NA` are considered NA.\n  - Parameters:\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - If 0 or ‘index’ counts are generated for each column. If 1 or ‘columns’ counts are generated for each row.\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data.\n  - Returns:\n    - Series\n    - For each column/row the number of non-NA/null entries.\n See also \n  - `Series.count`\n  - Number of non-NA elements in a Series.\n  - `DataFrame.value_counts`\n  - Count unique combinations of columns.\n  - `DataFrame.shape`\n  - Number of DataFrame rows and columns (including NA elements).\n  - `DataFrame.isna`\n  - Boolean same-sized DataFrame showing places of NA elements.\n Examples Constructing DataFrame from a dictionary: >>> df = pd.DataFrame( ... { ... \"Person\": [\"John\", \"Myla\", \"Lewis\", \"John\", \"Myla\"], ... \"Age\": [24.0, np.nan, 21.0, 33, 26], ... \"Single\": [False, True, True, True, False], ... } ... ) >>> df Person Age Single 0 John 24.0 False 1 Myla NaN True 2 Lewis 21.0 True 3 John 33.0 True 4 Myla 26.0 False Notice the uncounted NA values: >>> df.count() Person 5 Age 4 Single 5 dtype: int64 Counts for each **row** :>>> df.count(axis=\"columns\") 0 3 1 2 2 3 3 3 4 3 dtype: int64",
     "markdown_length": 1392,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.count — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.count — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.value_counts.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:01.091094",
+    "crawled_at": "2026-08-28T15:46:06.224085",
     "type": "webpage"
 }

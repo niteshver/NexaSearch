@@ -2,7 +2,7 @@
     "id": "906fdda8f524b2289ac09588fff12065",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_signed_integer_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_signed_integer_dtype.html",
-    "title": "pandas.api.types.is_signed_integer_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_signed_integer_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_signed_integer_dtype#\n\n- \npandas.api.types.is_signed_integer_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of a signed integer dtype. Unlike in is_any_int_dtype, timedelta64 instances will return False. The nullable Integer dtypes (e.g. pandas.Int64Dtype) are also considered as integer by this function. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of a signed integer dtype and not an instance of timedelta64.\n See also \n  - `api.types.is_integer_dtype`\n  - Check whether the provided array or dtype is of an integer dtype.\n  - `api.types.is_numeric_dtype`\n  - Check whether the provided array or dtype is of a numeric dtype.\n  - `api.types.is_unsigned_integer_dtype`\n  - Check whether the provided array or dtype is of an unsigned integer dtype.\n Examples >>> from pandas.api.types import is_signed_integer_dtype >>> is_signed_integer_dtype(str) False >>> is_signed_integer_dtype(int) True >>> is_signed_integer_dtype(float) False >>> is_signed_integer_dtype(np.uint64) # unsigned False >>> is_signed_integer_dtype(\"int8\") True >>> is_signed_integer_dtype(\"Int8\") True >>> is_signed_integer_dtype(pd.Int8Dtype) True >>> is_signed_integer_dtype(np.datetime64) False >>> is_signed_integer_dtype(np.timedelta64) False >>> is_signed_integer_dtype(np.array([\"a\", \"b\"])) False >>> is_signed_integer_dtype(pd.Series([1, 2])) True >>> is_signed_integer_dtype(np.array([], dtype=\"m8[ns]\")) False >>> is_signed_integer_dtype(pd.Index([1, 2.0])) # float False >>> is_signed_integer_dtype(np.array([1, 2], dtype=np.uint32)) # unsigned False",
     "markdown_length": 1706,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_signed_integer_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_signed_integer_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:15.476760",
+    "crawled_at": "2026-08-28T15:52:06.011858",
     "type": "webpage"
 }

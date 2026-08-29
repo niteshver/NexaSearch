@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_slice_bound.html"
     },
-    "crawled_at": "2026-08-26T06:49:59.857527",
+    "crawled_at": "2026-08-28T19:43:32.598779",
     "type": "webpage"
 }

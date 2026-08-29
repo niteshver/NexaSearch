@@ -2,7 +2,7 @@
     "id": "748a19520b36b094e949eac2c9d9b920",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.period_range.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.period_range.html",
-    "title": "pandas.period_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.period_range — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.period_range#\n\n- \npandas.period_range(*start=None* ,*end=None* ,*periods=None* ,*freq=None* ,*name=None* )[source]#\n- Return a fixed frequency PeriodIndex. The day (calendar) is the default frequency. \n  - Parameters:\n    - **start** str, datetime, date, pandas.Timestamp, or period-like, default None\n    - Left bound for generating periods.\n    - **end** str, datetime, date, pandas.Timestamp, or period-like, default None\n    - Right bound for generating periods.\n    - **periods** int, default None\n    - Number of periods to generate.\n    - **freq** str or DateOffset, optional\n    - Frequency alias. By default the freq is taken from start or end if those are Period objects. Otherwise, the default is `\"D\"` for\ndaily frequency.\n    - **name** str, default None\n    - Name of the resulting PeriodIndex.\n  - Returns:\n    - PeriodIndex\n    - A PeriodIndex of fixed frequency periods.\n See also \n  - `date_range`\n  - Returns a fixed frequency DatetimeIndex.\n  - `Period`\n  - Represents a period of time.\n  - `PeriodIndex`\n  - Immutable ndarray holding ordinal values indicating regular periods in time.\n Notes Of the three parameters: `start` ,`end` , and`periods` , exactly two\nmust be specified.To learn more about the frequency strings, please see this link. Examples >>> pd.period_range(start=\"2017-01-01\", end=\"2018-01-01\", freq=\"M\") PeriodIndex(['2017-01', '2017-02', '2017-03', '2017-04', '2017-05', '2017-06', '2017-07', '2017-08', '2017-09', '2017-10', '2017-11', '2017-12', '2018-01'], dtype='period[M]') If `start` or`end` are`Period` objects, they will be used as anchor\nendpoints for a`PeriodIndex` with frequency matching that of the`period_range` constructor.>>> pd.period_range( ... start=pd.Period(\"2017Q1\", freq=\"Q\"), ... end=pd.Period(\"2017Q2\", freq=\"Q\"), ... freq=\"M\", ... ) PeriodIndex(['2017-03', '2017-04', '2017-05', '2017-06'], dtype='period[M]')",
     "markdown_length": 1883,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.period_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.period_range — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/internals.html"
     },
-    "crawled_at": "2026-08-26T06:50:32.483395",
+    "crawled_at": "2026-08-28T15:52:22.649427",
     "type": "webpage"
 }

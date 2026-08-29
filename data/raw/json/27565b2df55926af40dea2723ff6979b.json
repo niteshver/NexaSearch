@@ -2,7 +2,7 @@
     "id": "27565b2df55926af40dea2723ff6979b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.div.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.div.html",
-    "title": "pandas.Series.div — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.div — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.div#\n\n- \nSeries.div(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Floating division of series and other, element-wise (binary operator truediv). Equivalent to `series / other` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** Series or scalar value\n    - Series with which to compute division.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** scalar or None, default None\n    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.rtruediv`\n  - Reverse of the Floating division operator, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan], index=[\"a\", \"b\", \"c\", \"d\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=[\"a\", \"b\", \"d\", \"e\"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.divide(b, fill_value=0) a 1.0 b inf c inf d 0.0 e NaN dtype: float64",
     "markdown_length": 1378,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.div — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.div — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:13.206666",
+    "crawled_at": "2026-08-28T15:49:04.583154",
     "type": "webpage"
 }

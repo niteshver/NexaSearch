@@ -2,7 +2,7 @@
     "id": "7db31fb7040a35f53ab6158d753316f8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.isin.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.isin.html",
-    "title": "pandas.Index.isin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.isin — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.isin#\n\n- \nIndex.isin(*values* ,*level=None* )[source]#\n- Return a boolean array where the index values are in values. Compute boolean array of whether each index value is found in the passed set of values. The length of the returned boolean array matches the length of the index. \n  - Parameters:\n    - **values** set or list-like\n    - Sought values.\n    - **level** str or int, optional\n    - Name or position of the index level to use (if the index is a MultiIndex).\n  - Returns:\n    - np.ndarray[bool]\n    - NumPy array of boolean values.\n See also \n  - `Series.isin`\n  - Same for Series.\n  - `DataFrame.isin`\n  - Same method for DataFrames.\n Notes In the case of MultiIndex you must either specify values as a list-like object containing tuples that are the same length as the number of levels, or specify level. Otherwise it will raise a `ValueError` .If level is specified: \n  - if it is the name of one *and only one* index level, use that level;\n  - otherwise it should be a number indicating level position.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') Check whether each index value in a list of values. >>> idx.isin([1, 4]) array([ True, False, False]) >>> midx = pd.MultiIndex.from_arrays( ... [[1, 2, 3], [\"red\", \"blue\", \"green\"]], names=[\"number\", \"color\"] ... ) >>> midx MultiIndex([(1, 'red'), (2, 'blue'), (3, 'green')], names=['number', 'color']) Check whether the strings in the ‘color’ level of the MultiIndex are in a list of colors. >>> midx.isin([\"red\", \"orange\", \"yellow\"], level=\"color\") array([ True, False, False]) To check across the levels of a MultiIndex, pass a list of tuples: >>> midx.isin([(1, \"red\"), (3, \"red\")]) array([ True, False, False])",
     "markdown_length": 1728,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.isin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.isin — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:49.398425",
+    "crawled_at": "2026-08-28T15:47:44.191148",
     "type": "webpage"
 }

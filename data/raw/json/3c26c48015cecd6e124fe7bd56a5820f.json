@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.rename_categories.html"
     },
-    "crawled_at": "2026-08-26T06:50:26.718651",
+    "crawled_at": "2026-08-28T20:46:42.017469",
     "type": "webpage"
 }

@@ -2,10 +2,10 @@
     "id": "a94583cb9586cec558af3f0a270d1fb8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.plot_params.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.plot_params.html",
-    "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.plotting.plot_params#\n\n- pandas.plotting.plot_params = {'xaxis.compat': False}#\n- Stores pandas plotting options. Allows for parameter aliasing so you can just use parameter names that are the same as the plot function parameters, but is stored in a canonical format that makes it easy to breakdown into groups later. See also \n  - `plotting.register_matplotlib_converters`\n  - Register pandas formatters and converters with matplotlib.\n  - `plotting.bootstrap_plot`\n  - Bootstrap plot on mean, median and mid-range statistics.\n  - `plotting.autocorrelation_plot`\n  - Autocorrelation plot for time series.\n  - `plotting.lag_plot`\n  - Lag plot for time series.\n Examples >>> np.random.seed(42) >>> df = pd.DataFrame( ... {\"A\": np.random.randn(10), \"B\": np.random.randn(10)}, ... index=pd.date_range(\"1/1/2000\", freq=\"4MS\", periods=10), ... ) >>> with pd.plotting.plot_params.use(\"x_compat\", True): ... _ = df[\"A\"].plot(color=\"r\") ... _ = df[\"B\"].plot(color=\"g\")",
-    "markdown_length": 969,
+    "markdown": "# pandas.plotting.plot_params#\n\n- pandas.plotting.plot_params = {'xaxis.compat': False}#\n- Stores pandas plotting options. Allows for parameter aliasing so you can just use parameter names that are the same as the plot function parameters, but is stored in a canonical format that makes it easy to breakdown into groups later. See also \n  - `plotting.register_matplotlib_converters`\n  - Register pandas formatters and converters with matplotlib.\n  - `plotting.bootstrap_plot`\n  - Bootstrap plot on mean, median and mid-range statistics.\n  - `plotting.autocorrelation_plot`\n  - Autocorrelation plot for time series.\n  - `plotting.lag_plot`\n  - Lag plot for time series.\n Examples >>> rng = np.random.default_rng(42) >>> df = pd.DataFrame( ... {\"A\": rng.standard_normal(10), \"B\": rng.standard_normal(10)}, ... index=pd.date_range(\"1/1/2000\", freq=\"4MS\", periods=10), ... ) >>> with pd.plotting.plot_params.use(\"x_compat\", True): ... _ = df[\"A\"].plot(color=\"r\") ... _ = df[\"B\"].plot(color=\"g\")",
+    "markdown_length": 990,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.plot_params.html",
@@ -254,7 +254,7 @@
             "src": "../../_images/pandas-plotting-plot_params-1.png",
             "data": "",
             "alt": "../../_images/pandas-plotting-plot_params-1.png",
-            "desc": "pandas.plotting.plot_params = {'xaxis.compat': False}#\nStores pandas plotting options.\nAllows for parameter aliasing so you can just use parameter names that are\nthe same as the plot function parameters, but is stored in a canonical\nformat that makes it easy to breakdown into groups later.\n\nSee also\n\nplotting.register_matplotlib_convertersRegister pandas formatters and converters with matplotlib.\n\nplotting.bootstrap_plotBootstrap plot on mean, median and mid-range statistics.\n\nplotting.autocorrelation_plotAutocorrelation plot for time series.\n\nplotting.lag_plotLag plot for time series.\n\n\n\nExamples\n>>> np.random.seed(42)\n>>> df = pd.DataFrame(\n...     {\"A\": np.random.randn(10), \"B\": np.random.randn(10)},\n...     index=pd.date_range(\"1/1/2000\", freq=\"4MS\", periods=10),\n... )\n>>> with pd.plotting.plot_params.use(\"x_compat\", True):\n...     _ = df[\"A\"].plot(color=\"r\")\n...     _ = df[\"B\"].plot(color=\"g\")\n\n      \n  Copy to clipboard",
+            "desc": "pandas.plotting.plot_params = {'xaxis.compat': False}#\nStores pandas plotting options.\nAllows for parameter aliasing so you can just use parameter names that are\nthe same as the plot function parameters, but is stored in a canonical\nformat that makes it easy to breakdown into groups later.\n\nSee also\n\nplotting.register_matplotlib_convertersRegister pandas formatters and converters with matplotlib.\n\nplotting.bootstrap_plotBootstrap plot on mean, median and mid-range statistics.\n\nplotting.autocorrelation_plotAutocorrelation plot for time series.\n\nplotting.lag_plotLag plot for time series.\n\n\n\nExamples\n>>> rng = np.random.default_rng(42)\n>>> df = pd.DataFrame(\n...     {\"A\": rng.standard_normal(10), \"B\": rng.standard_normal(10)},\n...     index=pd.date_range(\"1/1/2000\", freq=\"4MS\", periods=10),\n... )\n>>> with pd.plotting.plot_params.use(\"x_compat\", True):\n...     _ = df[\"A\"].plot(color=\"r\")\n...     _ = df[\"B\"].plot(color=\"g\")\n\n      \n  Copy to clipboard",
             "score": 4,
             "type": "image",
             "group_id": 2,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.plotting.plot_params — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:48:14.207413",
+    "crawled_at": "2026-08-28T15:52:26.429419",
     "type": "webpage"
 }

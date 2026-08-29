@@ -2,7 +2,7 @@
     "id": "f222f51ae736d9d25a229ce942f256fc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.hist.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.hist.html",
-    "title": "pandas.api.typing.SeriesGroupBy.hist — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.hist — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.hist#\n\n- \nSeriesGroupBy.hist(*by=None* ,*ax=None* ,*grid=True* ,*xlabelsize=None* ,*xrot=None* ,*ylabelsize=None* ,*yrot=None* ,*figsize=None* ,*bins=10* ,*backend=None* ,*legend=False* ,***kwargs* )[source]#\n- Draw histogram for each group’s values using `Series.hist()` API.A separate histogram subplot is generated for each group, making it easy to visually compare the distribution of values across groups. \n  - Parameters:\n    - **by** object, optional\n    - Grouping key.\n    - **ax** matplotlib.axes.Axes, optional\n    - Axis to draw the histogram on.\n    - **grid** bool, default True\n    - Show axis grid lines.\n    - **xlabelsize** int, default None\n    - X axis label size.\n    - **xrot** float, default None\n    - Rotation for x ticks.\n    - **ylabelsize** int, default None\n    - Y axis label size.\n    - **yrot** float, default None\n    - Rotation for y ticks.\n    - **figsize** tuple, optional\n    - Figure size in inches.\n    - **bins** int or sequence, default 10\n    - Number of histogram bins or bin edges.\n    - **backend** str or callable or None, optional\n    - Plotting backend to use (e.g. ‘matplotlib’). If None, use the default plotting backend.\n    - **legend** bool, default False\n    - Whether to draw the legend.\n    - ****kwargs**\n    - Additional keyword arguments passed to `Series.hist()` .\n  - Returns:\n    - matplotlib.axes.Axes or ndarray of Axes\n    - The returned matplotlib axes or array of axes depending on input.\n See also \n  - `Series.hist`\n  - Equivalent histogram plotting method on Series.\n Examples >>> df = pd.DataFrame({\"val\": [1, 2, 2, 3, 3, 3]}, index=[0, 0, 1, 1, 2, 2]) >>> g = df[\"val\"].groupby([0, 0, 1, 1, 2, 2]) >>> g.hist()",
     "markdown_length": 1716,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.hist — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.hist — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:50:57.587286",
+    "crawled_at": "2026-08-28T17:58:18.717038",
     "type": "webpage"
 }

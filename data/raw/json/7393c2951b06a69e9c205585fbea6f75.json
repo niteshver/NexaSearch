@@ -2,7 +2,7 @@
     "id": "7393c2951b06a69e9c205585fbea6f75",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.cov.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.cov.html",
-    "title": "pandas.api.typing.SeriesGroupBy.cov — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.cov — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.cov#\n\n- \nSeriesGroupBy.cov(*other* ,*min_periods=None* ,*ddof=1* )[source]#\n- Compute covariance between each group and another Series. This method computes the sample covariance between each group’s values and the corresponding values in `other` .\n  - Parameters:\n    - **other** Series\n    - Series to compute covariance with.\n    - **min_periods** int, optional\n    - Minimum number of observations required per pair of columns to have a valid result.\n    - **ddof** int, optional\n    - Delta degrees of freedom for variance calculation.\n  - Returns:\n    - Series\n    - Covariance value for each group.\n See also \n  - `Series.cov`\n  - Equivalent method on `Series` .\n Examples >>> s = pd.Series([1, 2, 3, 4], index=[0, 0, 1, 1]) >>> g = s.groupby([0, 0, 1, 1]) >>> g.cov()",
     "markdown_length": 809,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.cov — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.cov — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:35.159221",
+    "crawled_at": "2026-08-28T17:58:08.782765",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "a0f65e88592061ca915590081a909509",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.second.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.second.html",
-    "title": "pandas.PeriodIndex.second — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.PeriodIndex.second — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.second#\n\n- property PeriodIndex.second[source]#\n- The second of the period. Returns the second component for each period in the index. See also \n  - `PeriodIndex.hour`\n  - The hour of the period.\n  - `PeriodIndex.minute`\n  - The minute of the period.\n  - `PeriodIndex.to_timestamp`\n  - Cast to DatetimeArray/Index.\n Examples >>> idx = pd.PeriodIndex([\"2023-01-01 10:00:30\", ... \"2023-01-01 10:00:31\"], freq='s') >>> idx.second Index([30, 31], dtype='int64')",
     "markdown_length": 478,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.second — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.PeriodIndex.second — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:54.453485",
+    "crawled_at": "2026-08-28T15:48:37.970517",
     "type": "webpage"
 }

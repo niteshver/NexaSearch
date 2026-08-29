@@ -2,7 +2,7 @@
     "id": "4707044d5e6ab0079edb3c2ab188b9b3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.set_codes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.set_codes.html",
-    "title": "pandas.MultiIndex.set_codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.MultiIndex.set_codes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.set_codes#\n\n- \nMultiIndex.set_codes(*codes* ,*** ,*level=None* ,*verify_integrity=True* )[source]#\n- Set new codes on MultiIndex. Defaults to returning new index. The codes map each index entry to its position in the corresponding level array. This method returns a new MultiIndex with the updated codes. \n  - Parameters:\n    - **codes** sequence or list of sequence\n    - New codes to apply.\n    - **level** int, level name, or sequence of int/level names (default None)\n    - Level(s) to set (None for all levels).\n    - **verify_integrity** bool, default True\n    - If True, checks that levels and codes are compatible.\n  - Returns:\n    - new index (of same type and class…etc) or None\n    - The same type as the caller or None if `inplace=True` .\n See also \n  - `MultiIndex.set_levels`\n  - Set new levels on MultiIndex.\n  - `MultiIndex.codes`\n  - Get the codes of the levels in the MultiIndex.\n  - `MultiIndex.levels`\n  - Get the levels of the MultiIndex.\n Examples >>> idx = pd.MultiIndex.from_tuples( ... [(1, \"one\"), (1, \"two\"), (2, \"one\"), (2, \"two\")], names=[\"foo\", \"bar\"] ... ) >>> idx MultiIndex([(1, 'one'), (1, 'two'), (2, 'one'), (2, 'two')], names=['foo', 'bar']) >>> idx.set_codes([[1, 0, 1, 0], [0, 0, 1, 1]]) MultiIndex([(2, 'one'), (1, 'one'), (2, 'two'), (1, 'two')], names=['foo', 'bar']) >>> idx.set_codes([1, 0, 1, 0], level=0) MultiIndex([(2, 'one'), (1, 'two'), (2, 'one'), (1, 'two')], names=['foo', 'bar']) >>> idx.set_codes([0, 0, 1, 1], level=\"bar\") MultiIndex([(1, 'one'), (1, 'one'), (2, 'two'), (2, 'two')], names=['foo', 'bar']) >>> idx.set_codes([[1, 0, 1, 0], [0, 0, 1, 1]], level=[0, 1]) MultiIndex([(2, 'one'), (1, 'one'), (2, 'two'), (1, 'two')], names=['foo', 'bar'])",
     "markdown_length": 1726,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.set_codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.MultiIndex.set_codes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:53.156174",
+    "crawled_at": "2026-08-28T15:48:18.339874",
     "type": "webpage"
 }

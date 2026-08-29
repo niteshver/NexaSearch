@@ -2,7 +2,7 @@
     "id": "a3366439f412c46e070aa4b1a7ce9a74",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.from_ordinals.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.from_ordinals.html",
-    "title": "pandas.PeriodIndex.from_ordinals — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.PeriodIndex.from_ordinals — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.from_ordinals#\n\n- \nclassmethod PeriodIndex.from_ordinals(*ordinals* ,*** ,*freq* ,*name=None* )[source]#\n- Construct a PeriodIndex from ordinals. Ordinals are integer offsets from the proleptic Gregorian epoch, interpreted according to the given frequency. \n  - Parameters:\n    - **ordinals** array-like of int\n    - The period offsets from the proleptic Gregorian epoch.\n    - **freq** str or period object\n    - One of pandas period strings or corresponding objects.\n    - **name** str, default None\n    - Name of the resulting PeriodIndex.\n  - Returns:\n    - PeriodIndex\n See also \n  - `PeriodIndex.from_fields`\n  - Construct a PeriodIndex from fields (year, month, day, etc.).\n  - `PeriodIndex.to_timestamp`\n  - Cast to DatetimeArray/Index.\n Examples >>> idx = pd.PeriodIndex.from_ordinals([-1, 0, 1], freq=\"Q\") >>> idx PeriodIndex(['1969Q4', '1970Q1', '1970Q2'], dtype='period[Q-DEC]')",
     "markdown_length": 911,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.from_ordinals — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.PeriodIndex.from_ordinals — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:54.059395",
+    "crawled_at": "2026-08-28T15:48:35.552218",
     "type": "webpage"
 }

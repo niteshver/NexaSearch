@@ -2,7 +2,7 @@
     "id": "6f16b588da597fa86047e22793e41020",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.microsecond.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.microsecond.html",
-    "title": "pandas.Timestamp.microsecond — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.microsecond — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.microsecond#\n\n- Timestamp.microsecond#\n- Return the microsecond of the Timestamp. Microseconds range from 0 through 999999 and represent the sub-second component of the Timestamp at microsecond resolution. \n  - Returns:\n    - int\n    - The microsecond of the Timestamp.\n See also \n  - `Timestamp.second`\n  - Return the second of the Timestamp.\n  - `Timestamp.minute`\n  - Return the minute of the Timestamp.\n Examples >>> ts = pd.Timestamp(\"2024-08-31 16:16:30.2304\") >>> ts.microsecond 230400",
     "markdown_length": 511,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.microsecond — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.microsecond — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:00.118415",
+    "crawled_at": "2026-08-28T15:51:20.215145",
     "type": "webpage"
 }

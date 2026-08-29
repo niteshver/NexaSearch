@@ -2,7 +2,7 @@
     "id": "582c74843d582a270d4a55988669a3b1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.equals.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.equals.html",
-    "title": "pandas.Series.equals — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.equals — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.equals#\n\n- \nSeries.equals(*other* )[source]#\n- Test whether two objects contain the same elements. This function allows two Series or DataFrames to be compared against each other to see if they have the same shape and elements. NaNs in the same location are considered equal. The row/column index do not need to have the same type, as long as the values are considered equal. Corresponding columns and index must be of the same dtype. \n  - Parameters:\n    - **other** Series or DataFrame\n    - The other Series or DataFrame to be compared with the first.\n  - Returns:\n    - bool\n    - True if all elements are the same in both objects, False otherwise.\n See also \n  - `Series.eq`\n  - Compare two Series objects of the same length and return a Series where each element is True if the element in each Series is equal, False otherwise.\n  - `DataFrame.eq`\n  - Compare two DataFrame objects of the same shape and return a DataFrame where each element is True if the respective element in each DataFrame is equal, False otherwise.\n  - `testing.assert_series_equal`\n  - Raises an AssertionError if left and right are not equal. Provides an easy interface to ignore inequality in dtypes, indexes and precision among others.\n  - `testing.assert_frame_equal`\n  - Like assert_series_equal, but targets DataFrames.\n  - `numpy.array_equal`\n  - Return True if two arrays have the same shape and elements, False otherwise.\n Examples >>> df = pd.DataFrame({1: [10], 2: [20]}) >>> df 1 2 0 10 20 DataFrames df and exactly_equal have the same types and values for their elements and column labels, which will return True. >>> exactly_equal = pd.DataFrame({1: [10], 2: [20]}) >>> exactly_equal 1 2 0 10 20 >>> df.equals(exactly_equal) True DataFrames df and different_column_type have the same element types and values, but have different types for the column labels, which will still return True. >>> different_column_type = pd.DataFrame({1.0: [10], 2.0: [20]}) >>> different_column_type 1.0 2.0 0 10 20 >>> df.equals(different_column_type) True DataFrames df and different_data_type have different types for the same values for their elements, and will return False even though their column labels are the same values and types. >>> different_data_type = pd.DataFrame({1: [10.0], 2: [20.0]}) >>> different_data_type 1 2 0 10.0 20.0 >>> df.equals(different_data_type) False DataFrames with NaN in the same locations compare equal. >>> df_nan1 = pd.DataFrame({\"a\": [1, np.nan], \"b\": [3, np.nan]}) >>> df_nan2 = pd.DataFrame({\"a\": [1, np.nan], \"b\": [3, np.nan]}) >>> df_nan1.equals(df_nan2) True If the NaN values are not in the same locations, they compare unequal. >>> df_nan3 = pd.DataFrame({\"a\": [1, np.nan], \"b\": [3, 4]}) >>> df_nan1.equals(df_nan3) False",
     "markdown_length": 2757,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.equals — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.equals — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.662180",
+    "crawled_at": "2026-08-28T15:49:29.206878",
     "type": "webpage"
 }

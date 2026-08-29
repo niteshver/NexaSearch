@@ -1,0 +1,22 @@
+{
+    "id": "6f23ddd3d73e77786f29f5b03dfbd23d",
+    "url": "https://pandas.pydata.org/pandas-docs/version/2.0/_sources/index.rst.txt",
+    "canonical_url": "https://pandas.pydata.org/pandas-docs/version/2.0/_sources/index.rst.txt",
+    "title": "https://pandas.pydata.org/pandas-docs/version/2.0/_sources/index.rst.txt",
+    "status": 200,
+    "markdown": "```\n:notoc:\n.. pandas documentation master file, created by\n.. module:: pandas\n********************\npandas documentation\n********************\n**Date**: |today| **Version**: |version|\n**Download documentation**: `Zipped HTML <pandas.zip>`__\n**Previous versions**: Documentation of previous pandas versions is available at\n`pandas.pydata.org <https://pandas.pydata.org/>`__.\n**Useful links**:\n`Binary Installers <https://pypi.org/project/pandas>`__ |\n`Source Repository <https://github.com/pandas-dev/pandas>`__ |\n`Issues & Ideas <https://github.com/pandas-dev/pandas/issues>`__ |\n`Q&A Support <https://stackoverflow.com/questions/tagged/pandas>`__ |\n`Mailing List <https://groups.google.com/g/pydata>`__\n:mod:`pandas` is an open source, BSD-licensed library providing high-performance,\neasy-to-use data structures and data analysis tools for the `Python <https://www.python.org/>`__\nprogramming language.\n.. panels::\n    :card: + intro-card text-center\n    :column: col-lg-6 col-md-6 col-sm-6 col-xs-12 d-flex\n    ---\n    :img-top: _static/index_getting_started.svg\n    Getting started\n    ^^^^^^^^^^^^^^^\n    New to *pandas*? Check out the getting started guides. They contain an\n    introduction to *pandas'* main concepts and links to additional tutorials.\n    +++\n    .. link-button:: getting_started\n            :type: ref\n            :text: To the getting started guides\n            :classes: btn-block btn-secondary stretched-link\n    ---\n    :img-top: _static/index_user_guide.svg\n    User guide\n    ^^^^^^^^^^\n    The user guide provides in-depth information on the\n    key concepts of pandas with useful background information and explanation.\n    +++\n    .. link-button:: user_guide\n            :type: ref\n            :text: To the user guide\n            :classes: btn-block btn-secondary stretched-link\n    ---\n    :img-top: _static/index_api.svg\n    API reference\n    ^^^^^^^^^^^^^\n    The reference guide contains a detailed description of\n    the pandas API. The reference describes how the methods work and which parameters can\n    be used. It assumes that you have an understanding of the key concepts.\n    +++\n    .. link-button:: api\n            :type: ref\n            :text: To the reference guide\n            :classes: btn-block btn-secondary stretched-link\n    ---\n    :img-top: _static/index_contribute.svg\n    Developer guide\n    ^^^^^^^^^^^^^^^\n    Saw a typo in the documentation? Want to improve\n    existing functionalities? The contributing guidelines will guide\n    you through the process of improving pandas.\n    +++\n    .. link-button:: development\n            :type: ref\n            :text: To the development guide\n            :classes: btn-block btn-secondary stretched-link\n.. toctree::\n    :maxdepth: 3\n    :hidden:\n    :titlesonly:\n    getting_started/index\n    user_guide/index\n    reference/index\n    development/index\n    whatsnew/index\n```",
+    "markdown_length": 2880,
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": null,
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "https://pandas.pydata.org/pandas-docs/version/2.0/"
+    },
+    "crawled_at": "2026-08-28T15:44:50.523098",
+    "type": "webpage"
+}

@@ -1,0 +1,22 @@
+{
+    "id": "5d2513b7d35a4fbf2ff3a0297b56b254",
+    "url": "http://intellabs.github.io/RiverTrail-interactive/",
+    "canonical_url": "http://intellabs.github.io/RiverTrail-interactive",
+    "title": "River Trail Interactive Shell",
+    "status": 200,
+    "markdown": "1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n10\n\n11\n\n12\n\n13\n\n14\n\n15\n\n16\n\n17\n\n18\n\n19\n\n20\n\n21\n\n22\n\n23\n\n24\n\n25\n\n/* Type some code here, then press the run button to load your code in the\n\n * console on the right. Below are some one-liners to get you started.\n\n */\n\n/* Create your first array: */\n\nvar first = new ParallelArray(1,2,3,4);\n\n/* Hit the run button and in the console, type \"first\" without quotes.\n\n * You will get the string representation of your first ParallelArray as output:\n\n * [1 2 3 4]\n\n */\n\n/* Or you can create the same array using a comprehension */\n\nvar second = new ParallelArray(4, function (idx) { return idx+1; });\n\n/* Some more idioms to play with: */\n\n/* Increment */\n\nvar inc_pa = first.map(function (val) {return val+1;});\n\n/* Add */\n\nvar add_pa = first.combine(function (idx,snd) {return this.get(idx)+snd.get(idx);}, second);\n\n/* Sum */\n\nvar sum_pa = first.reduce(function (a, b) {return a + b;});\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, l...\nRiver Trail not found. Enabling sequential mode...RiverTrail not found. Enabling sequential mode...\n>>>",
+    "markdown_length": 1088,
+    "internal_links": [],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "River Trail Interactive Shell",
+        "description": "Jsreeram.github.com : jsreeram.github.com",
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "http://intellabs.github.io/RiverTrail/tutorial/"
+    },
+    "crawled_at": "2026-08-28T15:40:00.960412",
+    "type": "webpage"
+}

@@ -1,0 +1,71 @@
+{
+    "id": "073a279b0b5103548eddd40205284cf7",
+    "url": "https://colah.github.io/contact.html",
+    "canonical_url": "https://colah.github.io/contact.html",
+    "title": "Contact - colah's blog",
+    "status": 200,
+    "markdown": "Toggle navigation\ncolah's blog\nBlog\nAbout\nContact\nContact\nYou can email me at christopherolah.co@gmail.com\nEnable JavaScript for footnotes, Disqus comments, and other cool stuff.",
+    "markdown_length": 178,
+    "internal_links": [
+        {
+            "href": "https://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/rss.xml",
+            "text": "RSS feed",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Contact - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "https://colah.github.io/personal/micromarriages/"
+    },
+    "crawled_at": "2026-08-28T15:38:57.982483",
+    "type": "webpage"
+}

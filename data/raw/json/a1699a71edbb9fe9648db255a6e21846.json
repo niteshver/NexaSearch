@@ -2,7 +2,7 @@
     "id": "a1699a71edbb9fe9648db255a6e21846",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.floor.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.floor.html",
-    "title": "pandas.Timedelta.floor — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.floor — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.floor#\n\n- \nTimedelta.floor(*freq* )#\n- Return a new Timedelta floored to this resolution. Truncates the Timedelta to the nearest multiple of the given frequency, rounding toward negative infinity. \n  - Parameters:\n    - **freq** str or timedelta\n    - Frequency string or timedelta value indicating the flooring resolution. It uses the same units as class constructor `Timedelta` .\n  - Returns:\n    - Timedelta\n    - A new Timedelta object floored to the specified resolution.\n See also \n  - `Timedelta.ceil`\n  - Ceil the Timedelta to the specified resolution.\n  - `Timedelta.round`\n  - Round the Timedelta to the specified resolution.\n  - `Timestamp.floor`\n  - Similar method for Timestamp objects.\n Examples >>> td = pd.Timedelta('1001ms') >>> td Timedelta('0 days 00:00:01.001000') >>> td.floor('s') Timedelta('0 days 00:00:01') `freq` can also be a timedelta value:>>> td.floor(freq=pd.Timedelta('1s')) Timedelta('0 days 00:00:01')",
     "markdown_length": 954,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.floor — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.floor — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:44.399150",
+    "crawled_at": "2026-08-28T15:50:52.802113",
     "type": "webpage"
 }

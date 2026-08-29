@@ -2,7 +2,7 @@
     "id": "b0649082baf324803458c06da16be8a2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.ExponentialMovingWindow.std.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.ExponentialMovingWindow.std.html",
-    "title": "pandas.api.typing.ExponentialMovingWindow.std — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.ExponentialMovingWindow.std — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.ExponentialMovingWindow.std#\n\n- \nExponentialMovingWindow.std(*bias=False* ,*numeric_only=False* )[source]#\n- Calculate the ewm (exponential weighted moment) standard deviation. The weighting is controlled by the `com` ,`span` ,`halflife` , or`alpha` parameter specified when calling`DataFrame.ewm()` or`Series.ewm()` .\n  - Parameters:\n    - **bias** bool, default False\n    - Use a standard estimation bias correction.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.ewm`\n  - Calling ewm with Series data.\n  - `DataFrame.ewm`\n  - Calling ewm with DataFrames.\n  - `Series.std`\n  - Aggregating std for Series.\n  - `DataFrame.std`\n  - Aggregating std for DataFrame.\n Examples >>> ser = pd.Series([1, 2, 3, 4]) >>> ser.ewm(alpha=0.2).std() 0 NaN 1 0.707107 2 0.995893 3 1.277320 dtype: float64",
     "markdown_length": 992,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.ExponentialMovingWindow.std — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.ExponentialMovingWindow.std — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:57.662783",
+    "crawled_at": "2026-08-28T17:57:35.793259",
     "type": "webpage"
 }

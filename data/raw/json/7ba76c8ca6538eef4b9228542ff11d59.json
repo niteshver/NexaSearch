@@ -2,7 +2,7 @@
     "id": "7ba76c8ca6538eef4b9228542ff11d59",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.quarter.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.quarter.html",
-    "title": "pandas.Series.dt.quarter — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.quarter — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.quarter#\n\n- Series.dt.quarter[source]#\n- The quarter of the date. This attribute returns the quarter of the year for each datetime value in the Series/Index. Quarter 1 includes January through March, quarter 2 includes April through June, quarter 3 includes July through September, and quarter 4 includes October through December. See also \n  - `DatetimeIndex.snap`\n  - Snap time stamps to nearest occurring frequency.\n  - `DatetimeIndex.time`\n  - Returns numpy array of datetime.time objects. The time part of the Timestamps.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"4/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-04-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.quarter 0 1 1 2 dtype: int32 For DatetimeIndex: >>> idx = pd.DatetimeIndex([\"1/1/2020 10:00:00+00:00\", ... \"2/1/2020 11:00:00+00:00\"]) >>> idx.quarter Index([1, 1], dtype='int32')",
     "markdown_length": 945,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.quarter — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.quarter — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:15.480954",
+    "crawled_at": "2026-08-28T15:49:19.677833",
     "type": "webpage"
 }

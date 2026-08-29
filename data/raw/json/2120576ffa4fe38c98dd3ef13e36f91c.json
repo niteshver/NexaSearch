@@ -2,7 +2,7 @@
     "id": "2120576ffa4fe38c98dd3ef13e36f91c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.extractall.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.extractall.html",
-    "title": "pandas.Series.str.extractall — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.extractall — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.extractall#\n\n- \nSeries.str.extractall(*pat* ,*flags=0* )[source]#\n- Extract capture groups in the regex pat as columns in DataFrame. For each subject string in the Series, extract groups from all matches of regular expression pat. When each subject string in the Series has exactly one match, extractall(pat).xs(0, level=’match’) is the same as extract(pat). \n  - Parameters:\n    - **pat** str\n    - Regular expression pattern with capturing groups.\n    - **flags** int, default 0 (no flags)\n    - A `re` module flag, for example`re.IGNORECASE` . These allow\nto modify regular expression matching for things like case, spaces,\netc. Multiple flags can be combined with the bitwise OR operator,\nfor example`re.IGNORECASE | re.MULTILINE` .\n  - Returns:\n    - DataFrame\n    - A `DataFrame` with one row for each match, and one column for each\ngroup. Its rows have a`MultiIndex` with first levels that come from\nthe subject`Series` . The last level is named ‘match’ and indexes the\nmatches in each item of the`Series` . Any capture group names in\nregular expression pat will be used for column names; otherwise capture\ngroup numbers will be used.\n See also \n  - `extract`\n  - Returns first match only (not all matches).\n Examples A pattern with one group will return a DataFrame with one column. Indices with no matches will not appear in the result. >>> s = pd.Series([\"a1a2\", \"b1\", \"c1\"], index=[\"A\", \"B\", \"C\"]) >>> s.str.extractall(r\"[ab](\\d)\") 0 match A 0 1 1 2 B 0 1 Capture group names are used for column names of the result. >>> s.str.extractall(r\"[ab](?P<digit>\\d)\") digit match A 0 1 1 2 B 0 1 A pattern with two groups will return a DataFrame with two columns. >>> s.str.extractall(r\"(?P<letter>[ab])(?P<digit>\\d)\") letter digit match A 0 a 1 1 a 2 B 0 b 1 Optional groups that do not match are NaN in the result. >>> s.str.extractall(r\"(?P<letter>[ab])?(?P<digit>\\d)\") letter digit match A 0 a 1 1 a 2 B 0 b 1 C 0 NaN 1",
     "markdown_length": 1946,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.extractall — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.extractall — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.279578",
+    "crawled_at": "2026-08-28T15:50:18.919313",
     "type": "webpage"
 }

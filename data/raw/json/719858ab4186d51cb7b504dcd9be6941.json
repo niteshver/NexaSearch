@@ -2,7 +2,7 @@
     "id": "719858ab4186d51cb7b504dcd9be6941",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.round.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.round.html",
-    "title": "pandas.Timedelta.round — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.round — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.round#\n\n- \nTimedelta.round(*freq* )#\n- Round the Timedelta to the specified resolution. Rounds the Timedelta value to the nearest multiple of the given frequency using half-even rounding. \n  - Parameters:\n    - **freq** str or timedelta\n    - Frequency string or timedelta value indicating the rounding resolution. It uses the same units as class constructor `Timedelta` .\n  - Returns:\n    - a new Timedelta rounded to the given resolution of freq\n  - Raises:\n    - ValueError if the freq cannot be converted\n See also \n  - `Timedelta.floor`\n  - Floor the Timedelta to the specified resolution.\n  - `Timedelta.ceil`\n  - Ceil the Timedelta to the specified resolution.\n  - `Timestamp.round`\n  - Similar method for Timestamp objects.\n Examples >>> td = pd.Timedelta('1001ms') >>> td Timedelta('0 days 00:00:01.001000') >>> td.round('s') Timedelta('0 days 00:00:01') `freq` can also be a timedelta value:>>> td.round(freq=pd.Timedelta('1s')) Timedelta('0 days 00:00:01')",
     "markdown_length": 986,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.round — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.round — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:29.859189",
+    "crawled_at": "2026-08-28T15:50:56.865052",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "66ac71e2e3eb0d427c5073995f271c74",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.first.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.first.html",
-    "title": "pandas.api.typing.Rolling.first — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Rolling.first — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.first#\n\n- \nRolling.first(*numeric_only=False* )[source]#\n- Calculate the rolling First (left-most) element of the window. Return the first observed value in each rolling window. This is useful for tracking the starting value of a window as it slides forward. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `GroupBy.first`\n  - Similar method for GroupBy objects.\n  - `Rolling.last`\n  - Method to get the last element in each window.\n Examples The example below will show a rolling calculation with a window size of three. >>> s = pd.Series(range(5)) >>> s.rolling(3).first() 0 NaN 1 NaN 2 0.0 3 1.0 4 2.0 dtype: float64",
     "markdown_length": 839,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.first — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Rolling.first — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.361508",
+    "crawled_at": "2026-08-28T17:57:55.557709",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "5f9247949ecbb3609bbe15495c2fc271",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.put.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.put.html",
-    "title": "pandas.HDFStore.put — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.put — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.put#\n\n- \nHDFStore.put(*key* ,*value* ,*format=None* ,*index=True* ,*append=False* ,*complib=None* ,*complevel=None* ,*min_itemsize=None* ,*nan_rep=None* ,*data_columns=None* ,*encoding=None* ,*errors='strict'* ,*track_times=<no_default>* ,*dropna=<no_default>* )[source]#\n- Store object in HDFStore. This method writes a pandas DataFrame or Series into an HDF5 file using either the fixed or table format. The table format allows additional operations like incremental appends and queries but may have performance trade-offs. The fixed format provides faster read/write operations but does not support appends or queries. \n  - Parameters:\n    - **key** str\n    - Key of object to store in file.\n    - **value** {Series, DataFrame}\n    - Value of object to store in file.\n    - **format** ‘fixed(f)|table(t)’, default is ‘fixed’\n    - Format to use when storing object in HDFStore. Value can be one of: \n      - `'fixed'`\n      - Fixed format. Fast writing/reading. Not-appendable, nor searchable.\n      - `'table'`\n      - Table format. Write as a PyTables Table structure which may perform worse but allow more flexible operations like searching / selecting subsets of the data.\n    - **index** bool, default True\n    - Write DataFrame index as a column.\n    - **append** bool, default False\n    - This will force Table format, append the input data to the existing.\n    - **complib** {‘zlib’, ‘lzo’, ‘bzip2’, ‘blosc’}, default None\n    - Compression library to use, only applied with `format='table'` .\nNone disables compression. See the`complib` parameter of`HDFStore` for the full list of supported compressors.\n    - **complevel** int, 0-9, default None\n    - Specifies a compression level for data. A value of 0 or None disables compression.\n    - **min_itemsize** int, dict, or None\n    - Minimum number of bytes reserved for object columns. If int, all columns reserve ‘min_itemsize’ bytes per stored value. If dict, specific columns reserve ‘min_itemsize’ bytes per stored value. Strings are stored as encoded bytes. Since some characters require multiple bytes, required size may be larger than string length.\n    - **nan_rep** str, default ‘nan’\n    - Str to use as str nan representation.\n    - **data_columns** list of columns or True, default None\n    - List of columns to create as data columns, or True to use all columns. See here.\n    - **encoding** str, default None\n    - Provide an encoding for strings.\n    - **errors** str, default ‘strict’\n    - The error handling scheme to use for encoding errors. The default is ‘strict’ meaning that encoding errors raise a UnicodeEncodeError. Other possible values are ‘ignore’, ‘replace’ and ‘xmlcharrefreplace’ as well as any other name registered with codecs.register_error that can handle UnicodeEncodeErrors.\n    - **track_times** bool, default True\n    - Parameter is propagated to ‘create_table’ method of ‘PyTables’. If set to False it enables to have the same h5 files (same hashes) independent on creation time. Deprecated since version 3.1.0: The default value of `track_times` will change from`True` to`False` in a future version. Pass`track_times=False` explicitly to silence this warning and get deterministic\nHDF5 files.\n    - **dropna** bool, default False, optional\n    - Remove missing values. Deprecated since version 3.1.0: The `dropna` keyword is deprecated and will be removed in a\nfuture version. Use`DataFrame.dropna()` before writing\ninstead.\n See also \n  - `HDFStore.info`\n  - Prints detailed information on the store.\n  - `HDFStore.get_storer`\n  - Returns the storer object for a key.\n Notes Writing an empty `DataFrame` or`Series` with`format='table'` or`append=True` is a no-op: the store is not modified and a`UserWarning` is emitted. Use`format='fixed'` to store an empty\nobject.Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df)",
     "markdown_length": 3925,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.put — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.put — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.910305",
+    "crawled_at": "2026-08-28T17:56:35.265144",
     "type": "webpage"
 }

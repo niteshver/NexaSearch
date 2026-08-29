@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.value_counts.html"
     },
-    "crawled_at": "2026-08-26T06:50:41.464521",
+    "crawled_at": "2026-08-28T20:07:09.704818",
     "type": "webpage"
 }

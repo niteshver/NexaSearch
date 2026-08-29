@@ -2,7 +2,7 @@
     "id": "ee6a48c32dc5cd561a5cf4d1976f0e45",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.minute.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.minute.html",
-    "title": "pandas.PeriodIndex.minute — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.PeriodIndex.minute — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.minute#\n\n- property PeriodIndex.minute[source]#\n- The minute of the period. Returns the minute component for each period in the index. See also \n  - `PeriodIndex.hour`\n  - The hour of the period.\n  - `PeriodIndex.second`\n  - The second of the period.\n  - `PeriodIndex.to_timestamp`\n  - Cast to DatetimeArray/Index.\n Examples >>> idx = pd.PeriodIndex([\"2023-01-01 10:30:00\", ... \"2023-01-01 11:50:00\"], freq='min') >>> idx.minute Index([30, 50], dtype='int64')",
     "markdown_length": 480,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.minute — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.PeriodIndex.minute — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.minute.html"
     },
-    "crawled_at": "2026-08-26T06:50:28.223573",
+    "crawled_at": "2026-08-28T20:46:39.038596",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "42674301083fbe36c8830d886dc9412e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.snap.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.snap.html",
-    "title": "pandas.DatetimeIndex.snap — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DatetimeIndex.snap — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.snap#\n\n- \nDatetimeIndex.snap(*freq='S'* )[source]#\n- Snap time stamps to nearest occurring frequency. Each timestamp in the index is adjusted to the nearest occurrence of the specified frequency, snapping backward or forward as appropriate. \n  - Parameters:\n    - **freq** str, Timedelta, datetime.timedelta, or DateOffset, default ‘S’\n    - Frequency strings can have multiples, e.g. ‘5h’. See here for a list of frequency aliases.\n  - Returns:\n    - DatetimeIndex\n    - Time stamps to nearest occurring freq.\n See also \n  - `DatetimeIndex.round`\n  - Perform round operation on the data to the specified freq.\n  - `DatetimeIndex.floor`\n  - Perform floor operation on the data to the specified freq.\n Examples >>> idx = pd.DatetimeIndex( ... [\"2023-01-01\", \"2023-01-02\", \"2023-02-01\", \"2023-02-02\"], ... dtype=\"M8[ns]\", ... ) >>> idx DatetimeIndex(['2023-01-01', '2023-01-02', '2023-02-01', '2023-02-02'], dtype='datetime64[ns]', freq=None) >>> idx.snap(\"MS\") DatetimeIndex(['2023-01-01', '2023-01-01', '2023-02-01', '2023-02-01'], dtype='datetime64[ns]', freq=None)",
     "markdown_length": 1089,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.snap — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DatetimeIndex.snap — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:46.737126",
+    "crawled_at": "2026-08-28T15:47:23.397236",
     "type": "webpage"
 }

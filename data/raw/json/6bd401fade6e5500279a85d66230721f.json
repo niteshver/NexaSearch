@@ -2,7 +2,7 @@
     "id": "6bd401fade6e5500279a85d66230721f",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html",
-    "title": "pandas.isna — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.isna — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.isna#\n\n- \npandas.isna(*obj* )[source]#\n- Detect missing values for an array-like object. This function takes a scalar or array-like object and indicates whether values are missing ( `NaN` in numeric arrays,`None` or`NaN` in object arrays,`NaT` in datetimelike).\n  - Parameters:\n    - **obj** scalar or array-like\n    - Object to check for null or missing values.\n  - Returns:\n    - bool or array-like of bool\n    - For scalar input, returns a scalar boolean. For array input, returns an array of boolean indicating whether each corresponding element is missing.\n See also \n  - `notna`\n  - Boolean inverse of pandas.isna.\n  - `Series.isna`\n  - Detect missing values in a Series.\n  - `DataFrame.isna`\n  - Detect missing values in a DataFrame.\n  - `Index.isna`\n  - Detect missing values in an Index.\n Examples Scalar arguments (including strings) result in a scalar boolean. >>> pd.isna(\"dog\") False >>> pd.isna(pd.NA) True >>> pd.isna(np.nan) True ndarrays result in an ndarray of booleans. >>> array = np.array([[1, np.nan, 3], [4, 5, np.nan]]) >>> array array([[ 1., nan, 3.], [ 4., 5., nan]]) >>> pd.isna(array) array([[False, True, False], [False, False, True]]) For indexes, an ndarray of booleans is returned. >>> index = pd.DatetimeIndex([\"2017-07-05\", \"2017-07-06\", None, \"2017-07-08\"]) >>> index DatetimeIndex(['2017-07-05', '2017-07-06', 'NaT', '2017-07-08'], dtype='datetime64[us]', freq=None) >>> pd.isna(index) array([False, False, True, False]) For Series and DataFrame, the same type is returned, containing booleans. >>> df = pd.DataFrame([[\"ant\", \"bee\", \"cat\"], [\"dog\", None, \"fly\"]]) >>> df 0 1 2 0 ant bee cat 1 dog NaN fly >>> pd.isna(df) 0 1 2 0 False False False 1 False True False >>> pd.isna(df[1]) 0 False 1 True Name: 1, dtype: bool",
     "markdown_length": 1765,
@@ -10,18 +10,6 @@
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
+            "text": "General functions",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.isna — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.isna — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:48:35.980409",
+    "crawled_at": "2026-08-28T17:55:16.022969",
     "type": "webpage"
 }

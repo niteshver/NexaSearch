@@ -2,7 +2,7 @@
     "id": "69e9872000f3f0d659735c247393e9ac",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.struct.dtypes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.struct.dtypes.html",
-    "title": "pandas.Series.struct.dtypes — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.struct.dtypes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.struct.dtypes#\n\n- Series.struct.dtypes[source]#\n- Return the dtype object of each child field of the struct. The returned Series is indexed by the field names of the struct and contains the corresponding `ArrowDtype` for each field.\n  - Returns:\n    - pandas.Series\n    - The data type of each child field.\n See also \n  - `Series.dtype`\n  - Return the dtype object of the underlying data.\n Examples >>> import pyarrow as pa >>> s = pd.Series( ... [ ... {\"version\": 1, \"project\": \"pandas\"}, ... {\"version\": 2, \"project\": \"pandas\"}, ... {\"version\": 1, \"project\": \"numpy\"}, ... ], ... dtype=pd.ArrowDtype( ... pa.struct([(\"version\", pa.int64()), (\"project\", pa.string())]) ... ), ... ) >>> s.struct.dtypes version int64[pyarrow] project string[pyarrow] dtype: object",
     "markdown_length": 779,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.struct.dtypes — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.struct.dtypes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:12.390392",
+    "crawled_at": "2026-08-28T15:50:36.334416",
     "type": "webpage"
 }

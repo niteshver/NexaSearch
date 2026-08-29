@@ -2,7 +2,7 @@
     "id": "7322b0af36bab289f71613b084f73fe0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.idxmax.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.idxmax.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.idxmax — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.idxmax — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.idxmax#\n\n- \nDataFrameGroupBy.idxmax(*skipna=True* ,*numeric_only=False* )[source]#\n- Return index of first occurrence of maximum in each group. For each group and each column, identifies the row label where the maximum value first occurs. NA values are excluded by default. \n  - Parameters:\n    - **skipna** bool, default True\n    - Exclude NA values.\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data.\n  - Returns:\n    - DataFrame\n    - Indexes of maxima in each column according to the group.\n  - Raises:\n    - ValueError\n    - When there are no valid values for a group. Then can happen if: \n      - There is an unobserved group and `observed=False` .\n      - All values for a group are NA.\n      - Some values for a group are NA and `skipna=False` .\n Changed in version 3.0.0: Previously if all values for a group are NA or some values for a group are NA and `skipna=False` , this method would return NA. Now it raises instead.\n See also \n  - `Series.idxmax`\n  - Return index of the maximum element.\n  - `DataFrame.idxmax`\n  - Indexes of maxima along the specified axis.\n Notes This method is the DataFrame version of `ndarray.argmax` .Examples Consider a dataset containing food consumption in Argentina. >>> df = pd.DataFrame( ... { ... \"consumption\": [10.51, 103.11, 55.48], ... \"co2_emissions\": [37.2, 19.66, 1712], ... \"food_type\": [\"meat\", \"plant\", \"meat\"], ... }, ... index=[\"Pork\", \"Wheat Products\", \"Beef\"], ... ) >>> df consumption co2_emissions food_type Pork 10.51 37.20 meat Wheat Products 103.11 19.66 plant Beef 55.48 1712.00 meat By default, it returns the index for the maximum value in each column according to the group. >>> df.groupby(\"food_type\").idxmax() consumption co2_emissions food_type meat Beef Beef plant Wheat Products Wheat Products",
     "markdown_length": 1843,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.idxmax — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.idxmax — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:08.558019",
+    "crawled_at": "2026-08-28T17:57:00.935719",
     "type": "webpage"
 }

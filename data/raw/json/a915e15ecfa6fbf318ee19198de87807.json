@@ -2,7 +2,7 @@
     "id": "a915e15ecfa6fbf318ee19198de87807",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.from_arrays.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.from_arrays.html",
-    "title": "pandas.MultiIndex.from_arrays — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.MultiIndex.from_arrays — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.from_arrays#\n\n- \nclassmethod MultiIndex.from_arrays(*arrays* ,*sortorder=None* ,*names=<no_default>* )[source]#\n- Convert arrays to MultiIndex. Each array in the input corresponds to one level of the output MultiIndex. The i-th element of each array together form the i-th tuple in the resulting MultiIndex. \n  - Parameters:\n    - **arrays** list / sequence of array-likes\n    - Each array-like gives one level’s value for each data point. len(arrays) is the number of levels.\n    - **sortorder** int or None\n    - Level of sortedness (must be lexicographically sorted by that level).\n    - **names** list / sequence of str, optional\n    - Names for the levels in the index.\n  - Returns:\n    - MultiIndex\n See also \n  - `MultiIndex.from_tuples`\n  - Convert list of tuples to MultiIndex.\n  - `MultiIndex.from_product`\n  - Make a MultiIndex from cartesian product of iterables.\n  - `MultiIndex.from_frame`\n  - Make a MultiIndex from a DataFrame.\n Examples >>> arrays = [[1, 1, 2, 2], [\"red\", \"blue\", \"red\", \"blue\"]] >>> pd.MultiIndex.from_arrays(arrays, names=(\"number\", \"color\")) MultiIndex([(1, 'red'), (1, 'blue'), (2, 'red'), (2, 'blue')], names=['number', 'color'])",
     "markdown_length": 1188,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.from_arrays — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.MultiIndex.from_arrays — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/internals.html"
     },
-    "crawled_at": "2026-08-26T06:48:52.427823",
+    "crawled_at": "2026-08-28T15:48:13.076401",
     "type": "webpage"
 }

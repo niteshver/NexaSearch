@@ -2,7 +2,7 @@
     "id": "ded1f64691038209835e25f0add85e1c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.nlargest.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.nlargest.html",
-    "title": "pandas.api.typing.SeriesGroupBy.nlargest — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.nlargest — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.nlargest#\n\n- \nSeriesGroupBy.nlargest(*n=5* ,*keep='first'* )[source]#\n- Return the largest n elements. Within each group, returns the n largest values sorted in descending order. The `keep` parameter controls how ties are\nhandled when there are duplicate values at the boundary.\n  - Parameters:\n    - **n** int, default 5\n    - Return this many descending sorted values.\n    - **keep** {‘first’, ‘last’, ‘all’}, default ‘first’\n    - When there are duplicate values that cannot all fit in a Series of n elements: \n      - `first` : return the first n occurrences in order\nof appearance.\n      - `last` : return the last n occurrences in reverse\norder of appearance.\n      - `all` : keep all occurrences. This can result in a Series of\nsize larger than n.\n  - Returns:\n    - Series\n    - The n largest values in the Series, sorted in decreasing order.\n See also \n  - `Series.nsmallest`\n  - Get the n smallest elements.\n  - `Series.sort_values`\n  - Sort Series by values.\n  - `Series.head`\n  - Return the first n rows.\n Notes Faster than `.sort_values(ascending=False).head(n)` for small n\nrelative to the size of the`Series` object.Examples >>> s = pd.Series([1, 2, 3, 4, 5, 6]) >>> s 0 1 1 2 2 3 3 4 4 5 5 6 dtype: int64 >>> s.groupby([1, 1, 1, 2, 2, 2]).nlargest(n=2) 1 2 3 1 2 2 5 6 4 5 dtype: int64",
     "markdown_length": 1335,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.nlargest — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.nlargest — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-26T06:50:20.112966",
+    "crawled_at": "2026-08-28T17:58:25.655540",
     "type": "webpage"
 }

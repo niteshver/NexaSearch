@@ -1,0 +1,59 @@
+{
+    "id": "9253d5e0b7cc9be4b6fa16f048475b4a",
+    "url": "https://colah.github.io/about.html",
+    "canonical_url": "https://colah.github.io/about.html",
+    "title": "About Me - colah's blog",
+    "status": 200,
+    "markdown": "I work on reverse engineering artificial neural networks into human understandable algorithms.\n\nI'm one of the co-founders of Anthropic, an AI lab focused on the safety of large models. Previously, I led interpretability research at OpenAI, worked at Google Brain, and co-founded Distill, a scientific journal focused on outstanding communication.\n\nMy blog should not be taken to reflect the views of any organization I'm affiliated with.",
+    "markdown_length": 438,
+    "internal_links": [
+        {
+            "href": "https://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "About Me - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "https://colah.github.io/personal/micromarriages/"
+    },
+    "crawled_at": "2026-08-28T15:38:57.361140",
+    "type": "webpage"
+}

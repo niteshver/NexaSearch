@@ -2,7 +2,7 @@
     "id": "0bc992e04fffa59466cee75b449a798b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.parsers.TextFileReader.get_chunk.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.parsers.TextFileReader.get_chunk.html",
-    "title": "pandas.io.parsers.TextFileReader.get_chunk — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.io.parsers.TextFileReader.get_chunk — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.parsers.TextFileReader.get_chunk#\n\n- \nTextFileReader.get_chunk(*size=None* )[source]#\n- Read the next chunk of rows from the file. Convenience wrapper around `TextFileReader.read()` that defaults`size` to the`chunksize` passed to`read_csv()` or`read_table()` , and respects a configured`nrows` limit by\nraising`StopIteration` once it has been reached.\n  - Parameters:\n    - **size** int, optional\n    - Number of rows to read in this chunk. Defaults to the `chunksize` passed when the reader was created.\n  - Returns:\n    - DataFrame\n    - The next chunk of parsed rows.\n  - Raises:\n    - StopIteration\n    - If `nrows` was set and has already been reached.\n See also \n  - `TextFileReader.read`\n  - Read rows from the file into a DataFrame.\n  - `read_csv`\n  - Read a comma-separated values (csv) file into a DataFrame.\n Examples >>> with pd.read_csv(\"data.csv\", iterator=True) as reader: ... first_five = reader.get_chunk(5)",
     "markdown_length": 936,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.parsers.TextFileReader.get_chunk — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.io.parsers.TextFileReader.get_chunk — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:51:39.405260",
+    "crawled_at": "2026-08-28T17:59:38.128987",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "53c519449e4810393061825ffe5aae56",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.decode.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.decode.html",
-    "title": "pandas.Series.str.decode — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.decode — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.decode#\n\n- \nSeries.str.decode(*encoding* ,*errors='strict'* ,*dtype=None* )[source]#\n- Decode character string in the Series/Index using indicated encoding. Equivalent to `str.decode()` in python2 and`bytes.decode()` in\npython3.\n  - Parameters:\n    - **encoding** str\n    - Specifies the encoding to be used.\n    - **errors** str, optional\n    - Specifies the error handling scheme. Possible values are those supported by `bytes.decode()` .\n    - **dtype** str or dtype, optional\n    - The dtype of the result. When not `None` , must be either a string or\nobject dtype. When`None` , the dtype of the result is determined by`pd.options.future.infer_string` .Added in version 2.3.0.\n  - Returns:\n    - Series or Index\n    - A Series or Index with decoded strings.\n See also \n  - `Series.str.encode`\n  - Encodes strings into bytes in a Series/Index.\n Examples For Series: >>> ser = pd.Series([b\"cow\", b\"123\", b\"()\"]) >>> ser.str.decode(\"ascii\") 0 cow 1 123 2 () dtype: str",
     "markdown_length": 989,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.decode — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.decode — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.066460",
+    "crawled_at": "2026-08-28T15:50:17.069702",
     "type": "webpage"
 }

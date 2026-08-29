@@ -2,7 +2,7 @@
     "id": "f27a0118282c46f896e2b3da24ba770b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.info.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.info.html",
-    "title": "pandas.HDFStore.info — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.info — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.info#\n\n- HDFStore.info()[source]#\n- Print detailed information on the store. The information includes the file path, class name, and a listing of all stored object keys with their types and shapes. \n  - Returns:\n    - str\n    - A String containing the python pandas class name, filepath to the HDF5 file and all the object keys along with their respective dataframe shapes.\n See also \n  - `HDFStore.get_storer`\n  - Returns the storer object for a key.\n Examples >>> df1 = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> df2 = pd.DataFrame([[5, 6], [7, 8]], columns=[\"C\", \"D\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data1\", df1) >>> store.put(\"data2\", df2) >>> print(store.info()) >>> store.close() <class 'pandas.io.pytables.HDFStore'> File path: store.h5 /data1 frame (shape->[2,2]) /data2 frame (shape->[2,2])",
     "markdown_length": 854,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.info — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.info — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.838224",
+    "crawled_at": "2026-08-28T17:56:34.567076",
     "type": "webpage"
 }

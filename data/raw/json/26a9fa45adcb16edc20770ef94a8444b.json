@@ -4,8 +4,8 @@
     "canonical_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/TWI-ship",
     "title": "Graph of Top Twilight Fanfiction",
     "status": 200,
-    "markdown": "colah\nGraph of Top Twilight Fanfiction\nGraph of top Twilight Fanfiction, colored by ship.\nMore about this visualisation\nLegend:\nstory\nconnection\nship\nSearch:\nGroup Selector:\nSelect Group\nGroup 1 (773 members)\nGroup 2 (214 members)\nGroup 3 (6 members)\nGroup 4 (17 members)\nGroup 5 (1 members)\nGroup 6 (4 members)\nGroup 7 (7 members)\nGroup 8 (2 members)\nGroup 9 (2 members)\nGroup 10 (1 members)\nGroup 11 (1 members)\nGroup 12 (2 members)\nGroup 13 (1 members)\nThe romantic pairing of the story strongly effects which stories are linked together in Twilight fanficiton. Ships are inferred from tags story summaries and character/genre inference.\nReturn to the full network\nInformation Pane\nConnections:\nOII\nJISC",
-    "markdown_length": 706,
+    "markdown": "# colah\n\n    ## Graph of Top Twilight Fanfiction\n\n    Graph of top Twilight Fanfiction, colored by ship.\n\n    \n\t\n\t\t\n## Legend:\n\n\t\t\n- story\n- connection\n- ship\n\n \n  \n    \n   \n  The romantic pairing of the story strongly effects which stories are linked together in Twilight fanficiton. Ships are inferred from tags story summaries and character/genre inference.",
+    "markdown_length": 360,
     "internal_links": [
         {
             "href": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/TWI-ship/",
@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://colah.github.io/posts/2014-07-FFN-Graphs-Vis/graphs/TWI-ship/"
+        "depth": 0,
+        "parent_url": null
     },
-    "crawled_at": "2026-08-26T06:47:18.155836",
+    "crawled_at": "2026-08-28T15:40:34.997715",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "b1cfdf7db45780cea367b91943018dcd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_caption.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_caption.html",
-    "title": "pandas.io.formats.style.Styler.set_caption — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.set_caption — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "This method sets the table caption that is rendered as a <caption>\nelement in HTML output or as a \\caption command in LaTeX output.\nFor LaTeX, a tuple of two strings can be provided to specify both a\nfull caption and a short caption.\n\nParameters:\n\ncaptionstr, tuple, list\n\nFor HTML output either the string input is used or the first element of the\ntuple. For LaTeX the string input provides a caption and the additional\ntuple input allows for full captions and short captions, in that order.\n\nReturns:\n\nStyler\n\nInstance of class with text set for <caption> HTML element.",
     "markdown_length": 571,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.set_caption — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.set_caption — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:45.505202",
+    "crawled_at": "2026-08-28T17:59:25.278772",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "6d3f9a99c3adf0915fab5c3e9a1d9da0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.microseconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.microseconds.html",
-    "title": "pandas.Timedelta.microseconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.microseconds — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.microseconds#\n\n- Timedelta.microseconds#\n- Return the number of microseconds (n), where 0 <= n < 1 millisecond. Timedelta.microseconds = milliseconds * 1000 + microseconds. \n  - Returns:\n    - int\n    - Number of microseconds.\n See also \n  - `Timedelta.components`\n  - Return all attributes with assigned values (i.e. days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds).\n Examples **Using string input**>>> td = pd.Timedelta('1 days 2 min 3 us') >>> td.microseconds 3 **Using integer input**>>> td = pd.Timedelta(42, unit='us') >>> td.microseconds 42",
     "markdown_length": 589,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.microseconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.microseconds — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:38.350958",
+    "crawled_at": "2026-08-28T15:50:54.476059",
     "type": "webpage"
 }

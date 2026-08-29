@@ -2,7 +2,7 @@
     "id": "d7eb0eeb28dccdcc28cf88fc942d136b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.apply.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.apply.html",
-    "title": "pandas.api.typing.SeriesGroupBy.apply — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.apply — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.apply#\n\n- \nSeriesGroupBy.apply(*func* ,**args* ,***kwargs* )[source]#\n- Apply function `func` group-wise and combine the results together.The function passed to `apply` must take a series as its first\nargument and return a DataFrame, Series or scalar.`apply` will\nthen take care of combining the results back together into a single\ndataframe or series.`apply` is therefore a highly flexible\ngrouping method.While `apply` is a very flexible method, its downside is that\nusing it can be quite a bit slower than using more specific methods\nlike`agg` or`transform` . Pandas offers a wide range of method that will\nbe much faster than using`apply` for their specific purposes, so try to\nuse them before reaching for`apply` .\n  - Parameters:\n    - **func** callable\n    - A callable that takes a series as its first argument, and returns a dataframe, a series or a scalar. In addition the callable may take positional and keyword arguments.\n    - ***args** tuple\n    - Optional positional arguments to pass to `func` .\n    - ****kwargs** dict\n    - Optional keyword arguments to pass to `func` .\n  - Returns:\n    - Series or DataFrame\n    - A pandas object with the result of applying `func` to each group.\n See also \n  - `pipe`\n  - Apply function to the full GroupBy object instead of to each group.\n  - `aggregate`\n  - Apply aggregate function to the GroupBy object.\n  - `transform`\n  - Apply function column-by-column to the GroupBy object.\n  - `Series.apply`\n  - Apply a function to a Series.\n  - `DataFrame.apply`\n  - Apply a function to each row or column of a DataFrame.\n Notes See Flexible apply in the User Guide for more details and examples. The resulting dtype will reflect the return value of the passed `func` ,\nsee the examples below.Functions that mutate the passed object can produce unexpected behavior or errors and are not supported. See Mutating with User Defined Function (UDF) methods for more details. Each group passed to `func` has a`name` attribute set to the group\nkey (the value of the grouping for that group). This is useful for\nidentifying the current group, as in the examples below.Examples >>> s = pd.Series([0, 1, 2], index=\"a a b\".split()) >>> g1 = s.groupby(s.index, group_keys=False) >>> g2 = s.groupby(s.index, group_keys=True) From `s` above we can see that`g` has two groups,`a` and`b` .\nNotice that`g1` have`g2` have two groups,`a` and`b` , and only\ndiffer in their`group_keys` argument. Calling apply in various ways,\nwe can get different grouping results:Example 1: The function passed to apply takes a Series as its argument and returns a Series. apply combines the result for each group together into a new Series. The resulting dtype will reflect the return value of the passed `func` .>>> g1.apply(lambda x: x * 2 if x.name == \"a\" else x / 2) a 0.0 a 2.0 b 1.0 dtype: float64 In the above, the groups are not part of the index. We can have them included by using `g2` where`group_keys=True` :>>> g2.apply(lambda x: x * 2 if x.name == \"a\" else x / 2) a a 0.0 a 2.0 b b 1.0 dtype: float64 Example 2: The function passed to apply takes a Series as its argument and returns a scalar. apply combines the result for each group together into a Series, including setting the index as appropriate: >>> g1.apply(lambda x: x.max() - x.min()) a 1 b 0 dtype: int64 The `group_keys` argument has no effect here because the result is not\nlike-indexed (i.e. a transform) when compared\nto the input.>>> g2.apply(lambda x: x.max() - x.min()) a 1 b 0 dtype: int64",
     "markdown_length": 3521,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.apply — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.apply — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:38.483038",
+    "crawled_at": "2026-08-28T17:58:07.022574",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "be7243cb87d3cc3df26d53de21ad77b0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.__array__.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.__array__.html",
-    "title": "pandas.Categorical.__array__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Categorical.__array__ — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Categorical.__array__#\n\n- \nCategorical.__array__(*dtype=None* ,*copy=None* )[source]#\n- The numpy array interface. Users should not call this directly. Rather, it is invoked by `numpy.array()` and`numpy.asarray()` .\n  - Parameters:\n    - **dtype** np.dtype or None\n    - Specifies the dtype for the array.\n    - **copy** bool or None, optional\n    - See `numpy.asarray()` .\n  - Returns:\n    - numpy.array\n    - A numpy array of either the specified dtype or, if dtype==None (default), the same dtype as categorical.categories.dtype.\n See also \n  - `numpy.asarray`\n  - Convert input to numpy.ndarray.\n Examples >>> cat = pd.Categorical([\"a\", \"b\"], ordered=True) The following calls `cat.__array__`>>> np.asarray(cat) array(['a', 'b'], dtype=object)",
     "markdown_length": 756,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Categorical.__array__ — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Categorical.__array__ — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:59.000896",
+    "crawled_at": "2026-08-28T15:45:41.806431",
     "type": "webpage"
 }

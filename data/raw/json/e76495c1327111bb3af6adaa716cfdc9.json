@@ -2,7 +2,7 @@
     "id": "e76495c1327111bb3af6adaa716cfdc9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IndexSlice.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IndexSlice.html",
-    "title": "pandas.IndexSlice — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.IndexSlice — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.IndexSlice#\n\n- pandas.IndexSlice = <pandas.core.indexing._IndexSlice object>#\n- Create an object to more easily perform multi-index slicing. `IndexSlice` is a convenience object that allows the use of natural\nslice syntax (`start:stop` ) when selecting from a`MultiIndex` ,\nrather than requiring explicit`slice()` calls.See also \n  - `MultiIndex.remove_unused_levels`\n  - New MultiIndex with no unused levels.\n Notes See Defined Levels for further info on slicing a MultiIndex. Examples >>> midx = pd.MultiIndex.from_product([[\"A0\", \"A1\"], [\"B0\", \"B1\", \"B2\", \"B3\"]]) >>> columns = [\"foo\", \"bar\"] >>> dfmi = pd.DataFrame( ... np.arange(16).reshape((len(midx), len(columns))), ... index=midx, ... columns=columns, ... ) Using the default slice command: >>> dfmi.loc[(slice(None), slice(\"B0\", \"B1\")), :] foo bar A0 B0 0 1 B1 2 3 A1 B0 8 9 B1 10 11 Using the IndexSlice class for a more intuitive command: >>> idx = pd.IndexSlice >>> dfmi.loc[idx[:, \"B0\":\"B1\"], :] foo bar A0 B0 0 1 B1 2 3 A1 B0 8 9 B1 10 11",
     "markdown_length": 1013,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IndexSlice — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.IndexSlice — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:51.202676",
+    "crawled_at": "2026-08-28T15:47:58.481119",
     "type": "webpage"
 }

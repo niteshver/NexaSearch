@@ -2,7 +2,7 @@
     "id": "8da45ab037ccd0f6c248f4cc016498c9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.cumprod.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.cumprod.html",
-    "title": "pandas.api.typing.SeriesGroupBy.cumprod — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.cumprod — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.cumprod#\n\n- \nSeriesGroupBy.cumprod(*numeric_only=False* ,*skipna=True* ,**args* ,***kwargs* )[source]#\n- Cumulative product for each group. Returns a Series or DataFrame of the same size with the cumulative product computed within each group. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire row/column is NA, the result will be NA.\n    - ***args** tuple\n    - Positional arguments to be passed to func. Deprecated since version 3.1.0: Passing `*args` to GroupBy.cumprod is deprecated\nand will be removed in a future version of pandas.\n    - ****kwargs** dict\n    - Additional keyword arguments to be passed to the function. Deprecated since version 3.1.0: Passing `**kwargs` to GroupBy.cumprod is deprecated\nand will be removed in a future version of pandas.\n  - Returns:\n    - Series or DataFrame\n    - Cumulative product for each group. Same object type as the caller.\n See also \n  - `Series.cumprod`\n  - Apply function cumprod to a Series.\n  - `DataFrame.cumprod`\n  - Apply function cumprod to each row or column of a DataFrame.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\"] >>> ser = pd.Series([6, 2, 0], index=lst) >>> ser a 6 a 2 b 0 dtype: int64 >>> ser.groupby(level=0).cumprod() a 6 a 12 b 0 dtype: int64 For DataFrameGroupBy: >>> data = [[1, 8, 2], [1, 2, 5], [2, 6, 9]] >>> df = pd.DataFrame( ... data, columns=[\"a\", \"b\", \"c\"], index=[\"cow\", \"horse\", \"bull\"] ... ) >>> df a b c cow 1 8 2 horse 1 2 5 bull 2 6 9 >>> df.groupby(\"a\").groups {1: ['cow', 'horse'], 2: ['bull']} >>> df.groupby(\"a\").cumprod() b c cow 8 2 horse 16 10 bull 6 9",
     "markdown_length": 1728,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.cumprod — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.cumprod — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:50:35.881718",
+    "crawled_at": "2026-08-28T17:58:11.234749",
     "type": "webpage"
 }

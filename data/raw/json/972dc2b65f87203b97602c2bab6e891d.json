@@ -2,7 +2,7 @@
     "id": "972dc2b65f87203b97602c2bab6e891d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.isoformat.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.isoformat.html",
-    "title": "pandas.Timestamp.isoformat — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.isoformat — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.isoformat#\n\n- \nTimestamp.isoformat(*sep='T'* ,*timespec='auto'* )#\n- Return the time formatted according to ISO 8601. The full format looks like ‘YYYY-MM-DD HH:MM:SS.mmmmmmnnn’. By default, the fractional part is omitted if self.microsecond == 0 and self._nanosecond == 0. If self.tzinfo is not None, the UTC offset is also attached, giving a full format of ‘YYYY-MM-DD HH:MM:SS.mmmmmmnnn+HH:MM[:SS[.ffffff]]’. The ‘:SS’ is present only if the offset is not a whole number of minutes, as for a timezone in its pre-standardization era. \n  - Parameters:\n    - **sep** str, default ‘T’\n    - String used as the separator between the date and time.\n    - **timespec** str, default ‘auto’\n    - Specifies the number of additional terms of the time to include. The valid values are ‘auto’, ‘hours’, ‘minutes’, ‘seconds’, ‘milliseconds’, ‘microseconds’, and ‘nanoseconds’.\n  - Returns:\n    - str\n See also \n  - `Timestamp.strftime`\n  - Return a formatted string.\n  - `Timestamp.isocalendar`\n  - Return a tuple containing ISO year, week number and weekday.\n Examples >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651') >>> ts.isoformat() '2020-03-14T15:32:52.192548651' >>> ts.isoformat(timespec='microseconds') '2020-03-14T15:32:52.192548'",
     "markdown_length": 1254,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.isoformat — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.isoformat — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:30.212910",
+    "crawled_at": "2026-08-28T15:51:19.556981",
     "type": "webpage"
 }

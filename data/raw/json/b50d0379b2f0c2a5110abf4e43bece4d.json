@@ -2,7 +2,7 @@
     "id": "b50d0379b2f0c2a5110abf4e43bece4d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.stop.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.stop.html",
-    "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.RangeIndex.stop#\n\n- property RangeIndex.stop[source]#\n- The value of the stop parameter. This property returns the stop value of the RangeIndex, which defines the upper (or lower, in case of negative steps) bound of the index range. The stop value is exclusive, meaning the RangeIndex includes values up to but not including this value. See also \n  - `RangeIndex`\n  - Immutable index representing a range of integers.\n  - `RangeIndex.start`\n  - The start value of the RangeIndex.\n  - `RangeIndex.step`\n  - The step size between elements in the RangeIndex.\n Examples >>> idx = pd.RangeIndex(5) >>> idx.stop 5 >>> idx = pd.RangeIndex(2, -10, -3) >>> idx.stop -10",
     "markdown_length": 669,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.RangeIndex.stop — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:55.020408",
+    "crawled_at": "2026-08-28T15:48:42.594260",
     "type": "webpage"
 }

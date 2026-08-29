@@ -2,7 +2,7 @@
     "id": "34c572ec0733d8bf28a522e2fe68ed3f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.quantile.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.quantile.html",
-    "title": "pandas.api.typing.SeriesGroupBy.quantile — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.quantile — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.quantile#\n\n- \nSeriesGroupBy.quantile(*q=0.5* ,*interpolation='linear'* ,*numeric_only=False* )[source]#\n- Return group values at the given quantile, a la numpy.percentile. This method returns the value at the given quantile for each group, using the specified interpolation method when the desired quantile falls between two data points. \n  - Parameters:\n    - **q** float or array-like, default 0.5 (50% quantile)\n    - Value(s) between 0 and 1 providing the quantile(s) to compute.\n    - **interpolation** {‘linear’, ‘lower’, ‘higher’, ‘midpoint’, ‘nearest’}\n    - Method to use when the desired quantile falls between two points.\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data. Changed in version 2.0.0: numeric_only now defaults to `False` .\n  - Returns:\n    - Series or DataFrame\n    - Return type determined by caller of GroupBy object.\n See also \n  - `Series.quantile`\n  - Similar method for Series.\n  - `DataFrame.quantile`\n  - Similar method for DataFrame.\n  - `numpy.percentile`\n  - NumPy method to compute qth percentile.\n Examples >>> df = pd.DataFrame( ... [[\"a\", 1], [\"a\", 2], [\"a\", 3], [\"b\", 1], [\"b\", 3], [\"b\", 5]], ... columns=[\"key\", \"val\"], ... ) >>> df.groupby(\"key\").quantile() val key a 2.0 b 3.0",
     "markdown_length": 1294,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.quantile — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.quantile — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:37.645188",
+    "crawled_at": "2026-08-28T17:58:30.737600",
     "type": "webpage"
 }

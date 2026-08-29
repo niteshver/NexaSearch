@@ -2,7 +2,7 @@
     "id": "1b9aedda75d8757088e1a1057173b550",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.register_extension_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.register_extension_dtype.html",
-    "title": "pandas.api.extensions.register_extension_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.extensions.register_extension_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.register_extension_dtype#\n\n- \npandas.api.extensions.register_extension_dtype(*cls* )[source]#\n- Register an ExtensionType with pandas as class decorator. This enables operations like `.astype(name)` for the name\nof the ExtensionDtype.\n  - Returns:\n    - callable\n    - A class decorator.\n See also \n  - `api.extensions.ExtensionDtype`\n  - The base class for creating custom pandas data types.\n  - `Series`\n  - One-dimensional array with axis labels.\n  - `DataFrame`\n  - Two-dimensional, size-mutable, potentially heterogeneous tabular data.\n Examples >>> from pandas.api.extensions import register_extension_dtype, ExtensionDtype >>> @register_extension_dtype ... class MyExtensionDtype(ExtensionDtype): ... name = \"myextension\"",
     "markdown_length": 752,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.register_extension_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.extensions.register_extension_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/extensions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html"
     },
-    "crawled_at": "2026-08-26T06:51:23.621418",
+    "crawled_at": "2026-08-28T15:51:52.333607",
     "type": "webpage"
 }

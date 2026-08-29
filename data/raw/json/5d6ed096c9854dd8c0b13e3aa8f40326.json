@@ -2,7 +2,7 @@
     "id": "5d6ed096c9854dd8c0b13e3aa8f40326",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.from_product.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.from_product.html",
-    "title": "pandas.MultiIndex.from_product — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.MultiIndex.from_product — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.from_product#\n\n- \nclassmethod MultiIndex.from_product(*iterables* ,*sortorder=None* ,*names=<no_default>* )[source]#\n- Make a MultiIndex from the cartesian product of multiple iterables. This method generates a MultiIndex containing all combinations of the input iterables, similar to computing the cartesian product. \n  - Parameters:\n    - **iterables** list / sequence of iterables\n    - Each iterable gives the labels for one level of the index. Labels that compare equal (e.g. `1` ,`1.0` and`True` ) are collapsed\ninto a single label; the first occurrence determines the value\nstored in the level.\n    - **sortorder** int or None\n    - Level of sortedness (must be lexicographically sorted by that level).\n    - **names** list / sequence of str, optional\n    - Names for the levels in the index. If not explicitly provided, names will be inferred from the elements of iterables if an element has a name attribute.\n  - Returns:\n    - MultiIndex\n See also \n  - `MultiIndex.from_arrays`\n  - Convert list of arrays to MultiIndex.\n  - `MultiIndex.from_tuples`\n  - Convert list of tuples to MultiIndex.\n  - `MultiIndex.from_frame`\n  - Make a MultiIndex from a DataFrame.\n Examples >>> numbers = [0, 1, 2] >>> colors = [\"green\", \"purple\"] >>> pd.MultiIndex.from_product([numbers, colors], names=[\"number\", \"color\"]) MultiIndex([(0, 'green'), (0, 'purple'), (1, 'green'), (1, 'purple'), (2, 'green'), (2, 'purple')], names=['number', 'color'])",
     "markdown_length": 1459,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.from_product — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.MultiIndex.from_product — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.from_product.html"
     },
-    "crawled_at": "2026-08-26T06:50:16.396651",
+    "crawled_at": "2026-08-28T20:41:30.391746",
     "type": "webpage"
 }

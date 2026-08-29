@@ -2,7 +2,7 @@
     "id": "d1069a2eaf551f7ce48383ecc834e918",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.names.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.names.html",
-    "title": "pandas.api.extensions.ExtensionDtype.names — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionDtype.names — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.api.extensions.ExtensionDtype.names# property ExtensionDtype.names[source]# Ordered list of field names, or None if there are no fields. This is for compatibility with NumPy arrays, and may be removed in the future.",
     "markdown_length": 222,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionDtype.names — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionDtype.names — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.648033",
+    "crawled_at": "2026-08-28T15:51:51.917207",
     "type": "webpage"
 }

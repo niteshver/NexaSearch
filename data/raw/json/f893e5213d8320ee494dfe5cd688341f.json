@@ -2,7 +2,7 @@
     "id": "f893e5213d8320ee494dfe5cd688341f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.AbstractHolidayCalendar.merge_class.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.AbstractHolidayCalendar.merge_class.html",
-    "title": "pandas.tseries.holiday.AbstractHolidayCalendar.merge_class — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.AbstractHolidayCalendar.merge_class — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.AbstractHolidayCalendar.merge_class#\n\n- \nstatic AbstractHolidayCalendar.merge_class(*base* ,*other* )[source]#\n- Merge holiday calendars together. The base calendar will take precedence to other. The merge will be done based on each holiday’s name. \n  - Parameters:\n    - **base** AbstractHolidayCalendar\n    - Instance/subclass or array of Holiday objects.\n    - **other** AbstractHolidayCalendar\n    - Instance/subclass or array of Holiday objects.\n  - Returns:\n    - list of Holiday\n    - Combined list of holidays from both calendars, with `base` taking precedence over`other` for holidays sharing the\nsame name.\n See also \n  - `tseries.holiday.AbstractHolidayCalendar.merge`\n  - Merge holiday calendars together.\n Examples >>> from pandas.tseries.holiday import ( ... AbstractHolidayCalendar, ... USLaborDay, ... USMemorialDay, ... ) >>> class Calendar1(AbstractHolidayCalendar): ... rules = [USMemorialDay] >>> class Calendar2(AbstractHolidayCalendar): ... rules = [USLaborDay] >>> merged = AbstractHolidayCalendar.merge_class(Calendar1, Calendar2) >>> [holiday.name for holiday in merged] ['Labor Day', 'Memorial Day']",
     "markdown_length": 1150,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.AbstractHolidayCalendar.merge_class — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.AbstractHolidayCalendar.merge_class — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.516249",
+    "crawled_at": "2026-08-28T17:59:59.319914",
     "type": "webpage"
 }

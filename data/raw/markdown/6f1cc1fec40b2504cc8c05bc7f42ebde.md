@@ -1,0 +1,39 @@
+# pandas.DataFrame.min#
+
+- 
+DataFrame.min(*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#
+- Return the minimum of the values over the requested axis. If you want the *index* of the minimum, use`idxmin` . This is the equivalent of the`numpy.ndarray` method`argmin` .
+  - Parameters
+    - **axis** {index (0), columns (1)}
+    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation
+across both axes.New in version 2.0.0.
+    - **skipna** bool, default True
+    - Exclude NA/null values when computing the result.
+    - **numeric_only** bool, default False
+    - Include only float, int, boolean columns. Not implemented for Series.
+    - ****kwargs**
+    - Additional keyword arguments to be passed to the function.
+  - Returns
+    - Series or scalar
+ See also 
+  - `Series.sum`
+  - Return the sum.
+  - `Series.min`
+  - Return the minimum.
+  - `Series.max`
+  - Return the maximum.
+  - `Series.idxmin`
+  - Return the index of the minimum.
+  - `Series.idxmax`
+  - Return the index of the maximum.
+  - `DataFrame.sum`
+  - Return the sum over the requested axis.
+  - `DataFrame.min`
+  - Return the minimum over the requested axis.
+  - `DataFrame.max`
+  - Return the maximum over the requested axis.
+  - `DataFrame.idxmin`
+  - Return the index of the minimum over the requested axis.
+  - `DataFrame.idxmax`
+  - Return the index of the maximum over the requested axis.
+ Examples >>> idx = pd.MultiIndex.from_arrays([ ... ['warm', 'warm', 'cold', 'cold'], ... ['dog', 'falcon', 'fish', 'spider']], ... names=['blooded', 'animal']) >>> s = pd.Series([4, 2, 0, 8], name='legs', index=idx) >>> s blooded animal warm dog 4 falcon 2 cold fish 0 spider 8 Name: legs, dtype: int64 >>> s.min() 0

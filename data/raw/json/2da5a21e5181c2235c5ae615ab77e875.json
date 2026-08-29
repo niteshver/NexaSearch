@@ -2,7 +2,7 @@
     "id": "2da5a21e5181c2235c5ae615ab77e875",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.ndim.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.ndim.html",
-    "title": "pandas.Series.ndim — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.ndim — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.ndim#\n\n- property Series.ndim[source]#\n- Number of dimensions of the underlying data, by definition 1. Series and Index are one-dimensional; this property always returns 1 for compatibility with array-like interfaces. See also \n  - `Series.size`\n  - Return the number of elements in the underlying data.\n  - `Series.shape`\n  - Return a tuple of the shape of the underlying data.\n  - `Series.dtype`\n  - Return the dtype object of the underlying data.\n  - `Series.values`\n  - Return Series as ndarray or ndarray-like depending on the dtype.\n Examples >>> s = pd.Series([\"Ant\", \"Bear\", \"Cow\"]) >>> s 0 Ant 1 Bear 2 Cow dtype: str >>> s.ndim 1 For Index: >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.ndim 1",
     "markdown_length": 751,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.ndim — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.ndim — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.nbytes.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:19.724976",
+    "crawled_at": "2026-08-28T15:49:50.753871",
     "type": "webpage"
 }

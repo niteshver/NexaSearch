@@ -2,7 +2,7 @@
     "id": "016e91327176f2eac75e032057327144",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.CategoricalConversionWarning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.CategoricalConversionWarning.html",
-    "title": "pandas.errors.CategoricalConversionWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.CategoricalConversionWarning — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.CategoricalConversionWarning#\n\n- exception pandas.errors.CategoricalConversionWarning[source]#\n- Warning is raised when reading a partial labeled Stata file using an iterator. This warning helps ensure data integrity and alerts users to potential issues during the incremental reading of Stata files with labeled data, allowing for additional checks and adjustments as necessary. See also \n  - `read_stata`\n  - Read a Stata file into a DataFrame.\n  - `Categorical`\n  - Represents a categorical variable in pandas.\n Examples >>> from pandas.io.stata import StataReader >>> with StataReader(\"dta_file\", chunksize=2) as reader: ... for i, block in enumerate(reader): ... print(i, block) ... # CategoricalConversionWarning: One or more series with value labels...",
     "markdown_length": 775,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.CategoricalConversionWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.CategoricalConversionWarning — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.635705",
+    "crawled_at": "2026-08-28T17:58:52.562905",
     "type": "webpage"
 }

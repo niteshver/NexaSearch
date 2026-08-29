@@ -2,7 +2,7 @@
     "id": "43fe1b143d52db34c34aff3a49357359",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.timedelta_range.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.timedelta_range.html",
-    "title": "pandas.timedelta_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.timedelta_range — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.timedelta_range#\n\n- \npandas.timedelta_range(*start=None* ,*end=None* ,*periods=None* ,*freq=None* ,*name=None* ,*closed=None* ,*** ,*unit=None* )[source]#\n- Return a fixed frequency TimedeltaIndex with day as the default. This function generates a sequence of evenly spaced timedelta values between the specified bounds, using day as the default frequency. \n  - Parameters:\n    - **start** str or timedelta-like, default None\n    - Left bound for generating timedeltas.\n    - **end** str or timedelta-like, default None\n    - Right bound for generating timedeltas.\n    - **periods** int, default None\n    - Number of periods to generate.\n    - **freq** str, Timedelta, datetime.timedelta, or DateOffset, default ‘D’\n    - Frequency strings can have multiples, e.g. ‘5h’.\n    - **name** Hashable, default None\n    - Name of the resulting TimedeltaIndex.\n    - **closed** str, default None\n    - Make the interval closed with respect to the given frequency to the ‘left’, ‘right’, or both sides (None).\n    - **unit** {‘s’, ‘ms’, ‘us’, ‘ns’, None}, default None\n    - Specify the desired resolution of the result. If not specified, this is inferred from the ‘start’, ‘end’, and ‘freq’ using the same inference as `Timedelta` taking the highest\nresolution of the three that are provided.Added in version 2.0.0.\n  - Returns:\n    - TimedeltaIndex\n    - Fixed frequency, with day as the default.\n See also \n  - `date_range`\n  - Return a fixed frequency DatetimeIndex.\n  - `period_range`\n  - Return a fixed frequency PeriodIndex.\n Notes Of the four parameters `start` ,`end` ,`periods` , and`freq` ,\na maximum of three can be specified at once. Of the three parameters`start` ,`end` , and`periods` , at least two must be specified.\nIf`freq` is omitted, the resulting`DatetimeIndex` will have`periods` linearly spaced elements between`start` and`end` (closed on both sides).To learn more about the frequency strings, please see this link. Examples >>> pd.timedelta_range(start=\"1 day\", periods=4) TimedeltaIndex(['1 days', '2 days', '3 days', '4 days'], dtype='timedelta64[us]', freq='D') The `closed` parameter specifies which endpoint is included.  The default\nbehavior is to include both endpoints.>>> pd.timedelta_range(start=\"1 day\", periods=4, closed=\"right\") TimedeltaIndex(['2 days', '3 days', '4 days'], dtype='timedelta64[us]', freq='D') The `freq` parameter specifies the frequency of the TimedeltaIndex.\nOnly fixed frequencies can be passed, non-fixed frequencies such as\n‘M’ (month end) will raise.>>> pd.timedelta_range(start=\"1 day\", end=\"2 days\", freq=\"6h\") TimedeltaIndex(['1 days 00:00:00', '1 days 06:00:00', '1 days 12:00:00', '1 days 18:00:00', '2 days 00:00:00'], dtype='timedelta64[us]', freq='6h') Specify `start` ,`end` , and`periods` ; the frequency is generated\nautomatically (linearly spaced).>>> pd.timedelta_range(start=\"1 day\", end=\"5 days\", periods=4) TimedeltaIndex(['1 days 00:00:00', '2 days 08:00:00', '3 days 16:00:00', '5 days 00:00:00'], dtype='timedelta64[us]', freq=None) **Specify a unit**>>> pd.timedelta_range(\"1 Day\", periods=3, freq=\"100000D\", unit=\"s\") TimedeltaIndex(['1 days', '100001 days', '200001 days'], dtype='timedelta64[s]', freq='100000D')",
     "markdown_length": 3197,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.timedelta_range — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.timedelta_range — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:49:57.807871",
+    "crawled_at": "2026-08-28T15:52:29.125592",
     "type": "webpage"
 }

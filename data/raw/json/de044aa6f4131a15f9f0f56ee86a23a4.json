@@ -2,7 +2,7 @@
     "id": "de044aa6f4131a15f9f0f56ee86a23a4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.day.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.day.html",
-    "title": "pandas.Series.dt.day — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.day — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.day#\n\n- Series.dt.day[source]#\n- The day of the datetime. This attribute returns the day of the month component of each datetime value in the Series/Index. Values range from 1 to 31, depending on the month. See also \n  - `DatetimeIndex.year`\n  - The year of the datetime.\n  - `DatetimeIndex.month`\n  - The month as January=1, December=12.\n  - `DatetimeIndex.hour`\n  - The hours of the datetime.\n Examples >>> datetime_series = pd.Series( ... pd.date_range(\"2000-01-01\", periods=3, freq=\"D\") ... ) >>> datetime_series 0 2000-01-01 1 2000-01-02 2 2000-01-03 dtype: datetime64[us] >>> datetime_series.dt.day 0 1 1 2 2 3 dtype: int32",
     "markdown_length": 648,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.day — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.day — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:13.802178",
+    "crawled_at": "2026-08-28T15:49:08.740146",
     "type": "webpage"
 }

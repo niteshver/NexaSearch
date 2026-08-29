@@ -2,7 +2,7 @@
     "id": "a67fd389c7cf533ef860eb871b62368c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.list.len.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.list.len.html",
-    "title": "pandas.Series.list.len — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.list.len — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.list.len#\n\n- Series.list.len()[source]#\n- Return the length of each list in the Series. Computes the number of elements in each list entry. The result is a Series of integers with the same index as the original Series. \n  - Returns:\n    - pandas.Series\n    - The length of each list.\n See also \n  - `str.len`\n  - Python built-in function returning the length of an object.\n  - `Series.size`\n  - Returns the length of the Series.\n  - `StringMethods.len`\n  - Compute the length of each element in the Series/Index.\n Examples >>> import pyarrow as pa >>> s = pd.Series( ... [ ... [1, 2, 3], ... [3], ... ], ... dtype=pd.ArrowDtype(pa.list_(pa.int64())), ... ) >>> s.list.len() 0 3 1 1 dtype: int32[pyarrow]",
     "markdown_length": 719,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.list.len — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.list.len — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:18.925044",
+    "crawled_at": "2026-08-28T15:49:44.546933",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "d72eaad93bdfc67d4fa39c69900824b0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.end_time.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.end_time.html",
-    "title": "pandas.Period.end_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Period.end_time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Period.end_time#\n\n- Period.end_time#\n- Get the Timestamp for the end of the period. This property returns the exact end time of the period as a Timestamp. The returned timestamp represents the last possible moment within the period (e.g., 23:59:59.999999 for a daily period). \n  - Returns:\n    - Timestamp\n See also \n  - `Period.start_time`\n  - Return the start Timestamp.\n  - `Period.dayofyear`\n  - Return the day of year.\n  - `Period.daysinmonth`\n  - Return the days in that month.\n  - `Period.dayofweek`\n  - Return the day of the week.\n Examples For Period: >>> pd.Period('2020-01', 'D').end_time Timestamp('2020-01-01 23:59:59.999999') For Series: >>> period_index = pd.period_range('2020-1-1 00:00', '2020-3-1 00:00', freq='M') >>> s = pd.Series(period_index) >>> s 0 2020-01 1 2020-02 2 2020-03 dtype: period[M] >>> s.dt.end_time 0 2020-01-31 23:59:59.999999 1 2020-02-29 23:59:59.999999 2 2020-03-31 23:59:59.999999 dtype: datetime64[us] For PeriodIndex: >>> idx = pd.PeriodIndex([\"2023-01\", \"2023-02\", \"2023-03\"], freq=\"M\") >>> idx.end_time DatetimeIndex(['2023-01-31 23:59:59.999999', '2023-02-28 23:59:59.999999', '2023-03-31 23:59:59.999999'], dtype='datetime64[us]', freq=None)",
     "markdown_length": 1198,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.end_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Period.end_time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.start_time.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:09.361612",
+    "crawled_at": "2026-08-28T15:48:24.071574",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "8abd4a70b90024e988b25696a90731c5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.reorder_levels.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.reorder_levels.html",
-    "title": "pandas.Series.reorder_levels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.reorder_levels — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.reorder_levels#\n\n- \nSeries.reorder_levels(*order* )[source]#\n- Rearrange index levels using input order. May not drop or duplicate levels. \n  - Parameters:\n    - **order** list of int representing new level order\n    - Reference level by number or key.\n  - Returns:\n    - Series\n    - Type of caller with index as MultiIndex (new object).\n See also \n  - `DataFrame.reorder_levels`\n  - Rearrange index or column levels using input `order` .\n Examples >>> arrays = [ ... np.array([\"dog\", \"dog\", \"cat\", \"cat\", \"bird\", \"bird\"]), ... np.array([\"white\", \"black\", \"white\", \"black\", \"white\", \"black\"]), ... ] >>> s = pd.Series([1, 2, 3, 3, 5, 2], index=arrays) >>> s dog white 1 black 2 cat white 3 black 3 bird white 5 black 2 dtype: int64 >>> s.reorder_levels([1, 0]) white dog 1 black dog 2 white cat 3 black cat 3 white bird 5 black bird 2 dtype: int64",
     "markdown_length": 864,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.reorder_levels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.reorder_levels — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:21.290860",
+    "crawled_at": "2026-08-28T15:50:02.036330",
     "type": "webpage"
 }

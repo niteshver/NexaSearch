@@ -2,7 +2,7 @@
     "id": "4dfaccaff17491a0af44e1a7d6d48ed0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._values_for_factorize.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._values_for_factorize.html",
-    "title": "pandas.api.extensions.ExtensionArray._values_for_factorize — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._values_for_factorize — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._values_for_factorize#\n\n- ExtensionArray._values_for_factorize()[source]#\n- Return an array and missing value suitable for factorization. This method provides the values and NA sentinel to use in the factorization process. Subclasses may override this to customize the factorization behavior. \n  - Returns:\n    - **values** ndarray\n    - An array suitable for factorization. This should maintain order and be a supported dtype (Float64, Int64, UInt64, String, Object). By default, the extension array is cast to object dtype.\n    - **na_value** object\n    - The value in values to consider missing. This will be treated as NA in the factorization routines, so it will be coded as -1 and not included in uniques. By default, `np.nan` is used.\n See also \n  - `util.hash_pandas_object`\n  - Hash the pandas object.\n Notes The values returned by this method are also used in `pandas.util.hash_pandas_object()` . If needed, this can be\noverridden in the`self._hash_pandas_object()` method.Examples >>> pd.array([1, 2, 3])._values_for_factorize() (array([1, 2, 3], dtype=object), nan)",
     "markdown_length": 1116,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._values_for_factorize — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._values_for_factorize — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.697582",
+    "crawled_at": "2026-08-28T15:51:41.200848",
     "type": "webpage"
 }

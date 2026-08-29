@@ -2,7 +2,7 @@
     "id": "698c2159c88df4b6cda191e7cd9aa656",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.to_tuples.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.to_tuples.html",
-    "title": "pandas.IntervalIndex.to_tuples — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.IntervalIndex.to_tuples — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.to_tuples#\n\n- \nIntervalIndex.to_tuples(*na_tuple=True* )[source]#\n- Return an ndarray (if self is IntervalArray) or Index (if self is IntervalIndex) of tuples of the form (left, right). This method extracts the bounds of each interval as a tuple, useful for iteration or conversion to other data structures. \n  - Parameters:\n    - **na_tuple** bool, default True\n    - If `True` , return`NA` as a tuple`(nan, nan)` . If`False` ,\njust return`NA` as`nan` .\n  - Returns:\n    - ndarray or Index\n      - An ndarray of tuples representing the intervals\n      - if self is an IntervalArray.\n      - An Index of tuples representing the intervals\n      - if self is an IntervalIndex.\n See also \n  - `IntervalArray.to_list`\n  - Convert IntervalArray to a list of tuples.\n  - `IntervalArray.to_numpy`\n  - Convert IntervalArray to a numpy array.\n  - `IntervalArray.unique`\n  - Find unique intervals in an IntervalArray.\n Examples For `pandas.IntervalArray` :>>> idx = pd.arrays.IntervalArray.from_tuples([(0, 1), (1, 2)]) >>> idx <IntervalArray> [(0, 1], (1, 2]] Length: 2, dtype: interval[int64, right] >>> idx.to_tuples() array([(np.int64(0), np.int64(1)), (np.int64(1), np.int64(2))], dtype=object) For `pandas.IntervalIndex` :>>> idx = pd.interval_range(start=0, end=2) >>> idx IntervalIndex([(0, 1], (1, 2]], dtype='interval[int64, right]') >>> idx.to_tuples() Index([(0, 1), (1, 2)], dtype='object')",
     "markdown_length": 1416,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.to_tuples — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.IntervalIndex.to_tuples — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.to_tuples.html"
     },
-    "crawled_at": "2026-08-26T06:49:49.404832",
+    "crawled_at": "2026-08-28T20:11:25.658711",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "fc50b2abd4aad5a65b96edf39b74efd5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.overlaps.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.overlaps.html",
-    "title": "pandas.Interval.overlaps — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Interval.overlaps — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Interval.overlaps#\n\n- \nInterval.overlaps(*other* )#\n- Check whether two Interval objects overlap. Two intervals overlap if they share a common point, including closed endpoints. Intervals that only have an open endpoint in common do not overlap. \n  - Parameters:\n    - **other** Interval\n    - Interval to check against for an overlap.\n  - Returns:\n    - bool\n    - True if the two intervals overlap.\n See also \n  - `IntervalArray.overlaps`\n  - The corresponding method for IntervalArray.\n  - `IntervalIndex.overlaps`\n  - The corresponding method for IntervalIndex.\n Examples >>> i1 = pd.Interval(0, 2) >>> i2 = pd.Interval(1, 3) >>> i1.overlaps(i2) True >>> i3 = pd.Interval(4, 5) >>> i1.overlaps(i3) False Intervals that share closed endpoints overlap: >>> i4 = pd.Interval(0, 1, closed='both') >>> i5 = pd.Interval(1, 2, closed='both') >>> i4.overlaps(i5) True Intervals that only have an open endpoint in common do not overlap: >>> i6 = pd.Interval(1, 2, closed='neither') >>> i4.overlaps(i6) False",
     "markdown_length": 1011,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Interval.overlaps — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Interval.overlaps — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.is_overlapping.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:08.819347",
+    "crawled_at": "2026-08-28T15:48:03.146440",
     "type": "webpage"
 }

@@ -2,10 +2,10 @@
     "id": "ac9697a32f6c4ee578aef268356daafe",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeTZDtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeTZDtype.html",
-    "title": "pandas.DatetimeTZDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DatetimeTZDtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.DatetimeTZDtype#\n\n- \nclass pandas.DatetimeTZDtype(*unit='ns'* ,*tz=None* )[source]#\n- An ExtensionDtype for timezone-aware datetime data. **This is not an actual numpy dtype** , but a duck type.\n  - Parameters:\n    - **unit** str, default “ns”\n    - The precision of the datetime data. Valid options are `\"s\"` ,`\"ms\"` ,`\"us\"` ,`\"ns\"` .\n    - **tz** str, int, or datetime.tzinfo\n    - The timezone.\n Attributes Methods **None**\n  - Raises:\n    - ZoneInfoNotFoundError\n    - When the requested timezone cannot be found.\n See also \n  - `numpy.datetime64`\n  - Numpy data type for datetime.\n  - `datetime.datetime`\n  - Python datetime object.\n Examples >>> from zoneinfo import ZoneInfo >>> pd.DatetimeTZDtype(tz=ZoneInfo(\"UTC\")) datetime64[ns, UTC] >>> pd.DatetimeTZDtype(tz=ZoneInfo(\"Europe/Paris\")) datetime64[ns, Europe/Paris]",
-    "markdown_length": 834,
+    "markdown": "# pandas.DatetimeTZDtype#\n\n- \nclass pandas.DatetimeTZDtype(*unit='ns'* ,*tz=None* )[source]#\n- An ExtensionDtype for timezone-aware datetime data. **This is not an actual numpy dtype** , but a duck type.\n  - Parameters:\n    - **unit** str, default “ns”\n    - The precision of the datetime data. Valid options are `\"s\"` ,`\"ms\"` ,`\"us\"` ,`\"ns\"` .\n    - **tz** str, int, or datetime.tzinfo\n    - The timezone.\n Attributes \n  - Raises:\n    - ZoneInfoNotFoundError\n    - When the requested timezone cannot be found.\n See also \n  - `numpy.datetime64`\n  - Numpy data type for datetime.\n  - `datetime.datetime`\n  - Python datetime object.\n Examples >>> from zoneinfo import ZoneInfo >>> pd.DatetimeTZDtype(tz=ZoneInfo(\"UTC\")) datetime64[ns, UTC] >>> pd.DatetimeTZDtype(tz=ZoneInfo(\"Europe/Paris\")) datetime64[ns, Europe/Paris]",
+    "markdown_length": 818,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeTZDtype.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeTZDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DatetimeTZDtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.285665",
+    "crawled_at": "2026-08-28T15:47:28.518381",
     "type": "webpage"
 }

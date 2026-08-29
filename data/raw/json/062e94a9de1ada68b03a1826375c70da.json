@@ -2,7 +2,7 @@
     "id": "062e94a9de1ada68b03a1826375c70da",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.shift.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.shift.html",
-    "title": "pandas.api.extensions.ExtensionArray.shift — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.shift — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.shift#\n\n- \nExtensionArray.shift(*periods=1* ,*fill_value=None* )[source]#\n- Shift values by desired number. Newly introduced missing values are filled with `self.dtype.na_value` .\n  - Parameters:\n    - **periods** int, default 1\n    - The number of periods to shift. Negative values are allowed for shifting backwards.\n    - **fill_value** object, optional\n    - The scalar value to use for newly introduced missing values. The default is `self.dtype.na_value` .\n  - Returns:\n    - ExtensionArray\n    - Shifted.\n See also \n  - `api.extensions.ExtensionArray.transpose`\n  - Return a transposed view on this array.\n  - `api.extensions.ExtensionArray.factorize`\n  - Encode the extension array as an enumerated type.\n Notes If `self` is empty or`periods` is 0, a copy of`self` is\nreturned.If `periods > len(self)` , then an array of size\nlen(self) is returned, with all values filled with`self.dtype.na_value` .For 2-dimensional ExtensionArrays, we are always shifting along axis=0. Examples >>> arr = pd.array([1, 2, 3]) >>> arr.shift(2) <IntegerArray> [<NA>, <NA>, 1] Length: 3, dtype: Int64",
     "markdown_length": 1128,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.shift — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.shift — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.252217",
+    "crawled_at": "2026-08-28T15:51:47.967826",
     "type": "webpage"
 }

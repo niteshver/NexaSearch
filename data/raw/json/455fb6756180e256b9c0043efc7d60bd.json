@@ -2,7 +2,7 @@
     "id": "455fb6756180e256b9c0043efc7d60bd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.astype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.astype.html",
-    "title": "pandas.api.extensions.ExtensionArray.astype — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.astype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.astype#\n\n- \nExtensionArray.astype(*dtype* ,*copy=True* )[source]#\n- Cast to a NumPy array or ExtensionArray with ‘dtype’. If the target dtype is an ExtensionDtype, the result is an ExtensionArray. Otherwise, the result is a NumPy ndarray. \n  - Parameters:\n    - **dtype** str or dtype\n    - Typecode or data-type to which the array is cast.\n    - **copy** bool, default True\n    - Whether to copy the data, even if not necessary. If False, a copy is made only if the old dtype does not match the new dtype.\n  - Returns:\n    - np.ndarray or pandas.api.extensions.ExtensionArray\n    - An `ExtensionArray` if`dtype` is`ExtensionDtype` ,\notherwise a Numpy ndarray with`dtype` for its dtype.\n See also \n  - `Series.astype`\n  - Cast a Series to a different dtype.\n  - `DataFrame.astype`\n  - Cast a DataFrame to a different dtype.\n  - `api.extensions.ExtensionArray`\n  - Base class for ExtensionArray objects.\n  - `core.arrays.DatetimeArray._from_sequence`\n  - Create a DatetimeArray from a sequence.\n  - `core.arrays.TimedeltaArray._from_sequence`\n  - Create a TimedeltaArray from a sequence.\n Examples >>> arr = pd.array([1, 2, 3]) >>> arr <IntegerArray> [1, 2, 3] Length: 3, dtype: Int64 Casting to another `ExtensionDtype` returns an`ExtensionArray` :>>> arr1 = arr.astype(\"Float64\") >>> arr1 <FloatingArray> [1.0, 2.0, 3.0] Length: 3, dtype: Float64 >>> arr1.dtype Float64Dtype() Otherwise, we will get a Numpy ndarray: >>> arr2 = arr.astype(\"float64\") >>> arr2 array([1., 2., 3.]) >>> arr2.dtype dtype('float64')",
     "markdown_length": 1550,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.astype — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.astype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.717018",
+    "crawled_at": "2026-08-28T15:51:42.001211",
     "type": "webpage"
 }

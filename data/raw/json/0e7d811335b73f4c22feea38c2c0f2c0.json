@@ -2,7 +2,7 @@
     "id": "0e7d811335b73f4c22feea38c2c0f2c0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.argsort.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.argsort.html",
-    "title": "pandas.api.extensions.ExtensionArray.argsort — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.argsort — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.argsort#\n\n- \nExtensionArray.argsort(*** ,*ascending=True* ,*kind='quicksort'* ,*na_position='last'* ,***kwargs* )[source]#\n- Return the indices that would sort this array. This method computes the indices that would produce a sorted version of the array when used with indexing. \n  - Parameters:\n    - **ascending** bool, default True\n    - Whether the indices should result in an ascending or descending sort.\n    - **kind** {‘quicksort’, ‘mergesort’, ‘heapsort’, ‘stable’}, optional\n    - Sorting algorithm.\n    - **na_position** {‘first’, ‘last’}, default ‘last’\n    - If `'first'` , put`NaN` values at the beginning.\nIf`'last'` , put`NaN` values at the end.\n    - ****kwargs**\n    - Passed through to `numpy.argsort()` .\n  - Returns:\n    - np.ndarray[np.intp]\n    - Array of indices that sort `self` . If NaN values are contained,\nNaN values are placed at the end.\n See also \n  - `numpy.argsort`\n  - Sorting implementation used internally.\n Examples >>> arr = pd.array([3, 1, 2, 5, 4]) >>> arr.argsort() array([1, 2, 0, 4, 3])",
     "markdown_length": 1069,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.argsort — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.argsort — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.736049",
+    "crawled_at": "2026-08-28T15:51:40.850942",
     "type": "webpage"
 }

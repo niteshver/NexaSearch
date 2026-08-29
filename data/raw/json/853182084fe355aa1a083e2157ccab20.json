@@ -2,7 +2,7 @@
     "id": "853182084fe355aa1a083e2157ccab20",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sparse.density.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.sparse.density.html",
-    "title": "pandas.DataFrame.sparse.density — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.sparse.density — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.sparse.density#\n\n- DataFrame.sparse.density[source]#\n- Ratio of non-sparse points to total (dense) data points. This property returns the proportion of the data that is not sparse (i.e., not equal to the fill value), as a value between 0 and 1. See also \n  - `DataFrame.sparse.from_spmatrix`\n  - Create a new DataFrame from a scipy sparse matrix.\n Examples >>> df = pd.DataFrame({\"A\": pd.arrays.SparseArray([0, 1, 0, 1])}) >>> df.sparse.density np.float64(0.5)",
     "markdown_length": 479,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.sparse.density — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.sparse.density — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:05.753693",
+    "crawled_at": "2026-08-28T15:46:54.398560",
     "type": "webpage"
 }

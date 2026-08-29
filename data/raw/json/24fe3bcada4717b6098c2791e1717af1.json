@@ -2,7 +2,7 @@
     "id": "24fe3bcada4717b6098c2791e1717af1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.sum.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.sum.html",
-    "title": "pandas.api.typing.Expanding.sum — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Expanding.sum — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.sum#\n\n- \nExpanding.sum(*numeric_only=False* ,*engine=None* ,*engine_kwargs=None* )[source]#\n- Calculate the expanding sum. At each point in time, returns the cumulative sum of all values observed up to that point, respecting the `min_periods` threshold.\n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - **engine** str, default None\n      - `'cython'` : Runs the operation through C-extensions from cython.\n      - `'numba'` : Runs the operation through JIT compiled code from numba.\n      - `None` : Defaults to`'cython'` or globally setting`compute.use_numba`\n    - **engine_kwargs** dict, default None\n      - For `'cython'` engine, there are no accepted`engine_kwargs`\n      - For `'numba'` engine, the engine can accept`nogil` and`parallel` dictionary keys. The values must either be`True` or`False` . The default`engine_kwargs` for the`'numba'` engine is`{'nogil': False, 'parallel': False}`\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.sum`\n  - Aggregating sum for Series.\n  - `DataFrame.sum`\n  - Aggregating sum for DataFrame.\n Notes See Numba engine and Numba (JIT compilation) for extended documentation and performance considerations for the Numba engine. Examples >>> ser = pd.Series([1, 2, 3, 4], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser.expanding().sum() a 1.0 b 3.0 c 6.0 d 10.0 dtype: float64",
     "markdown_length": 1619,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.sum — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Expanding.sum — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:47.196547",
+    "crawled_at": "2026-08-28T17:57:32.660744",
     "type": "webpage"
 }

@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.get_indexer_non_unique.html"
     },
-    "crawled_at": "2026-08-26T06:50:12.704474",
+    "crawled_at": "2026-08-28T19:38:36.718585",
     "type": "webpage"
 }

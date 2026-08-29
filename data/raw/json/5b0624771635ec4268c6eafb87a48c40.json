@@ -184,8 +184,8 @@
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "https://pandas.pydata.org/community/blog/pandas-3.0.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/community.html"
     },
-    "crawled_at": "2026-08-26T06:52:05.713936",
+    "crawled_at": "2026-08-28T16:00:21.823473",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "c7fcc9bc426868b387c9a00c547bab20",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.indexer_between_time.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.indexer_between_time.html",
-    "title": "pandas.DatetimeIndex.indexer_between_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DatetimeIndex.indexer_between_time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.indexer_between_time#\n\n- \nDatetimeIndex.indexer_between_time(*start_time* ,*end_time* ,*include_start=True* ,*include_end=True* )[source]#\n- Return index locations of values between particular times of day. This method returns the integer indices of the DatetimeIndex entries whose time-of-day components fall within the specified range. \n  - Parameters:\n    - **start_time, end_time** datetime.time, str\n    - Time passed either as object (datetime.time) or as string in appropriate format (“%H:%M”, “%H%M”, “%I:%M%p”, “%I%M%p”, “%H:%M:%S”, “%H%M%S”, “%I:%M:%S%p”,”%I%M%S%p”).\n    - **include_start** bool, default True\n    - Include boundaries; whether to set start bound as closed or open.\n    - **include_end** bool, default True\n    - Include boundaries; whether to set end bound as closed or open.\n  - Returns:\n    - np.ndarray[np.intp]\n    - Index locations of values between particular times of day.\n See also \n  - `indexer_at_time`\n  - Get index locations of values at particular time of day.\n  - `DataFrame.between_time`\n  - Select values between particular times of day.\n Examples >>> idx = pd.date_range(\"2023-01-01\", periods=4, freq=\"h\") >>> idx DatetimeIndex(['2023-01-01 00:00:00', '2023-01-01 01:00:00', '2023-01-01 02:00:00', '2023-01-01 03:00:00'], dtype='datetime64[us]', freq='h') >>> idx.indexer_between_time(\"00:00\", \"2:00\", include_end=False) array([0, 1])",
     "markdown_length": 1402,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.indexer_between_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DatetimeIndex.indexer_between_time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:46.095506",
+    "crawled_at": "2026-08-28T15:47:17.269419",
     "type": "webpage"
 }

@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.map.html"
     },
-    "crawled_at": "2026-08-26T06:51:07.339349",
+    "crawled_at": "2026-08-28T19:36:05.529155",
     "type": "webpage"
 }

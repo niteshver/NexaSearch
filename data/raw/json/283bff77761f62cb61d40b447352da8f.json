@@ -2,7 +2,7 @@
     "id": "283bff77761f62cb61d40b447352da8f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.idxmin.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.idxmin.html",
-    "title": "pandas.Series.idxmin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.idxmin — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.idxmin#\n\n- \nSeries.idxmin(*axis=0* ,*skipna=True* ,**args* ,***kwargs* )[source]#\n- Return the row label of the minimum value. If multiple values equal the minimum, the first row label with that value is returned. \n  - Parameters:\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If the entire Series is NA, or if `skipna=False` and there is an NA value, this method will raise a`ValueError` .\n    - ***args, **kwargs**\n    - Additional arguments and keywords have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Index\n    - Label of the minimum value.\n  - Raises:\n    - ValueError\n    - If the Series is empty.\n See also \n  - `numpy.argmin`\n  - Return indices of the minimum values along the given axis.\n  - `DataFrame.idxmin`\n  - Return index of first occurrence of minimum over requested axis.\n  - `Series.idxmax`\n  - Return index *label* of the first occurrence of maximum of values.\n Notes This method is the Series version of `ndarray.argmin` . This method\nreturns the label of the minimum, while`ndarray.argmin` returns\nthe position. To get the position, use`series.values.argmin()` .Examples >>> s = pd.Series(data=[1, None, 4, 1], index=[\"A\", \"B\", \"C\", \"D\"]) >>> s A 1.0 B NaN C 4.0 D 1.0 dtype: float64 >>> s.idxmin() 'A'",
     "markdown_length": 1433,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.idxmin — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.idxmin — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.argmax.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:17.861534",
+    "crawled_at": "2026-08-28T15:49:37.492939",
     "type": "webpage"
 }

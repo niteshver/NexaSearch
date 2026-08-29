@@ -2,7 +2,7 @@
     "id": "04a6c1c608188c1ed4e438ece9df80f8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.nearest.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.nearest.html",
-    "title": "pandas.api.typing.Resampler.nearest — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Resampler.nearest — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.nearest#\n\n- \nfinal Resampler.nearest(*limit=None* )[source]#\n- Resample by using the nearest value. When resampling data, missing values may appear (e.g., when the resampling frequency is higher than the original frequency). The nearest method will replace `NaN` values that appeared in\nthe resampled data with the value from the nearest member of the\nsequence, based on the index value.\nMissing values that existed in the original data will not be modified.\nIf limit is given, fill only this many values in each direction for\neach of the original values.\n  - Parameters:\n    - **limit** int, optional\n    - Limit of how many values to fill.\n  - Returns:\n    - Series or DataFrame\n    - An upsampled Series or DataFrame with `NaN` values filled with\ntheir nearest value.\n See also Examples >>> s = pd.Series([1, 2], index=pd.date_range(\"20180101\", periods=2, freq=\"1h\")) >>> s 2018-01-01 00:00:00 1 2018-01-01 01:00:00 2 Freq: h, dtype: int64 >>> s.resample(\"15min\").nearest() 2018-01-01 00:00:00 1 2018-01-01 00:15:00 1 2018-01-01 00:30:00 2 2018-01-01 00:45:00 2 2018-01-01 01:00:00 2 Freq: 15min, dtype: int64 Limit the number of upsampled values imputed by the nearest: >>> s.resample(\"15min\").nearest(limit=1) 2018-01-01 00:00:00 1.0 2018-01-01 00:15:00 1.0 2018-01-01 00:30:00 NaN 2018-01-01 00:45:00 2.0 2018-01-01 01:00:00 2.0 Freq: 15min, dtype: float64",
     "markdown_length": 1392,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.nearest — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Resampler.nearest — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.670501",
+    "crawled_at": "2026-08-28T17:57:46.849742",
     "type": "webpage"
 }

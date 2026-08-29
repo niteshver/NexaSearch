@@ -2,7 +2,7 @@
     "id": "b58a82bbc53899df2352d18d9329a323",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.bfill.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.bfill.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.bfill — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.bfill — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.bfill#\n\n- \nDataFrameGroupBy.bfill(*limit=None* )[source]#\n- Backward fill the values. Fill missing values within each group by propagating the next valid observation backward. \n  - Parameters:\n    - **limit** int, optional\n    - Limit of how many values to fill.\n  - Returns:\n    - Series or DataFrame\n    - Object with missing values filled.\n See also \n  - `Series.bfill`\n  - Backward fill the missing values in the dataset.\n  - `DataFrame.bfill`\n  - Backward fill the missing values in the dataset.\n  - `Series.fillna`\n  - Fill NaN values of a Series.\n  - `DataFrame.fillna`\n  - Fill NaN values of a DataFrame.\n Examples With Series: >>> index = [\"Falcon\", \"Falcon\", \"Parrot\", \"Parrot\", \"Parrot\"] >>> s = pd.Series([None, 1, None, None, 3], index=index) >>> s Falcon NaN Falcon 1.0 Parrot NaN Parrot NaN Parrot 3.0 dtype: float64 >>> s.groupby(level=0).bfill() Falcon 1.0 Falcon 1.0 Parrot 3.0 Parrot 3.0 Parrot 3.0 dtype: float64 >>> s.groupby(level=0).bfill(limit=1) Falcon 1.0 Falcon 1.0 Parrot NaN Parrot 3.0 Parrot 3.0 dtype: float64 With DataFrame: >>> df = pd.DataFrame( ... {\"A\": [1, None, None, None, 4], \"B\": [None, None, 5, None, 7]}, ... index=index, ... ) >>> df A B Falcon 1.0 NaN Falcon NaN NaN Parrot NaN 5.0 Parrot NaN NaN Parrot 4.0 7.0 >>> df.groupby(level=0).bfill() A B Falcon 1.0 NaN Falcon NaN NaN Parrot 4.0 5.0 Parrot 4.0 7.0 Parrot 4.0 7.0 >>> df.groupby(level=0).bfill(limit=1) A B Falcon 1.0 NaN Falcon NaN NaN Parrot NaN 5.0 Parrot 4.0 7.0 Parrot 4.0 7.0",
     "markdown_length": 1522,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.bfill — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.bfill — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:01.031691",
+    "crawled_at": "2026-08-28T17:56:50.163735",
     "type": "webpage"
 }

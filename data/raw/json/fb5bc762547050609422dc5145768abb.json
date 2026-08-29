@@ -2,7 +2,7 @@
     "id": "fb5bc762547050609422dc5145768abb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.map_index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.map_index.html",
-    "title": "pandas.io.formats.style.Styler.map_index — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.map_index — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.map_index#\n\n- \nStyler.map_index(*func* ,*axis=0* ,*level=None* ,***kwargs* )[source]#\n- Apply a CSS-styling function to the index or column headers, elementwise. Updates the HTML representation with the result. Added in version 2.1.0: Styler.applymap_index was deprecated and renamed to Styler.map_index. \n  - Parameters:\n    - **func** function\n    - `func` should take a scalar and return a string.\n    - **axis** {0, 1, “index”, “columns”}\n    - The headers over which to apply the function.\n    - **level** int, str, list, optional\n    - If index is MultiIndex the level(s) over which to apply the function.\n    - ****kwargs** dict\n    - Pass along to `func` .\n  - Returns:\n    - Styler\n    - Instance of class with CSS applied to its HTML representation.\n See also \n  - `Styler.apply_index`\n  - Apply a CSS-styling function to headers level-wise.\n  - `Styler.apply`\n  - Apply a CSS-styling function column-wise, row-wise, or table-wise.\n  - `Styler.map`\n  - Apply a CSS-styling function elementwise.\n Notes Each input to `func` will be an index value, if an Index, or a level value of\na MultiIndex. The output of`func` should be CSS styles as a string, in the\nformat ‘attribute: value; attribute2: value2; …’ or, if nothing is to be\napplied to that element, an empty string or`None` .Examples Basic usage to conditionally highlight values in the index. >>> df = pd.DataFrame([[1, 2], [3, 4]], index=[\"A\", \"B\"]) >>> def color_b(label): ... return \"background-color: yellow;\" if label == \"B\" else None >>> df.style.map_index(color_b) Selectively applying to specific levels of MultiIndex columns. >>> midx = pd.MultiIndex.from_product([[\"ix\", \"jy\"], [0, 1], [\"x3\", \"z4\"]]) >>> df = pd.DataFrame([np.arange(8)], columns=midx) >>> def highlight_x(label): ... return \"background-color: yellow;\" if \"x\" in label else None >>> df.style.map_index( ... highlight_x, axis=\"columns\", level=[0, 2] ... )",
     "markdown_length": 1929,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.map_index — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.map_index — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.410329",
+    "crawled_at": "2026-08-28T17:59:23.869262",
     "type": "webpage"
 }

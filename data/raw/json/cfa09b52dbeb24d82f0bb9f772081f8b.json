@@ -2,7 +2,7 @@
     "id": "cfa09b52dbeb24d82f0bb9f772081f8b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.closed_left.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Interval.closed_left.html",
-    "title": "pandas.Interval.closed_left — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Interval.closed_left — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Interval.closed_left#\n\n- Interval.closed_left#\n- Check if the interval is closed on the left side. For the meaning of closed and open see `Interval` .\n  - Returns:\n    - bool\n    - True if the Interval is closed on the left-side.\n See also \n  - `Interval.closed_right`\n  - Check if the interval is closed on the right side.\n  - `Interval.open_left`\n  - Boolean inverse of closed_left.\n Examples >>> iv = pd.Interval(0, 5, closed='left') >>> iv.closed_left True >>> iv = pd.Interval(0, 5, closed='right') >>> iv.closed_left False",
     "markdown_length": 537,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Interval.closed_left — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Interval.closed_left — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:08.426957",
+    "crawled_at": "2026-08-28T15:48:00.325846",
     "type": "webpage"
 }

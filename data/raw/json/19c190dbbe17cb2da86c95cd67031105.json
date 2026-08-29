@@ -2,7 +2,7 @@
     "id": "19c190dbbe17cb2da86c95cd67031105",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.skew.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.skew.html",
-    "title": "pandas.api.typing.Expanding.skew — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Expanding.skew — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.skew#\n\n- \nExpanding.skew(*numeric_only=False* )[source]#\n- Calculate the expanding unbiased skewness. Computes the third standardized moment over all data points seen so far, measuring the asymmetry of the distribution. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `scipy.stats.skew`\n  - Third moment of a probability density.\n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.skew`\n  - Aggregating skew for Series.\n  - `DataFrame.skew`\n  - Aggregating skew for DataFrame.\n Notes A minimum of three periods is required for the rolling calculation. Examples >>> ser = pd.Series([-1, 0, 2, -1, 2], index=[\"a\", \"b\", \"c\", \"d\", \"e\"]) >>> ser.expanding().skew() a NaN b NaN c 0.935220 d 1.414214 e 0.315356 dtype: float64",
     "markdown_length": 1030,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.skew — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Expanding.skew — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.470929",
+    "crawled_at": "2026-08-28T17:57:31.573716",
     "type": "webpage"
 }

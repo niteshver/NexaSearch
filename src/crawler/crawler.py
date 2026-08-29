@@ -138,7 +138,7 @@ class CrawlerManager:
                 max_retries=settings.MAX_RETRIES,
                 markdown_generator=markdown_generator,
                 deep_crawl_strategy=strategy,
-                stream=False,
+                stream=True,
                 word_count_threshold=settings.WORD_COUNT_THRESHOLD,
                 exclude_external_links=True,
                 exclude_social_media_links=True,
@@ -149,11 +149,13 @@ class CrawlerManager:
             )
 
             async with AsyncWebCrawler(config=browser_config) as crawler:
-                for result in await crawler.arun_many(
+                _agen = await crawler.arun_many(
                     urls=web_urls,
                     config=config_run,
                     dispatcher=dispatcher,
-                ):
+                )
+
+                async for result in _agen:
                     if not result.success:
                         logger.error(f"Crawl failed for {result.url}: {result.error_message}")
                         continue

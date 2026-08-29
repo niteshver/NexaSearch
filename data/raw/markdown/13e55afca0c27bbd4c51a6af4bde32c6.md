@@ -1,0 +1,13 @@
+# pandas.ArrowDtype#
+
+- 
+*class* pandas.ArrowDtype(*pyarrow_dtype* )[source]#
+- An ExtensionDtype for PyArrow data types. Warning ArrowDtype is considered experimental. The implementation and parts of the API may change without warning. While most `dtype` arguments can accept the “string”
+constructor, e.g.`"int64[pyarrow]"` , ArrowDtype is useful
+if the data type contains parameters like`pyarrow.timestamp` .
+  - Parameters:
+    - **pyarrow_dtype** pa.DataType
+    - An instance of a pyarrow.DataType.
+  - Returns:
+    - ArrowDtype
+ Examples >>> import pyarrow as pa >>> pd.ArrowDtype(pa.int64()) int64[pyarrow] Types with parameters must be constructed with ArrowDtype. >>> pd.ArrowDtype(pa.timestamp("s", tz="America/New_York")) timestamp[s, tz=America/New_York][pyarrow] >>> pd.ArrowDtype(pa.list_(pa.int64())) list<item: int64>[pyarrow] Attributes **pyarrow_dtype**Methods **None**

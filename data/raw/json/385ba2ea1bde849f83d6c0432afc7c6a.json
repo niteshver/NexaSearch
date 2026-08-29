@@ -2,7 +2,7 @@
     "id": "385ba2ea1bde849f83d6c0432afc7c6a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.IntervalArray.closed.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.IntervalArray.closed.html",
-    "title": "pandas.arrays.IntervalArray.closed — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.arrays.IntervalArray.closed — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.arrays.IntervalArray.closed#\n\n- property IntervalArray.closed[source]#\n- String describing the inclusive side the intervals. Either `left` ,`right` ,`both` or`neither` .See also \n  - `IntervalArray.closed`\n  - Returns inclusive side of the IntervalArray.\n  - `Interval.closed`\n  - Returns inclusive side of the Interval.\n  - `IntervalIndex.closed`\n  - Returns inclusive side of the IntervalIndex.\n Examples For arrays: >>> interv_arr = pd.arrays.IntervalArray([pd.Interval(0, 1), pd.Interval(1, 5)]) >>> interv_arr <IntervalArray> [(0, 1], (1, 5]] Length: 2, dtype: interval[int64, right] >>> interv_arr.closed 'right' For Interval Index: >>> interv_idx = pd.interval_range(start=0, end=2) >>> interv_idx IntervalIndex([(0, 1], (1, 2]], dtype='interval[int64, right]') >>> interv_idx.closed 'right'",
     "markdown_length": 807,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.arrays.IntervalArray.closed — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.arrays.IntervalArray.closed — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.set_closed.html"
     },
-    "crawled_at": "2026-08-26T06:49:32.657487",
+    "crawled_at": "2026-08-28T17:58:41.673601",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "863dec129fac8abcf5846d32ea991763",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.isna.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.isna.html",
-    "title": "pandas.api.extensions.ExtensionArray.isna — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.isna — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.isna#\n\n- ExtensionArray.isna()[source]#\n- A 1-D array indicating if each value is missing. This method returns a boolean array where `True` indicates that\nthe corresponding value is missing (NA/NaN).\n  - Returns:\n    - numpy.ndarray or pandas.api.extensions.ExtensionArray\n    - In most cases, this should return a NumPy ndarray. For exceptional cases like `SparseArray` , where returning\nan ndarray would be expensive, an ExtensionArray may be\nreturned.\n See also \n  - `ExtensionArray.dropna`\n  - Return ExtensionArray without NA values.\n  - `ExtensionArray.fillna`\n  - Fill NA/NaN values using the specified method.\n Notes If returning an ExtensionArray, then \n  - `na_values._is_boolean` should be True\n  - `na_values` should implement`ExtensionArray._reduce()`\n  - `na_values` should implement`ExtensionArray._accumulate()`\n  - `na_values.any` ,`na_values.all` ,`na_values.sum` , and`na_values.__invert__` should be implemented\n Examples >>> arr = pd.array([1, 2, np.nan, np.nan]) >>> arr.isna() array([False, False, True, True])",
     "markdown_length": 1072,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.isna — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.isna — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.022298",
+    "crawled_at": "2026-08-28T15:51:45.359801",
     "type": "webpage"
 }

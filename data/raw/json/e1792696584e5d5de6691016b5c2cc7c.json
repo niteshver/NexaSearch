@@ -2,10 +2,10 @@
     "id": "e1792696584e5d5de6691016b5c2cc7c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.SparseDtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.SparseDtype.html",
-    "title": "pandas.SparseDtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.SparseDtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.SparseDtype#\n\n- \nclass pandas.SparseDtype(*dtype=<class 'numpy.float64'>* ,*fill_value=None* )[source]#\n- Dtype for data stored in `SparseArray` .`SparseDtype` is used as the data type for`SparseArray` , enabling\nmore efficient storage of data that contains a significant number of\nrepetitive values typically represented by a fill value. It supports any\nscalar dtype as the underlying data type of the non-fill values.\n  - Parameters:\n    - **dtype** str, ExtensionDtype, numpy.dtype, type, default numpy.float64\n    - The dtype of the underlying array storing the non-fill value values.\n    - **fill_value** scalar, optional\n    - The scalar value not stored in the SparseArray. By default, this depends on `dtype` .dtype na_value float `np.nan`complex `np.nan`int `0`bool `False`datetime64 `pd.NaT`timedelta64 `pd.NaT`The default value may be overridden by specifying a `fill_value` .\n Attributes **None**Methods **None**See also \n  - `arrays.SparseArray`\n  - The array structure that uses SparseDtype for data representation.\n Examples >>> ser = pd.Series([1, 0, 0], dtype=pd.SparseDtype(dtype=int, fill_value=0)) >>> ser 0 1 1 0 2 0 dtype: Sparse[int64, 0] >>> ser.sparse.density 0.3333333333333333",
-    "markdown_length": 1212,
+    "markdown": "# pandas.SparseDtype#\n\n- \nclass pandas.SparseDtype(*dtype=<class 'numpy.float64'>* ,*fill_value=None* )[source]#\n- Dtype for data stored in `SparseArray` .`SparseDtype` is used as the data type for`SparseArray` , enabling\nmore efficient storage of data that contains a significant number of\nrepetitive values typically represented by a fill value. It supports any\nscalar dtype as the underlying data type of the non-fill values.\n  - Parameters:\n    - **dtype** str, ExtensionDtype, numpy.dtype, type, default numpy.float64\n    - The dtype of the underlying array storing the non-fill value values.\n    - **fill_value** scalar, optional\n    - The scalar value not stored in the SparseArray. By default, this depends on `dtype` .dtype na_value float `np.nan`complex `np.nan`int `0`bool `False`datetime64 `pd.NaT`timedelta64 `pd.NaT`The default value may be overridden by specifying a `fill_value` .\n See also \n  - `arrays.SparseArray`\n  - The array structure that uses SparseDtype for data representation.\n Examples >>> ser = pd.Series([1, 0, 0], dtype=pd.SparseDtype(dtype=int, fill_value=0)) >>> ser 0 1 1 0 2 0 dtype: Sparse[int64, 0] >>> ser.sparse.density 0.3333333333333333",
+    "markdown_length": 1177,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.SparseDtype.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.SparseDtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.SparseDtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:02.745490",
+    "crawled_at": "2026-08-28T15:50:51.185597",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "2638e39b45a270588dcdabc765a0ced7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.rename.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.rename.html",
-    "title": "pandas.Index.rename — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.rename — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.rename#\n\n- \nIndex.rename(*name* ,*** ,*inplace=False* )[source]#\n- Alter Index or MultiIndex name. Able to set new names without level. Defaults to returning new index. Length of names must match number of levels in MultiIndex. \n  - Parameters:\n    - **name** Hashable or a sequence of the previous\n    - Name(s) to set.\n    - **inplace** bool, default False\n    - Modifies the object directly, instead of creating a new Index or MultiIndex.\n  - Returns:\n    - Index or None\n    - The same type as the caller or None if `inplace=True` .\n See also \n  - `Index.set_names`\n  - Able to set new names partially and by level.\n Examples >>> idx = pd.Index([\"A\", \"C\", \"A\", \"B\"], name=\"score\") >>> idx.rename(\"grade\") Index(['A', 'C', 'A', 'B'], dtype='str', name='grade') >>> idx = pd.MultiIndex.from_product( ... [[\"python\", \"cobra\"], [2018, 2019]], names=[\"kind\", \"year\"] ... ) >>> idx MultiIndex([('python', 2018), ('python', 2019), ( 'cobra', 2018), ( 'cobra', 2019)], names=['kind', 'year']) >>> idx.rename([\"species\", \"year\"]) MultiIndex([('python', 2018), ('python', 2019), ( 'cobra', 2018), ( 'cobra', 2019)], names=['species', 'year']) >>> idx.rename(\"species\") Traceback (most recent call last): TypeError: Must pass list-like as `names`.",
     "markdown_length": 1255,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.rename — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.rename — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:50.155595",
+    "crawled_at": "2026-08-28T15:47:49.759773",
     "type": "webpage"
 }

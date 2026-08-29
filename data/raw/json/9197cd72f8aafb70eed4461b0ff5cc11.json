@@ -2,7 +2,7 @@
     "id": "9197cd72f8aafb70eed4461b0ff5cc11",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v2.3.2.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v2.3.2.html",
-    "title": "What’s new in 2.3.2 (August 21, 2025) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 2.3.2 (August 21, 2025) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 2.3.2 (August 21, 2025)#\n\nThese are the changes in pandas 2.3.2. See Release notes for a full changelog including other versions of pandas.\n\n## Improvements and fixes for the StringDtype#\n\nMost changes in this release are related to `StringDtype` which will\nbecome the default string dtype in pandas 3.0. See\nUpcoming changes in pandas 3.0 for more details.\n\n### Bug fixes#\n\n- Fix `to_json()` with`orient=\"table\"` to correctly use the\n“string” type in the JSON Table Schema for`StringDtype` columns\n(GH 61889)\n- Boolean operations ( `|` ,`&` ,`^` ) with bool-dtype objects on the left and`StringDtype` objects on the right now cast the string to bool, with a deprecation warning (GH 60234)\n- Fixed `~Series.str.match` ,`~Series.str.fullmatch` and`~Series.str.contains` with compiled regex for the Arrow-backed string dtype (GH 61964, GH 61942)\n- Bug in `Series.replace()` and`DataFrame.replace()` inconsistently\nreplacing matching values when missing values are present for string dtypes (GH 56599)\n\n## Contributors#\n\nA total of 10 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Aniket +\n- Asish Mahapatra\n- Irv Lustig\n- Joris Van den Bossche\n- Khemkaran +\n- Khemkaran Sevta +\n- Lumberbot (aka Jack)\n- Richard Shadrach\n- jbrockmendel\n- pandas Development Team +",
     "markdown_length": 1350,
@@ -10,18 +10,6 @@
         {
             "href": "http://pandas.pydata.org/docs/dev/whatsnew/v2.3.2.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "http://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html",
+            "text": "What’s new in 3.1.0 (Month XX, 2026)",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 2.3.2 (August 21, 2025) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 2.3.2 (August 21, 2025) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:56.069562",
+    "crawled_at": "2026-08-28T17:55:27.709300",
     "type": "webpage"
 }

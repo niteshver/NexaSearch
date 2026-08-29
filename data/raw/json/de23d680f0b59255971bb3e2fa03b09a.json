@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html"
     },
-    "crawled_at": "2026-08-26T06:50:28.182127",
+    "crawled_at": "2026-08-28T20:35:54.367794",
     "type": "webpage"
 }

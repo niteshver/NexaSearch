@@ -2,7 +2,7 @@
     "id": "c8f99ff692d2bf78e85f3d0c49077980",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.json.build_table_schema.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.json.build_table_schema.html",
-    "title": "pandas.io.json.build_table_schema — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.io.json.build_table_schema — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.json.build_table_schema#\n\n- \npandas.io.json.build_table_schema(*data* ,*index=True* ,*primary_key=None* ,*version=True* )[source]#\n- Create a Table schema from `data` .This method is a utility to generate a JSON-serializable schema representation of a pandas Series or DataFrame, compatible with the Table Schema specification. It enables structured data to be shared and validated in various applications, ensuring consistency and interoperability. \n  - Parameters:\n    - **data** Series or DataFrame\n    - The input data for which the table schema is to be created.\n    - **index** bool, default True\n    - Whether to include `data.index` in the schema.\n    - **primary_key** bool or None, default True\n    - Column names to designate as the primary key. The default None will set ‘primaryKey’ to the index level or levels if the index is unique.\n    - **version** bool, default True\n    - Whether to include a field pandas_version with the version of pandas that last revised the table schema. This version can be different from the installed pandas version.\n  - Returns:\n    - dict\n    - A dictionary representing the Table schema.\n See also \n  - `DataFrame.to_json`\n  - Convert the object to a JSON string.\n  - `read_json`\n  - Convert a JSON string to pandas object.\n Notes See Table Schema for conversion types. Timedeltas as converted to ISO8601 duration format with 9 decimal places after the seconds field for nanosecond precision. Categoricals are converted to the any dtype, and use the enum field constraint to list the allowed values. The ordered attribute is included in an ordered field. Examples >>> from pandas.io.json._table_schema import build_table_schema >>> df = pd.DataFrame( ... {'A': [1, 2, 3], ... 'B': ['a', 'b', 'c'], ... 'C': pd.date_range('2016-01-01', freq='D', periods=3), ... }, index=pd.Index(range(3), name='idx')) >>> build_table_schema(df) {'fields': [{'name': 'idx', 'type': 'integer'}, {'name': 'A', 'type': 'integer'}, {'name': 'B', 'type': 'string', 'extDtype': 'str'}, {'name': 'C', 'type': 'datetime'}], 'primaryKey': ['idx'], 'pandas_version': '1.4.0'}",
     "markdown_length": 2108,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.json.build_table_schema — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.io.json.build_table_schema — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.506290",
+    "crawled_at": "2026-08-28T17:59:36.372240",
     "type": "webpage"
 }

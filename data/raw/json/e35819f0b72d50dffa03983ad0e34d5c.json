@@ -2,7 +2,7 @@
     "id": "e35819f0b72d50dffa03983ad0e34d5c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.get.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.get.html",
-    "title": "pandas.HDFStore.get — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.get — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.get#\n\n- \nHDFStore.get(*key* )[source]#\n- Retrieve pandas object stored in file. The object is read from the HDF5 file and returned as the same type that was stored (e.g., DataFrame, Series). \n  - Parameters:\n    - **key** str\n    - Object to retrieve from file. Raises KeyError if not found.\n  - Returns:\n    - object\n    - Same type as object stored in file.\n See also \n  - `HDFStore.get_node`\n  - Returns the node with the key.\n  - `HDFStore.get_storer`\n  - Returns the storer object for a key.\n Examples >>> df = pd.DataFrame([[1, 2], [3, 4]], columns=[\"A\", \"B\"]) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.put(\"data\", df) >>> store.get(\"data\") >>> store.close()",
     "markdown_length": 691,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.get — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.get — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.770010",
+    "crawled_at": "2026-08-28T17:56:33.355315",
     "type": "webpage"
 }

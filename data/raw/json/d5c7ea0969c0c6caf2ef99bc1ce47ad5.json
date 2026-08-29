@@ -2,7 +2,7 @@
     "id": "d5c7ea0969c0c6caf2ef99bc1ce47ad5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.dtype.html",
-    "title": "pandas.api.extensions.ExtensionArray.dtype — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.dtype#\n\n- property ExtensionArray.dtype[source]#\n- An instance of ExtensionDtype. This property returns the dtype object associated with this ExtensionArray. The dtype describes the type of data stored in the array. See also \n  - `api.extensions.ExtensionDtype`\n  - Base class for extension dtypes.\n  - `api.extensions.ExtensionArray`\n  - Base class for extension array types.\n  - `api.extensions.ExtensionArray.dtype`\n  - The dtype of an ExtensionArray.\n  - `Series.dtype`\n  - The dtype of a Series.\n  - `DataFrame.dtype`\n  - The dtype of a DataFrame.\n Examples >>> pd.array([1, 2, 3]).dtype Int64Dtype()",
     "markdown_length": 644,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.dtype — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.864243",
+    "crawled_at": "2026-08-28T15:51:42.536286",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "f88626c46e209866c237cca5e3d4f23c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.remove_unused_categories.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.remove_unused_categories.html",
-    "title": "pandas.Categorical.remove_unused_categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Categorical.remove_unused_categories — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Categorical.remove_unused_categories#\n\n- Categorical.remove_unused_categories()[source]#\n- Remove categories which are not used. This method is useful when working with datasets that undergo dynamic changes where categories may no longer be relevant, allowing to maintain a clean, efficient data structure. \n  - Returns:\n    - Categorical\n    - Categorical with unused categories dropped.\n See also \n  - `rename_categories`\n  - Rename categories.\n  - `reorder_categories`\n  - Reorder categories.\n  - `add_categories`\n  - Add new categories.\n  - `remove_categories`\n  - Remove the specified categories.\n  - `set_categories`\n  - Set the categories to the specified ones.\n Examples >>> c = pd.Categorical([\"a\", \"c\", \"b\", \"c\", \"d\"]) >>> c ['a', 'c', 'b', 'c', 'd'] Categories (4, str): ['a', 'b', 'c', 'd'] >>> c[2] = \"a\" >>> c[4] = \"c\" >>> c ['a', 'c', 'a', 'c', 'c'] Categories (4, str): ['a', 'b', 'c', 'd'] >>> c.remove_unused_categories() ['a', 'c', 'a', 'c', 'c'] Categories (2, str): ['a', 'c']",
     "markdown_length": 1006,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Categorical.remove_unused_categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Categorical.remove_unused_categories — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:59.557870",
+    "crawled_at": "2026-08-28T15:45:46.307612",
     "type": "webpage"
 }

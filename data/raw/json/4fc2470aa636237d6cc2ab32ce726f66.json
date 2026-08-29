@@ -2,7 +2,7 @@
     "id": "4fc2470aa636237d6cc2ab32ce726f66",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.interchange.from_dataframe.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.interchange.from_dataframe.html",
-    "title": "pandas.api.interchange.from_dataframe — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.interchange.from_dataframe — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.interchange.from_dataframe#\n\n- \npandas.api.interchange.from_dataframe(*df* ,*allow_copy=True* )[source]#\n- Build a `pd.DataFrame` from any DataFrame supporting the interchange protocol.Note For new development, we highly recommend using the Arrow C Data Interface alongside the Arrow PyCapsule Interface instead of the interchange protocol. From pandas 3.0 onwards, from_dataframe uses the PyCapsule Interface, only falling back to the interchange protocol if that fails. From pandas 4.0 onwards, that fallback will no longer be available and only the PyCapsule Interface will be used. Warning Due to severe implementation issues, we recommend only considering using the interchange protocol in the following cases: \n  - converting to pandas: for pandas >= 2.0.3\n  - converting from pandas: for pandas >= 3.0.0\n \n  - Parameters:\n    - **df** ArrowStreamExportable or DataFrameXchg\n    - Object supporting the Arrow PyCapsule Interface, i.e. an __arrow_c_stream__ method ( `ArrowStreamExportable` ), or an object\nsupporting the interchange protocol, i.e. a __dataframe__ method\n(`DataFrameXchg` ).\n    - **allow_copy** bool, default: True\n    - Whether to allow copying the memory to perform the conversion (if false then zero-copy approach is requested).\n  - Returns:\n    - pd.DataFrame\n    - A pandas DataFrame built from the provided interchange protocol object.\n See also \n  - `pd.DataFrame`\n  - DataFrame class which can be created from various input data formats, including objects that support the interchange protocol.\n Examples >>> df_not_necessarily_pandas = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> interchange_object = df_not_necessarily_pandas.__dataframe__() >>> interchange_object.column_names() Index(['A', 'B'], dtype='str') >>> df_pandas = pd.api.interchange.from_dataframe( ... interchange_object.select_columns_by_name([\"A\"]) ... ) >>> df_pandas A 0 1 1 2 These methods ( `column_names` ,`select_columns_by_name` ) should work\nfor any dataframe library which implements the interchange protocol.",
     "markdown_length": 2031,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.interchange.from_dataframe — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.interchange.from_dataframe — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:22.838456",
+    "crawled_at": "2026-08-28T15:51:53.320397",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "bec4f01eb276dd87503c6443ffc1ea8b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.flags.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.flags.html",
-    "title": "pandas.Series.flags — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.flags — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.flags#\n\n- property Series.flags[source]#\n- Get the properties associated with this pandas object. The available flags are \n  - `Flags.allows_duplicate_labels`\n See also \n  - `Flags`\n  - Flags that apply to pandas objects.\n  - `DataFrame.attrs`\n  - Global metadata applying to this dataset.\n Notes “Flags” differ from “metadata”. Flags reflect properties of the pandas object (the Series or DataFrame). Metadata refer to properties of the dataset, and should be stored in `DataFrame.attrs` .Examples >>> df = pd.DataFrame({\"A\": [1, 2]}) >>> df.flags <Flags(allows_duplicate_labels=True)> Flags can be get or set using `.`>>> df.flags.allows_duplicate_labels True >>> df.flags.allows_duplicate_labels = False Or by slicing with a key >>> df.flags[\"allows_duplicate_labels\"] False >>> df.flags[\"allows_duplicate_labels\"] = True",
     "markdown_length": 840,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.flags — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.flags — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:17.217405",
+    "crawled_at": "2026-08-28T15:49:32.882252",
     "type": "webpage"
 }

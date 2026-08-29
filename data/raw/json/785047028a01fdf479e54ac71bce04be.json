@@ -2,7 +2,7 @@
     "id": "785047028a01fdf479e54ac71bce04be",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.array.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.array.html",
-    "title": "pandas.Index.array — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.array — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.array#\n\n- Index.array[source]#\n- The ExtensionArray of the data backing this Index. This property provides direct access to the underlying array data of an Index without requiring conversion to a NumPy array. It returns an ExtensionArray, which is the native storage format for pandas extension dtypes. Changed in version 3.1.0: The returned array is read-only, since an Index is immutable. \n  - Returns:\n    - ExtensionArray\n    - An ExtensionArray of the values stored within. For extension types, this is the actual array. For NumPy native types, this is a thin (no copy) wrapper around `numpy.ndarray` .`.array` differs from`.values` , which may require converting\nthe data to a different form.\n See also \n  - `Index.to_numpy`\n  - Similar method that always returns a NumPy array.\n  - `Series.to_numpy`\n  - Similar method that always returns a NumPy array.\n Notes This table lays out the different array types for each extension dtype within pandas. dtype array type category Categorical period PeriodArray interval IntervalArray IntegerNA IntegerArray string StringArray boolean BooleanArray datetime64[ns, tz] DatetimeArray For any 3rd-party extension types, the array type will be an ExtensionArray. For all remaining dtypes `.array` will be a`arrays.NumpyExtensionArray` wrapping the actual ndarray\nstored within. If you absolutely need a NumPy array (possibly with\ncopying / coercing data), then use`Series.to_numpy()` instead.Examples For regular NumPy types like int, and float, a NumpyExtensionArray is returned. >>> pd.Index([1, 2, 3]).array <NumpyExtensionArray> [1, 2, 3] Length: 3, dtype: int64 For extension types, like Categorical, the actual ExtensionArray is returned >>> idx = pd.Index(pd.Categorical([\"a\", \"b\", \"a\"])) >>> idx.array ['a', 'b', 'a'] Categories (2, str): ['a', 'b']",
     "markdown_length": 1816,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.array — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.array — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:47.750103",
+    "crawled_at": "2026-08-28T15:47:32.383980",
     "type": "webpage"
 }

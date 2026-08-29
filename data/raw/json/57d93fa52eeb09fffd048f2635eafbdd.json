@@ -2,7 +2,7 @@
     "id": "57d93fa52eeb09fffd048f2635eafbdd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.CSSWarning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.CSSWarning.html",
-    "title": "pandas.errors.CSSWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.CSSWarning — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.CSSWarning#\n\n- exception pandas.errors.CSSWarning[source]#\n- Warning is raised when converting css styling fails. This can be due to the styling not having an equivalent value or because the styling isn’t properly formatted. See also \n  - `DataFrame.style`\n  - Returns a Styler object for applying CSS-like styles.\n  - `io.formats.style.Styler`\n  - Helps style a DataFrame or Series according to the data with HTML and CSS.\n  - `io.formats.style.Styler.to_excel`\n  - Export styled DataFrame to Excel.\n  - `io.formats.style.Styler.to_html`\n  - Export styled DataFrame to HTML.\n Examples >>> df = pd.DataFrame({\"A\": [1, 1, 1]}) >>> df.style.map(lambda x: \"background-color: blueGreenRed;\").to_excel( ... \"styled.xlsx\" ... ) CSSWarning: Unhandled color format: 'blueGreenRed' >>> df.style.map(lambda x: \"border: 1px solid red red;\").to_excel( ... \"styled.xlsx\" ... ) CSSWarning: Unhandled color format: 'blueGreenRed'",
     "markdown_length": 930,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.CSSWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.CSSWarning — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.345485",
+    "crawled_at": "2026-08-28T17:58:52.086055",
     "type": "webpage"
 }

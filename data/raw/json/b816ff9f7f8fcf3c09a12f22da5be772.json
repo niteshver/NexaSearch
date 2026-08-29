@@ -2,7 +2,7 @@
     "id": "b816ff9f7f8fcf3c09a12f22da5be772",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.UndefinedVariableError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.UndefinedVariableError.html",
-    "title": "pandas.errors.UndefinedVariableError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.UndefinedVariableError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.UndefinedVariableError#\n\n- \nexception pandas.errors.UndefinedVariableError(*name* ,*is_local=None* )[source]#\n- Exception raised by `query` or`eval` when using an undefined variable name.It will also specify whether the undefined variable is local or not. \n  - Parameters:\n    - **name** str\n    - The name of the undefined variable.\n    - **is_local** bool or None, optional\n    - Indicates whether the undefined variable is considered a local variable. If `True` , the error message specifies it as a local variable.\nIf`False` or`None` , the variable is treated as a non-local name.\n See also \n  - `DataFrame.query`\n  - Query the columns of a DataFrame with a boolean expression.\n  - `DataFrame.eval`\n  - Evaluate a string describing operations on DataFrame columns.\n Examples >>> df = pd.DataFrame({\"A\": [1, 1, 1]}) >>> df.query(\"A > x\") ... # UndefinedVariableError: name 'x' is not defined >>> df.query(\"A > @y\") ... # UndefinedVariableError: local variable 'y' is not defined >>> pd.eval(\"x + 1\") ... # UndefinedVariableError: name 'x' is not defined",
     "markdown_length": 1072,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.UndefinedVariableError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.UndefinedVariableError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.806461",
+    "crawled_at": "2026-08-28T17:59:09.584997",
     "type": "webpage"
 }

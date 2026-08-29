@@ -1,0 +1,131 @@
+{
+    "id": "655fb3b948343bacce44b98862e3b725",
+    "url": "https://colah.github.io/posts/tags/neural_networks.html",
+    "canonical_url": "https://colah.github.io/posts/tags/neural_networks.html",
+    "title": "Neural Networks Posts - colah's blog",
+    "status": 200,
+    "markdown": "# Neural Networks Posts\n\n    Visualizing MNIST: An Exploration of Dimensionality Reduction\n    - October  9, 2014\n\n    Understanding Convolutions\n    - July 13, 2014\n\n    Conv Nets: A Modular Perspective\n    - July  8, 2014\n\n    Deep Learning, NLP, and Representations\n    - July  7, 2014\n\n    Neural Networks, Manifolds, and Topology\n    - April  6, 2014",
+    "markdown_length": 355,
+    "internal_links": [
+        {
+            "href": "https://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/posts/2014-10-Visualizing-MNIST/",
+            "text": "Visualizing MNIST: An Exploration of Dimensionality Reduction",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/posts/2014-07-Understanding-Convolutions/",
+            "text": "Understanding Convolutions",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/posts/2014-07-Conv-Nets-Modular/",
+            "text": "Conv Nets: A Modular Perspective",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/posts/2014-07-NLP-RNNs-Representations/",
+            "text": "Deep Learning, NLP, and Representations",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/posts/2014-03-NN-Manifolds-Topology/",
+            "text": "Neural Networks, Manifolds, and Topology",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/rss.xml",
+            "text": "RSS feed",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Neural Networks Posts - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "https://colah.github.io/posts/2014-07-Conv-Nets-Modular/"
+    },
+    "crawled_at": "2026-08-28T15:40:32.855665",
+    "type": "webpage"
+}

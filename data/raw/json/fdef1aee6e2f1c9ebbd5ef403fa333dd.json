@@ -2,7 +2,7 @@
     "id": "fdef1aee6e2f1c9ebbd5ef403fa333dd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.attrs.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.attrs.html",
-    "title": "pandas.DataFrame.attrs — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.attrs — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.attrs#\n\n- property DataFrame.attrs[source]#\n- Dictionary of global attributes of this dataset. Warning attrs is experimental and may change without warning. See also \n  - `DataFrame.flags`\n  - Global flags applying to this object.\n Notes Many operations that create new datasets will copy `attrs` . Copies\nare always deep so that changing`attrs` will only affect the\npresent dataset.`pandas.concat()` and`pandas.merge()` will\nonly copy`attrs` if all input datasets have the same`attrs` .`attrs` is a property of a`Series` or`DataFrame` as a\nwhole, not of an individual column. The`DataFrame` constructor\ndoes not extract`attrs` from a`Series` it is built from, and\nassigning a`Series` as a column of an existing`DataFrame` (e.g.`df[col] = ser` ) does not modify`DataFrame.attrs` . Methods that build a new`DataFrame` from a single`Series` (such as`Series.to_frame()` ) do\npropagate the source`attrs` .Examples For Series: >>> ser = pd.Series([1, 2, 3]) >>> ser.attrs = {\"A\": [10, 20, 30]} >>> ser.attrs {'A': [10, 20, 30]} For DataFrame: >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> df.attrs = {\"A\": [10, 20, 30]} >>> df.attrs {'A': [10, 20, 30]}",
     "markdown_length": 1174,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.attrs — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.attrs — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.648729",
+    "crawled_at": "2026-08-28T15:46:01.174268",
     "type": "webpage"
 }

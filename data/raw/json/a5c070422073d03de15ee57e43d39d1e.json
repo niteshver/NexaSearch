@@ -2,7 +2,7 @@
     "id": "a5c070422073d03de15ee57e43d39d1e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.rename_axis.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.rename_axis.html",
-    "title": "pandas.Series.rename_axis — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.rename_axis — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.rename_axis#\n\n- \nSeries.rename_axis(*mapper=<no_default>* ,*** ,*index=<no_default>* ,*axis=0* ,*copy=<no_default>* ,*inplace=False* )[source]#\n- Set the name of the axis for the index. This method sets or changes the name of the index (axis) of the Series. It can accept a scalar, list-like, or function to rename the axis. \n  - Parameters:\n    - **mapper** scalar, list-like, optional\n    - Value to set the axis name attribute. Use either `mapper` and`axis` to\nspecify the axis to target with`mapper` , or`index` .\n    - **index** scalar, list-like, dict-like or function, optional\n    - A scalar, list-like, dict-like or functions transformations to apply to that axis’ values.\n    - **axis** {0 or ‘index’}, default 0\n    - The axis to rename. For Series this parameter is unused and defaults to 0.\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n    - **inplace** bool, default False\n    - Modifies the object directly, instead of creating a new Series or DataFrame.\n  - Returns:\n    - Series, or None\n    - The same type as the caller or None if `inplace=True` .\n See also \n  - `Series.rename`\n  - Alter Series index labels or name.\n  - `DataFrame.rename`\n  - Alter DataFrame index labels or name.\n  - `Index.rename`\n  - Set new names on index.\n Examples >>> s = pd.Series([\"dog\", \"cat\", \"monkey\"]) >>> s 0 dog 1 cat 2 monkey dtype: str >>> s.rename_axis(\"animal\") animal 0 dog 1 cat 2 monkey dtype: str",
     "markdown_length": 1785,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.rename_axis — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.rename_axis — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:21.235157",
+    "crawled_at": "2026-08-28T15:50:01.793130",
     "type": "webpage"
 }

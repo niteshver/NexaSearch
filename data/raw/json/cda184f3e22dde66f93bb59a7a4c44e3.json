@@ -2,10 +2,10 @@
     "id": "cda184f3e22dde66f93bb59a7a4c44e3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.autocorrelation_plot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.autocorrelation_plot.html",
-    "title": "pandas.plotting.autocorrelation_plot — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.plotting.autocorrelation_plot — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.plotting.autocorrelation_plot#\n\n- \npandas.plotting.autocorrelation_plot(*series* ,*ax=None* ,***kwargs* )[source]#\n- Autocorrelation plot for time series. This method generates an autocorrelation plot for a given time series, which helps to identify any periodic structure or correlation within the data across various lags. It shows the correlation of a time series with a delayed copy of itself as a function of delay. Autocorrelation plots are useful for checking randomness in a data set. If the data are random, the autocorrelations should be near zero for any and all time-lag separations. If the data are not random, then one or more of the autocorrelations will be significantly non-zero. \n  - Parameters:\n    - **series** Series\n    - The time series to visualize.\n    - **ax** Matplotlib axis object, optional\n    - The matplotlib axis object to use.\n    - ****kwargs**\n    - Options to pass to matplotlib plotting method.\n  - Returns:\n    - matplotlib.axes.Axes\n    - The matplotlib axes containing the autocorrelation plot.\n See also \n  - `Series.autocorr`\n  - Compute the lag-N autocorrelation for a Series.\n  - `plotting.lag_plot`\n  - Lag plot for time series.\n Examples The horizontal lines in the plot correspond to 95% and 99% confidence bands. The dashed line is 99% confidence band. >>> spacing = np.linspace(-9 * np.pi, 9 * np.pi, num=1000) >>> s = pd.Series(0.7 * np.random.rand(1000) + 0.3 * np.sin(spacing)) >>> pd.plotting.autocorrelation_plot(s)",
-    "markdown_length": 1479,
+    "markdown": "# pandas.plotting.autocorrelation_plot#\n\n- \npandas.plotting.autocorrelation_plot(*series* ,*ax=None* ,***kwargs* )[source]#\n- Autocorrelation plot for time series. This method generates an autocorrelation plot for a given time series, which helps to identify any periodic structure or correlation within the data across various lags. It shows the correlation of a time series with a delayed copy of itself as a function of delay. Autocorrelation plots are useful for checking randomness in a data set. If the data are random, the autocorrelations should be near zero for any and all time-lag separations. If the data are not random, then one or more of the autocorrelations will be significantly non-zero. \n  - Parameters:\n    - **series** Series\n    - The time series to visualize.\n    - **ax** Matplotlib axis object, optional\n    - The matplotlib axis object to use.\n    - ****kwargs**\n    - Options to pass to matplotlib plotting method.\n  - Returns:\n    - matplotlib.axes.Axes\n    - The matplotlib axes containing the autocorrelation plot.\n See also \n  - `Series.autocorr`\n  - Compute the lag-N autocorrelation for a Series.\n  - `plotting.lag_plot`\n  - Lag plot for time series.\n Examples The horizontal lines in the plot correspond to 95% and 99% confidence bands. The dashed line is 99% confidence band. >>> spacing = np.linspace(-9 * np.pi, 9 * np.pi, num=1000) >>> rng = np.random.default_rng(42) >>> s = pd.Series(0.7 * rng.random(1000) + 0.3 * np.sin(spacing)) >>> pd.plotting.autocorrelation_plot(s)",
+    "markdown_length": 1511,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.autocorrelation_plot.html",
@@ -254,7 +254,7 @@
             "src": "../../_images/pandas-plotting-autocorrelation_plot-1.png",
             "data": "",
             "alt": "../../_images/pandas-plotting-autocorrelation_plot-1.png",
-            "desc": "pandas.plotting.autocorrelation_plot(series, ax=None, **kwargs)#\nAutocorrelation plot for time series.\nThis method generates an autocorrelation plot for a given time series,\nwhich helps to identify any periodic structure or correlation within the\ndata across various lags. It shows the correlation of a time series with a\ndelayed copy of itself as a function of delay. Autocorrelation plots are useful for\nchecking randomness in a data set. If the data are random, the autocorrelations\nshould be near zero for any and all time-lag separations. If the data are not\nrandom, then one or more of the autocorrelations will be significantly\nnon-zero.\n\nParameters:\n\nseriesSeriesThe time series to visualize.\n\naxMatplotlib axis object, optionalThe matplotlib axis object to use.\n\n**kwargsOptions to pass to matplotlib plotting method.\n\n\n\nReturns:\n\nmatplotlib.axes.AxesThe matplotlib axes containing the autocorrelation plot.\n\n\n\n\n\nSee also\n\nSeries.autocorrCompute the lag-N autocorrelation for a Series.\n\nplotting.lag_plotLag plot for time series.\n\n\n\nExamples\nThe horizontal lines in the plot correspond to 95% and 99% confidence bands.\nThe dashed line is 99% confidence band.\n>>> spacing = np.linspace(-9 * np.pi, 9 * np.pi, num=1000)\n>>> s = pd.Series(0.7 * np.random.rand(1000) + 0.3 * np.sin(spacing))\n>>> pd.plotting.autocorrelation_plot(s)\n\n      \n  Copy to clipboard",
+            "desc": "pandas.plotting.autocorrelation_plot(series, ax=None, **kwargs)#\nAutocorrelation plot for time series.\nThis method generates an autocorrelation plot for a given time series,\nwhich helps to identify any periodic structure or correlation within the\ndata across various lags. It shows the correlation of a time series with a\ndelayed copy of itself as a function of delay. Autocorrelation plots are useful for\nchecking randomness in a data set. If the data are random, the autocorrelations\nshould be near zero for any and all time-lag separations. If the data are not\nrandom, then one or more of the autocorrelations will be significantly\nnon-zero.\n\nParameters:\n\nseriesSeriesThe time series to visualize.\n\naxMatplotlib axis object, optionalThe matplotlib axis object to use.\n\n**kwargsOptions to pass to matplotlib plotting method.\n\n\n\nReturns:\n\nmatplotlib.axes.AxesThe matplotlib axes containing the autocorrelation plot.\n\n\n\n\n\nSee also\n\nSeries.autocorrCompute the lag-N autocorrelation for a Series.\n\nplotting.lag_plotLag plot for time series.\n\n\n\nExamples\nThe horizontal lines in the plot correspond to 95% and 99% confidence bands.\nThe dashed line is 99% confidence band.\n>>> spacing = np.linspace(-9 * np.pi, 9 * np.pi, num=1000)\n>>> rng = np.random.default_rng(42)\n>>> s = pd.Series(0.7 * rng.random(1000) + 0.3 * np.sin(spacing))\n>>> pd.plotting.autocorrelation_plot(s)\n\n      \n  Copy to clipboard",
             "score": 4,
             "type": "image",
             "group_id": 2,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.autocorrelation_plot — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.plotting.autocorrelation_plot — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:01.132829",
+    "crawled_at": "2026-08-28T15:52:24.060523",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "6d36cd07d1a520b5b529991735d8f917",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_frame.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_frame.html",
-    "title": "pandas.Series.to_frame — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.to_frame — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.to_frame#\n\n- \nSeries.to_frame(*name=<no_default>* )[source]#\n- Convert Series to DataFrame. The resulting DataFrame contains a single column. The name of the column can be set using the `name` parameter; otherwise it\ndefaults to the Series’ name.\n  - Parameters:\n    - **name** object, optional\n    - The passed name should substitute for the series name (if it has one).\n  - Returns:\n    - DataFrame\n    - DataFrame representation of Series.\n See also \n  - `Series.to_dict`\n  - Convert Series to dict object.\n Examples >>> s = pd.Series([\"a\", \"b\", \"c\"], name=\"vals\") >>> s.to_frame() vals 0 a 1 b 2 c",
     "markdown_length": 617,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.to_frame — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.to_frame — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.to_frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:55.057245",
+    "crawled_at": "2026-08-28T15:50:40.778735",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "9e3b3cd76522e978a9be7eff8236af02",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.nlevels.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.nlevels.html",
-    "title": "pandas.MultiIndex.nlevels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.MultiIndex.nlevels — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.nlevels#\n\n- property MultiIndex.nlevels[source]#\n- Integer number of levels in this MultiIndex. This property returns the count of levels (i.e., the depth of the hierarchical index), which corresponds to the number of arrays or columns used to construct the MultiIndex. See also \n  - `MultiIndex.levels`\n  - Get the levels of the MultiIndex.\n  - `MultiIndex.codes`\n  - Get the codes of the MultiIndex.\n  - `MultiIndex.from_arrays`\n  - Convert arrays to MultiIndex.\n  - `MultiIndex.from_tuples`\n  - Convert list of tuples to MultiIndex.\n Examples >>> mi = pd.MultiIndex.from_arrays([[\"a\"], [\"b\"], [\"c\"]]) >>> mi MultiIndex([('a', 'b', 'c')], ) >>> mi.nlevels 3",
     "markdown_length": 679,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.nlevels — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.MultiIndex.nlevels — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:52.961160",
+    "crawled_at": "2026-08-28T15:48:17.654863",
     "type": "webpage"
 }

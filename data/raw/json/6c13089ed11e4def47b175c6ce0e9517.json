@@ -2,7 +2,7 @@
     "id": "6c13089ed11e4def47b175c6ce0e9517",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.month_name.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.month_name.html",
-    "title": "pandas.DatetimeIndex.month_name — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DatetimeIndex.month_name — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.month_name#\n\n- \nDatetimeIndex.month_name(*locale=None* )[source]#\n- Return the month names with specified locale. This method returns the full name of the month (e.g., “January”, “February”) for each datetime value in the Series/Index. The names can be localized to different languages using the locale parameter. \n  - Parameters:\n    - **locale** str, optional\n    - Locale determining the language in which to return the month name. Default is English locale ( `'en_US.utf8'` ). Use the command`locale -a` on your terminal on Unix systems to find your locale\nlanguage code.\n  - Returns:\n    - Series or Index\n    - Series or Index of month names.\n See also \n  - `DatetimeIndex.day_name`\n  - Return the day names with specified locale.\n Examples >>> s = pd.Series(pd.date_range(start=\"2018-01\", freq=\"ME\", periods=3)) >>> s 0 2018-01-31 1 2018-02-28 2 2018-03-31 dtype: datetime64[us] >>> s.dt.month_name() 0 January 1 February 2 March dtype: str >>> idx = pd.date_range(start=\"2018-01\", freq=\"ME\", periods=3) >>> idx DatetimeIndex(['2018-01-31', '2018-02-28', '2018-03-31'], dtype='datetime64[us]', freq='ME') >>> idx.month_name() Index(['January', 'February', 'March'], dtype='str') Using the `locale` parameter you can set a different locale language,\nfor example:`idx.month_name(locale='pt_BR.utf8')` will return month\nnames in Brazilian Portuguese language.>>> idx = pd.date_range(start=\"2018-01\", freq=\"ME\", periods=3) >>> idx DatetimeIndex(['2018-01-31', '2018-02-28', '2018-03-31'], dtype='datetime64[us]', freq='ME') >>> idx.month_name(locale=\"pt_BR.utf8\") Index(['Janeiro', 'Fevereiro', 'Março'], dtype='str')",
     "markdown_length": 1643,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.month_name — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DatetimeIndex.month_name — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:46.541781",
+    "crawled_at": "2026-08-28T15:47:21.528724",
     "type": "webpage"
 }

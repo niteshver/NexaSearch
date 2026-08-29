@@ -2,7 +2,7 @@
     "id": "0ea47d991ec8e77dd0a91fbbce4011c3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_string_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_string_dtype.html",
-    "title": "pandas.api.types.is_string_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_string_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_string_dtype#\n\n- \npandas.api.types.is_string_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of the string dtype. If an array is passed with an object dtype, the elements must be inferred as strings. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of the string dtype.\n See also \n  - `api.types.is_object_dtype`\n  - Check whether an array-like or dtype is of the object dtype.\n Examples >>> from pandas.api.types import is_string_dtype >>> is_string_dtype(str) True >>> is_string_dtype(object) True >>> is_string_dtype(int) False >>> is_string_dtype(np.array([\"a\", \"b\"])) True >>> is_string_dtype(pd.Series([1, 2])) False >>> is_string_dtype(pd.Series([1, 2], dtype=object)) False",
     "markdown_length": 850,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_string_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_string_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:32.143471",
+    "crawled_at": "2026-08-28T15:52:05.501288",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "3c41eae7552c026871da736bff738912",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.fillna.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.fillna.html",
-    "title": "pandas.api.extensions.ExtensionArray.fillna — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.fillna — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.fillna#\n\n- \nExtensionArray.fillna(*value* ,*limit=None* ,*copy=True* )[source]#\n- Fill NA/NaN values using the specified method. This method replaces missing values in the array with a scalar value or corresponding values from an array-like object. \n  - Parameters:\n    - **value** scalar, array-like\n    - If a scalar value is passed it is used to fill all missing values. Alternatively, an array-like “value” can be given. It’s expected that the array-like have the same length as ‘self’.\n    - **limit** int, default None\n    - The maximum number of entries where NA values will be filled.\n    - **copy** bool, default True\n    - Whether to make a copy of the data before filling. If False, then the original should be modified and no new memory should be allocated. For ExtensionArray subclasses that cannot do this, it is at the author’s discretion whether to ignore “copy=False” or to raise.\n  - Returns:\n    - ExtensionArray\n    - With NA/NaN filled.\n See also \n  - `api.extensions.ExtensionArray.dropna`\n  - Return ExtensionArray without NA values.\n  - `api.extensions.ExtensionArray.isna`\n  - A 1-D array indicating if each value is missing.\n Examples >>> arr = pd.array([np.nan, np.nan, 2, 3, np.nan, np.nan]) >>> arr.fillna(0) <IntegerArray> [0, 0, 2, 3, 0, 0] Length: 6, dtype: Int64",
     "markdown_length": 1334,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.fillna — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.fillna — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.934957",
+    "crawled_at": "2026-08-28T15:51:44.021649",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "dc952cdc8ee89e96fa8ec89a76b357e8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._from_sequence_of_strings.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._from_sequence_of_strings.html",
-    "title": "pandas.api.extensions.ExtensionArray._from_sequence_of_strings — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._from_sequence_of_strings — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._from_sequence_of_strings#\n\n- \nclassmethod ExtensionArray._from_sequence_of_strings(*strings* ,*** ,*dtype* ,*copy=False* )[source]#\n- Construct a new ExtensionArray from a sequence of strings. This method is used to parse string data into the appropriate scalar type for the ExtensionArray. It is commonly used when reading data from text files via parsers like `read_csv` .\n  - Parameters:\n    - **strings** Sequence\n    - Each element will be an instance of the scalar type for this array, `cls.dtype.type` .\n    - **dtype** ExtensionDtype\n    - Construct for this particular dtype. This should be a Dtype compatible with the ExtensionArray.\n    - **copy** bool, default False\n    - If True, copy the underlying data.\n  - Returns:\n    - ExtensionArray\n See also \n  - `api.extensions.ExtensionArray._from_sequence`\n  - Construct a new ExtensionArray from a sequence of scalars.\n  - `api.extensions.ExtensionArray._from_factorized`\n  - Reconstruct an ExtensionArray after factorization.\n Examples >>> pd.arrays.IntegerArray._from_sequence_of_strings( ... [\"1\", \"2\", \"3\"], dtype=pd.Int64Dtype() ... ) <IntegerArray> [1, 2, 3] Length: 3, dtype: Int64",
     "markdown_length": 1188,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._from_sequence_of_strings — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._from_sequence_of_strings — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.546406",
+    "crawled_at": "2026-08-28T15:51:38.544037",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "3aaa1b21e921d698dfcbc76a8300eedb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.round.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.round.html",
-    "title": "pandas.Series.dt.round — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.round — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.round#\n\n- \nSeries.dt.round(*freq* ,*ambiguous='raise'* ,*nonexistent='raise'* )[source]#\n- Perform round operation on the data to the specified freq. This method rounds each datetime value in the Series/Index to the nearest specified frequency using standard rounding rules (round half to even). \n  - Parameters:\n    - **freq** str or Offset\n    - The frequency level to round the index to. Must be a fixed frequency like ‘s’ (second) not ‘ME’ (month end). See frequency aliases for a list of possible freq values.\n    - **ambiguous** ‘infer’, bool-ndarray, ‘NaT’, default ‘raise’\n    - Only relevant for DatetimeIndex: \n      - ‘infer’ will attempt to infer fall dst-transition hours based on order. Requires that the timestamps are monotonically increasing.\n      - bool-ndarray where True signifies a DST time, False designates a non-DST time (note that this flag is only applicable for ambiguous times)\n      - ‘NaT’ will return NaT where there are ambiguous times\n      - ‘raise’ will raise a ValueError if there are ambiguous times.\n    - **nonexistent** ‘shift_forward’, ‘shift_backward’, ‘NaT’, timedelta,             default ‘raise’\n    - A nonexistent time does not exist in a particular timezone where clocks moved forward due to DST. \n      - ‘shift_forward’ will shift the nonexistent time forward to the closest existing time\n      - ‘shift_backward’ will shift the nonexistent time backward to the closest existing time\n      - ‘NaT’ will return NaT where there are nonexistent times\n      - timedelta objects will shift nonexistent times by the timedelta\n      - ‘raise’ will raise a ValueError if there are nonexistent times.\n  - Returns:\n    - DatetimeIndex, TimedeltaIndex, or Series\n    - Index of the same type for a DatetimeIndex or TimedeltaIndex, or a Series with the same index for a Series.\n  - Raises:\n    - ValueError if the freq cannot be converted.\n See also \n  - `DatetimeIndex.floor`\n  - Perform floor operation on the data to the specified freq.\n  - `DatetimeIndex.snap`\n  - Snap time stamps to nearest occurring frequency.\n Notes If the timestamps have a timezone, rounding will take place relative to the local (“wall”) time and re-localized to the same timezone. When rounding near daylight savings time, use `nonexistent` and`ambiguous` to\ncontrol the re-localization behavior.Examples **DatetimeIndex**>>> rng = pd.date_range(\"1/1/2018 11:59:00\", periods=3, freq=\"min\") >>> rng DatetimeIndex(['2018-01-01 11:59:00', '2018-01-01 12:00:00', '2018-01-01 12:01:00'], dtype='datetime64[us]', freq='min') >>> rng.round('h') DatetimeIndex(['2018-01-01 12:00:00', '2018-01-01 12:00:00', '2018-01-01 12:00:00'], dtype='datetime64[us]', freq=None) **Series**>>> pd.Series(rng).dt.round(\"h\") 0 2018-01-01 12:00:00 1 2018-01-01 12:00:00 2 2018-01-01 12:00:00 dtype: datetime64[us] When rounding near a daylight savings time transition, use `ambiguous` or`nonexistent` to control how the timestamp should be re-localized.>>> rng_tz = pd.DatetimeIndex([\"2021-10-31 03:30:00\"], tz=\"Europe/Amsterdam\") >>> rng_tz.floor(\"2h\", ambiguous=False) DatetimeIndex(['2021-10-31 02:00:00+01:00'], dtype='datetime64[us, Europe/Amsterdam]', freq=None) >>> rng_tz.floor(\"2h\", ambiguous=True) DatetimeIndex(['2021-10-31 02:00:00+02:00'], dtype='datetime64[us, Europe/Amsterdam]', freq=None)",
     "markdown_length": 3317,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.round — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.round — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:15.504651",
+    "crawled_at": "2026-08-28T15:49:20.471932",
     "type": "webpage"
 }

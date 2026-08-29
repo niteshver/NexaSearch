@@ -2,7 +2,7 @@
     "id": "67bf9c51b634d23b9532b3f3b62e459d",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.copy.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.copy.html",
-    "title": "pandas.Index.copy — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Index.copy — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.copy#\n\n- \nIndex.copy(*name=None* ,*deep=False* )[source]#\n- Make a copy of this object. Name is set on the new object. \n  - Parameters:\n    - **name** Label, optional\n    - Set name for new object.\n    - **deep** bool, default False\n      - If True attempts to make a deep copy of the Index.\n      - Else makes a shallow copy.\n  - Returns:\n    - Index\n    - Index refer to new object which is a copy of this object.\n See also \n  - `Index.delete`\n  - Make new Index with passed location(-s) deleted.\n  - `Index.drop`\n  - Make new Index with passed list of labels deleted.\n Notes In most cases, there should be no functional difference from using `deep` , but if`deep` is passed it will attempt to deepcopy.Examples >>> idx = pd.Index([\"a\", \"b\", \"c\"]) >>> new_idx = idx.copy() >>> idx is new_idx False",
     "markdown_length": 814,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.copy — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Index.copy — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.copy.html"
     },
-    "crawled_at": "2026-08-26T06:49:36.303860",
+    "crawled_at": "2026-08-28T20:44:14.281565",
     "type": "webpage"
 }

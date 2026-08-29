@@ -2,7 +2,7 @@
     "id": "8f5ff46397fac850778a827d071f126b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.hour.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.hour.html",
-    "title": "pandas.Series.dt.hour — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.hour — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.hour#\n\n- Series.dt.hour[source]#\n- The hours of the datetime. This attribute returns the hour component of each datetime value in the Series/Index. Values range from 0 to 23, representing the hour of the day in 24-hour format. See also \n  - `DatetimeIndex.day`\n  - The day of the datetime.\n  - `DatetimeIndex.minute`\n  - The minutes of the datetime.\n  - `DatetimeIndex.second`\n  - The seconds of the datetime.\n Examples >>> datetime_series = pd.Series( ... pd.date_range(\"2000-01-01\", periods=3, freq=\"h\") ... ) >>> datetime_series 0 2000-01-01 00:00:00 1 2000-01-01 01:00:00 2 2000-01-01 02:00:00 dtype: datetime64[us] >>> datetime_series.dt.hour 0 0 1 1 2 2 dtype: int32",
     "markdown_length": 691,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.hour — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.hour — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:14.411663",
+    "crawled_at": "2026-08-28T15:49:13.488298",
     "type": "webpage"
 }

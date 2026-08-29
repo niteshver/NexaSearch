@@ -2,7 +2,7 @@
     "id": "86c89484b2797e1961ab0c2ed0f3fa62",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.2.3.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.2.3.html",
-    "title": "What’s new in 1.2.3 (March 02, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.2.3 (March 02, 2021) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.2.3 (March 02, 2021)#\n\nThese are the changes in pandas 1.2.3. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Fixed regression in `to_excel()` raising`KeyError` when giving duplicate columns with`columns` attribute (GH 39695)\n- Fixed regression in nullable integer unary ops propagating mask on assignment (GH 39943)\n- Fixed regression in `DataFrame.__setitem__()` not aligning`DataFrame` on right-hand side for boolean indexer (GH 39931)\n- Fixed regression in `to_json()` failing to use`compression` with URL-like paths that are internally opened in binary mode or with user-provided file objects that are opened in binary mode (GH 39985)\n- Fixed regression in `Series.sort_index()` and`DataFrame.sort_index()` , which exited with an ungraceful error when having kwarg`ascending=None` passed. Passing`ascending=None` is still considered invalid, and the improved error message suggests a proper usage (`ascending` must be a boolean or a list-like of boolean) (GH 39434)\n- Fixed regression in `DataFrame.transform()` and`Series.transform()` giving incorrect column labels when passed a dictionary with a mix of list and non-list values (GH 40018)\n\n## Contributors#\n\nA total of 14 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Daniel Saxton\n- Dylan Percy +\n- Jody Klymak +\n- Maxim Ivanov\n- MeeseeksMachine\n- Pandas Development Team\n- Richard Shadrach\n- Rohit Gupta +\n- Simon Hawkins\n- Torsten Wörtwein\n- jbrockmendel\n- morrme +\n- partev\n- patrick",
     "markdown_length": 1590,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.2.3 (March 02, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.2.3 (March 02, 2021) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:57.905543",
+    "crawled_at": "2026-08-28T16:00:06.310775",
     "type": "webpage"
 }

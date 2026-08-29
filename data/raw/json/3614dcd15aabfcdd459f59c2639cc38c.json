@@ -2,7 +2,7 @@
     "id": "3614dcd15aabfcdd459f59c2639cc38c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.bfill.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.bfill.html",
-    "title": "pandas.DataFrame.bfill — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.bfill — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.bfill#\n\n- \nDataFrame.bfill(*** ,*axis=None* ,*inplace=False* ,*limit=None* ,*limit_area=None* )[source]#\n- Fill NA/NaN values by using the next valid observation to fill the gap. This method fills missing values in a backward direction along the specified axis, propagating non-null values from later positions to earlier positions containing NaN. \n  - Parameters:\n    - **axis** {0 or ‘index’} for Series, {0 or ‘index’, 1 or ‘columns’} for DataFrame\n    - Axis along which to fill missing values. For Series this parameter is unused and defaults to 0.\n    - **inplace** bool, default False\n    - If True, fill in-place. Note: this will modify any other views on this object (e.g., a no-copy slice for a column in a DataFrame).\n    - **limit** int, default None\n    - If method is specified, this is the maximum number of consecutive NaN values to forward/backward fill. In other words, if there is a gap with more than this number of consecutive NaNs, it will only be partially filled. If method is not specified, this is the maximum number of entries along the entire axis where NaNs will be filled. Must be greater than 0 if not None.\n    - **limit_area** {None, ‘inside’, ‘outside’}, default None\n    - If limit is specified, consecutive NaNs will be filled with this restriction. \n      - `None` : No fill restriction.\n      - ‘inside’: Only fill NaNs surrounded by valid values (interpolate).\n      - ‘outside’: Only fill NaNs outside valid values (extrapolate).\n Added in version 2.2.0.\n  - Returns:\n    - Series/DataFrame\n    - Object with missing values filled.\n See also \n  - `DataFrame.ffill`\n  - Fill NA/NaN values by propagating the last valid observation to next valid.\n Examples For Series: >>> s = pd.Series([1, None, None, 2]) >>> s.bfill() 0 1.0 1 2.0 2 2.0 3 2.0 dtype: float64 >>> s.bfill(limit=1) 0 1.0 1 NaN 2 2.0 3 2.0 dtype: float64 With DataFrame: >>> df = pd.DataFrame({\"A\": [1, None, None, 4], \"B\": [None, 5, None, 7]}) >>> df A B 0 1.0 NaN 1 NaN 5.0 2 NaN NaN 3 4.0 7.0 >>> df.bfill() A B 0 1.0 5.0 1 4.0 5.0 2 4.0 7.0 3 4.0 7.0 >>> df.bfill(limit=1) A B 0 1.0 5.0 1 NaN 5.0 2 4.0 7.0 3 4.0 7.0",
     "markdown_length": 2142,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.bfill — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.bfill — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.698005",
+    "crawled_at": "2026-08-28T15:46:02.062785",
     "type": "webpage"
 }

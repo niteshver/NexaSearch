@@ -2,7 +2,7 @@
     "id": "8c6a60e1aa9243b4d99c14507d113f1a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_object_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_object_dtype.html",
-    "title": "pandas.api.types.is_object_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_object_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_object_dtype#\n\n- \npandas.api.types.is_object_dtype(*arr_or_dtype* )[source]#\n- Check whether an array-like or dtype is of the object dtype. This method examines the input to determine if it is of the object data type. Object dtype is a generic data type that can hold any Python objects, including strings, lists, and custom objects. \n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array-like or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array-like or dtype is of the object dtype.\n See also \n  - `api.types.is_numeric_dtype`\n  - Check whether the provided array or dtype is of a numeric dtype.\n  - `api.types.is_string_dtype`\n  - Check whether the provided array or dtype is of the string dtype.\n  - `api.types.is_bool_dtype`\n  - Check whether the provided array or dtype is of a boolean dtype.\n Examples >>> from pandas.api.types import is_object_dtype >>> is_object_dtype(object) True >>> is_object_dtype(int) False >>> is_object_dtype(np.array([], dtype=object)) True >>> is_object_dtype(np.array([], dtype=int)) False >>> is_object_dtype([1, 2, 3]) False",
     "markdown_length": 1129,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_object_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_object_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:32.747479",
+    "crawled_at": "2026-08-28T15:52:03.174175",
     "type": "webpage"
 }

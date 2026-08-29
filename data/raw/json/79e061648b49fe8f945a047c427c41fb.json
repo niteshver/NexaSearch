@@ -2,7 +2,7 @@
     "id": "79e061648b49fe8f945a047c427c41fb",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.slice_indexer.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.slice_indexer.html",
-    "title": "pandas.Index.slice_indexer — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Index.slice_indexer — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.slice_indexer#\n\n- \nIndex.slice_indexer(*start=None* ,*end=None* ,*step=None* )[source]#\n- Compute the slice indexer for input labels and step. Index needs to be ordered and unique. \n  - Parameters:\n    - **start** label, default None\n    - If None, defaults to the beginning.\n    - **end** label, default None\n    - If None, defaults to the end.\n    - **step** int, default None\n    - If None, defaults to 1.\n  - Returns:\n    - slice\n    - A slice object.\n  - Raises:\n    - **KeyError** If key does not exist, or key is not unique and index is\n    - not ordered.\n See also \n  - `Index.slice_locs`\n  - Computes slice locations for input labels.\n  - `Index.get_slice_bound`\n  - Retrieves slice bound that corresponds to given label.\n Notes This function assumes that the data is sorted, so use at your own peril. Examples This is a method on all index types. For example you can do: >>> idx = pd.Index(list(\"abcd\")) >>> idx.slice_indexer(start=\"b\", end=\"c\") slice(1, 3, None) >>> idx = pd.MultiIndex.from_arrays([list(\"abcd\"), list(\"efgh\")]) >>> idx.slice_indexer(start=\"b\", end=(\"c\", \"g\")) slice(1, 3, None)",
     "markdown_length": 1121,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.slice_indexer — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Index.slice_indexer — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.slice_indexer.html"
     },
-    "crawled_at": "2026-08-26T06:49:31.357441",
+    "crawled_at": "2026-08-28T20:35:08.173063",
     "type": "webpage"
 }

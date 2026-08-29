@@ -2,7 +2,7 @@
     "id": "0ece6d406ae65329eb9ef88fb89419e8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.unit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.unit.html",
-    "title": "pandas.Timedelta.unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.unit — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.unit#\n\n- Timedelta.unit#\n- Return the unit of Timedelta object. The unit of Timedelta object is nanosecond, i.e., ‘ns’ by default. \n  - Returns:\n    - str\n See also \n  - `Timedelta.value`\n  - Return the value of Timedelta object in nanoseconds.\n  - `Timedelta.as_unit`\n  - Convert the underlying int64 representation to the given unit.\n Examples >>> td = pd.Timedelta(42, unit='us') >>> td.unit 'us'",
     "markdown_length": 418,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.unit — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.unit — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:54.808875",
+    "crawled_at": "2026-08-28T15:50:58.841083",
     "type": "webpage"
 }

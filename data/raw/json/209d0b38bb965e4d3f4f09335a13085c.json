@@ -2,7 +2,7 @@
     "id": "209d0b38bb965e4d3f4f09335a13085c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.unique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.unique.html",
-    "title": "pandas.api.typing.SeriesGroupBy.unique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.unique — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.unique#\n\n- SeriesGroupBy.unique()[source]#\n- Return unique values for each group. It returns unique values for each of the grouped values. Returned in order of appearance. Hash table-based unique, therefore does NOT sort. \n  - Returns:\n    - Series\n    - Unique values for each of the grouped values.\n See also \n  - `Series.unique`\n  - Return unique values of Series object.\n Examples >>> df = pd.DataFrame( ... [ ... (\"Chihuahua\", \"dog\", 6.1), ... (\"Beagle\", \"dog\", 15.2), ... (\"Chihuahua\", \"dog\", 6.9), ... (\"Persian\", \"cat\", 9.2), ... (\"Chihuahua\", \"dog\", 7), ... (\"Persian\", \"cat\", 8.8), ... ], ... columns=[\"breed\", \"animal\", \"height_in\"], ... ) >>> df breed animal height_in 0 Chihuahua dog 6.1 1 Beagle dog 15.2 2 Chihuahua dog 6.9 3 Persian cat 9.2 4 Chihuahua dog 7.0 5 Persian cat 8.8 >>> ser = df.groupby(\"animal\")[\"breed\"].unique() >>> ser animal cat [Persian] dog [Chihuahua, Beagle] Name: breed, dtype: object",
     "markdown_length": 957,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.unique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.unique — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:50:13.610247",
+    "crawled_at": "2026-08-28T17:58:37.821989",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "690052f4f66dfc3509a5414bb336e893",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.nanosecond.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.nanosecond.html",
-    "title": "pandas.Timestamp.nanosecond — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.nanosecond — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.nanosecond#\n\n- Timestamp.nanosecond#\n- Return the nanosecond of the Timestamp. This property returns an integer representing the nanosecond component (0-999) of the Timestamp. This is particularly useful when working with high-precision temporal data that requires sub-microsecond resolution. \n  - Returns:\n    - int\n    - The nanosecond of the Timestamp.\n See also \n  - `Timestamp.second`\n  - Return the second of the Timestamp.\n  - `Timestamp.microsecond`\n  - Return the microsecond of the Timestamp.\n Examples >>> ts = pd.Timestamp(\"2024-08-31 16:16:30.230400015\") >>> ts.nanosecond 15",
     "markdown_length": 607,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.nanosecond — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.nanosecond — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:29.067966",
+    "crawled_at": "2026-08-28T15:51:21.937284",
     "type": "webpage"
 }

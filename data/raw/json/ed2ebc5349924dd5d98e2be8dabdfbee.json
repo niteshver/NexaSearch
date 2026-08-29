@@ -2,7 +2,7 @@
     "id": "ed2ebc5349924dd5d98e2be8dabdfbee",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.4.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.4.html",
-    "title": "What’s new in 1.3.4 (October 17, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.3.4 (October 17, 2021) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.3.4 (October 17, 2021)#\n\nThese are the changes in pandas 1.3.4. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Fixed regression in `DataFrame.convert_dtypes()` incorrectly converts byte strings to strings (GH 43183)\n- Fixed regression in `DataFrameGroupBy.agg()` and`SeriesGroupBy.agg()` were failing silently with mixed data types along`axis=1` and`MultiIndex` (GH 43209)\n- Fixed regression in `merge()` with integer and`NaN` keys failing with`outer` merge (GH 43550)\n- Fixed regression in `DataFrame.corr()` raising`ValueError` with`method=\"spearman\"` on 32-bit platforms (GH 43588)\n- Fixed performance regression in `MultiIndex.equals()` (GH 43549)\n- Fixed performance regression in `DataFrameGroupBy.first()` ,`SeriesGroupBy.first()` ,`DataFrameGroupBy.last()` , and`SeriesGroupBy.last()` with`StringDtype` (GH 41596)\n- Fixed regression in `Series.cat.reorder_categories()` failing to update the categories on the`Series` (GH 43232)\n- Fixed regression in `Series.cat.categories()` setter failing to update the categories on the`Series` (GH 43334)\n- Fixed regression in `read_csv()` raising`UnicodeDecodeError` exception when`memory_map=True` (GH 43540)\n- Fixed regression in `DataFrame.explode()` raising`AssertionError` when`column` is any scalar which is not a string (GH 43314)\n- Fixed regression in `Series.aggregate()` attempting to pass`args` and`kwargs` multiple times to the user supplied`func` in certain cases (GH 43357)\n- Fixed regression when iterating over a `DataFrame.groupby.rolling` object causing the resulting DataFrames to have an incorrect index if the input groupings were not sorted (GH 43386)\n- Fixed regression in `DataFrame.groupby.rolling.cov()` and`DataFrame.groupby.rolling.corr()` computing incorrect results if the input groupings were not sorted (GH 43386)\n\n## Bug fixes#\n\n- Fixed bug in `pandas.DataFrame.groupby.rolling()` and`pandas.api.indexers.FixedForwardWindowIndexer` leading to segfaults and window endpoints being mixed across groups (GH 43267)\n- Fixed bug in `DataFrameGroupBy.mean()` and`SeriesGroupBy.mean()` with datetimelike values including`NaT` values returning incorrect results (GH 43132)\n- Fixed bug in `Series.aggregate()` not passing the first`args` to the user supplied`func` in certain cases (GH 43357)\n- Fixed memory leaks in `Series.rolling.quantile()` and`Series.rolling.median()` (GH 43339)\n\n## Other#\n\n- The minimum version of Cython needed to compile pandas is now `0.29.24` (GH 43729)\n\n## Contributors#\n\nA total of 17 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Alexey Györi +\n- DSM\n- Irv Lustig\n- Jeff Reback\n- Julien de la Bruère-T +\n- Matthew Zeitlin\n- MeeseeksMachine\n- Pandas Development Team\n- Patrick Hoefler\n- Richard Shadrach\n- Shoham Debnath\n- Simon Hawkins\n- Thomas Li\n- aptalca +\n- jbrockmendel\n- michal-gh +\n- realead",
     "markdown_length": 2945,
@@ -10,18 +10,6 @@
         {
             "href": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.4.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "http://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html",
+            "text": "What’s new in 3.1.0 (Month XX, 2026)",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.3.4 (October 17, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.3.4 (October 17, 2021) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:56.896596",
+    "crawled_at": "2026-08-28T17:55:39.952371",
     "type": "webpage"
 }

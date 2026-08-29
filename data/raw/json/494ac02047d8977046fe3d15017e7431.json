@@ -2,7 +2,7 @@
     "id": "494ac02047d8977046fe3d15017e7431",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.2.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.2.html",
-    "title": "What’s new in 1.3.2 (August 15, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.3.2 (August 15, 2021) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.3.2 (August 15, 2021)#\n\nThese are the changes in pandas 1.3.2. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Performance regression in `DataFrame.isin()` and`Series.isin()` for nullable data types (GH 42714)\n- Regression in updating values of `Series` using boolean index, created by using`DataFrame.pop()` (GH 42530)\n- Regression in `DataFrame.from_records()` with empty records (GH 42456)\n- Fixed regression in `DataFrame.shift()` where`TypeError` occurred when shifting DataFrame created by concatenation of slices and fills with values (GH 42719)\n- Regression in `DataFrame.agg()` when the`func` argument returned lists and`axis=1` (GH 42727)\n- Regression in `DataFrame.drop()` does nothing if`MultiIndex` has duplicates and indexer is a tuple or list of tuples (GH 42771)\n- Fixed regression where `read_csv()` raised a`ValueError` when parameters`names` and`prefix` were both set to`None` (GH 42387)\n- Fixed regression in comparisons between `Timestamp` object and`datetime64` objects outside the implementation bounds for nanosecond`datetime64` (GH 42794)\n- Fixed regression in `Styler.highlight_min()` and`Styler.highlight_max()` where`pandas.NA` was not successfully ignored (GH 42650)\n- Fixed regression in `concat()` where`copy=False` was not honored in`axis=1` Series concatenation (GH 42501)\n- Regression in `Series.nlargest()` and`Series.nsmallest()` with nullable integer or float dtype (GH 42816)\n- Fixed regression in `Series.quantile()` with`Int64Dtype` (GH 42626)\n- Fixed regression in `Series.groupby()` and`DataFrame.groupby()` where supplying the`by` argument with a Series named with a tuple would incorrectly raise (GH 42731)\n\n## Bug fixes#\n\n- Bug in `read_excel()` modifies the dtypes dictionary when reading a file with duplicate columns (GH 42462)\n- 1D slices over extension types turn into N-dimensional slices over ExtensionArrays (GH 42430)\n- Fixed bug in `Series.rolling()` and`DataFrame.rolling()` not calculating window bounds correctly for the first row when`center=True` and`window` is an offset that covers all the rows (GH 42753)\n- `Styler.hide_columns()` now hides the index name header row as well as column headers (GH 42101)\n- `Styler.set_sticky()` has amended CSS to control the column/index names and ensure the correct sticky positions (GH 42537)\n- Bug in de-serializing datetime indexes in PYTHONOPTIMIZED mode (GH 42866)\n\n## Contributors#\n\nA total of 16 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Alexander Gorodetsky +\n- Fangchen Li\n- Fred Reiss\n- Justin McOmie +\n- Matthew Zeitlin\n- MeeseeksMachine\n- Pandas Development Team\n- Patrick Hoefler\n- Richard Shadrach\n- Shoham Debnath\n- Simon Hawkins\n- Thomas Li\n- Wenjun Si\n- attack68\n- dicristina +\n- jbrockmendel",
     "markdown_length": 2856,
@@ -10,18 +10,6 @@
         {
             "href": "http://pandas.pydata.org/docs/dev/whatsnew/v1.3.2.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "http://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html",
+            "text": "What’s new in 3.1.0 (Month XX, 2026)",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.3.2 (August 15, 2021) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.3.2 (August 15, 2021) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.874333",
+    "crawled_at": "2026-08-28T17:55:40.338067",
     "type": "webpage"
 }

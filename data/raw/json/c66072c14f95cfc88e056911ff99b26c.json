@@ -2,7 +2,7 @@
     "id": "c66072c14f95cfc88e056911ff99b26c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.symmetric_difference.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.symmetric_difference.html",
-    "title": "pandas.Index.symmetric_difference — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.symmetric_difference — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.symmetric_difference#\n\n- \nIndex.symmetric_difference(*other* ,*result_name=None* ,*sort=None* )[source]#\n- Compute the symmetric difference of two Index objects. The result contains elements that are in either of the two Index objects but not in their intersection. This is the set-theoretic symmetric difference, analogous to the `^` operator on Python sets.\n  - Parameters:\n    - **other** Index or array-like\n    - Index or an array-like object with elements to compute the symmetric difference with the original Index.\n    - **result_name** str\n    - A string representing the name of the resulting Index, if desired.\n    - **sort** bool or None, default None\n    - Whether to sort the resulting index. By default, the values are attempted to be sorted, but any TypeError from incomparable elements is caught by pandas. \n      - None : Attempt to sort the result, but catch any TypeErrors from comparing incomparable elements.\n      - False : Do not sort the result.\n      - True : Sort the result (which may raise TypeError).\n  - Returns:\n    - Index\n    - Returns a new Index object containing elements that appear in either the original Index or the other Index, but not both.\n See also \n  - `Index.difference`\n  - Return a new Index with elements of index not in other.\n  - `Index.union`\n  - Form the union of two Index objects.\n  - `Index.intersection`\n  - Form the intersection of two Index objects.\n Notes `symmetric_difference` contains elements that appear in either`idx1` or`idx2` but not both. Equivalent to the Index created by`idx1.difference(idx2) | idx2.difference(idx1)` with duplicates\ndropped.Examples >>> idx1 = pd.Index([1, 2, 3, 4]) >>> idx2 = pd.Index([2, 3, 4, 5]) >>> idx1.symmetric_difference(idx2) Index([1, 5], dtype='int64')",
     "markdown_length": 1771,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.symmetric_difference — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.symmetric_difference — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:50.660374",
+    "crawled_at": "2026-08-28T15:47:53.915956",
     "type": "webpage"
 }

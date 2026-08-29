@@ -2,7 +2,7 @@
     "id": "19de9ee746bce952abbf60855251631e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.weekday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.weekday.html",
-    "title": "pandas.Series.dt.weekday — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.weekday — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.weekday#\n\n- Series.dt.weekday[source]#\n- The day of the week with Monday=0, Sunday=6. Deprecated since version 3.1.0: Use `DatetimeIndex.day_of_week` instead.\n\nThe day of the week with Monday=0, Sunday=6.\n\nDeprecated since version 3.1.0: Use `DatetimeIndex.day_of_week` instead.",
     "markdown_length": 297,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.weekday — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.weekday — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.301120",
+    "crawled_at": "2026-08-28T15:49:26.311959",
     "type": "webpage"
 }

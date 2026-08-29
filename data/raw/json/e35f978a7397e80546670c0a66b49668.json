@@ -2,7 +2,7 @@
     "id": "e35f978a7397e80546670c0a66b49668",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.week.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.week.html",
-    "title": "pandas.Timestamp.week — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.week — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.week#\n\n- Timestamp.week#\n- Return the week number of the year. Weeks are numbered according to the ISO 8601 standard, where weeks start on Monday and the first week of the year contains the year’s first Thursday. \n  - Returns:\n    - int\n See also \n  - `Timestamp.weekday`\n  - Return the day of the week.\n  - `Timestamp.quarter`\n  - Return the quarter of the year.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.week 11",
     "markdown_length": 442,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.week — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.week — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:52.627483",
+    "crawled_at": "2026-08-28T15:51:33.492885",
     "type": "webpage"
 }

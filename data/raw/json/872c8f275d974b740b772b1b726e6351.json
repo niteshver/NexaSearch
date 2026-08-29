@@ -2,7 +2,7 @@
     "id": "872c8f275d974b740b772b1b726e6351",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.itertuples.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.itertuples.html",
-    "title": "pandas.DataFrame.itertuples — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.itertuples — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.itertuples#\n\n- \nDataFrame.itertuples(*index=True* ,*name='Pandas'* )[source]#\n- Iterate over DataFrame rows as namedtuples. Each row becomes a namedtuple (or plain tuple if `name` is\nNone) with field names taken from the column names or\npositional names. Generally faster and more type-stable than`iterrows()` .\n  - Parameters:\n    - **index** bool, default True\n    - If True, return the index as the first element of the tuple.\n    - **name** str or None, default “Pandas”\n    - The name of the returned namedtuples or None to return regular tuples.\n  - Returns:\n    - iterator\n    - An object to iterate over namedtuples for each row in the DataFrame with the first field possibly being the index and following fields being the column values.\n See also \n  - `DataFrame.iterrows`\n  - Iterate over DataFrame rows as (index, Series) pairs.\n  - `DataFrame.items`\n  - Iterate over (column name, Series) pairs.\n Notes The column names will be renamed to positional names if they are invalid Python identifiers, repeated, or start with an underscore. Examples >>> df = pd.DataFrame( ... {\"num_legs\": [4, 2], \"num_wings\": [0, 2]}, index=[\"dog\", \"hawk\"] ... ) >>> df num_legs num_wings dog 4 0 hawk 2 2 >>> for row in df.itertuples(): ... print(row) Pandas(Index='dog', num_legs=4, num_wings=0) Pandas(Index='hawk', num_legs=2, num_wings=2) By setting the index parameter to False we can remove the index as the first element of the tuple: >>> for row in df.itertuples(index=False): ... print(row) Pandas(num_legs=4, num_wings=0) Pandas(num_legs=2, num_wings=2) With the name parameter set we set a custom name for the yielded namedtuples: >>> for row in df.itertuples(name=\"Animal\"): ... print(row) Animal(Index='dog', num_legs=4, num_wings=0) Animal(Index='hawk', num_legs=2, num_wings=2)",
     "markdown_length": 1803,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.itertuples — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.itertuples — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:03.134887",
+    "crawled_at": "2026-08-28T15:46:25.393235",
     "type": "webpage"
 }

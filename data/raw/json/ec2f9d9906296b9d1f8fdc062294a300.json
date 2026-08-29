@@ -2,7 +2,7 @@
     "id": "ec2f9d9906296b9d1f8fdc062294a300",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.is_quarter_start.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.is_quarter_start.html",
-    "title": "pandas.Series.dt.is_quarter_start — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.is_quarter_start — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.is_quarter_start#\n\n- Series.dt.is_quarter_start[source]#\n- Indicator for whether the date is the first day of a quarter. This boolean attribute evaluates to True if the date falls on the first day of a calendar quarter (January 1, April 1, July 1, or October 1), and False otherwise. \n  - Returns:\n    - **is_quarter_start** Series or DatetimeIndex\n    - The same type as the original data with boolean values. Series will have the same name and index. DatetimeIndex will have the same name.\n See also \n  - `quarter`\n  - Return the quarter of the date.\n  - `is_quarter_end`\n  - Similar property for indicating the quarter end.\n Examples This method is available on Series with datetime values under the `.dt` accessor, and directly on DatetimeIndex.>>> df = pd.DataFrame({'dates': pd.date_range(\"2017-03-30\", ... periods=4)}) >>> df.assign(quarter=df.dates.dt.quarter, ... is_quarter_start=df.dates.dt.is_quarter_start) dates quarter is_quarter_start 0 2017-03-30 1 False 1 2017-03-31 1 False 2 2017-04-01 2 True 3 2017-04-02 2 False >>> idx = pd.date_range('2017-03-30', periods=4) >>> idx DatetimeIndex(['2017-03-30', '2017-03-31', '2017-04-01', '2017-04-02'], dtype='datetime64[us]', freq='D') >>> idx.is_quarter_start array([False, False, True, False])",
     "markdown_length": 1275,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.is_quarter_start — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.is_quarter_start — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:14.794700",
+    "crawled_at": "2026-08-28T15:49:14.713175",
     "type": "webpage"
 }

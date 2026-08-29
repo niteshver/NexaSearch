@@ -2,7 +2,7 @@
     "id": "e2a81855a0992761f9603683491aacb3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cov.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cov.html",
-    "title": "pandas.Series.cov — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.cov — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.cov#\n\n- \nSeries.cov(*other* ,*min_periods=None* ,*ddof=1* )[source]#\n- Compute covariance with Series, excluding missing values. The two Series objects are not required to be the same length and will be aligned internally before the covariance is calculated. \n  - Parameters:\n    - **other** Series\n    - Series with which to compute the covariance.\n    - **min_periods** int, optional\n    - Minimum number of observations needed to have a valid result.\n    - **ddof** int, default 1\n    - Delta degrees of freedom. The divisor used in calculations is `N - ddof` , where`N` represents the number of elements.\n  - Returns:\n    - float\n    - Covariance between Series and other normalized by N-1 (unbiased estimator).\n See also \n  - `DataFrame.cov`\n  - Compute pairwise covariance of columns.\n Examples >>> s1 = pd.Series([0.90010907, 0.13484424, 0.62036035]) >>> s2 = pd.Series([0.12528585, 0.26962463, 0.51111198]) >>> s1.cov(s2) -0.01685762652715874",
     "markdown_length": 966,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cov — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.cov — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:12.872342",
+    "crawled_at": "2026-08-28T15:49:01.711036",
     "type": "webpage"
 }

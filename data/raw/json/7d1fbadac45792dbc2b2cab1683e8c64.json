@@ -2,7 +2,7 @@
     "id": "7d1fbadac45792dbc2b2cab1683e8c64",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.start_time.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.start_time.html",
-    "title": "pandas.Series.dt.start_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.start_time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.start_time#\n\n- Series.dt.start_time[source]#\n- Get the Timestamp for the start of the period. This property returns the exact start time of the period as a Timestamp. For example, a monthly period starting in January 2020 would return a Timestamp of ‘2020-01-01 00:00:00’. \n  - Returns:\n    - Timestamp\n See also \n  - `Period.end_time`\n  - Return the end Timestamp.\n  - `Period.dayofyear`\n  - Return the day of year.\n  - `Period.daysinmonth`\n  - Return the days in that month.\n  - `Period.dayofweek`\n  - Return the day of the week.\n Examples >>> period = pd.Period('2012-1-1', freq='D') >>> period Period('2012-01-01', 'D') >>> period.start_time Timestamp('2012-01-01 00:00:00') >>> period.end_time Timestamp('2012-01-01 23:59:59.999999')",
     "markdown_length": 757,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.start_time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.start_time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:15.668258",
+    "crawled_at": "2026-08-28T15:49:21.970302",
     "type": "webpage"
 }

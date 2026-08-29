@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-26T06:50:18.906331",
+    "crawled_at": "2026-08-28T20:42:51.877517",
     "type": "webpage"
 }

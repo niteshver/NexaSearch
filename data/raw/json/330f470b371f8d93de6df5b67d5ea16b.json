@@ -2,7 +2,7 @@
     "id": "330f470b371f8d93de6df5b67d5ea16b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.tz_convert.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.tz_convert.html",
-    "title": "pandas.Series.dt.tz_convert — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.tz_convert — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.tz_convert#\n\n- \nSeries.dt.tz_convert(*tz* )[source]#\n- Convert tz-aware Datetime Array/Index from one time zone to another. This method converts datetime values from their current timezone to a different timezone. The underlying UTC time remains the same, only the local time representation changes to reflect the target timezone. \n  - Parameters:\n    - **tz** str, zoneinfo.ZoneInfo, pytz.timezone, dateutil.tz.tzfile, datetime.tzinfo or None\n    - Time zone for time. Corresponding timestamps would be converted to this time zone of the Datetime Array/Index. A tz of None will convert to UTC and remove the timezone information.\n  - Returns:\n    - Array or Index\n    - Datetime Array/Index with target tz.\n  - Raises:\n    - TypeError\n    - If Datetime Array/Index is tz-naive.\n See also \n  - `DatetimeIndex.tz`\n  - A timezone that has a variable offset from UTC.\n  - `DatetimeIndex.tz_localize`\n  - Localize tz-naive DatetimeIndex to a given time zone, or remove timezone from a tz-aware DatetimeIndex.\n  - `Series.dt.tz`\n  - A timezone that has a variable offset from UTC.\n  - `Series.dt.tz_localize`\n  - Localize tz-naive Series datetimes to a given time zone, or remove timezone from tz-aware Series datetimes.\n Examples With the tz parameter, we can change the DatetimeIndex to other time zones: >>> dti = pd.date_range( ... start=\"2014-08-01 09:00\", freq=\"h\", periods=3, tz=\"Europe/Berlin\" ... ) >>> dti DatetimeIndex(['2014-08-01 09:00:00+02:00', '2014-08-01 10:00:00+02:00', '2014-08-01 11:00:00+02:00'], dtype='datetime64[us, Europe/Berlin]', freq='h') >>> dti.tz_convert(\"US/Central\") DatetimeIndex(['2014-08-01 02:00:00-05:00', '2014-08-01 03:00:00-05:00', '2014-08-01 04:00:00-05:00'], dtype='datetime64[us, US/Central]', freq='h') With the `tz=None` , we can remove the timezone (after converting\nto UTC if necessary):>>> dti = pd.date_range( ... start=\"2014-08-01 09:00\", freq=\"h\", periods=3, tz=\"Europe/Berlin\" ... ) >>> dti DatetimeIndex(['2014-08-01 09:00:00+02:00', '2014-08-01 10:00:00+02:00', '2014-08-01 11:00:00+02:00'], dtype='datetime64[us, Europe/Berlin]', freq='h') >>> dti.tz_convert(None) DatetimeIndex(['2014-08-01 07:00:00', '2014-08-01 08:00:00', '2014-08-01 09:00:00'], dtype='datetime64[us]', freq='h')",
     "markdown_length": 2255,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.tz_convert — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.tz_convert — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.220894",
+    "crawled_at": "2026-08-28T15:49:25.333582",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "7fedb16fc7a6d5cc6ec443f635525bc1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.to_html.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.to_html.html",
-    "title": "pandas.io.formats.style.Styler.to_html — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.io.formats.style.Styler.to_html — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.to_html#\n\n- \nStyler.to_html(*buf=None* ,*** ,*table_uuid=None* ,*table_attributes=None* ,*sparse_index=None* ,*sparse_columns=None* ,*bold_headers=False* ,*caption=None* ,*max_rows=None* ,*max_columns=None* ,*encoding=None* ,*doctype_html=False* ,*exclude_styles=False* ,***kwargs* )[source]#\n- Write Styler to a file, buffer or string in HTML-CSS format. The output includes `<style>` and`<table>` HTML elements with inline\nCSS, suitable for embedding in web pages or Jupyter notebooks. Use`doctype_html=True` to produce a fully structured HTML document.\n  - Parameters:\n    - **buf** str, path object, file-like object, optional\n    - String, path object (implementing `os.PathLike[str]` ), or file-like\nobject implementing a string`write()` function. If`None` , the result\nis returned as a string.\n    - **table_uuid** str, optional\n    - Id attribute assigned to the <table> HTML element in the format: `<table id=\"T_<table_uuid>\" ..>`If not given uses Styler’s initially assigned value.\n    - **table_attributes** str, optional\n    - Attributes to assign within the <table> HTML element in the format: `<table .. <table_attributes> >`If not given defaults to Styler’s preexisting value.\n    - **sparse_index** bool, optional\n    - Whether to sparsify the display of a hierarchical index. Setting to False will display each explicit level element in a hierarchical key for each row. Defaults to `pandas.options.styler.sparse.index` value.\n    - **sparse_columns** bool, optional\n    - Whether to sparsify the display of a hierarchical index. Setting to False will display each explicit level element in a hierarchical key for each column. Defaults to `pandas.options.styler.sparse.columns` value.\n    - **bold_headers** bool, optional\n    - Adds “font-weight: bold;” as a CSS property to table style header cells.\n    - **caption** str, optional\n    - Set, or overwrite, the caption on Styler before rendering.\n    - **max_rows** int, optional\n    - The maximum number of rows that will be rendered. Defaults to `pandas.options.styler.render.max_rows/max_columns` .\n    - **max_columns** int, optional\n    - The maximum number of columns that will be rendered. Defaults to `pandas.options.styler.render.max_columns` , which is None.Rows and columns may be reduced if the number of total elements is large. This value is set to `pandas.options.styler.render.max_elements` ,\nwhich is 262144 (18 bit browser rendering).\n    - **encoding** str, optional\n    - Character encoding setting for file output (and meta tags if available). Defaults to `pandas.options.styler.render.encoding` value of “utf-8”.\n    - **doctype_html** bool, default False\n    - Whether to output a fully structured HTML file including all HTML elements, or just the core `<style>` and`<table>` elements.\n    - **exclude_styles** bool, default False\n    - Whether to include the `<style>` element and all associated element`class` and`id` identifiers, or solely the`<table>` element without\nstyling identifiers.\n    - ****kwargs**\n    - Any additional keyword arguments are passed through to the jinja2 `self.template.render` process. This is useful when you need to provide\nadditional variables for a custom template.\n  - Returns:\n    - str or None\n    - If buf is None, returns the result as a string. Otherwise returns None.\n See also \n  - `DataFrame.to_html`\n  - Write a DataFrame to a file, buffer or string in HTML format.\n Examples >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> print(df.style.to_html()) <style type=\"text/css\"> </style> <table id=\"T_1e78e\"> <thead> <tr> <th class=\"blank level0\" > </th> <th id=\"T_1e78e_level0_col0\" class=\"col_heading level0 col0\" >A</th> <th id=\"T_1e78e_level0_col1\" class=\"col_heading level0 col1\" >B</th> </tr> ...",
     "markdown_length": 3772,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.to_html — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.io.formats.style.Styler.to_html — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:51:24.371192",
+    "crawled_at": "2026-08-28T17:59:33.655996",
     "type": "webpage"
 }

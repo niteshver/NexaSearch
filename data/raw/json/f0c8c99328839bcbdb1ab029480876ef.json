@@ -2,7 +2,7 @@
     "id": "f0c8c99328839bcbdb1ab029480876ef",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.is_open.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.is_open.html",
-    "title": "pandas.HDFStore.is_open — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.is_open — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.is_open#\n\n- property HDFStore.is_open[source]#\n- Return a boolean indicating whether the file is open. `HDFStore` instances open the underlying PyTables file in their\nconstructor, but the file can be closed and reopened on the same\ninstance via`close()` and`open()` .See also \n  - `HDFStore.open`\n  - Open the underlying file in the specified mode.\n  - `HDFStore.close`\n  - Close the underlying PyTables file handle.\n Examples >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.is_open True >>> store.close() >>> store.is_open False",
     "markdown_length": 550,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.is_open — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.is_open — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.888439",
+    "crawled_at": "2026-08-28T17:56:36.204804",
     "type": "webpage"
 }

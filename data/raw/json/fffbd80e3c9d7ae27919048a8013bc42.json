@@ -2,7 +2,7 @@
     "id": "fffbd80e3c9d7ae27919048a8013bc42",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.nbytes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.nbytes.html",
-    "title": "pandas.Index.nbytes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.nbytes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.nbytes#\n\n- property Index.nbytes[source]#\n- Return the number of bytes in the underlying data. Includes only the memory used by the array values; overhead such as the index is not included. Useful for estimating memory usage. See also \n  - `Series.ndim`\n  - Number of dimensions of the underlying data.\n  - `Series.size`\n  - Return the number of elements in the underlying data.\n Examples For Series: >>> s = pd.Series([\"Ant\", \"Bear\", \"Cow\"]) >>> s 0 Ant 1 Bear 2 Cow dtype: str >>> s.nbytes 34 For Index: >>> idx = pd.Index([1, 2, 3]) >>> idx Index([1, 2, 3], dtype='int64') >>> idx.nbytes 24",
     "markdown_length": 608,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.nbytes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.nbytes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:49.878072",
+    "crawled_at": "2026-08-28T15:47:47.790065",
     "type": "webpage"
 }

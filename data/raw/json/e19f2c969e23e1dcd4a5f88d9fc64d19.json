@@ -2,7 +2,7 @@
     "id": "e19f2c969e23e1dcd4a5f88d9fc64d19",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.weekend_to_monday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.weekend_to_monday.html",
-    "title": "pandas.tseries.holiday.weekend_to_monday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.weekend_to_monday — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.weekend_to_monday#\n\n- \npandas.tseries.holiday.weekend_to_monday(*dt* )[source]#\n- Move Saturday and Sunday to the following Monday. Same as `next_monday` . Needed for holidays such as the Christmas\nobservation in Europe.\n  - Parameters:\n    - **dt** datetime\n    - The date the holiday falls on.\n  - Returns:\n    - datetime\n    - The date the holiday is observed on.\n See also \n  - `tseries.holiday.next_monday`\n  - Move Saturday and Sunday to the following Monday.\n  - `tseries.holiday.sunday_to_monday`\n  - Move Sunday to the following Monday.\n  - `tseries.holiday.Holiday`\n  - Class that defines a holiday with start/end dates and rules for observance.\n Examples >>> from datetime import datetime >>> from pandas.tseries.holiday import weekend_to_monday >>> weekend_to_monday(datetime(2022, 1, 1)) # Saturday datetime.datetime(2022, 1, 3, 0, 0) >>> weekend_to_monday(datetime(2022, 1, 2)) # Sunday datetime.datetime(2022, 1, 3, 0, 0)",
     "markdown_length": 961,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.weekend_to_monday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.weekend_to_monday — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:47.698084",
+    "crawled_at": "2026-08-28T18:16:23.349452",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "acf7bab776fe1d7de71c4cd186d54805",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.normalize.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.normalize.html",
-    "title": "pandas.Series.str.normalize — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.normalize — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.normalize#\n\n- \nSeries.str.normalize(*form* )[source]#\n- Return the Unicode normal form for the strings in the Series/Index. For more information on the forms, see the `unicodedata.normalize()` .\n  - Parameters:\n    - **form** {‘NFC’, ‘NFKC’, ‘NFD’, ‘NFKD’}\n    - Unicode form.\n  - Returns:\n    - Series/Index of objects\n    - A Series or Index of strings in the same Unicode form specified by form. The returned object retains the same type as the input (Series or Index), and contains the normalized strings.\n See also \n  - `Series.str.upper`\n  - Convert all characters in each string to uppercase.\n  - `Series.str.lower`\n  - Convert all characters in each string to lowercase.\n  - `Series.str.title`\n  - Convert each string to title case (capitalizing the first letter of each word).\n  - `Series.str.strip`\n  - Remove leading and trailing whitespace from each string.\n  - `Series.str.replace`\n  - Replace occurrences of a substring with another substring in each string.\n Examples >>> ser = pd.Series([\"ñ\"]) >>> ser.str.normalize(\"NFC\") == ser.str.normalize(\"NFD\") 0 False dtype: bool",
     "markdown_length": 1106,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.normalize — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.normalize — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:15.643716",
+    "crawled_at": "2026-08-28T15:50:27.285616",
     "type": "webpage"
 }

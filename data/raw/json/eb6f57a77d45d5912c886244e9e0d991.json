@@ -2,7 +2,7 @@
     "id": "eb6f57a77d45d5912c886244e9e0d991",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.construct_array_type.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.construct_array_type.html",
-    "title": "pandas.api.extensions.ExtensionDtype.construct_array_type — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionDtype.construct_array_type — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.api.extensions.ExtensionDtype.construct_array_type# ExtensionDtype.construct_array_type()[source]# Return the array type associated with this dtype. Returns: type",
     "markdown_length": 169,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionDtype.construct_array_type — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionDtype.construct_array_type — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionDtype.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.462604",
+    "crawled_at": "2026-08-28T15:51:49.450289",
     "type": "webpage"
 }

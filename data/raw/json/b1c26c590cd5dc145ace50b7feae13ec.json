@@ -2,10 +2,10 @@
     "id": "b1c26c590cd5dc145ace50b7feae13ec",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.BooleanArray.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.BooleanArray.html",
-    "title": "pandas.arrays.BooleanArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.arrays.BooleanArray — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.arrays.BooleanArray#\n\n- \nclass pandas.arrays.BooleanArray(*values* ,*mask* ,*copy=False* )[source]#\n- Array of boolean (True/False) data with missing values. This is a pandas Extension array for boolean data, under the hood represented by 2 numpy arrays: a boolean array with the data and a boolean array with the mask (True indicating missing). BooleanArray implements Kleene logic (sometimes called three-value logic) for logical operations. See Kleene logical operations for more. To construct a BooleanArray from generic array-like input, use `pandas.array()` specifying`dtype=\"boolean\"` (see examples\nbelow).Warning BooleanArray is considered experimental. The implementation and parts of the API may change without warning. \n  - Parameters:\n    - **values** numpy.ndarray\n    - A 1-d boolean-dtype array with the data.\n    - **mask** numpy.ndarray\n    - A 1-d boolean-dtype array indicating missing values (True indicates missing).\n    - **copy** bool, default False\n    - Whether to copy the values and mask arrays.\n Attributes **None**Methods **None**\n  - Returns:\n    - BooleanArray\n See also \n  - `array`\n  - Create an array from data with the appropriate dtype.\n  - `BooleanDtype`\n  - Extension dtype for boolean data.\n  - `Series`\n  - One-dimensional ndarray with axis labels (including time series).\n  - `DataFrame`\n  - Two-dimensional, size-mutable, potentially heterogeneous tabular data.\n Examples Create a BooleanArray with `pandas.array()` :>>> pd.array([True, False, None], dtype=\"boolean\") <BooleanArray> [True, False, <NA>] Length: 3, dtype: boolean",
-    "markdown_length": 1579,
+    "markdown": "# pandas.arrays.BooleanArray#\n\n- \nclass pandas.arrays.BooleanArray(*values* ,*mask* ,*copy=False* )[source]#\n- Array of boolean (True/False) data with missing values. This is a pandas Extension array for boolean data, under the hood represented by 2 numpy arrays: a boolean array with the data and a boolean array with the mask (True indicating missing). BooleanArray implements Kleene logic (sometimes called three-value logic) for logical operations. See Kleene logical operations for more. To construct a BooleanArray from generic array-like input, use `pandas.array()` specifying`dtype=\"boolean\"` (see examples\nbelow).Warning BooleanArray is considered experimental. The implementation and parts of the API may change without warning. \n  - Parameters:\n    - **values** numpy.ndarray\n    - A 1-d boolean-dtype array with the data.\n    - **mask** numpy.ndarray\n    - A 1-d boolean-dtype array indicating missing values (True indicates missing).\n    - **copy** bool, default False\n    - Whether to copy the values and mask arrays.\n  - Returns:\n    - BooleanArray\n See also \n  - `array`\n  - Create an array from data with the appropriate dtype.\n  - `BooleanDtype`\n  - Extension dtype for boolean data.\n  - `Series`\n  - One-dimensional ndarray with axis labels (including time series).\n  - `DataFrame`\n  - Two-dimensional, size-mutable, potentially heterogeneous tabular data.\n Examples Create a BooleanArray with `pandas.array()` :>>> pd.array([True, False, None], dtype=\"boolean\") <BooleanArray> [True, False, <NA>] Length: 3, dtype: boolean",
+    "markdown_length": 1542,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.BooleanArray.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.arrays.BooleanArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.arrays.BooleanArray — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:29.985323",
+    "crawled_at": "2026-08-28T15:52:09.199322",
     "type": "webpage"
 }

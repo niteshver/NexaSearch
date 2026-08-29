@@ -2,7 +2,7 @@
     "id": "7dfdcfdfa7dd280ee6cc6a369e6f95c6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.USFederalHolidayCalendar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.USFederalHolidayCalendar.html",
-    "title": "pandas.tseries.holiday.USFederalHolidayCalendar — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.USFederalHolidayCalendar — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.USFederalHolidayCalendar#\n\n- \nclass pandas.tseries.holiday.USFederalHolidayCalendar(*name=''* ,*rules=None* )[source]#\n- US Federal Government holiday calendar. The rules follow the federal holiday schedule published by the US Office of Personnel Management: https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/ Holidays that land on a weekend are observed on the nearest weekday. Pass an instance as the `calendar` argument of`CustomBusinessDay` to skip these dates\nin business day arithmetic.\n  - Parameters:\n    - **name** str\n    - Name of the holiday calendar, defaults to class name.\n    - **rules** array of Holiday objects\n    - A set of rules used to create the holidays.\n See also \n  - `tseries.holiday.AbstractHolidayCalendar`\n  - Abstract interface to create holidays following certain rules.\n  - `tseries.holiday.nearest_workday`\n  - Move Saturday to Friday and Sunday to Monday.\n  - `tseries.holiday.get_calendar`\n  - Return an instance of a calendar based on its name.\n Examples >>> from pandas.tseries.holiday import USFederalHolidayCalendar >>> USFederalHolidayCalendar().holidays(start=\"2024-06-01\", end=\"2024-07-31\") DatetimeIndex(['2024-06-19', '2024-07-04'], dtype='datetime64[us]', freq=None) Attributes `end_date``rules``start_date`Methods `holidays` ([start, end, return_name])Return a curve with holidays between start_date and end_date. `merge` (other[, inplace])Merge holiday calendars together. `merge_class` (base, other)Merge holiday calendars together. `rule_from_name` (name)Return the rule for the holiday with the given name.",
     "markdown_length": 1601,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.USFederalHolidayCalendar — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.USFederalHolidayCalendar — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.199530",
+    "crawled_at": "2026-08-28T18:00:01.821408",
     "type": "webpage"
 }

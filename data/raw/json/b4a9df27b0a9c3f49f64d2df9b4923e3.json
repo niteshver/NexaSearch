@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.as_unit.html"
     },
-    "crawled_at": "2026-08-26T06:50:27.549390",
+    "crawled_at": "2026-08-28T19:53:15.717554",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "5c125e21a181c7b18f41be337c40279a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.table.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.table.html",
-    "title": "pandas.plotting.table — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.plotting.table — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.table#\n\n- \npandas.plotting.table(*ax* ,*data* ,***kwargs* )[source]#\n- Helper function to convert DataFrame and Series to matplotlib.table. This method provides an easy way to visualize tabular data within a Matplotlib figure. It automatically extracts index and column labels from the DataFrame or Series, unless explicitly specified. This function is particularly useful when displaying summary tables alongside other plots or when creating static reports. It utilizes the matplotlib.pyplot.table backend and allows customization through various styling options available in Matplotlib. \n  - Parameters:\n    - **ax** Matplotlib axes object\n    - The axes on which to draw the table.\n    - **data** DataFrame or Series\n    - Data for table contents.\n    - ****kwargs**\n    - Keyword arguments to be passed to matplotlib.table.table. If rowLabels or colLabels is not specified, data index or column names will be used.\n  - Returns:\n    - matplotlib table object\n    - The created table as a matplotlib Table object.\n See also \n  - `DataFrame.plot`\n  - Make plots of DataFrame using matplotlib.\n  - `matplotlib.pyplot.table`\n  - Create a table from data in a Matplotlib plot.\n Examples >>> import matplotlib.pyplot as plt >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> fig, ax = plt.subplots() >>> ax.axis(\"off\") (np.float64(0.0), np.float64(1.0), np.float64(0.0), np.float64(1.0)) >>> table = pd.plotting.table( ... ax, df, loc=\"center\", cellLoc=\"center\", colWidths=[0.2, 0.2] ... )",
     "markdown_length": 1507,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.table — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.plotting.table — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:48:14.334899",
+    "crawled_at": "2026-08-28T15:52:27.653076",
     "type": "webpage"
 }

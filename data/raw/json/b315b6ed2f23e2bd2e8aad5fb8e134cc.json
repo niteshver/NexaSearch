@@ -2,7 +2,7 @@
     "id": "b315b6ed2f23e2bd2e8aad5fb8e134cc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.update.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.update.html",
-    "title": "pandas.Series.update — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.update — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.update#\n\n- \nSeries.update(*other* )[source]#\n- Modify Series in place using values from passed Series. Uses non-NA values from passed Series to make updates. Aligns on index. \n  - Parameters:\n    - **other** Series, or object coercible into Series\n    - Other Series that provides values to update the current Series.\n See also \n  - `Series.combine`\n  - Perform element-wise operation on two Series using a given function.\n  - `Series.transform`\n  - Modify a Series using a function.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.update(pd.Series([4, 5, 6])) >>> s 0 4 1 5 2 6 dtype: int64 >>> s = pd.Series([\"a\", \"b\", \"c\"]) >>> s.update(pd.Series([\"d\", \"e\"], index=[0, 2])) >>> s 0 d 1 b 2 e dtype: str >>> s = pd.Series([1, 2, 3]) >>> s.update(pd.Series([4, 5, 6, 7, 8])) >>> s 0 4 1 5 2 6 dtype: int64 If `other` contains NaNs the corresponding values are not updated\nin the original Series.>>> s = pd.Series([1, 2, 3]) >>> s.update(pd.Series([4, np.nan, 6])) >>> s 0 4 1 2 2 6 dtype: int64 `other` can also be a non-Series object type\nthat is coercible into a Series>>> s = pd.Series([1, 2, 3]) >>> s.update([4, np.nan, 6]) >>> s 0 4 1 2 2 6 dtype: int64 >>> s = pd.Series([1, 2, 3]) >>> s.update({1: 9}) >>> s 0 1 1 9 2 3 dtype: int64",
     "markdown_length": 1254,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.update — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.update — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:50:53.496970",
+    "crawled_at": "2026-08-28T15:50:48.474359",
     "type": "webpage"
 }

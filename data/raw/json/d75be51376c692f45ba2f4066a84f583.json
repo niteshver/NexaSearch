@@ -2,7 +2,7 @@
     "id": "d75be51376c692f45ba2f4066a84f583",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.repeat.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.repeat.html",
-    "title": "pandas.Index.repeat — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Index.repeat — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.repeat#\n\n- \nIndex.repeat(*repeats* ,*axis=None* )[source]#\n- Repeat elements of an Index. Returns a new Index where each element of the current Index is repeated consecutively a given number of times. \n  - Parameters:\n    - **repeats** int or array of ints\n    - The number of repetitions for each element. This should be a non-negative integer. Repeating 0 times will return an empty Index.\n    - **axis** None\n    - Must be `None` . Has no effect but is accepted for compatibility\nwith numpy.\n  - Returns:\n    - Index\n    - Newly created Index with repeated elements.\n See also \n  - `Series.repeat`\n  - Equivalent function for Series.\n  - `numpy.repeat`\n  - Similar method for `numpy.ndarray` .\n Examples >>> idx = pd.Index([\"a\", \"b\", \"c\"]) >>> idx Index(['a', 'b', 'c'], dtype='str') >>> idx.repeat(2) Index(['a', 'a', 'b', 'b', 'c', 'c'], dtype='str') >>> idx.repeat([1, 2, 3]) Index(['a', 'b', 'b', 'c', 'c', 'c'], dtype='str')",
     "markdown_length": 947,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.repeat — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Index.repeat — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.repeat.html"
     },
-    "crawled_at": "2026-08-26T06:50:15.489070",
+    "crawled_at": "2026-08-28T20:34:50.416012",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "7d916d8acd3f3bd1d310dfeb965bf37f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.timetuple.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.timetuple.html",
-    "title": "pandas.Timestamp.timetuple — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.timetuple — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.timetuple#\n\n- Timestamp.timetuple()#\n- Return time tuple, compatible with time.localtime(). This method converts the Timestamp into a time tuple, which is compatible with functions like time.localtime(). The time tuple is a named tuple with attributes such as year, month, day, hour, minute, second, weekday, day of the year, and daylight savings indicator. See also \n  - `time.localtime`\n  - Converts a POSIX timestamp into a time tuple.\n  - `Timestamp`\n  - The Timestamp that represents a specific point in time.\n  - `datetime.datetime.timetuple`\n  - Equivalent method in the datetime module.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00') >>> ts Timestamp('2023-01-01 10:00:00') >>> ts.timetuple() time.struct_time(tm_year=2023, tm_mon=1, tm_mday=1, tm_hour=10, tm_min=0, tm_sec=0, tm_wday=6, tm_yday=1, tm_isdst=-1)",
     "markdown_length": 846,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.timetuple — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.timetuple — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:31.753711",
+    "crawled_at": "2026-08-28T15:51:26.230249",
     "type": "webpage"
 }

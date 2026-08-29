@@ -2,7 +2,7 @@
     "id": "452c29db7ec03713ef1cd381912ebb59",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ValueLabelTypeMismatch.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.ValueLabelTypeMismatch.html",
-    "title": "pandas.errors.ValueLabelTypeMismatch — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.ValueLabelTypeMismatch — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.ValueLabelTypeMismatch#\n\n- exception pandas.errors.ValueLabelTypeMismatch[source]#\n- Warning raised by to_stata on a category column that contains non-string values. When exporting data to Stata format using the to_stata method, category columns must have string values as labels. If a category column contains non-string values (e.g., integers, floats, or other types), this warning is raised to indicate that the Stata file may not correctly represent the data. See also \n  - `DataFrame.to_stata`\n  - Export DataFrame object to Stata dta format.\n  - `Series.cat`\n  - Accessor for categorical properties of the Series values.\n Examples >>> df = pd.DataFrame({\"categories\": pd.Series([\"a\", 2], dtype=\"category\")}) >>> df.to_stata(\"test\")",
     "markdown_length": 753,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.ValueLabelTypeMismatch — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.ValueLabelTypeMismatch — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:54.234383",
+    "crawled_at": "2026-08-28T17:59:11.667882",
     "type": "webpage"
 }

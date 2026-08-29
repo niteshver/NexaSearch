@@ -2,7 +2,7 @@
     "id": "61ccd5d68042b21004ed87615e7c8879",
     "url": "https://pandas.pydata.org/docs/dev/reference/index.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/index.html",
-    "title": "API reference — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "API reference — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# API reference#\n\nThis page gives an overview of all public pandas objects, functions and\nmethods. All classes and functions exposed in `pandas.*` namespace are public.\n\nThe following subpackages are public.\n\n- `pandas.errors` : Custom exception and warnings classes that are raised by pandas.\n- `pandas.plotting` : Plotting public API.\n- `pandas.testing` : Functions that are useful for writing tests involving pandas objects.\n- `pandas.api.extensions` : Functions and classes for extending pandas objects.\n- `pandas.api.indexers` : Functions and classes for rolling window indexers.\n- `pandas.api.interchange` : DataFrame interchange protocol.\n- `pandas.api.types` : Datatype classes and functions.\n- `pandas.api.typing` : Classes that may be necessary for type-hinting.\nThese are classes that are encountered as intermediate results but should not be instantiated\ndirectly by users. These classes are not to be confused with classes from the\npandas-stubs package\nwhich has classes in addition to those that occur in pandas for type-hinting.\n\nIn addition, public functions in `pandas.io`, `pandas.tseries`, `pandas.util` submodules\nare explicitly mentioned in the documentation. Further APIs in these modules are not guaranteed\nto be stable.\n\nWarning\n\nThe `pandas.core`, `pandas.compat` top-level modules are PRIVATE. Stable functionality in such modules is not guaranteed.",
     "markdown_length": 1375,
@@ -10,18 +10,6 @@
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/index.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/docs/dev/reference/series.html",
+            "text": "Series",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "API reference — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "API reference — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:50:50.086590",
+    "crawled_at": "2026-08-28T17:55:19.748237",
     "type": "webpage"
 }

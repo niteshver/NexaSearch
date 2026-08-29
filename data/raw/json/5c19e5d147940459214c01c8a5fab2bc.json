@@ -2,7 +2,7 @@
     "id": "5c19e5d147940459214c01c8a5fab2bc",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.date.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.date.html",
-    "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.date#\n\n- property DatetimeIndex.date[source]#\n- Returns numpy array of python `datetime.date` objects.Namely, the date part of Timestamps without time and timezone information. See also \n  - `DatetimeIndex.time`\n  - Returns numpy array of `datetime.time` objects. The time part of the Timestamps.\n  - `DatetimeIndex.year`\n  - The year of the datetime.\n  - `DatetimeIndex.month`\n  - The month as January=1, December=12.\n  - `DatetimeIndex.day`\n  - The day of the datetime.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.date 0 2020-01-01 1 2020-02-01 dtype: object For DatetimeIndex: >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"] ... ) >>> idx.date array([datetime.date(2020, 1, 1), datetime.date(2020, 2, 1)], dtype=object)",
     "markdown_length": 960,
@@ -10,18 +10,6 @@
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.date.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
+            "text": "General functions",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.DatetimeIndex.date — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.date.html"
     },
-    "crawled_at": "2026-08-26T06:49:27.541871",
+    "crawled_at": "2026-08-28T19:34:53.505857",
     "type": "webpage"
 }

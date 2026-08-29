@@ -1,0 +1,156 @@
+# What’s new in 2.3.0 (June 4, 2025)#
+
+These are the changes in pandas 2.3.0. See Release notes for a full changelog including other versions of pandas.
+
+## Upcoming changes in pandas 3.0#
+
+pandas 3.0 will bring two bigger changes to the default behavior of pandas.
+
+### Dedicated string data type by default#
+
+Historically, pandas represented string columns with NumPy `object` data type.
+This representation has numerous problems: it is not specific to strings (any
+Python object can be stored in an `object`-dtype array, not just strings) and
+it is often not very efficient (both performance wise and for memory usage).
+
+Starting with the upcoming pandas 3.0 release, a dedicated string data type will
+be enabled by default (backed by PyArrow under the hood, if installed, otherwise
+falling back to NumPy). This means that pandas will start inferring columns
+containing string data as the new `str` data type when creating pandas
+objects, such as in constructors or IO functions.
+
+Old behavior:
+
+```
+>>> ser = pd.Series(["a", "b"])
+0    a
+1    b
+dtype: object
+```
+New behavior:
+
+```
+>>> ser = pd.Series(["a", "b"])
+0    a
+1    b
+dtype: str
+```
+The string data type that is used in these scenarios will mostly behave as NumPy object would, including missing value semantics and general operations on these columns.
+
+However, the introduction of a new default dtype will also have some breaking
+consequences to your code (for example when checking for the `.dtype` being
+object dtype). To allow testing it in advance of the pandas 3.0 release, this
+future dtype inference logic can be enabled in pandas 2.3 with:
+
+```
+pd.options.future.infer_string = True
+```
+See the Migration guide for the new string data type (pandas 3.0) for more details on the behaviour changes and how to adapt your code to the new default.
+
+### Copy-on-Write#
+
+The currently optional mode Copy-on-Write will be enabled by default in pandas 3.0. There won’t be an option to retain the legacy behavior.
+
+In summary, the new “copy-on-write” behaviour will bring changes in behavior in how pandas operates with respect to copies and views.
+
+1. The result of *any* indexing operation (subsetting a DataFrame or Series in any way,
+i.e. including accessing a DataFrame column as a Series) or any method returning a
+new DataFrame or Series, always*behaves as if* it were a copy in terms of user
+API.
+2. As a consequence, if you want to modify an object (DataFrame or Series), the only way to do this is to directly modify that object itself.
+
+Because every single indexing step now behaves as a copy, this also means that
+“chained assignment” (updating a DataFrame with multiple setitem steps) will
+stop working. Because this now consistently never works, the
+`SettingWithCopyWarning` will be removed.
+
+The new behavioral semantics are explained in more detail in the user guide about Copy-on-Write.
+
+The new behavior can be enabled since pandas 2.0 with the following option:
+
+```
+pd.options.mode.copy_on_write = True
+```
+Some of the behaviour changes allow a clear deprecation, like the changes in chained assignment. Other changes are more subtle and thus, the warnings are hidden behind an option that can be enabled since pandas 2.2:
+
+```
+pd.options.mode.copy_on_write = "warn"
+```
+This mode will warn in many different scenarios that aren’t actually relevant to most queries. We recommend exploring this mode, but it is not necessary to get rid of all of these warnings. The migration guide explains the upgrade process in more detail.
+
+## Enhancements#
+
+### Other enhancements#
+
+- `pandas.api.interchange.from_dataframe()` now uses the PyCapsule Interface if available, only falling back to the Dataframe Interchange Protocol if that fails (GH 60739)
+- The semantics for the `copy` keyword in`__array__` methods (i.e. called
+when using`np.array()` or`np.asarray()` on pandas objects) has been
+updated to work correctly with NumPy >= 2 (GH 57739)
+- `Series.str.decode()` result now has`StringDtype` when`future.infer_string` is True (GH 60709)
+- `to_hdf()` and`to_hdf()` now round-trip with`StringDtype` (GH 60663)
+- Improved `repr` of`NumpyExtensionArray` to account for NEP51 (GH 61085)
+- The `Series.str.decode()` has gained the argument`dtype` to control the dtype of the result (GH 60940)
+- The `cumsum()` ,`cummin()` , and`cummax()` reductions are now implemented for`StringDtype` columns (GH 60633)
+- The `sum()` reduction is now implemented for`StringDtype` columns (GH 59853)
+
+## Deprecations#
+
+- Deprecated allowing non- `bool` values for`na` in`str.contains()` ,`str.startswith()` , and`str.endswith()` for dtypes that do not already disallow these (GH 59615)
+- Deprecated the `"pyarrow_numpy"` storage option for`StringDtype` (GH 60152)
+
+## Bug fixes#
+
+### Numeric#
+
+- Bug in `Series.mode()` and`DataFrame.mode()` with`dropna=False` where not all dtypes would sort in the presence of`NA` values (GH 60702)
+- Bug in `Series.round()` where a`TypeError` would always raise with`object` dtype (GH 61206)
+
+### Strings#
+
+- Bug in `Series.__pos__()` and`DataFrame.__pos__()` where an`Exception` was not raised for`StringDtype` with`storage="pyarrow"` (GH 60710)
+- Bug in `Series.rank()` for`StringDtype` with`storage="pyarrow"` that incorrectly returned integer results with`method="average"` and raised an error if it would truncate results (GH 59768)
+- Bug in `Series.replace()` with`StringDtype` when replacing with a non-string value was not upcasting to`object` dtype (GH 60282)
+- Bug in `Series.str.center()` with`StringDtype` with`storage="pyarrow"` not matching the python behavior in corner cases with an odd number of fill characters (GH 54792)
+- Bug in `Series.str.replace()` when`n < 0` for`StringDtype` with`storage="pyarrow"` (GH 59628)
+- Bug in `Series.str.slice()` with negative`step` with`ArrowDtype` and`StringDtype` with`storage="pyarrow"` giving incorrect results (GH 59710)
+
+### Indexing#
+
+- Bug in `Index.get_indexer()` round-tripping through string dtype when`infer_string` is enabled (GH 55834)
+
+### I/O#
+
+- Bug in `DataFrame.to_excel()` which stored decimals as strings instead of numbers (GH 49598)
+
+### Other#
+
+- Fixed usage of `inspect` when the optional dependencies`pyarrow` or`jinja2` are not installed (GH 60196)
+
+## Contributors#
+
+A total of 24 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.
+
+- ChiLin Chiu +
+- Irv Lustig
+- Isuru Fernando +
+- Jake Thomas Trevallion +
+- Joris Van den Bossche
+- Kevin Amparado +
+- LOCHAN PAUDEL +
+- Lumberbot (aka Jack)
+- Marc Mueller +
+- Marco Edward Gorelli
+- Matthew Roeschke
+- Pandas Development Team
+- Patrick Hoefler
+- Richard Shadrach
+- SALCAN +
+- Sebastian Berg
+- Simon Hawkins
+- Thomas Li
+- Will Ayd
+- William Andrea
+- William Ayd
+- dependabot[bot]
+- jbrockmendel
+- tasfia8 +

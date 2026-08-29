@@ -2,7 +2,7 @@
     "id": "f48964e7197b5f8136f740694c920624",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.all.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.all.html",
-    "title": "pandas.api.typing.SeriesGroupBy.all — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.all — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.all#\n\n- \nSeriesGroupBy.all(*skipna=True* )[source]#\n- Return True if all values in the group are truthful, else False. This is equivalent to calling `bool` on each value in the group and\nreturning`True` only if all are truthful.\n  - Parameters:\n    - **skipna** bool, default True\n    - Flag to ignore nan values during truth testing.\n  - Returns:\n    - Series or DataFrame\n    - DataFrame or Series of boolean values, where a value is True if all elements are True within its respective group, False otherwise.\n See also \n  - `Series.all`\n  - Apply function all to a Series.\n  - `DataFrame.all`\n  - Apply function all to each row or column of a DataFrame.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\"] >>> ser = pd.Series([1, 2, 0], index=lst) >>> ser a 1 a 2 b 0 dtype: int64 >>> ser.groupby(level=0).all() a True b False dtype: bool For DataFrameGroupBy: >>> data = [[1, 0, 3], [1, 5, 6], [7, 8, 9]] >>> df = pd.DataFrame( ... data, columns=[\"a\", \"b\", \"c\"], index=[\"ostrich\", \"penguin\", \"parrot\"] ... ) >>> df a b c ostrich 1 0 3 penguin 1 5 6 parrot 7 8 9 >>> df.groupby(by=[\"a\"]).all() b c a 1 False True 7 True True",
     "markdown_length": 1164,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.all — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.all — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.904096",
+    "crawled_at": "2026-08-28T17:58:05.441183",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "468358e34d330b052702eb757f41ba80",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.template_html_table.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.template_html_table.html",
-    "title": "pandas.io.formats.style.Styler.template_html_table — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.template_html_table — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.io.formats.style.Styler.template_html_table# Styler.template_html_table = <Template 'html_table.tpl'>#",
     "markdown_length": 109,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.template_html_table — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.template_html_table — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:44.152172",
+    "crawled_at": "2026-08-28T17:59:30.515147",
     "type": "webpage"
 }

@@ -11,7 +11,9 @@ pandas.read_sql_query(*sql* ,*con* ,*index_col=None* ,*coerce_float=True* ,*para
     - **index_col** str or list of str, optional, default: None
     - Column(s) to set as index(MultiIndex).
     - **coerce_float** bool, default True
-    - Attempts to convert values of non-string, non-numeric objects (like decimal.Decimal) to floating point. Useful for SQL result sets.
+    - Attempts to convert values of non-string, non-numeric objects (like decimal.Decimal) to floating point. Useful for SQL result sets. This can lose precision: an integral `decimal.Decimal` larger than`2**53` has no exact`float64` representation, so a long identifier can be
+silently rounded. Pass`False` to leave such values as Python objects
+in an`object` -dtype column.
     - **params** list, tuple or mapping, optional, default: None
     - List of parameters to pass to execute method. The syntax used to pass parameters is database driver dependent. Check your database driver documentation for which of the five syntax styles, described in PEP 249’s paramstyle, is supported. Eg. for psycopg2, uses %(name)s so use params={‘name’ : ‘value’}.
     - **parse_dates** list or dict, default: None
@@ -23,7 +25,7 @@ strftime compatible in case of parsing string times, or is one of
 to the keyword arguments of`pandas.to_datetime()` Especially useful with databases without native Datetime support,
 such as SQLite.
     - **chunksize** int, default None
-    - If specified, return an iterator where chunksize is the number of rows to include in each chunk.
+    - If specified, return an iterator where chunksize is the number of rows to include in each chunk. By itself this typically does not reduce peak memory usage, as most drivers buffer the full result set unless a server-side cursor is used; see the user guide on streaming results.
     - **dtype** Type name or dict of columns
     - Data type for data or columns. E.g. np.float64 or {‘a’: np.float64, ‘b’: np.int32, ‘c’: ‘Int64’}.
     - **dtype_backend** {‘numpy_nullable’, ‘pyarrow’}

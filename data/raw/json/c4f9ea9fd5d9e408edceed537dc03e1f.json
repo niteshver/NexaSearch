@@ -2,7 +2,7 @@
     "id": "c4f9ea9fd5d9e408edceed537dc03e1f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_sticky.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_sticky.html",
-    "title": "pandas.io.formats.style.Styler.set_sticky — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.set_sticky — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.set_sticky#\n\n- \nStyler.set_sticky(*axis=0* ,*pixel_size=None* ,*levels=None* )[source]#\n- Add CSS to permanently display the index or column headers in a scrolling frame. This method applies CSS `position: sticky` rules so that the index\nor column headers remain visible while scrolling through large tables.\nIt supports both regular and MultiIndex axes, with configurable pixel\nsizes for header cell dimensions.\n  - Parameters:\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - Whether to make the index or column headers sticky.\n    - **pixel_size** int, optional\n    - Required to configure the width of index cells or the height of column header cells when sticking a MultiIndex (or with a named Index). Defaults to 75 and 25 respectively.\n    - **levels** int, str, list, optional\n    - If `axis` is a MultiIndex the specific levels to stick. If`None` will\nstick all levels.\n  - Returns:\n    - Styler\n      - Instance of class with CSS set for permanently displaying headers\n      - in scrolling frame.\n See also \n  - `Styler.set_properties`\n  - Set defined CSS-properties to each `<td>` HTML element for the given subset.\n Notes This method uses the CSS ‘position: sticky;’ property to display. It is designed to work with visible axes, therefore both: \n  - styler.set_sticky(axis=”index”).hide(axis=”index”)\n  - styler.set_sticky(axis=”columns”).hide(axis=”columns”)\n may produce strange behaviour due to CSS controls with missing elements. Examples >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4]}) >>> df.style.set_sticky(axis=\"index\") Please see: Table Visualization for more examples.",
     "markdown_length": 1641,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.set_sticky — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.set_sticky — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:45.327239",
+    "crawled_at": "2026-08-28T17:59:26.914504",
     "type": "webpage"
 }

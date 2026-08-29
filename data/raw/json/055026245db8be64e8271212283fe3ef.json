@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.dayofweek.html"
     },
-    "crawled_at": "2026-08-26T06:51:03.984663",
+    "crawled_at": "2026-08-28T19:54:01.865466",
     "type": "webpage"
 }

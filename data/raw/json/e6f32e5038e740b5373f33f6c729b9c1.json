@@ -2,7 +2,7 @@
     "id": "e6f32e5038e740b5373f33f6c729b9c1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.previous_workday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.previous_workday.html",
-    "title": "pandas.tseries.holiday.previous_workday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.previous_workday — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.previous_workday#\n\n- \npandas.tseries.holiday.previous_workday(*dt* )[source]#\n- Move to the previous weekday. The date is always moved back by at least one day, even when `dt` already falls on a weekday. To leave weekdays unchanged and move only\nweekend dates back, use`previous_friday` .\n  - Parameters:\n    - **dt** datetime\n    - The date to move back from.\n  - Returns:\n    - datetime\n    - The previous weekday before `dt` .\n See also \n  - `tseries.holiday.next_workday`\n  - Move to the next weekday.\n  - `tseries.holiday.previous_friday`\n  - Move Saturday and Sunday back to the previous Friday.\n  - `tseries.holiday.before_nearest_workday`\n  - Move to the workday before the nearest workday.\n Examples >>> from datetime import datetime >>> from pandas.tseries.holiday import previous_workday >>> previous_workday(datetime(2022, 1, 2)) # Sunday datetime.datetime(2021, 12, 31, 0, 0) >>> previous_workday(datetime(2022, 1, 5)) # Wednesday, still moves back datetime.datetime(2022, 1, 4, 0, 0)",
     "markdown_length": 1022,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.previous_workday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.previous_workday — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:46.086620",
+    "crawled_at": "2026-08-28T18:07:14.059346",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "00feb79eb4615a95c112f3fe635a6a8f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.count.html",
-    "title": "pandas.api.typing.Rolling.count — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Rolling.count — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.count#\n\n- \nRolling.count(*numeric_only=False* )[source]#\n- Calculate the rolling count of non NaN observations. This is useful for identifying windows with missing data, as it counts only non-NaN entries within each window. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.count`\n  - Aggregating count for Series.\n  - `DataFrame.count`\n  - Aggregating count for DataFrame.\n Examples >>> s = pd.Series([2, 3, np.nan, 10]) >>> s.rolling(2).count() 0 NaN 1 2.0 2 1.0 3 1.0 dtype: float64 >>> s.rolling(3).count() 0 NaN 1 NaN 2 2.0 3 2.0 dtype: float64 >>> s.rolling(4).count() 0 NaN 1 NaN 2 NaN 3 3.0 dtype: float64",
     "markdown_length": 959,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.count — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Rolling.count — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:55.345881",
+    "crawled_at": "2026-08-28T17:57:54.213680",
     "type": "webpage"
 }

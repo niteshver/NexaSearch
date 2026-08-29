@@ -2,7 +2,7 @@
     "id": "0c42ba7ab7e44eb4eb4cba3c701068ad",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.nlargest.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.nlargest.html",
-    "title": "pandas.Series.nlargest — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.nlargest — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.nlargest#\n\n- \nSeries.nlargest(*n=5* ,*keep='first'* )[source]#\n- Return the largest n elements. This method is optimized for performance compared to sorting the entire Series when only a few of the top values are needed. \n  - Parameters:\n    - **n** int, default 5\n    - Return this many descending sorted values.\n    - **keep** {‘first’, ‘last’, ‘all’}, default ‘first’\n    - When there are duplicate values that cannot all fit in a Series of n elements: \n      - `first` : return the first n occurrences in order\nof appearance.\n      - `last` : return the last n occurrences in reverse\norder of appearance.\n      - `all` : keep all occurrences. This can result in a Series of\nsize larger than n.\n  - Returns:\n    - Series\n    - The n largest values in the Series, sorted in decreasing order.\n See also \n  - `Series.nsmallest`\n  - Get the n smallest elements.\n  - `Series.sort_values`\n  - Sort Series by values.\n  - `Series.head`\n  - Return the first n rows.\n Notes Faster than `.sort_values(ascending=False).head(n)` for small n\nrelative to the size of the`Series` object.Examples >>> countries_population = { ... \"Italy\": 59000000, ... \"France\": 65000000, ... \"Malta\": 434000, ... \"Maldives\": 434000, ... \"Brunei\": 434000, ... \"Iceland\": 337000, ... \"Nauru\": 11300, ... \"Tuvalu\": 11300, ... \"Anguilla\": 11300, ... \"Montserrat\": 5200, ... } >>> s = pd.Series(countries_population) >>> s Italy 59000000 France 65000000 Malta 434000 Maldives 434000 Brunei 434000 Iceland 337000 Nauru 11300 Tuvalu 11300 Anguilla 11300 Montserrat 5200 dtype: int64 The n largest elements where `n=5` by default.>>> s.nlargest() France 65000000 Italy 59000000 Malta 434000 Maldives 434000 Brunei 434000 dtype: int64 The n largest elements where `n=3` . Default keep value is ‘first’\nso Malta will be kept.>>> s.nlargest(3) France 65000000 Italy 59000000 Malta 434000 dtype: int64 The n largest elements where `n=3` and keeping the last duplicates.\nBrunei will be kept since it is the last with value 434000 based on\nthe index order.>>> s.nlargest(3, keep=\"last\") France 65000000 Italy 59000000 Brunei 434000 dtype: int64 The n largest elements where `n=3` with all duplicates kept. Note\nthat the returned Series has five elements due to the three duplicates.>>> s.nlargest(3, keep=\"all\") France 65000000 Italy 59000000 Malta 434000 Maldives 434000 Brunei 434000 dtype: int64",
     "markdown_length": 2371,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.nlargest — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.nlargest — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:19.815932",
+    "crawled_at": "2026-08-28T15:49:51.238975",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "9a020e5c5eded1719eb5a347b9e92c20",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.shift.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.shift.html",
-    "title": "pandas.Index.shift — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.shift — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.shift#\n\n- \nIndex.shift(*periods=1* ,*freq=None* )[source]#\n- Shift index by desired number of time frequency increments. This method is for shifting the values of datetime-like indexes by a specified time increment a given number of times. \n  - Parameters:\n    - **periods** int, default 1\n    - Number of periods (or increments) to shift by, can be positive or negative.\n    - **freq** pandas.DateOffset, pandas.Timedelta or str, optional\n    - Frequency increment to shift by. If None, the index is shifted by its own freq attribute. Offset aliases are valid strings, e.g., ‘D’, ‘W’, ‘M’ etc.\n  - Returns:\n    - pandas.Index\n    - Shifted index.\n See also \n  - `Series.shift`\n  - Shift values of Series.\n Notes This method is only implemented for datetime-like index classes, i.e., DatetimeIndex, PeriodIndex and TimedeltaIndex. Examples Put the first 5 month starts of 2011 into an index. >>> month_starts = pd.date_range(\"1/1/2011\", periods=5, freq=\"MS\") >>> month_starts DatetimeIndex(['2011-01-01', '2011-02-01', '2011-03-01', '2011-04-01', '2011-05-01'], dtype='datetime64[us]', freq='MS') Shift the index by 10 days. >>> month_starts.shift(10, freq=\"D\") DatetimeIndex(['2011-01-11', '2011-02-11', '2011-03-11', '2011-04-11', '2011-05-11'], dtype='datetime64[us]', freq=None) The default value of freq is the freq attribute of the index, which is ‘MS’ (month start) in this example. >>> month_starts.shift(10) DatetimeIndex(['2011-11-01', '2011-12-01', '2012-01-01', '2012-02-01', '2012-03-01'], dtype='datetime64[us]', freq='MS')",
     "markdown_length": 1552,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.shift — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.shift — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:50.452339",
+    "crawled_at": "2026-08-28T15:47:51.463542",
     "type": "webpage"
 }

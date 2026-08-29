@@ -2,7 +2,7 @@
     "id": "f22853e1783a19fcd22b6a61aa5dcf26",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.head.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.head.html",
-    "title": "pandas.DataFrame.head — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.head — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.head#\n\n- \nDataFrame.head(*n=5* )[source]#\n- Return the first n rows. This function exhibits the same behavior as `df[:n]` , returning the\nfirst`n` rows based on position. It is useful for quickly checking\nif your object has the right type of data in it.When `n` is positive, it returns the first`n` rows. For`n` equal to 0,\nit returns an empty object. When`n` is negative, it returns\nall rows except the last`|n|` rows, mirroring the behavior of`df[:n]` .If `n` is larger than the number of rows, this function returns all rows.\n  - Parameters:\n    - **n** int, default 5\n    - Number of rows to select.\n  - Returns:\n    - same type as caller\n    - The first n rows of the caller object.\n See also \n  - `DataFrame.tail`\n  - Returns the last n rows.\n Examples >>> df = pd.DataFrame( ... { ... \"animal\": [ ... \"alligator\", ... \"bee\", ... \"falcon\", ... \"lion\", ... \"monkey\", ... \"parrot\", ... \"shark\", ... \"whale\", ... \"zebra\", ... ] ... } ... ) >>> df animal 0 alligator 1 bee 2 falcon 3 lion 4 monkey 5 parrot 6 shark 7 whale 8 zebra Viewing the first 5 lines >>> df.head() animal 0 alligator 1 bee 2 falcon 3 lion 4 monkey Viewing the first n lines (three in this case) >>> df.head(3) animal 0 alligator 1 bee 2 falcon For negative values of n >>> df.head(-3) animal 0 alligator 1 bee 2 falcon 3 lion 4 monkey 5 parrot",
     "markdown_length": 1337,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.head — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.head — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:02.315053",
+    "crawled_at": "2026-08-28T15:46:19.126432",
     "type": "webpage"
 }

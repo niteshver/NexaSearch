@@ -2,7 +2,7 @@
     "id": "b4fae202a15641541011928a68a87dea",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_re_compilable.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_re_compilable.html",
-    "title": "pandas.api.types.is_re_compilable — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_re_compilable — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_re_compilable#\n\n- \npandas.api.types.is_re_compilable(*obj* )[source]#\n- Check if the object can be compiled into a regex pattern instance. This function attempts to compile `obj` as a regular expression\nusing`re.compile()` and returns whether the compilation succeeds.\n  - Parameters:\n    - **obj** The object to check\n    - The object to check if the object can be compiled into a regex pattern instance.\n  - Returns:\n    - bool\n    - Whether obj can be compiled as a regex pattern.\n See also \n  - `api.types.is_re`\n  - Check if the object is a regex pattern instance.\n Examples >>> from pandas.api.types import is_re_compilable >>> is_re_compilable(\".*\") True >>> is_re_compilable(1) False",
     "markdown_length": 713,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_re_compilable — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_re_compilable — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:33.753096",
+    "crawled_at": "2026-08-28T15:52:04.313873",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "26660274697880d7e547dc3420602461",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.ravel.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.ravel.html",
-    "title": "pandas.api.extensions.ExtensionArray.ravel — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.ravel — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.ravel#\n\n- \nExtensionArray.ravel(*order='C'* )[source]#\n- Return a flattened view on this array. Since ExtensionArrays are 1-dimensional, this method returns the array itself. The `order` parameter is accepted for compatibility\nwith NumPy but is ignored.\n  - Parameters:\n    - **order** {None, ‘C’, ‘F’, ‘A’, ‘K’}, default ‘C’\n  - Returns:\n    - ExtensionArray\n    - A flattened view on the array.\n See also \n  - `ExtensionArray.tolist`\n  - Return a list of the values.\n Notes \n  - Because ExtensionArrays are 1D-only, this is a no-op.\n  - The “order” argument is ignored, is for compatibility with NumPy.\n Examples >>> pd.array([1, 2, 3]).ravel() <IntegerArray> [1, 2, 3] Length: 3, dtype: Int64",
     "markdown_length": 734,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.ravel — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.ravel — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.151824",
+    "crawled_at": "2026-08-28T15:51:46.386202",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "2a2f51783b197ab0b81aa2e92af3f72a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rjust.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rjust.html",
-    "title": "pandas.Series.str.rjust — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.rjust — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.rjust#\n\n- \nSeries.str.rjust(*width* ,*fillchar=' '* )[source]#\n- Pad left side of strings in the Series/Index. Equivalent to `str.rjust()` .\n  - Parameters:\n    - **width** int\n    - Minimum width of resulting string; additional characters will be filled with `fillchar` .\n    - **fillchar** str\n    - Additional character for filling, default is whitespace.\n  - Returns:\n    - Series/Index of objects.\n    - A Series or Index where the strings are modified by `str.rjust()` .\n See also \n  - `Series.str.rjust`\n  - Fills the left side of strings with an arbitrary character.\n  - `Series.str.ljust`\n  - Fills the right side of strings with an arbitrary character.\n  - `Series.str.center`\n  - Fills both sides of strings with an arbitrary character.\n  - `Series.str.zfill`\n  - Pad strings in the Series/Index by prepending ‘0’ character.\n Examples For Series.str.center: >>> ser = pd.Series([\"dog\", \"bird\", \"mouse\"]) >>> ser.str.center(8, fillchar=\".\") 0 ..dog... 1 ..bird.. 2 .mouse.. dtype: str For Series.str.ljust: >>> ser = pd.Series([\"dog\", \"bird\", \"mouse\"]) >>> ser.str.ljust(8, fillchar=\".\") 0 dog..... 1 bird.... 2 mouse... dtype: str For Series.str.rjust: >>> ser = pd.Series([\"dog\", \"bird\", \"mouse\"]) >>> ser.str.rjust(8, fillchar=\".\") 0 .....dog 1 ....bird 2 ...mouse dtype: str",
     "markdown_length": 1308,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.rjust — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.rjust — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:01.517872",
+    "crawled_at": "2026-08-28T15:50:30.318713",
     "type": "webpage"
 }

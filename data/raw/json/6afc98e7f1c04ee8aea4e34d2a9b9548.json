@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.factorize.html"
     },
-    "crawled_at": "2026-08-26T06:50:13.196735",
+    "crawled_at": "2026-08-28T20:01:24.891439",
     "type": "webpage"
 }

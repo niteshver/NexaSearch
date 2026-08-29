@@ -2,7 +2,7 @@
     "id": "0cc9f3fdd6fcaac8b86fdd866c54f805",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.timestamp.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.timestamp.html",
-    "title": "pandas.Timestamp.timestamp — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.timestamp — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.timestamp#\n\n- Timestamp.timestamp()#\n- Return POSIX timestamp as float. This method converts the Timestamp object to a POSIX timestamp, which is the number of seconds since the Unix epoch (January 1, 1970). The returned value is a floating-point number, where the integer part represents the seconds, and the fractional part represents the microseconds. \n  - Returns:\n    - float\n    - The POSIX timestamp representation of the Timestamp object.\n See also \n  - `Timestamp.fromtimestamp`\n  - Construct a Timestamp from a POSIX timestamp.\n  - `datetime.datetime.timestamp`\n  - Equivalent method from the datetime module.\n  - `Timestamp.to_pydatetime`\n  - Convert the Timestamp to a datetime object.\n  - `Timestamp.to_datetime64`\n  - Converts Timestamp to numpy.datetime64.\n Examples >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548') >>> ts.timestamp() 1584199972.192548",
     "markdown_length": 888,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.timestamp — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.timestamp — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:01.363137",
+    "crawled_at": "2026-08-28T15:51:26.567765",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "dd42733007b6680dbf7dc5e90c052b3b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_month_end.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_month_end.html",
-    "title": "pandas.Timestamp.is_month_end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.is_month_end — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.is_month_end#\n\n- Timestamp.is_month_end#\n- Check if the date is the last day of the month. This is determined by comparing the `day` component with the total\nnumber of days in the month of the Timestamp.\n  - Returns:\n    - bool\n    - True if the date is the last day of the month.\n See also \n  - `Timestamp.is_month_start`\n  - Similar property indicating month start.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.is_month_end False >>> ts = pd.Timestamp(2020, 12, 31) >>> ts.is_month_end True",
     "markdown_length": 518,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.is_month_end — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.is_month_end — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:53.753601",
+    "crawled_at": "2026-08-28T15:51:16.684509",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "007e14ed63856aa034c4b3daf029318d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.factorize.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.factorize.html",
-    "title": "pandas.api.extensions.ExtensionArray.factorize — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.factorize — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.factorize#\n\n- \nExtensionArray.factorize(*use_na_sentinel=True* )[source]#\n- Encode the extension array as an enumerated type. This method encodes the array values as integer codes that index into an array of unique values. Missing values can be encoded with a sentinel value of -1. \n  - Parameters:\n    - **use_na_sentinel** bool, default True\n    - If True, the sentinel -1 will be used for NaN values. If False, NaN values will be encoded as non-negative integers and will not drop the NaN from the uniques of the values.\n  - Returns:\n    - **codes** ndarray\n    - An integer NumPy array that’s an indexer into the original ExtensionArray.\n    - **uniques** ExtensionArray\n    - An ExtensionArray containing the unique values of self. Note uniques will *not* contain an entry for the NA value of\nthe ExtensionArray if there are any missing values present\nin self.\n See also \n  - `factorize`\n  - Top-level factorize method that dispatches here.\n Notes `pandas.factorize()` offers a sort keyword as well.Examples >>> idx1 = pd.PeriodIndex( ... [\"2014-01\", \"2014-01\", \"2014-02\", \"2014-02\", \"2014-03\", \"2014-03\"], ... freq=\"M\", ... ) >>> arr, idx = idx1.factorize() >>> arr array([0, 0, 1, 1, 2, 2]) >>> idx PeriodIndex(['2014-01', '2014-02', '2014-03'], dtype='period[M]')",
     "markdown_length": 1310,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.factorize — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.factorize — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.899117",
+    "crawled_at": "2026-08-28T15:51:43.842607",
     "type": "webpage"
 }

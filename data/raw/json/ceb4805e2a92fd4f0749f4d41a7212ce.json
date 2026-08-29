@@ -2,7 +2,7 @@
     "id": "ceb4805e2a92fd4f0749f4d41a7212ce",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.median.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.median.html",
-    "title": "pandas.Series.median — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.median — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.median#\n\n- \nSeries.median(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return the median of the values over the requested axis. This method computes the median (middle value) of the Series values, optionally skipping missing values. \n  - Parameters:\n    - **axis** {index (0)}\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation\nacross both axes.Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - scalar\n    - Median of the values for the requested axis.\n See also \n  - `numpy.median`\n  - Equivalent numpy function for computing median.\n  - `Series.sum`\n  - Sum of the values.\n  - `Series.median`\n  - Median of the values.\n  - `Series.std`\n  - Standard deviation of the values.\n  - `Series.var`\n  - Variance of the values.\n  - `Series.min`\n  - Minimum value.\n  - `Series.max`\n  - Maximum value.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.median() 2.0 With a DataFrame >>> df = pd.DataFrame({\"a\": [1, 2], \"b\": [2, 3]}, index=[\"tiger\", \"zebra\"]) >>> df a b tiger 1 2 zebra 2 3 >>> df.median() a 1.5 b 2.5 dtype: float64 Using axis=1 >>> df.median(axis=1) tiger 1.5 zebra 2.5 dtype: float64 In this case, numeric_only should be set to True to avoid getting an error. >>> df = pd.DataFrame({\"a\": [1, 2], \"b\": [\"T\", \"Z\"]}, index=[\"tiger\", \"zebra\"]) >>> df.median(numeric_only=True) a 1.5 dtype: float64",
     "markdown_length": 1798,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.median — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.median — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:19.315861",
+    "crawled_at": "2026-08-28T15:49:48.025850",
     "type": "webpage"
 }

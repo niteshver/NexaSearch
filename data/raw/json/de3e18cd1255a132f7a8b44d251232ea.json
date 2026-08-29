@@ -2,7 +2,7 @@
     "id": "de3e18cd1255a132f7a8b44d251232ea",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.days.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.days.html",
-    "title": "pandas.Series.dt.days — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.days — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.days#\n\n- Series.dt.days[source]#\n- Number of days for each element. This attribute returns the number of whole days in each timedelta value. It represents the days component of the duration, not the total duration expressed in days. See also \n  - `Series.dt.seconds`\n  - Return number of seconds for each element.\n  - `Series.dt.microseconds`\n  - Return number of microseconds for each element.\n  - `Series.dt.nanoseconds`\n  - Return number of nanoseconds for each element.\n Examples For Series: >>> ser = pd.Series(pd.to_timedelta([1, 2, 3], unit='D')) >>> ser 0 1 days 1 2 days 2 3 days dtype: timedelta64[s] >>> ser.dt.days 0 1 1 2 2 3 dtype: int64 For TimedeltaIndex: >>> tdelta_idx = pd.to_timedelta([\"0 days\", \"10 days\", \"20 days\"]) >>> tdelta_idx TimedeltaIndex(['0 days', '10 days', '20 days'], dtype='timedelta64[us]', freq=None) >>> tdelta_idx.days Index([0, 10, 20], dtype='int64')",
     "markdown_length": 911,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.days — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.days — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:14.118288",
+    "crawled_at": "2026-08-28T15:49:11.010041",
     "type": "webpage"
 }

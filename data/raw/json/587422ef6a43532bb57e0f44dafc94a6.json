@@ -2,7 +2,7 @@
     "id": "587422ef6a43532bb57e0f44dafc94a6",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.4.1.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.4.1.html",
-    "title": "What’s new in 1.4.1 (February 12, 2022) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.4.1 (February 12, 2022) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.4.1 (February 12, 2022)#\n\nThese are the changes in pandas 1.4.1. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Regression in `Series.mask()` with`inplace=True` and`PeriodDtype` and an incompatible`other` coercing to a common dtype instead of raising (GH 45546)\n- Regression in `assert_frame_equal()` not respecting`check_flags=False` (GH 45554)\n- Regression in `DataFrame.loc()` raising`ValueError` when indexing (getting values) on a`MultiIndex` with one level (GH 45779)\n- Regression in `Series.fillna()` with`downcast=False` incorrectly downcasting`object` dtype (GH 45603)\n- Regression in `api.types.is_bool_dtype()` raising an`AttributeError` when evaluating a categorical`Series` (GH 45615)\n- Regression in `DataFrame.iat()` setting values leading to not propagating correctly in subsequent lookups (GH 45684)\n- Regression when setting values with `DataFrame.loc()` losing`Index` name if`DataFrame` was empty before (GH 45621)\n- Regression in `join()` with overlapping`IntervalIndex` raising an`InvalidIndexError` (GH 45661)\n- Regression when setting values with `Series.loc()` raising with all`False` indexer and`Series` on the right hand side (GH 45778)\n- Regression in `read_sql()` with a DBAPI2 connection that is not an instance of`sqlite3.Connection` incorrectly requiring SQLAlchemy be installed (GH 45660)\n- Regression in `DateOffset` when constructing with an integer argument with no keywords (e.g.`pd.DateOffset(n)` ) would behave like`datetime.timedelta(days=0)` (GH 45643, GH 45890)\n\n## Bug fixes#\n\n- Fixed segfault in `DataFrame.to_json()` when dumping tz-aware datetimes in Python 3.10 (GH 42130)\n- Stopped emitting unnecessary `FutureWarning` in`DataFrame.sort_values()` with sparse columns (GH 45618)\n- Fixed window aggregations in `DataFrame.rolling()` and`Series.rolling()` to skip over unused elements (GH 45647)\n- Fixed builtin highlighters in `Styler` to be responsive to`NA` with nullable dtypes (GH 45804)\n- Bug in `apply()` with`axis=1` raising an erroneous`ValueError` (GH 45912)\n\n## Other#\n\n- Reverted performance speedup of `DataFrame.corr()` for`method=pearson` to fix precision regression (GH 45640, GH 42761)\n\n## Contributors#\n\nA total of 19 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Adam Bowden +\n- JHM Darbyshire\n- Johannes Mueller\n- John Zangwill\n- Jonas Haag\n- Matthew Roeschke\n- MeeseeksMachine\n- Pandas Development Team\n- Patrick Hoefler\n- Robbie Palmer +\n- Simon Hawkins\n- Thomas Li\n- Tyler Reddy\n- eshirvana +\n- gesoos +\n- hasan-yaman\n- jbrockmendel\n- partev\n- rtpsw +",
     "markdown_length": 2664,
@@ -10,18 +10,6 @@
         {
             "href": "http://pandas.pydata.org/docs/dev/whatsnew/v1.4.1.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "http://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html",
+            "text": "What’s new in 3.1.0 (Month XX, 2026)",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.4.1 (February 12, 2022) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.4.1 (February 12, 2022) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:56.033859",
+    "crawled_at": "2026-08-28T17:55:39.382014",
     "type": "webpage"
 }

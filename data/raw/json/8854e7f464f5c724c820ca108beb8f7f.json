@@ -2,7 +2,7 @@
     "id": "8854e7f464f5c724c820ca108beb8f7f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.register.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.register.html",
-    "title": "pandas.tseries.holiday.register — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.register — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.register#\n\n- \npandas.tseries.holiday.register(*cls* )[source]#\n- Add a holiday calendar class to the registry of named calendars. Calendar classes register themselves as soon as they are defined, so this is rarely called directly. A class is registered under its `name` attribute if it has one and under its class name otherwise, and\nregistering a class under a name that is already taken replaces the\nearlier one.See also \n  - `tseries.holiday.get_calendar`\n  - Return an instance of a calendar based on its name.\n  - `tseries.holiday.HolidayCalendarFactory`\n  - Create a holiday calendar class from two sets of rules.\n  - `tseries.holiday.AbstractHolidayCalendar`\n  - Abstract interface to create holidays following certain rules.\n Examples >>> from pandas.tseries.holiday import ( ... AbstractHolidayCalendar, ... USLaborDay, ... get_calendar, ... register, ... ) >>> class MyCalendar(AbstractHolidayCalendar): ... rules = [USLaborDay] >>> MyCalendar.name = \"us_labor_only\" >>> register(MyCalendar) >>> [rule.name for rule in get_calendar(\"us_labor_only\").rules] ['Labor Day']",
     "markdown_length": 1104,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.register — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.register — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:48.847421",
+    "crawled_at": "2026-08-28T18:07:14.263010",
     "type": "webpage"
 }

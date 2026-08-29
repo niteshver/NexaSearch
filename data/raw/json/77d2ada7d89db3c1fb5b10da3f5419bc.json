@@ -2,7 +2,7 @@
     "id": "77d2ada7d89db3c1fb5b10da3f5419bc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.NumbaUtilError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.NumbaUtilError.html",
-    "title": "pandas.errors.NumbaUtilError — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.errors.NumbaUtilError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.NumbaUtilError#\n\n- exception pandas.errors.NumbaUtilError[source]#\n- Error raised for unsupported Numba engine routines. This exception is raised when attempting to use the Numba engine with a function or operation that is not supported by Numba. See also \n  - `DataFrame.groupby`\n  - Group DataFrame using a mapper or by a Series of columns.\n  - `Series.groupby`\n  - Group Series using a mapper or by a Series of columns.\n  - `DataFrame.agg`\n  - Aggregate using one or more operations over the specified axis.\n  - `Series.agg`\n  - Aggregate using one or more operations over the specified axis.\n Examples >>> df = pd.DataFrame( ... {\"key\": [\"a\", \"a\", \"b\", \"b\"], \"data\": [1, 2, 3, 4]}, columns=[\"key\", \"data\"] ... ) >>> def incorrect_function(x): ... return sum(x) * 2.7 >>> df.groupby(\"key\").agg(incorrect_function, engine=\"numba\") Traceback (most recent call last): NumbaUtilError: The first 2 arguments to incorrect_function must be ['values', 'index']",
     "markdown_length": 971,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.NumbaUtilError — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.errors.NumbaUtilError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:08.656871",
+    "crawled_at": "2026-08-28T17:59:03.677891",
     "type": "webpage"
 }

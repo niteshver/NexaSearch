@@ -2,7 +2,7 @@
     "id": "5b702f06e3209e01237f9770128c8462",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.utcoffset.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.utcoffset.html",
-    "title": "pandas.Timestamp.utcoffset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.utcoffset — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.utcoffset#\n\n- Timestamp.utcoffset()#\n- Return utc offset. This method returns the difference between UTC and the local time as a timedelta object. It is useful for understanding the time difference between the current timezone and UTC. \n  - Returns:\n    - timedelta\n    - The difference between UTC and the local time as a timedelta object.\n See also \n  - `datetime.datetime.utcoffset`\n  - Standard library method to get the UTC offset of a datetime object.\n  - `Timestamp.tzname`\n  - Return the name of the timezone.\n  - `Timestamp.dst`\n  - Return the daylight saving time (DST) adjustment.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00', tz='Europe/Brussels') >>> ts Timestamp('2023-01-01 10:00:00+0100', tz='Europe/Brussels') >>> ts.utcoffset() datetime.timedelta(seconds=3600)",
     "markdown_length": 806,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.utcoffset — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.utcoffset — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:59.791848",
+    "crawled_at": "2026-08-28T15:51:32.739278",
     "type": "webpage"
 }

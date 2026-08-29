@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.get_indexer.html"
     },
-    "crawled_at": "2026-08-26T06:50:50.030317",
+    "crawled_at": "2026-08-28T19:39:41.679926",
     "type": "webpage"
 }

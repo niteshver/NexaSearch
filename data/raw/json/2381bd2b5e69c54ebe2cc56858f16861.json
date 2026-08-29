@@ -2,7 +2,7 @@
     "id": "2381bd2b5e69c54ebe2cc56858f16861",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.days_in_month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.days_in_month.html",
-    "title": "pandas.Period.days_in_month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Period.days_in_month — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Period.days_in_month#\n\n- Period.days_in_month#\n- Get the total number of days in the month that this period falls on. This value depends on the month and whether the year is a leap year (e.g., February has 28 or 29 days). \n  - Returns:\n    - int\n See also \n  - `Period.daysinmonth`\n  - Gets the number of days in the month.\n  - `DatetimeIndex.daysinmonth`\n  - Gets the number of days in the month.\n  - `calendar.monthrange`\n  - Returns a tuple containing weekday (0-6 ~ Mon-Sun) and number of days (28-31).\n Examples >>> p = pd.Period('2018-2-17') >>> p.days_in_month 28 >>> pd.Period('2018-03-01').days_in_month 31 Handles the leap year case as well: >>> p = pd.Period('2016-2-17') >>> p.days_in_month 29",
     "markdown_length": 714,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.days_in_month — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Period.days_in_month — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:09.269086",
+    "crawled_at": "2026-08-28T15:48:23.449029",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "d7f83231bed89d99b00d4fdeccf48079",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.unit.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.unit.html",
-    "title": "pandas.Series.dt.unit — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.unit — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.unit#\n\n- Series.dt.unit[source]#\n- The precision unit of the datetime data. Returns the precision unit for the dtype. It means the smallest time frame that can be stored within this dtype. \n  - Returns:\n    - str\n    - Unit string representation (e.g. “ns”).\n See also \n  - `TimelikeOps.as_unit`\n  - Converts to a specific unit.\n Examples >>> idx = pd.DatetimeIndex([\"2020-01-02 01:02:03.004005006\"]) >>> idx.unit 'ns' >>> idx.as_unit(\"s\").unit 's'",
     "markdown_length": 467,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.unit — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.unit — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.158490",
+    "crawled_at": "2026-08-28T15:49:26.079409",
     "type": "webpage"
 }

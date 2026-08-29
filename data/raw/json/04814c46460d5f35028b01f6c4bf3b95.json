@@ -2,9 +2,9 @@
     "id": "04814c46460d5f35028b01f6c4bf3b95",
     "url": "http://pandas.pydata.org/docs/dev/index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/index.html",
-    "title": "pandas documentation — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas documentation — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas documentation#\n\n**Date**: Aug 25, 2026 **Version**: 3.1.0.dev0+1661.gf74cda2e6e\n\n**Download documentation**: Zipped HTML\n\n**Previous versions**: Documentation of previous pandas versions is available at\npandas.pydata.org.\n\n**Useful links**:\nBinary Installers |\nSource Repository |\nIssues & Ideas |\nQ&A Support |\nMailing List\n\n`pandas` is an open source, BSD-licensed library providing high-performance,\neasy-to-use data structures and data analysis tools for the Python\nprogramming language.\n\nNew to *pandas*? Check out the getting started guides. They contain an\nintroduction to *pandas’* main concepts and links to additional tutorials.\n\nThe user guide provides in-depth information on the key concepts of pandas with useful background information and explanation.\n\nThe reference guide contains a detailed description of the pandas API. The reference describes how the methods work and which parameters can be used. It assumes that you have an understanding of the key concepts.\n\nSaw a typo in the documentation? Want to improve existing functionalities? The contributing guidelines will guide you through the process of improving pandas.",
+    "markdown": "# pandas documentation#\n\n**Date**: Aug 28, 2026 **Version**: 3.1.0.dev0+1679.g616767d10c\n\n**Download documentation**: Zipped HTML\n\n**Previous versions**: Documentation of previous pandas versions is available at\npandas.pydata.org.\n\n**Useful links**:\nBinary Installers |\nSource Repository |\nIssues & Ideas |\nQ&A Support |\nMailing List\n\n`pandas` is an open source, BSD-licensed library providing high-performance,\neasy-to-use data structures and data analysis tools for the Python\nprogramming language.\n\nNew to *pandas*? Check out the getting started guides. They contain an\nintroduction to *pandas’* main concepts and links to additional tutorials.\n\nThe user guide provides in-depth information on the key concepts of pandas with useful background information and explanation.\n\nThe reference guide contains a detailed description of the pandas API. The reference describes how the methods work and which parameters can be used. It assumes that you have an understanding of the key concepts.\n\nSaw a typo in the documentation? Want to improve existing functionalities? The contributing guidelines will guide you through the process of improving pandas.",
     "markdown_length": 1149,
     "internal_links": [
         {
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas documentation — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas documentation — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/extending.html"
     },
-    "crawled_at": "2026-08-26T06:48:44.785574",
+    "crawled_at": "2026-08-28T15:45:16.263053",
     "type": "webpage"
 }

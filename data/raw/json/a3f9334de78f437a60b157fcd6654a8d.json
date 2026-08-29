@@ -2,7 +2,7 @@
     "id": "a3f9334de78f437a60b157fcd6654a8d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.day_of_week.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.day_of_week.html",
-    "title": "pandas.Period.day_of_week — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Period.day_of_week — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Period.day_of_week#\n\n- Period.day_of_week#\n- Day of the week the period lies in, with Monday=0 and Sunday=6. If the period frequency is lower than daily (e.g. hourly), and the period spans over multiple days, the day at the start of the period is used. If the frequency is higher than daily (e.g. monthly), the last day of the period is used. \n  - Returns:\n    - int\n    - Day of the week.\n See also \n  - `Period.day_of_week`\n  - Day of the week the period lies in.\n  - `Period.weekday`\n  - Alias of Period.day_of_week.\n  - `Period.day`\n  - Day of the month.\n  - `Period.dayofyear`\n  - Day of the year.\n Examples >>> per = pd.Period('2017-12-31 22:00', 'h') >>> per.day_of_week 6 For periods that span over multiple days, the day at the beginning of the period is returned. >>> per = pd.Period('2017-12-31 22:00', '4h') >>> per.day_of_week 6 >>> per.start_time.day_of_week 6 For periods with a frequency higher than days, the last day of the period is returned. >>> per = pd.Period('2018-01', 'M') >>> per.day_of_week 2 >>> per.end_time.day_of_week 2",
     "markdown_length": 1059,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.day_of_week — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Period.day_of_week — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:09.076623",
+    "crawled_at": "2026-08-28T15:48:22.165102",
     "type": "webpage"
 }

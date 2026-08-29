@@ -2,7 +2,7 @@
     "id": "54a85cd37dd2884645c176b789788241",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.to_period.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.to_period.html",
-    "title": "pandas.Timestamp.to_period — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.to_period — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.to_period#\n\n- \nTimestamp.to_period(*freq=None* )#\n- Return a period of which this timestamp is an observation. This method converts the given Timestamp to a Period object, which represents a span of time,such as a year, month, etc., based on the specified frequency. \n  - Parameters:\n    - **freq** str, optional\n    - Frequency string for the period (e.g., ‘Y’, ‘M’, ‘W’). Defaults to None.\n See also Examples >>> ts = pd.Timestamp('2020-03-14T15:32:52.192548651') >>> # Year end frequency >>> ts.to_period(freq='Y') Period('2020', 'Y-DEC') >>> # Month end frequency >>> ts.to_period(freq='M') Period('2020-03', 'M') >>> # Weekly frequency >>> ts.to_period(freq='W') Period('2020-03-09/2020-03-15', 'W-SUN') >>> # Quarter end frequency >>> ts.to_period(freq='Q') Period('2020Q1', 'Q-DEC')",
     "markdown_length": 808,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.to_period — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.to_period — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:31.057306",
+    "crawled_at": "2026-08-28T15:51:28.010609",
     "type": "webpage"
 }

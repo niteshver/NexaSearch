@@ -2,7 +2,7 @@
     "id": "52a31270027c2acfc6ab66a8c37b286d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.ndim.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.ndim.html",
-    "title": "pandas.api.extensions.ExtensionArray.ndim — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.ndim — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.ndim#\n\n- property ExtensionArray.ndim[source]#\n- Extension Arrays are only allowed to be 1-dimensional. This property always returns 1 for ExtensionArrays, as they are constrained to a single dimension by design. See also \n  - `ExtensionArray.shape`\n  - Return a tuple of the array dimensions.\n  - `ExtensionArray.size`\n  - The number of elements in the array.\n Examples >>> arr = pd.array([1, 2, 3]) >>> arr.ndim 1",
     "markdown_length": 454,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.ndim — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.ndim — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.089888",
+    "crawled_at": "2026-08-28T15:51:46.152136",
     "type": "webpage"
 }

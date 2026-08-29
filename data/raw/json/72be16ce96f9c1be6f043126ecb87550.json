@@ -2,7 +2,7 @@
     "id": "72be16ce96f9c1be6f043126ecb87550",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.removesuffix.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.removesuffix.html",
-    "title": "pandas.Series.str.removesuffix — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.removesuffix — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.removesuffix#\n\n- \nSeries.str.removesuffix(*suffix* )[source]#\n- Remove a suffix from an object series. If the suffix is not present, the original string will be returned. \n  - Parameters:\n    - **suffix** str\n    - Remove the suffix of the string.\n  - Returns:\n    - Series/Index: object\n    - The Series or Index with given suffix removed.\n See also \n  - `Series.str.removeprefix`\n  - Remove a prefix from an object series.\n Examples >>> s = pd.Series([\"str_foo\", \"str_bar\", \"no_prefix\"]) >>> s 0 str_foo 1 str_bar 2 no_prefix dtype: str >>> s.str.removeprefix(\"str_\") 0 foo 1 bar 2 no_prefix dtype: str >>> s = pd.Series([\"foo_str\", \"bar_str\", \"no_suffix\"]) >>> s 0 foo_str 1 bar_str 2 no_suffix dtype: str >>> s.str.removesuffix(\"_str\") 0 foo 1 bar 2 no_suffix dtype: str",
     "markdown_length": 794,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.removesuffix — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.removesuffix — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:50:41.262727",
+    "crawled_at": "2026-08-28T15:50:28.512882",
     "type": "webpage"
 }

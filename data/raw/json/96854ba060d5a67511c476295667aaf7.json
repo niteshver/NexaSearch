@@ -2,7 +2,7 @@
     "id": "96854ba060d5a67511c476295667aaf7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.duplicated.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.duplicated.html",
-    "title": "pandas.DataFrame.duplicated — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.duplicated — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.duplicated#\n\n- \nDataFrame.duplicated(*subset=None* ,*keep='first'* )[source]#\n- Return boolean Series denoting duplicate rows. Rows are considered duplicated when the same values appear more than once across the requested columns. Considering certain columns is optional. \n  - Parameters:\n    - **subset** column label or iterable of labels, optional\n    - Only consider certain columns for identifying duplicates, by default use all of the columns.\n    - **keep** {‘first’, ‘last’, False}, default ‘first’\n    - Determines which duplicates (if any) to mark. \n      - `first` : Mark duplicates as`True` except for the first occurrence.\n      - `last` : Mark duplicates as`True` except for the last occurrence.\n      - False : Mark all duplicates as `True` .\n  - Returns:\n    - Series\n    - Boolean Series indicating whether each row is a duplicated row according to `keep` .\n See also \n  - `Index.duplicated`\n  - Equivalent method on index.\n  - `Series.duplicated`\n  - Equivalent method on Series.\n  - `Series.drop_duplicates`\n  - Remove duplicate values from Series.\n  - `DataFrame.drop_duplicates`\n  - Remove duplicate values from DataFrame.\n Examples Consider dataset containing ramen rating. >>> df = pd.DataFrame( ... { ... \"brand\": [\"Yum Yum\", \"Yum Yum\", \"Indomie\", \"Indomie\", \"Indomie\"], ... \"style\": [\"cup\", \"cup\", \"cup\", \"pack\", \"pack\"], ... \"rating\": [4, 4, 3.5, 15, 5], ... } ... ) >>> df brand style rating 0 Yum Yum cup 4.0 1 Yum Yum cup 4.0 2 Indomie cup 3.5 3 Indomie pack 15.0 4 Indomie pack 5.0 By default, for each set of duplicated values, the first occurrence is set on False and all others on True. >>> df.duplicated() 0 False 1 True 2 False 3 False 4 False dtype: bool By using ‘last’, the last occurrence of each set of duplicated values is set on False and all others on True. >>> df.duplicated(keep=\"last\") 0 True 1 False 2 False 3 False 4 False dtype: bool By setting `keep` on False, all duplicates are True.>>> df.duplicated(keep=False) 0 True 1 True 2 False 3 False 4 False dtype: bool To find duplicates on specific column(s), use `subset` .>>> df.duplicated(subset=[\"brand\"]) 0 False 1 True 2 False 3 True 4 True dtype: bool",
     "markdown_length": 2174,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.duplicated — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.duplicated — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.duplicated.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:01.561812",
+    "crawled_at": "2026-08-28T15:46:11.183867",
     "type": "webpage"
 }

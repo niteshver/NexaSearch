@@ -1,0 +1,1 @@
+pandas.Series.ndim# property Series.ndim[source]# Number of dimensions of the underlying data, by definition 1.

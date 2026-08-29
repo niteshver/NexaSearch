@@ -2,7 +2,7 @@
     "id": "ff80cfbc6b25e82e9852725ae3bd418f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.html",
-    "title": "pandas.Series.cat — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.cat — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.cat#\n\n- Series.cat()[source]#\n- Accessor object for categorical properties of the Series values. This accessor provides methods and properties to interact with the underlying categorical data, such as accessing categories, renaming them, reordering, or adding and removing categories. \n  - Parameters:\n    - **data** Series or CategoricalIndex\n    - The object to which the categorical accessor is attached.\n See also \n  - `Series.dt`\n  - Accessor object for datetimelike properties of the Series values.\n  - `Series.sparse`\n  - Accessor for sparse matrix data types.\n Examples >>> s = pd.Series(list(\"abbccc\")).astype(\"category\") >>> s 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (3, str): ['a', 'b', 'c'] >>> s.cat.categories Index(['a', 'b', 'c'], dtype='str') >>> s.cat.rename_categories(list(\"cba\")) 0 c 1 b 2 b 3 a 4 a 5 a dtype: category Categories (3, str): ['c', 'b', 'a'] >>> s.cat.reorder_categories(list(\"cba\")) 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (3, str): ['c', 'b', 'a'] >>> s.cat.add_categories([\"d\", \"e\"]) 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (5, str): ['a', 'b', 'c', 'd', 'e'] >>> s.cat.remove_categories([\"a\", \"c\"]) 0 NaN 1 b 2 b 3 NaN 4 NaN 5 NaN dtype: category Categories (1, str): ['b'] >>> s1 = s.cat.add_categories([\"d\", \"e\"]) >>> s1.cat.remove_unused_categories() 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (3, str): ['a', 'b', 'c'] >>> s.cat.set_categories(list(\"abcde\")) 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (5, str): ['a', 'b', 'c', 'd', 'e'] >>> s.cat.as_ordered() 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (3, str): ['a' < 'b' < 'c'] >>> s.cat.as_unordered() 0 a 1 b 2 b 3 c 4 c 5 c dtype: category Categories (3, str): ['a', 'b', 'c']",
     "markdown_length": 1750,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cat — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.cat — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:12.046996",
+    "crawled_at": "2026-08-28T15:48:56.054009",
     "type": "webpage"
 }

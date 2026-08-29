@@ -2,10 +2,10 @@
     "id": "8ad9bdad3bc5c88caf669709b560ab53",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.StringArray.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.StringArray.html",
-    "title": "pandas.arrays.StringArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.arrays.StringArray — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.arrays.StringArray#\n\n- \nclass pandas.arrays.StringArray(*values* ,*** ,*dtype=None* ,*copy=False* )[source]#\n- Extension array for string data. Warning StringArray is considered experimental. The implementation and parts of the API may change without warning. \n  - Parameters:\n    - **values** array-like\n    - The array of data. Warning Currently, this expects an object-dtype ndarray where the elements are Python strings or nan-likes ( `None` ,`np.nan` ,`NA` ).\nThis may change without warning in the future. Use`pandas.array()` with`dtype=\"string\"` for a stable way of\ncreating a StringArray from any sequence.StringArray accepts array-likes containing nan-likes( `None` ,`np.nan` ) for the`values` parameter\nin addition to strings and`pandas.NA`\n    - **dtype** StringDtype\n    - Dtype for the array.\n    - **copy** bool, default False\n    - Whether to copy the array of data.\n Attributes **None**Methods **None**See also \n  - `array()`\n  - The recommended function for creating a StringArray.\n  - `Series.str`\n  - The string methods are available on Series backed by a StringArray.\n Notes StringArray returns a BooleanArray for comparison methods. Examples >>> pd.array([\"This is\", \"some text\", None, \"data.\"], dtype=\"string\") <ArrowStringArray> ['This is', 'some text', <NA>, 'data.'] Length: 4, dtype: string Unlike arrays instantiated with `dtype=\"object\"` ,`StringArray` will convert the values to strings.>>> pd.array([\"1\", 1], dtype=\"object\") <NumpyExtensionArray> ['1', 1] Length: 2, dtype: object >>> pd.array([\"1\", 1], dtype=\"string\") <ArrowStringArray> ['1', '1'] Length: 2, dtype: string However, instantiating StringArrays directly with non-strings will raise an error. For comparison methods, StringArray returns a `pandas.BooleanArray` :>>> pd.array([\"a\", None, \"c\"], dtype=\"string[python]\") == \"a\" <BooleanArray> [True, <NA>, False] Length: 3, dtype: boolean",
-    "markdown_length": 1888,
+    "markdown": "# pandas.arrays.StringArray#\n\n- \nclass pandas.arrays.StringArray(*values* ,*** ,*dtype=None* ,*copy=False* )[source]#\n- Extension array for string data. Warning StringArray is considered experimental. The implementation and parts of the API may change without warning. \n  - Parameters:\n    - **values** array-like\n    - The array of data. Warning Currently, this expects an object-dtype ndarray where the elements are Python strings or nan-likes ( `None` ,`np.nan` ,`NA` ).\nThis may change without warning in the future. Use`pandas.array()` with`dtype=\"string\"` for a stable way of\ncreating a StringArray from any sequence.StringArray accepts array-likes containing nan-likes( `None` ,`np.nan` ) for the`values` parameter\nin addition to strings and`pandas.NA`\n    - **dtype** StringDtype\n    - Dtype for the array.\n    - **copy** bool, default False\n    - Whether to copy the array of data.\n See also \n  - `array()`\n  - The recommended function for creating a StringArray.\n  - `Series.str`\n  - The string methods are available on Series backed by a StringArray.\n Notes StringArray returns a BooleanArray for comparison methods. Examples >>> pd.array([\"This is\", \"some text\", None, \"data.\"], dtype=\"string\") <ArrowStringArray> ['This is', 'some text', <NA>, 'data.'] Length: 4, dtype: string Unlike arrays instantiated with `dtype=\"object\"` ,`StringArray` will convert the values to strings.>>> pd.array([\"1\", 1], dtype=\"object\") <NumpyExtensionArray> ['1', 1] Length: 2, dtype: object >>> pd.array([\"1\", 1], dtype=\"string\") <ArrowStringArray> ['1', '1'] Length: 2, dtype: string However, instantiating StringArrays directly with non-strings will raise an error. For comparison methods, StringArray returns a `pandas.BooleanArray` :>>> pd.array([\"a\", None, \"c\"], dtype=\"string[python]\") == \"a\" <BooleanArray> [True, <NA>, False] Length: 3, dtype: boolean",
+    "markdown_length": 1853,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.StringArray.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.arrays.StringArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.arrays.StringArray — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:45.102147",
+    "crawled_at": "2026-08-28T15:52:12.068035",
     "type": "webpage"
 }

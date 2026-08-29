@@ -1,0 +1,13 @@
+# pandas.Interval.closed_right#
+
+- Interval.closed_right#
+- Check if the interval is closed on the right side. For the meaning of closed and open see `Interval` .
+  - Returns:
+    - bool
+    - True if the Interval is closed on the left-side.
+ See also 
+  - `Interval.closed_left`
+  - Check if the interval is closed on the left side.
+  - `Interval.open_right`
+  - Boolean inverse of closed_right.
+ Examples >>> iv = pd.Interval(0, 5, closed='both') >>> iv.closed_right True >>> iv = pd.Interval(0, 5, closed='left') >>> iv.closed_right False

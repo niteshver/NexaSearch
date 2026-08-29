@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.is_quarter_end.html"
     },
-    "crawled_at": "2026-08-26T06:49:57.178942",
+    "crawled_at": "2026-08-28T20:37:45.381678",
     "type": "webpage"
 }

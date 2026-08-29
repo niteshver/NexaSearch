@@ -2,7 +2,7 @@
     "id": "fa2b5da91922fa275c23012fb2e40681",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_period.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_period.html",
-    "title": "pandas.DataFrame.to_period — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.to_period — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.to_period#\n\n- \nDataFrame.to_period(*freq=None* ,*axis=0* ,*copy=<no_default>* )[source]#\n- Convert DataFrame from DatetimeIndex to PeriodIndex. Convert DataFrame from DatetimeIndex to PeriodIndex with desired frequency (inferred from index if not passed). Either index of columns can be converted, depending on axis argument. \n  - Parameters:\n    - **freq** str, default\n    - Frequency of the PeriodIndex.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - The axis to convert (the index by default).\n    - **copy** bool, default False\n    - This keyword is now ignored; changing its value will have no impact on the method. Deprecated since version 3.0.0: This keyword is ignored and will be removed in pandas 4.0. Since pandas 3.0, this method always returns a new object using a lazy copy mechanism that defers copies until necessary (Copy-on-Write). See the user guide on Copy-on-Write for more details.\n  - Returns:\n    - DataFrame\n    - The DataFrame with the converted PeriodIndex.\n See also \n  - `Series.to_period`\n  - Equivalent method for Series.\n  - `Series.dt.to_period`\n  - Convert DateTime column values.\n Examples >>> idx = pd.to_datetime( ... [ ... \"2001-03-31 00:00:00\", ... \"2002-05-31 00:00:00\", ... \"2003-08-31 00:00:00\", ... ] ... ) >>> idx DatetimeIndex(['2001-03-31', '2002-05-31', '2003-08-31'], dtype='datetime64[us]', freq=None) >>> idx.to_period(\"M\") PeriodIndex(['2001-03', '2002-05', '2003-08'], dtype='period[M]') For the yearly frequency >>> idx.to_period(\"Y\") PeriodIndex(['2001', '2002', '2003'], dtype='period[Y-DEC]')",
     "markdown_length": 1584,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.to_period — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.to_period — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:06.677492",
+    "crawled_at": "2026-08-28T15:47:04.321677",
     "type": "webpage"
 }

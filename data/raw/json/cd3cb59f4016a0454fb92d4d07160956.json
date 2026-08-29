@@ -2,7 +2,7 @@
     "id": "cd3cb59f4016a0454fb92d4d07160956",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_complex_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_complex_dtype.html",
-    "title": "pandas.api.types.is_complex_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_complex_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_complex_dtype#\n\n- \npandas.api.types.is_complex_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of a complex dtype. Complex dtypes represent numbers with both real and imaginary parts, such as `np.complex64` and`np.complex128` .\n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - boolean\n    - Whether or not the array or dtype is of a complex dtype.\n See also \n  - `api.types.is_complex`\n  - Return True if given object is complex.\n  - `api.types.is_numeric_dtype`\n  - Check whether the provided array or dtype is of a numeric dtype.\n  - `api.types.is_integer_dtype`\n  - Check whether the provided array or dtype is of an integer dtype.\n Examples >>> from pandas.api.types import is_complex_dtype >>> is_complex_dtype(str) False >>> is_complex_dtype(int) False >>> is_complex_dtype(np.complex128) True >>> is_complex_dtype(np.array([\"a\", \"b\"])) False >>> is_complex_dtype(pd.Series([1, 2])) False >>> is_complex_dtype(np.array([1 + 1j, 5])) True",
     "markdown_length": 1060,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_complex_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_complex_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:37.079330",
+    "crawled_at": "2026-08-28T15:51:56.314909",
     "type": "webpage"
 }

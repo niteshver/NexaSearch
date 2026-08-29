@@ -2,7 +2,7 @@
     "id": "06666e69e98b591fd5409154f38b535d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.codes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.codes.html",
-    "title": "pandas.Series.cat.codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.cat.codes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.cat.codes#\n\n- Series.cat.codes[source]#\n- Return Series of codes as well as the index. The codes are integer indicators for the position of each value in the categories. Uncategorized values (i.e., NaN) are assigned a code of `-1` .See also \n  - `Series.cat.categories`\n  - Return the categories of this categorical.\n  - `Series.cat.as_ordered`\n  - Set the Categorical to be ordered.\n  - `Series.cat.as_unordered`\n  - Set the Categorical to be unordered.\n Examples >>> raw_cate = pd.Categorical([\"a\", \"b\", None, \"a\"], categories=[\"a\", \"b\"]) >>> ser = pd.Series(raw_cate) >>> ser.cat.codes 0 0 1 1 2 -1 3 0 dtype: int8",
     "markdown_length": 633,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cat.codes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.cat.codes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:11.978173",
+    "crawled_at": "2026-08-28T15:48:55.747810",
     "type": "webpage"
 }

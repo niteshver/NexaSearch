@@ -2,7 +2,7 @@
     "id": "7c13ea5c2fe42b6a693671202534b31a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rstrip.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.rstrip.html",
-    "title": "pandas.Series.str.rstrip — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.rstrip — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.rstrip#\n\n- \nSeries.str.rstrip(*to_strip=None* )[source]#\n- Remove trailing characters. Strip whitespaces (including newlines) or a set of specified characters from each string in the Series/Index from right side. Replaces any non-strings in Series with NaNs. Equivalent to `str.rstrip()` .\n  - Parameters:\n    - **to_strip** str or None, default None\n    - Specifying the set of characters to be removed. All combinations of this set of characters will be stripped. If None then whitespaces are removed.\n  - Returns:\n    - Series or Index of object\n    - Series or Index with the strings being stripped from the right side.\n See also \n  - `Series.str.strip`\n  - Remove leading and trailing characters in Series/Index.\n  - `Series.str.lstrip`\n  - Remove leading characters in Series/Index.\n  - `Series.str.rstrip`\n  - Remove trailing characters in Series/Index.\n Examples >>> s = pd.Series([\"1. Ant. \", \"2. Bee!\\n\", \"3. Cat?\\t\", np.nan, 10, True]) >>> s 0 1. Ant. 1 2. Bee!\\n 2 3. Cat?\\t 3 NaN 4 10 5 True dtype: object >>> s.str.strip() 0 1. Ant. 1 2. Bee! 2 3. Cat? 3 NaN 4 NaN 5 NaN dtype: object >>> s.str.lstrip(\"123.\") 0 Ant. 1 Bee!\\n 2 Cat?\\t 3 NaN 4 NaN 5 NaN dtype: object >>> s.str.rstrip(\".!? \\n\\t\") 0 1. Ant 1 2. Bee 2 3. Cat 3 NaN 4 NaN 5 NaN dtype: object >>> s.str.strip(\"123.!? \\n\\t\") 0 Ant 1 Bee 2 Cat 3 NaN 4 NaN 5 NaN dtype: object",
     "markdown_length": 1369,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.rstrip — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.rstrip — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:15.338949",
+    "crawled_at": "2026-08-28T15:50:31.751575",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "6bf78af7eebc72707642b9d74a16a638",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.quarter.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.quarter.html",
-    "title": "pandas.Timestamp.quarter — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.quarter — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.quarter#\n\n- Timestamp.quarter#\n- Return the quarter of the year for the Timestamp. This property returns an integer representing the quarter of the year in which the Timestamp falls. The quarters are defined as follows: - Q1: January 1 to March 31 - Q2: April 1 to June 30 - Q3: July 1 to September 30 - Q4: October 1 to December 31 \n  - Returns:\n    - int\n    - The quarter of the year (1 through 4).\n See also \n  - `Timestamp.month`\n  - Returns the month of the Timestamp.\n  - `Timestamp.year`\n  - Returns the year of the Timestamp.\n Examples Get the quarter for a Timestamp: >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.quarter 1 For a Timestamp in the fourth quarter: >>> ts = pd.Timestamp(2020, 10, 14) >>> ts.quarter 4",
     "markdown_length": 740,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.quarter — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.quarter — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:25.391789",
+    "crawled_at": "2026-08-28T15:51:23.244234",
     "type": "webpage"
 }

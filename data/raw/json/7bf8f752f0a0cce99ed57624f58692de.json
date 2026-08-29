@@ -2,7 +2,7 @@
     "id": "7bf8f752f0a0cce99ed57624f58692de",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.explode.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.explode.html",
-    "title": "pandas.Series.explode — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.explode — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.explode#\n\n- \nSeries.explode(*ignore_index=False* )[source]#\n- Transform each element of a list-like to a row. This method expands list-like elements so that each item in the list gets its own row, while non-list-like elements remain unchanged. The index is duplicated for the expanded rows. \n  - Parameters:\n    - **ignore_index** bool, default False\n    - If True, the resulting index will be labeled 0, 1, …, n - 1.\n  - Returns:\n    - Series\n    - Exploded lists to rows; index will be duplicated for these rows.\n See also \n  - `Series.str.split`\n  - Split string values on specified separator.\n  - `Series.unstack`\n  - Unstack, a.k.a. pivot, Series with MultiIndex to produce DataFrame.\n  - `DataFrame.melt`\n  - Unpivot a DataFrame from wide format to long format.\n  - `DataFrame.explode`\n  - Explode a DataFrame from list-like columns to long format.\n Notes This routine will explode list-likes including lists, tuples, sets, Series, and np.ndarray. The result dtype of the subset rows will be object. Scalars will be returned unchanged, and empty list-likes will result in an np.nan for that row. In addition, the ordering of elements in the output will be non-deterministic when exploding sets. Reference the user guide for more examples. Examples >>> s = pd.Series([[1, 2, 3], \"foo\", [], [3, 4]]) >>> s 0 [1, 2, 3] 1 foo 2 [] 3 [3, 4] dtype: object >>> s.explode() 0 1 0 2 0 3 1 foo 2 NaN 3 3 3 4 dtype: object",
     "markdown_length": 1433,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.explode — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.explode — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.774344",
+    "crawled_at": "2026-08-28T15:49:30.231778",
     "type": "webpage"
 }

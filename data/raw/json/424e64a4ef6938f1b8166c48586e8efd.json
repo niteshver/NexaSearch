@@ -2,10 +2,10 @@
     "id": "424e64a4ef6938f1b8166c48586e8efd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalDtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalDtype.html",
-    "title": "pandas.IntervalDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.IntervalDtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.IntervalDtype#\n\n- \nclass pandas.IntervalDtype(*subtype=None* ,*closed=None* )[source]#\n- An ExtensionDtype for Interval data. **This is not an actual numpy dtype** , but a duck type.\n  - Parameters:\n    - **subtype** str, np.dtype\n    - The dtype of the Interval bounds.\n    - **closed** {‘right’, ‘left’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the interval is closed on the left-side, right-side, both or neither. See the Notes for more detailed explanation.\n Attributes `subtype`The dtype of the Interval bounds. Methods **None**See also \n  - `PeriodDtype`\n  - An ExtensionDtype for Period data.\n Examples >>> pd.IntervalDtype(subtype=\"int64\", closed=\"both\") interval[int64, both]",
-    "markdown_length": 702,
+    "markdown": "# pandas.IntervalDtype#\n\n- \nclass pandas.IntervalDtype(*subtype=None* ,*closed=None* )[source]#\n- An ExtensionDtype for Interval data. **This is not an actual numpy dtype** , but a duck type.\n  - Parameters:\n    - **subtype** str, np.dtype\n    - The dtype of the Interval bounds.\n    - **closed** {‘right’, ‘left’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the interval is closed on the left-side, right-side, both or neither. See the Notes for more detailed explanation.\n Attributes `subtype`The dtype of the Interval bounds. See also \n  - `PeriodDtype`\n  - An ExtensionDtype for Period data.\n Examples >>> pd.IntervalDtype(subtype=\"int64\", closed=\"both\") interval[int64, both]",
+    "markdown_length": 686,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalDtype.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.IntervalDtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:08.907086",
+    "crawled_at": "2026-08-28T15:48:04.583891",
     "type": "webpage"
 }

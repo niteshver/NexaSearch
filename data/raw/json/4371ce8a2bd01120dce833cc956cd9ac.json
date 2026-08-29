@@ -2,7 +2,7 @@
     "id": "4371ce8a2bd01120dce833cc956cd9ac",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.describe.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.describe.html",
-    "title": "pandas.api.typing.SeriesGroupBy.describe — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.describe — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.describe#\n\n- \nSeriesGroupBy.describe(*percentiles=None* ,*include=None* ,*exclude=None* )[source]#\n- Generate descriptive statistics for each group. Within each group, summarize the central tendency, dispersion, and shape of the Series’s distribution, excluding `NaN` values.\nThe per-group statistics depend on the Series’s dtype; see Notes.\n  - Parameters:\n    - **percentiles** list-like of numbers, optional\n    - The percentiles to include in the output. All should fall between 0 and 1. The default, `None` , returns the 25th,\n50th, and 75th percentiles.\n    - **include** None\n    - Has no effect on a Series groupby. Deprecated and will be removed in a future version.\n    - **exclude** None\n    - Has no effect on a Series groupby. Deprecated and will be removed in a future version.\n  - Returns:\n    - DataFrame\n    - One row per group; columns are the per-group statistics.\n See also \n  - `Series.describe`\n  - Generate descriptive statistics of a Series.\n  - `DataFrameGroupBy.describe`\n  - Generate descriptive statistics for each group of a DataFrame.\n Notes For numeric Series, the per-group columns are `count` ,`mean` ,`std` ,`min` ,`max` , and the requested percentiles. By\ndefault the lower percentile is`25` and the upper is`75` ;\nthe`50` percentile is the same as the median.For object Series (e.g. strings), the per-group columns are `count` ,`unique` ,`top` , and`freq` . The`top` is the\nmost common value within the group and`freq` is its count.Examples >>> s = pd.Series([1, 2, 3, 4]) >>> s.groupby([1, 1, 2, 2]).describe() count mean std min 25% 50% 75% max 1 2.0 1.5 0.707107 1.0 1.25 1.5 1.75 2.0 2 2.0 3.5 0.707107 3.0 3.25 3.5 3.75 4.0",
     "markdown_length": 1698,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.describe — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.describe — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-10T11:47:05.119027",
+    "crawled_at": "2026-08-28T17:58:13.114769",
     "type": "webpage"
 }

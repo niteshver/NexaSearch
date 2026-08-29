@@ -20,18 +20,6 @@
             "total_score": null
         },
         {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
             "href": "https://pandas.pydata.org/docs/getting_started/index.html",
             "text": "Getting started",
             "title": "",
@@ -246,6 +234,18 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/",
+            "text": "pandas.pydata.org",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
@@ -270,6 +270,6 @@
         "depth": 2,
         "parent_url": "https://pandas.pydata.org/community/blog/pandas-3.0.html"
     },
-    "crawled_at": "2026-08-26T06:52:07.092173",
+    "crawled_at": "2026-08-28T17:56:08.832516",
     "type": "webpage"
 }

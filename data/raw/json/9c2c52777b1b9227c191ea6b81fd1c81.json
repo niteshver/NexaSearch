@@ -2,7 +2,7 @@
     "id": "9c2c52777b1b9227c191ea6b81fd1c81",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.parallel_coordinates.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.parallel_coordinates.html",
-    "title": "pandas.plotting.parallel_coordinates — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.plotting.parallel_coordinates — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.parallel_coordinates#\n\n- \npandas.plotting.parallel_coordinates(*frame* ,*class_column* ,*cols=None* ,*ax=None* ,*color=None* ,*use_columns=False* ,*xticks=None* ,*colormap=None* ,*axvlines=True* ,*axvlines_kwds=None* ,*sort_labels=False* ,***kwargs* )[source]#\n- Parallel coordinates plotting. This visualization technique represents each observation as a polyline connecting values across vertical axes, one for each feature. Lines are colored by class membership, making it useful for identifying clusters and separability in multivariate data. \n  - Parameters:\n    - **frame** DataFrame\n    - The DataFrame to be plotted.\n    - **class_column** str\n    - Column name containing class names.\n    - **cols** list, optional\n    - A list of column names to use.\n    - **ax** matplotlib.axis, optional\n    - Matplotlib axis object.\n    - **color** list or tuple, optional\n    - Colors to use for the different classes.\n    - **use_columns** bool, optional\n    - If true, columns will be used as xticks.\n    - **xticks** list or tuple, optional\n    - A list of values to use for xticks.\n    - **colormap** str or matplotlib colormap, default None\n    - Colormap to use for line colors.\n    - **axvlines** bool, optional\n    - If true, vertical lines will be added at each xtick.\n    - **axvlines_kwds** keywords, optional\n    - Options to be passed to axvline method for vertical lines.\n    - **sort_labels** bool, default False\n    - Sort class_column labels, useful when assigning colors.\n    - ****kwargs**\n    - Options to pass to matplotlib plotting method.\n  - Returns:\n    - matplotlib.axes.Axes\n    - The matplotlib axes containing the parallel coordinates plot.\n See also \n  - `plotting.andrews_curves`\n  - Generate a matplotlib plot for visualizing clusters of multivariate data.\n  - `plotting.radviz`\n  - Plot a multidimensional dataset in 2D.\n Examples >>> df = pd.DataFrame( ... { ... \"SepalLength\": [6.5, 7.7, 5.1, 5.8, 7.6, 5.0, 5.4, 4.6, 6.7, 4.6], ... \"SepalWidth\": [3.0, 3.8, 3.8, 2.7, 3.0, 2.3, 3.0, 3.2, 3.3, 3.6], ... \"PetalLength\": [5.5, 6.7, 1.9, 5.1, 6.6, 3.3, 4.5, 1.4, 5.7, 1.0], ... \"PetalWidth\": [1.8, 2.2, 0.4, 1.9, 2.1, 1.0, 1.5, 0.2, 2.1, 0.2], ... \"Name\": [ ... \"virginica\", ... \"virginica\", ... \"setosa\", ... \"virginica\", ... \"virginica\", ... \"versicolor\", ... \"versicolor\", ... \"setosa\", ... \"virginica\", ... \"setosa\", ... ], ... } ... ) >>> pd.plotting.parallel_coordinates( ... df, \"Name\", color=(\"#556270\", \"#4ECDC4\", \"#C7F464\") ... )",
     "markdown_length": 2486,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.parallel_coordinates — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.plotting.parallel_coordinates — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:02.374248",
+    "crawled_at": "2026-08-28T15:52:26.029947",
     "type": "webpage"
 }

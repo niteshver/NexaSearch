@@ -2,7 +2,7 @@
     "id": "1958dcd56004e6d5e15640aab03b2650",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.option_context.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.option_context.html",
-    "title": "pandas.option_context — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.option_context — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.option_context#\n\n- \npandas.option_context(**args* )[source]#\n- Context manager to temporarily set options in a `with` statement.This method allows users to set one or more pandas options temporarily within a controlled block. The previous options’ values are restored once the block is exited. This is useful when making temporary adjustments to pandas’ behavior without affecting the global state. \n  - Parameters:\n    - ***args** str | object | dict\n    - An even amount of arguments provided in pairs which will be interpreted as (pattern, value) pairs. Alternatively, a single dictionary of {pattern: value} may be provided.\n  - Returns:\n    - None\n    - No return value.\n  - Yields:\n    - None\n    - No yield value.\n See also \n  - `get_option`\n  - Retrieve the value of the specified option.\n  - `set_option`\n  - Set the value of the specified option.\n  - `reset_option`\n  - Reset one or more options to their default value.\n  - `describe_option`\n  - Print the description for one or more registered options.\n Notes For all available options, please view the User Guide or use `pandas.describe_option()` .Examples >>> from pandas import option_context >>> with option_context(\"display.max_rows\", 10, \"display.max_columns\", 5): ... pass >>> with option_context({\"display.max_rows\": 10, \"display.max_columns\": 5}): ... pass",
     "markdown_length": 1335,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.option_context — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.option_context — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/options.html"
     },
-    "crawled_at": "2026-08-10T11:47:07.705674",
+    "crawled_at": "2026-08-28T17:59:41.712995",
     "type": "webpage"
 }

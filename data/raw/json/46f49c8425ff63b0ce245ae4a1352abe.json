@@ -2,7 +2,7 @@
     "id": "46f49c8425ff63b0ce245ae4a1352abe",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.describe.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.describe.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.describe — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.describe — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.describe#\n\n- \nDataFrameGroupBy.describe(*percentiles=None* ,*include=None* ,*exclude=None* )[source]#\n- Generate descriptive statistics for each group. Within each group, summarize the central tendency, dispersion, and shape of each analyzed column’s distribution, excluding `NaN` values. By default only numeric columns are analyzed;\npass`include` to also analyze non-numeric columns (or`exclude` to omit columns by dtype).\n  - Parameters:\n    - **percentiles** list-like of numbers, optional\n    - The percentiles to include in the output. All should fall between 0 and 1. The default, `None` , returns the 25th,\n50th, and 75th percentiles.\n    - **include** ‘all’, list-like of dtypes or None (default), optional\n    - Which column dtypes to include. Options: \n      - `'all'` : Include all columns, including non-numeric ones.\n      - list-like of dtypes : Limit the result to columns of the given dtypes, in the style of `DataFrame.select_dtypes()` (e.g.`include=[np.number]` or`include=[\"category\"]` ).\n      - `None` (default) : Include only numeric columns, falling\nback to object and categorical columns if there are no\nnumeric columns.\n    - **exclude** list-like of dtypes or None (default), optional\n    - Column dtypes to omit from the result, in the style of `DataFrame.select_dtypes()` .`None` (default) excludes\nnothing.\n  - Returns:\n    - DataFrame\n    - One row per group. The columns form a MultiIndex whose outer level is the analyzed column and whose inner level is the statistic name.\n See also \n  - `DataFrame.describe`\n  - Generate descriptive statistics of a DataFrame.\n  - `SeriesGroupBy.describe`\n  - Generate descriptive statistics for each group of a Series.\n  - `DataFrame.select_dtypes`\n  - Subset of a DataFrame including/excluding columns based on their dtype.\n Notes For numeric columns, the per-group statistics are `count` ,`mean` ,`std` ,`min` ,`max` , and the requested\npercentiles. By default the lower percentile is`25` and the\nupper is`75` ; the`50` percentile is the same as the median.For object columns, the per-group statistics are `count` ,`unique` ,`top` , and`freq` . The`top` is the most common\nvalue within the group and`freq` is its count.Examples >>> df = pd.DataFrame({\"group\": [\"a\", \"a\", \"b\", \"b\"], \"value\": [1, 2, 3, 4]}) >>> df.groupby(\"group\").describe() value count mean std min 25% 50% 75% max group a 2.0 1.5 0.707107 1.0 1.25 1.5 1.75 2.0 b 2.0 3.5 0.707107 3.0 3.25 3.5 3.75 4.0",
     "markdown_length": 2477,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.describe — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.describe — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:12.153428",
+    "crawled_at": "2026-08-28T17:56:56.070578",
     "type": "webpage"
 }

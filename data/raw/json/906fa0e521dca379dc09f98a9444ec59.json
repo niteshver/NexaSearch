@@ -2,7 +2,7 @@
     "id": "906fa0e521dca379dc09f98a9444ec59",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.col.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.col.html",
-    "title": "pandas.col — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.col — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.col#\n\n- \npandas.col(*col_name* )[source]#\n- Generate deferred object representing a column of a DataFrame. Any place which accepts `lambda df: df[col_name]` , such as`DataFrame.assign()` or`DataFrame.loc()` , can also accept`pd.col(col_name)` .Added in version 3.0.0. \n  - Parameters:\n    - **col_name** Hashable\n    - Column name.\n  - Returns:\n    - pandas.api.typing.Expression\n    - A deferred object representing a column of a DataFrame.\n See also \n  - `DataFrame.query`\n  - Query columns of a dataframe using string expressions.\n Examples You can use col in assign. >>> df = pd.DataFrame({\"name\": [\"beluga\", \"narwhal\"], \"speed\": [100, 110]}) >>> df.assign(name_titlecase=pd.col(\"name\").str.title()) name speed name_titlecase 0 beluga 100 Beluga 1 narwhal 110 Narwhal You can also use it for filtering. >>> df.loc[pd.col(\"speed\") > 105] name speed 1 narwhal 110",
     "markdown_length": 874,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.col — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.col — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:33.088395",
+    "crawled_at": "2026-08-28T15:52:13.456632",
     "type": "webpage"
 }

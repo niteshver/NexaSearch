@@ -2,7 +2,7 @@
     "id": "40cf855449045fb773fab36f0cefdff2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.use.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.use.html",
-    "title": "pandas.io.formats.style.Styler.use — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.io.formats.style.Styler.use — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.use#\n\n- \nStyler.use(*styles* )[source]#\n- Set the styles on the current Styler. Possibly uses styles from `Styler.export` .\n  - Parameters:\n    - **styles** dict(str, Any)\n      - List of attributes to add to Styler. Dict keys should contain only:\n        - “apply”: list of styler functions, typically added with `apply` or`map` .\n        - “table_attributes”: HTML attributes, typically added with `set_table_attributes` .\n        - “table_styles”: CSS selectors and properties, typically added with `set_table_styles` .\n        - “hide_index”: whether the index is hidden, typically added with `hide_index` , or a boolean list for hidden levels.\n        - “hide_columns”: whether column headers are hidden, typically added with `hide_columns` , or a boolean list for hidden levels.\n        - “hide_index_names”: whether index names are hidden.\n        - “hide_column_names”: whether column header names are hidden.\n        - “css”: the css class names used.\n  - Returns:\n    - Styler\n    - Instance of class with defined styler attributes added.\n See also \n  - `Styler.export`\n  - Export the non data dependent attributes to the current Styler.\n Examples >>> styler = pd.DataFrame([[1, 2], [3, 4]]).style >>> styler2 = pd.DataFrame([[9, 9, 9]]).style >>> styler.hide(axis=0).highlight_max(axis=1) >>> export = styler.export() >>> styler2.use(export)",
     "markdown_length": 1385,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.use — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.io.formats.style.Styler.use — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/plotting.html"
     },
-    "crawled_at": "2026-08-26T06:51:32.703210",
+    "crawled_at": "2026-08-28T17:59:35.951578",
     "type": "webpage"
 }

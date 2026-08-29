@@ -2,7 +2,7 @@
     "id": "8dae98427b40a533f873944eabd72828",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.IntCastingNaNError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.IntCastingNaNError.html",
-    "title": "pandas.errors.IntCastingNaNError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.IntCastingNaNError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.IntCastingNaNError#\n\n- exception pandas.errors.IntCastingNaNError[source]#\n- Exception raised when converting ( `astype` ) an array with NaN to an integer type.This error occurs when attempting to cast a data structure containing non-finite values (such as NaN or infinity) to an integer data type. Integer types do not support non-finite values, so such conversions are explicitly disallowed to prevent silent data corruption or unexpected behavior. See also \n  - `DataFrame.astype`\n  - Method to cast a pandas DataFrame object to a specified dtype.\n  - `Series.astype`\n  - Method to cast a pandas Series object to a specified dtype.\n Examples >>> pd.DataFrame(np.array([[1, np.nan], [2, 3]]), dtype=\"i8\") Traceback (most recent call last): IntCastingNaNError: Cannot convert non-finite values (NA or inf) to integer",
     "markdown_length": 833,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.IntCastingNaNError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.IntCastingNaNError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.806094",
+    "crawled_at": "2026-08-28T17:58:58.434587",
     "type": "webpage"
 }

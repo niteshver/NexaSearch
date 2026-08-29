@@ -2,7 +2,7 @@
     "id": "53839914ea1596c78830bb71ae5779eb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.nanoseconds.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.nanoseconds.html",
-    "title": "pandas.Timedelta.nanoseconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.nanoseconds — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.nanoseconds#\n\n- Timedelta.nanoseconds#\n- Return the number of nanoseconds (n), where 0 <= n < 1 microsecond. This is the nanoseconds component of the Timedelta, which represents the residual nanoseconds that are not captured by higher-order components such as days, seconds, or microseconds. The value is always in the range [0, 999]. \n  - Returns:\n    - int\n    - Number of nanoseconds.\n See also \n  - `Timedelta.components`\n  - Return all attributes with assigned values (i.e. days, hours, minutes, seconds, milliseconds, microseconds, nanoseconds).\n Examples **Using string input**>>> td = pd.Timedelta('1 days 2 min 3 us 42 ns') >>> td.nanoseconds 42 **Using integer input**>>> td = pd.Timedelta(42, unit='ns') >>> td.nanoseconds 42",
     "markdown_length": 755,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.nanoseconds — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.nanoseconds — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:52.721170",
+    "crawled_at": "2026-08-28T15:50:55.739079",
     "type": "webpage"
 }

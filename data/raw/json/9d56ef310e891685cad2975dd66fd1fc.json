@@ -2,7 +2,7 @@
     "id": "9d56ef310e891685cad2975dd66fd1fc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.truncate.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.truncate.html",
-    "title": "pandas.MultiIndex.truncate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.MultiIndex.truncate — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.truncate#\n\n- \nMultiIndex.truncate(*before=None* ,*after=None* )[source]#\n- Slice index between two labels / tuples, return new MultiIndex. This method returns a new MultiIndex containing only the entries that fall within the specified range on the first level. \n  - Parameters:\n    - **before** label or tuple, can be partial. Default None\n    - None defaults to start.\n    - **after** label or tuple, can be partial. Default None\n    - None defaults to end.\n  - Returns:\n    - MultiIndex\n    - The truncated MultiIndex.\n See also \n  - `DataFrame.truncate`\n  - Truncate a DataFrame before and after some index values.\n  - `Series.truncate`\n  - Truncate a Series before and after some index values.\n Examples >>> mi = pd.MultiIndex.from_arrays([[\"a\", \"b\", \"c\"], [\"x\", \"y\", \"z\"]]) >>> mi MultiIndex([('a', 'x'), ('b', 'y'), ('c', 'z')], ) >>> mi.truncate(before=\"a\", after=\"b\") MultiIndex([('a', 'x'), ('b', 'y')], )",
     "markdown_length": 934,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.truncate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.MultiIndex.truncate — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:53.385616",
+    "crawled_at": "2026-08-28T15:48:20.608074",
     "type": "webpage"
 }

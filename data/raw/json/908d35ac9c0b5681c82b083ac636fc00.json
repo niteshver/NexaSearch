@@ -2,7 +2,7 @@
     "id": "908d35ac9c0b5681c82b083ac636fc00",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.to_pytimedelta.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.to_pytimedelta.html",
-    "title": "pandas.Timedelta.to_pytimedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.to_pytimedelta — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.to_pytimedelta#\n\n- Timedelta.to_pytimedelta()#\n- Convert a pandas Timedelta object into a python `datetime.timedelta` object.Timedelta objects are internally saved as numpy datetime64[ns] dtype. Use to_pytimedelta() to convert to object dtype. \n  - Returns:\n    - datetime.timedelta or numpy.array of datetime.timedelta\n See also \n  - `to_timedelta`\n  - Convert argument to Timedelta type.\n Notes Any nanosecond resolution will be lost. Examples >>> td = pd.Timedelta('3D') >>> td Timedelta('3 days 00:00:00') >>> td.to_pytimedelta() datetime.timedelta(days=3)",
     "markdown_length": 579,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.to_pytimedelta — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.to_pytimedelta — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:32.303775",
+    "crawled_at": "2026-08-28T15:50:57.719694",
     "type": "webpage"
 }

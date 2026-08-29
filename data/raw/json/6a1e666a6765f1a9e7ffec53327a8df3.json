@@ -2,7 +2,7 @@
     "id": "6a1e666a6765f1a9e7ffec53327a8df3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.max.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.max.html",
-    "title": "pandas.Series.max — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.max — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.max#\n\n- \nSeries.max(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return the maximum of the values over the requested axis. If you want the *index* of the maximum, use`idxmax` .\nThis is the equivalent of the`numpy.ndarray` method`argmax` .\n  - Parameters:\n    - **axis** {index (0)}\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation\nacross both axes.Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - scalar\n    - The maximum of the values in the Series.\n See also \n  - `numpy.max`\n  - Equivalent numpy function for arrays.\n  - `Series.min`\n  - Return the minimum.\n  - `Series.max`\n  - Return the maximum.\n  - `Series.idxmin`\n  - Return the index of the minimum.\n  - `Series.idxmax`\n  - Return the index of the maximum.\n  - `DataFrame.min`\n  - Return the minimum over the requested axis.\n  - `DataFrame.max`\n  - Return the maximum over the requested axis.\n  - `DataFrame.idxmin`\n  - Return the index of the minimum over the requested axis.\n  - `DataFrame.idxmax`\n  - Return the index of the maximum over the requested axis.\n Examples >>> idx = pd.MultiIndex.from_arrays( ... [[\"warm\", \"warm\", \"cold\", \"cold\"], [\"dog\", \"falcon\", \"fish\", \"spider\"]], ... names=[\"blooded\", \"animal\"], ... ) >>> s = pd.Series([4, 2, 0, 8], name=\"legs\", index=idx) >>> s blooded animal warm dog 4 falcon 2 cold fish 0 spider 8 Name: legs, dtype: int64 >>> s.max() 8",
     "markdown_length": 1843,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.max — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.max — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.max.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:19.104975",
+    "crawled_at": "2026-08-28T15:49:46.666326",
     "type": "webpage"
 }

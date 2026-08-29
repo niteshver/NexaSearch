@@ -2,7 +2,7 @@
     "id": "46d2d386088ea6ac94e065310bdb6aff",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html",
-    "title": "pandas.Index.intersection — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Index.intersection — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.intersection#\n\n- \nfinal Index.intersection(*other* ,*sort=False* )[source]#\n- Form the intersection of two Index objects. This returns a new Index with elements common to the index and other. \n  - Parameters:\n    - **other** Index or array-like\n    - An Index or an array-like object containing elements to form the intersection with the original Index.\n    - **sort** True, False or None, default False\n    - Whether to sort the resulting index. \n      - None : sort the result, except when self and other are equal or when the values cannot be compared.\n      - False : do not sort the result.\n      - True : Sort the result (which may raise TypeError).\n  - Returns:\n    - Index\n    - Returns a new Index object with elements common to both the original Index and the other Index.\n See also \n  - `Index.union`\n  - Form the union of two Index objects.\n  - `Index.difference`\n  - Return a new Index with elements of index not in other.\n  - `Index.isin`\n  - Return a boolean array where the index values are in values.\n Examples >>> idx1 = pd.Index([1, 2, 3, 4]) >>> idx2 = pd.Index([3, 4, 5, 6]) >>> idx1.intersection(idx2) Index([3, 4], dtype='int64')",
     "markdown_length": 1167,
@@ -10,18 +10,6 @@
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
+            "text": "General functions",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.intersection — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Index.intersection — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.intersection.html"
     },
-    "crawled_at": "2026-08-26T06:49:31.816899",
+    "crawled_at": "2026-08-28T20:31:19.527932",
     "type": "webpage"
 }

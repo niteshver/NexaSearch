@@ -2,7 +2,7 @@
     "id": "0c27e2a33e12887cb0c6391d0670efcd",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.is_month_end.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.is_month_end.html",
-    "title": "pandas.Series.dt.is_month_end — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.is_month_end — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.is_month_end#\n\n- Series.dt.is_month_end[source]#\n- Indicates whether the date is the last day of the month. This boolean attribute evaluates to True if the date falls on the last day of a calendar month, and False otherwise. \n  - Returns:\n    - Series or array\n    - For Series, returns a Series with boolean values. For DatetimeIndex, returns a boolean array.\n See also \n  - `is_month_start`\n  - Return a boolean indicating whether the date is the first day of the month.\n  - `is_month_end`\n  - Return a boolean indicating whether the date is the last day of the month.\n Examples This method is available on Series with datetime values under the `.dt` accessor, and directly on DatetimeIndex.>>> s = pd.Series(pd.date_range(\"2018-02-27\", periods=3)) >>> s 0 2018-02-27 1 2018-02-28 2 2018-03-01 dtype: datetime64[us] >>> s.dt.is_month_start 0 False 1 False 2 True dtype: bool >>> s.dt.is_month_end 0 False 1 True 2 False dtype: bool >>> idx = pd.date_range(\"2018-02-27\", periods=3) >>> idx.is_month_start array([False, False, True]) >>> idx.is_month_end array([False, True, False])",
     "markdown_length": 1101,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.is_month_end — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.is_month_end — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:14.577521",
+    "crawled_at": "2026-08-28T15:49:14.057700",
     "type": "webpage"
 }

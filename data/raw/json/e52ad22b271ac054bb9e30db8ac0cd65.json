@@ -2,7 +2,7 @@
     "id": "e52ad22b271ac054bb9e30db8ac0cd65",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.argsort.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.argsort.html",
-    "title": "pandas.Series.argsort — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.argsort — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.argsort#\n\n- \nSeries.argsort(*axis=0* ,*kind='quicksort'* ,*order=None* ,*stable=None* )[source]#\n- Return the integer indices that would sort the Series values. Override ndarray.argsort. Argsorts the value, omitting NA/null values, and places the result in the same locations as the non-NA values. \n  - Parameters:\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n    - **kind** {‘mergesort’, ‘quicksort’, ‘heapsort’, ‘stable’}, default ‘quicksort’\n    - Choice of sorting algorithm. See `numpy.sort()` for more\ninformation. ‘mergesort’ and ‘stable’ are the only stable algorithms.\n    - **order** None\n    - Has no effect but is accepted for compatibility with numpy.\n    - **stable** None\n    - Has no effect but is accepted for compatibility with numpy.\n  - Returns:\n    - Series[np.intp]\n    - Positions of values within the sort order with -1 indicating nan values.\n See also \n  - `numpy.ndarray.argsort`\n  - Returns the indices that would sort this array.\n Examples >>> s = pd.Series([3, 2, 1]) >>> s.argsort() 0 2 1 1 2 0 dtype: int64",
     "markdown_length": 1103,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.argsort — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.argsort — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:11.067226",
+    "crawled_at": "2026-08-28T15:48:48.702007",
     "type": "webpage"
 }

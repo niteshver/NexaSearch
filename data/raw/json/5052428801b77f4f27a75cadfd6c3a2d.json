@@ -2,7 +2,7 @@
     "id": "5052428801b77f4f27a75cadfd6c3a2d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.AttributeConflictWarning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.AttributeConflictWarning.html",
-    "title": "pandas.errors.AttributeConflictWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.AttributeConflictWarning — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.AttributeConflictWarning#\n\n- exception pandas.errors.AttributeConflictWarning[source]#\n- Warning raised when index attributes conflict when using HDFStore. Occurs when attempting to append an index with a different name than the existing index on an HDFStore or attempting to append an index with a different frequency than the existing index on an HDFStore. See also \n  - `HDFStore`\n  - Dict-like IO interface for storing pandas objects in PyTables.\n  - `DataFrame.to_hdf`\n  - Write the contained data to an HDF5 file using HDFStore.\n  - `read_hdf`\n  - Read from an HDF5 file into a DataFrame.\n Examples >>> idx1 = pd.Index([\"a\", \"b\"], name=\"name1\") >>> df1 = pd.DataFrame([[1, 2], [3, 4]], index=idx1) >>> df1.to_hdf(\"file\", \"data\", \"w\", append=True) >>> idx2 = pd.Index([\"c\", \"d\"], name=\"name2\") >>> df2 = pd.DataFrame([[5, 6], [7, 8]], index=idx2) >>> df2.to_hdf(\"file\", \"data\", \"a\", append=True) AttributeConflictWarning: the [index_name] attribute of the existing index is [name1] which conflicts with the new [name2]...",
     "markdown_length": 1042,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.AttributeConflictWarning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.AttributeConflictWarning — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:45.522904",
+    "crawled_at": "2026-08-28T17:58:50.889624",
     "type": "webpage"
 }

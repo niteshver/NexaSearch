@@ -2,7 +2,7 @@
     "id": "a15be4ff956bd5b9fe6040186155a914",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.merge_ordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.merge_ordered.html",
-    "title": "pandas.merge_ordered — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.merge_ordered — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.merge_ordered#\n\n- \npandas.merge_ordered(*left* ,*right* ,*on=None* ,*left_on=None* ,*right_on=None* ,*left_by=None* ,*right_by=None* ,*fill_method=None* ,*suffixes=('_x', '_y')* ,*how='outer'* )[source]#\n- Perform a merge for ordered data with optional filling/interpolation. Designed for ordered data like time series data. Optionally perform group-wise merge (see examples). \n  - Parameters:\n    - **left** DataFrame or named Series\n    - First pandas object to merge.\n    - **right** DataFrame or named Series\n    - Second pandas object to merge.\n    - **on** Hashable or a sequence of the previous\n    - Field names to join on. Must be found in both DataFrames.\n    - **left_on** Hashable or a sequence of the previous, or array-like\n    - Field names to join on in left DataFrame. Can be a vector or list of vectors of the length of the DataFrame to use a particular vector as the join key instead of columns.\n    - **right_on** Hashable or a sequence of the previous, or array-like\n    - Field names to join on in right DataFrame or vector/list of vectors per left_on docs.\n    - **left_by** column name or list of column names\n    - Group left DataFrame by group columns and merge piece by piece with right DataFrame. Must be None if either left or right are a Series.\n    - **right_by** column name or list of column names\n    - Group right DataFrame by group columns and merge piece by piece with left DataFrame. Must be None if either left or right are a Series.\n    - **fill_method** {‘ffill’, None}, default None\n    - Interpolation method for data.\n    - **suffixes** list-like, default is (“_x”, “_y”)\n    - A length-2 sequence where each element is optionally a string indicating the suffix to add to overlapping column names in left and right respectively. Pass a value of None instead of a string to indicate that the column name from left or right should be left as-is, with no suffix. At least one of the values must not be None.\n    - **how** {‘left’, ‘right’, ‘outer’, ‘inner’}, default ‘outer’\n      - left: use only keys from left frame (SQL: left outer join)\n      - right: use only keys from right frame (SQL: right outer join)\n      - outer: use union of keys from both frames (SQL: full outer join)\n      - inner: use intersection of keys from both frames (SQL: inner join).\n  - Returns:\n    - DataFrame\n    - The merged DataFrame output type will be the same as ‘left’, if it is a subclass of DataFrame.\n See also \n  - `merge`\n  - Merge with a database-style join.\n  - `merge_asof`\n  - Merge on nearest keys.\n Examples >>> from pandas import merge_ordered >>> df1 = pd.DataFrame( ... { ... \"key\": [\"a\", \"c\", \"e\", \"a\", \"c\", \"e\"], ... \"lvalue\": [1, 2, 3, 1, 2, 3], ... \"group\": [\"a\", \"a\", \"a\", \"b\", \"b\", \"b\"], ... } ... ) >>> df1 key lvalue group 0 a 1 a 1 c 2 a 2 e 3 a 3 a 1 b 4 c 2 b 5 e 3 b >>> df2 = pd.DataFrame({\"key\": [\"b\", \"c\", \"d\"], \"rvalue\": [1, 2, 3]}) >>> df2 key rvalue 0 b 1 1 c 2 2 d 3 >>> merge_ordered(df1, df2, fill_method=\"ffill\", left_by=\"group\") key lvalue group rvalue 0 a 1 a NaN 1 b 1 a 1.0 2 c 2 a 2.0 3 d 2 a 3.0 4 e 3 a 3.0 5 a 1 b NaN 6 b 1 b 1.0 7 c 2 b 2.0 8 d 2 b 3.0 9 e 3 b 3.0",
     "markdown_length": 3146,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.merge_ordered — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.merge_ordered — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:49:50.388586",
+    "crawled_at": "2026-08-28T15:52:21.769168",
     "type": "webpage"
 }

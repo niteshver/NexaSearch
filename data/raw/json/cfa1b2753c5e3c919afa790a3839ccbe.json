@@ -2,7 +2,7 @@
     "id": "cfa1b2753c5e3c919afa790a3839ccbe",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.findall.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.findall.html",
-    "title": "pandas.Series.str.findall — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.findall — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.findall#\n\n- \nSeries.str.findall(*pat* ,*flags=0* )[source]#\n- Find all occurrences of pattern or regular expression in the Series/Index. Equivalent to applying `re.findall()` to all the elements in the\nSeries/Index.\n  - Parameters:\n    - **pat** str\n    - Pattern or regular expression.\n    - **flags** int, default 0\n    - Flags from `re` module, e.g. re.IGNORECASE (default is 0, which\nmeans no flags).\n  - Returns:\n    - Series/Index of lists of strings\n    - All non-overlapping matches of pattern or regular expression in each string of this Series/Index.\n See also \n  - `count`\n  - Count occurrences of pattern or regular expression in each string of the Series/Index.\n  - `extractall`\n  - For each string in the Series, extract groups from all matches of regular expression and return a DataFrame with one row for each match and one column for each group.\n  - `re.findall`\n  - The equivalent `re` function to all non-overlapping matches of pattern or regular expression in string, as a list of strings.\n Examples >>> s = pd.Series([\"Lion\", \"Monkey\", \"Rabbit\"]) The search for the pattern ‘Monkey’ returns one match: >>> s.str.findall(\"Monkey\") 0 [] 1 [Monkey] 2 [] dtype: object On the other hand, the search for the pattern ‘MONKEY’ doesn’t return any match: >>> s.str.findall(\"MONKEY\") 0 [] 1 [] 2 [] dtype: object Flags can be added to the pattern or regular expression. For instance, to find the pattern ‘MONKEY’ ignoring the case: >>> import re >>> s.str.findall(\"MONKEY\", flags=re.IGNORECASE) 0 [] 1 [Monkey] 2 [] dtype: object When the pattern matches more than one string in the Series, all matches are returned: >>> s.str.findall(\"on\") 0 [on] 1 [on] 2 [] dtype: object Regular expressions are supported too. For instance, the search for all the strings ending with the word ‘on’ is shown next: >>> s.str.findall(\"on$\") 0 [on] 1 [] 2 [] dtype: object If the pattern is found more than once in the same string, then a list of multiple strings is returned: >>> s.str.findall(\"b\") 0 [] 1 [] 2 [b, b] dtype: object",
     "markdown_length": 2045,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.findall — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.findall — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.471809",
+    "crawled_at": "2026-08-28T15:50:19.423490",
     "type": "webpage"
 }

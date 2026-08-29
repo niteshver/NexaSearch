@@ -2,7 +2,7 @@
     "id": "e97ecd943f5012d0b063400c166ada4c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.T.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.T.html",
-    "title": "pandas.Series.T — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.T — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.T#\n\n- property Series.T[source]#\n- Return the transpose, which is by definition self. For 1D objects (Series, Index) transposition has no effect; the object is returned unchanged. Provided for API compatibility with DataFrame and NumPy. See also \n  - `Index`\n  - Immutable sequence used for indexing and alignment.\n Examples For Series: >>> s = pd.Series(['Ant', 'Bear', 'Cow']) >>> s 0 Ant 1 Bear 2 Cow dtype: str >>> s.T 0 Ant 1 Bear 2 Cow dtype: str For Index: >>> idx = pd.Index([1, 2, 3]) >>> idx.T Index([1, 2, 3], dtype='int64')",
     "markdown_length": 551,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.T — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.T — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:10.260742",
+    "crawled_at": "2026-08-28T15:48:42.965291",
     "type": "webpage"
 }

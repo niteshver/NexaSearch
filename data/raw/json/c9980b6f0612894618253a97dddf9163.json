@@ -2,10 +2,10 @@
     "id": "c9980b6f0612894618253a97dddf9163",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ArrowDtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ArrowDtype.html",
-    "title": "pandas.ArrowDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.ArrowDtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.ArrowDtype#\n\n- \nclass pandas.ArrowDtype(*pyarrow_dtype* )[source]#\n- An ExtensionDtype for PyArrow data types. Warning ArrowDtype is considered experimental. The implementation and parts of the API may change without warning. While most `dtype` arguments can accept the “string”\nconstructor, e.g.`\"int64[pyarrow]\"` , ArrowDtype is useful\nif the data type contains parameters like`pyarrow.timestamp` .\n  - Parameters:\n    - **pyarrow_dtype** pa.DataType\n    - An instance of a pyarrow.DataType.\n Attributes **pyarrow_dtype**Methods **None**\n  - Returns:\n    - ArrowDtype\n See also \n  - `DataFrame.convert_dtypes`\n  - Convert columns to the best possible dtypes.\n Examples >>> import pyarrow as pa >>> pd.ArrowDtype(pa.int64()) int64[pyarrow] Types with parameters must be constructed with ArrowDtype. >>> pd.ArrowDtype(pa.timestamp(\"s\", tz=\"America/New_York\")) timestamp[s, tz=America/New_York][pyarrow] >>> pd.ArrowDtype(pa.list_(pa.int64())) list<item: int64>[pyarrow]",
-    "markdown_length": 978,
+    "markdown": "# pandas.ArrowDtype#\n\n- \nclass pandas.ArrowDtype(*pyarrow_dtype* )[source]#\n- An ExtensionDtype for PyArrow data types. Warning ArrowDtype is considered experimental. The implementation and parts of the API may change without warning. While most `dtype` arguments can accept the “string”\nconstructor, e.g.`\"int64[pyarrow]\"` , ArrowDtype is useful\nif the data type contains parameters like`pyarrow.timestamp` .\n  - Parameters:\n    - **pyarrow_dtype** pa.DataType\n    - An instance of a pyarrow.DataType.\n Attributes **pyarrow_dtype**\n  - Returns:\n    - ArrowDtype\n See also \n  - `DataFrame.convert_dtypes`\n  - Convert columns to the best possible dtypes.\n Examples >>> import pyarrow as pa >>> pd.ArrowDtype(pa.int64()) int64[pyarrow] Types with parameters must be constructed with ArrowDtype. >>> pd.ArrowDtype(pa.timestamp(\"s\", tz=\"America/New_York\")) timestamp[s, tz=America/New_York][pyarrow] >>> pd.ArrowDtype(pa.list_(pa.int64())) list<item: int64>[pyarrow]",
+    "markdown_length": 962,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.ArrowDtype.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.ArrowDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.ArrowDtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:58.906417",
+    "crawled_at": "2026-08-28T15:45:41.371509",
     "type": "webpage"
 }

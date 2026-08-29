@@ -2,7 +2,7 @@
     "id": "f198ef745fc042fd24c2ee64326d4cf0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.second.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.second.html",
-    "title": "pandas.Timestamp.second — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.second — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.second#\n\n- Timestamp.second#\n- Return the second of the Timestamp. Seconds range from 0 to 59. \n  - Returns:\n    - int\n    - The second of the Timestamp.\n See also \n  - `Timestamp.microsecond`\n  - Return the microsecond of the Timestamp.\n  - `Timestamp.minute`\n  - Return the minute of the Timestamp.\n Examples >>> ts = pd.Timestamp(\"2024-08-31 16:16:30\") >>> ts.second 30",
     "markdown_length": 391,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.second — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.second — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:10.804691",
+    "crawled_at": "2026-08-28T15:51:24.648306",
     "type": "webpage"
 }

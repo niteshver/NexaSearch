@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.droplevel.html"
     },
-    "crawled_at": "2026-08-26T06:50:50.800596",
+    "crawled_at": "2026-08-28T19:34:59.318344",
     "type": "webpage"
 }

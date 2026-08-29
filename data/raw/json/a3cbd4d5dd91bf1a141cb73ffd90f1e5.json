@@ -2,7 +2,7 @@
     "id": "a3cbd4d5dd91bf1a141cb73ffd90f1e5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.add_categories.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.add_categories.html",
-    "title": "pandas.Series.cat.add_categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.cat.add_categories — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.cat.add_categories#\n\n- \nSeries.cat.add_categories(*new_categories* )[source]#\n- Add new categories. new_categories will be included at the last/highest place in the categories and will be unused directly after this call. \n  - Parameters:\n    - **new_categories** category or list-like of category\n    - The new categories to be included.\n  - Returns:\n    - Categorical\n    - Categorical with new categories added.\n  - Raises:\n    - ValueError\n    - If the new categories include old categories or do not validate as categories\n See also \n  - `rename_categories`\n  - Rename categories.\n  - `reorder_categories`\n  - Reorder categories.\n  - `remove_categories`\n  - Remove the specified categories.\n  - `remove_unused_categories`\n  - Remove categories which are not used.\n  - `set_categories`\n  - Set the categories to the specified ones.\n Examples >>> c = pd.Categorical([\"c\", \"b\", \"c\"]) >>> c ['c', 'b', 'c'] Categories (2, str): ['b', 'c'] >>> c.add_categories([\"d\", \"a\"]) ['c', 'b', 'c'] Categories (4, str): ['b', 'c', 'd', 'a']",
     "markdown_length": 1045,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cat.add_categories — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.cat.add_categories — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:11.756318",
+    "crawled_at": "2026-08-28T15:48:54.212864",
     "type": "webpage"
 }

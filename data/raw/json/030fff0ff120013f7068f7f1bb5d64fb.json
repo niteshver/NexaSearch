@@ -2,7 +2,7 @@
     "id": "030fff0ff120013f7068f7f1bb5d64fb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.corr.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Expanding.corr.html",
-    "title": "pandas.api.typing.Expanding.corr — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Expanding.corr — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Expanding.corr#\n\n- \nExpanding.corr(*other=None* ,*pairwise=None* ,*ddof=1* ,*numeric_only=False* )[source]#\n- Calculate the expanding correlation. Uses Pearson’s correlation over all data points seen so far. \n  - Parameters:\n    - **other** Series or DataFrame, optional\n    - If not supplied then will default to self and produce pairwise output.\n    - **pairwise** bool, default None\n    - If False then only matching columns between self and other will be used and the output will be a DataFrame. If True then all pairwise combinations will be calculated and the output will be a MultiIndexed DataFrame in the case of DataFrame inputs. In the case of missing elements, only complete pairwise observations will be used.\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is `N - ddof` , where`N` represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `cov`\n  - Similar method to calculate covariance.\n  - `numpy.corrcoef`\n  - NumPy Pearson’s correlation calculation.\n  - `Series.expanding`\n  - Calling expanding with Series data.\n  - `DataFrame.expanding`\n  - Calling expanding with DataFrames.\n  - `Series.corr`\n  - Aggregating corr for Series.\n  - `DataFrame.corr`\n  - Aggregating corr for DataFrame.\n Notes This function uses Pearson’s definition of correlation (https://en.wikipedia.org/wiki/Pearson_correlation_coefficient). When other is not specified, the output will be self correlation (e.g. all 1’s), except for `DataFrame` inputs with pairwise\nset to True.Function will return `NaN` for correlations of equal valued sequences;\nthis is the result of a 0/0 division error.When pairwise is set to False, only matching columns between self and other will be used. When pairwise is set to True, the output will be a MultiIndex DataFrame with the original index on the first level, and the other DataFrame columns on the second level. In the case of missing elements, only complete pairwise observations will be used. Examples >>> ser1 = pd.Series([1, 2, 3, 4], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser2 = pd.Series([10, 11, 13, 16], index=[\"a\", \"b\", \"c\", \"d\"]) >>> ser1.expanding().corr(ser2) a NaN b 1.000000 c 0.981981 d 0.975900 dtype: float64",
     "markdown_length": 2416,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Expanding.corr — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Expanding.corr — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:56.871490",
+    "crawled_at": "2026-08-28T17:57:21.054268",
     "type": "webpage"
 }

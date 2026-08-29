@@ -2,7 +2,7 @@
     "id": "506e82ffc9464805bc4a109e1cc79484",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._formatter.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._formatter.html",
-    "title": "pandas.api.extensions.ExtensionArray._formatter — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._formatter — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._formatter#\n\n- \nExtensionArray._formatter(*boxed=False* )[source]#\n- Formatting function for scalar values. This is used in the default ‘__repr__’. The returned formatting function receives instances of your scalar type. \n  - Parameters:\n    - **boxed** bool, default False\n    - An indicator for whether or not your array is being printed within a Series, DataFrame, or Index (True), or just by itself (False). This may be useful if you want scalar values to appear differently within a Series versus on its own (e.g. quoted or not).\n  - Returns:\n    - Callable[[Any], str]\n    - A callable that gets instances of the scalar type and returns a string. By default, `repr()` is used\nwhen`boxed=False` and`str()` is used when`boxed=True` .\n See also \n  - `api.extensions.ExtensionArray._concat_same_type`\n  - Concatenate multiple array of this dtype.\n  - `api.extensions.ExtensionArray._explode`\n  - Transform each element of list-like to a row.\n  - `api.extensions.ExtensionArray._from_factorized`\n  - Reconstruct an ExtensionArray after factorization.\n  - `api.extensions.ExtensionArray._from_sequence`\n  - Construct a new ExtensionArray from a sequence of scalars.\n Examples >>> class MyExtensionArray(pd.arrays.NumpyExtensionArray): ... def _formatter(self, boxed=False): ... return lambda x: \"*\" + str(x) + \"*\" >>> MyExtensionArray(np.array([1, 2, 3, 4])) <MyExtensionArray> [*1*, *2*, *3*, *4*] Length: 4, dtype: int64",
     "markdown_length": 1461,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._formatter — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._formatter — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.458378",
+    "crawled_at": "2026-08-28T15:51:37.825939",
     "type": "webpage"
 }

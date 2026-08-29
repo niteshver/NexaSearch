@@ -2,7 +2,7 @@
     "id": "8b4596e856d83ddcd469f203a8a81c9d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.AbstractMethodError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.AbstractMethodError.html",
-    "title": "pandas.errors.AbstractMethodError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.AbstractMethodError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.AbstractMethodError#\n\n- \nexception pandas.errors.AbstractMethodError(*class_instance* ,*methodtype='method'* )[source]#\n- Raise this error instead of NotImplementedError for abstract methods. The AbstractMethodError is designed for use in classes that follow an abstract base class pattern. By raising this error in the method, it ensures that a subclass must implement the method to provide specific functionality. This is useful in a framework or library where certain methods must be implemented by the user to ensure correct behavior. \n  - Parameters:\n    - **class_instance** object\n    - The instance of the class where the abstract method is being called.\n    - **methodtype** str, default “method”\n    - A string indicating the type of method that is abstract. Must be one of {“method”, “classmethod”, “staticmethod”, “property”}.\n See also \n  - `api.extensions.ExtensionArray`\n  - An example of a pandas extension mechanism that requires implementing specific abstract methods.\n  - `NotImplementedError`\n  - A built-in exception that can also be used for abstract methods but lacks the specificity of AbstractMethodError in indicating the need for subclass implementation.\n Examples >>> class Foo: ... @classmethod ... def classmethod(cls): ... raise pd.errors.AbstractMethodError(cls, methodtype=\"classmethod\") ... ... def method(self): ... raise pd.errors.AbstractMethodError(self) >>> test = Foo.classmethod() Traceback (most recent call last): AbstractMethodError: This classmethod must be defined in the concrete class Foo >>> test2 = Foo().method() Traceback (most recent call last): AbstractMethodError: This classmethod must be defined in the concrete class Foo",
     "markdown_length": 1694,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.AbstractMethodError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.AbstractMethodError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.354089",
+    "crawled_at": "2026-08-28T17:58:50.481128",
     "type": "webpage"
 }

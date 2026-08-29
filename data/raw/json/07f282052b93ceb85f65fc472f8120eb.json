@@ -2,7 +2,7 @@
     "id": "07f282052b93ceb85f65fc472f8120eb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.read_pickle.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.read_pickle.html",
-    "title": "pandas.read_pickle — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.read_pickle — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.read_pickle#\n\n- \npandas.read_pickle(*filepath_or_buffer* ,*compression='infer'* ,*storage_options=None* )[source]#\n- Load pickled pandas object (or any object) from file and return unpickled object. Warning Loading pickled data received from untrusted sources can be unsafe. See here. \n  - Parameters:\n    - **filepath_or_buffer** str, path object, or file-like object\n    - String, path object (implementing `os.PathLike[str]` ), or file-like\nobject implementing a binary`read()` function.\nAlso accepts URL. URL is not limited to S3 and GCS.Certain URL schemes may require additional packages. For example, S3 URLs require the `s3fs` library. See\nOptional dependencies for a full list.\n    - **compression** str or dict, default ‘infer’\n    - For on-the-fly decompression of on-disk data. If ‘infer’ and ‘filepath_or_buffer’ is path-like, then detect compression from the following extensions: ‘.gz’, ‘.bz2’, ‘.zip’, ‘.xz’, ‘.zst’, ‘.tar’, ‘.tar.gz’, ‘.tar.xz’ or ‘.tar.bz2’ (otherwise no compression). If using ‘zip’ or ‘tar’, the ZIP file must contain only one data file to be read in. Set to `None` for no decompression.\nCan also be a dict with key`'method'` set\nto one of {`'zip'` ,`'gzip'` ,`'bz2'` ,`'zstd'` ,`'xz'` ,`'tar'` } and other key-value pairs are forwarded to`zipfile.ZipFile` ,`gzip.GzipFile` ,`bz2.BZ2File` ,`zstandard.ZstdDecompressor` ,`lzma.LZMAFile` or`tarfile.TarFile` , respectively.\nAs an example, the following could be passed for Zstandard decompression\nusing a custom compression dictionary:`compression={'method': 'zstd', 'dict_data': my_compression_dict}` .\n    - **storage_options** dict, optional\n    - Extra options that make sense for a particular storage connection, e.g. host, port, username, password, etc. For HTTP(S) URLs the key-value pairs are forwarded to `urllib.request.Request` as header options. For other\nURLs (e.g. starting with “s3://”, and “gcs://”) the key-value pairs are\nforwarded to`fsspec.open` . Please see`fsspec` and`urllib` for more\ndetails, and for more examples on storage options refer here.\n  - Returns:\n    - object\n    - The unpickled pandas object (or any object) that was stored in file.\n See also \n  - `DataFrame.to_pickle`\n  - Pickle (serialize) DataFrame object to file.\n  - `Series.to_pickle`\n  - Pickle (serialize) Series object to file.\n  - `read_hdf`\n  - Read HDF5 file into a DataFrame.\n  - `read_sql`\n  - Read SQL query or database table into a DataFrame.\n  - `read_parquet`\n  - Load a parquet object, returning a DataFrame.\n Notes read_pickle is only guaranteed to be backwards compatible with pickles created by the current or previous major version of pandas, provided the object was serialized with to_pickle. For example, in pandas 3.x.y, the earliest supported pickle would be from 2.0.0. Examples >>> original_df = pd.DataFrame( ... {\"foo\": range(5), \"bar\": range(5, 10)} ... ) >>> original_df foo bar 0 0 5 1 1 6 2 2 7 3 3 8 4 4 9 >>> pd.to_pickle(original_df, \"./dummy.pkl\") >>> unpickled_df = pd.read_pickle(\"./dummy.pkl\") >>> unpickled_df foo bar 0 0 5 1 1 6 2 2 7 3 3 8 4 4 9",
     "markdown_length": 3073,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.read_pickle — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.read_pickle — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
     },
-    "crawled_at": "2026-08-26T06:49:55.782254",
+    "crawled_at": "2026-08-28T17:59:47.490310",
     "type": "webpage"
 }

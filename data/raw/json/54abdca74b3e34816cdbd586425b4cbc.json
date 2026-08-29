@@ -2,7 +2,7 @@
     "id": "54abdca74b3e34816cdbd586425b4cbc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._explode.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._explode.html",
-    "title": "pandas.api.extensions.ExtensionArray._explode — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._explode — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._explode#\n\n- ExtensionArray._explode()[source]#\n- Transform each element of list-like to a row. For arrays that do not contain list-like elements the default implementation of this method just returns a copy and an array of ones (unchanged index). \n  - Returns:\n    - ExtensionArray\n    - Array with the exploded values.\n    - np.ndarray[uint64]\n    - The original lengths of each list-like for determining the resulting index.\n See also \n  - `Series.explode`\n  - The method on the `Series` object that this extension array method is meant to support.\n Examples >>> import pyarrow as pa >>> a = pd.array( ... [[1, 2, 3], [4], [5, 6]], dtype=pd.ArrowDtype(pa.list_(pa.int64())) ... ) >>> a._explode() (<ArrowExtensionArray> [1, 2, 3, 4, 5, 6] Length: 6, dtype: int64[pyarrow], array([3, 1, 2], dtype=int32))",
     "markdown_length": 845,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._explode — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._explode — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.474758",
+    "crawled_at": "2026-08-28T15:51:37.345816",
     "type": "webpage"
 }

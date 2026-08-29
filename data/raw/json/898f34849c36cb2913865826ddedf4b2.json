@@ -2,7 +2,7 @@
     "id": "898f34849c36cb2913865826ddedf4b2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.any.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.any.html",
-    "title": "pandas.DataFrame.any — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.any — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.any#\n\n- \nDataFrame.any(*** ,*axis=0* ,*bool_only=False* ,*skipna=True* ,***kwargs* )[source]#\n- Return whether any element is True, potentially over an axis. Returns False unless there is at least one element within a series or along a Dataframe axis that is True or equivalent (e.g. non-zero or non-empty). \n  - Parameters:\n    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default 0\n    - Indicate which axis or axes should be reduced. For Series this parameter is unused and defaults to 0. \n      - 0 / ‘index’ : reduce the index, return a Series whose index is the original column labels.\n      - 1 / ‘columns’ : reduce the columns, return a Series whose index is the original index.\n      - None : reduce all axes, return a scalar.\n    - **bool_only** bool, default False\n    - Include only boolean columns. Not implemented for Series.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If the entire row/column is NA and skipna is True, then the result will be False, as for an empty row/column. If skipna is False, NA values are treated as True for NumPy-backed dtypes (since they are not equal to zero). For nullable dtypes such as `boolean` , NA values propagate following\nKleene logic.\n    - ****kwargs** any, default None\n    - Additional keywords have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - Series or scalar\n    - If axis=None, then a scalar boolean is returned. Otherwise a Series is returned with index matching the index argument.\n See also \n  - `numpy.any`\n  - Numpy version of this method.\n  - `Series.any`\n  - Return whether any element is True.\n  - `Series.all`\n  - Return whether all elements are True.\n  - `DataFrame.any`\n  - Return whether any element is True over requested axis.\n  - `DataFrame.all`\n  - Return whether all elements are True over requested axis.\n Examples **Series**For Series input, the output is a scalar indicating whether any element is True. >>> pd.Series([False, False]).any() False >>> pd.Series([True, False]).any() True >>> pd.Series([], dtype=\"float64\").any() False >>> pd.Series([np.nan]).any() False >>> pd.Series([np.nan]).any(skipna=False) True **DataFrame**Whether each column contains at least one True element (the default). >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [0, 2], \"C\": [0, 0]}) >>> df A B C 0 1 0 0 1 2 2 0 >>> df.any() A True B True C False dtype: bool Aggregating over the columns. >>> df = pd.DataFrame({\"A\": [True, False], \"B\": [1, 2]}) >>> df A B 0 True 1 1 False 2 >>> df.any(axis=\"columns\") 0 True 1 True dtype: bool >>> df = pd.DataFrame({\"A\": [True, False], \"B\": [1, 0]}) >>> df A B 0 True 1 1 False 0 >>> df.any(axis=\"columns\") 0 True 1 False dtype: bool Aggregating over the entire DataFrame with `axis=None` .>>> df.any(axis=None) True any for an empty DataFrame is an empty Series. >>> pd.DataFrame([]).any() Series([], dtype: bool)",
     "markdown_length": 2931,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.any — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.any — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.314835",
+    "crawled_at": "2026-08-28T15:45:58.446385",
     "type": "webpage"
 }

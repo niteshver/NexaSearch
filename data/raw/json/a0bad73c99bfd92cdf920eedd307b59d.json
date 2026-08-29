@@ -2,7 +2,7 @@
     "id": "a0bad73c99bfd92cdf920eedd307b59d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dropna.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dropna.html",
-    "title": "pandas.Series.dropna — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dropna — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dropna#\n\n- \nSeries.dropna(*** ,*axis=0* ,*inplace=<no_default>* ,*how=None* ,*ignore_index=False* )[source]#\n- Return a new Series with missing values removed. See the User Guide for more on which values are considered missing, and how to work with missing data. \n  - Parameters:\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n    - **inplace** bool, default False\n    - If True, do operation inplace and return None. Deprecated since version 3.1.0: This keyword is deprecated and will be removed in pandas 4.0. See PDEP-8 In-place methods in pandas for more details.\n    - **how** str, optional\n    - Not in use. Kept for compatibility.\n    - **ignore_index** bool, default`False`\n    - If `True` , the resulting axis will be labeled 0, 1, …, n - 1.Added in version 2.0.0.\n  - Returns:\n    - Series or None\n    - Series with NA entries dropped from it or None if `inplace=True` .\n See also \n  - `Series.isna`\n  - Indicate missing values.\n  - `Series.notna`\n  - Indicate existing (non-missing) values.\n  - `Series.fillna`\n  - Replace missing values.\n  - `DataFrame.dropna`\n  - Drop rows or columns which contain NA values.\n  - `Index.dropna`\n  - Drop missing indices.\n Examples >>> ser = pd.Series([1.0, 2.0, np.nan]) >>> ser 0 1.0 1 2.0 2 NaN dtype: float64 Drop NA values from a Series. >>> ser.dropna() 0 1.0 1 2.0 dtype: float64 Empty strings are not considered NA values. `None` is considered an\nNA value.>>> ser = pd.Series([np.nan, 2, pd.NaT, \"\", None, \"I stay\"]) >>> ser 0 NaN 1 2 2 NaT 3 4 None 5 I stay dtype: object >>> ser.dropna() 1 2 3 5 I stay dtype: object",
     "markdown_length": 1636,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dropna — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dropna — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:13.567616",
+    "crawled_at": "2026-08-28T15:49:06.940658",
     "type": "webpage"
 }

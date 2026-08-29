@@ -1,0 +1,83 @@
+{
+    "id": "c7c5b9e50a84d4aedced1256208c34b8",
+    "url": "https://colah.github.io/posts/tags/modular_neural_networks.html",
+    "canonical_url": "https://colah.github.io/posts/tags/modular_neural_networks.html",
+    "title": "Modular Neural Networks Posts - colah's blog",
+    "status": 200,
+    "markdown": "Toggle navigation\ncolah's blog\nBlog\nAbout\nContact\nModular Neural Networks Posts\nConv Nets: A Modular Perspective\n-\nJuly 8, 2014\nEnable JavaScript for footnotes, Disqus comments, and other cool stuff.",
+    "markdown_length": 199,
+    "internal_links": [
+        {
+            "href": "https://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/posts/2014-07-Conv-Nets-Modular/",
+            "text": "Conv Nets: A Modular Perspective",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "https://colah.github.io/rss.xml",
+            "text": "RSS feed",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Modular Neural Networks Posts - colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "https://colah.github.io/posts/2014-07-Conv-Nets-Modular/"
+    },
+    "crawled_at": "2026-08-28T15:40:32.692863",
+    "type": "webpage"
+}

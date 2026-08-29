@@ -2,7 +2,7 @@
     "id": "fbb86c261dde699410d4fcae2a61dc4a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.skew.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.skew.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.skew — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.skew — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.skew#\n\n- \nDataFrameGroupBy.skew(*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return unbiased skew within groups. Normalized by N-1. \n  - Parameters:\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments to be passed to the function. Deprecated since version 3.1.0: Passing `**kwargs` to DataFrameGroupBy.skew is deprecated\nand will be removed in a future version of pandas.\n  - Returns:\n    - DataFrame\n    - Unbiased skew within groups.\n See also \n  - `DataFrame.skew`\n  - Return unbiased skew over requested axis.\n Examples >>> arrays = [ ... [\"falcon\", \"parrot\", \"cockatoo\", \"kiwi\", \"lion\", \"monkey\", \"rabbit\"], ... [\"bird\", \"bird\", \"bird\", \"bird\", \"mammal\", \"mammal\", \"mammal\"], ... ] >>> index = pd.MultiIndex.from_arrays(arrays, names=(\"name\", \"class\")) >>> df = pd.DataFrame( ... {\"max_speed\": [389.0, 24.0, 70.0, np.nan, 80.5, 21.5, 15.0]}, ... index=index, ... ) >>> df max_speed name class falcon bird 389.0 parrot bird 24.0 cockatoo bird 70.0 kiwi bird NaN lion mammal 80.5 monkey mammal 21.5 rabbit mammal 15.0 >>> gb = df.groupby([\"class\"]) >>> gb.skew() max_speed class bird 1.628296 mammal 1.669046 >>> gb.skew(skipna=False) max_speed class bird NaN mammal 1.669046",
     "markdown_length": 1416,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.skew — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.skew — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:19.232459",
+    "crawled_at": "2026-08-28T17:57:15.866682",
     "type": "webpage"
 }

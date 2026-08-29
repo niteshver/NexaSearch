@@ -2,7 +2,7 @@
     "id": "7247dfe5072d79a3071cada664f5fc37",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.from_dummies.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.from_dummies.html",
-    "title": "pandas.from_dummies — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.from_dummies — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.from_dummies#\n\n- \npandas.from_dummies(*data* ,*sep=None* ,*default_category=None* )[source]#\n- Create a categorical `DataFrame` from a`DataFrame` of dummy variables.Inverts the operation performed by `get_dummies()` .\n  - Parameters:\n    - **data** DataFrame\n    - Data which contains dummy-coded variables in form of integer columns of 1’s and 0’s.\n    - **sep** str, default None\n    - Separator used in the column names of the dummy categories they are character indicating the separation of the categorical names from the prefixes. For example, if your column names are ‘prefix_A’ and ‘prefix_B’, you can strip the underscore by specifying sep=’_’.\n    - **default_category** None, Hashable or dict of Hashables, default None\n    - The default category is the implied category when a value has none of the listed categories specified with a one, i.e. if all dummies in a row are zero. Can be a single value for all variables or a dict directly mapping the default categories to a prefix of a variable. The default category will be coerced to the dtype of `data.columns` if such coercion is\nlossless, and will raise otherwise.\n  - Returns:\n    - DataFrame\n    - Categorical data decoded from the dummy input-data.\n  - Raises:\n    - ValueError\n      - When the input `DataFrame``data` contains NA values.\n      - When the input `DataFrame``data` contains column names with separators\nthat do not match the separator specified with`sep` .\n      - When a `dict` passed to`default_category` does not include an implied\ncategory for each prefix.\n      - When a value in `data` has more than one category assigned to it.\n      - When `default_category=None` and a value in`data` has no category\nassigned to it.\n    - TypeError\n      - When the input `data` is not of type`DataFrame` .\n      - When the input `DataFrame``data` contains non-dummy data.\n      - When the passed `sep` is of a wrong data type.\n      - When the passed `default_category` is of a wrong data type.\n See also \n  - `get_dummies()`\n  - Convert `Series` or`DataFrame` to dummy codes.\n  - `Categorical`\n  - Represent a categorical variable in classic.\n Notes The columns of the passed dummy data should only include 1’s and 0’s, or boolean values. Examples >>> df = pd.DataFrame({\"a\": [1, 0, 0, 1], \"b\": [0, 1, 0, 0], \"c\": [0, 0, 1, 0]}) >>> df a b c 0 1 0 0 1 0 1 0 2 0 0 1 3 1 0 0 >>> pd.from_dummies(df) 0 a 1 b 2 c 3 a >>> df = pd.DataFrame( ... { ... \"col1_a\": [1, 0, 1], ... \"col1_b\": [0, 1, 0], ... \"col2_a\": [0, 1, 0], ... \"col2_b\": [1, 0, 0], ... \"col2_c\": [0, 0, 1], ... } ... ) >>> df col1_a col1_b col2_a col2_b col2_c 0 1 0 0 1 0 1 0 1 1 0 0 2 1 0 0 0 1 >>> pd.from_dummies(df, sep=\"_\") col1 col2 0 a b 1 b a 2 a c >>> df = pd.DataFrame( ... { ... \"col1_a\": [1, 0, 0], ... \"col1_b\": [0, 1, 0], ... \"col2_a\": [0, 1, 0], ... \"col2_b\": [1, 0, 0], ... \"col2_c\": [0, 0, 0], ... } ... ) >>> df col1_a col1_b col2_a col2_b col2_c 0 1 0 0 1 0 1 0 1 1 0 0 2 0 0 0 0 0 >>> pd.from_dummies(df, sep=\"_\", default_category={\"col1\": \"d\", \"col2\": \"e\"}) col1 col2 0 a b 1 b a 2 d e",
     "markdown_length": 3054,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.from_dummies — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.from_dummies — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:22.138971",
+    "crawled_at": "2026-08-28T15:52:18.500115",
     "type": "webpage"
 }

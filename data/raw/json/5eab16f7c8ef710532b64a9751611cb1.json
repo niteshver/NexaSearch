@@ -2,7 +2,7 @@
     "id": "5eab16f7c8ef710532b64a9751611cb1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.ExponentialMovingWindow.cov.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.ExponentialMovingWindow.cov.html",
-    "title": "pandas.api.typing.ExponentialMovingWindow.cov — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.ExponentialMovingWindow.cov — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.ExponentialMovingWindow.cov#\n\n- \nExponentialMovingWindow.cov(*other=None* ,*pairwise=None* ,*bias=False* ,*numeric_only=False* )[source]#\n- Calculate the ewm (exponential weighted moment) sample covariance. The weighting is controlled by the `com` ,`span` ,`halflife` , or`alpha` parameter specified when calling`DataFrame.ewm()` or`Series.ewm()` .\n  - Parameters:\n    - **other** Series or DataFrame , optional\n    - If not supplied then will default to self and produce pairwise output.\n    - **pairwise** bool, default None\n    - If False then only matching columns between self and other will be used and the output will be a DataFrame. If True then all pairwise combinations will be calculated and the output will be a MultiIndex DataFrame in the case of DataFrame inputs. In the case of missing elements, only complete pairwise observations will be used.\n    - **bias** bool, default False\n    - Use a standard estimation bias correction.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `Series.ewm`\n  - Calling ewm with Series data.\n  - `DataFrame.ewm`\n  - Calling ewm with DataFrames.\n  - `Series.cov`\n  - Aggregating cov for Series.\n  - `DataFrame.cov`\n  - Aggregating cov for DataFrame.\n Examples >>> ser1 = pd.Series([1, 2, 3, 4]) >>> ser2 = pd.Series([10, 11, 13, 16]) >>> ser1.ewm(alpha=0.2).cov(ser2) 0 NaN 1 0.500000 2 1.524590 3 3.408836 dtype: float64",
     "markdown_length": 1563,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.ExponentialMovingWindow.cov — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.ExponentialMovingWindow.cov — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.986808",
+    "crawled_at": "2026-08-28T17:57:33.693377",
     "type": "webpage"
 }

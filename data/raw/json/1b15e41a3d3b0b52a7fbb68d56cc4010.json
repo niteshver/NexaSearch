@@ -2,7 +2,7 @@
     "id": "1b15e41a3d3b0b52a7fbb68d56cc4010",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.time.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.time.html",
-    "title": "pandas.Series.dt.time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dt.time#\n\n- Series.dt.time[source]#\n- Returns numpy array of `datetime.time` objects.The time part of the Timestamps. See also \n  - `DatetimeIndex.timetz`\n  - Returns numpy array of `datetime.time` objects with timezones. The time part of the Timestamps.\n  - `DatetimeIndex.date`\n  - Returns numpy array of python `datetime.date` objects. Namely, the date part of Timestamps without time and timezone information.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.time 0 10:00:00 1 11:00:00 dtype: object For DatetimeIndex: >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"] ... ) >>> idx.time array([datetime.time(10, 0), datetime.time(11, 0)], dtype=object)",
     "markdown_length": 881,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.time — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:15.778051",
+    "crawled_at": "2026-08-28T15:49:22.708120",
     "type": "webpage"
 }

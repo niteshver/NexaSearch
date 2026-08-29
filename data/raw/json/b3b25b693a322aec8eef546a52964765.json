@@ -2,7 +2,7 @@
     "id": "b3b25b693a322aec8eef546a52964765",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.format_index_names.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.format_index_names.html",
-    "title": "pandas.io.formats.style.Styler.format_index_names — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.format_index_names — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.format_index_names#\n\n- \nStyler.format_index_names(*formatter=None* ,*axis=0* ,*level=None* ,*na_rep=None* ,*precision=None* ,*decimal='.'* ,*thousands=None* ,*escape=None* ,*hyperlinks=None* )[source]#\n- Format the text display value of index names or column names. Added in version 3.0. \n  - Parameters:\n    - **formatter** str, callable, dict or None\n    - Object to define how values are displayed. See notes.\n    - **axis** {0, “index”, 1, “columns”}\n    - Whether to apply the formatter to the index or column headers.\n    - **level** int, str, list\n    - The level(s) over which to apply the generic formatter.\n    - **na_rep** str, optional\n    - Representation for missing values. If `na_rep` is None, no special formatting is applied.\n    - **precision** int, optional\n    - Floating point precision to use for display purposes, if not determined by the specified `formatter` .\n    - **decimal** str, default “.”\n    - Character used as decimal separator for floats, complex and integers.\n    - **thousands** str, optional, default None\n    - Character used as thousands separator for floats, complex and integers.\n    - **escape** str, optional\n    - Use ‘html’ to replace the characters `&` ,`<` ,`>` ,`'` , and`\"` in cell display string with HTML-safe sequences.\nUse ‘latex’ to replace the characters`&` ,`%` ,`$` ,`#` ,`_` ,`{` ,`}` ,`~` ,`^` , and`\\` in the cell display string with\nLaTeX-safe sequences.\nEscaping is done before`formatter` .\n    - **hyperlinks** {“html”, “latex”}, optional\n    - Convert string patterns containing https://, http://, ftp:// or www. to HTML <a> tags as clickable URL hyperlinks if “html”, or LaTeX href commands if “latex”.\n  - Returns:\n    - Styler\n    - Returns itself for chaining.\n  - Raises:\n    - ValueError\n    - If the formatter is a string and the dtypes are incompatible.\n See also \n  - `Styler.format_index`\n  - Format the text display value of index labels or column headers.\n Notes This method has a similar signature to `Styler.format_index()` . Since\nnames are generally label based, and often not numeric, the typical features\nexpected to be more frequently used here are`escape` and`hyperlinks` .Warning Styler.format_index_names is ignored when using the output format Styler.to_excel, since Excel and Python have inherently different formatting structures. Examples >>> df = pd.DataFrame( ... [[1, 2], [3, 4]], ... index=pd.Index([\"a\", \"b\"], name=\"idx\"), ... ) >>> df 0 1 idx a 1 2 b 3 4 >>> df.style.format_index_names(lambda x: x.upper(), axis=0) 0 1 IDX a 1 2 b 3 4",
     "markdown_length": 2567,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.format_index_names — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.format_index_names — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.575059",
+    "crawled_at": "2026-08-28T17:59:17.807307",
     "type": "webpage"
 }

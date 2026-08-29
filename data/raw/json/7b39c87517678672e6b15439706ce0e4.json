@@ -2,7 +2,7 @@
     "id": "7b39c87517678672e6b15439706ce0e4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.time.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.time.html",
-    "title": "pandas.Timestamp.time — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.time#\n\n- Timestamp.time()#\n- Return time object with same time but with tzinfo=None. This method extracts the time part of the Timestamp object, excluding any timezone information. It returns a datetime.time object which only represents the time (hours, minutes, seconds, and microseconds). See also \n  - `Timestamp.date`\n  - Return date object with same year, month and day.\n  - `Timestamp.tz_convert`\n  - Convert timezone-aware Timestamp to another time zone.\n  - `Timestamp.tz_localize`\n  - Localize the Timestamp to a timezone.\n Examples >>> ts = pd.Timestamp('2023-01-01 10:00:00') >>> ts Timestamp('2023-01-01 10:00:00') >>> ts.time() datetime.time(10, 0)",
     "markdown_length": 680,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.time — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:14.155850",
+    "crawled_at": "2026-08-28T15:51:25.756961",
     "type": "webpage"
 }

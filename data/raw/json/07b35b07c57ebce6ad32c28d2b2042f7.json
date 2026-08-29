@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.timetz.html"
     },
-    "crawled_at": "2026-08-26T06:50:06.464397",
+    "crawled_at": "2026-08-28T20:38:32.358198",
     "type": "webpage"
 }

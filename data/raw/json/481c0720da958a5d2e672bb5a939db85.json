@@ -2,7 +2,7 @@
     "id": "481c0720da958a5d2e672bb5a939db85",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.memory_usage.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.memory_usage.html",
-    "title": "pandas.Series.memory_usage — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.memory_usage — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.memory_usage#\n\n- \nSeries.memory_usage(*index=True* ,*deep=False* )[source]#\n- Return the memory usage of the Series. The memory usage can optionally include the contribution of the index and of elements of object dtype. \n  - Parameters:\n    - **index** bool, default True\n    - Specifies whether to include the memory usage of the Series index.\n    - **deep** bool, default False\n    - If True, introspect the data deeply by interrogating object dtypes for system-level memory consumption, and include it in the returned value.\n  - Returns:\n    - int\n    - Bytes of memory consumed.\n See also \n  - `numpy.ndarray.nbytes`\n  - Total bytes consumed by the elements of the array.\n  - `DataFrame.memory_usage`\n  - Bytes consumed by a DataFrame.\n Examples >>> s = pd.Series(range(3)) >>> s.memory_usage() 156 Not including the index gives the size of the rest of the data, which is necessarily smaller: >>> s.memory_usage(index=False) 24 The memory footprint of object values is ignored by default: >>> s = pd.Series([\"a\", \"b\"]) >>> s.values <ArrowStringArray> ['a', 'b'] Length: 2, dtype: str >>> s.memory_usage() 150 >>> s.memory_usage(deep=True) 150",
     "markdown_length": 1162,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.memory_usage — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.memory_usage — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:19.249684",
+    "crawled_at": "2026-08-28T15:49:48.279116",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "149b817e04d8bd63d189c91b02d738a5",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.first.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.first.html",
-    "title": "pandas.api.typing.Resampler.first — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.api.typing.Resampler.first — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.first#\n\n- \nfinal Resampler.first(*numeric_only=False* ,*min_count=0* ,*skipna=True* )[source]#\n- Compute the first non-null entry of each column. This method returns the first value encountered in each resampled time period, skipping missing values by default. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - **min_count** int, default 0\n    - The required number of valid values to perform the operation. If fewer than `min_count` non-NA values are present the result will be NA.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire group is NA, the result will be NA.\n  - Returns:\n    - Series or DataFrame\n    - First values within each group.\n See also \n  - `core.resample.Resampler.last`\n  - Compute the last non-null value in each group.\n  - `core.resample.Resampler.mean`\n  - Compute mean of groups, excluding missing values.\n Examples >>> s = pd.Series( ... [1, 2, 3, 4], ... index=pd.DatetimeIndex( ... [\"2023-01-01\", \"2023-01-15\", \"2023-02-01\", \"2023-02-15\"] ... ), ... ) >>> s 2023-01-01 1 2023-01-15 2 2023-02-01 3 2023-02-15 4 dtype: int64 >>> s.resample(\"MS\").first() 2023-01-01 1 2023-02-01 3 Freq: MS, dtype: int64",
     "markdown_length": 1252,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.first — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.api.typing.Resampler.first — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-10T11:47:04.437250",
+    "crawled_at": "2026-08-28T17:57:41.454193",
     "type": "webpage"
 }

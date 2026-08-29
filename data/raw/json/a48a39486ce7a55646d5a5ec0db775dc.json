@@ -2,7 +2,7 @@
     "id": "a48a39486ce7a55646d5a5ec0db775dc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name.html",
-    "title": "pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name#\n\n- \nAbstractHolidayCalendar.rule_from_name(*name* )[source]#\n- Return the rule for the holiday with the given name. Searches `self.rules` for a`Holiday` whose`name` attribute matches exactly.\n  - Parameters:\n    - **name** str\n    - Name of the holiday whose rule should be returned.\n  - Returns:\n    - Holiday or None\n    - The matching rule from `self.rules` , or None if no rule with\nthe given name is found.\n See also \n  - `tseries.holiday.AbstractHolidayCalendar.holidays`\n  - Return a curve with holidays between start_date and end_date.\n Examples >>> from pandas.tseries.holiday import AbstractHolidayCalendar, USLaborDay >>> class MyCalendar(AbstractHolidayCalendar): ... rules = [USLaborDay] >>> MyCalendar().rule_from_name(\"Labor Day\") Holiday: Labor Day (month=9, day=1, offset=<DateOffset: weekday=MO(+1)>)",
     "markdown_length": 883,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.AbstractHolidayCalendar.rule_from_name — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.501314",
+    "crawled_at": "2026-08-28T17:59:59.153970",
     "type": "webpage"
 }

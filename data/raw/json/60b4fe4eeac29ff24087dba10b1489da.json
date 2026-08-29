@@ -2,10 +2,10 @@
     "id": "60b4fe4eeac29ff24087dba10b1489da",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.PeriodArray.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.PeriodArray.html",
-    "title": "pandas.arrays.PeriodArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.arrays.PeriodArray — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.arrays.PeriodArray#\n\n- \nclass pandas.arrays.PeriodArray(*values* ,*dtype=None* ,*copy=False* )[source]#\n- Pandas ExtensionArray for storing Period data. Users should use `array()` to create new instances.\n  - Parameters:\n    - **values** Union[PeriodArray, Series[period], ndarray[int], PeriodIndex]\n    - The data to store. These should be arrays that can be directly converted to ordinals without inference or copy (PeriodArray, ndarray[int64]), or a box around such an array (Series[period], PeriodIndex).\n    - **dtype** PeriodDtype, optional\n    - A PeriodDtype instance from which to extract a freq. If both freq and dtype are specified, then the frequencies must match.\n    - **copy** bool, default False\n    - Whether to copy the ordinals before storing.\n Attributes **None**Methods **None**See also \n  - `Period`\n  - Represents a period of time.\n  - `PeriodIndex`\n  - Immutable Index for period data.\n  - `period_range`\n  - Create a fixed-frequency PeriodArray.\n  - `array`\n  - Construct a pandas array.\n Notes There are two components to a PeriodArray \n  - ordinals : integer ndarray\n  - freq : pd.tseries.offsets.Offset\n The values are physically stored as a 1-D ndarray of integers. These are called “ordinals” and represent some kind of offset from a base. The freq indicates the span covered by each element of the array. All elements in the PeriodArray have the same freq. Examples >>> pd.arrays.PeriodArray(pd.PeriodIndex([\"2023-01-01\", \"2023-01-02\"], freq=\"D\")) <PeriodArray> ['2023-01-01', '2023-01-02'] Length: 2, dtype: period[D]",
-    "markdown_length": 1558,
+    "markdown": "# pandas.arrays.PeriodArray#\n\n- \nclass pandas.arrays.PeriodArray(*values* ,*dtype=None* ,*copy=False* )[source]#\n- Pandas ExtensionArray for storing Period data. Users should use `array()` to create new instances.\n  - Parameters:\n    - **values** Union[PeriodArray, Series[period], ndarray[int], PeriodIndex]\n    - The data to store. These should be arrays that can be directly converted to ordinals without inference or copy (PeriodArray, ndarray[int64]), or a box around such an array (Series[period], PeriodIndex).\n    - **dtype** PeriodDtype, optional\n    - A PeriodDtype instance from which to extract a freq. If both freq and dtype are specified, then the frequencies must match.\n    - **copy** bool, default False\n    - Whether to copy the ordinals before storing.\n See also \n  - `Period`\n  - Represents a period of time.\n  - `PeriodIndex`\n  - Immutable Index for period data.\n  - `period_range`\n  - Create a fixed-frequency PeriodArray.\n  - `array`\n  - Construct a pandas array.\n Notes There are two components to a PeriodArray \n  - ordinals : integer ndarray\n  - freq : pd.tseries.offsets.Offset\n The values are physically stored as a 1-D ndarray of integers. These are called “ordinals” and represent some kind of offset from a base. The freq indicates the span covered by each element of the array. All elements in the PeriodArray have the same freq. Examples >>> pd.arrays.PeriodArray(pd.PeriodIndex([\"2023-01-01\", \"2023-01-02\"], freq=\"D\")) <PeriodArray> ['2023-01-01', '2023-01-02'] Length: 2, dtype: period[D]",
+    "markdown_length": 1523,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.arrays.PeriodArray.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.arrays.PeriodArray — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.arrays.PeriodArray — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:16.451758",
+    "crawled_at": "2026-08-28T15:52:12.212712",
     "type": "webpage"
 }

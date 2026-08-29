@@ -231,9 +231,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "https://pandas.pydata.org/community/blog/pandas-3.0.html"
+        "depth": 1,
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/extending.html"
     },
-    "crawled_at": "2026-08-26T06:52:08.642823",
+    "crawled_at": "2026-08-28T15:45:25.244271",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "6b7a494c83bdaf05821d4da844150dfc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.sort.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.sort.html",
-    "title": "pandas.api.extensions.ExtensionArray.sort — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.sort — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.sort#\n\n- \nExtensionArray.sort(*** ,*ascending=True* ,*kind='quicksort'* ,*na_position='last'* )[source]#\n- Sort the array in-place. Reorders the elements of the array using `argsort()` and writes the\nsorted result back through`self[:]` . Subclasses backed by immutable\nstorage may override this method to raise`NotImplementedError` .\n  - Parameters:\n    - **ascending** bool, default True\n    - Whether to sort in ascending order.\n    - **kind** {‘quicksort’, ‘mergesort’, ‘heapsort’, ‘stable’}, default ‘quicksort’\n    - Sorting algorithm.\n    - **na_position** {‘first’, ‘last’}, default ‘last’\n    - If ‘first’, put NaN values at the beginning. If ‘last’, put NaN values at the end.\n  - Returns:\n    - None\n    - This method mutates the array in place and does not return a value.\n See also \n  - `ExtensionArray.argsort`\n  - Return the indices that would sort this array.\n Examples >>> arr = pd.array([3, 1, 2, 5, 4]) >>> arr.sort() >>> arr <IntegerArray> [1, 2, 3, 4, 5] Length: 5, dtype: Int64",
     "markdown_length": 1037,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.sort — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.sort — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.271224",
+    "crawled_at": "2026-08-28T15:51:48.150199",
     "type": "webpage"
 }

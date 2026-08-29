@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.RangeIndex.html"
     },
-    "crawled_at": "2026-08-26T06:51:12.393165",
+    "crawled_at": "2026-08-28T20:46:05.068408",
     "type": "webpage"
 }

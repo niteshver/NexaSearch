@@ -2,7 +2,7 @@
     "id": "dd5888e9108b7ddc83fefeb654034690",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_number.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_number.html",
-    "title": "pandas.api.types.is_number — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_number — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_number#\n\n- \npandas.api.types.is_number(*obj* )[source]#\n- Check if the object is a number. Returns True when the object is a number, and False if is not. \n  - Parameters:\n    - **obj** any type\n    - The object to check if is a number.\n  - Returns:\n    - bool\n    - Whether obj is a number or not.\n See also \n  - `api.types.is_integer`\n  - Checks a subgroup of numbers.\n Examples >>> from pandas.api.types import is_number >>> is_number(1) True >>> is_number(7.15) True Booleans are valid because they are int subclass. >>> is_number(False) True >>> is_number(\"foo\") False >>> is_number(\"5\") False",
     "markdown_length": 619,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_number — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_number — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:26.386579",
+    "crawled_at": "2026-08-28T15:52:02.907502",
     "type": "webpage"
 }

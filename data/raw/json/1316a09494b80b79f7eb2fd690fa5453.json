@@ -2,7 +2,7 @@
     "id": "1316a09494b80b79f7eb2fd690fa5453",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.droplevel.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.droplevel.html",
-    "title": "pandas.Series.droplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.droplevel — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.droplevel#\n\n- \nSeries.droplevel(*level* ,*axis=0* )[source]#\n- Return Series/DataFrame with requested index / column level(s) removed. This method is useful for simplifying a MultiIndex by removing one or more levels. \n  - Parameters:\n    - **level** int, str, or list-like\n    - If a string is given, must be the name of a level If list-like, elements must be names or positional indexes of levels.\n    - **axis** {0 or ‘index’, 1 or ‘columns’}, default 0\n    - Axis along which the level(s) is removed: \n      - 0 or ‘index’: remove level(s) in column.\n      - 1 or ‘columns’: remove level(s) in row.\n For Series this parameter is unused and defaults to 0.\n  - Returns:\n    - Series/DataFrame\n    - Series/DataFrame with requested index / column level(s) removed.\n See also \n  - `DataFrame.replace`\n  - Replace values given in to_replace with value.\n  - `DataFrame.pivot`\n  - Return reshaped DataFrame organized by given index / column values.\n Examples >>> df = ( ... pd.DataFrame([[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]]) ... .set_index([0, 1]) ... .rename_axis([\"a\", \"b\"]) ... ) >>> df.columns = pd.MultiIndex.from_tuples( ... [(\"c\", \"e\"), (\"d\", \"f\")], names=[\"level_1\", \"level_2\"] ... ) >>> df level_1 c d level_2 e f a b 1 2 3 4 5 6 7 8 9 10 11 12 >>> df.droplevel(\"a\") level_1 c d level_2 e f b 2 3 4 6 7 8 10 11 12 >>> df.droplevel(\"level_2\", axis=1) level_1 c d a b 1 2 3 4 5 6 7 8 9 10 11 12",
     "markdown_length": 1423,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.droplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.droplevel — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:13.504430",
+    "crawled_at": "2026-08-28T15:49:06.251506",
     "type": "webpage"
 }

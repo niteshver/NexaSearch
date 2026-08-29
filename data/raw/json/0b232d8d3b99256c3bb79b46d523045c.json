@@ -2,7 +2,7 @@
     "id": "0b232d8d3b99256c3bb79b46d523045c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.day_of_week.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.day_of_week.html",
-    "title": "pandas.Timestamp.day_of_week — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.day_of_week — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.day_of_week#\n\n- Timestamp.day_of_week#\n- Return day of the week. Days are numbered Monday=0 through Sunday=6. \n  - Returns:\n    - int\n See also \n  - `Timestamp.isoweekday`\n  - Return the ISO day of the week represented by the date.\n  - `Timestamp.weekday`\n  - Return the day of the week represented by the date.\n  - `Timestamp.day_of_year`\n  - Return day of the year.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.day_of_week 5",
     "markdown_length": 452,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.day_of_week — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.day_of_week — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:54.280855",
+    "crawled_at": "2026-08-28T15:51:10.530489",
     "type": "webpage"
 }

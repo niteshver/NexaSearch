@@ -2,7 +2,7 @@
     "id": "bbdfc34d8d502cca40aa8cf967d6c96e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_dtype_equal.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_dtype_equal.html",
-    "title": "pandas.api.types.is_dtype_equal — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_dtype_equal — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_dtype_equal#\n\n- \npandas.api.types.is_dtype_equal(*source* ,*target* )[source]#\n- Check if two dtypes are equal. This function compares two dtype specifications, handling both NumPy dtypes and pandas ExtensionDtypes. String representations of dtypes are also supported and will be resolved before comparison. \n  - Parameters:\n    - **source** type or str\n    - The first dtype to compare.\n    - **target** type or str\n    - The second dtype to compare.\n  - Returns:\n    - boolean\n    - Whether or not the two dtypes are equal.\n See also \n  - `api.types.is_categorical_dtype`\n  - Check whether the provided array or dtype is of the Categorical dtype.\n  - `api.types.is_string_dtype`\n  - Check whether the provided array or dtype is of the string dtype.\n  - `api.types.is_object_dtype`\n  - Check whether an array-like or dtype is of the object dtype.\n Examples >>> from pandas.api.types import is_dtype_equal >>> is_dtype_equal(int, float) False >>> is_dtype_equal(\"int\", int) True >>> is_dtype_equal(object, \"category\") False >>> from pandas.api.types import CategoricalDtype >>> is_dtype_equal(CategoricalDtype(), \"category\") True >>> from pandas.api.types import DatetimeTZDtype >>> is_dtype_equal(DatetimeTZDtype(tz=\"UTC\"), \"datetime64\") False",
     "markdown_length": 1266,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_dtype_equal — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_dtype_equal — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:02.627740",
+    "crawled_at": "2026-08-28T15:51:57.588565",
     "type": "webpage"
 }

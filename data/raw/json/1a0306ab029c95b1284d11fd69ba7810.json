@@ -2,7 +2,7 @@
     "id": "1a0306ab029c95b1284d11fd69ba7810",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.hasnans.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.hasnans.html",
-    "title": "pandas.Series.hasnans — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.hasnans — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.hasnans#\n\n- property Series.hasnans[source]#\n- Return True if there are any NaNs. Enables various performance speedups. \n  - Returns:\n    - bool\n See also \n  - `Series.isna`\n  - Detect missing values.\n  - `Series.notna`\n  - Detect existing (non-missing) values.\n Examples >>> s = pd.Series([1, 2, 3, None]) >>> s 0 1.0 1 2.0 2 3.0 3 NaN dtype: float64 >>> s.hasnans True",
     "markdown_length": 386,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.hasnans — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.hasnans — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:17.617542",
+    "crawled_at": "2026-08-28T15:49:35.705026",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "a2c60cca455d4fc5f9e5b81b9fadbd18",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.year.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.year.html",
-    "title": "pandas.PeriodIndex.year — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.PeriodIndex.year — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.year#\n\n- property PeriodIndex.year[source]#\n- The year of the period. Returns the year component for each period in the index. See also \n  - `PeriodIndex.day_of_year`\n  - The ordinal day of the year.\n  - `PeriodIndex.dayofyear`\n  - The ordinal day of the year.\n  - `PeriodIndex.is_leap_year`\n  - Logical indicating if the date belongs to a leap year.\n  - `PeriodIndex.weekofyear`\n  - The week ordinal of the year.\n  - `PeriodIndex.year`\n  - The year of the period.\n Examples >>> idx = pd.PeriodIndex([\"2023\", \"2024\", \"2025\"], freq=\"Y\") >>> idx.year Index([2023, 2024, 2025], dtype='int64')",
     "markdown_length": 610,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.year — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.PeriodIndex.year — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:54.729164",
+    "crawled_at": "2026-08-28T15:48:40.660651",
     "type": "webpage"
 }

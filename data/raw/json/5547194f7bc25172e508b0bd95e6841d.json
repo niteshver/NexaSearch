@@ -2,7 +2,7 @@
     "id": "5547194f7bc25172e508b0bd95e6841d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.asi8.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.TimedeltaIndex.asi8.html",
-    "title": "pandas.TimedeltaIndex.asi8 — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.TimedeltaIndex.asi8 — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.TimedeltaIndex.asi8#\n\n- property TimedeltaIndex.asi8[source]#\n- Return Integer representation of the values. For `DatetimeIndex` and`TimedeltaIndex` , the\nvalues are the number of time units (determined by the index\nresolution) since the epoch. For`PeriodIndex` , the\nvalues are ordinals.\n  - Returns:\n    - numpy.ndarray\n    - An ndarray with int64 dtype.\n See also \n  - `Index.values`\n  - Return an array representing the data in the Index, using native types (datetime64, timedelta64) rather than int64.\n  - `Index.to_numpy`\n  - Return a NumPy ndarray of the index values.\n Examples For `DatetimeIndex` with default microsecond resolution:>>> idx = pd.DatetimeIndex([\"2023-01-01\", \"2023-01-02\"], dtype=\"datetime64[us]\") >>> idx.asi8 array([1672531200000000, 1672617600000000]) For `TimedeltaIndex` with millisecond resolution:>>> idx = pd.TimedeltaIndex([\"1 day\", \"2 days\"], dtype=\"timedelta64[ms]\") >>> idx.asi8 array([ 86400000, 172800000]) For `PeriodIndex` :>>> idx = pd.PeriodIndex([\"2023-01\", \"2023-02\", \"2023-03\"], freq=\"M\") >>> idx.asi8 array([636, 637, 638])",
     "markdown_length": 1079,
@@ -251,14 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.TimedeltaIndex.asi8 — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.TimedeltaIndex.asi8 — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html",
-        "score": 0.05454545671289617
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:55.245654",
+    "crawled_at": "2026-08-28T15:51:00.662509",
     "type": "webpage"
 }

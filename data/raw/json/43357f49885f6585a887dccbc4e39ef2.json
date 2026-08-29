@@ -2,7 +2,7 @@
     "id": "43357f49885f6585a887dccbc4e39ef2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.items.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.items.html",
-    "title": "pandas.Series.items — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.items — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.items#\n\n- Series.items()[source]#\n- Lazily iterate over (index, value) tuples. This method returns an iterable tuple (index, value). This is convenient if you want to create a lazy iterator. \n  - Returns:\n    - iterable\n    - Iterable of tuples containing the (index, value) pairs from a Series.\n See also \n  - `DataFrame.items`\n  - Iterate over (column name, Series) pairs.\n  - `DataFrame.iterrows`\n  - Iterate over DataFrame rows as (index, Series) pairs.\n Examples >>> s = pd.Series([\"A\", \"B\", \"C\"]) >>> for index, value in s.items(): ... print(f\"Index : {index}, Value : {value}\") Index : 0, Value : A Index : 1, Value : B Index : 2, Value : C",
     "markdown_length": 663,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.items — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.items — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:18.479255",
+    "crawled_at": "2026-08-28T15:49:41.862068",
     "type": "webpage"
 }

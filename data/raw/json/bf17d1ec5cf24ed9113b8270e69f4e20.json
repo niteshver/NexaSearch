@@ -2,7 +2,7 @@
     "id": "bf17d1ec5cf24ed9113b8270e69f4e20",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dtype.html",
-    "title": "pandas.Series.dtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dtype#\n\n- property Series.dtype[source]#\n- Return the dtype object of the underlying data. This is the dtype of the array backing the Series (or the single dtype for a DataFrame column). For extension types, it returns the corresponding extension dtype. See also \n  - `Series.dtypes`\n  - Return the dtype object of the underlying data.\n  - `Series.astype`\n  - Cast a pandas object to a specified dtype dtype.\n  - `Series.convert_dtypes`\n  - Convert columns to the best possible dtypes using dtypes supporting pd.NA.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.dtype dtype('int64')",
     "markdown_length": 597,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.ndim.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.401888",
+    "crawled_at": "2026-08-28T15:49:27.227319",
     "type": "webpage"
 }

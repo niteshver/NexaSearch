@@ -2,7 +2,7 @@
     "id": "c1ff5740d702b65202fa48f3da9e3cbf",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_tooltips.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.set_tooltips.html",
-    "title": "pandas.io.formats.style.Styler.set_tooltips — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.set_tooltips — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.set_tooltips#\n\n- \nStyler.set_tooltips(*ttips* ,*props=None* ,*css_class=None* ,*as_title_attribute=False* )[source]#\n- Set the DataFrame of strings on `Styler` generating`:hover` tooltips.These string based tooltips are only applicable to `<td>` HTML elements,\nand cannot be used for column or index headers.\n  - Parameters:\n    - **ttips** DataFrame\n    - DataFrame containing strings that will be translated to tooltips, mapped by identical column and index values that must exist on the underlying Styler data. None, NaN values, and empty strings will be ignored and not affect the rendered HTML.\n    - **props** list-like or str, optional\n    - List of (attr, value) tuples or a valid CSS string. If `None` adopts\nthe internal default values described in notes.\n    - **css_class** str, optional\n    - Name of the tooltip class used in CSS, should conform to HTML standards. Only useful if integrating tooltips with external CSS. If `None` uses the\ninternal default value ‘pd-t’.\n    - **as_title_attribute** bool, default False\n    - Add the tooltip text as title attribute to resultant <td> element. If True then props and css_class arguments are ignored.\n  - Returns:\n    - Styler\n      - Instance of class with DataFrame set for strings on `Styler`\n      - generating `:hover` tooltips.\n    - Instance of class with DataFrame set for strings on \n See also \n  - `Styler.set_table_attributes`\n  - Set the table attributes added to the `<table>` HTML element.\n  - `Styler.set_table_styles`\n  - Set the table styles included within the `<style>` HTML element.\n Notes Tooltips are created by adding <span class=”pd-t”></span> to each data cell and then manipulating the table level CSS to attach pseudo hover and pseudo after selectors to produce the required the results. The default properties for the tooltip CSS class are: \n  - visibility: hidden\n  - position: absolute\n  - z-index: 1\n  - background-color: black\n  - color: white\n  - transform: translate(-20px, -20px)\n The property ‘visibility: hidden;’ is a key prerequisite to the hover functionality, and should always be included in any manual properties specification, using the `props` argument.Tooltips are not designed to be efficient, and can add large amounts of additional HTML for larger tables, since they also require that `cell_ids` is forced to True.If multiline tooltips are required, or if styling is not required and/or space is of concern, then utilizing as_title_attribute as True will store the tooltip on the <td> title attribute. This will cause no CSS to be generated nor will the <span> elements. Storing tooltips through the title attribute will mean that tooltip styling effects do not apply. Examples Basic application >>> df = pd.DataFrame(data=[[0, 1], [2, 3]]) >>> ttips = pd.DataFrame( ... data=[[\"Min\", \"\"], [np.nan, \"Max\"]], columns=df.columns, index=df.index ... ) >>> s = df.style.set_tooltips(ttips).to_html() Optionally controlling the tooltip visual display >>> df.style.set_tooltips( ... ttips, ... css_class=\"tt-add\", ... props=[ ... (\"visibility\", \"hidden\"), ... (\"position\", \"absolute\"), ... (\"z-index\", 1), ... ], ... ) >>> df.style.set_tooltips( ... ttips, ... css_class=\"tt-add\", ... props=\"visibility:hidden; position:absolute; z-index:1;\", ... ) ... Multiline tooltips with smaller size footprint >>> df.style.set_tooltips(ttips, as_title_attribute=True)",
     "markdown_length": 3394,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.set_tooltips — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.set_tooltips — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:47.735951",
+    "crawled_at": "2026-08-28T17:59:29.623405",
     "type": "webpage"
 }

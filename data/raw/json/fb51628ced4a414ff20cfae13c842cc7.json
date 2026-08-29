@@ -2,7 +2,7 @@
     "id": "fb51628ced4a414ff20cfae13c842cc7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.unique.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.unique.html",
-    "title": "pandas.unique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.unique — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.unique#\n\n- \npandas.unique(*values* )[source]#\n- Return unique values based on a hash table. Uniques are returned in order of appearance. This does NOT sort. Significantly faster than numpy.unique for long enough sequences. Includes NA values. \n  - Parameters:\n    - **values** 1d array-like\n    - The input array-like object containing values from which to extract unique values.\n  - Returns:\n    - Index, ExtensionArray or numpy.ndarray\n    - The return type depends on the type of the input: \n      - `Index` : when the input is an`Index` , the result is\nan`Index` (or a subclass such as`DatetimeIndex` ).\n      - `ExtensionArray` : when the input has an`ExtensionDtype` (for example`Categorical` ,\ntz-aware`datetime64` ,`IntervalArray` , a masked\ninteger/boolean/float array, an Arrow-backed array, or`NumpyExtensionArray` ), the result is an`ExtensionArray` of the same dtype.\n      - `numpy.ndarray` : for any other input (a NumPy-dtype`Series` , a`numpy.ndarray` , or any other 1-D\narray-like), the result is a`numpy.ndarray` .\n See also \n  - `Index.unique`\n  - Return unique values from an Index.\n  - `Series.unique`\n  - Return unique values of Series object.\n Notes When working with object-dtype arrays, boolean and integer values may not be distinguished since `True == 1` and`False == 0` in Python.>>> pd.unique(np.array([True, 1, False, 0], dtype=object)) array([True, False], dtype=object) Examples >>> pd.unique(pd.Series([2, 1, 3, 3])) array([2, 1, 3]) >>> pd.unique(pd.Series([2] + [1] * 5)) array([2, 1]) >>> pd.unique(pd.Series([pd.Timestamp(\"20160101\"), pd.Timestamp(\"20160101\")])) array(['2016-01-01T00:00:00.000000'], dtype='datetime64[us]') >>> pd.unique( ... pd.Series( ... [ ... pd.Timestamp(\"20160101\", tz=\"US/Eastern\"), ... pd.Timestamp(\"20160101\", tz=\"US/Eastern\"), ... ], ... dtype=\"M8[ns, US/Eastern]\", ... ) ... ) <DatetimeArray> ['2016-01-01 00:00:00-05:00'] Length: 1, dtype: datetime64[ns, US/Eastern] >>> pd.unique( ... pd.Index( ... [ ... pd.Timestamp(\"20160101\", tz=\"US/Eastern\"), ... pd.Timestamp(\"20160101\", tz=\"US/Eastern\"), ... ], ... dtype=\"M8[ns, US/Eastern]\", ... ) ... ) DatetimeIndex(['2016-01-01 00:00:00-05:00'], dtype='datetime64[ns, US/Eastern]', freq=None) >>> pd.unique(np.array(list(\"baabc\"), dtype=\"O\")) array(['b', 'a', 'c'], dtype=object) An unordered Categorical will return categories in the order of appearance. >>> pd.unique(pd.Series(pd.Categorical(list(\"baabc\")))) ['b', 'a', 'c'] Categories (3, str): ['a', 'b', 'c'] >>> pd.unique(pd.Series(pd.Categorical(list(\"baabc\"), categories=list(\"abc\")))) ['b', 'a', 'c'] Categories (3, str): ['a', 'b', 'c'] An ordered Categorical preserves the category ordering. >>> pd.unique( ... pd.Series( ... pd.Categorical(list(\"baabc\"), categories=list(\"abc\"), ordered=True) ... ) ... ) ['b', 'a', 'c'] Categories (3, str): ['a' < 'b' < 'c'] An array of tuples >>> pd.unique(pd.Series([(\"a\", \"b\"), (\"b\", \"a\"), (\"a\", \"c\"), (\"b\", \"a\")]).values) array([('a', 'b'), ('b', 'a'), ('a', 'c')], dtype=object) A NumpyExtensionArray of complex >>> pd.unique(pd.array([1 + 1j, 2, 3])) <NumpyExtensionArray> [(1+1j), (2+0j), (3+0j)] Length: 3, dtype: complex128",
     "markdown_length": 3153,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.unique — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.unique — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.factorize.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:49:49.763659",
+    "crawled_at": "2026-08-28T15:52:32.177025",
     "type": "webpage"
 }

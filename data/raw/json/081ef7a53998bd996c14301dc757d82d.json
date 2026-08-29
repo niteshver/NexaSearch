@@ -2,7 +2,7 @@
     "id": "081ef7a53998bd996c14301dc757d82d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.NaT.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.NaT.html",
-    "title": "pandas.NaT — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.NaT — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.NaT#\n\n- pandas.NaT = NaT#\n- (N)ot-(A)-(T)ime, the time equivalent of NaN. NaT is used to denote missing or null values in datetime and timedelta objects in pandas. It functions similarly to how NaN is used for numerical data. Operations with NaT will generally propagate the NaT value, similar to NaN. NaT can be used in pandas data structures like Series and DataFrame to represent missing datetime values. It is useful in data analysis and time series analysis when working with incomplete or sparse time-based data. Pandas provides robust handling of NaT to ensure consistency and reliability in computations involving datetime objects. See also Examples >>> pd.DataFrame([pd.Timestamp(\"2023\"), np.nan], columns=[\"col_1\"]) col_1 0 2023-01-01 1 NaT",
     "markdown_length": 759,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.NaT — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.NaT — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:49:08.938249",
+    "crawled_at": "2026-08-28T15:48:21.132378",
     "type": "webpage"
 }

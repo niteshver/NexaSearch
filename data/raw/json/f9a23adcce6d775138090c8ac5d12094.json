@@ -2,7 +2,7 @@
     "id": "f9a23adcce6d775138090c8ac5d12094",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.utcnow.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.utcnow.html",
-    "title": "pandas.Timestamp.utcnow — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.utcnow — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.utcnow#\n\n- classmethod Timestamp.utcnow()#\n- Return a new Timestamp representing UTC day and time. Deprecated since version 3.0.0: `Timestamp.utcnow` is deprecated and will be removed in a future\nversion. Use`Timestamp.now('UTC')` instead.See also \n  - `Timestamp`\n  - Constructs an arbitrary datetime.\n  - `Timestamp.now`\n  - Return the current local date and time, which can be timezone-aware.\n  - `Timestamp.today`\n  - Return the current local date and time with timezone information set to None.\n  - `to_datetime`\n  - Convert argument to datetime.\n  - `date_range`\n  - Return a fixed frequency DatetimeIndex.\n  - `Timestamp.utctimetuple`\n  - Return UTC time tuple, compatible with time.localtime().\n Examples >>> pd.Timestamp.utcnow() Timestamp('2020-11-16 22:50:18.092888+0000', tz='UTC')",
     "markdown_length": 812,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.utcnow — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.utcnow — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:31.559166",
+    "crawled_at": "2026-08-28T15:51:32.931269",
     "type": "webpage"
 }

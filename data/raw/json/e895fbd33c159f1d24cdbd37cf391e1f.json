@@ -2,7 +2,7 @@
     "id": "e895fbd33c159f1d24cdbd37cf391e1f",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.7.2.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.7.2.html",
-    "title": "Version 0.7.2 (March 16, 2012) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "Version 0.7.2 (March 16, 2012) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# Version 0.7.2 (March 16, 2012)#\n\nThis release targets bugs in 0.7.1, and adds a few minor features.\n\n## New features#\n\n\nAdd additional tie-breaking methods in DataFrame.rank (GH 874)\n\nAdd ascending parameter to rank in Series, DataFrame (GH 875)\n\nAdd coerce_float option to DataFrame.from_records (GH 893)\n\nAdd sort_columns parameter to allow unsorted plots (GH 918)\n\nEnable column access via attributes on GroupBy (GH 882)\n\nCan pass dict of values to DataFrame.fillna (GH 661)\n\nCan select multiple hierarchical groups by passing list of values in .ix (GH 134)\n\nAdd `axis` option to DataFrame.fillna (GH 174)\n\nAdd level keyword to `drop` for dropping values from a level (GH 159)\n\n\n## Performance improvements#\n\n## Contributors#\n\nA total of 12 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Adam Klein\n- Benjamin Gross +\n- Dan Birken +\n- Dieter Vandenbussche\n- Josh +\n- Thomas Kluyver\n- Travis N. Vaught +\n- Wes McKinney\n- Wouter Overmeire\n- claudiobertoldi +\n- elpres +\n- joshuaar +",
     "markdown_length": 1058,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Version 0.7.2 (March 16, 2012) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "Version 0.7.2 (March 16, 2012) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:52:08.761240",
+    "crawled_at": "2026-08-28T15:54:59.429668",
     "type": "webpage"
 }

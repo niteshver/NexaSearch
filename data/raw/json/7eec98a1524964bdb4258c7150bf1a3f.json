@@ -2,7 +2,7 @@
     "id": "7eec98a1524964bdb4258c7150bf1a3f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.partition.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.partition.html",
-    "title": "pandas.Series.str.partition — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.partition — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.partition#\n\n- \nSeries.str.partition(*sep=' '* ,*expand=True* )[source]#\n- Split the string at the first occurrence of sep. This method splits the string at the first occurrence of sep, and returns 3 elements containing the part before the separator, the separator itself, and the part after the separator. If the separator is not found, return 3 elements containing the string itself, followed by two empty strings. \n  - Parameters:\n    - **sep** str, default whitespace\n    - String to split on.\n    - **expand** bool, default True\n    - If True, return DataFrame/MultiIndex expanding dimensionality. If False, return Series/Index.\n  - Returns:\n    - DataFrame/MultiIndex or Series/Index of objects\n    - Returns appropriate type based on expand parameter with strings split based on the sep parameter.\n See also \n  - `rpartition`\n  - Split the string at the last occurrence of sep.\n  - `Series.str.split`\n  - Split strings around given separators.\n  - `str.partition`\n  - Standard library version.\n Examples >>> s = pd.Series([\"Linda van der Berg\", \"George Pitt-Rivers\"]) >>> s 0 Linda van der Berg 1 George Pitt-Rivers dtype: str >>> s.str.partition() 0 1 2 0 Linda van der Berg 1 George Pitt-Rivers To partition by the last space instead of the first one: >>> s.str.rpartition() 0 1 2 0 Linda van der Berg 1 George Pitt-Rivers To partition by something different than a space: >>> s.str.partition(\"-\") 0 1 2 0 Linda van der Berg 1 George Pitt - Rivers To return a Series containing tuples instead of a DataFrame: >>> s.str.partition(\"-\", expand=False) 0 (Linda van der Berg, , ) 1 (George Pitt, -, Rivers) dtype: object Also available on indices: >>> idx = pd.Index([\"X 123\", \"Y 999\"]) >>> idx Index(['X 123', 'Y 999'], dtype='str') Which will create a MultiIndex: >>> idx.str.partition() MultiIndex([('X', ' ', '123'), ('Y', ' ', '999')], ) Or an index with tuples with `expand=False` :>>> idx.str.partition(expand=False) Index([('X', ' ', '123'), ('Y', ' ', '999')], dtype='object')",
     "markdown_length": 2008,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.partition — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.partition — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:02.952884",
+    "crawled_at": "2026-08-28T15:50:27.554795",
     "type": "webpage"
 }

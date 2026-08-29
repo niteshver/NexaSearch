@@ -20,18 +20,6 @@
             "total_score": null
         },
         {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
             "href": "https://pandas.pydata.org/pandas-docs/version/2.3/index.html",
             "text": "",
             "title": "",
@@ -246,6 +234,18 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.3/whatsnew/v2.3.1.html",
+            "text": "What’s new in 2.3.1 (July 7, 2025)",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
@@ -258,6 +258,6 @@
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:52.620012",
+    "crawled_at": "2026-08-28T17:55:24.313746",
     "type": "webpage"
 }

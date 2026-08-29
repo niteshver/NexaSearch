@@ -2,7 +2,7 @@
     "id": "b5db0a44eb15d966eea1b3e62fd4c7bb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.count.html",
-    "title": "pandas.Series.str.count — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.count — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.count#\n\n- \nSeries.str.count(*pat* ,*flags=0* )[source]#\n- Count occurrences of pattern in each string of the Series/Index. This function is used to count the number of times a particular regex pattern is repeated in each of the string elements of the `Series` .\n  - Parameters:\n    - **pat** str\n    - Valid regular expression.\n    - **flags** int, default 0, meaning no flags\n    - Flags for the re module. For a complete list, see here.\n  - Returns:\n    - Series or Index\n    - Same type as the calling object containing the integer counts.\n See also Notes Some characters need to be escaped when passing in pat. eg. `'$'` has a special meaning in regex and must be escaped when\nfinding this literal character.Examples >>> s = pd.Series([\"A\", \"B\", \"Aaba\", \"Baca\", np.nan, \"CABA\", \"cat\"]) >>> s.str.count(\"a\") 0 0.0 1 0.0 2 2.0 3 2.0 4 NaN 5 0.0 6 1.0 dtype: float64 Escape `'$'` to find the literal dollar sign.>>> s = pd.Series([\"$\", \"B\", \"Aab$\", \"$$ca\", \"C$B$\", \"cat\"]) >>> s.str.count(\"\\\\$\") 0 1 1 0 2 1 3 2 4 2 5 0 dtype: int64 This is also available on Index >>> pd.Index([\"A\", \"A\", \"Aaba\", \"cat\"]).str.count(\"a\") Index([0, 0, 2, 1], dtype='int64')",
     "markdown_length": 1175,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.count — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.count — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.007385",
+    "crawled_at": "2026-08-28T15:50:16.173458",
     "type": "webpage"
 }

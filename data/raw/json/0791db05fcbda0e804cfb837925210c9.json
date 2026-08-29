@@ -2,7 +2,7 @@
     "id": "0791db05fcbda0e804cfb837925210c9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.nsmallest.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.nsmallest.html",
-    "title": "pandas.DataFrame.nsmallest — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.nsmallest — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.nsmallest#\n\n- \nDataFrame.nsmallest(*n* ,*columns* ,*keep='first'* )[source]#\n- Return the first n rows ordered by columns in ascending order. Return the first n rows with the smallest values in columns, in ascending order. The columns that are not specified are returned as well, but not used for ordering. This method is equivalent to `df.sort_values(columns, ascending=True).head(n)` , but more\nperformant.\n  - Parameters:\n    - **n** int\n    - Number of items to retrieve.\n    - **columns** list or str\n    - Column name or names to order by.\n    - **keep** {‘first’, ‘last’, ‘all’}, default ‘first’\n    - Where there are duplicate values: \n      - `first` : take the first occurrence.\n      - `last` : take the last occurrence.\n      - `all` : keep all the ties of the largest item even if it means\nselecting more than`n` items.\n  - Returns:\n    - DataFrame\n    - DataFrame with the first n rows ordered by columns in ascending order.\n See also \n  - `DataFrame.nlargest`\n  - Return the first n rows ordered by columns in descending order.\n  - `DataFrame.sort_values`\n  - Sort DataFrame by the values.\n  - `DataFrame.head`\n  - Return the first n rows without re-ordering.\n Examples >>> df = pd.DataFrame( ... { ... \"population\": [ ... 59000000, ... 65000000, ... 434000, ... 434000, ... 434000, ... 337000, ... 337000, ... 11300, ... 11300, ... ], ... \"GDP\": [1937894, 2583560, 12011, 4520, 12128, 17036, 182, 38, 311], ... \"alpha-2\": [\"IT\", \"FR\", \"MT\", \"MV\", \"BN\", \"IS\", \"NR\", \"TV\", \"AI\"], ... }, ... index=[ ... \"Italy\", ... \"France\", ... \"Malta\", ... \"Maldives\", ... \"Brunei\", ... \"Iceland\", ... \"Nauru\", ... \"Tuvalu\", ... \"Anguilla\", ... ], ... ) >>> df population GDP alpha-2 Italy 59000000 1937894 IT France 65000000 2583560 FR Malta 434000 12011 MT Maldives 434000 4520 MV Brunei 434000 12128 BN Iceland 337000 17036 IS Nauru 337000 182 NR Tuvalu 11300 38 TV Anguilla 11300 311 AI In the following example, we will use `nsmallest` to select the\nthree rows having the smallest values in column “population”.>>> df.nsmallest(3, \"population\") population GDP alpha-2 Tuvalu 11300 38 TV Anguilla 11300 311 AI Iceland 337000 17036 IS When using `keep='last'` , ties are resolved in reverse order:>>> df.nsmallest(3, \"population\", keep=\"last\") population GDP alpha-2 Anguilla 11300 311 AI Tuvalu 11300 38 TV Nauru 337000 182 NR When using `keep='all'` , the number of element kept can go beyond`n` if there are duplicate values for the largest element, all the\nties are kept.>>> df.nsmallest(3, \"population\", keep=\"all\") population GDP alpha-2 Tuvalu 11300 38 TV Anguilla 11300 311 AI Iceland 337000 17036 IS Nauru 337000 182 NR However, `nsmallest` does not keep`n` distinct\nsmallest elements:>>> df.nsmallest(4, \"population\", keep=\"all\") population GDP alpha-2 Tuvalu 11300 38 TV Anguilla 11300 311 AI Iceland 337000 17036 IS Nauru 337000 182 NR To order by the smallest values in column “population” and then “GDP”, we can specify multiple columns like in the next example. >>> df.nsmallest(3, [\"population\", \"GDP\"]) population GDP alpha-2 Tuvalu 11300 38 TV Anguilla 11300 311 AI Nauru 337000 182 NR",
     "markdown_length": 3125,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.nsmallest — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.nsmallest — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:03.998239",
+    "crawled_at": "2026-08-28T15:46:34.820453",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "026172feefe675594e59182dbb0df70e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.equals.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.equals.html",
-    "title": "pandas.CategoricalIndex.equals — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.CategoricalIndex.equals — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.equals#\n\n- \nCategoricalIndex.equals(*other* )[source]#\n- Determine if two CategoricalIndex objects contain the same elements. The order and orderedness of elements matters. The categories matter, but the order of the categories matters only when `ordered=True` .\n  - Parameters:\n    - **other** object\n    - The CategoricalIndex object to compare with.\n  - Returns:\n    - bool\n    - `True` if two`pandas.CategoricalIndex` objects have equal\nelements,`False` otherwise.\n See also \n  - `Categorical.equals`\n  - Returns True if categorical arrays are equal.\n Examples >>> ci = pd.CategoricalIndex([\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"]) >>> ci2 = pd.CategoricalIndex(pd.Categorical([\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"])) >>> ci.equals(ci2) True The order of elements matters. >>> ci3 = pd.CategoricalIndex([\"c\", \"b\", \"a\", \"a\", \"b\", \"c\"]) >>> ci.equals(ci3) False The orderedness also matters. >>> ci4 = ci.as_ordered() >>> ci.equals(ci4) False The categories matter, but the order of the categories matters only when `ordered=True` .>>> ci5 = ci.set_categories([\"a\", \"b\", \"c\", \"d\"]) >>> ci.equals(ci5) False >>> ci6 = ci.set_categories([\"b\", \"c\", \"a\"]) >>> ci.equals(ci6) True >>> ci_ordered = pd.CategoricalIndex( ... [\"a\", \"b\", \"c\", \"a\", \"b\", \"c\"], ordered=True ... ) >>> ci2_ordered = ci_ordered.set_categories([\"b\", \"c\", \"a\"]) >>> ci_ordered.equals(ci2_ordered) False",
     "markdown_length": 1380,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.equals — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.CategoricalIndex.equals — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:45.130335",
+    "crawled_at": "2026-08-28T15:45:50.607157",
     "type": "webpage"
 }

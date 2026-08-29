@@ -2,7 +2,7 @@
     "id": "813ef6db37e8445b0bf7c05547ccd000",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.count.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.count.html",
-    "title": "pandas.api.typing.Resampler.count — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Resampler.count — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.count#\n\n- final Resampler.count()[source]#\n- Compute count of group, excluding missing values. This method returns the number of non-null values in each resampled time period. \n  - Returns:\n    - Series or DataFrame\n    - Count of values within each group.\n See also \n  - `Series.groupby`\n  - Apply a function groupby to a Series.\n  - `DataFrame.groupby`\n  - Apply a function groupby to each row or column of a DataFrame.\n Examples >>> ser = pd.Series( ... [1, 2, 3, 4], ... index=pd.DatetimeIndex( ... [\"2023-01-01\", \"2023-01-15\", \"2023-02-01\", \"2023-02-15\"] ... ), ... ) >>> ser 2023-01-01 1 2023-01-15 2 2023-02-01 3 2023-02-15 4 dtype: int64 >>> ser.resample(\"MS\").count() 2023-01-01 2 2023-02-01 2 Freq: MS, dtype: int64",
     "markdown_length": 755,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.count — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Resampler.count — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-26T06:51:48.171935",
+    "crawled_at": "2026-08-28T17:57:39.915240",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "8c1f32b5cbbad2f138855d8489c3e0dc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.mean.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Resampler.mean.html",
-    "title": "pandas.api.typing.Resampler.mean — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Resampler.mean — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Resampler.mean#\n\n- \nfinal Resampler.mean(*numeric_only=False* )[source]#\n- Compute mean of groups, excluding missing values. This method calculates the arithmetic mean of values within each resampled time period. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data. Changed in version 2.0.0: numeric_only now defaults to `False` .\n  - Returns:\n    - DataFrame or Series\n    - Mean of values within each group.\n See also \n  - `core.resample.Resampler.median`\n  - Compute median of groups, excluding missing values.\n  - `core.resample.Resampler.sum`\n  - Compute sum of groups, excluding missing values.\n  - `core.resample.Resampler.std`\n  - Compute standard deviation of groups, excluding missing values.\n  - `core.resample.Resampler.var`\n  - Compute variance of groups, excluding missing values.\n Examples >>> ser = pd.Series( ... [1, 2, 3, 4], ... index=pd.DatetimeIndex( ... [\"2023-01-01\", \"2023-01-15\", \"2023-02-01\", \"2023-02-15\"] ... ), ... ) >>> ser 2023-01-01 1 2023-01-15 2 2023-02-01 3 2023-02-15 4 dtype: int64 >>> ser.resample(\"MS\").mean() 2023-01-01 1.5 2023-02-01 3.5 Freq: MS, dtype: float64",
     "markdown_length": 1177,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Resampler.mean — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Resampler.mean — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/resampling.html"
     },
-    "crawled_at": "2026-08-26T06:51:46.982877",
+    "crawled_at": "2026-08-28T17:57:44.935520",
     "type": "webpage"
 }

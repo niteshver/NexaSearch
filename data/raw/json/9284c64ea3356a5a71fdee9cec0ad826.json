@@ -2,7 +2,7 @@
     "id": "9284c64ea3356a5a71fdee9cec0ad826",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.highlight_between.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.formats.style.Styler.highlight_between.html",
-    "title": "pandas.io.formats.style.Styler.highlight_between — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.io.formats.style.Styler.highlight_between — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.formats.style.Styler.highlight_between#\n\n- \nStyler.highlight_between(*subset=None* ,*color='yellow'* ,*axis=0* ,*left=None* ,*right=None* ,*inclusive='both'* ,*props=None* )[source]#\n- Highlight a defined range with a style. Applies a background color or custom CSS properties to cells whose values fall within the range defined by `left` and`right` bounds.\n  - Parameters:\n    - **subset** label, array-like, IndexSlice, optional\n    - A valid 2d input to DataFrame.loc[<subset>], or, in the case of a 1d input or single key, to DataFrame.loc[:, <subset>] where the columns are prioritised, to limit `data` to*before* applying the function.\n    - **color** str, default ‘yellow’\n    - Background color to use for highlighting.\n    - **axis** {0 or ‘index’, 1 or ‘columns’, None}, default 0\n    - If `left` or`right` given as sequence, axis along which to apply those\nboundaries. See examples.\n    - **left** scalar or datetime-like, or sequence or array-like, default None\n    - Left bound for defining the range.\n    - **right** scalar or datetime-like, or sequence or array-like, default None\n    - Right bound for defining the range.\n    - **inclusive** {‘both’, ‘neither’, ‘left’, ‘right’}\n    - Identify whether bounds are closed or open.\n    - **props** str, default None\n    - CSS properties to use for highlighting. If `props` is given,`color` is not used.\n  - Returns:\n    - Styler\n    - Instance of class with range highlighted in given style.\n See also \n  - `Styler.highlight_null`\n  - Highlight missing values with a style.\n  - `Styler.highlight_max`\n  - Highlight the maximum with a style.\n  - `Styler.highlight_min`\n  - Highlight the minimum with a style.\n  - `Styler.highlight_quantile`\n  - Highlight values defined by a quantile with a style.\n Notes If `left` is`None` only the right bound is applied.\nIf`right` is`None` only the left bound is applied. If both are`None` all values are highlighted.`axis` is only needed if`left` or`right` are provided as a sequence or\nan array-like object for aligning the shapes. If`left` and`right` are\nboth scalars then all`axis` inputs will give the same result.This function only works with compatible `dtypes` . For example a datetime-like\nregion can only use equivalent datetime-like`left` and`right` arguments.\nUse`subset` to control regions which have multiple`dtypes` .Examples Basic usage >>> df = pd.DataFrame( ... { ... \"One\": [1.2, 1.6, 1.5], ... \"Two\": [2.9, 2.1, 2.5], ... \"Three\": [3.1, 3.2, 3.8], ... } ... ) >>> df.style.highlight_between(left=2.1, right=2.9) Using a range input sequence along an `axis` , in this case setting a`left` and`right` for each column individually>>> df.style.highlight_between( ... left=[1.4, 2.4, 3.4], right=[1.6, 2.6, 3.6], axis=1, color=\"#fffd75\" ... ) Using `axis=None` and providing the`left` argument as an array that\nmatches the input DataFrame, with a constant`right`>>> df.style.highlight_between( ... left=[[2, 2, 3], [2, 2, 3], [3, 3, 3]], ... right=3.5, ... axis=None, ... color=\"#fffd75\", ... ) Using `props` instead of default background coloring>>> df.style.highlight_between( ... left=1.5, right=3.5, props=\"font-weight:bold;color:#e83e8c\" ... )",
     "markdown_length": 3173,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.io.formats.style.Styler.highlight_between — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.io.formats.style.Styler.highlight_between — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/style.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.422203",
+    "crawled_at": "2026-08-28T17:59:19.234874",
     "type": "webpage"
 }

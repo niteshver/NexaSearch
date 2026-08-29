@@ -2,7 +2,7 @@
     "id": "a12c2c89b31a00b4e751b3364b94512e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.ceil.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.ceil.html",
-    "title": "pandas.Timedelta.ceil — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.ceil — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.ceil#\n\n- \nTimedelta.ceil(*freq* )#\n- Return a new Timedelta ceiled to this resolution. Rounds the Timedelta up to the nearest multiple of the given frequency, rounding toward positive infinity. \n  - Parameters:\n    - **freq** str or timedelta\n    - Frequency string or timedelta value indicating the ceiling resolution. Must be a fixed frequency like ‘s’ (second) not ‘ME’ (month end). See frequency aliases for a list of possible freq values.\n  - Returns:\n    - Timedelta\n    - A new Timedelta object ceiled to the specified resolution.\n See also \n  - `Timedelta.floor`\n  - Floor the Timedelta to the specified resolution.\n  - `Timedelta.round`\n  - Round the Timedelta to the specified resolution.\n  - `Timestamp.ceil`\n  - Similar method for Timestamp objects.\n Examples >>> td = pd.Timedelta('1001ms') >>> td Timedelta('0 days 00:00:01.001000') >>> td.ceil('s') Timedelta('0 days 00:00:02') `freq` can also be a timedelta value:>>> td.ceil(freq=pd.Timedelta('1s')) Timedelta('0 days 00:00:02')",
     "markdown_length": 1014,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.ceil — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.ceil — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:32.217172",
+    "crawled_at": "2026-08-28T15:50:51.745730",
     "type": "webpage"
 }

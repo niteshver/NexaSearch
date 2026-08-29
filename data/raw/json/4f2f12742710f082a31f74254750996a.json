@@ -2,7 +2,7 @@
     "id": "4f2f12742710f082a31f74254750996a",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_locs.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.get_locs.html",
-    "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.MultiIndex.get_locs#\n\n- \nMultiIndex.get_locs(*seq* )[source]#\n- Get location for a sequence of labels. This method returns the integer positions in the index that match the given sequence of per-level keys, slices, or boolean masks. \n  - Parameters:\n    - **seq** label, slice, list, mask or a sequence of such\n    - You should use one of the above for each level. If a level should not be used, set it to `slice(None)` .\n  - Returns:\n    - numpy.ndarray\n    - NumPy array of integers suitable for passing to iloc.\n See also \n  - `MultiIndex.get_loc`\n  - Get location for a label or a tuple of labels.\n  - `MultiIndex.slice_locs`\n  - Get slice location given start label(s) and end label(s).\n Examples >>> mi = pd.MultiIndex.from_arrays([list(\"abb\"), list(\"def\")]) >>> mi.get_locs(\"b\") array([1, 2], dtype=int64) >>> mi.get_locs([slice(None), [\"e\", \"f\"]]) array([1, 2], dtype=int64) >>> mi.get_locs([[True, False, True], slice(\"e\", \"f\")]) array([2], dtype=int64)",
     "markdown_length": 971,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.MultiIndex.get_locs — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:52.774065",
+    "crawled_at": "2026-08-28T15:48:16.129004",
     "type": "webpage"
 }

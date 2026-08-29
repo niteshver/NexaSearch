@@ -2,7 +2,7 @@
     "id": "8cbbcc8ea9e85581ca68cad969636d75",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.MergeError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.MergeError.html",
-    "title": "pandas.errors.MergeError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.MergeError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.MergeError#\n\n- exception pandas.errors.MergeError[source]#\n- Exception raised when merging data. Subclass of `ValueError` .See also \n  - `DataFrame.join`\n  - For joining DataFrames on their indexes.\n  - `merge`\n  - For merging two DataFrames on a common set of keys.\n Examples >>> left = pd.DataFrame( ... {\"a\": [\"a\", \"b\", \"b\", \"d\"], \"b\": [\"cat\", \"dog\", \"weasel\", \"horse\"]}, ... index=range(4), ... ) >>> right = pd.DataFrame( ... {\"a\": [\"a\", \"b\", \"c\", \"d\"], \"c\": [\"meow\", \"bark\", \"chirp\", \"nay\"]}, ... index=range(4), ... ).set_index(\"a\") >>> left.join( ... right, ... on=\"a\", ... validate=\"one_to_one\", ... ) Traceback (most recent call last): MergeError: Merge keys are not unique in left dataset; not a one-to-one merge",
     "markdown_length": 739,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.MergeError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.MergeError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:48.061466",
+    "crawled_at": "2026-08-28T17:59:01.613975",
     "type": "webpage"
 }

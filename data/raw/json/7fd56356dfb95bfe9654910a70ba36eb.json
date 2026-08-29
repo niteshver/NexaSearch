@@ -2,7 +2,7 @@
     "id": "7fd56356dfb95bfe9654910a70ba36eb",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.register_series_accessor.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.register_series_accessor.html",
-    "title": "pandas.api.extensions.register_series_accessor — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.api.extensions.register_series_accessor — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.register_series_accessor#\n\n- \npandas.api.extensions.register_series_accessor(*name* )[source]#\n- Register a custom accessor on Series objects. Use as a decorator to add a custom namespace accessor to Series, allowing domain-specific methods to be called via `ser.<name>` .\n  - Parameters:\n    - **name** str\n    - Name under which the accessor should be registered. A warning is issued if this name conflicts with a preexisting attribute.\n  - Returns:\n    - callable\n    - A class decorator.\n See also \n  - `register_dataframe_accessor`\n  - Register a custom accessor on DataFrame objects.\n  - `register_series_accessor`\n  - Register a custom accessor on Series objects.\n  - `register_index_accessor`\n  - Register a custom accessor on Index objects.\n Notes This function allows you to register a custom-defined accessor class for Series. The requirements for the accessor class are as follows: \n  - Must contain an init method that: \n    - accepts a single Series object\n    - raises an AttributeError if the Series object does not have correctly matching inputs for the accessor\n  - Must contain a method for each access pattern. \n    - The methods should be able to take any argument signature.\n    - Accessible using the @property decorator if no additional arguments are needed.\n Examples An accessor that only accepts integers could have a class defined like this: >>> @pd.api.extensions.register_series_accessor(\"int_accessor\") ... class IntAccessor: ... def __init__(self, pandas_obj): ... if not pandas_obj.dtype == \"int64\": ... raise AttributeError(\"The series must contain integer data only\") ... self._obj = pandas_obj ... ... def sum(self): ... return self._obj.sum() >>> df = pd.Series([1, 2, \"x\"]) >>> df.int_accessor Traceback (most recent call last): ... AttributeError: The series must contain integer data only. >>> df = pd.Series([1, 2, 3]) >>> df.int_accessor.sum() 6",
     "markdown_length": 1911,
@@ -10,18 +10,6 @@
         {
             "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.register_series_accessor.html",
             "text": "Skip to main content",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -246,18 +234,30 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "https://pandas.pydata.org/docs/dev/reference/general_functions.html",
+            "text": "General functions",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.register_series_accessor — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.api.extensions.register_series_accessor — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.register_series_accessor.html"
     },
-    "crawled_at": "2026-08-26T06:48:35.598970",
+    "crawled_at": "2026-08-28T17:54:58.526152",
     "type": "webpage"
 }

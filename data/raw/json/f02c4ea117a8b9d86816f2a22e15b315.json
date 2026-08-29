@@ -2,7 +2,7 @@
     "id": "f02c4ea117a8b9d86816f2a22e15b315",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_scalar.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_scalar.html",
-    "title": "pandas.api.types.is_scalar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_scalar — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_scalar#\n\n- \npandas.api.types.is_scalar(*val* )#\n- Return True if given object is scalar. This function determines whether a given Python object is a scalar value rather than a collection. Scalars include numeric types, strings, bytes, dates, timedeltas, intervals, periods, and `None` .\n  - Parameters:\n    - **val** object\n    - This includes: \n      - numpy array scalar (e.g. np.int64)\n      - Python builtin numerics\n      - Python builtin byte arrays and strings\n      - None\n      - datetime.datetime\n      - datetime.timedelta\n      - Period\n      - decimal.Decimal\n      - Interval\n      - DateOffset\n      - Fraction\n      - Number.\n  - Returns:\n    - bool\n    - Return True if given object is scalar.\n See also \n  - `api.types.is_list_like`\n  - Check if the input is list-like.\n  - `api.types.is_integer`\n  - Check if the input is an integer.\n  - `api.types.is_float`\n  - Check if the input is a float.\n  - `api.types.is_bool`\n  - Check if the input is a boolean.\n Examples >>> import datetime >>> dt = datetime.datetime(2018, 10, 3) >>> pd.api.types.is_scalar(dt) True >>> pd.api.types.is_scalar([2, 3]) False >>> pd.api.types.is_scalar({0: 1, 2: 3}) False >>> pd.api.types.is_scalar((0, 2)) False pandas supports PEP 3141 numbers: >>> from fractions import Fraction >>> pd.api.types.is_scalar(Fraction(3, 5)) True",
     "markdown_length": 1347,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_scalar — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_scalar — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:27.954970",
+    "crawled_at": "2026-08-28T15:52:04.735703",
     "type": "webpage"
 }

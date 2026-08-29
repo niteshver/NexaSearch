@@ -2,7 +2,7 @@
     "id": "0f1ee4eed23e7ab244c659dfc87005b9",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.equals.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.equals.html",
-    "title": "pandas.api.extensions.ExtensionArray.equals — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.equals — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.equals#\n\n- \nExtensionArray.equals(*other* )[source]#\n- Return if another array is equivalent to this array. Equivalent means that both arrays have the same shape and dtype, and all values compare equal. Missing values in the same location are considered equal (in contrast with normal equality). \n  - Parameters:\n    - **other** ExtensionArray\n    - Array to compare to this Array.\n  - Returns:\n    - boolean\n    - Whether the arrays are equivalent.\n See also \n  - `numpy.array_equal`\n  - Equivalent method for numpy array.\n  - `Series.equals`\n  - Equivalent method for Series.\n  - `DataFrame.equals`\n  - Equivalent method for DataFrame.\n Examples >>> arr1 = pd.array([1, 2, np.nan]) >>> arr2 = pd.array([1, 2, np.nan]) >>> arr1.equals(arr2) True >>> arr1 = pd.array([1, 3, np.nan]) >>> arr2 = pd.array([1, 2, np.nan]) >>> arr1.equals(arr2) False",
     "markdown_length": 885,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.equals — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.equals — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.917459",
+    "crawled_at": "2026-08-28T15:51:43.176968",
     "type": "webpage"
 }

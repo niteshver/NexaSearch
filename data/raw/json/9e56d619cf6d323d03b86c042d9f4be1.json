@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.right.html"
     },
-    "crawled_at": "2026-08-26T06:50:50.246881",
+    "crawled_at": "2026-08-28T19:34:58.416323",
     "type": "webpage"
 }

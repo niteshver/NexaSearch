@@ -2,7 +2,7 @@
     "id": "67f15eb6e1b75ae0372df8baf74b1757",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.NullFrequencyError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.NullFrequencyError.html",
-    "title": "pandas.errors.NullFrequencyError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.NullFrequencyError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.NullFrequencyError#\n\n- exception pandas.errors.NullFrequencyError[source]#\n- Exception raised when a `freq` cannot be null.Particularly `DatetimeIndex.shift` ,`TimedeltaIndex.shift` ,`PeriodIndex.shift` .See also \n  - `Index.shift`\n  - Shift values of Index.\n  - `Series.shift`\n  - Shift values of Series.\n Examples >>> df = pd.DatetimeIndex([\"2011-01-01 10:00\", \"2011-01-01\"], freq=None) >>> df.shift(2) Traceback (most recent call last): NullFrequencyError: Cannot shift with no freq",
     "markdown_length": 501,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.NullFrequencyError — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.NullFrequencyError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.817393",
+    "crawled_at": "2026-08-28T17:59:02.868311",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "cd32beca5fbc00f97e8dc52a38a28ed2",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._concat_same_type.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._concat_same_type.html",
-    "title": "pandas.api.extensions.ExtensionArray._concat_same_type — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._concat_same_type — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._concat_same_type#\n\n- \nclassmethod ExtensionArray._concat_same_type(*to_concat* )[source]#\n- Concatenate multiple arrays of this dtype. This method joins a sequence of ExtensionArrays of the same dtype into a single ExtensionArray. All arrays in the sequence must have the same dtype. \n  - Parameters:\n    - **to_concat** sequence of this type\n    - An array of the same dtype to concatenate.\n  - Returns:\n    - ExtensionArray\n See also \n  - `api.extensions.ExtensionArray._explode`\n  - Transform each element of list-like to a row.\n  - `api.extensions.ExtensionArray._formatter`\n  - Formatting function for scalar values.\n  - `api.extensions.ExtensionArray._from_factorized`\n  - Reconstruct an ExtensionArray after factorization.\n Examples >>> arr1 = pd.array([1, 2, 3]) >>> arr2 = pd.array([4, 5, 6]) >>> pd.arrays.IntegerArray._concat_same_type([arr1, arr2]) <IntegerArray> [1, 2, 3, 4, 5, 6] Length: 6, dtype: Int64",
     "markdown_length": 958,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._concat_same_type — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._concat_same_type — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.491607",
+    "crawled_at": "2026-08-28T15:51:36.863724",
     "type": "webpage"
 }

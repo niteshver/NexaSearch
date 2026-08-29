@@ -20,6 +20,18 @@
             "total_score": null
         },
         {
+            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
+            "text": "in the blog post",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
             "href": "https://pandas.pydata.org/pandas-docs/version/2.3/index.html",
             "text": "",
             "title": "",
@@ -234,18 +246,6 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
-        },
-        {
-            "href": "https://pandas.pydata.org/pandas-docs/version/2.3/reference/general_functions.html",
-            "text": "General functions",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
         }
     ],
     "external_links": [],
@@ -255,9 +255,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.drop_duplicates.html"
     },
-    "crawled_at": "2026-08-26T06:49:22.890150",
+    "crawled_at": "2026-08-28T20:07:27.864806",
     "type": "webpage"
 }

@@ -2,10 +2,10 @@
     "id": "f973b01004df1fe4d5683b0fd2032e83",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.html",
-    "title": "pandas.CategoricalDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.CategoricalDtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.CategoricalDtype#\n\n- \nclass pandas.CategoricalDtype(*categories=None* ,*ordered=False* )[source]#\n- Type for categorical data with the categories and orderedness. It is a dtype representation for categorical data, which allows users to define a fixed set of values and optionally impose an ordering. This is particularly useful for handling categorical variables efficiently, as it can significantly reduce memory usage compared to using object dtypes. \n  - Parameters:\n    - **categories** sequence, optional\n    - Must be unique, and must not contain any nulls. The categories are stored in an Index, and if an index is provided the dtype of that index will be used.\n    - **ordered** bool or None, default False\n    - Whether or not this categorical is treated as an ordered categorical. None can be used to maintain the ordered value of existing categoricals when used in operations that combine categoricals, e.g. astype, and will resolve to False if there is no existing ordered to maintain.\n Attributes `categories`An `Index` containing the unique categories allowed.`ordered`Whether the categories have an ordered relationship. Methods **None**See also \n  - `Categorical`\n  - Represent a categorical variable in classic R / S-plus fashion.\n Notes This class is useful for specifying the type of a `Categorical` independent of the values. See CategoricalDtype\nfor more.Examples >>> t = pd.CategoricalDtype(categories=[\"b\", \"a\"], ordered=True) >>> pd.Series([\"a\", \"b\", \"a\", None], dtype=t) 0 a 1 b 2 a 3 NaN dtype: category Categories (2, str): ['b' < 'a'] An empty CategoricalDtype with a specific dtype can be created by providing an empty index. As follows, >>> pd.CategoricalDtype(pd.DatetimeIndex([])).categories.dtype dtype('<M8[s]')",
-    "markdown_length": 1754,
+    "markdown": "# pandas.CategoricalDtype#\n\n- \nclass pandas.CategoricalDtype(*categories=None* ,*ordered=False* )[source]#\n- Type for categorical data with the categories and orderedness. It is a dtype representation for categorical data, which allows users to define a fixed set of values and optionally impose an ordering. This is particularly useful for handling categorical variables efficiently, as it can significantly reduce memory usage compared to using object dtypes. \n  - Parameters:\n    - **categories** sequence, optional\n    - Must be unique, and must not contain any nulls. The categories are stored in an Index, and if an index is provided the dtype of that index will be used.\n    - **ordered** bool or None, default False\n    - Whether or not this categorical is treated as an ordered categorical. None can be used to maintain the ordered value of existing categoricals when used in operations that combine categoricals, e.g. astype, and will resolve to False if there is no existing ordered to maintain.\n Attributes `categories`An `Index` containing the unique categories allowed.`ordered`Whether the categories have an ordered relationship. See also \n  - `Categorical`\n  - Represent a categorical variable in classic R / S-plus fashion.\n Notes This class is useful for specifying the type of a `Categorical` independent of the values. See CategoricalDtype\nfor more.Examples >>> t = pd.CategoricalDtype(categories=[\"b\", \"a\"], ordered=True) >>> pd.Series([\"a\", \"b\", \"a\", None], dtype=t) 0 a 1 b 2 a 3 NaN dtype: category Categories (2, str): ['b' < 'a'] An empty CategoricalDtype with a specific dtype can be created by providing an empty index. As follows, >>> pd.CategoricalDtype(pd.DatetimeIndex([])).categories.dtype dtype('<M8[s]')",
+    "markdown_length": 1738,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalDtype.html",
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalDtype — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.CategoricalDtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:59.756190",
+    "crawled_at": "2026-08-28T15:45:47.757946",
     "type": "webpage"
 }

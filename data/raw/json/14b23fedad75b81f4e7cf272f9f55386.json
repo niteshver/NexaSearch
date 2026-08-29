@@ -2,7 +2,7 @@
     "id": "14b23fedad75b81f4e7cf272f9f55386",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._values_for_argsort.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._values_for_argsort.html",
-    "title": "pandas.api.extensions.ExtensionArray._values_for_argsort — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._values_for_argsort — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._values_for_argsort#\n\n- ExtensionArray._values_for_argsort()[source]#\n- Return values for sorting. This method provides the underlying values that should be used when sorting the ExtensionArray. The returned values should maintain the same relative ordering as the original array. \n  - Returns:\n    - ndarray\n    - The transformed values should maintain the ordering between values within the array.\n See also \n  - `ExtensionArray.argsort`\n  - Return the indices that would sort this array.\n Notes The caller is responsible for *not* modifying these values in-place, so\nit is safe for implementers to give views on`self` .Functions that use this (e.g. `ExtensionArray.argsort` ) should ignore\nentries with missing values in the original array (according to`self.isna()` ). This means that the corresponding entries in the returned\narray don’t need to be modified to sort correctly.Examples In most cases, this is the underlying Numpy array of the `ExtensionArray` :>>> arr = pd.array([1, 2, 3]) >>> arr._values_for_argsort() array([1, 2, 3])",
     "markdown_length": 1080,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._values_for_argsort — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._values_for_argsort — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.680466",
+    "crawled_at": "2026-08-28T15:51:40.302495",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "c0085cd584ee6ebca185ffbcfcf7fae7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.asm8.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.asm8.html",
-    "title": "pandas.Timedelta.asm8 — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.asm8 — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.asm8#\n\n- Timedelta.asm8#\n- Return a numpy timedelta64 array scalar view. Provides access to the array scalar view (i.e. a combination of the value and the units) associated with the numpy.timedelta64().view(), including a 64-bit integer representation of the timedelta in nanoseconds (Python int compatible). \n  - Returns:\n    - numpy timedelta64 array scalar view\n    - Array scalar view of the timedelta in nanoseconds.\n See also \n  - `Timedelta.total_seconds`\n  - Return the total seconds in the duration.\n  - `Timedelta.components`\n  - Return a namedtuple of the Timedelta’s components.\n  - `Timedelta.to_timedelta64`\n  - Convert the Timedelta to a numpy.timedelta64.\n Examples >>> td = pd.Timedelta('1 days 2 min 3 us 42 ns') >>> td.asm8 np.timedelta64(86520000003042,'ns') >>> td = pd.Timedelta('2 min 3 s') >>> td.asm8 np.timedelta64(123000000,'us') >>> td = pd.Timedelta('3 ms 5 us') >>> td.asm8 np.timedelta64(3005,'us') >>> td = pd.Timedelta(42, unit='ns') >>> td.asm8 np.timedelta64(42,'ns')",
     "markdown_length": 1021,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.asm8 — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.asm8 — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:31.713360",
+    "crawled_at": "2026-08-28T15:50:51.974299",
     "type": "webpage"
 }

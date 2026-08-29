@@ -2,7 +2,7 @@
     "id": "54f13481ceb7e77282a13a4d4a5ab55e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.ordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.ordered.html",
-    "title": "pandas.Categorical.ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Categorical.ordered — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Categorical.ordered#\n\n- property Categorical.ordered[source]#\n- Whether the categories have an ordered relationship. This property returns True if the categories are ordered, meaning they have a meaningful order that allows comparison operations. See also \n  - `set_ordered`\n  - Set the ordered attribute.\n  - `as_ordered`\n  - Set the Categorical to be ordered.\n  - `as_unordered`\n  - Set the Categorical to be unordered.\n Examples For `pandas.Series` :>>> ser = pd.Series([\"a\", \"b\", \"c\", \"a\"], dtype=\"category\") >>> ser.cat.ordered False >>> raw_cat = pd.Categorical([\"a\", \"b\", \"c\", \"a\"], ordered=True) >>> ser = pd.Series(raw_cat) >>> ser.cat.ordered True For `pandas.Categorical` :>>> cat = pd.Categorical([\"a\", \"b\"], ordered=True) >>> cat.ordered True >>> cat = pd.Categorical([\"a\", \"b\"], ordered=False) >>> cat.ordered False For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"b\"], ordered=True) >>> ci.ordered True >>> ci = pd.CategoricalIndex([\"a\", \"b\"], ordered=False) >>> ci.ordered False",
     "markdown_length": 1021,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Categorical.ordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Categorical.ordered — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:59.464786",
+    "crawled_at": "2026-08-28T15:45:45.416710",
     "type": "webpage"
 }

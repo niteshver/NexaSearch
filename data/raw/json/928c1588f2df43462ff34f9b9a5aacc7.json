@@ -2,7 +2,7 @@
     "id": "928c1588f2df43462ff34f9b9a5aacc7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.before_nearest_workday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.before_nearest_workday.html",
-    "title": "pandas.tseries.holiday.before_nearest_workday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.before_nearest_workday — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.before_nearest_workday#\n\n- \npandas.tseries.holiday.before_nearest_workday(*dt* )[source]#\n- Move to the workday before the nearest workday. `nearest_workday` runs first, so a Saturday holiday ends up on the\nThursday before it.\n  - Parameters:\n    - **dt** datetime\n    - The date the holiday falls on.\n  - Returns:\n    - datetime\n    - The date the holiday is observed on.\n See also \n  - `tseries.holiday.nearest_workday`\n  - Move Saturday to Friday and Sunday to Monday.\n  - `tseries.holiday.after_nearest_workday`\n  - Move to the workday after the nearest workday.\n  - `tseries.holiday.previous_workday`\n  - Move to the previous weekday.\n Examples >>> from datetime import datetime >>> from pandas.tseries.holiday import before_nearest_workday >>> before_nearest_workday(datetime(2022, 1, 1)) # Saturday datetime.datetime(2021, 12, 30, 0, 0) >>> before_nearest_workday(datetime(2022, 1, 2)) # Sunday datetime.datetime(2021, 12, 31, 0, 0)",
     "markdown_length": 964,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.before_nearest_workday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.before_nearest_workday — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:51.258532",
+    "crawled_at": "2026-08-28T18:00:02.722525",
     "type": "webpage"
 }

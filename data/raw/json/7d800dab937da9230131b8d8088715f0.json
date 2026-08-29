@@ -2,7 +2,7 @@
     "id": "7d800dab937da9230131b8d8088715f0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._is_monotonic_decreasing.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._is_monotonic_decreasing.html",
-    "title": "pandas.api.extensions.ExtensionArray._is_monotonic_decreasing — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._is_monotonic_decreasing — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._is_monotonic_decreasing#\n\n- property ExtensionArray._is_monotonic_decreasing[source]#\n- Return True if the array values are monotonically decreasing. Subclasses can override this for performance. The default implementation falls back to computing ranks via `_rank` .\n  - Returns:\n    - bool\n    - Whether the array values are monotonically decreasing.\n See also \n  - `ExtensionArray._is_monotonic_increasing`\n  - Check for monotonically increasing values.\n Examples >>> arr = pd.array([3, 2, 1]) >>> arr._is_monotonic_decreasing True",
     "markdown_length": 573,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._is_monotonic_decreasing — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._is_monotonic_decreasing — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.591938",
+    "crawled_at": "2026-08-28T15:51:39.193457",
     "type": "webpage"
 }

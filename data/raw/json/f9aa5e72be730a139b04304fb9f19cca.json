@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
     },
-    "crawled_at": "2026-08-26T06:48:57.231847",
+    "crawled_at": "2026-08-28T20:44:57.788805",
     "type": "webpage"
 }

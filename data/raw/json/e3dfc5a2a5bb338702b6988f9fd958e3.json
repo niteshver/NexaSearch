@@ -2,10 +2,10 @@
     "id": "e3dfc5a2a5bb338702b6988f9fd958e3",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.bootstrap_plot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.bootstrap_plot.html",
-    "title": "pandas.plotting.bootstrap_plot — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.plotting.bootstrap_plot — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.plotting.bootstrap_plot#\n\n- \npandas.plotting.bootstrap_plot(*series* ,*fig=None* ,*size=50* ,*samples=500* ,***kwds* )[source]#\n- Bootstrap plot on mean, median and mid-range statistics. The bootstrap plot is used to estimate the uncertainty of a statistic by relying on random sampling with replacement [1]. This function will generate bootstrapping plots for mean, median and mid-range statistics for the given number of samples of the given size. [1]“Bootstrapping (statistics)” in https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29 \n  - Parameters:\n    - **series** pandas.Series\n    - Series from where to get the samplings for the bootstrapping.\n    - **fig** matplotlib.figure.Figure, default None\n    - If given, it will use the fig reference for plotting instead of creating a new one with default parameters.\n    - **size** int, default 50\n    - Number of data points to consider during each sampling. It must be less than or equal to the length of the series.\n    - **samples** int, default 500\n    - Number of times the bootstrap procedure is performed.\n    - ****kwds**\n    - Options to pass to matplotlib plotting method.\n  - Returns:\n    - matplotlib.figure.Figure\n    - Matplotlib figure.\n See also \n  - `DataFrame.plot`\n  - Basic plotting for DataFrame objects.\n  - `Series.plot`\n  - Basic plotting for Series objects.\n Examples This example draws a basic bootstrap plot for a Series. >>> s = pd.Series(np.random.uniform(size=100)) >>> pd.plotting.bootstrap_plot(s) <Figure size 640x480 with 6 Axes>",
-    "markdown_length": 1535,
+    "markdown": "# pandas.plotting.bootstrap_plot#\n\n- \npandas.plotting.bootstrap_plot(*series* ,*fig=None* ,*size=50* ,*samples=500* ,***kwds* )[source]#\n- Bootstrap plot on mean, median and mid-range statistics. The bootstrap plot is used to estimate the uncertainty of a statistic by relying on random sampling with replacement [1]. This function will generate bootstrapping plots for mean, median and mid-range statistics for the given number of samples of the given size. [1]“Bootstrapping (statistics)” in https://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29 \n  - Parameters:\n    - **series** pandas.Series\n    - Series from where to get the samplings for the bootstrapping.\n    - **fig** matplotlib.figure.Figure, default None\n    - If given, it will use the fig reference for plotting instead of creating a new one with default parameters.\n    - **size** int, default 50\n    - Number of data points to consider during each sampling. It must be less than or equal to the length of the series.\n    - **samples** int, default 500\n    - Number of times the bootstrap procedure is performed.\n    - ****kwds**\n    - Options to pass to matplotlib plotting method.\n  - Returns:\n    - matplotlib.figure.Figure\n    - Matplotlib figure.\n See also \n  - `DataFrame.plot`\n  - Basic plotting for DataFrame objects.\n  - `Series.plot`\n  - Basic plotting for Series objects.\n Examples This example draws a basic bootstrap plot for a Series. >>> rng = np.random.default_rng(42) >>> s = pd.Series(rng.uniform(size=100)) >>> pd.plotting.bootstrap_plot(s) <Figure size 640x480 with 6 Axes>",
+    "markdown_length": 1565,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.bootstrap_plot.html",
@@ -254,7 +254,7 @@
             "src": "../../_images/pandas-plotting-bootstrap_plot-1.png",
             "data": "",
             "alt": "../../_images/pandas-plotting-bootstrap_plot-1.png",
-            "desc": "pandas.plotting.bootstrap_plot(series, fig=None, size=50, samples=500, **kwds)#\nBootstrap plot on mean, median and mid-range statistics.\nThe bootstrap plot is used to estimate the uncertainty of a statistic\nby relying on random sampling with replacement [1]. This function will\ngenerate bootstrapping plots for mean, median and mid-range statistics\nfor the given number of samples of the given size.\n\n\n[1]\n“Bootstrapping (statistics)” in     \n\n\n\nParameters:\n\nseriespandas.SeriesSeries from where to get the samplings for the bootstrapping.\n\nfigmatplotlib.figure.Figure, default NoneIf given, it will use the fig reference for plotting instead of\ncreating a new one with default parameters.\n\nsizeint, default 50Number of data points to consider during each sampling. It must be\nless than or equal to the length of the series.\n\nsamplesint, default 500Number of times the bootstrap procedure is performed.\n\n**kwdsOptions to pass to matplotlib plotting method.\n\n\n\nReturns:\n\nmatplotlib.figure.FigureMatplotlib figure.\n\n\n\n\n\nSee also\n\nDataFrame.plotBasic plotting for DataFrame objects.\n\nSeries.plotBasic plotting for Series objects.\n\n\n\nExamples\nThis example draws a basic bootstrap plot for a Series.\n>>> s = pd.Series(np.random.uniform(size=100))\n>>> pd.plotting.bootstrap_plot(s)\n<Figure size 640x480 with 6 Axes>\n\n      \n  Copy to clipboard",
+            "desc": "pandas.plotting.bootstrap_plot(series, fig=None, size=50, samples=500, **kwds)#\nBootstrap plot on mean, median and mid-range statistics.\nThe bootstrap plot is used to estimate the uncertainty of a statistic\nby relying on random sampling with replacement [1]. This function will\ngenerate bootstrapping plots for mean, median and mid-range statistics\nfor the given number of samples of the given size.\n\n\n[1]\n“Bootstrapping (statistics)” in     \n\n\n\nParameters:\n\nseriespandas.SeriesSeries from where to get the samplings for the bootstrapping.\n\nfigmatplotlib.figure.Figure, default NoneIf given, it will use the fig reference for plotting instead of\ncreating a new one with default parameters.\n\nsizeint, default 50Number of data points to consider during each sampling. It must be\nless than or equal to the length of the series.\n\nsamplesint, default 500Number of times the bootstrap procedure is performed.\n\n**kwdsOptions to pass to matplotlib plotting method.\n\n\n\nReturns:\n\nmatplotlib.figure.FigureMatplotlib figure.\n\n\n\n\n\nSee also\n\nDataFrame.plotBasic plotting for DataFrame objects.\n\nSeries.plotBasic plotting for Series objects.\n\n\n\nExamples\nThis example draws a basic bootstrap plot for a Series.\n>>> rng = np.random.default_rng(42)\n>>> s = pd.Series(rng.uniform(size=100))\n>>> pd.plotting.bootstrap_plot(s)\n<Figure size 640x480 with 6 Axes>\n\n      \n  Copy to clipboard",
             "score": 4,
             "type": "image",
             "group_id": 2,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.bootstrap_plot — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.plotting.bootstrap_plot — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:48:14.121208",
+    "crawled_at": "2026-08-28T15:52:24.727798",
     "type": "webpage"
 }

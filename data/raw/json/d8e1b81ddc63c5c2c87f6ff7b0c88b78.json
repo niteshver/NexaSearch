@@ -2,7 +2,7 @@
     "id": "d8e1b81ddc63c5c2c87f6ff7b0c88b78",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_dict.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_dict.html",
-    "title": "pandas.Series.to_dict — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.to_dict — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.to_dict#\n\n- \nSeries.to_dict(*** ,*into=<class 'dict'>* )[source]#\n- Convert Series to {label -> value} dict or dict-like object. The resulting dict-like object maps each index label to its corresponding value. A custom `MutableMapping` subclass can\nbe specified via the`into` parameter.\n  - Parameters:\n    - **into** class, default dict\n    - The collections.abc.MutableMapping subclass to use as the return object. Can be the actual class or an empty instance of the mapping type you want. If you want a collections.defaultdict, you must pass it initialized.\n  - Returns:\n    - collections.abc.MutableMapping\n    - Key-value representation of Series.\n See also \n  - `Series.to_list`\n  - Converts Series to a list of the values.\n  - `Series.to_numpy`\n  - Converts Series to NumPy ndarray.\n  - `Series.array`\n  - ExtensionArray of the data backing this Series.\n Examples >>> s = pd.Series([1, 2, 3, 4]) >>> s.to_dict() {0: 1, 1: 2, 2: 3, 3: 4} >>> from collections import OrderedDict, defaultdict >>> s.to_dict(into=OrderedDict) OrderedDict({0: 1, 1: 2, 2: 3, 3: 4}) >>> dd = defaultdict(list) >>> s.to_dict(into=dd) defaultdict(<class 'list'>, {0: 1, 1: 2, 2: 3, 3: 4})",
     "markdown_length": 1186,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.to_dict — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.to_dict — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:50:42.716560",
+    "crawled_at": "2026-08-28T15:50:39.882943",
     "type": "webpage"
 }

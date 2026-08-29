@@ -2,7 +2,7 @@
     "id": "6f9f4a2744b595749f4ca824b31c6e54",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.0.5.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.0.5.html",
-    "title": "What’s new in 1.0.5 (June 17, 2020) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.0.5 (June 17, 2020) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.0.5 (June 17, 2020)#\n\nThese are the changes in pandas 1.0.5. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n- Fix regression in `read_parquet()` when reading from file-like objects\n(GH 34467).\n- Fix regression in reading from public S3 buckets (GH 34626).\n\nNote this disables the ability to read Parquet files from directories on S3 again (GH 26388, GH 34632), which was added in the 1.0.4 release, but is now targeted for pandas 1.1.0.\n\n## Bug fixes#\n\n- Fixed building from source with Python 3.8 fetching the wrong version of NumPy (GH 34666)\n\n## Contributors#\n\nA total of 8 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Joris Van den Bossche\n- MeeseeksMachine\n- Natalie Jann +\n- Pandas Development Team\n- Simon Hawkins\n- Tom Augspurger\n- William Ayd\n- alimcmaster1",
     "markdown_length": 911,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.0.5 (June 17, 2020) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.0.5 (June 17, 2020) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:51:59.746233",
+    "crawled_at": "2026-08-28T15:55:04.192181",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "17e95d1301179e5690a2f906896a2cbc",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.corr.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.Rolling.corr.html",
-    "title": "pandas.api.typing.Rolling.corr — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.api.typing.Rolling.corr — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.Rolling.corr#\n\n- \nRolling.corr(*other=None* ,*pairwise=None* ,*ddof=1* ,*numeric_only=False* )[source]#\n- Calculate the rolling correlation. Compute the Pearson correlation coefficient between the calling object and `other` over each rolling window. If`other` is not supplied,\npairwise correlations of the columns are computed.\n  - Parameters:\n    - **other** Series or DataFrame, optional\n    - If not supplied then will default to self and produce pairwise output.\n    - **pairwise** bool, default None\n    - If False then only matching columns between self and other will be used and the output will be a DataFrame. If True then all pairwise combinations will be calculated and the output will be a MultiIndexed DataFrame in the case of DataFrame inputs. In the case of missing elements, only complete pairwise observations will be used.\n    - **ddof** int, default 1\n    - Delta Degrees of Freedom. The divisor used in calculations is `N - ddof` , where`N` represents the number of elements.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n  - Returns:\n    - Series or DataFrame\n    - Return type is the same as the original object with `np.float64` dtype.\n See also \n  - `cov`\n  - Similar method to calculate covariance.\n  - `numpy.corrcoef`\n  - NumPy Pearson’s correlation calculation.\n  - `Series.rolling`\n  - Calling rolling with Series data.\n  - `DataFrame.rolling`\n  - Calling rolling with DataFrames.\n  - `Series.corr`\n  - Aggregating corr for Series.\n  - `DataFrame.corr`\n  - Aggregating corr for DataFrame.\n Notes This function uses Pearson’s definition of correlation (https://en.wikipedia.org/wiki/Pearson_correlation_coefficient). When other is not specified, the output will be self correlation (e.g. all 1’s), except for `DataFrame` inputs with pairwise\nset to True.Function will return `NaN` for correlations of equal valued sequences;\nthis is the result of a 0/0 division error.When pairwise is set to False, only matching columns between self and other will be used. When pairwise is set to True, the output will be a MultiIndex DataFrame with the original index on the first level, and the other DataFrame columns on the second level. In the case of missing elements, only complete pairwise observations will be used. Examples The below example shows a rolling calculation with a window size of four matching the equivalent function call using `numpy.corrcoef()` .>>> v1 = [3, 3, 3, 5, 8] >>> v2 = [3, 4, 4, 4, 8] >>> np.corrcoef(v1[:-1], v2[:-1]) array([[1. , 0.33333333], [0.33333333, 1. ]]) >>> np.corrcoef(v1[1:], v2[1:]) array([[1. , 0.9169493], [0.9169493, 1. ]]) >>> s1 = pd.Series(v1) >>> s2 = pd.Series(v2) >>> s1.rolling(4).corr(s2) 0 NaN 1 NaN 2 NaN 3 0.333333 4 0.916949 dtype: float64 The below example shows a similar rolling calculation on a DataFrame using the pairwise option. >>> matrix = np.array( ... [[51.0, 35.0], [49.0, 30.0], [47.0, 32.0], [46.0, 31.0], [50.0, 36.0]] ... ) >>> np.corrcoef(matrix[:-1, 0], matrix[:-1, 1]) array([[1. , 0.6263001], [0.6263001, 1. ]]) >>> np.corrcoef(matrix[1:, 0], matrix[1:, 1]) array([[1. , 0.55536811], [0.55536811, 1. ]]) >>> df = pd.DataFrame(matrix, columns=[\"X\", \"Y\"]) >>> df X Y 0 51.0 35.0 1 49.0 30.0 2 47.0 32.0 3 46.0 31.0 4 50.0 36.0 >>> df.rolling(4).corr(pairwise=True) X Y 0 X NaN NaN Y NaN NaN 1 X NaN NaN Y NaN NaN 2 X NaN NaN Y NaN NaN 3 X 1.000000 0.626300 Y 0.626300 1.000000 4 X 1.000000 0.555368 Y 0.555368 1.000000",
     "markdown_length": 3479,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.Rolling.corr — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.api.typing.Rolling.corr — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/window.html"
     },
-    "crawled_at": "2026-08-26T06:51:54.031026",
+    "crawled_at": "2026-08-28T17:57:53.924164",
     "type": "webpage"
 }

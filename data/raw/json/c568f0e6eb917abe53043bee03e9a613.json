@@ -2,7 +2,7 @@
     "id": "c568f0e6eb917abe53043bee03e9a613",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.compare.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.compare.html",
-    "title": "pandas.DataFrame.compare — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.compare — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.compare#\n\n- \nDataFrame.compare(*other* ,*align_axis=1* ,*keep_shape=False* ,*keep_equal=False* ,*result_names=('self', 'other')* )[source]#\n- Compare to another DataFrame and show the differences. This method compares two DataFrames element-wise and returns a DataFrame highlighting the differences. \n  - Parameters:\n    - **other** DataFrame\n    - Object to compare with.\n    - **align_axis** {0 or ‘index’, 1 or ‘columns’}, default 1\n    - Determine which axis to align the comparison on. \n      - 0, or ‘index’ : Resulting differences are stacked vertically with rows drawn alternately from self and other.\n      - 1, or ‘columns’ : Resulting differences are aligned horizontally with columns drawn alternately from self and other.\n    - **keep_shape** bool, default False\n    - If true, all rows and columns are kept. Otherwise, only the ones with different values are kept.\n    - **keep_equal** bool, default False\n    - If true, the result keeps values that are equal. Otherwise, equal values are shown as NaNs.\n    - **result_names** tuple, default (‘self’, ‘other’)\n    - Set the dataframes names in the comparison.\n  - Returns:\n    - DataFrame\n    - DataFrame that shows the differences stacked side by side. If align_axis is 0 or ‘index’, the resulting row index will be a MultiIndex with ‘self’ and ‘other’ stacked alternately at the inner level. If align_axis is 1 or ‘columns’ (the default), the resulting columns will be a MultiIndex with ‘self’ and ‘other’ stacked alternately at the inner level.\n  - Raises:\n    - ValueError\n    - When the two DataFrames don’t have identical labels or shape.\n See also \n  - `Series.compare`\n  - Compare with another Series and show differences.\n  - `DataFrame.equals`\n  - Test whether two objects contain the same elements.\n Notes Matching NaNs will not appear as a difference. Can only compare identically-labeled (i.e. same shape, identical row and column labels) DataFrames Examples >>> df = pd.DataFrame( ... { ... \"col1\": [\"a\", \"a\", \"b\", \"b\", \"a\"], ... \"col2\": [1.0, 2.0, 3.0, np.nan, 5.0], ... \"col3\": [1.0, 2.0, 3.0, 4.0, 5.0], ... }, ... columns=[\"col1\", \"col2\", \"col3\"], ... ) >>> df col1 col2 col3 0 a 1.0 1.0 1 a 2.0 2.0 2 b 3.0 3.0 3 b NaN 4.0 4 a 5.0 5.0 >>> df2 = df.copy() >>> df2.loc[0, \"col1\"] = \"c\" >>> df2.loc[2, \"col3\"] = 4.0 >>> df2 col1 col2 col3 0 c 1.0 1.0 1 a 2.0 2.0 2 b 3.0 4.0 3 b NaN 4.0 4 a 5.0 5.0 Align the differences on columns >>> df.compare(df2) col1 col3 self other self other 0 a c NaN NaN 2 NaN NaN 3.0 4.0 Assign result_names >>> df.compare(df2, result_names=(\"left\", \"right\")) col1 col3 left right left right 0 a c NaN NaN 2 NaN NaN 3.0 4.0 Stack the differences on rows >>> df.compare(df2, align_axis=0) col1 col3 0 self a NaN other c NaN 2 self NaN 3.0 other NaN 4.0 Keep the equal values >>> df.compare(df2, keep_equal=True) col1 col3 self other self other 0 a c 1.0 1.0 2 b b 3.0 4.0 Keep all original rows and columns >>> df.compare(df2, keep_shape=True) col1 col2 col3 self other self other self other 0 a c NaN NaN NaN NaN 1 NaN NaN NaN NaN NaN NaN 2 NaN NaN NaN NaN 3.0 4.0 3 NaN NaN NaN NaN NaN NaN 4 NaN NaN NaN NaN NaN NaN Keep all original rows and columns and also all original values >>> df.compare(df2, keep_shape=True, keep_equal=True) col1 col2 col3 self other self other self other 0 a c 1.0 1.0 1.0 1.0 1 a a 2.0 2.0 2.0 2.0 2 b b 3.0 3.0 3.0 4.0 3 b b NaN NaN 4.0 4.0 4 a a 5.0 5.0 5.0 5.0",
     "markdown_length": 3419,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.compare — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.compare — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/aliases.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:00.922858",
+    "crawled_at": "2026-08-28T15:46:04.612202",
     "type": "webpage"
 }

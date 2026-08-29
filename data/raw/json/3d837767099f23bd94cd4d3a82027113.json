@@ -2,7 +2,7 @@
     "id": "3d837767099f23bd94cd4d3a82027113",
     "url": "https://pandas.pydata.org/docs/dev/development/debugging_extensions.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/development/debugging_extensions.html",
-    "title": "Debugging C extensions — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "Debugging C extensions — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# Debugging C extensions#\n\npandas uses Cython and C/C++ extension modules to optimize performance. Unfortunately, the standard Python debugger does not allow you to step into these extensions. Cython extensions can be debugged with the Cython debugger and C/C++ extensions can be debugged using the tools shipped with your platform’s compiler.\n\nFor Python developers with limited or no C/C++ experience this can seem a daunting task. Core developer Will Ayd has written a 3 part blog series to help guide you from the standard Python debugger into these other tools:\n\n1. Fundamental Python Debugging Part 1 - Python\n2. Fundamental Python Debugging Part 2 - Python Extensions\n3. Fundamental Python Debugging Part 3 - Cython Extensions\n\n## Debugging locally#\n\nBy default building pandas from source will generate a release build. To generate a development build you can type:\n\n```\npip install -ve . --no-build-isolation -Cbuilddir=\"debug\" -Csetup-args=\"-Dbuildtype=debug\"\n```\nNote\n\nconda environments update CFLAGS/CPPFLAGS with flags that are geared towards generating releases, and may work counter towards usage in a development environment. If using conda, you should unset these environment variables via `export CFLAGS=` and `export CPPFLAGS=`\n\nBy specifying `builddir=\"debug\"` all of the targets will be built and placed in the debug directory relative to the project root. This helps to keep your debug and release artifacts separate; you are of course able to choose a different directory name or omit altogether if you do not care to separate build types.\n\n## Using cygdb for Cython debugging#\n\nFor debugging Cython extensions, `cygdb` is the recommended approach. The `cygdb` debugger comes pre-installed with Cython, so if you have Cython installed in your development environment, you should already have access to it.\n\nAfter building pandas with debug symbols (as shown above), you can use cygdb by navigating to the build folder and starting the debugger:\n\n```\ncd debug\ncygdb\n```\nWithin the debugger you can use cygdb commands to navigate cython extensions.\n\n## Editor support#\n\nThe meson build system generates a compilation database automatically and places it in the build directory. Many language servers and IDEs can use this information to provide code-completion, go-to-definition and error checking support as you type.\n\nHow each language server / IDE chooses to look for the compilation database may vary. When in doubt you may want to create a symlink at the root of the project that points to the compilation database in your build directory. Assuming you used *debug* as your directory name, you can run:\n\n```\nln -s debug/compile_commands.json .\n```",
     "markdown_length": 2674,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Debugging C extensions — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "Debugging C extensions — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/development/debugging_extensions.html"
     },
-    "crawled_at": "2026-08-26T06:48:31.243638",
+    "crawled_at": "2026-08-28T16:00:38.738214",
     "type": "webpage"
 }

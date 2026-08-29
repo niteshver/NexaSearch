@@ -2,7 +2,7 @@
     "id": "ebb70882696dbfe61d4b18bcb6680ea8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.stata.StataReader.data_label.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.io.stata.StataReader.data_label.html",
-    "title": "pandas.io.stata.StataReader.data_label — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.io.stata.StataReader.data_label — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.io.stata.StataReader.data_label#\n\n- property StataReader.data_label[source]#\n- Return data label of Stata file. The data label is a descriptive string associated with the dataset stored in the Stata file. This property provides access to that label, if one is present. See also \n  - `io.stata.StataReader.variable_labels`\n  - Return a dict associating each variable name with corresponding label.\n  - `DataFrame.to_stata`\n  - Export DataFrame object to Stata dta format.\n Examples >>> df = pd.DataFrame([(1,)], columns=[\"variable\"]) >>> time_stamp = pd.Timestamp(2000, 2, 29, 14, 21) >>> data_label = \"This is a data file.\" >>> path = \"/My_path/filename.dta\" >>> df.to_stata( ... path, ... time_stamp=time_stamp, ... data_label=data_label, ... version=None, ... ) >>> with pd.io.stata.StataReader(path) as reader: ... print(reader.data_label) This is a data file.",
     "markdown_length": 872,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.io.stata.StataReader.data_label — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.io.stata.StataReader.data_label — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:51:36.854679",
+    "crawled_at": "2026-08-28T17:59:38.620091",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "08f3cc70d2112ac31cb7e9de71acc648",
     "url": "http://pandas.pydata.org/docs/dev/reference/index.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/index.html",
-    "title": "API reference — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "API reference — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# API reference#\n\nThis page gives an overview of all public pandas objects, functions and\nmethods. All classes and functions exposed in `pandas.*` namespace are public.\n\nThe following subpackages are public.\n\n- `pandas.errors` : Custom exception and warnings classes that are raised by pandas.\n- `pandas.plotting` : Plotting public API.\n- `pandas.testing` : Functions that are useful for writing tests involving pandas objects.\n- `pandas.api.extensions` : Functions and classes for extending pandas objects.\n- `pandas.api.indexers` : Functions and classes for rolling window indexers.\n- `pandas.api.interchange` : DataFrame interchange protocol.\n- `pandas.api.types` : Datatype classes and functions.\n- `pandas.api.typing` : Classes that may be necessary for type-hinting.\nThese are classes that are encountered as intermediate results but should not be instantiated\ndirectly by users. These classes are not to be confused with classes from the\npandas-stubs package\nwhich has classes in addition to those that occur in pandas for type-hinting.\n\nIn addition, public functions in `pandas.io`, `pandas.tseries`, `pandas.util` submodules\nare explicitly mentioned in the documentation. Further APIs in these modules are not guaranteed\nto be stable.\n\nWarning\n\nThe `pandas.core`, `pandas.compat` top-level modules are PRIVATE. Stable functionality in such modules is not guaranteed.",
     "markdown_length": 1375,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "API reference — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "API reference — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/extending.html"
     },
-    "crawled_at": "2026-08-26T06:48:56.211658",
+    "crawled_at": "2026-08-28T15:45:20.587477",
     "type": "webpage"
 }

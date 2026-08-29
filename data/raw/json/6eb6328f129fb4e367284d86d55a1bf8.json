@@ -2,7 +2,7 @@
     "id": "6eb6328f129fb4e367284d86d55a1bf8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.now.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Period.now.html",
-    "title": "pandas.Period.now — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Period.now — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Period.now#\n\n- \nclassmethod Period.now(*freq* )#\n- Return the period of now’s date. The now method provides a convenient way to generate a period object for the current date and time. This can be particularly useful in financial and economic analysis, where data is often collected and analyzed in regular intervals (e.g., hourly, daily, monthly). By specifying the frequency, users can create periods that match the granularity of their data. \n  - Parameters:\n    - **freq** str, DateOffset\n    - Frequency to use for the returned period.\n See also \n  - `to_datetime`\n  - Convert argument to datetime.\n  - `Period`\n  - Represents a period of time.\n  - `Period.to_timestamp`\n  - Return the Timestamp representation of the Period.\n Examples >>> pd.Period.now('h') Period('2023-06-12 11:00', 'h')",
     "markdown_length": 803,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Period.now — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Period.now — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:49:09.685622",
+    "crawled_at": "2026-08-28T15:48:26.868062",
     "type": "webpage"
 }

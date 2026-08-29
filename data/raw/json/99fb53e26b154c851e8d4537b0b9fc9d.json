@@ -2,7 +2,7 @@
     "id": "99fb53e26b154c851e8d4537b0b9fc9d",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.prod.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.SeriesGroupBy.prod.html",
-    "title": "pandas.api.typing.SeriesGroupBy.prod — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.SeriesGroupBy.prod — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.SeriesGroupBy.prod#\n\n- \nSeriesGroupBy.prod(*numeric_only=False* ,*min_count=0* ,*skipna=True* )[source]#\n- Compute prod of group values. This method computes the product of all values within each group, returning a result for each group. \n  - Parameters:\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns. Changed in version 2.0.0: numeric_only no longer accepts `None` .\n    - **min_count** int, default 0\n    - The required number of valid values to perform the operation. If fewer than `min_count` non-NA values are present the result will be NA.\n    - **skipna** bool, default True\n    - Exclude NA/null values. If an entire group is NA, the result will be NA. Added in version 3.0.0.\n  - Returns:\n    - Series or DataFrame\n    - Computed prod of values within each group.\n See also \n  - `Series.prod`\n  - Return the product of the values over the requested axis.\n  - `DataFrame.prod`\n  - Return the product of the values over the requested axis.\n Examples For SeriesGroupBy: >>> lst = [\"a\", \"a\", \"b\", \"b\"] >>> ser = pd.Series([1, 2, 3, 4], index=lst) >>> ser a 1 a 2 b 3 b 4 dtype: int64 >>> ser.groupby(level=0).prod() a 2 b 12 dtype: int64 For DataFrameGroupBy: >>> data = [[1, 8, 2], [1, 2, 5], [2, 5, 8], [2, 6, 9]] >>> df = pd.DataFrame( ... data, ... columns=[\"a\", \"b\", \"c\"], ... index=[\"tiger\", \"leopard\", \"cheetah\", \"lion\"], ... ) >>> df a b c tiger 1 8 2 leopard 1 2 5 cheetah 2 5 8 lion 2 6 9 >>> df.groupby(\"a\").prod() b c a 1 16 10 2 30 72",
     "markdown_length": 1516,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.SeriesGroupBy.prod — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.SeriesGroupBy.prod — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:50:34.113662",
+    "crawled_at": "2026-08-28T17:58:31.559818",
     "type": "webpage"
 }

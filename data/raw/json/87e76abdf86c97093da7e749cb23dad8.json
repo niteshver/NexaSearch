@@ -2,7 +2,7 @@
     "id": "87e76abdf86c97093da7e749cb23dad8",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.dayofweek.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.dayofweek.html",
-    "title": "pandas.Timestamp.dayofweek — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.dayofweek — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.Timestamp.dayofweek# Timestamp.dayofweek# Return day of the week. Deprecated since version 3.1.0: Use Timestamp.day_of_week instead.",
     "markdown_length": 139,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.dayofweek — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.dayofweek — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:15.347465",
+    "crawled_at": "2026-08-28T15:51:10.874391",
     "type": "webpage"
 }

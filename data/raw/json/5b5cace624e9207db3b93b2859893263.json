@@ -2,7 +2,7 @@
     "id": "5b5cace624e9207db3b93b2859893263",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.days.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timedelta.days.html",
-    "title": "pandas.Timedelta.days — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timedelta.days — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timedelta.days#\n\n- Timedelta.days#\n- Returns the days of the timedelta. The days attribute of a pandas.Timedelta object provides the number of days represented by the Timedelta. This is useful for extracting the day component from a Timedelta that may also include hours, minutes, seconds, and smaller time units. This attribute simplifies the process of working with durations where only the day component is of interest. \n  - Returns:\n    - int\n See also \n  - `Timedelta.seconds`\n  - Returns the seconds component of the timedelta.\n  - `Timedelta.microseconds`\n  - Returns the microseconds component of the timedelta.\n  - `Timedelta.total_seconds`\n  - Returns the total duration in seconds.\n Examples >>> td = pd.Timedelta(1, \"D\") >>> td.days 1 >>> td = pd.Timedelta('4 min 3 us 42 ns') >>> td.days 0",
     "markdown_length": 811,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timedelta.days — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timedelta.days — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:49.759909",
+    "crawled_at": "2026-08-28T15:50:52.400119",
     "type": "webpage"
 }

@@ -11,7 +11,6 @@ below).Warning BooleanArray is considered experimental. The implementation and p
     - A 1-d boolean-dtype array indicating missing values (True indicates missing).
     - **copy** bool, default False
     - Whether to copy the values and mask arrays.
- Attributes **None**Methods **None**
   - Returns:
     - BooleanArray
  See also 

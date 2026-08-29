@@ -2,7 +2,7 @@
     "id": "c43fc7dfecfb5c1154c12fe3b3e69269",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.combine_first.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.combine_first.html",
-    "title": "pandas.Series.combine_first — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.combine_first — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.combine_first#\n\n- \nSeries.combine_first(*other* )[source]#\n- Update null elements with value in the same location in ‘other’. Combine two Series objects by filling null values in one Series with non-null values from the other Series. Result index will be the union of the two indexes. \n  - Parameters:\n    - **other** Series\n    - The value(s) to be used for filling null values.\n  - Returns:\n    - Series\n    - The result of combining the provided Series with the other object.\n See also \n  - `Series.combine`\n  - Perform element-wise operation on two Series using a given function.\n Examples >>> s1 = pd.Series([1, np.nan]) >>> s2 = pd.Series([3, 4, 5]) >>> s1.combine_first(s2) 0 1.0 1 4.0 2 5.0 dtype: float64 Null values still persist if the location of that null value does not exist in other >>> s1 = pd.Series({\"falcon\": np.nan, \"eagle\": 160.0}) >>> s2 = pd.Series({\"eagle\": 200.0, \"duck\": 30.0}) >>> s1.combine_first(s2) duck 30.0 eagle 160.0 falcon NaN dtype: float64",
     "markdown_length": 993,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.combine_first — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.combine_first — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:12.580875",
+    "crawled_at": "2026-08-28T15:48:59.370858",
     "type": "webpage"
 }

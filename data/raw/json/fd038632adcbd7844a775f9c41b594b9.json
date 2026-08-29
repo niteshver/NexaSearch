@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.hour.html"
     },
-    "crawled_at": "2026-08-26T06:51:03.138249",
+    "crawled_at": "2026-08-28T19:49:37.467058",
     "type": "webpage"
 }

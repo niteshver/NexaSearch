@@ -2,7 +2,7 @@
     "id": "0ea04ea45bc3d58a5a3d9eb99e62564f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.date.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.date.html",
-    "title": "pandas.Timestamp.date — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.date — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.date#\n\n- Timestamp.date()#\n- Returns datetime.date with the same year, month, and day. This method extracts the date component from the Timestamp and returns it as a datetime.date object, discarding the time information. \n  - Returns:\n    - datetime.date\n    - The date part of the Timestamp.\n See also \n  - `Timestamp`\n  - Represents a single timestamp, similar to datetime.\n  - `datetime.datetime.date`\n  - Extract the date component from a datetime object.\n Examples Extract the date from a Timestamp: >>> ts = pd.Timestamp('2023-01-01 10:00:00.00') >>> ts Timestamp('2023-01-01 10:00:00') >>> ts.date() datetime.date(2023, 1, 1)",
     "markdown_length": 651,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.date — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.date — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:28.480017",
+    "crawled_at": "2026-08-28T15:51:09.128247",
     "type": "webpage"
 }

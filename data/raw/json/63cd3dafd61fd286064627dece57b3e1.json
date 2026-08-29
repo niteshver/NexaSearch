@@ -2,7 +2,7 @@
     "id": "63cd3dafd61fd286064627dece57b3e1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dtypes.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dtypes.html",
-    "title": "pandas.Series.dtypes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dtypes — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.dtypes#\n\n- property Series.dtypes[source]#\n- Return the dtype object of the underlying data. Unlike `DataFrame.dtypes` , which returns a Series of dtypes for each\ncolumn,`Series.dtypes` returns a single dtype object representing\nthe type of all elements in the Series.See also \n  - `DataFrame.dtypes`\n  - Return the dtypes in the DataFrame.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.dtypes dtype('int64')",
     "markdown_length": 423,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dtypes — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dtypes — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.MultiIndex.dtypes.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:16.451354",
+    "crawled_at": "2026-08-28T15:49:27.071677",
     "type": "webpage"
 }

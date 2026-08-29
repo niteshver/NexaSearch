@@ -2,7 +2,7 @@
     "id": "a1fa7002952d039b7fef3042b8ba6e79",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.T.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.T.html",
-    "title": "pandas.DataFrame.T — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.T — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.T#\n\n- property DataFrame.T[source]#\n- The transpose of the DataFrame. This property returns a DataFrame with rows and columns interchanged, reflecting the data across the main diagonal. \n  - Returns:\n    - DataFrame\n    - The transposed DataFrame.\n See also \n  - `DataFrame.transpose`\n  - Transpose index and columns.\n Examples >>> df = pd.DataFrame({\"col1\": [1, 2], \"col2\": [3, 4]}) >>> df col1 col2 0 1 3 1 2 4 >>> df.T 0 1 col1 1 2 col2 3 4",
     "markdown_length": 462,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DataFrame.T — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.T — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:48:59.840695",
+    "crawled_at": "2026-08-28T15:45:53.715012",
     "type": "webpage"
 }

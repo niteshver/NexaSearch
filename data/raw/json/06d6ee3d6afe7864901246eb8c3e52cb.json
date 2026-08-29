@@ -2,7 +2,7 @@
     "id": "06d6ee3d6afe7864901246eb8c3e52cb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.mean.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.mean.html",
-    "title": "pandas.Series.mean — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.mean — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.mean#\n\n- \nSeries.mean(*** ,*axis=0* ,*skipna=True* ,*numeric_only=False* ,***kwargs* )[source]#\n- Return the mean of the values over the requested axis. This method computes the arithmetic mean of the Series values, optionally skipping missing values. \n  - Parameters:\n    - **axis** {index (0)}\n    - Axis for the function to be applied on. For Series this parameter is unused and defaults to 0. For DataFrames, specifying `axis=None` will apply the aggregation\nacross both axes.Added in version 2.0.0.\n    - **skipna** bool, default True\n    - Exclude NA/null values when computing the result.\n    - **numeric_only** bool, default False\n    - Include only float, int, boolean columns.\n    - ****kwargs**\n    - Additional keyword arguments have no effect but might be accepted for compatibility with NumPy. See NumPy compatibility kwargs for more.\n  - Returns:\n    - scalar\n    - Mean of the values for the requested axis.\n See also \n  - `numpy.median`\n  - Equivalent numpy function for computing median.\n  - `Series.sum`\n  - Sum of the values.\n  - `Series.median`\n  - Median of the values.\n  - `Series.std`\n  - Standard deviation of the values.\n  - `Series.var`\n  - Variance of the values.\n  - `Series.min`\n  - Minimum value.\n  - `Series.max`\n  - Maximum value.\n Examples >>> s = pd.Series([1, 2, 3]) >>> s.mean() 2.0",
     "markdown_length": 1335,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.mean — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.mean — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.mean.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:19.192739",
+    "crawled_at": "2026-08-28T15:49:47.285718",
     "type": "webpage"
 }

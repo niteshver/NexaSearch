@@ -2,7 +2,7 @@
     "id": "5fc9d76af44b1ef2993b6ea8bcdbe4c1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.api.guess_datetime_format.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.api.guess_datetime_format.html",
-    "title": "pandas.tseries.api.guess_datetime_format — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.tseries.api.guess_datetime_format — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.api.guess_datetime_format#\n\n- \npandas.tseries.api.guess_datetime_format(*dt_str* ,*dayfirst=False* )#\n- Guess the datetime format of a given datetime string. This function attempts to deduce the format of a given datetime string. It is useful for situations where the datetime format is unknown and needs to be determined for proper parsing. The function is not guaranteed to return a format. \n  - Parameters:\n    - **dt_str** str\n    - Datetime string to guess the format of.\n    - **dayfirst** bool, default False\n    - If True parses dates with the day first, eg 20/01/2005 Warning dayfirst=True is not strict, but will prefer to parse with day first (this is a known bug).\n  - Returns:\n    - **str or None** ret\n    - datetime format string (for strftime or strptime), or None if it can’t be guessed.\n See also \n  - `to_datetime`\n  - Convert argument to datetime.\n  - `Timestamp`\n  - Pandas replacement for python datetime.datetime object.\n  - `DatetimeIndex`\n  - Immutable ndarray-like of datetime64 data.\n Examples >>> from pandas.tseries.api import guess_datetime_format >>> guess_datetime_format('09/13/2023') '%m/%d/%Y' >>> guess_datetime_format('2023|September|13')",
     "markdown_length": 1192,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.api.guess_datetime_format — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.tseries.api.guess_datetime_format — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:11.061100",
+    "crawled_at": "2026-08-28T15:52:31.605110",
     "type": "webpage"
 }

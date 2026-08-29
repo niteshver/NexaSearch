@@ -1,0 +1,37 @@
+# pandas.DataFrame.mul#
+
+- 
+DataFrame.mul(*other* ,*axis='columns'* ,*level=None* ,*fill_value=None* )[source]#
+- Get Multiplication of dataframe and other, element-wise (binary operator mul). Equivalent to `dataframe * other` , but with support to substitute a
+fill_value for missing data in one of the inputs. With reverse version,
+rmul.Among flexible wrappers (add, sub, mul, div, floordiv, mod, pow) to arithmetic operators: +, -, *, /, //, %, **. 
+  - Parameters:
+    - **other** scalar, sequence, Series, dict or DataFrame
+    - Any single or multiple element data structure, or list-like object.
+    - **axis** {0 or ‘index’, 1 or ‘columns’}
+    - Whether to compare by the index (0 or ‘index’) or columns. (1 or ‘columns’). For Series input, axis to match Series index on.
+    - **level** int or label
+    - Broadcast across a level, matching Index values on the passed MultiIndex level.
+    - **fill_value** scalar or None, default None
+    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.
+  - Returns:
+    - DataFrame
+    - Result of the arithmetic operation.
+ See also 
+  - `DataFrame.add`
+  - Add DataFrames.
+  - `DataFrame.sub`
+  - Subtract DataFrames.
+  - `DataFrame.mul`
+  - Multiply DataFrames.
+  - `DataFrame.div`
+  - Divide DataFrames (float division).
+  - `DataFrame.truediv`
+  - Divide DataFrames (float division).
+  - `DataFrame.floordiv`
+  - Divide DataFrames (integer division).
+  - `DataFrame.mod`
+  - Calculate modulo (remainder after division).
+  - `DataFrame.pow`
+  - Calculate exponential power.
+ Notes Mismatched indices will be unioned together. Examples >>> df = pd.DataFrame( ... {"angles": [0, 3, 4], "degrees": [360, 180, 360]}, ... index=["circle", "triangle", "rectangle"], ... ) >>> df angles degrees circle 0 360 triangle 3 180 rectangle 4 360 Multiply a scalar with operator version which return the same results. >>> df * 2 angles degrees circle 0 720 triangle 6 360 rectangle 8 720 >>> df.mul(2) angles degrees circle 0 720 triangle 6 360 rectangle 8 720 Multiply a list and Series by axis with operator version. >>> df * [1, 2] angles degrees circle 0 720 triangle 3 360 rectangle 4 720 >>> df.mul([1, 2], axis="columns") angles degrees circle 0 720 triangle 3 360 rectangle 4 720 >>> df.mul( ... pd.Series([1, 2, 3], index=["circle", "triangle", "rectangle"]), ... axis="index", ... ) angles degrees circle 0 360 triangle 6 360 rectangle 12 1080 Multiply a dictionary by axis. >>> df.mul({"angles": 0, "degrees": 2}) angles degrees circle 0 720 triangle 0 360 rectangle 0 720 >>> df.mul({"circle": 0, "triangle": 2, "rectangle": 3}, axis="index") angles degrees circle 0 0 triangle 6 360 rectangle 12 1080

@@ -2,7 +2,7 @@
     "id": "baf37f5654427fcab919f8064faefd2c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.days_in_month.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.days_in_month.html",
-    "title": "pandas.Timestamp.days_in_month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.days_in_month — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.days_in_month#\n\n- Timestamp.days_in_month#\n- Return the number of days in the month. This value depends on the month and whether the year is a leap year. \n  - Returns:\n    - int\n See also \n  - `Timestamp.month_name`\n  - Return the month name of the Timestamp with specified locale.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.days_in_month 31",
     "markdown_length": 369,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.days_in_month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.days_in_month — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:16.984035",
+    "crawled_at": "2026-08-28T15:51:11.880351",
     "type": "webpage"
 }

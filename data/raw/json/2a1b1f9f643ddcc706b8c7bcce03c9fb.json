@@ -2,10 +2,10 @@
     "id": "2a1b1f9f643ddcc706b8c7bcce03c9fb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.lag_plot.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.lag_plot.html",
-    "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0 documentation",
     "status": 200,
-    "markdown": "# pandas.plotting.lag_plot#\n\n- \npandas.plotting.lag_plot(*series* ,*lag=1* ,*ax=None* ,***kwds* )[source]#\n- Lag plot for time series. A lag plot is a scatter plot of a time series against a lag of itself. It helps in visualizing the temporal dependence between observations by plotting the values at time t on the x-axis and the values at time t + lag on the y-axis. \n  - Parameters:\n    - **series** Series\n    - The time series to visualize.\n    - **lag** int, default 1\n    - Lag length of the scatter plot.\n    - **ax** Matplotlib axis object, optional\n    - The matplotlib axis object to use.\n    - ****kwds**\n    - Matplotlib scatter method keyword arguments.\n  - Returns:\n    - matplotlib.axes.Axes\n    - The matplotlib Axes object containing the lag plot.\n See also \n  - `plotting.autocorrelation_plot`\n  - Autocorrelation plot for time series.\n  - `matplotlib.pyplot.scatter`\n  - A scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n Examples Lag plots are most commonly used to look for patterns in time series data. Given the following time series >>> np.random.seed(5) >>> x = np.cumsum(np.random.normal(loc=1, scale=5, size=50)) >>> s = pd.Series(x) >>> s.plot() A lag plot with `lag=1` returns>>> _ = pd.plotting.lag_plot(s, lag=1)",
-    "markdown_length": 1272,
+    "markdown": "# pandas.plotting.lag_plot#\n\n- \npandas.plotting.lag_plot(*series* ,*lag=1* ,*ax=None* ,***kwds* )[source]#\n- Lag plot for time series. A lag plot is a scatter plot of a time series against a lag of itself. It helps in visualizing the temporal dependence between observations by plotting the values at time t on the x-axis and the values at time t + lag on the y-axis. \n  - Parameters:\n    - **series** Series\n    - The time series to visualize.\n    - **lag** int, default 1\n    - Lag length of the scatter plot.\n    - **ax** Matplotlib axis object, optional\n    - The matplotlib axis object to use.\n    - ****kwds**\n    - Matplotlib scatter method keyword arguments.\n  - Returns:\n    - matplotlib.axes.Axes\n    - The matplotlib Axes object containing the lag plot.\n See also \n  - `plotting.autocorrelation_plot`\n  - Autocorrelation plot for time series.\n  - `matplotlib.pyplot.scatter`\n  - A scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n Examples Lag plots are most commonly used to look for patterns in time series data. Given the following time series >>> rng = np.random.default_rng(42) >>> x = np.cumsum(rng.normal(loc=1, scale=5, size=50)) >>> s = pd.Series(x) >>> s.plot() A lag plot with `lag=1` returns>>> _ = pd.plotting.lag_plot(s, lag=1)",
+    "markdown_length": 1280,
     "internal_links": [
         {
             "href": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.lag_plot.html",
@@ -254,7 +254,7 @@
             "src": "../../_images/pandas-plotting-lag_plot-1.png",
             "data": "",
             "alt": "../../_images/pandas-plotting-lag_plot-1.png",
-            "desc": "pandas.plotting.lag_plot(series, lag=1, ax=None, **kwds)#\nLag plot for time series.\nA lag plot is a scatter plot of a time series against a lag of itself. It helps\nin visualizing the temporal dependence between observations by plotting the values\nat time t on the x-axis and the values at time t + lag on the y-axis.\n\nParameters:\n\nseriesSeriesThe time series to visualize.\n\nlagint, default 1Lag length of the scatter plot.\n\naxMatplotlib axis object, optionalThe matplotlib axis object to use.\n\n**kwdsMatplotlib scatter method keyword arguments.\n\n\n\nReturns:\n\nmatplotlib.axes.AxesThe matplotlib Axes object containing the lag plot.\n\n\n\n\n\nSee also\n\nplotting.autocorrelation_plotAutocorrelation plot for time series.\n\nA scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n\n\n\nExamples\nLag plots are most commonly used to look for patterns in time series data.\nGiven the following time series\n>>> np.random.seed(5)\n>>> x = np.cumsum(np.random.normal(loc=1, scale=5, size=50))\n>>> s = pd.Series(x)\n>>> s.plot()\n\n      \n  Copy to clipboard\n  \n  \n  \n\n    \n\n\n\n\nA lag plot with lag=1 returns\n>>> _ = pd.plotting.lag_plot(s, lag=1)\n\n      \n  Copy to clipboard",
+            "desc": "pandas.plotting.lag_plot(series, lag=1, ax=None, **kwds)#\nLag plot for time series.\nA lag plot is a scatter plot of a time series against a lag of itself. It helps\nin visualizing the temporal dependence between observations by plotting the values\nat time t on the x-axis and the values at time t + lag on the y-axis.\n\nParameters:\n\nseriesSeriesThe time series to visualize.\n\nlagint, default 1Lag length of the scatter plot.\n\naxMatplotlib axis object, optionalThe matplotlib axis object to use.\n\n**kwdsMatplotlib scatter method keyword arguments.\n\n\n\nReturns:\n\nmatplotlib.axes.AxesThe matplotlib Axes object containing the lag plot.\n\n\n\n\n\nSee also\n\nplotting.autocorrelation_plotAutocorrelation plot for time series.\n\nA scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n\n\n\nExamples\nLag plots are most commonly used to look for patterns in time series data.\nGiven the following time series\n>>> rng = np.random.default_rng(42)\n>>> x = np.cumsum(rng.normal(loc=1, scale=5, size=50))\n>>> s = pd.Series(x)\n>>> s.plot()\n\n      \n  Copy to clipboard\n  \n  \n  \n\n    \n\n\n\n\nA lag plot with lag=1 returns\n>>> _ = pd.plotting.lag_plot(s, lag=1)\n\n      \n  Copy to clipboard",
             "score": 4,
             "type": "image",
             "group_id": 2,
@@ -265,7 +265,7 @@
             "src": "../../_images/pandas-plotting-lag_plot-2.png",
             "data": "",
             "alt": "../../_images/pandas-plotting-lag_plot-2.png",
-            "desc": "pandas.plotting.lag_plot(series, lag=1, ax=None, **kwds)#\nLag plot for time series.\nA lag plot is a scatter plot of a time series against a lag of itself. It helps\nin visualizing the temporal dependence between observations by plotting the values\nat time t on the x-axis and the values at time t + lag on the y-axis.\n\nParameters:\n\nseriesSeriesThe time series to visualize.\n\nlagint, default 1Lag length of the scatter plot.\n\naxMatplotlib axis object, optionalThe matplotlib axis object to use.\n\n**kwdsMatplotlib scatter method keyword arguments.\n\n\n\nReturns:\n\nmatplotlib.axes.AxesThe matplotlib Axes object containing the lag plot.\n\n\n\n\n\nSee also\n\nplotting.autocorrelation_plotAutocorrelation plot for time series.\n\nA scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n\n\n\nExamples\nLag plots are most commonly used to look for patterns in time series data.\nGiven the following time series\n>>> np.random.seed(5)\n>>> x = np.cumsum(np.random.normal(loc=1, scale=5, size=50))\n>>> s = pd.Series(x)\n>>> s.plot()\n\n      \n  Copy to clipboard\n  \n  \n  \n\n    \n\n\n\n\nA lag plot with lag=1 returns\n>>> _ = pd.plotting.lag_plot(s, lag=1)\n\n      \n  Copy to clipboard",
+            "desc": "pandas.plotting.lag_plot(series, lag=1, ax=None, **kwds)#\nLag plot for time series.\nA lag plot is a scatter plot of a time series against a lag of itself. It helps\nin visualizing the temporal dependence between observations by plotting the values\nat time t on the x-axis and the values at time t + lag on the y-axis.\n\nParameters:\n\nseriesSeriesThe time series to visualize.\n\nlagint, default 1Lag length of the scatter plot.\n\naxMatplotlib axis object, optionalThe matplotlib axis object to use.\n\n**kwdsMatplotlib scatter method keyword arguments.\n\n\n\nReturns:\n\nmatplotlib.axes.AxesThe matplotlib Axes object containing the lag plot.\n\n\n\n\n\nSee also\n\nplotting.autocorrelation_plotAutocorrelation plot for time series.\n\nA scatter plot of y vs. x with varying marker size and/or color in Matplotlib.\n\n\n\nExamples\nLag plots are most commonly used to look for patterns in time series data.\nGiven the following time series\n>>> rng = np.random.default_rng(42)\n>>> x = np.cumsum(rng.normal(loc=1, scale=5, size=50))\n>>> s = pd.Series(x)\n>>> s.plot()\n\n      \n  Copy to clipboard\n  \n  \n  \n\n    \n\n\n\n\nA lag plot with lag=1 returns\n>>> _ = pd.plotting.lag_plot(s, lag=1)\n\n      \n  Copy to clipboard",
             "score": 4,
             "type": "image",
             "group_id": 3,
@@ -274,13 +274,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.plotting.lag_plot — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:48:14.253397",
+    "crawled_at": "2026-08-28T15:52:25.894342",
     "type": "webpage"
 }

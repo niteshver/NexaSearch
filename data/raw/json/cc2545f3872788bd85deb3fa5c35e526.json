@@ -2,7 +2,7 @@
     "id": "cc2545f3872788bd85deb3fa5c35e526",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.append.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.append.html",
-    "title": "pandas.CategoricalIndex.append — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.CategoricalIndex.append — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.CategoricalIndex.append#\n\n- \nCategoricalIndex.append(*other* )[source]#\n- Append a collection of Index options together. This method concatenates one or more Index objects to the current index, returning a new Index containing all elements in order. \n  - Parameters:\n    - **other** Index or list/tuple of indices\n    - Single Index or a collection of indices, which can be either a list or a tuple.\n  - Returns:\n    - Index\n    - Returns a new Index object resulting from appending the provided other indices to the original Index.\n See also \n  - `Index.insert`\n  - Make new Index inserting new item at location.\n Examples >>> idx = pd.Index([1, 2, 3]) >>> idx.append(pd.Index([4])) Index([1, 2, 3, 4], dtype='int64')",
     "markdown_length": 727,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.CategoricalIndex.append — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.CategoricalIndex.append — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:44.860220",
+    "crawled_at": "2026-08-28T15:45:48.550364",
     "type": "webpage"
 }

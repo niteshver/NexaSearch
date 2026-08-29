@@ -2,7 +2,7 @@
     "id": "ed1c45d3c504401582eaa4b10bbc02b0",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.DuplicateLabelError.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.DuplicateLabelError.html",
-    "title": "pandas.errors.DuplicateLabelError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+    "title": "pandas.errors.DuplicateLabelError — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.DuplicateLabelError#\n\n- exception pandas.errors.DuplicateLabelError[source]#\n- Error raised when an operation would introduce duplicate labels. This error is typically encountered when performing operations on objects with allows_duplicate_labels=False and the operation would result in duplicate labels in the index. Duplicate labels can lead to ambiguities in indexing and reduce data integrity. See also \n  - `Series.set_flags`\n  - Return a new `Series` object with updated flags.\n  - `DataFrame.set_flags`\n  - Return a new `DataFrame` object with updated flags.\n  - `Series.reindex`\n  - Conform `Series` object to new index with optional filling logic.\n  - `DataFrame.reindex`\n  - Conform `DataFrame` object to new index with optional filling logic.\n Examples >>> s = pd.Series([0, 1, 2], index=[\"a\", \"b\", \"c\"]).set_flags( ... allows_duplicate_labels=False ... ) >>> s.reindex([\"a\", \"a\", \"b\"]) Traceback (most recent call last): ... DuplicateLabelError: Index has duplicates. positions label a [0, 1]",
     "markdown_length": 1020,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.DuplicateLabelError — pandas 3.1.0.dev0+1386.gcb2086a1a4 documentation",
+        "title": "pandas.errors.DuplicateLabelError — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Flags.html"
     },
-    "crawled_at": "2026-08-10T11:47:06.444821",
+    "crawled_at": "2026-08-28T17:58:56.326659",
     "type": "webpage"
 }

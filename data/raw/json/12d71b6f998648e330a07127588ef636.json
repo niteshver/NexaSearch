@@ -2,7 +2,7 @@
     "id": "12d71b6f998648e330a07127588ef636",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.UnsupportedFunctionCall.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.UnsupportedFunctionCall.html",
-    "title": "pandas.errors.UnsupportedFunctionCall — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.UnsupportedFunctionCall — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.UnsupportedFunctionCall#\n\n- exception pandas.errors.UnsupportedFunctionCall[source]#\n- Exception raised when attempting to call an unsupported numpy function. For example, `np.cumsum(groupby_object)` .See also \n  - `DataFrame.groupby`\n  - Group DataFrame using a mapper or by a Series of columns.\n  - `Series.groupby`\n  - Group Series using a mapper or by a Series of columns.\n  - `core.groupby.GroupBy.cumsum`\n  - Compute cumulative sum for each group.\n Examples >>> df = pd.DataFrame( ... {\"A\": [0, 0, 1, 1], \"B\": [\"x\", \"x\", \"z\", \"y\"], \"C\": [1, 2, 3, 4]} ... ) >>> np.cumsum(df.groupby([\"A\"])) Traceback (most recent call last): UnsupportedFunctionCall: numpy operations are not valid with groupby. Use .groupby(...).cumsum() instead",
     "markdown_length": 751,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.UnsupportedFunctionCall — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.UnsupportedFunctionCall — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:53.658034",
+    "crawled_at": "2026-08-28T17:59:10.262117",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "af5c668f41f1b666ef883af41ab6b77c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.tz.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.tz.html",
-    "title": "pandas.DatetimeIndex.tz — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DatetimeIndex.tz — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.tz#\n\n- property DatetimeIndex.tz[source]#\n- Return the timezone. This property returns the timezone information associated with the datetime data. If the data is timezone-naive (i.e. has no timezone information), it returns None. \n  - Returns:\n    - zoneinfo.ZoneInfo, datetime.tzinfo, pytz.tzinfo.BaseTZInfo, dateutil.tz.tz.tzfile, or None\n    - Returns None when the array is tz-naive.\n See also \n  - `DatetimeIndex.tz_localize`\n  - Localize tz-naive DatetimeIndex to a given time zone, or remove timezone from a tz-aware DatetimeIndex.\n  - `DatetimeIndex.tz_convert`\n  - Convert tz-aware DatetimeIndex from one time zone to another.\n Examples For Series: >>> s = pd.Series([\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"]) >>> s = pd.to_datetime(s) >>> s 0 2020-01-01 10:00:00+00:00 1 2020-02-01 11:00:00+00:00 dtype: datetime64[us, UTC] >>> s.dt.tz datetime.timezone.utc For DatetimeIndex: >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00:00+00:00\", \"2/1/2020 11:00:00+00:00\"] ... ) >>> idx.tz datetime.timezone.utc",
     "markdown_length": 1048,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.tz — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DatetimeIndex.tz — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:47.267656",
+    "crawled_at": "2026-08-28T15:47:26.958808",
     "type": "webpage"
 }

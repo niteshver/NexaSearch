@@ -2,7 +2,7 @@
     "id": "7d29093602735600107e55c733066f93",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.view.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.view.html",
-    "title": "pandas.api.extensions.ExtensionArray.view — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray.view — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray.view#\n\n- \nExtensionArray.view(*dtype=None* )[source]#\n- Return a view on the array. This method returns a new object referencing the same underlying data, without copying. Modifications to either the view or the original array will be reflected in both. \n  - Parameters:\n    - **dtype** str, np.dtype, or ExtensionDtype, optional\n    - Default None.\n  - Returns:\n    - ExtensionArray or np.ndarray\n    - A view on the `ExtensionArray` ’s data.\n See also \n  - `api.extensions.ExtensionArray.ravel`\n  - Return a flattened view on input array.\n  - `Index.view`\n  - Equivalent function for Index.\n  - `ndarray.view`\n  - New view of array with the same data.\n Examples This gives view on the underlying data of an `ExtensionArray` and is not a\ncopy. Modifications on either the view or the original`ExtensionArray` will be reflected on the underlying data:>>> arr = pd.array([1, 2, 3]) >>> arr2 = arr.view() >>> arr[0] = 2 >>> arr2 <IntegerArray> [2, 2, 3] Length: 3, dtype: Int64",
     "markdown_length": 1014,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray.view — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray.view — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:10.421607",
+    "crawled_at": "2026-08-28T15:51:49.828888",
     "type": "webpage"
 }

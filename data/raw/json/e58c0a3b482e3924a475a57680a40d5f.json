@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.infer_objects.html"
     },
-    "crawled_at": "2026-08-26T06:50:40.693005",
+    "crawled_at": "2026-08-28T20:42:12.652321",
     "type": "webpage"
 }

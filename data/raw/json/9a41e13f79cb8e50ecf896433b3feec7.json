@@ -2,7 +2,7 @@
     "id": "9a41e13f79cb8e50ecf896433b3feec7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.append_to_multiple.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.HDFStore.append_to_multiple.html",
-    "title": "pandas.HDFStore.append_to_multiple — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.HDFStore.append_to_multiple — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.HDFStore.append_to_multiple#\n\n- \nHDFStore.append_to_multiple(*d* ,*value* ,*selector* ,*data_columns=None* ,*axes=None* ,*dropna=<no_default>* ,***kwargs* )[source]#\n- Append to multiple tables. Splits `value` column-wise according to`d` and appends each\nslice to the corresponding table. The`selector` table is the one\nyou query against; its columns are made data_columns so they can be\nused in`where` clauses.\n  - Parameters:\n    - **d** dict\n    - Mapping of table_name to table_columns. `None` is acceptable as\nthe values for one node (that table will get all the remaining\ncolumns).\n    - **value** DataFrame or Series\n    - Pandas object to split across the tables.\n    - **selector** str\n    - Designates the indexable table; all of its columns will be made data_columns unless `data_columns` is passed, in which case\nthose are used.\n    - **data_columns** list of str or True, optional\n    - Columns to create as data columns, or `True` to use all columns.\n    - **axes** default None\n    - This parameter is currently not accepted.\n    - **dropna** bool, default False\n    - If `True` , drop rows from all tables if any single row in each\ntable has all NaN.Deprecated since version 3.1.0: The `dropna` keyword is deprecated and will be removed in a\nfuture version. Use`DataFrame.dropna()` before writing\ninstead.\n    - ****kwargs**\n    - Additional keyword arguments forwarded to `HDFStore.append()` .\n See also \n  - `HDFStore.append`\n  - Append to a single table.\n  - `HDFStore.select_as_multiple`\n  - Read from multiple tables with a single `where` .\n Examples >>> df = pd.DataFrame({\"A\": [1, 2], \"B\": [3, 4], \"C\": [5, 6]}) >>> store = pd.HDFStore(\"store.h5\", \"w\") >>> store.append_to_multiple( ... {\"t1\": [\"A\", \"B\"], \"t2\": None}, df, selector=\"t1\" ... ) >>> store.close()",
     "markdown_length": 1792,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.HDFStore.append_to_multiple — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.HDFStore.append_to_multiple — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/io.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.to_clipboard.html"
     },
-    "crawled_at": "2026-08-26T06:49:07.697101",
+    "crawled_at": "2026-08-28T17:56:29.825547",
     "type": "webpage"
 }

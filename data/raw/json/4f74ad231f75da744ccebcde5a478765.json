@@ -2,7 +2,7 @@
     "id": "4f74ad231f75da744ccebcde5a478765",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.add.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.add.html",
-    "title": "pandas.Series.add — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.add — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.add#\n\n- \nSeries.add(*other* ,*level=None* ,*fill_value=None* ,*axis=0* )[source]#\n- Return Addition of series and other, element-wise (binary operator add). Equivalent to `series + other` , but with support to substitute a\nfill_value for missing data in either one of the inputs.\n  - Parameters:\n    - **other** Series or scalar value\n    - With which to compute the addition.\n    - **level** int or name\n    - Broadcast across a level, matching Index values on the passed MultiIndex level.\n    - **fill_value** scalar or None, default None\n    - Fill NA values, whether present in the original data or introduced by alignment, with this value before computation. Positions where both inputs are NA are left unfilled and behave as NA does for the operation.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n  - Returns:\n    - Series\n    - The result of the operation.\n See also \n  - `Series.radd`\n  - Reverse of the Addition operator, see Python documentation for more details.\n Examples >>> a = pd.Series([1, 1, 1, np.nan], index=[\"a\", \"b\", \"c\", \"d\"]) >>> a a 1.0 b 1.0 c 1.0 d NaN dtype: float64 >>> b = pd.Series([1, np.nan, 1, np.nan], index=[\"a\", \"b\", \"d\", \"e\"]) >>> b a 1.0 b NaN d 1.0 e NaN dtype: float64 >>> a.add(b, fill_value=0) a 2.0 b 1.0 c 1.0 d 1.0 e NaN dtype: float64",
     "markdown_length": 1346,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.add — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.add — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:10.548531",
+    "crawled_at": "2026-08-28T15:48:44.673803",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "1248ee687bdf4777f17db17524f8bce6",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.previous_friday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.previous_friday.html",
-    "title": "pandas.tseries.holiday.previous_friday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.previous_friday — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.previous_friday#\n\n- \npandas.tseries.holiday.previous_friday(*dt* )[source]#\n- Move Saturday and Sunday back to the previous Friday. A holiday on a weekday keeps its date. \n  - Parameters:\n    - **dt** datetime\n    - The date the holiday falls on.\n  - Returns:\n    - datetime\n    - The date the holiday is observed on.\n See also \n  - `tseries.holiday.next_monday`\n  - Move Saturday and Sunday to the following Monday.\n  - `tseries.holiday.previous_workday`\n  - Move to the previous weekday.\n  - `tseries.holiday.Holiday`\n  - Class that defines a holiday with start/end dates and rules for observance.\n Examples >>> from datetime import datetime >>> from pandas.tseries.holiday import previous_friday >>> previous_friday(datetime(2022, 1, 1)) # Saturday datetime.datetime(2021, 12, 31, 0, 0) >>> previous_friday(datetime(2022, 1, 2)) # Sunday datetime.datetime(2021, 12, 31, 0, 0)",
     "markdown_length": 903,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.previous_friday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.previous_friday — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:50.694533",
+    "crawled_at": "2026-08-28T18:07:13.656901",
     "type": "webpage"
 }

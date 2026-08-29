@@ -2,7 +2,7 @@
     "id": "031f5fdb2de2dd1aa1cdc4f0d8f36093",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.plot.area.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.plot.area.html",
-    "title": "pandas.DataFrame.plot.area — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.DataFrame.plot.area — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DataFrame.plot.area#\n\n- \nDataFrame.plot.area(*x=None* ,*y=None* ,*stacked=True* ,***kwargs* )[source]#\n- Draw a stacked area plot. An area plot displays quantitative data visually. This function wraps the matplotlib area function. \n  - Parameters:\n    - **x** label or position, optional\n    - Coordinates for the X axis. By default uses the index.\n    - **y** label or position, optional\n    - Column to plot. By default uses all columns.\n    - **stacked** bool, default True\n    - Area plots are stacked by default. Set to False to create a unstacked plot.\n    - ****kwargs**\n    - Additional keyword arguments are documented in `DataFrame.plot()` .\n  - Returns:\n    - matplotlib.axes.Axes or numpy.ndarray\n    - Area plot, or array of area plots if subplots is True.\n See also \n  - `DataFrame.plot`\n  - Make plots of DataFrame using matplotlib.\n Examples Draw an area plot based on basic business metrics: >>> df = pd.DataFrame( ... { ... \"sales\": [3, 2, 3, 9, 10, 6], ... \"signups\": [5, 5, 6, 12, 14, 13], ... \"visits\": [20, 42, 28, 62, 81, 50], ... }, ... index=pd.date_range( ... start=\"2018/01/01\", end=\"2018/07/01\", freq=\"ME\" ... ), ... ) >>> ax = df.plot.area() Area plots are stacked by default. To produce an unstacked plot, pass `stacked=False` :>>> ax = df.plot.area(stacked=False) Draw an area plot for a single column: >>> ax = df.plot.area(y=\"sales\") Draw with a different x: >>> df = pd.DataFrame( ... { ... \"sales\": [3, 2, 3], ... \"visits\": [20, 42, 28], ... \"day\": [1, 2, 3], ... } ... ) >>> ax = df.plot.area(x=\"day\")",
     "markdown_length": 1546,
@@ -296,13 +296,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.DataFrame.plot.area — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.DataFrame.plot.area — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/frame.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DataFrame.html"
     },
-    "crawled_at": "2026-08-26T06:49:04.228907",
+    "crawled_at": "2026-08-28T15:46:37.119550",
     "type": "webpage"
 }

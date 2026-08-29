@@ -2,7 +2,7 @@
     "id": "0bb99b9731c9c3fad49caddd5ea85090",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.argsort.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Index.argsort.html",
-    "title": "pandas.Index.argsort — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Index.argsort — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.argsort#\n\n- \nIndex.argsort(**args* ,***kwargs* )[source]#\n- Return the integer indices that would sort the index. This method returns an array of indices that indicate the order in which elements of the index should be arranged to produce a sorted index. It delegates to the underlying array’s `argsort` method.\n  - Parameters:\n    - ***args**\n    - Passed to numpy.ndarray.argsort.\n    - ****kwargs**\n    - Passed to numpy.ndarray.argsort.\n  - Returns:\n    - np.ndarray[np.intp]\n    - Integer indices that would sort the index if used as an indexer.\n See also \n  - `numpy.argsort`\n  - Similar method for NumPy arrays.\n  - `Index.sort_values`\n  - Return sorted copy of Index.\n Examples >>> idx = pd.Index([\"b\", \"a\", \"d\", \"c\"]) >>> idx Index(['b', 'a', 'd', 'c'], dtype='str') >>> order = idx.argsort() >>> order array([1, 0, 3, 2]) >>> idx[order] Index(['a', 'b', 'c', 'd'], dtype='str')",
     "markdown_length": 902,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.argsort — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Index.argsort — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.argsort.html"
     },
-    "crawled_at": "2026-08-26T06:50:11.352505",
+    "crawled_at": "2026-08-28T19:53:34.845335",
     "type": "webpage"
 }

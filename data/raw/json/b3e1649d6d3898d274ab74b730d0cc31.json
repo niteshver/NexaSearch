@@ -27,9 +27,9 @@
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.asof_locs.html"
     },
-    "crawled_at": "2026-08-26T06:50:23.223585",
+    "crawled_at": "2026-08-28T19:48:15.345414",
     "type": "webpage"
 }

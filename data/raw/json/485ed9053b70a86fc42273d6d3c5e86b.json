@@ -2,7 +2,7 @@
     "id": "485ed9053b70a86fc42273d6d3c5e86b",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.slice_replace.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.slice_replace.html",
-    "title": "pandas.Series.str.slice_replace — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.str.slice_replace — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.slice_replace#\n\n- \nSeries.str.slice_replace(*start=None* ,*stop=None* ,*repl=None* )[source]#\n- Replace a positional slice of a string with another value. This function allows replacing specific parts of a string in a Series or Index by specifying start and stop positions. It is useful for modifying substrings in a controlled way, such as updating sections of text based on their positions or patterns. \n  - Parameters:\n    - **start** int, optional\n    - Left index position to use for the slice. If not specified (None), the slice is unbounded on the left, i.e. slice from the start of the string.\n    - **stop** int, optional\n    - Right index position to use for the slice. If not specified (None), the slice is unbounded on the right, i.e. slice until the end of the string.\n    - **repl** str, optional\n    - String for replacement. If not specified (None), the sliced region is replaced with an empty string.\n  - Returns:\n    - Series or Index\n    - Same type as the original object.\n See also \n  - `Series.str.slice`\n  - Just slicing without replacement.\n Examples >>> s = pd.Series([\"a\", \"ab\", \"abc\", \"abdc\", \"abcde\"]) >>> s 0 a 1 ab 2 abc 3 abdc 4 abcde dtype: str Specify just start, meaning replace start until the end of the string with repl. >>> s.str.slice_replace(1, repl=\"X\") 0 aX 1 aX 2 aX 3 aX 4 aX dtype: str Specify just stop, meaning the start of the string to stop is replaced with repl, and the rest of the string is included. >>> s.str.slice_replace(stop=2, repl=\"X\") 0 X 1 X 2 Xc 3 Xdc 4 Xcde dtype: str Specify start and stop, meaning the slice from start to stop is replaced with repl. Everything before or after start and stop is included as is. >>> s.str.slice_replace(start=1, stop=3, repl=\"X\") 0 aX 1 aX 2 aX 3 aXc 4 aXde dtype: str",
     "markdown_length": 1786,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.slice_replace — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.str.slice_replace — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:51:17.049365",
+    "crawled_at": "2026-08-28T15:50:32.905494",
     "type": "webpage"
 }

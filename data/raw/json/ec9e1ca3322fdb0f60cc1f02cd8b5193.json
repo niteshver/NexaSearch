@@ -2,7 +2,7 @@
     "id": "ec9e1ca3322fdb0f60cc1f02cd8b5193",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.strftime.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.strftime.html",
-    "title": "pandas.PeriodIndex.strftime — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.PeriodIndex.strftime — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.strftime#\n\n- \nPeriodIndex.strftime(*date_format* )[source]#\n- Convert to Index using specified date_format. Return an Index of formatted strings specified by date_format, which supports the same string format as the python standard library. Details of the string format can be found in python string format doc. Formats supported by the C strftime API but not by the python string format doc (such as “%R”, “%r”) are not officially supported and should be preferably replaced with their supported equivalents (such as “%H:%M”, “%I:%M:%S %p”). Note that PeriodIndex support additional directives, detailed in Period.strftime. \n  - Parameters:\n    - **date_format** str\n    - Date format string (e.g. “%%Y-%%m-%%d”).\n  - Returns:\n    - ndarray[object]\n    - NumPy ndarray of formatted strings.\n See also \n  - `to_datetime`\n  - Convert the given argument to datetime.\n  - `DatetimeIndex.normalize`\n  - Return DatetimeIndex with times to midnight.\n  - `DatetimeIndex.round`\n  - Round the DatetimeIndex to the specified freq.\n  - `DatetimeIndex.floor`\n  - Floor the DatetimeIndex to the specified freq.\n  - `Timestamp.strftime`\n  - Format a single Timestamp.\n  - `Period.strftime`\n  - Format a single Period.\n Examples >>> rng = pd.date_range(pd.Timestamp(\"2018-03-10 09:00\"), periods=3, freq=\"s\") >>> rng.strftime(\"%B %d, %Y, %r\") Index(['March 10, 2018, 09:00:00 AM', 'March 10, 2018, 09:00:01 AM', 'March 10, 2018, 09:00:02 AM'], dtype='str')",
     "markdown_length": 1461,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.strftime — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.PeriodIndex.strftime — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.strftime.html"
     },
-    "crawled_at": "2026-08-26T06:50:38.399663",
+    "crawled_at": "2026-08-28T20:33:13.329401",
     "type": "webpage"
 }

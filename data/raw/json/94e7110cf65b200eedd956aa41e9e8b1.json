@@ -2,7 +2,7 @@
     "id": "94e7110cf65b200eedd956aa41e9e8b1",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.after_nearest_workday.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.holiday.after_nearest_workday.html",
-    "title": "pandas.tseries.holiday.after_nearest_workday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.tseries.holiday.after_nearest_workday — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.tseries.holiday.after_nearest_workday#\n\n- \npandas.tseries.holiday.after_nearest_workday(*dt* )[source]#\n- Move to the workday after the nearest workday. Needed for Boxing Day, or for several holidays in a row. \n  - Parameters:\n    - **dt** datetime\n    - The date the holiday falls on.\n  - Returns:\n    - datetime\n    - The date the holiday is observed on.\n See also \n  - `tseries.holiday.nearest_workday`\n  - Move Saturday to Friday and Sunday to Monday.\n  - `tseries.holiday.before_nearest_workday`\n  - Move to the workday before the nearest workday.\n  - `tseries.holiday.next_workday`\n  - Move to the next weekday.\n Examples >>> from datetime import datetime >>> from pandas.tseries.holiday import after_nearest_workday >>> after_nearest_workday(datetime(2022, 1, 1)) # Saturday datetime.datetime(2022, 1, 3, 0, 0) >>> after_nearest_workday(datetime(2022, 1, 2)) # Sunday datetime.datetime(2022, 1, 4, 0, 0)",
     "markdown_length": 919,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.tseries.holiday.after_nearest_workday — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.tseries.holiday.after_nearest_workday — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/offset_frequency.html"
     },
-    "crawled_at": "2026-08-26T06:51:46.437995",
+    "crawled_at": "2026-08-28T18:00:02.253277",
     "type": "webpage"
 }

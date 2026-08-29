@@ -2,7 +2,7 @@
     "id": "3a07b32267b6e5dca8fc308dd6ab487f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.value_counts.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.value_counts.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.value_counts — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.value_counts — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.value_counts#\n\n- \nDataFrameGroupBy.value_counts(*subset=None* ,*normalize=False* ,*sort=True* ,*ascending=False* ,*dropna=True* )[source]#\n- Return a Series or DataFrame containing counts of unique rows. The resulting object will be in descending order so that the first element in each group is the most frequently-occurring row. \n  - Parameters:\n    - **subset** list-like, optional\n    - Columns to use when counting unique combinations.\n    - **normalize** bool, default False\n    - Return proportions rather than frequencies.\n    - **sort** bool, default True\n    - Stable sort by frequencies when True. When False, non-grouping columns will appear in the order they occur in within groups. Changed in version 3.0.0: In prior versions, `sort=False` would sort the non-grouping columns\nby label.\n    - **ascending** bool, default False\n    - Sort in ascending order.\n    - **dropna** bool, default True\n    - Don’t include counts of rows that contain NA values.\n  - Returns:\n    - Series or DataFrame\n    - Series if the groupby `as_index` is True, otherwise DataFrame.\n See also \n  - `Series.value_counts`\n  - Equivalent method on Series.\n  - `DataFrame.value_counts`\n  - Equivalent method on DataFrame.\n  - `SeriesGroupBy.value_counts`\n  - Equivalent method on SeriesGroupBy.\n Notes \n  - If the groupby `as_index` is True then the returned Series will have a\nMultiIndex with one level per input column.\n  - If the groupby `as_index` is False then the returned DataFrame will have an\nadditional column with the value_counts. The column is labelled ‘count’ or\n‘proportion’, depending on the`normalize` parameter.\n By default, rows that contain any NA values are omitted from the result. By default, the result will be in descending order so that the first element of each group is the most frequently-occurring row. Examples >>> df = pd.DataFrame( ... { ... \"gender\": [\"male\", \"male\", \"female\", \"male\", \"female\", \"male\"], ... \"education\": [\"low\", \"medium\", \"high\", \"low\", \"high\", \"low\"], ... \"country\": [\"US\", \"FR\", \"US\", \"FR\", \"FR\", \"FR\"], ... } ... ) >>> df gender education country 0 male low US 1 male medium FR 2 female high US 3 male low FR 4 female high FR 5 male low FR >>> df.groupby(\"gender\").value_counts() gender education country female high US 1 FR 1 male low FR 2 US 1 medium FR 1 Name: count, dtype: int64 >>> df.groupby(\"gender\").value_counts(ascending=True) gender education country female high US 1 FR 1 male low US 1 medium FR 1 low FR 2 Name: count, dtype: int64 >>> df.groupby(\"gender\").value_counts(normalize=True) gender education country female high US 0.50 FR 0.50 male low FR 0.50 US 0.25 medium FR 0.25 Name: proportion, dtype: float64 >>> df.groupby(\"gender\", as_index=False).value_counts() gender education country count 0 female high US 1 1 female high FR 1 2 male low FR 2 3 male low US 1 4 male medium FR 1 >>> df.groupby(\"gender\", as_index=False).value_counts(normalize=True) gender education country proportion 0 female high US 0.50 1 female high FR 0.50 2 male low FR 0.50 3 male low US 0.25 4 male medium FR 0.25",
     "markdown_length": 3090,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.value_counts — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.value_counts — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:35.216093",
+    "crawled_at": "2026-08-28T17:57:19.569267",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "78204e3e5ba60406fb0bf411436b8d2e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.cov.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.cov.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.cov — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.cov — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.cov#\n\n- \nDataFrameGroupBy.cov(*min_periods=None* ,*ddof=1* ,*numeric_only=False* )[source]#\n- Compute pairwise covariance of columns, excluding NA/null values. Compute the pairwise covariance among the series of a DataFrame. The returned data frame is the covariance matrix of the columns of the DataFrame. Both NA and null values are automatically excluded from the calculation. (See the note below about bias from missing values.) A threshold can be set for the minimum number of observations for each value created. Comparisons with observations below this threshold will be returned as `NaN` .This method is generally used for the analysis of time series data to understand the relationship between different measures across time. \n  - Parameters:\n    - **min_periods** int, optional\n    - Minimum number of observations required per pair of columns to have a valid result.\n    - **ddof** int, default 1\n    - Delta degrees of freedom. The divisor used in calculations is `N - ddof` , where`N` represents the number of elements.\nThis argument is applicable only when no`nan` is in the dataframe.\n    - **numeric_only** bool, default False\n    - Include only float, int or boolean data. Changed in version 2.0.0: The default value of `numeric_only` is now`False` .\n  - Returns:\n    - DataFrame\n    - The covariance matrix of the series of the DataFrame.\n See also \n  - `Series.cov`\n  - Compute covariance with another Series.\n  - `core.window.ewm.ExponentialMovingWindow.cov`\n  - Exponential weighted sample covariance.\n  - `core.window.expanding.Expanding.cov`\n  - Expanding sample covariance.\n  - `core.window.rolling.Rolling.cov`\n  - Rolling sample covariance.\n Notes Returns the covariance matrix of the DataFrame’s time series. The covariance is normalized by N-ddof. For DataFrames that have Series that are missing data (assuming that data is missing at random) the returned covariance matrix will be an unbiased estimate of the variance and covariance between the member Series. However, for many applications this estimate may not be acceptable because the estimate covariance matrix is not guaranteed to be positive semi-definite. This could lead to estimate correlations having absolute values which are greater than one, and/or a non-invertible covariance matrix. See Estimation of covariance matrices for more details. Examples >>> df = pd.DataFrame( ... { ... \"age\": [2, 3, 4, 6, 6, 1, 2, 1], ... \"weight\": [2.1, 3.2, 4.1, 6.5, 3.3, 2.1, 4.1, 1.9], ... \"pet\": [\"dog\", \"cat\", \"dog\", \"cat\", \"dog\", \"cat\", \"dog\", \"cat\"], ... } ... ) >>> df age weight pet 0 2 2.1 dog 1 3 3.2 cat 2 4 4.1 dog 3 6 6.5 cat 4 6 3.3 dog 5 1 2.1 cat 6 2 4.1 dog 7 1 1.9 cat >>> df.groupby(\"pet\").cov() age weight pet cat age 5.583333 4.975000 weight 4.975000 4.529167 dog age 3.666667 0.333333 weight 0.333333 0.893333",
     "markdown_length": 2846,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.cov — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.cov — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:51:14.765921",
+    "crawled_at": "2026-08-28T17:56:53.115614",
     "type": "webpage"
 }

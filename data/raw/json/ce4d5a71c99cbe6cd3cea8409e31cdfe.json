@@ -2,7 +2,7 @@
     "id": "ce4d5a71c99cbe6cd3cea8409e31cdfe",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_breaks.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.IntervalIndex.from_breaks.html",
-    "title": "pandas.IntervalIndex.from_breaks — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.IntervalIndex.from_breaks — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.IntervalIndex.from_breaks#\n\n- \nclassmethod IntervalIndex.from_breaks(*breaks* ,*closed='right'* ,*name=None* ,*copy=False* ,*dtype=None* )[source]#\n- Construct an IntervalIndex from an array of splits. The *breaks* array of length*N* is converted into*N-1* adjacent,\nnon-overlapping intervals whose endpoints are consecutive pairs of\nbreak values.\n  - Parameters:\n    - **breaks** array-like (1-dimensional)\n    - Left and right bounds for each interval.\n    - **closed** {‘left’, ‘right’, ‘both’, ‘neither’}, default ‘right’\n    - Whether the intervals are closed on the left-side, right-side, both or neither.\n    - **name** str, optional\n    - Name of the resulting IntervalIndex.\n    - **copy** bool, default False\n    - Copy the data.\n    - **dtype** dtype or None, default None\n    - If None, dtype will be inferred.\n  - Returns:\n    - IntervalIndex\n See also \n  - `interval_range`\n  - Function to create a fixed frequency IntervalIndex.\n  - `IntervalIndex.from_arrays`\n  - Construct from a left and right array.\n  - `IntervalIndex.from_tuples`\n  - Construct from a sequence of tuples.\n Examples >>> pd.IntervalIndex.from_breaks([0, 1, 2, 3]) IntervalIndex([(0, 1], (1, 2], (2, 3]], dtype='interval[int64, right]')",
     "markdown_length": 1229,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.IntervalIndex.from_breaks — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.IntervalIndex.from_breaks — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:51.393588",
+    "crawled_at": "2026-08-28T15:48:05.713078",
     "type": "webpage"
 }

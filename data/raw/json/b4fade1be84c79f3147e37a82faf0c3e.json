@@ -2,7 +2,7 @@
     "id": "b4fade1be84c79f3147e37a82faf0c3e",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.endswith.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.str.endswith.html",
-    "title": "pandas.Series.str.endswith — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.Series.str.endswith — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.str.endswith#\n\n- \nSeries.str.endswith(*pat* ,*na=<no_default>* )[source]#\n- Test if the end of each string element matches a pattern. Equivalent to `str.endswith()` .\n  - Parameters:\n    - **pat** str or tuple[str, …]\n    - Character sequence or tuple of strings. Regular expressions are not accepted.\n    - **na** scalar, optional\n    - Object shown if element tested is not a string. The default depends on dtype of the array. For the `\"str\"` dtype,`False` is used.\nFor object dtype,`numpy.nan` is used. For the nullable`StringDtype` ,`pandas.NA` is used.\n  - Returns:\n    - Series or Index of bool\n    - A Series of booleans indicating whether the given pattern matches the end of each string element.\n See also \n  - `str.endswith`\n  - Python standard library string method.\n  - `Series.str.startswith`\n  - Same as endswith, but tests the start of string.\n  - `Series.str.contains`\n  - Tests if string element contains a pattern.\n Examples >>> s = pd.Series([\"bat\", \"bear\", \"caT\", np.nan]) >>> s 0 bat 1 bear 2 caT 3 NaN dtype: str >>> s.str.endswith(\"t\") 0 True 1 False 2 False 3 False dtype: bool >>> s.str.endswith((\"t\", \"T\")) 0 True 1 False 2 True 3 False dtype: bool",
     "markdown_length": 1190,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.str.endswith — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.Series.str.endswith — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:47:59.215042",
+    "crawled_at": "2026-08-28T15:50:18.106590",
     "type": "webpage"
 }

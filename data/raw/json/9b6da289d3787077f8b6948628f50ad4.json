@@ -2,7 +2,7 @@
     "id": "9b6da289d3787077f8b6948628f50ad4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.register_matplotlib_converters.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.plotting.register_matplotlib_converters.html",
-    "title": "pandas.plotting.register_matplotlib_converters — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.plotting.register_matplotlib_converters — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.plotting.register_matplotlib_converters#\n\n- pandas.plotting.register_matplotlib_converters()[source]#\n- Register pandas formatters and converters with matplotlib. This function modifies the global `matplotlib.units.registry` dictionary. pandas adds custom converters for\n  - pd.Timestamp\n  - pd.Period\n  - np.datetime64\n  - datetime.datetime\n  - datetime.date\n  - datetime.time\n See also \n  - `deregister_matplotlib_converters`\n  - Remove pandas formatters and converters.\n Examples The following line is done automatically by pandas so the plot can be rendered: >>> pd.plotting.register_matplotlib_converters() >>> df = pd.DataFrame( ... {\"ts\": pd.period_range(\"2020\", periods=2, freq=\"M\"), \"y\": [1, 2]} ... ) >>> plot = df.plot.line(x=\"ts\", y=\"y\") Unsetting the register manually an error will be raised: >>> pd.set_option( ... \"plotting.matplotlib.register_converters\", False ... ) >>> df.plot.line(x=\"ts\", y=\"y\") Traceback (most recent call last): TypeError: float() argument must be a string or a real number, not 'Period'",
     "markdown_length": 1036,
@@ -263,13 +263,13 @@
         }
     ],
     "metadata": {
-        "title": "pandas.plotting.register_matplotlib_converters — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.plotting.register_matplotlib_converters — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/index.html"
     },
-    "crawled_at": "2026-08-26T06:48:14.293160",
+    "crawled_at": "2026-08-28T15:52:27.534767",
     "type": "webpage"
 }

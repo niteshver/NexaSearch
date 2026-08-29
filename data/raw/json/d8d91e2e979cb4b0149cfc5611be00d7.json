@@ -2,7 +2,7 @@
     "id": "d8d91e2e979cb4b0149cfc5611be00d7",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.get_dummies.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.get_dummies.html",
-    "title": "pandas.get_dummies — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.get_dummies — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.get_dummies#\n\n- \npandas.get_dummies(*data* ,*prefix=None* ,*prefix_sep='_'* ,*dummy_na=False* ,*columns=None* ,*sparse=False* ,*drop_first=False* ,*dtype=None* )[source]#\n- Convert categorical variable into dummy/indicator variables. Each variable is converted in as many 0/1 variables as there are different values. Columns in the output are each named after a value; if the input is a DataFrame, the name of the original variable is prepended to the value. \n  - Parameters:\n    - **data** array-like, Series, or DataFrame\n    - Data of which to get dummy indicators.\n    - **prefix** str, list of str, or dict of str, default None\n    - A string to be prepended to DataFrame column names. Pass a list with length equal to the number of columns when calling get_dummies on a DataFrame. Alternatively, prefix can be a dictionary mapping column names to prefixes.\n    - **prefix_sep** str, list of str, or dict of str, default ‘_’\n    - Should you choose to prepend DataFrame column names with a prefix, this is the separator/delimiter to use between the two. Alternatively, prefix_sep can be a list with length equal to the number of columns, or a dictionary mapping column names to separators.\n    - **dummy_na** bool, default False\n    - If True, a NaN indicator column will be added even if no NaN values are present. If False, NA values are encoded as all zero.\n    - **columns** list-like, default None\n    - Column names in the DataFrame to be encoded. If columns is None then all the columns with object, string, or category dtype will be converted.\n    - **sparse** bool, default False\n    - Whether the dummy-encoded columns should be backed by a `SparseArray` (True) or a regular NumPy array (False).\n    - **drop_first** bool, default False\n    - Whether to get k-1 dummies out of k categorical levels by removing the first level.\n    - **dtype** dtype, default bool\n    - Data type for new columns. Only a single dtype is allowed.\n  - Returns:\n    - DataFrame\n    - Dummy-coded data. If data contains other columns than the dummy-coded one(s), these will be prepended, unaltered, to the result.\n See also \n  - `Series.str.get_dummies`\n  - Convert Series of strings to dummy codes.\n  - `from_dummies()`\n  - Convert dummy codes to categorical `DataFrame` .\n Notes Reference the user guide for more examples. Examples >>> s = pd.Series(list(\"abca\")) >>> pd.get_dummies(s) a b c 0 True False False 1 False True False 2 False False True 3 True False False >>> s1 = [\"a\", \"b\", np.nan] >>> pd.get_dummies(s1) a b 0 True False 1 False True 2 False False >>> pd.get_dummies(s1, dummy_na=True) a b NaN 0 True False False 1 False True False 2 False False True >>> df = pd.DataFrame({\"A\": [\"a\", \"b\", \"a\"], \"B\": [\"b\", \"a\", \"c\"], \"C\": [1, 2, 3]}) >>> pd.get_dummies(df, prefix=[\"col1\", \"col2\"]) C col1_a col1_b col2_a col2_b col2_c 0 1 True False False True False 1 2 False True True False False 2 3 True False False False True >>> pd.get_dummies(pd.Series(list(\"abcaa\"))) a b c 0 True False False 1 False True False 2 False False True 3 True False False 4 True False False >>> pd.get_dummies(pd.Series(list(\"abcaa\")), drop_first=True) b c 0 False False 1 True False 2 False True 3 False False 4 False False >>> pd.get_dummies(pd.Series(list(\"abc\")), dtype=float) a b c 0 1.0 0.0 0.0 1 0.0 1.0 0.0 2 0.0 0.0 1.0",
     "markdown_length": 3318,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.get_dummies — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.get_dummies — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:23.249329",
+    "crawled_at": "2026-08-28T15:52:17.903390",
     "type": "webpage"
 }

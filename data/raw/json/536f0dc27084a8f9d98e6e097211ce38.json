@@ -2,7 +2,7 @@
     "id": "536f0dc27084a8f9d98e6e097211ce38",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fold.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.fold.html",
-    "title": "pandas.Timestamp.fold — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.fold — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.fold#\n\n- Timestamp.fold#\n- Return the fold value of the Timestamp. The fold attribute is used to disambiguate wall times in a repeated interval during daylight saving time transitions. \n  - Returns:\n    - int\n    - The fold value of the Timestamp, where 0 indicates the first occurrence of the ambiguous time, and 1 indicates the second.\n See also \n  - `Timestamp.dst`\n  - Return the daylight saving time (DST) adjustment.\n  - `Timestamp.tzinfo`\n  - Return the timezone information associated.\n Examples >>> ts = pd.Timestamp(\"2024-11-03 01:30:00\") >>> ts.fold 0",
     "markdown_length": 581,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.fold — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.fold — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:51:16.192388",
+    "crawled_at": "2026-08-28T15:51:13.180441",
     "type": "webpage"
 }

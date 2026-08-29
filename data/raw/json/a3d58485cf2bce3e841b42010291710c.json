@@ -2,7 +2,7 @@
     "id": "a3d58485cf2bce3e841b42010291710c",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.InvalidVersion.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.InvalidVersion.html",
-    "title": "pandas.errors.InvalidVersion — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.InvalidVersion — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.InvalidVersion#\n\n- exception pandas.errors.InvalidVersion[source]#\n- An invalid version was found, users should refer to PEP 440. The `InvalidVersion` exception is raised when a version string is\nimproperly formatted. Pandas uses this exception to ensure that all\nversion strings are PEP 440 compliant.See also \n  - `util.version.Version`\n  - Class for handling and parsing version strings.\n Examples >>> pd.util.version.Version(\"1.\") Traceback (most recent call last): InvalidVersion: Invalid version: '1.'",
     "markdown_length": 523,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.InvalidVersion — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.InvalidVersion — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "depth": 3,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html"
     },
-    "crawled_at": "2026-08-26T06:51:48.307319",
+    "crawled_at": "2026-08-28T17:59:00.013535",
     "type": "webpage"
 }

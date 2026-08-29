@@ -2,7 +2,7 @@
     "id": "c5a6376e174d95480743106deb0a3127",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.23.3.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v0.23.3.html",
-    "title": "What’s new in 0.23.3 (July 7, 2018) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 0.23.3 (July 7, 2018) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 0.23.3 (July 7, 2018)#\n\nThis release fixes a build issue with the sdist for Python 3.7 (GH 21785) There are no other changes.\n\n## Contributors#\n\nA total of 2 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- Tom Augspurger\n- meeseeksdev[bot] +",
     "markdown_length": 329,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 0.23.3 (July 7, 2018) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 0.23.3 (July 7, 2018) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:52:06.839965",
+    "crawled_at": "2026-08-28T15:54:51.329983",
     "type": "webpage"
 }

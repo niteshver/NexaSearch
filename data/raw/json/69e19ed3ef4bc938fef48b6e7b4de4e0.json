@@ -1,0 +1,59 @@
+{
+    "id": "69e19ed3ef4bc938fef48b6e7b4de4e0",
+    "url": "http://karpathy.github.io/about/",
+    "canonical_url": "http://karpathy.github.io/about",
+    "title": "About",
+    "status": 200,
+    "markdown": "Andrej Karpathy blog\nAbout\nAbout\nSee my\nwebsite\n.",
+    "markdown_length": 49,
+    "internal_links": [
+        {
+            "href": "http://karpathy.github.io/feed.xml",
+            "text": "",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://karpathy.github.io/",
+            "text": "Andrej Karpathy blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://karpathy.github.io/about/",
+            "text": "",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "About",
+        "description": "Musings of a Computer Scientist.",
+        "keywords": null,
+        "author": null,
+        "depth": 3,
+        "parent_url": "http://karpathy.github.io/2015/05/21/rnn-effectiveness/"
+    },
+    "crawled_at": "2026-08-28T15:38:53.107397",
+    "type": "webpage"
+}

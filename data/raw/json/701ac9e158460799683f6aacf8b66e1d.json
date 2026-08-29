@@ -2,7 +2,7 @@
     "id": "701ac9e158460799683f6aacf8b66e1d",
     "url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.0.3.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/whatsnew/v1.0.3.html",
-    "title": "What’s new in 1.0.3 (March 17, 2020) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "What’s new in 1.0.3 (March 17, 2020) — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# What’s new in 1.0.3 (March 17, 2020)#\n\nThese are the changes in pandas 1.0.3. See Release notes for a full changelog including other versions of pandas.\n\n## Fixed regressions#\n\n## Bug fixes#\n\n## Contributors#\n\nA total of 5 people contributed patches to this release. People with a “+” by their names contributed a patch for the first time.\n\n- MeeseeksMachine\n- Pandas Development Team\n- Tom Augspurger\n- William Ayd\n- jbrockmendel",
     "markdown_length": 432,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "What’s new in 1.0.3 (March 17, 2020) — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "What’s new in 1.0.3 (March 17, 2020) — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/whatsnew/index.html"
     },
-    "crawled_at": "2026-08-26T06:52:04.419986",
+    "crawled_at": "2026-08-28T15:55:04.362219",
     "type": "webpage"
 }

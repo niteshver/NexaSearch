@@ -2,7 +2,7 @@
     "id": "b154f1318285c28dcc9468591fced09f",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.indexer_at_time.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.indexer_at_time.html",
-    "title": "pandas.DatetimeIndex.indexer_at_time — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.DatetimeIndex.indexer_at_time — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.DatetimeIndex.indexer_at_time#\n\n- \nDatetimeIndex.indexer_at_time(*time* ,*asof=False* )[source]#\n- Return index locations of values at particular time of day. This method returns the integer indices of the DatetimeIndex entries that match the specified time of day, regardless of the date. \n  - Parameters:\n    - **time** datetime.time or str\n    - Time passed in either as object (datetime.time) or as string in appropriate format (“%H:%M”, “%H%M”, “%I:%M%p”, “%I%M%p”, “%H:%M:%S”, “%H%M%S”, “%I:%M:%S%p”, “%I%M%S%p”).\n    - **asof** bool, default False\n    - This parameter is currently not supported.\n  - Returns:\n    - np.ndarray[np.intp]\n    - Index locations of values at given time of day.\n See also \n  - `indexer_between_time`\n  - Get index locations of values between particular times of day.\n  - `DataFrame.at_time`\n  - Select values at particular time of day.\n Examples >>> idx = pd.DatetimeIndex( ... [\"1/1/2020 10:00\", \"2/1/2020 11:00\", \"3/1/2020 10:00\"] ... ) >>> idx.indexer_at_time(\"10:00\") array([0, 2])",
     "markdown_length": 1029,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.DatetimeIndex.indexer_at_time — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.DatetimeIndex.indexer_at_time — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.DatetimeIndex.indexer_at_time.html"
     },
-    "crawled_at": "2026-08-26T06:49:29.734244",
+    "crawled_at": "2026-08-28T20:07:05.638975",
     "type": "webpage"
 }

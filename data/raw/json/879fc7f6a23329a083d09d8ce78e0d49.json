@@ -2,7 +2,7 @@
     "id": "879fc7f6a23329a083d09d8ce78e0d49",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.util.hash_array.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.util.hash_array.html",
-    "title": "pandas.util.hash_array — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.util.hash_array — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.util.hash_array#\n\n- \npandas.util.hash_array(*vals* ,*encoding='utf8'* ,*hash_key='0123456789123456'* ,*categorize=True* )[source]#\n- Given a 1d array, return an array of deterministic integers. This function applies a hash function to each element of the input array, producing a fixed set of uint64 values suitable for use in hashing-based algorithms. \n  - Parameters:\n    - **vals** ndarray or ExtensionArray\n    - The input array to hash.\n    - **encoding** str, default ‘utf8’\n    - Encoding for data & key when strings.\n    - **hash_key** str, default _default_hash_key\n    - Hash_key for string key to encode.\n    - **categorize** bool, default True\n    - Whether to first categorize object arrays before hashing. This is more efficient when the array contains duplicate values.\n  - Returns:\n    - ndarray[np.uint64, ndim=1]\n    - Hashed values, same length as the vals.\n See also \n  - `util.hash_pandas_object`\n  - Return a data hash of the Index/Series/DataFrame.\n  - `util.hash_tuples`\n  - Hash a MultiIndex / listlike-of-tuples efficiently.\n Examples >>> pd.util.hash_array(np.array([1, 2, 3])) array([ 6238072747940578789, 15839785061582574730, 2185194620014831856], dtype=uint64)",
     "markdown_length": 1200,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.util.hash_array — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.util.hash_array — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/general_functions.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.isna.html"
     },
-    "crawled_at": "2026-08-26T06:51:33.630260",
+    "crawled_at": "2026-08-28T15:52:32.509150",
     "type": "webpage"
 }

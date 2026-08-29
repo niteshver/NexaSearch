@@ -2,7 +2,7 @@
     "id": "8b24aa30ce262e517f0be8ba2b814038",
     "url": "http://pandas.pydata.org/docs/dev/reference/options.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/options.html",
-    "title": "Options and settings — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "Options and settings — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# Options and settings#\n\nAPI for configuring global behavior. See the User Guide for more.\n\n## Working with options#\n\n| `describe_option` ([pat, _print_desc]) | Print the description for one or more registered options. | \n| `reset_option` (pat) | Reset one or more options to their default value. | \n| `get_option` (pat) | Retrieve the value of the specified option. | \n| `set_option` (*args) | Set the value of the specified option or options. | \n| `option_context` (*args) | Context manager to temporarily set options in a `with` statement. | \n\n## Numeric formatting#\n\n| `set_eng_float_format` ([accuracy, use_eng_prefix]) | (DEPRECATED) Format float representation in DataFrame with SI notation. |",
     "markdown_length": 700,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "Options and settings — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "Options and settings — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:48:56.373067",
+    "crawled_at": "2026-08-28T15:52:37.857668",
     "type": "webpage"
 }

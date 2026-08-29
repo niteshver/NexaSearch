@@ -2,7 +2,7 @@
     "id": "7bd0f6456d8a42124ca55886c7a17dfb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.as_unordered.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.cat.as_unordered.html",
-    "title": "pandas.Series.cat.as_unordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.cat.as_unordered — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.cat.as_unordered#\n\n- Series.cat.as_unordered()[source]#\n- Set the Categorical to be unordered. This method returns a new Categorical with the ordered attribute set to False, disabling comparison operations between categories. \n  - Returns:\n    - Categorical\n    - Unordered Categorical.\n See also \n  - `as_ordered`\n  - Set the Categorical to be ordered.\n Examples For `pandas.Series` :>>> raw_cat = pd.Categorical([\"a\", \"b\", \"c\", \"a\"], ordered=True) >>> ser = pd.Series(raw_cat) >>> ser.cat.ordered True >>> ser = ser.cat.as_unordered() >>> ser.cat.ordered False For `pandas.CategoricalIndex` :>>> ci = pd.CategoricalIndex([\"a\", \"b\", \"c\", \"a\"], ordered=True) >>> ci.ordered True >>> ci = ci.as_unordered() >>> ci.ordered False",
     "markdown_length": 742,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.cat.as_unordered — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.cat.as_unordered — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:11.864761",
+    "crawled_at": "2026-08-28T15:48:55.234097",
     "type": "webpage"
 }

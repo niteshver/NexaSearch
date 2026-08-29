@@ -2,7 +2,7 @@
     "id": "48f3d841c5a40eed3c6ad801af2044ff",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_leap_year.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Timestamp.is_leap_year.html",
-    "title": "pandas.Timestamp.is_leap_year — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Timestamp.is_leap_year — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Timestamp.is_leap_year#\n\n- Timestamp.is_leap_year#\n- Return True if year is a leap year. A leap year is a year, which has 366 days (instead of 365) including 29th of February as an intercalary day. Leap years are years which are multiples of four with the exception of years divisible by 100 but not by 400. \n  - Returns:\n    - bool\n    - True if year is a leap year, else False\n See also \n  - `Period.is_leap_year`\n  - Return True if the period’s year is in a leap year.\n  - `DatetimeIndex.is_leap_year`\n  - Boolean indicator if the date belongs to a leap year.\n Examples >>> ts = pd.Timestamp(2020, 3, 14) >>> ts.is_leap_year True",
     "markdown_length": 641,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Timestamp.is_leap_year — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Timestamp.is_leap_year — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:56.291770",
+    "crawled_at": "2026-08-28T15:51:16.161803",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "35a66c35445c5e1b2b794c9d4d1d2591",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.qyear.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.qyear.html",
-    "title": "pandas.PeriodIndex.qyear — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.PeriodIndex.qyear — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.qyear#\n\n- property PeriodIndex.qyear[source]#\n- Fiscal year the Period lies in according to its starting-quarter. The year and the qyear of the period will be the same if the fiscal and calendar years are the same. When they are not, the fiscal year can be different from the calendar year of the period. \n  - Returns:\n    - int\n    - The fiscal year of the period.\n See also \n  - `PeriodIndex.quarter`\n  - The quarter of the date.\n  - `PeriodIndex.year`\n  - The year of the period.\n Examples If the natural and fiscal year are the same, qyear and year will be the same. >>> per = pd.Period('2018Q1', freq='Q') >>> per.qyear 2018 >>> per.year 2018 If the fiscal year starts in April (Q-MAR), the first quarter of 2018 will start in April 2017. year will then be 2017, but qyear will be the fiscal year, 2018. >>> per = pd.Period('2018Q1', freq='Q-MAR') >>> per.start_time Timestamp('2017-04-01 00:00:00') >>> per.qyear 2018 >>> per.year 2017",
     "markdown_length": 962,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.qyear — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.PeriodIndex.qyear — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.qyear.html"
     },
-    "crawled_at": "2026-08-26T06:49:29.591965",
+    "crawled_at": "2026-08-28T19:53:50.340835",
     "type": "webpage"
 }

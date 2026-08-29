@@ -2,7 +2,7 @@
     "id": "ac60fe908c7666ec1a61a6471eb0da45",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.errors.Pandas4Warning.html",
-    "title": "pandas.errors.Pandas4Warning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+    "title": "pandas.errors.Pandas4Warning — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.errors.Pandas4Warning#\n\n- exception pandas.errors.Pandas4Warning[source]#\n- Warning raised for an upcoming change that will be enforced in pandas 4.0. This warning indicates a deprecation that will be enforced when pandas version 4.0 is released. Users should update their code before upgrading. See also \n  - `errors.PandasChangeWarning`\n  - Class for deprecations that will raise any warning.\n  - `errors.PandasPendingDeprecationWarning`\n  - Class for deprecations that will raise a PendingDeprecationWarning.\n  - `errors.PandasDeprecationWarning`\n  - Class for deprecations that will raise a DeprecationWarning.\n  - `errors.PandasFutureWarning`\n  - Class for deprecations that will raise a FutureWarning.\n Examples >>> pd.errors.Pandas4Warning <class 'pandas.errors.Pandas4Warning'>",
     "markdown_length": 794,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.errors.Pandas4Warning — pandas 3.1.0.dev0+1663.g6eba694f5d documentation",
+        "title": "pandas.errors.Pandas4Warning — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/testing.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/development/policies.html"
     },
-    "crawled_at": "2026-08-26T06:51:49.269084",
+    "crawled_at": "2026-08-28T15:52:15.399780",
     "type": "webpage"
 }

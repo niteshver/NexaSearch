@@ -2,7 +2,7 @@
     "id": "626cb57d464730bac931bb5a994f5284",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.aggregate.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.aggregate.html",
-    "title": "pandas.Series.aggregate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.aggregate — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.aggregate#\n\n- \nSeries.aggregate(*func=None* ,*axis=0* ,**args* ,***kwargs* )[source]#\n- Aggregate using one or more operations over the specified axis. This method applies one or more aggregation functions to the Series and returns a scalar, Series, or DataFrame depending on the function(s) provided. \n  - Parameters:\n    - **func** function, str, list or dict\n    - Function to use for aggregating the data. If a function, must either work when passed a Series or when passed to Series.apply. Accepted combinations are: \n      - function\n      - string function name\n      - list of functions and/or function names, e.g. `[np.sum, 'mean']`\n      - dict of axis labels -> functions, function names or list of such.\n    - **axis** {0 or ‘index’}\n    - Unused. Parameter needed for compatibility with DataFrame.\n    - ***args**\n    - Positional arguments to pass to func.\n    - ****kwargs**\n    - Keyword arguments to pass to func.\n  - Returns:\n    - scalar, Series or DataFrame\n    - The return can be: \n      - scalar : when Series.agg is called with single function\n      - Series : when DataFrame.agg is called with a single function\n      - DataFrame : when DataFrame.agg is called with several functions\n See also \n  - `Series.apply`\n  - Invoke function on a Series.\n  - `Series.transform`\n  - Transform function producing a Series with like indexes.\n Notes The aggregation operations are always performed over an axis, either the index (default) or the column axis. This behavior is different from numpy aggregation functions (mean, median, prod, sum, std, var), where the default is to compute the aggregation of the flattened array, e.g., `numpy.mean(arr_2d)` as opposed to`numpy.mean(arr_2d, axis=0)` .agg is an alias for aggregate. Use the alias. Functions that mutate the passed object can produce unexpected behavior or errors and are not supported. See Mutating with User Defined Function (UDF) methods for more details. A passed user-defined-function will be passed a Series for evaluation. If `func` defines an index relabeling,`axis` must be`0` or`index` .Examples >>> s = pd.Series([1, 2, 3, 4]) >>> s 0 1 1 2 2 3 3 4 dtype: int64 >>> s.agg(\"min\") 1 >>> s.agg([\"min\", \"max\"]) min 1 max 4 dtype: int64",
     "markdown_length": 2233,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.aggregate — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.aggregate — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:10.788626",
+    "crawled_at": "2026-08-28T15:48:46.222847",
     "type": "webpage"
 }

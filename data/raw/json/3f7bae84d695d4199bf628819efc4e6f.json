@@ -2,7 +2,7 @@
     "id": "3f7bae84d695d4199bf628819efc4e6f",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.droplevel.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.droplevel.html",
-    "title": "pandas.Index.droplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.droplevel — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.droplevel#\n\n- \nfinal Index.droplevel(*level=0* )[source]#\n- Return index with requested level(s) removed. If resulting index has only 1 level left, the result will be of Index type, not MultiIndex. The original index is not modified inplace. \n  - Parameters:\n    - **level** int, str, or list-like, default 0\n    - If a string is given, must be the name of a level If list-like, elements must be names or indexes of levels.\n  - Returns:\n    - Index or MultiIndex\n    - Returns an Index or MultiIndex object, depending on the resulting index after removing the requested level(s).\n See also \n  - `Index.dropna`\n  - Return Index without NA/NaN values.\n Examples >>> mi = pd.MultiIndex.from_arrays( ... [[1, 2], [3, 4], [5, 6]], names=[\"x\", \"y\", \"z\"] ... ) >>> mi MultiIndex([(1, 3, 5), (2, 4, 6)], names=['x', 'y', 'z']) >>> mi.droplevel() MultiIndex([(3, 5), (4, 6)], names=['y', 'z']) >>> mi.droplevel(2) MultiIndex([(1, 3), (2, 4)], names=['x', 'y']) >>> mi.droplevel(\"z\") MultiIndex([(1, 3), (2, 4)], names=['x', 'y']) >>> mi.droplevel([\"x\", \"y\"]) Index([5, 6], dtype='int64', name='z')",
     "markdown_length": 1103,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.droplevel — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.droplevel — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:48.143242",
+    "crawled_at": "2026-08-28T15:47:35.475870",
     "type": "webpage"
 }

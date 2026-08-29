@@ -2,7 +2,7 @@
     "id": "f11ba326ac80e6f99df004a2093894ae",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_datetime64_ns_dtype.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.types.is_datetime64_ns_dtype.html",
-    "title": "pandas.api.types.is_datetime64_ns_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.types.is_datetime64_ns_dtype — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.types.is_datetime64_ns_dtype#\n\n- \npandas.api.types.is_datetime64_ns_dtype(*arr_or_dtype* )[source]#\n- Check whether the provided array or dtype is of the datetime64[ns] dtype. This function is more restrictive than `api.types.is_datetime64_dtype()` because it requires the dtype to have nanosecond resolution specifically,\nincluding timezone-aware`DatetimeTZDtype` with nanosecond units.\n  - Parameters:\n    - **arr_or_dtype** array-like or dtype\n    - The array or dtype to check.\n  - Returns:\n    - bool\n    - Whether or not the array or dtype is of the datetime64[ns] dtype.\n See also \n  - `api.types.is_datetime64_dtype`\n  - Check whether an array-like or dtype is of the datetime64 dtype.\n  - `api.types.is_datetime64_any_dtype`\n  - Check whether the provided array or dtype is of the datetime64 dtype.\n Examples >>> from pandas.api.types import is_datetime64_ns_dtype >>> from pandas.api.types import DatetimeTZDtype >>> is_datetime64_ns_dtype(str) False >>> is_datetime64_ns_dtype(int) False >>> is_datetime64_ns_dtype(np.datetime64) # no unit False >>> is_datetime64_ns_dtype(DatetimeTZDtype(\"ns\", \"US/Eastern\")) True >>> is_datetime64_ns_dtype(np.array([\"a\", \"b\"])) False >>> is_datetime64_ns_dtype(np.array([1, 2])) False >>> is_datetime64_ns_dtype(np.array([], dtype=\"datetime64\")) # no unit False >>> is_datetime64_ns_dtype(np.array([], dtype=\"datetime64[ps]\")) # wrong unit False >>> is_datetime64_ns_dtype(pd.DatetimeIndex([1, 2, 3], dtype=\"datetime64[ns]\")) True",
     "markdown_length": 1490,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.types.is_datetime64_ns_dtype — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.types.is_datetime64_ns_dtype — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/arrays.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Categorical.html"
     },
-    "crawled_at": "2026-08-26T06:50:10.876469",
+    "crawled_at": "2026-08-28T15:51:56.826391",
     "type": "webpage"
 }

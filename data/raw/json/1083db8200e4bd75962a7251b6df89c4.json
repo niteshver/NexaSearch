@@ -2,7 +2,7 @@
     "id": "1083db8200e4bd75962a7251b6df89c4",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.daysinmonth.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.dt.daysinmonth.html",
-    "title": "pandas.Series.dt.daysinmonth — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.dt.daysinmonth — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "pandas.Series.dt.daysinmonth# Series.dt.daysinmonth[source]# The number of days in the month. Deprecated since version 3.1.0: Use DatetimeIndex.days_in_month instead.",
     "markdown_length": 166,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.dt.daysinmonth — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.dt.daysinmonth — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:14.229104",
+    "crawled_at": "2026-08-28T15:49:11.544723",
     "type": "webpage"
 }

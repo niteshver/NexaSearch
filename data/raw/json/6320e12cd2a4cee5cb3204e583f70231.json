@@ -2,7 +2,7 @@
     "id": "6320e12cd2a4cee5cb3204e583f70231",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_markdown.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.to_markdown.html",
-    "title": "pandas.Series.to_markdown — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.Series.to_markdown — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.to_markdown#\n\n- \nSeries.to_markdown(*buf=None* ,*** ,*mode='wt'* ,*index=True* ,*storage_options=None* ,***kwargs* )[source]#\n- Print Series in Markdown-friendly format. Converts the Series to a Markdown table representation using the tabulate package. The output can be written to a buffer or returned as a string. \n  - Parameters:\n    - **buf** str, Path or StringIO-like, optional, default None\n    - Buffer to write to. If None, the output is returned as a string.\n    - **mode** str, optional\n    - Mode in which file is opened, “wt” by default.\n    - **index** bool, optional, default True\n    - Add index (row) labels.\n    - **storage_options** dict, optional\n    - Extra options that make sense for a particular storage connection, e.g. host, port, username, password, etc. For HTTP(S) URLs the key-value pairs are forwarded to `urllib.request.Request` as header options. For other\nURLs (e.g. starting with “s3://”, and “gcs://”) the key-value pairs are\nforwarded to`fsspec.open` . Please see`fsspec` and`urllib` for more\ndetails, and for more examples on storage options refer here.\n    - ****kwargs**\n    - These parameters will be passed to tabulate.\n  - Returns:\n    - str\n    - Series in Markdown-friendly format.\n See also \n  - `Series.to_frame`\n  - Rrite a text representation of object to the system clipboard.\n  - `Series.to_latex`\n  - Render Series to LaTeX-formatted table.\n Notes Requires the tabulate package. Examples >>> s = pd.Series([\"elk\", \"pig\", \"dog\", \"quetzal\"], name=\"animal\") >>> print(s.to_markdown()) | | animal | |---:|:---------| | 0 | elk | | 1 | pig | | 2 | dog | | 3 | quetzal | Output markdown with a tabulate option. >>> print(s.to_markdown(tablefmt=\"grid\")) +----+----------+ | | animal | +====+==========+ | 0 | elk | +----+----------+ | 1 | pig | +----+----------+ | 2 | dog | +----+----------+ | 3 | quetzal | +----+----------+",
     "markdown_length": 1887,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.to_markdown — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.Series.to_markdown — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:50:48.870447",
+    "crawled_at": "2026-08-28T15:50:43.044658",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "5d82fd3ee52a45ab85760d8b857a0e20",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._from_sequence.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray._from_sequence.html",
-    "title": "pandas.api.extensions.ExtensionArray._from_sequence — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+    "title": "pandas.api.extensions.ExtensionArray._from_sequence — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.extensions.ExtensionArray._from_sequence#\n\n- \nclassmethod ExtensionArray._from_sequence(*scalars* ,*** ,*dtype=None* ,*copy=False* )[source]#\n- Construct a new ExtensionArray from a sequence of scalars. This is a required method for ExtensionArray subclasses. It is used to create a new instance of the ExtensionArray from Python scalars or objects that can be converted to the array’s scalar type. \n  - Parameters:\n    - **scalars** Sequence\n    - Each element will be an instance of the scalar type for this array, `cls.dtype.type` or be converted into this type in this method.\n    - **dtype** dtype, optional\n    - Construct for this particular dtype. This should be a Dtype compatible with the ExtensionArray.\n    - **copy** bool, default False\n    - If True, copy the underlying data.\n  - Returns:\n    - ExtensionArray\n See also \n  - `api.extensions.ExtensionArray._from_sequence_of_strings`\n  - Construct a new ExtensionArray from a sequence of strings.\n  - `api.extensions.ExtensionArray._hash_pandas_object`\n  - Hook for hash_pandas_object.\n Examples >>> pd.arrays.IntegerArray._from_sequence([4, 5]) <IntegerArray> [4, 5] Length: 2, dtype: Int64",
     "markdown_length": 1168,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.extensions.ExtensionArray._from_sequence — pandas 3.1.0.dev0+1660.g5f0ebded30 documentation",
+        "title": "pandas.api.extensions.ExtensionArray._from_sequence — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.extensions.ExtensionArray.html"
     },
-    "crawled_at": "2026-08-26T06:48:09.509619",
+    "crawled_at": "2026-08-28T15:51:38.409422",
     "type": "webpage"
 }

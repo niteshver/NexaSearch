@@ -2,7 +2,7 @@
     "id": "7db4498b58d2ad63319463bb5f432303",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.filter.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.api.typing.DataFrameGroupBy.filter.html",
-    "title": "pandas.api.typing.DataFrameGroupBy.filter — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.api.typing.DataFrameGroupBy.filter — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.api.typing.DataFrameGroupBy.filter#\n\n- \nDataFrameGroupBy.filter(*func* ,*dropna=True* ,**args* ,***kwargs* )[source]#\n- Filter elements from groups that don’t satisfy a criterion. Elements from groups are filtered if they do not satisfy the boolean criterion specified by func. \n  - Parameters:\n    - **func** function\n    - Criterion to apply to each group. Should return True or False.\n    - **dropna** bool\n    - Drop groups that do not pass the filter. True by default; if False, groups that evaluate False are filled with NaNs.\n    - ***args** tuple\n    - Additional positional arguments to pass to func.\n    - ****kwargs** dict\n    - Additional keyword arguments to pass to func.\n  - Returns:\n    - DataFrame\n    - The filtered subset of the original DataFrame.\n See also \n  - `DataFrame.filter`\n  - Filter elements of ungrouped DataFrame.\n  - `SeriesGroupBy.filter`\n  - Filter elements from groups based on criterion.\n Notes Each subframe is endowed the attribute ‘name’ in case you need to know which group you are working on. Functions that mutate the passed object can produce unexpected behavior or errors and are not supported. See Mutating with User Defined Function (UDF) methods for more details. Examples >>> df = pd.DataFrame( ... { ... \"A\": [\"foo\", \"bar\", \"foo\", \"bar\", \"foo\", \"bar\"], ... \"B\": [1, 2, 3, 4, 5, 6], ... \"C\": [2.0, 5.0, 8.0, 1.0, 2.0, 9.0], ... } ... ) >>> grouped = df.groupby(\"A\") >>> grouped.filter(lambda x: x[\"B\"].mean() > 3.0) A B C 1 bar 2 5.0 3 bar 4 1.0 5 bar 6 9.0",
     "markdown_length": 1515,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.api.typing.DataFrameGroupBy.filter — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.api.typing.DataFrameGroupBy.filter — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/groupby.html"
     },
-    "crawled_at": "2026-08-26T06:50:41.024740",
+    "crawled_at": "2026-08-28T17:56:58.755734",
     "type": "webpage"
 }

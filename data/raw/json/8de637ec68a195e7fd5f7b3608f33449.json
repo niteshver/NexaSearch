@@ -2,7 +2,7 @@
     "id": "8de637ec68a195e7fd5f7b3608f33449",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.item.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.item.html",
-    "title": "pandas.Index.item — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Index.item — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Index.item#\n\n- Index.item()[source]#\n- Return the first element of the underlying data as a Python scalar. This method extracts the single element from a length-1 Series or Index and returns it as a native Python scalar type (e.g., `int` ,`float` ,`str` ).\n  - Returns:\n    - scalar\n    - The first element of Series or Index.\n  - Raises:\n    - ValueError\n    - If the data is not length = 1.\n See also \n  - `Index.values`\n  - Returns an array representing the data in the Index.\n  - `Series.head`\n  - Returns the first n rows.\n Examples >>> s = pd.Series([1]) >>> s.item() 1 For an index: >>> s = pd.Series([1], index=[\"a\"]) >>> s.index.item() 'a'",
     "markdown_length": 657,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Index.item — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Index.item — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 1,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.CategoricalIndex.map.html"
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.html"
     },
-    "crawled_at": "2026-08-26T06:48:49.496509",
+    "crawled_at": "2026-08-28T15:47:45.016854",
     "type": "webpage"
 }

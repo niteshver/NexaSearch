@@ -2,7 +2,7 @@
     "id": "2ac2de0ff284d5197613250fc8c93b73",
     "url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.days_in_month.html",
     "canonical_url": "https://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.days_in_month.html",
-    "title": "pandas.PeriodIndex.days_in_month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+    "title": "pandas.PeriodIndex.days_in_month — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.PeriodIndex.days_in_month#\n\n- property PeriodIndex.days_in_month[source]#\n- The number of days in the month. Returns the total number of days in the month of each period, accounting for leap years. See also \n  - `PeriodIndex.day`\n  - The days of the period.\n  - `PeriodIndex.days_in_month`\n  - The number of days in the month.\n  - `PeriodIndex.daysinmonth`\n  - The number of days in the month.\n  - `PeriodIndex.month`\n  - The month as January=1, December=12.\n Examples For Series: >>> period = pd.period_range('2020-1-1 00:00', '2020-3-1 00:00', freq='M') >>> s = pd.Series(period) >>> s 0 2020-01 1 2020-02 2 2020-03 dtype: period[M] >>> s.dt.days_in_month 0 31 1 29 2 31 dtype: int64 For PeriodIndex: >>> idx = pd.PeriodIndex([\"2023-01\", \"2023-02\", \"2023-03\"], freq=\"M\") >>> idx.days_in_month # It can be also entered as `daysinmonth` Index([31, 28, 31], dtype='int64')",
     "markdown_length": 880,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.PeriodIndex.days_in_month — pandas 3.1.0.dev0+1662.g0c49719283 documentation",
+        "title": "pandas.PeriodIndex.days_in_month — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
-        "depth": 2,
+        "depth": 3,
         "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.PeriodIndex.days_in_month.html"
     },
-    "crawled_at": "2026-08-26T06:50:39.823313",
+    "crawled_at": "2026-08-28T19:57:45.377800",
     "type": "webpage"
 }

@@ -2,7 +2,7 @@
     "id": "286cd8b012cf167b85e00ba0051cbebb",
     "url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.from_arrow.html",
     "canonical_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.from_arrow.html",
-    "title": "pandas.Series.from_arrow — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+    "title": "pandas.Series.from_arrow — pandas 3.1.0.dev0 documentation",
     "status": 200,
     "markdown": "# pandas.Series.from_arrow#\n\n- \nclassmethod Series.from_arrow(*data* )[source]#\n- Construct a Series from an array-like Arrow object. This function accepts any Arrow-compatible array-like object implementing the Arrow PyCapsule Protocol (i.e. having an `__arrow_c_array__` or`__arrow_c_stream__` method).This function currently relies on `pyarrow` to convert the object\nin Arrow format to pandas.Added in version 3.0. \n  - Parameters:\n    - **data** pyarrow.Array or Arrow-compatible object\n    - Any array-like object implementing the Arrow PyCapsule Protocol (i.e. has an `__arrow_c_array__` or`__arrow_c_stream__` method).\n  - Returns:\n    - Series\n See also \n  - `DataFrame.from_arrow`\n  - Construct a DataFrame from an Arrow object.\n Examples >>> import pyarrow as pa >>> arrow_array = pa.array([1, 2, 3]) >>> pd.Series.from_arrow(arrow_array) 0 1 1 2 2 3 dtype: int64",
     "markdown_length": 873,
@@ -251,13 +251,13 @@
     "external_links": [],
     "images": [],
     "metadata": {
-        "title": "pandas.Series.from_arrow — pandas 3.1.0.dev0+1661.gf74cda2e6e documentation",
+        "title": "pandas.Series.from_arrow — pandas 3.1.0.dev0 documentation",
         "description": null,
         "keywords": null,
         "author": null,
         "depth": 2,
-        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.apply.html"
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Series.html"
     },
-    "crawled_at": "2026-08-26T06:49:17.273680",
+    "crawled_at": "2026-08-28T15:49:33.696577",
     "type": "webpage"
 }
