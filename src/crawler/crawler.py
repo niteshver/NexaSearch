@@ -125,6 +125,8 @@ class CrawlerManager:
                     max_retries=settings.MAX_RETRIES
                 ),
                 monitor=CrawlerMonitor(
+                    max_visible_rows = 15,
+                    display_mode = DisplayMode.DETAILED, 
                     urls_total=len(web_urls),
                     refresh_rate=1.0,
                     enable_ui = True,
