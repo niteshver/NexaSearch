@@ -136,10 +136,8 @@ class CrawlerManager:
                 monitor=CrawlerMonitor(
                     urls_total=len(web_urls),
                     refresh_rate=1.0,
-                    # The interactive monitor crashes when stdout is not a
-                    # terminal (for example, during CLI/background runs).
-                    enable_ui=False,
-                )
+                    enable_ui=True,
+                ),
             )
 
             # WEB CONFIG ONLY (no PDF)
