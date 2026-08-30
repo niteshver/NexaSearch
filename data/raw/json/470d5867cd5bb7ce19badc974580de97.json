@@ -1,0 +1,83 @@
+{
+    "id": "470d5867cd5bb7ce19badc974580de97",
+    "url": "http://colah.github.io/personal/micromarriages/",
+    "canonical_url": "http://colah.github.io/personal/micromarriages",
+    "title": "Micromarriages -- colah's blog",
+    "status": 200,
+    "markdown": "# Micromarriages\n\nPosted on Aug 23, 2018\n\n**Abstract:** Micromarriages are essentially micromorts,\n        but for marriage instead of death. They provide a powerful framework for thinking about questions ranging from\n        “Should I go to this party?” to “Should I breakup with my partner?” **Keywords:**\n        humor, romance, decision analysis\n\n### 1 - What is a micromarriage, exactly?\n\nA micromarriage is a one in a million chance that an action will lead to you getting married, relative to your default policy. Note that some actions, such as dying, have a negative number of micromarriages associated with them.\n\nThis definition has important caveats. Most people do not include being coercively forced into a marriage when calculating micromarriages. It’s also common to discount by how far in the future the marriage is, although the choice of discount rate can be controversial. (People who expect the world to end in the near future may advocate a steeper discount rate.)\n\n### 2 - Are there alternative units for romantic success?\n\nYes! For short-term relationships, the preferred metric unit is the millihookup, owing to the larger quantities in typical usage. The imperial system uses a generic romantic unit, the date, which does not distinguish between relationship types.\n\nCritics of the date unit note that a typical date (event) contains much less than 1 date (unit) of romantic success (due to romantic deflation since it was defined),<sup>1</sup> and that romantic success in different relationship types isn’t fungible.\n\n### 3 - Ok, so how do I actually use micromarriages to make decisions?\n\nThe average American is exposed to around 50,000 micromarriages a year between 18 and 35,<sup>2</sup> but this varies greatly from person to person. With careful analysis and effort, you can increase your exposure!\n\nThe first step is to estimate the typical conversion rate for hours and dollars to micromarriages available to you. Then, when considering actions in the future, you can ask whether they are competitive with your other options.\n\n### 4 - I heard they’re also a motivational tool?\n\nEven if you’re doing everything right, romance is a highly stochastic process, where you very seldom see reward. There's lots of events that don't lead to dates, dates that don't lead to relationships, and relationships that don't work out. It can all be pretty disheartening.\n\nMicromarriages can help you gamify this process. Even if the date doesn’t go anywhere, you can feel good about the estimated micromariages counting up. This helps you acquire more more micromarriages -- and hopefully find a partner!\n\n### 5 - Are you serious?\n\nNope. I'm about 90% joking. I do think the general idea can sometimes be helpful, though.\n\n**Looking for some micromarriages yourself?**\n    \n    \n\nI'm a monogamous, straight, 29 year old male who really wants to have kids someday. I’d love to meet someone who shares my excitement to have kids, love of math, and interest in effective altruism.\n\nIf you enjoyed this essay and think we might be compatible, consider sending me an email or DMing me on Twitter. (I'm single as of updating this essay in September 2022.) If you're on the fence about reaching out, you might find my \"date me\" doc and my essay on micromarriages interesting.\n\n### Footnotes\n\nIn case you were tempted to take this too seriously:\n\n1. \n    The original version of this essay arbitrarily had 1 date (unit) be \"roughly equivalent to 8,000 micromarriages or 50 millihookups.\" This was intended to be deliberately higher than my crude estimate (2,500 micromarriages), so I could joke about how people probably went on fewer, more serious dates on the past. However, I think readers were unclear about how serious the numbers were until later, and so it seemed better to remove them. **Estimate:** The only number I found for how many first dates single people go on is references to an eHarmony study claiming that*the average single person goes on 41 first dates a year* . (I didn't search very hard.) That seems shockingly high to me, and I'm kind of skeptical of a study by eHarmony that I can't find any details on. Then again, maybe I'm just a weird person who doesn't have empathy for the mass dating ways of the population at large and no engagement in hookup culture. If you took these numbers seriously, assume 50,000 micromarriages a year (see below), and that people spend half their time single, you get 2,500 micrommariages per date (event).I'm doubtful this is a useful estimate. Even if I believed this was true on average, I expect that for many people who are pickier about dates, the average number of micromarriages is higher. One useful framing might be to think about the number of micromarriages in a \"promising\" or \"serious\" date. ↩\n2. This number is based on FiveThirtyEight’s “When Will Everyone I Know Be Married” article, which is in turn based on the American Community Survey. The fraction of the population married roughly reaches 60% for both genders by 35, starting from very close to zero at 18. Ignoring divorces and assuming the unmarried population follows a geometric trend, falling by a constant ratio each year, this suggests a roughly 5% chance of marriage per year, or ~50,000 micromarriages. ↩",
+    "markdown_length": 5258,
+    "internal_links": [
+        {
+            "href": "http://colah.github.io/",
+            "text": "colah's blog",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/about.html",
+            "text": "About",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/contact.html",
+            "text": "Contact",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/personal/micromarriages/",
+            "text": "1",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
+            "href": "http://colah.github.io/personal/dating/",
+            "text": "\"date\n                    me\" doc",
+            "title": "",
+            "base_domain": "github.io",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Micromarriages -- colah's blog",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 1,
+        "parent_url": "http://colah.github.io/"
+    },
+    "crawled_at": "2026-08-30T21:22:46.735740",
+    "type": "webpage"
+}

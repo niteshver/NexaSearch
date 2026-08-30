@@ -17,10 +17,9 @@ import trafilatura
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator
 from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
-from crawl4ai import AsyncWebCrawler, CrawlerMonitor, DisplayMode
+from crawl4ai import AsyncWebCrawler, CrawlerMonitor
 from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
-from crawl4ai.processors.pdf import PDFContentScrapingStrategy
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 
 from src.config.settings import settings
@@ -30,10 +29,17 @@ from src.crawler.utils import canonicalize_url
 
 
 class CrawlerManager:
-    def __init__(self, keywords: List[str] = None, max_pages: int = None, max_depth: int = None):
+    def __init__(
+        self,
+        keywords: List[str] = None,
+        max_pages: int = None,
+        max_depth: int = None,
+        deep_crawl: bool = False,
+    ):
         self.keywords = keywords or settings.keywords_list
         self.max_pages = max_pages or settings.CRAWL_MAX_PAGES
         self.max_depth = max_depth or settings.CRAWL_MAX_DEPTH
+        self.deep_crawl = deep_crawl
         self.robots_parser = RobotsParser()
 
     def select_markdown_text(self, result) -> str:
@@ -108,12 +114,14 @@ class CrawlerManager:
                 weight=0.6
             )
 
-            strategy = BFSDeepCrawlStrategy(
-                max_depth=self.max_depth,
-                include_external=False,
-                url_scorer=score,
-                max_pages=self.max_pages
-            )
+            strategy = None
+            if self.deep_crawl and self.max_depth > 1:
+                strategy = BFSDeepCrawlStrategy(
+                    max_depth=self.max_depth,
+                    include_external=False,
+                    url_scorer=score,
+                    max_pages=self.max_pages,
+                )
 
             dispatcher = MemoryAdaptiveDispatcher(
                 memory_threshold_percent=90.0,
@@ -127,8 +135,8 @@ class CrawlerManager:
                 monitor=CrawlerMonitor(
                     urls_total=len(web_urls),
                     refresh_rate=1.0,
-                    enable_ui = True,
-                )
+                    enable_ui=True,
+                ),
             )
 
             # WEB CONFIG ONLY (no PDF)
@@ -138,7 +146,7 @@ class CrawlerManager:
                 max_retries=settings.MAX_RETRIES,
                 markdown_generator=markdown_generator,
                 deep_crawl_strategy=strategy,
-                stream=False,
+                stream=True,
                 word_count_threshold=settings.WORD_COUNT_THRESHOLD,
                 exclude_external_links=True,
                 exclude_social_media_links=True,
@@ -149,67 +157,136 @@ class CrawlerManager:
             )
 
             async with AsyncWebCrawler(config=browser_config) as crawler:
-                for result in await crawler.arun_many(
+                results = await crawler.arun_many(
                     urls=web_urls,
                     config=config_run,
                     dispatcher=dispatcher,
-                ):
-                    if not result.success:
-                        logger.error(f"Crawl failed for {result.url}: {result.error_message}")
-                        continue
+                )
+                
+                # arun_many may return an async generator or None
+                if results is None:
+                    logger.warning(f"arun_many returned None for {len(web_urls)} URLs")
+                    results = []
+                
+                try:
+                    async for result in results:
+                        if not result.success:
+                            logger.error(f"Crawl failed for {result.url}: {result.error_message}")
+                            continue
 
-                    markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
+                        markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
 
-                    if self.has_crawl_error(result, markdown_text):
-                        logger.warning(f"Skipping page with crawl error: {result.url}")
-                        continue
+                        if self.has_crawl_error(result, markdown_text):
+                            logger.warning(f"Skipping page with crawl error: {result.url}")
+                            continue
 
+                        raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
+                        cleaned_content = trafilatura.extract(
+                            raw_html,
+                            output_format="markdown",
+                            include_comments=False,
+                            include_tables=True,
+                        ) if raw_html else None
 
-                    raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
-                    cleaned_content = trafilatura.extract(
-                        raw_html,
-                        output_format="markdown",
-                        include_comments=False,
-                        include_tables=True,
-                    ) if raw_html else None
+                        if not cleaned_content:
+                            logger.warning(f"Trafilatura extraction failed {result.url}")
+                            cleaned_content = markdown_text
 
-                    if not cleaned_content:
-                        logger.warning(f"Trafilatura extraction failed {result.url}")
+                        metadata = result.metadata or {}
+                        canonical_url = canonicalize_url(result.url)
+                        filename = hashlib.md5(canonical_url.encode()).hexdigest()
 
-                        cleaned_content = markdown_text
+                        # Save markdown
+                        markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                        with open(markdown_path, "w", encoding="utf-8") as f:
+                            f.write(cleaned_content)
 
-                    metadata = result.metadata or {}
-                    canonical_url = canonicalize_url(result.url)
-                    filename = hashlib.md5(canonical_url.encode()).hexdigest()
+                        # Save JSON
+                        doc_dict = {
+                            "id": filename,
+                            "url": result.url,
+                            "canonical_url": canonical_url,
+                            "title": metadata.get("title") or result.url,
+                            "status": result.status_code,
+                            "markdown": cleaned_content,
+                            "markdown_length": len(cleaned_content),
+                            "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
+                            "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
+                            "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
+                            "metadata": metadata,
+                            "crawled_at": datetime.now().isoformat(),
+                            "type": "webpage"
+                        }
 
-                    # Save markdown
-                    markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
-                    with open(markdown_path, "w", encoding="utf-8") as f:
-                        f.write(cleaned_content)
+                        json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                        with open(json_path, "w", encoding="utf-8") as f:
+                            json.dump(doc_dict, f, indent=4, ensure_ascii=False)
 
-                    # Save JSON
-                    doc_dict = {
-                        "id": filename,
-                        "url": result.url,
-                        "canonical_url": canonical_url,
-                        "title": metadata.get("title") or result.url,
-                        "status": result.status_code,
-                        "markdown": cleaned_content,
-                        "markdown_length": len(cleaned_content),
-                        "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
-                        "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
-                        "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
-                        "metadata": metadata,
-                        "crawled_at": datetime.now().isoformat(),
-                        "type": "webpage"
-                    }
+                        crawled_documents.append(doc_dict)
+                        logger.info(f"✓ Crawled (webpage): {result.url}")
+                except TypeError:
+                    # arun_many may not be iterable; fallback to arun
+                    logger.warning("arun_many did not return an async iterable; falling back to sequential arun()")
+                    for url in web_urls:
+                        try:
+                            result = await crawler.arun(url=url, config=config_run)
+                            if not result.success:
+                                logger.error(f"Crawl failed for {url}: {result.error_message}")
+                                continue
 
-                    json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
-                    with open(json_path, "w", encoding="utf-8") as f:
-                        json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+                            markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
 
-                    crawled_documents.append(doc_dict)
-                    logger.info(f"✓ Crawled (webpage): {result.url}")
+                            if self.has_crawl_error(result, markdown_text):
+                                logger.warning(f"Skipping page with crawl error: {url}")
+                                continue
+
+                            raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
+                            cleaned_content = trafilatura.extract(
+                                raw_html,
+                                output_format="markdown",
+                                include_comments=False,
+                                include_tables=True,
+                            ) if raw_html else None
+
+                            if not cleaned_content:
+                                logger.warning(f"Trafilatura extraction failed {url}")
+                                cleaned_content = markdown_text
+
+                            metadata = result.metadata or {}
+                            canonical_url = canonicalize_url(result.url)
+                            filename = hashlib.md5(canonical_url.encode()).hexdigest()
+
+                            # Save markdown
+                            markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                            with open(markdown_path, "w", encoding="utf-8") as f:
+                                f.write(cleaned_content)
+
+                            # Save JSON
+                            doc_dict = {
+                                "id": filename,
+                                "url": result.url,
+                                "canonical_url": canonical_url,
+                                "title": metadata.get("title") or result.url,
+                                "status": result.status_code,
+                                "markdown": cleaned_content,
+                                "markdown_length": len(cleaned_content),
+                                "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
+                                "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
+                                "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
+                                "metadata": metadata,
+                                "crawled_at": datetime.now().isoformat(),
+                                "type": "webpage"
+                            }
+
+                            json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                            with open(json_path, "w", encoding="utf-8") as f:
+                                json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+
+                            crawled_documents.append(doc_dict)
+                            logger.info(f"✓ Crawled (webpage): {result.url}")
+                        except Exception as e:
+                            logger.error(f"Exception crawling {url}: {e}")
+                            continue
 
         # ===== PHASE 2: CRAWL PDFs =====
         if pdf_urls:
@@ -281,14 +358,13 @@ class CrawlerManager:
                     logger.error(f"PDF crawl error for {pdf_url}: {e}")
                     continue
 
-
-                        # ===== DETAILED SUMMARY STATISTICS =====
+        # ===== DETAILED SUMMARY STATISTICS =====
         total_urls = len(compliant_urls)
         successful_urls = len(crawled_documents)
         failed_urls = total_urls - successful_urls
         
-        webpages = sum(1 for r in crawled_documents if r.get('type') == 'webpage')
-        pdfs = sum(1 for r in crawled_documents if r.get('type') == 'pdf')
+        webpages = sum(1 for result in crawled_documents if result.get('type') == 'webpage')
+        pdfs = sum(1 for result in crawled_documents if result.get('type') == 'pdf')
         
         logger.info(f"\n{'='*70}")
         logger.info(f"CRAWLING SUMMARY")
@@ -303,30 +379,111 @@ class CrawlerManager:
         logger.info(f"Failed: {failed_urls}")
         logger.info(f"Success rate: {(successful_urls/total_urls*100):.1f}%" if total_urls > 0 else "N/A")
         logger.info(f"{'='*70}\n")
-        
         return crawled_documents
 
 
-async def main(sitemap_path: Path, limit: int, max_pages: int, max_depth: int):
+def _checkpoint_path() -> Path:
+    """Return the location used to resume an interrupted sitemap crawl."""
+    return settings.absolute_db_path.parent / ".crawler_checkpoint.json"
+
+
+def _load_checkpoint(sitemap_path: Path, total_urls: int) -> int:
+    """Return the next seed offset only when the checkpoint matches the sitemap."""
+    path = _checkpoint_path()
+    if not path.exists():
+        return 0
+
+    try:
+        checkpoint = json.loads(path.read_text(encoding="utf-8"))
+        if (
+            checkpoint.get("sitemap") == str(sitemap_path.resolve())
+            and checkpoint.get("total_urls") == total_urls
+        ):
+            return max(0, min(int(checkpoint.get("next_offset", 0)), total_urls))
+    except (OSError, ValueError, TypeError) as exc:
+        logger.warning(f"Ignoring unreadable crawler checkpoint: {exc}")
+    return 0
+
+
+def _save_checkpoint(sitemap_path: Path, total_urls: int, next_offset: int) -> None:
+    """Atomically persist progress after each completed batch."""
+    path = _checkpoint_path()
+    payload = {
+        "sitemap": str(sitemap_path.resolve()),
+        "total_urls": total_urls,
+        "next_offset": next_offset,
+        "updated_at": datetime.now().isoformat(),
+    }
+    temporary_path = path.with_suffix(".tmp")
+    temporary_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    temporary_path.replace(path)
+
+
+async def main(
+    sitemap_path: Path,
+    limit: int | None,
+    batch_size: int,
+    max_pages: int,
+    max_depth: int,
+    resume: bool,
+    follow_links: bool,
+):
     if not sitemap_path.exists():
         logger.error(f"Sitemap file not found: {sitemap_path}")
         return
+    if batch_size < 1:
+        raise ValueError("--batch-size must be at least 1")
+    if limit is not None and limit < 1:
+        raise ValueError("--limit must be at least 1")
 
     tree = ET.parse(sitemap_path)
-    root = tree.getroot()
-    urls = []
-    for loc in root.findall(".//{*}loc"):
-        if loc.text and loc.text.strip():
-            urls.append(loc.text.strip())
-
+    urls = [
+        loc.text.strip()
+        for loc in tree.getroot().findall(".//{*}loc")
+        if loc.text and loc.text.strip()
+    ]
     if not urls:
         logger.error(f"No URLs found in sitemap: {sitemap_path}")
         return
 
+    urls = urls[:limit] if limit is not None else urls
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
 
-    manager = CrawlerManager(max_pages=max_pages, max_depth=max_depth)
-    await manager.crawl(urls[:limit])
+    manager = CrawlerManager(
+        max_pages=max_pages,
+        max_depth=max_depth,
+        deep_crawl=follow_links,
+    )
+    start_offset = _load_checkpoint(sitemap_path, len(urls)) if resume else 0
+    if start_offset:
+        logger.info(f"Resuming after {start_offset} completed seed URLs.")
+
+    for start in range(start_offset, len(urls), batch_size):
+        batch = urls[start : start + batch_size]
+        batch_number = start // batch_size + 1
+        total_batches = (len(urls) + batch_size - 1) // batch_size
+        logger.info(
+            f"[BATCH {batch_number}/{total_batches}] Crawling seed URLs "
+            f"{start + 1}-{start + len(batch)} of {len(urls)}"
+        )
+
+        # Individual files are saved by CrawlerManager before this returns. If
+        # this batch fails, its checkpoint is not advanced and it is retried on
+        # the next run. Existing URL-hash files are safe to overwrite.
+        documents, failed_urls = await manager.crawl(batch)
+        if failed_urls:
+            logger.warning(
+                f"Batch {batch_number} had {len(failed_urls)} failed URLs. "
+                "Checkpoint will not advance."
+            )
+            break
+
+        next_offset = start + len(batch)
+        _save_checkpoint(
+            sitemap_path,
+            len(urls),
+            next_offset,
+        )
 
 
 if __name__ == "__main__":
@@ -336,8 +493,21 @@ if __name__ == "__main__":
         type=Path,
         default=settings.BASE_DIR / "data/raw/sitemap/master_seed.xml",
     )
-    parser.add_argument("--limit", type=int, default=10000, help="Seed URLs to crawl.")
-    parser.add_argument("--max-pages", type=int, default=10000, help="Pages per seed URL.")
-    parser.add_argument("--max-depth", type=int, default=3, help="Maximum crawl depth.")
+    parser.add_argument("--limit", type=int, help="Maximum sitemap URLs to crawl (default: all).")
+    parser.add_argument("--batch-size", type=int, default=25, help="Seed URLs per saved batch (default: 25).")
+    parser.add_argument("--max-pages", type=int, default=1, help="Pages per seed URL (default: 1).")
+    parser.add_argument("--max-depth", type=int, default=1, help="Maximum crawl depth (default: 1).")
+    parser.add_argument("--follow-links", action="store_true", help="Also deep-crawl links discovered from each sitemap URL.")
+    parser.add_argument("--no-resume", action="store_true", help="Start from the beginning instead of using the checkpoint.")
     args = parser.parse_args()
-    asyncio.run(main(args.sitemap, args.limit, args.max_pages, args.max_depth))
+    asyncio.run(
+        main(
+            args.sitemap,
+            args.limit,
+            args.batch_size,
+            args.max_pages,
+            args.max_depth,
+            resume=not args.no_resume,
+            follow_links=args.follow_links,
+        )
+    )
