@@ -1,0 +1,12 @@
+# pandas.tseries.offsets.CustomBusinessHour.is_year_end#
+
+- 
+CustomBusinessHour.is_year_end(*ts* )#
+- Return boolean whether a timestamp occurs on the year end. 
+  - Parameters:
+    - **ts** Timestamp
+    - The timestamp to check.
+ See also 
+  - `is_year_start`
+  - Return boolean whether a timestamp occurs on the year start.
+ Examples >>> ts = pd.Timestamp(2022, 1, 1) >>> freq = pd.offsets.Hour(5) >>> freq.is_year_end(ts) False

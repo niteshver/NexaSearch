@@ -17,10 +17,9 @@ import trafilatura
 from crawl4ai.deep_crawling import BFSDeepCrawlStrategy
 from crawl4ai.async_configs import BrowserConfig, CacheMode, CrawlerRunConfig, DefaultMarkdownGenerator
 from crawl4ai.deep_crawling.scorers import KeywordRelevanceScorer
-from crawl4ai import AsyncWebCrawler, CrawlerMonitor, DisplayMode
+from crawl4ai import AsyncWebCrawler, CrawlerMonitor
 from crawl4ai.async_dispatcher import MemoryAdaptiveDispatcher, RateLimiter
 from crawl4ai.content_filter_strategy import PruningContentFilter
-from crawl4ai.processors.pdf import PDFContentScrapingStrategy
 from crawl4ai.content_scraping_strategy import LXMLWebScrapingStrategy
 
 from src.config.settings import settings
@@ -35,7 +34,7 @@ class CrawlerManager:
         keywords: List[str] = None,
         max_pages: int = None,
         max_depth: int = None,
-        deep_crawl: bool = True,
+        deep_crawl: bool = False,
     ):
         self.keywords = keywords or settings.keywords_list
         self.max_pages = max_pages or settings.CRAWL_MAX_PAGES
@@ -116,7 +115,7 @@ class CrawlerManager:
             )
 
             strategy = None
-            if self.deep_crawl:
+            if self.deep_crawl and self.max_depth > 1:
                 strategy = BFSDeepCrawlStrategy(
                     max_depth=self.max_depth,
                     include_external=False,
@@ -158,67 +157,136 @@ class CrawlerManager:
             )
 
             async with AsyncWebCrawler(config=browser_config) as crawler:
-                for result in await crawler.arun_many(
+                results = await crawler.arun_many(
                     urls=web_urls,
                     config=config_run,
                     dispatcher=dispatcher,
-                ):
-                    if not result.success:
-                        logger.error(f"Crawl failed for {result.url}: {result.error_message}")
-                        continue
+                )
+                
+                # arun_many may return an async generator or None
+                if results is None:
+                    logger.warning(f"arun_many returned None for {len(web_urls)} URLs")
+                    results = []
+                
+                try:
+                    async for result in results:
+                        if not result.success:
+                            logger.error(f"Crawl failed for {result.url}: {result.error_message}")
+                            continue
 
-                    markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
+                        markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
 
-                    if self.has_crawl_error(result, markdown_text):
-                        logger.warning(f"Skipping page with crawl error: {result.url}")
-                        continue
+                        if self.has_crawl_error(result, markdown_text):
+                            logger.warning(f"Skipping page with crawl error: {result.url}")
+                            continue
 
+                        raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
+                        cleaned_content = trafilatura.extract(
+                            raw_html,
+                            output_format="markdown",
+                            include_comments=False,
+                            include_tables=True,
+                        ) if raw_html else None
 
-                    raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
-                    cleaned_content = trafilatura.extract(
-                        raw_html,
-                        output_format="markdown",
-                        include_comments=False,
-                        include_tables=True,
-                    ) if raw_html else None
+                        if not cleaned_content:
+                            logger.warning(f"Trafilatura extraction failed {result.url}")
+                            cleaned_content = markdown_text
 
-                    if not cleaned_content:
-                        logger.warning(f"Trafilatura extraction failed {result.url}")
+                        metadata = result.metadata or {}
+                        canonical_url = canonicalize_url(result.url)
+                        filename = hashlib.md5(canonical_url.encode()).hexdigest()
 
-                        cleaned_content = markdown_text
+                        # Save markdown
+                        markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                        with open(markdown_path, "w", encoding="utf-8") as f:
+                            f.write(cleaned_content)
 
-                    metadata = result.metadata or {}
-                    canonical_url = canonicalize_url(result.url)
-                    filename = hashlib.md5(canonical_url.encode()).hexdigest()
+                        # Save JSON
+                        doc_dict = {
+                            "id": filename,
+                            "url": result.url,
+                            "canonical_url": canonical_url,
+                            "title": metadata.get("title") or result.url,
+                            "status": result.status_code,
+                            "markdown": cleaned_content,
+                            "markdown_length": len(cleaned_content),
+                            "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
+                            "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
+                            "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
+                            "metadata": metadata,
+                            "crawled_at": datetime.now().isoformat(),
+                            "type": "webpage"
+                        }
 
-                    # Save markdown
-                    markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
-                    with open(markdown_path, "w", encoding="utf-8") as f:
-                        f.write(cleaned_content)
+                        json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                        with open(json_path, "w", encoding="utf-8") as f:
+                            json.dump(doc_dict, f, indent=4, ensure_ascii=False)
 
-                    # Save JSON
-                    doc_dict = {
-                        "id": filename,
-                        "url": result.url,
-                        "canonical_url": canonical_url,
-                        "title": metadata.get("title") or result.url,
-                        "status": result.status_code,
-                        "markdown": cleaned_content,
-                        "markdown_length": len(cleaned_content),
-                        "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
-                        "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
-                        "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
-                        "metadata": metadata,
-                        "crawled_at": datetime.now().isoformat(),
-                        "type": "webpage"
-                    }
+                        crawled_documents.append(doc_dict)
+                        logger.info(f"✓ Crawled (webpage): {result.url}")
+                except TypeError:
+                    # arun_many may not be iterable; fallback to arun
+                    logger.warning("arun_many did not return an async iterable; falling back to sequential arun()")
+                    for url in web_urls:
+                        try:
+                            result = await crawler.arun(url=url, config=config_run)
+                            if not result.success:
+                                logger.error(f"Crawl failed for {url}: {result.error_message}")
+                                continue
 
-                    json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
-                    with open(json_path, "w", encoding="utf-8") as f:
-                        json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+                            markdown_text = self.select_markdown_text(result) if hasattr(result, 'markdown') and result.markdown else ""
 
-                    crawled_documents.append(doc_dict)
-                    logger.info(f"✓ Crawled (webpage): {result.url}")
+                            if self.has_crawl_error(result, markdown_text):
+                                logger.warning(f"Skipping page with crawl error: {url}")
+                                continue
+
+                            raw_html = getattr(result, "html", None) or getattr(result, "cleaned_html", None)
+                            cleaned_content = trafilatura.extract(
+                                raw_html,
+                                output_format="markdown",
+                                include_comments=False,
+                                include_tables=True,
+                            ) if raw_html else None
+
+                            if not cleaned_content:
+                                logger.warning(f"Trafilatura extraction failed {url}")
+                                cleaned_content = markdown_text
+
+                            metadata = result.metadata or {}
+                            canonical_url = canonicalize_url(result.url)
+                            filename = hashlib.md5(canonical_url.encode()).hexdigest()
+
+                            # Save markdown
+                            markdown_path = settings.absolute_db_path.parent / f"raw/markdown/{filename}.md"
+                            with open(markdown_path, "w", encoding="utf-8") as f:
+                                f.write(cleaned_content)
+
+                            # Save JSON
+                            doc_dict = {
+                                "id": filename,
+                                "url": result.url,
+                                "canonical_url": canonical_url,
+                                "title": metadata.get("title") or result.url,
+                                "status": result.status_code,
+                                "markdown": cleaned_content,
+                                "markdown_length": len(cleaned_content),
+                                "internal_links": result.links.get("internal", [])[:20] if hasattr(result, 'links') else [],
+                                "external_links": result.links.get("external", [])[:20] if hasattr(result, 'links') else [],
+                                "images": result.media.get("images", [])[:10] if hasattr(result, 'media') else [],
+                                "metadata": metadata,
+                                "crawled_at": datetime.now().isoformat(),
+                                "type": "webpage"
+                            }
+
+                            json_path = settings.absolute_db_path.parent / f"raw/json/{filename}.json"
+                            with open(json_path, "w", encoding="utf-8") as f:
+                                json.dump(doc_dict, f, indent=4, ensure_ascii=False)
+
+                            crawled_documents.append(doc_dict)
+                            logger.info(f"✓ Crawled (webpage): {result.url}")
+                        except Exception as e:
+                            logger.error(f"Exception crawling {url}: {e}")
+                            continue
 
         # ===== PHASE 2: CRAWL PDFs =====
         if pdf_urls:
@@ -290,8 +358,7 @@ class CrawlerManager:
                     logger.error(f"PDF crawl error for {pdf_url}: {e}")
                     continue
 
-
-                        # ===== DETAILED SUMMARY STATISTICS =====
+        # ===== DETAILED SUMMARY STATISTICS =====
         total_urls = len(compliant_urls)
         successful_urls = len(crawled_documents)
         failed_urls = total_urls - successful_urls
