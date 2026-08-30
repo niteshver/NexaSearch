@@ -30,10 +30,17 @@ from src.crawler.utils import canonicalize_url
 
 
 class CrawlerManager:
-    def __init__(self, keywords: List[str] = None, max_pages: int = None, max_depth: int = None):
+    def __init__(
+        self,
+        keywords: List[str] = None,
+        max_pages: int = None,
+        max_depth: int = None,
+        deep_crawl: bool = True,
+    ):
         self.keywords = keywords or settings.keywords_list
         self.max_pages = max_pages or settings.CRAWL_MAX_PAGES
         self.max_depth = max_depth or settings.CRAWL_MAX_DEPTH
+        self.deep_crawl = deep_crawl
         self.robots_parser = RobotsParser()
 
     def select_markdown_text(self, result) -> str:
@@ -108,12 +115,14 @@ class CrawlerManager:
                 weight=0.6
             )
 
-            strategy = BFSDeepCrawlStrategy(
-                max_depth=self.max_depth,
-                include_external=False,
-                url_scorer=score,
-                max_pages=self.max_pages
-            )
+            strategy = None
+            if self.deep_crawl:
+                strategy = BFSDeepCrawlStrategy(
+                    max_depth=self.max_depth,
+                    include_external=False,
+                    url_scorer=score,
+                    max_pages=self.max_pages,
+                )
 
             dispatcher = MemoryAdaptiveDispatcher(
                 memory_threshold_percent=90.0,
@@ -127,7 +136,9 @@ class CrawlerManager:
                 monitor=CrawlerMonitor(
                     urls_total=len(web_urls),
                     refresh_rate=1.0,
-                    enable_ui = True,
+                    # The interactive monitor crashes when stdout is not a
+                    # terminal (for example, during CLI/background runs).
+                    enable_ui=False,
                 )
             )
 
@@ -350,6 +361,7 @@ async def main(
     max_pages: int,
     max_depth: int,
     resume: bool,
+    follow_links: bool,
 ):
     if not sitemap_path.exists():
         logger.error(f"Sitemap file not found: {sitemap_path}")
@@ -372,7 +384,11 @@ async def main(
     urls = urls[:limit] if limit is not None else urls
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
 
-    manager = CrawlerManager(max_pages=max_pages, max_depth=max_depth)
+    manager = CrawlerManager(
+        max_pages=max_pages,
+        max_depth=max_depth,
+        deep_crawl=follow_links,
+    )
     start_offset = _load_checkpoint(sitemap_path, len(urls)) if resume else 0
     if start_offset:
         logger.info(f"Resuming after {start_offset} completed seed URLs.")
@@ -411,6 +427,7 @@ if __name__ == "__main__":
     parser.add_argument("--batch-size", type=int, default=25, help="Seed URLs per saved batch (default: 25).")
     parser.add_argument("--max-pages", type=int, default=1, help="Pages per seed URL (default: 1).")
     parser.add_argument("--max-depth", type=int, default=1, help="Maximum crawl depth (default: 1).")
+    parser.add_argument("--follow-links", action="store_true", help="Also deep-crawl links discovered from each sitemap URL.")
     parser.add_argument("--no-resume", action="store_true", help="Start from the beginning instead of using the checkpoint.")
     args = parser.parse_args()
     asyncio.run(
@@ -421,5 +438,6 @@ if __name__ == "__main__":
             args.max_pages,
             args.max_depth,
             resume=not args.no_resume,
+            follow_links=args.follow_links,
         )
     )
