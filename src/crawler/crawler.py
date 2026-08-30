@@ -470,15 +470,20 @@ async def main(
         # Individual files are saved by CrawlerManager before this returns. If
         # this batch fails, its checkpoint is not advanced and it is retried on
         # the next run. Existing URL-hash files are safe to overwrite.
-        documents = await manager.crawl(batch)
-        next_offset = start + len(batch)
-        _save_checkpoint(sitemap_path, len(urls), next_offset)
-        logger.info(
-            f"[BATCH {batch_number}/{total_batches}] Saved {len(documents)} documents; "
-            f"checkpointed at {next_offset}/{len(urls)} seed URLs."
-        )
+        documents, failed_urls = await manager.crawl(batch)
+        if failed_urls:
+            logger.warning(
+                f"Batch {batch_number} had {len(failed_urls)} failed URLs. "
+                "Checkpoint will not advance."
+            )
+            break
 
-    logger.info(f"Sitemap crawl complete: {len(urls)} seed URLs processed.")
+        next_offset = start + len(batch)
+        _save_checkpoint(
+            sitemap_path,
+            len(urls),
+            next_offset,
+        )
 
 
 if __name__ == "__main__":
