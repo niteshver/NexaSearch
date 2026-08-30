@@ -138,7 +138,7 @@ class CrawlerManager:
                 max_retries=settings.MAX_RETRIES,
                 markdown_generator=markdown_generator,
                 deep_crawl_strategy=strategy,
-                stream=False,
+                stream=True,
                 word_count_threshold=settings.WORD_COUNT_THRESHOLD,
                 exclude_external_links=True,
                 exclude_social_media_links=True,
