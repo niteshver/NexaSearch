@@ -124,12 +124,7 @@ class CrawlerManager:
                     max_delay=30.0,
                     max_retries=settings.MAX_RETRIES
                 ),
-                monitor = CrawlerMonitor(
-                    
-                )
                 monitor=CrawlerMonitor(
-                    max_visible_rows = 15,
-                    display_mode = DisplayMode.DETAILED, 
                     urls_total=len(web_urls),
                     refresh_rate=1.0,
                     enable_ui = True,
@@ -292,8 +287,8 @@ class CrawlerManager:
         successful_urls = len(crawled_documents)
         failed_urls = total_urls - successful_urls
         
-        webpages = sum(1 for r in crawled_documents if r.get('type') == 'webpage')
-        pdfs = sum(1 for r in crawled_documents if r.get('type') == 'pdf')
+        webpages = sum(1 for result in crawled_documents if result.get('type') == 'webpage')
+        pdfs = sum(1 for result in crawled_documents if result.get('type') == 'pdf')
         
         logger.info(f"\n{'='*70}")
         logger.info(f"CRAWLING SUMMARY")
@@ -308,30 +303,101 @@ class CrawlerManager:
         logger.info(f"Failed: {failed_urls}")
         logger.info(f"Success rate: {(successful_urls/total_urls*100):.1f}%" if total_urls > 0 else "N/A")
         logger.info(f"{'='*70}\n")
-        
         return crawled_documents
 
 
-async def main(sitemap_path: Path, limit: int, max_pages: int, max_depth: int):
+def _checkpoint_path() -> Path:
+    """Return the location used to resume an interrupted sitemap crawl."""
+    return settings.absolute_db_path.parent / ".crawler_checkpoint.json"
+
+
+def _load_checkpoint(sitemap_path: Path, total_urls: int) -> int:
+    """Return the next seed offset only when the checkpoint matches the sitemap."""
+    path = _checkpoint_path()
+    if not path.exists():
+        return 0
+
+    try:
+        checkpoint = json.loads(path.read_text(encoding="utf-8"))
+        if (
+            checkpoint.get("sitemap") == str(sitemap_path.resolve())
+            and checkpoint.get("total_urls") == total_urls
+        ):
+            return max(0, min(int(checkpoint.get("next_offset", 0)), total_urls))
+    except (OSError, ValueError, TypeError) as exc:
+        logger.warning(f"Ignoring unreadable crawler checkpoint: {exc}")
+    return 0
+
+
+def _save_checkpoint(sitemap_path: Path, total_urls: int, next_offset: int) -> None:
+    """Atomically persist progress after each completed batch."""
+    path = _checkpoint_path()
+    payload = {
+        "sitemap": str(sitemap_path.resolve()),
+        "total_urls": total_urls,
+        "next_offset": next_offset,
+        "updated_at": datetime.now().isoformat(),
+    }
+    temporary_path = path.with_suffix(".tmp")
+    temporary_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    temporary_path.replace(path)
+
+
+async def main(
+    sitemap_path: Path,
+    limit: int | None,
+    batch_size: int,
+    max_pages: int,
+    max_depth: int,
+    resume: bool,
+):
     if not sitemap_path.exists():
         logger.error(f"Sitemap file not found: {sitemap_path}")
         return
+    if batch_size < 1:
+        raise ValueError("--batch-size must be at least 1")
+    if limit is not None and limit < 1:
+        raise ValueError("--limit must be at least 1")
 
     tree = ET.parse(sitemap_path)
-    root = tree.getroot()
-    urls = []
-    for loc in root.findall(".//{*}loc"):
-        if loc.text and loc.text.strip():
-            urls.append(loc.text.strip())
-
+    urls = [
+        loc.text.strip()
+        for loc in tree.getroot().findall(".//{*}loc")
+        if loc.text and loc.text.strip()
+    ]
     if not urls:
         logger.error(f"No URLs found in sitemap: {sitemap_path}")
         return
 
+    urls = urls[:limit] if limit is not None else urls
     logger.info(f"Loaded {len(urls)} seed URLs from sitemap.")
 
     manager = CrawlerManager(max_pages=max_pages, max_depth=max_depth)
-    await manager.crawl(urls[:limit])
+    start_offset = _load_checkpoint(sitemap_path, len(urls)) if resume else 0
+    if start_offset:
+        logger.info(f"Resuming after {start_offset} completed seed URLs.")
+
+    for start in range(start_offset, len(urls), batch_size):
+        batch = urls[start : start + batch_size]
+        batch_number = start // batch_size + 1
+        total_batches = (len(urls) + batch_size - 1) // batch_size
+        logger.info(
+            f"[BATCH {batch_number}/{total_batches}] Crawling seed URLs "
+            f"{start + 1}-{start + len(batch)} of {len(urls)}"
+        )
+
+        # Individual files are saved by CrawlerManager before this returns. If
+        # this batch fails, its checkpoint is not advanced and it is retried on
+        # the next run. Existing URL-hash files are safe to overwrite.
+        documents = await manager.crawl(batch)
+        next_offset = start + len(batch)
+        _save_checkpoint(sitemap_path, len(urls), next_offset)
+        logger.info(
+            f"[BATCH {batch_number}/{total_batches}] Saved {len(documents)} documents; "
+            f"checkpointed at {next_offset}/{len(urls)} seed URLs."
+        )
+
+    logger.info(f"Sitemap crawl complete: {len(urls)} seed URLs processed.")
 
 
 if __name__ == "__main__":
@@ -341,8 +407,19 @@ if __name__ == "__main__":
         type=Path,
         default=settings.BASE_DIR / "data/raw/sitemap/master_seed.xml",
     )
-    parser.add_argument("--limit", type=int, default=10000, help="Seed URLs to crawl.")
-    parser.add_argument("--max-pages", type=int, default=10000, help="Pages per seed URL.")
-    parser.add_argument("--max-depth", type=int, default=3, help="Maximum crawl depth.")
+    parser.add_argument("--limit", type=int, help="Maximum sitemap URLs to crawl (default: all).")
+    parser.add_argument("--batch-size", type=int, default=25, help="Seed URLs per saved batch (default: 25).")
+    parser.add_argument("--max-pages", type=int, default=1, help="Pages per seed URL (default: 1).")
+    parser.add_argument("--max-depth", type=int, default=1, help="Maximum crawl depth (default: 1).")
+    parser.add_argument("--no-resume", action="store_true", help="Start from the beginning instead of using the checkpoint.")
     args = parser.parse_args()
-    asyncio.run(main(args.sitemap, args.limit, args.max_pages, args.max_depth))
+    asyncio.run(
+        main(
+            args.sitemap,
+            args.limit,
+            args.batch_size,
+            args.max_pages,
+            args.max_depth,
+            resume=not args.no_resume,
+        )
+    )
