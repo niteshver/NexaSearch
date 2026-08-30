@@ -124,6 +124,9 @@ class CrawlerManager:
                     max_delay=30.0,
                     max_retries=settings.MAX_RETRIES
                 ),
+                monitor = CrawlerMonitor(
+                    
+                )
                 monitor=CrawlerMonitor(
                     max_visible_rows = 15,
                     display_mode = DisplayMode.DETAILED, 
