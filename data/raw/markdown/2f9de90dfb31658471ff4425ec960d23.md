@@ -1,0 +1,12 @@
+# pandas.TimedeltaIndex.components#
+
+- property TimedeltaIndex.components[source]#
+- Return a DataFrame of the individual resolution components of the Timedeltas. The components (days, hours, minutes seconds, milliseconds, microseconds, nanoseconds) are returned as columns in a DataFrame. 
+  - Returns:
+    - DataFrame
+ See also 
+  - `TimedeltaIndex.total_seconds`
+  - Return total duration expressed in seconds.
+  - `Timedelta.components`
+  - Return a components namedtuple-like of a single timedelta.
+ Examples >>> tdelta_idx = pd.to_timedelta(["1 day 3 min 2 us 42 ns"]) >>> tdelta_idx TimedeltaIndex(['1 days 00:03:00.000002042'], dtype='timedelta64[ns]', freq=None) >>> tdelta_idx.components days hours minutes seconds milliseconds microseconds nanoseconds 0 1 0 3 0 0 2 42

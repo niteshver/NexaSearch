@@ -470,19 +470,12 @@ async def main(
         # Individual files are saved by CrawlerManager before this returns. If
         # this batch fails, its checkpoint is not advanced and it is retried on
         # the next run. Existing URL-hash files are safe to overwrite.
-        documents, failed_urls = await manager.crawl(batch)
-        if failed_urls:
-            logger.warning(
-                f"Batch {batch_number} had {len(failed_urls)} failed URLs. "
-                "Checkpoint will not advance."
-            )
-            break
-
+        documents = await manager.crawl(batch)
         next_offset = start + len(batch)
-        _save_checkpoint(
-            sitemap_path,
-            len(urls),
-            next_offset,
+        _save_checkpoint(sitemap_path, len(urls), next_offset)
+        logger.info(
+            f"[BATCH {batch_number}/{total_batches}] Saved {len(documents)} documents; "
+            f"checkpointed at {next_offset}/{len(urls)} seed URLs."
         )
 
 
@@ -494,9 +487,9 @@ if __name__ == "__main__":
         default=settings.BASE_DIR / "data/raw/sitemap/master_seed.xml",
     )
     parser.add_argument("--limit", type=int, help="Maximum sitemap URLs to crawl (default: all).")
-    parser.add_argument("--batch-size", type=int, default=25, help="Seed URLs per saved batch (default: 25).")
-    parser.add_argument("--max-pages", type=int, default=1, help="Pages per seed URL (default: 1).")
-    parser.add_argument("--max-depth", type=int, default=1, help="Maximum crawl depth (default: 1).")
+    parser.add_argument("--batch-size", type=int, default=2, help="Seed URLs per saved batch (default: 25).")
+    parser.add_argument("--max-pages", type=int, default=3, help="Pages per seed URL (default: 1).")
+    parser.add_argument("--max-depth", type=int, default=3, help="Maximum crawl depth (default: 1).")
     parser.add_argument("--follow-links", action="store_true", help="Also deep-crawl links discovered from each sitemap URL.")
     parser.add_argument("--no-resume", action="store_true", help="Start from the beginning instead of using the checkpoint.")
     args = parser.parse_args()

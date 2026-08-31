@@ -1,0 +1,1 @@
+pandas.RangeIndex.stop# property RangeIndex.stop[source]# The value of the stop parameter. Examples >>> idx = pd.RangeIndex(5) >>> idx.stop 5 >>> idx = pd.RangeIndex(2, -10, -3) >>> idx.stop -10

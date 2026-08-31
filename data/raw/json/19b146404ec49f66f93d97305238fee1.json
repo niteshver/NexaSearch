@@ -1,0 +1,35 @@
+{
+    "id": "19b146404ec49f66f93d97305238fee1",
+    "url": "https://pandas.pydata.org/pandas-docs/version/1.1/reference/api/pandas.Index.copy.html",
+    "canonical_url": "https://pandas.pydata.org/pandas-docs/version/1.1/reference/api/pandas.Index.copy.html",
+    "title": "Page not found · GitHub Pages",
+    "status": 404,
+    "markdown": "**File not found**\n\nThe site configured at this address does not contain the requested file.\n\n        If this is your site, make sure that the filename case matches the URL\n        as well as any file permissions.\n\n        For root URLs (like `http://example.com/`) you must provide an\n        `index.html` file.\n      \n\n        Read the full documentation\n        for more information about using **GitHub Pages**.",
+    "markdown_length": 415,
+    "internal_links": [
+        {
+            "href": "https://pandas.pydata.org/",
+            "text": "",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        }
+    ],
+    "external_links": [],
+    "images": [],
+    "metadata": {
+        "title": "Page not found · GitHub Pages",
+        "description": null,
+        "keywords": null,
+        "author": null,
+        "depth": 2,
+        "parent_url": "http://pandas.pydata.org/docs/dev/reference/api/pandas.Index.copy.html"
+    },
+    "crawled_at": "2026-08-10T11:47:48.606995",
+    "type": "webpage"
+}

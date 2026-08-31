@@ -1,0 +1,1 @@
+pandas.Index.is_monotonic# property Index.is_monotonic[source]# Alias for is_monotonic_increasing. Deprecated since version 1.5.0: is_monotonic is deprecated and will be removed in a future version. Use is_monotonic_increasing instead.

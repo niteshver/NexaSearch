@@ -20,18 +20,6 @@
             "total_score": null
         },
         {
-            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
-            "text": "in the blog post",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
             "href": "http://pandas.pydata.org/docs/index.html",
             "text": "",
             "title": "",
@@ -246,6 +234,18 @@
             "intrinsic_score": 0.0,
             "contextual_score": null,
             "total_score": null
+        },
+        {
+            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.normalize.html",
+            "text": "pandas.tseries.offsets.DateOffset.normalize",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
         }
     ],
     "external_links": [],
@@ -256,6 +256,6 @@
         "keywords": null,
         "author": null
     },
-    "crawled_at": "2026-08-30T22:26:59.799082",
+    "crawled_at": "2026-08-30T23:45:03.084490",
     "type": "webpage"
 }

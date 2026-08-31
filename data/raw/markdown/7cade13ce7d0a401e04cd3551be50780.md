@@ -1,0 +1,15 @@
+# pandas.PeriodIndex.year#
+
+- property PeriodIndex.year[source]#
+- The year of the period. Returns the year component for each period in the index. See also 
+  - `PeriodIndex.day_of_year`
+  - The ordinal day of the year.
+  - `PeriodIndex.dayofyear`
+  - The ordinal day of the year.
+  - `PeriodIndex.is_leap_year`
+  - Logical indicating if the date belongs to a leap year.
+  - `PeriodIndex.weekofyear`
+  - The week ordinal of the year.
+  - `PeriodIndex.year`
+  - The year of the period.
+ Examples >>> idx = pd.PeriodIndex(["2023", "2024", "2025"], freq="Y") >>> idx.year Index([2023, 2024, 2025], dtype='int64')
