@@ -1,0 +1,62 @@
+# `sklearn.linear_model`.SGDRegressor¶
+
+- 
+*class* `sklearn.linear_model.``SGDRegressor` (*loss='squared_loss'* ,*penalty='l2'* ,*alpha=0.0001* ,*l1_ratio=0.15* ,*fit_intercept=True* ,*n_iter=5* ,*shuffle=True* ,*verbose=0* ,*epsilon=0.1* ,*random_state=None* ,*learning_rate='invscaling'* ,*eta0=0.01* ,*power_t=0.25* ,*warm_start=False* ,*average=False* )[source]¶
+- Linear model fitted by minimizing a regularized empirical loss with SGD SGD stands for Stochastic Gradient Descent: the gradient of the loss is estimated each sample at a time and the model is updated along the way with a decreasing strength schedule (aka learning rate). The regularizer is a penalty added to the loss function that shrinks model parameters towards the zero vector using either the squared euclidean norm L2 or the absolute norm L1 or a combination of both (Elastic Net). If the parameter update crosses the 0.0 value because of the regularizer, the update is truncated to 0.0 to allow for learning sparse models and achieve online feature selection. This implementation works with data represented as dense numpy arrays of floating point values for the features. Parameters: **loss** : str, ‘squared_loss’, ‘huber’, ‘epsilon_insensitive’,                 or ‘squared_epsilon_insensitive’The loss function to be used. Defaults to ‘squared_loss’ which refers to the ordinary least squares fit. ‘huber’ modifies ‘squared_loss’ to focus less on getting outliers correct by switching from squared to linear loss past a distance of epsilon. ‘epsilon_insensitive’ ignores errors less than epsilon and is linear past that; this is the loss function used in SVR. ‘squared_epsilon_insensitive’ is the same but becomes squared loss past a tolerance of epsilon. **penalty** : str, ‘none’, ‘l2’, ‘l1’, or ‘elasticnet’The penalty (aka regularization term) to be used. Defaults to ‘l2’ which is the standard regularizer for linear SVM models. ‘l1’ and ‘elasticnet’ might bring sparsity to the model (feature selection) not achievable with ‘l2’. **alpha** : floatConstant that multiplies the regularization term. Defaults to 0.0001 **l1_ratio** : floatThe Elastic Net mixing parameter, with 0 <= l1_ratio <= 1. l1_ratio=0 corresponds to L2 penalty, l1_ratio=1 to L1. Defaults to 0.15. **fit_intercept** : boolWhether the intercept should be estimated or not. If False, the data is assumed to be already centered. Defaults to True. **n_iter** : int, optionalThe number of passes over the training data (aka epochs). The number of iterations is set to 1 if using partial_fit. Defaults to 5. **shuffle** : bool, optionalWhether or not the training data should be shuffled after each epoch. Defaults to True. **random_state** : int seed, RandomState instance, or None (default)The seed of the pseudo random number generator to use when shuffling the data. **verbose** : integer, optionalThe verbosity level. **epsilon** : floatEpsilon in the epsilon-insensitive loss functions; only if loss is ‘huber’, ‘epsilon_insensitive’, or ‘squared_epsilon_insensitive’. For ‘huber’, determines the threshold at which it becomes less important to get the prediction exactly right. For epsilon-insensitive, any differences between the current prediction and the correct label are ignored if they are less than this threshold. **learning_rate** : string, optionalThe learning rate: constant: eta = eta0 optimal: eta = 1.0/(alpha * t) invscaling: eta = eta0 / pow(t, power_t) [default] **eta0** : double, optionalThe initial learning rate [default 0.01]. **power_t** : double, optionalThe exponent for inverse scaling learning rate [default 0.25]. **warm_start** : bool, optionalWhen set to True, reuse the solution of the previous call to fit as initialization, otherwise, just erase the previous solution. **average** : bool or int, optionalWhen set to True, computes the averaged SGD weights and stores the result in the `coef_` attribute. If set to an int greater than 1,
+averaging will begin once the total number of samples seen reaches
+average. So`average=10 will` begin averaging after seeing 10 samples.Attributes: **coef_** : array, shape (n_features,)Weights assigned to the features. **intercept_** : array, shape (1,)The intercept term. **`average_coef_`** : array, shape (n_features,)Averaged weights assigned to the features. **`average_intercept_`** : array, shape (1,)The averaged intercept term. See also `Ridge` ,`ElasticNet` ,`Lasso` ,`SVR`Examples >>> import numpy as np >>> from sklearn import linear_model >>> n_samples, n_features = 10, 5 >>> np.random.seed(0) >>> y = np.random.randn(n_samples) >>> X = np.random.randn(n_samples, n_features) >>> clf = linear_model.SGDRegressor() >>> clf.fit(X, y) ... SGDRegressor(alpha=0.0001, average=False, epsilon=0.1, eta0=0.01, fit_intercept=True, l1_ratio=0.15, learning_rate='invscaling', loss='squared_loss', n_iter=5, penalty='l2', power_t=0.25, random_state=None, shuffle=True, verbose=0, warm_start=False) Methods `decision_function` (X)Predict using the linear model `densify` ()Convert coefficient matrix to dense array format. `fit` (X, y[, coef_init, intercept_init, ...])Fit linear model with Stochastic Gradient Descent. `fit_transform` (X[, y])Fit to data, then transform it. `get_params` ([deep])Get parameters for this estimator. `partial_fit` (X, y[, sample_weight])Fit linear model with Stochastic Gradient Descent. `predict` (X)Predict using the linear model `score` (X, y[, sample_weight])Returns the coefficient of determination R^2 of the prediction. `set_params` (*args, **kwargs)`sparsify` ()Convert coefficient matrix to sparse format. `transform` (X[, threshold])Reduce X to its most important features. 
+  - 
+`__init__` (*loss='squared_loss'* ,*penalty='l2'* ,*alpha=0.0001* ,*l1_ratio=0.15* ,*fit_intercept=True* ,*n_iter=5* ,*shuffle=True* ,*verbose=0* ,*epsilon=0.1* ,*random_state=None* ,*learning_rate='invscaling'* ,*eta0=0.01* ,*power_t=0.25* ,*warm_start=False* ,*average=False* )[source]¶
+ 
+  - 
+`decision_function` (*X* )[source]¶
+  - Predict using the linear model Parameters: **X** : {array-like, sparse matrix}, shape (n_samples, n_features)Returns: **array, shape (n_samples,)** :Predicted target values per element in X.
+ 
+  - 
+`densify` ()[source]¶
+  - Convert coefficient matrix to dense array format. Converts the `coef_` member (back) to a numpy.ndarray. This is the
+default format of`coef_` and is required for fitting, so calling
+this method is only required on models that have previously been
+sparsified; otherwise, it is a no-op.Returns: **self: estimator** :
+ 
+  - 
+`fit` (*X* ,*y* ,*coef_init=None* ,*intercept_init=None* ,*sample_weight=None* )[source]¶
+  - Fit linear model with Stochastic Gradient Descent. Parameters: **X** : {array-like, sparse matrix}, shape (n_samples, n_features)Training data **y** : numpy array, shape (n_samples,)Target values **coef_init** : array, shape (n_features,)The initial coefficients to warm-start the optimization. **intercept_init** : array, shape (1,)The initial intercept to warm-start the optimization. **sample_weight** : array-like, shape (n_samples,), optionalWeights applied to individual samples (1. for unweighted). Returns: **self** : returns an instance of self.
+ 
+  - 
+`fit_transform` (*X* ,*y=None* ,***fit_params* )[source]¶
+  - Fit to data, then transform it. Fits transformer to X and y with optional parameters fit_params and returns a transformed version of X. Parameters: **X** : numpy array of shape [n_samples, n_features]Training set. **y** : numpy array of shape [n_samples]Target values. Returns: **X_new** : numpy array of shape [n_samples, n_features_new]Transformed array.
+ 
+  - 
+`get_params` (*deep=True* )[source]¶
+  - Get parameters for this estimator. Parameters: **deep: boolean, optional** :If True, will return the parameters for this estimator and contained subobjects that are estimators. Returns: **params** : mapping of string to anyParameter names mapped to their values.
+ 
+  - 
+`partial_fit` (*X* ,*y* ,*sample_weight=None* )[source]¶
+  - Fit linear model with Stochastic Gradient Descent. Parameters: **X** : {array-like, sparse matrix}, shape (n_samples, n_features)Subset of training data **y** : numpy array of shape (n_samples,)Subset of target values **sample_weight** : array-like, shape (n_samples,), optionalWeights applied to individual samples. If not provided, uniform weights are assumed. Returns: **self** : returns an instance of self.
+ 
+  - 
+`predict` (*X* )[source]¶
+  - Predict using the linear model Parameters: **X** : {array-like, sparse matrix}, shape (n_samples, n_features)Returns: **array, shape (n_samples,)** :Predicted target values per element in X.
+ 
+  - 
+`score` (*X* ,*y* ,*sample_weight=None* )[source]¶
+  - Returns the coefficient of determination R^2 of the prediction. The coefficient R^2 is defined as (1 - u/v), where u is the regression sum of squares ((y_true - y_pred) ** 2).sum() and v is the residual sum of squares ((y_true - y_true.mean()) ** 2).sum(). Best possible score is 1.0, lower values are worse. Parameters: **X** : array-like, shape = (n_samples, n_features)Test samples. **y** : array-like, shape = (n_samples) or (n_samples, n_outputs)True values for X. **sample_weight** : array-like, shape = [n_samples], optionalSample weights. Returns: **score** : floatR^2 of self.predict(X) wrt. y.
+ 
+  - 
+`sparsify` ()[source]¶
+  - Convert coefficient matrix to sparse format. Converts the `coef_` member to a scipy.sparse matrix, which for
+L1-regularized models can be much more memory- and storage-efficient
+than the usual numpy.ndarray representation.The `intercept_` member is not converted.Returns: **self: estimator** :Notes For non-sparse models, i.e. when there are not many zeros in `coef_` ,
+this may actually*increase* memory usage, so use this method with
+care. A rule of thumb is that the number of zero elements, which can
+be computed with`(coef_ == 0).sum()` , must be more than 50% for this
+to provide significant benefits.After calling this method, further fitting with the partial_fit method (if any) will not work until you call densify.
+ 
+  - 
+`transform` (*X* ,*threshold=None* )[source]¶
+  - Reduce X to its most important features. Uses `coef_` or`feature_importances_` to determine the most
+important features.  For models with a`coef_` for each class, the
+absolute sum over the classes is used.Parameters: **X** : array or scipy sparse matrix of shape [n_samples, n_features]The input samples. **threshold** : string, float or None, optional (default=None)The threshold value to use for feature selection. Features whose importance is greater or equal are kept while the others are discarded. If “median” (resp. “mean”), then the threshold value is the median (resp. the mean) of the feature importances. A scaling factor (e.g., “1.25*mean”) may also be used. If None and if available, the object attribute `threshold` is used. Otherwise,
+“mean” is used by default.Returns: **X_r** : array of shape [n_samples, n_selected_features]The input samples with only the selected features.
+-

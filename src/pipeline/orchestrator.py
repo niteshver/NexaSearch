@@ -28,7 +28,7 @@ from dataclasses import dataclass, asdict
 from collections import defaultdict
 
 from src.config.settings import settings
-from src.seeder.url_seeder import URLSeeder, URLSeederConfig
+from src.seeder.url_seeder import EnterpriseURLSeeder
 from src.crawler.crawler import CrawlerManager
 from src.crawler.logger import logger
 
@@ -240,7 +240,7 @@ class SearchEnginePipeline:
         Stage 1: URL Seeding
         Discover seed URLs from configured sources.
         """
-        config = URLSeederConfig(
+        config = EnterpriseURLSeeder(
             output_dir=str(self.output_base / "raw/sitemap"),
             rate_limit_per_domain=0.5,
             max_retries=3,
@@ -252,7 +252,7 @@ class SearchEnginePipeline:
             stream_to_disk=True,
         )
         
-        seeder = URLSeeder(config=config)
+        seeder = EnterpriseURLSeeder(config=config)
         
         try:
             discovered = await asyncio.wait_for(

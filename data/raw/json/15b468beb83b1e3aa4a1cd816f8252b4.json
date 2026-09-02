@@ -20,6 +20,18 @@
             "total_score": null
         },
         {
+            "href": "https://pandas.pydata.org/community/blog/pandas-3.0.html",
+            "text": "in the blog post",
+            "title": "",
+            "base_domain": "pydata.org",
+            "head_data": null,
+            "head_extraction_status": null,
+            "head_extraction_error": null,
+            "intrinsic_score": 0.0,
+            "contextual_score": null,
+            "total_score": null
+        },
+        {
             "href": "http://pandas.pydata.org/docs/index.html",
             "text": "",
             "title": "",
@@ -92,8 +104,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/io.html",
-            "text": "Input/output",
+            "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "dev",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -104,8 +116,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/general_functions.html",
-            "text": "General functions",
+            "href": "https://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "3.0 (stable)",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -116,8 +128,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/series.html",
-            "text": "Series",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.3/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "2.3",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -128,8 +140,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/frame.html",
-            "text": "DataFrame",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "2.2",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -140,8 +152,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/arrays.html",
-            "text": "pandas arrays, scalars, and data types",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.1/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "2.1",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -152,8 +164,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/indexing.html",
-            "text": "Index objects",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.0/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "2.0",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -164,8 +176,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/offset_frequency.html",
-            "text": "Date offsets",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "1.5",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -176,8 +188,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.html",
-            "text": "pandas.tseries.offsets.DateOffset",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.4/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "1.4",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -188,8 +200,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.freqstr.html",
-            "text": "pandas.tseries.offsets.DateOffset.freqstr",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.3/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "1.3",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -200,8 +212,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.kwds.html",
-            "text": "pandas.tseries.offsets.DateOffset.kwds",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.2/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "1.2",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -212,8 +224,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.name.html",
-            "text": "pandas.tseries.offsets.DateOffset.name",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.1/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "1.1",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -224,20 +236,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.nanos.html",
-            "text": "pandas.tseries.offsets.DateOffset.nanos",
-            "title": "",
-            "base_domain": "pydata.org",
-            "head_data": null,
-            "head_extraction_status": null,
-            "head_extraction_error": null,
-            "intrinsic_score": 0.0,
-            "contextual_score": null,
-            "total_score": null
-        },
-        {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.tseries.offsets.DateOffset.normalize.html",
-            "text": "pandas.tseries.offsets.DateOffset.normalize",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.0/reference/api/pandas.tseries.offsets.HalfYearEnd.is_quarter_start.html",
+            "text": "1.0",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -256,6 +256,6 @@
         "keywords": null,
         "author": null
     },
-    "crawled_at": "2026-08-30T22:26:35.711186",
+    "crawled_at": "2026-09-01T22:05:36.480823",
     "type": "webpage"
 }

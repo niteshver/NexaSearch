@@ -104,8 +104,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/io.html",
-            "text": "Input/output",
+            "href": "https://pandas.pydata.org/docs/dev/reference/api/pandas.Series.mul.html",
+            "text": "dev",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -116,8 +116,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/general_functions.html",
-            "text": "General functions",
+            "href": "https://pandas.pydata.org/docs/reference/api/pandas.Series.mul.html",
+            "text": "3.0 (stable)",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -128,8 +128,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/series.html",
-            "text": "Series",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.3/reference/api/pandas.Series.mul.html",
+            "text": "2.3",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -140,8 +140,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.html",
-            "text": "pandas.Series",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.2/reference/api/pandas.Series.mul.html",
+            "text": "2.2",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -152,8 +152,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.index.html",
-            "text": "pandas.Series.index",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.1/reference/api/pandas.Series.mul.html",
+            "text": "2.1",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -164,8 +164,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.array.html",
-            "text": "pandas.Series.array",
+            "href": "https://pandas.pydata.org/pandas-docs/version/2.0/reference/api/pandas.Series.mul.html",
+            "text": "2.0",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -176,8 +176,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.values.html",
-            "text": "pandas.Series.values",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.5/reference/api/pandas.Series.mul.html",
+            "text": "1.5",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -188,8 +188,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.dtype.html",
-            "text": "pandas.Series.dtype",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.4/reference/api/pandas.Series.mul.html",
+            "text": "1.4",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -200,8 +200,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.info.html",
-            "text": "pandas.Series.info",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.3/reference/api/pandas.Series.mul.html",
+            "text": "1.3",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -212,8 +212,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.shape.html",
-            "text": "pandas.Series.shape",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.2/reference/api/pandas.Series.mul.html",
+            "text": "1.2",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -224,8 +224,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.nbytes.html",
-            "text": "pandas.Series.nbytes",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.1/reference/api/pandas.Series.mul.html",
+            "text": "1.1",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -236,8 +236,8 @@
             "total_score": null
         },
         {
-            "href": "http://pandas.pydata.org/docs/reference/api/pandas.Series.ndim.html",
-            "text": "pandas.Series.ndim",
+            "href": "https://pandas.pydata.org/pandas-docs/version/1.0/reference/api/pandas.Series.mul.html",
+            "text": "1.0",
             "title": "",
             "base_domain": "pydata.org",
             "head_data": null,
@@ -256,6 +256,6 @@
         "keywords": null,
         "author": null
     },
-    "crawled_at": "2026-08-30T22:24:17.821012",
+    "crawled_at": "2026-09-01T22:04:13.608414",
     "type": "webpage"
 }
